@@ -18,7 +18,10 @@ CRAN.views(repos = NULL, \dots)
 }
 \arguments{
   \item{views}{character vector with the short names of the task views whose
-    associated packages should be downloaded and installed.}
+    associated packages should be downloaded and installed. Alternatively,
+    \code{views} can also be an object of class \code{"ctvlist"} (as returned
+    by \code{CRAN.views}) or an object of class \code{"ctv"} (i.e., an element
+    of a \code{"ctvlist"}).}
   \item{coreOnly}{logical. Should all packages or only core packages be installed?
     (recycled to the same length as \code{views})}
   \item{repos}{character, the base URL of the repository. By default \code{getOption("repos")}

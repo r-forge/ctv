@@ -70,22 +70,31 @@ install.views <- function(views,
                           dependencies = TRUE,
 			  ...)
 {
-  ## get CRAN views and extract names of available views
-  cranviews <- CRAN.views(repos = repos)
-  availnames <- sapply(seq(along = cranviews), function(i) cranviews[[i]]$name)
+  if(inherits(views, "ctv")) {
+    views <- list(views)
+    class(views) <- "ctvlist"
+  }
+  if(!inherits(views, "ctvlist")) {
+    ## get CRAN views and extract names of available views
+    cranviews <- CRAN.views(repos = repos)
+    availnames <- sapply(seq(along = cranviews), function(i) cranviews[[i]]$name)
+
+    whichviews <- lapply(views, function(z) {
+      rval <- which(z == availnames)
+      if(length(rval) > 0) rval[1] else numeric(0)
+    })
+    unavail <- which(sapply(whichviews, length) < 1)
+    if(length(unavail) > 0) warning(paste("CRAN task view", views[unavail], "not available", collapse = "\n"))
+    views <- cranviews[as.vector(unlist(whichviews))]
+    class(views) <- "ctvlist"
+  }
   
   ## install packages for each view
   coreOnly <- rep(coreOnly, length.out = length(views)) 
    
   for(i in seq(along = views)) {
-    thisview <- which(views[i] == availnames)
-    if(length(thisview) > 0) {
-      x <- cranviews[[thisview[1]]]
-      xpack <- if(coreOnly[i]) subset(x$packagelist, core)[,1] else x$packagelist[,1]
-      install.packages(xpack, CRAN = x$repository, dependencies = dependencies, ...)
-    } else {
-      warning(paste("CRAN task view", views[i], "not available"))
-    }
+    pkgs <- if(coreOnly[i]) subset(views[[i]]$packagelist, core)[,1] else views[[i]]$packagelist[,1]
+    install.packages(pkgs, CRAN = views[[i]]$repository, dependencies = dependencies, ...)
   }
   
   invisible()
