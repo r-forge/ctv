@@ -1,0 +1,102 @@
+\documentclass[a4paper]{article}
+\usepackage{a4wide}
+\setlength{\parskip}{0.7ex plus0.1ex minus0.1ex}
+\setlength{\parindent}{0em}
+
+\begin{document}
+
+\SweaveOpts{engine=R}
+%\VignetteIndexEntry{Writing CRAN Task Views}
+%\VignetteDepends{ctv,XML}
+%\VignetteKeywords{CRAN task views, repository, packages, installation}
+%\VignettePackage{ctv}
+
+\title{Writing CRAN Task Views}
+\author{Achim Zeileis}
+\date{}
+\maketitle
+
+CRAN task views should provide some guidance which part
+of the growing number of packages on CRAN are useful for
+a certain topic. They should give a brief overview of the
+contained packages and allow automatic installation. Infrastructure
+for both tasks is provided in \verb/.ctv/ files, an XML-based
+specification of CRAN task views. The format is based on just
+a handful of new tags and is mostly self-explanatory. A brief
+artificial example is given here, more detailed explanations
+are given below:
+
+\begin{verbatim}
+<CRANTaskView>
+
+  <name>Econometrics</name>
+  <topic>Computational Econometrics &amp; Finance</topic>
+  <maintainer>Achim Zeileis</maintainer>
+  
+  <info>
+    Emphasize something <b>important</b> with standard HTML tags,
+    and reference the package <pkg>foo</pkg> and also the view
+    <view>MachineLearning</view>.
+  </info>
+
+  <packagelist>
+    <pkg>foo</pkg>
+    <pkg priority="core">bar</pkg>
+  </packagelist>
+
+  <links>
+    <a href="http://path/to/homepage/">The Title of a Relevant Homepage</a>
+    <view>MachineLearning</view>
+  </links>
+  
+</CRANTaskView>
+\end{verbatim}
+
+The whole document is framed by an opening and closing \verb/<CRANTaskView>/
+tag. Within these, there are six sections: \verb/<name>/, \verb/<topic>/,
+\verb/<maintainer>/, \verb/<info>/, \verb/<packagelist>/ and \verb/<links>/.
+
+\verb/<name>/ gives the name of the task view. This is used as the identifier
+for installing the view and as the name for the XML file, e.g., \verb/Econometrics.ctv/,
+and the auto-generated HTML file, e.g., \verb/Econometrics.html/. Hence, it should be
+not too long and contain no special characters like spaces.
+
+\verb/<topic>/ is a plain text specification of the topic of the task view.
+(Note that in XML files there are three special characters \verb/</, \verb/>/
+and \verb/&/ that need to be escaped by their HTML counterparts.)
+
+\verb/<maintainer>/ gives the name of the maintainer in plain text.
+
+\verb/<info>/ should be a short description of the packages that explains
+which packages are useful for which tasks. It can also contain any further
+informations and should be written in plain HTML code, i.e., any HTML markup
+can be used. There are two additional tags available: \verb/<pkg>/ and 
+\verb/<view>/ which should be used as markup for packages and views, respectively.
+During generation of the corresponding HTML file, they will be replaced by
+hyperlinks to the packages/views.
+
+\verb/<packagelist>/ contains the list of packages associated with the view.
+It should contain (at least) all packages mentioned in the \verb/<info>/ section
+and allows for a distinction between \verb/"core"/ and \verb/"normal"/ (default)
+priority packages. The distinction is only important for the installation of
+certain views because the user can specify whether all packages (default) or only
+the most important core packages should be installed (with all their dependencies).
+
+/verb/<links>/ is a means of specifying further places where information about
+the discussed topic and related issues is discussed, e.g., manuals/books/tutorials
+on how to do Econometrics, say, with \textsf{R}.
+
+For a template of a \verb/.ctv/ file, look at the included \verb/Econometrics.ctv/.
+It can be read and printed by
+
+<<>>=
+library(ctv)
+x <- read.ctv(file.path(.find.package("ctv"), "ctv", "Econometrics.ctv"))
+x
+@
+
+The resulting object could be transformed into HTML by \verb/ctv2html(x)/.
+Once this view has been installed at a CRAN repository, it can be installed by
+the user by \verb/install.views("Econometrics")/.
+
+\end{document}

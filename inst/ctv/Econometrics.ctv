@@ -1,0 +1,80 @@
+<CRANTaskView>
+
+  <name>Econometrics</name>
+  <topic>Computational Econometrics &amp; Finance</topic>
+  <maintainer>Achim Zeileis</maintainer>
+  
+  <info>
+    Base R ships with a lot of functionality useful for computational
+    econometric and finance, in particular in the stats package. This
+    functionality is complemented by many packages on CRAN, a brief overview
+    is given below. If you think that some package is missing from the 
+    list, please let me know.
+    
+    The packages can be roughly structured into the following topics:
+    <ul>
+      <li><i>Linear models</i>: Models are typically fitted by <tt>lm()</tt>
+          (from stats) and can be analyzed using various diagnostic tests (<pkg>car</pkg>,
+          <pkg>lmtest</pkg>, <pkg>strucchange</pkg>, <pkg>urca</pkg>)	  
+	  and employing HC and HAC covariance matrix estimation (<pkg>sandwich</pkg>).</li>
+      <li><i>Further models</i>: Various extensions of the linear regression
+          model and other model fitting techniques are available in packages
+	  including <pkg>betareg</pkg>, <pkg>dse</pkg>, <pkg>Design</pkg>,
+          <pkg>Hmisc</pkg>, <pkg>MNP</pkg>, <pkg>quantreg</pkg>, <pkg>sem</pkg>,
+          <pkg>systemfit</pkg>, <pkg>VR</pkg>.</li>
+      <li><i>Time series</i>: A lot of classical time series functionality,
+          particularly for regularly spaced time series is available in stats.
+	  There are several implementations of irregularly spaced series available
+	  in packages: <pkg>fBasics</pkg>, <pkg>tseries</pkg>, <pkg>its</pkg>,
+          <pkg>zoo</pkg>. The first three are particularly aimed at finance applications,
+	  the latter provides a more general concept of series with irregular indexes.</li>
+      <li><i>Finance</i>: Several packages offer a collection of tools useful
+          for computational finance, in particular the Rmetrics bundle (<pkg>fBasics</pkg>,
+	  <pkg>fExtremes</pkg>, <pkg>fOptions</pkg>, <pkg>fSeries</pkg>), and the
+	  packages <pkg>tseries</pkg> and <pkg>VaR</pkg>.</li>
+      <li><i>Matrices</i>: For doing matrix manipulations, the base R tools are
+          helpful and the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
+      <li><i>Inequality</i>: For measuring inequality, concentration and poverty the
+          package <pkg>ineq</pkg> provides some basic tools.</li>
+      <li><i>Structural change</i>: R is particularly strong when dealing with
+          structural changes and changepoints in parametric models, see
+          <pkg>strucchange</pkg> and <pkg>segmented</pkg>.</li>
+    </ul>
+  </info>
+
+  <packagelist>
+    <pkg>betareg</pkg>
+    <pkg priority="core">car</pkg>
+    <pkg>dse</pkg>
+    <pkg>Design</pkg>
+    <pkg priority="core">fBasics</pkg>
+    <pkg priority="core">fExtremes</pkg>
+    <pkg priority="core">fOptions</pkg>
+    <pkg>fracdiff</pkg>
+    <pkg priority="core">fSeries</pkg>
+    <pkg>Hmisc</pkg>
+    <pkg>ineq</pkg>
+    <pkg priority="core">its</pkg>
+    <pkg priority="core">lmtest</pkg>
+    <pkg>Matrix</pkg>
+    <pkg>MNP</pkg>
+    <pkg>quantreg</pkg>
+    <pkg priority="core">sandwich</pkg>
+    <pkg>segmented</pkg>
+    <pkg>sem</pkg>
+    <pkg>SparseM</pkg>
+    <pkg>strucchange</pkg>
+    <pkg>systemfit</pkg>
+    <pkg priority="core">tseries</pkg>
+    <pkg priority="core">urca</pkg>
+    <pkg>VaR</pkg>
+    <pkg>VR</pkg>
+    <pkg priority="core">zoo</pkg>    
+  </packagelist>
+
+  <links>
+    <a href="http://people.su.se/~ma/R_intro/">A Brief Guide to R for Beginners in Econometrics</a>
+    <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
+  </links>
+
+</CRANTaskView>

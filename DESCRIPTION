@@ -1,0 +1,10 @@
+Package: ctv
+Version: 0.2-0
+Date: 2005-02-28
+Title: CRAN Task Views
+Author: Achim Zeileis, Kurt Hornik
+Maintainer: Achim Zeileis <Achim.Zeileis@R-project.org>
+Description: Server-side and client-side tools for CRAN task views
+Depends: R (>= 2.0.0)
+Suggests: XML
+License: GPL

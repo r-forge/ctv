@@ -1,0 +1,27 @@
+<CRANTaskView>
+
+  <name>MachineLearning</name>
+  <topic>Machine Learning &amp; Statistical Learning</topic>
+  <maintainer>Torsten Hothorn</maintainer>
+  
+  <info>
+    Explain the packages available. Reference <pkg>kernlab</pkg> and for
+    some reason the <view>Econometrics</view> view.
+  </info>
+
+  <packagelist>
+    <pkg>e1071</pkg>
+    <pkg>gbm</pkg>
+    <pkg priority="core">ipred</pkg>
+    <pkg priority="core">kernlab</pkg>
+    <pkg priority="core">randomForest</pkg>
+    <pkg>tree</pkg>
+    <pkg priority="core">VR</pkg>
+  </packagelist>
+
+  <links>
+    <a href="http://www.ci.tuwien.ac.at/">Computational Intelligence @ TU Wien</a>
+    <view>Econometrics</view>
+  </links>
+
+</CRANTaskView>
