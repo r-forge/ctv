@@ -59,9 +59,9 @@ For a closer description of the arguments see als \code{\link{install.packages}}
   CRAN.views()
   
   ## install Econometrics view
-  install.view("Econometrics")
+  install.views("Econometrics")
   ## only with core packages
-  install.view("Econometrics", coreOnly = TRUE)
+  install.views("Econometrics", coreOnly = TRUE)
 }
 }
 \keyword{utilities}
