@@ -1,16 +1,17 @@
 print.ctv <- function(x, packagelist = TRUE, ...)
 {
-  cat(paste("\nCRAN Task View\n--------------\nName: ",
-            x$name, "\nTopic: ",
+  cat(paste("\nCRAN Task View\n--------------\nName:       ",
+            x$name, "\nTopic:      ",
 	    x$topic, "\nMaintainer: ",
 	    x$maintainer, "\n",
-	    ifelse(is.null(x$repository), "", paste("Repository: ", x$repository, "\n", sep = "")),
+	    ifelse(is.null(x$repository), "", paste("Repository: ", x$repository, sep = "")),
 	    "\n", sep = ""))
   if(packagelist) {
-    cat(paste("Packages:",
-        paste(x$packagelist$name, ifelse(x$packagelist$core, "*", ""), sep = "", collapse = ", "),
-        "\n"))
-    cat(ifelse(any(x$packagelist$core), "(* = core package)\n\n", "\n"))
+    pkgs <- paste(strwrap(paste(x$packagelist$name, ifelse(x$packagelist$core, "*", ""), sep = "", collapse = ", "),
+      width = getOption("width"), prefix = "            "), collapse = "\n")
+    substr(pkgs, 1, 9) <- "Packages:"
+    cat(pkgs)
+    cat(ifelse(any(x$packagelist$core), "\n            (* = core package)\n\n", "\n"))
   }
   invisible(x)
 }
