@@ -51,11 +51,9 @@ CRAN.views <- function(repos = NULL, ...)
   
   for(i in seq(along = contriburl)) {
     ## load Views.rds from repository    
-    x <- suppressWarnings(try(.readRDS(url(paste(contriburl[i], "Views.rds", sep = "/"),
-           open = "rb")), silent = TRUE))
-    if(inherits(x, "try-error")) next
-        
-    x <- .readRDS(url(paste(contriburl[i], "Views.rds", sep = "/"), open = "rb"))
+    x <- suppressWarnings(try(.readRDS(viewurl <- url(paste(contriburl[i], "Views.rds", sep = "/"),
+      open = "rb")), silent = TRUE))
+    if(inherits(x, "try-error")) next else close(viewurl)
 
     ## add repository information    
     for(j in seq(along = x)) x[[j]]$repository <- repos[i]
