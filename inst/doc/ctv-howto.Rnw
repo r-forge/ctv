@@ -96,7 +96,7 @@ x
 @
 
 The resulting object could be transformed into HTML by \verb/ctv2html(x)/.
-Once this view has been installed at a CRAN repository, it can be installed by
+Once this view has been installed at a CRAN-style repository, it can be installed by
 the user by \verb/install.views("Econometrics")/.
 
 \end{document}

@@ -93,7 +93,8 @@ read.ctv <- function(file)
 ctv2html <- function(x,
                      file = NULL,
                      css = "../../../R.css",
-		     packageURL = "../Descriptions/")
+		     packageURL = "../Descriptions/",
+		     reposname = "CRAN")
 {
   if(is.character(x)) x <- read.ctv(x)
   if(is.null(file)) file <- paste(x$name, ".html", sep = "")
@@ -106,12 +107,12 @@ ctv2html <- function(x,
   ## header
   htm1 <- c("<html>",
             "<head>",
-     zpaste("  <title>CRAN Task View: ", ampersSub(x$topic), "</title>"),
+     zpaste("  <title>", reposname, " Task View: ", ampersSub(x$topic), "</title>"),
      zpaste("  <link rel=stylesheet type=\"text/css\" href=\"", css, "\">"),
             "</head>",
 	    "",
 	    "<body>",
-     zpaste("  <h2>CRAN Task View: ", ampersSub(x$topic), "</h2>"),
+     zpaste("  <h2>", reposname, " Task View: ", ampersSub(x$topic), "</h2>"),
      zpaste("  <h3>Maintainer: ", ampersSub(x$maintainer), "</h3>"))
 
   ## info section	    
@@ -121,7 +122,7 @@ ctv2html <- function(x,
   pkg2html <- function(a, b)
     zpaste("    <li><a href=\"", packageURL, a, ".html\">", a, "</a>",
            if(b) " (core)" else "", "</li>")
-  htm3 <- c("  <h3>CRAN packages:</h3>",
+  htm3 <- c(zpaste("  <h3>", reposname, " packages:</h3>"),
             "  <ul>",
 	    sapply(1:NROW(x$packagelist), function(i) pkg2html(x$packagelist[i,1], x$packagelist[i,2])), 
 	    "  </ul>")
@@ -142,6 +143,7 @@ ctv2html <- function(x,
 
 updateViews <- function(repos = ".",
 			css = "../../../R.css",
+			reposname = "CRAN",
 			...)
 {
   ## These could easily be changed, but are currently not
@@ -175,7 +177,8 @@ updateViews <- function(repos = ".",
     x <- read.ctv(file.path(path, files[i]))
     
     ## generate HTML code
-    ctv2html(x, file = file.path(viewdir, paste(x$name, ".html", sep = "")), css = css, ...)
+    ctv2html(x, file = file.path(viewdir, paste(x$name, ".html", sep = "")),
+             css = css, reposname = reposname, ...)
 
     ## to save space we eliminate the HTML slots
     x$info <- NULL
@@ -196,11 +199,18 @@ updateViews <- function(repos = ".",
   
   ## generate index HTML file
   if(is.character(index)) {
-    idx <- c("<html>", "", "<head>", "  <title>CRAN Task Views</title>",
-             paste("  <link rel=stylesheet type=\"text/css\" href=\"", css, "\">", sep = ""),
-             "</head>", "", "<body>", "<h1>CRAN Task Views</h1>",
+    idx <- c("<html>",
+             "",
+	     "<head>",
+       paste("  <title>", reposname, " Task Views</title>", sep = ""),
+       paste("  <link rel=stylesheet type=\"text/css\" href=\"", css, "\">", sep = ""),
+             "</head>",
+	     "",
+	     "<body>",
+       paste("<h1>", reposname, " Task Views</h1>", sep = ""),
 	     ## add some instructions how to call install.views()
-	     "", "<table>",
+	     "",
+	     "<table>",
 	     apply(idx, 1, function(x) paste("  <tr valign=\"top\">\n    <td><a href=\"",
 	       x[1], ".html\">", x[1], "</a></td>\n    <td>", gsub("&", "&amp;", x[2]), "</td>\n  </tr>", sep = "")),
 	     "</table>", "", "</body>", "</html>")

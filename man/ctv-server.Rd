@@ -8,17 +8,19 @@ Server-side tools for maintaining CRAN task views.
 }
 
 \usage{
-updateViews(repos = ".", css = "../../../R.css", \dots)
+updateViews(repos = ".", css = "../../../R.css", reposname = "CRAN", \dots)
 
 read.ctv(file)
-ctv2html(x, file = NULL, css = "../../../R.css", packageURL = "../Descriptions/")
+ctv2html(x, file = NULL, css = "../../../R.css", packageURL = "../Descriptions/", reposname = "CRAN")
 }
 \arguments{
-  \item{repos}{character, the base URL of the repository where the \file{Views.rds}
+  \item{repos}{character, the base URL of the CRAN-style repository where the \file{Views.rds}
     and \file{.html} files should be installed. The \file{.ctv} files should
     be located in the \file{src/contrib/Views} directory.}
   \item{css}{character specifying the path and name of the cascade style
     sheet that should be included in the HTML files.}
+  \item{reposname}{character giving the name of the CRAN-style repository,
+    used for generating HTML pages.}
   \item{\dots}{further arguments passed to \code{ctv2html}.}
   \item{file}{character specifying a CRAN task view \file{.ctv} file.}
   \item{x}{an object of class \code{"ctv"} as returned by \code{read.ctv}.}
