@@ -1,0 +1,13 @@
+COPYRIGHT STATUS
+----------------
+
+The R code is
+
+  Copyright (C) 2005 Achim Zeileis and Kurt Hornik
+
+All R code is subject to the GNU General Public License, Version 2. See
+the file COPYING for the exact conditions under which you may
+redistribute it.
+
+The copyright for the task views themselves (.ctv files) remains with
+the respective maintainers.

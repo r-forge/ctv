@@ -5,23 +5,69 @@
   <maintainer>Torsten Hothorn</maintainer>
   
   <info>
-    Explain the packages available. Reference <pkg>kernlab</pkg> and for
-    some reason the <view>Econometrics</view> view.
+    Several add-on packages implement ideas and methods developed at the
+    borderline between computer science and statistics - this field of research
+    is usually referred to as machine learning. 
+
+    The packages can be roughly structured into the following topics:
+    <ul>
+      <li><i>Neural Networks</i>: Single-hidden-layer neural network are 
+             implemented in package <tt>nnet</tt> as part of the <pkg>VR</pkg>
+             bundle (shipped with base R). </li>
+      <li><i>Recursive Paritioning</i>: Tree-structured models for
+             regression, classification and survival analysis, following the
+	     ideas in the CART book, are
+             implemented in <pkg>rpart</pkg> (shipped with base R) and <pkg>tree</pkg>.
+             An adaptation of <pkg>rpart</pkg> for multivariate responses
+             is available in package <pkg>mvpart</pkg>. The validity of
+             trees can be investigated via permutation approaches with package 
+             <pkg>rpart.permutation</pkg> and a tree algorithm fitting 
+             nearest neighbors in each node is implemented in package 
+             <pkg>knnTree</pkg>. Graphical tools for the visualization of
+             trees are available in packages <pkg>maptree</pkg> and 
+             <pkg>pinktoe</pkg>.</li>
+      <li><i>Random Forests</i>: The reference implementation of the random
+             forest algorithm for regression and classification is available in 
+             package <pkg>randomForest</pkg>. Package <pkg>ipred</pkg> has bagging
+             for regression, classification and survival analysis as well as
+             <tt>bundling()</tt>, a combination of multiple models via
+             ensemble learning.</li>
+      <li><i>Boosting</i>: Various forms of gradient boosting are
+             implemented in packages <pkg>gbm</pkg> and <pkg>boost</pkg>.</li>
+      <li><i>Support Vector Machines</i>: The function <tt>svm()</tt> from 
+             <pkg>e1071</pkg> offers an interface to the LIBSVM library and
+             package <pkg>kernlab</pkg> implements a flexible framework 
+             for kernel learning (including SVMs, RVMs and other kernel
+	     learning algorithms). An interface to the SVMlight implementation
+	     (only for one-against-all classification) is provided in package
+	     <pkg>klaR</pkg>.</li>
+      <li><i>Model selection and validation</i>: Package <pkg>e1071</pkg>
+             has function <tt>tune()</tt> for hyper parameter tuning and 
+             function <tt>errorest()</tt> (<pkg>ipred</pkg>) can be used for
+             error rate estimation. The cost parameter C for support vector
+             machines can be chosen utilizing the functionality of package
+             <pkg>svmpath</pkg>.</li>
+    </ul>
   </info>
 
   <packagelist>
+    <pkg>boost</pkg>
     <pkg>e1071</pkg>
-    <pkg>gbm</pkg>
-    <pkg priority="core">ipred</pkg>
+    <pkg priority="core">gbm</pkg>
+    <pkg>ipred</pkg>
     <pkg priority="core">kernlab</pkg>
+    <pkg>klaR</pkg>
+    <pkg>mvpart</pkg>
+    <pkg>permutation.rpart</pkg>
     <pkg priority="core">randomForest</pkg>
+    <pkg priority="core">rpart</pkg>
+    <pkg>svmpath</pkg>
     <pkg>tree</pkg>
     <pkg priority="core">VR</pkg>
   </packagelist>
 
   <links>
-    <a href="http://www.ci.tuwien.ac.at/">Computational Intelligence @ TU Wien</a>
-    <view>Econometrics</view>
+    <a href="http://www.boosting.org/">Boosting Research Site</a>
   </links>
 
 </CRANTaskView>
