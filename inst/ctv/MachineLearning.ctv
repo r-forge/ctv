@@ -14,7 +14,7 @@
       <li><i>Neural Networks</i>: Single-hidden-layer neural network are 
              implemented in package <tt>nnet</tt> as part of the <pkg>VR</pkg>
              bundle (shipped with base R). </li>
-      <li><i>Recursive Paritioning</i>: Tree-structured models for
+      <li><i>Recursive Partitioning</i>: Tree-structured models for
              regression, classification and survival analysis, following the
 	     ideas in the CART book, are
              implemented in <pkg>rpart</pkg> (shipped with base R) and <pkg>tree</pkg>.
@@ -23,9 +23,16 @@
              trees can be investigated via permutation approaches with package 
              <pkg>rpart.permutation</pkg> and a tree algorithm fitting 
              nearest neighbors in each node is implemented in package 
-             <pkg>knnTree</pkg>. Graphical tools for the visualization of
+             <pkg>knnTree</pkg>. For problems with binary input variables
+             the package <pkg>LogicReg</pkg> implements logic regression.
+             Graphical tools for the visualization of
              trees are available in packages <pkg>maptree</pkg> and 
              <pkg>pinktoe</pkg>.</li>
+      <li><i>Regularized and Shrinkage Methods</i>: Regression models with some
+             constraint on the parameter estimates can be fitted with the
+             <pkg>lasso2</pkg> and <pkg>lars</pkg> packages. The shrunken
+             centroids classifier and utilities for gene expression analyses are
+             implemented in package <pkg>pamr</pkg>.</li>
       <li><i>Random Forests</i>: The reference implementation of the random
              forest algorithm for regression and classification is available in 
              package <pkg>randomForest</pkg>. Package <pkg>ipred</pkg> has bagging
@@ -52,12 +59,15 @@
 
   <packagelist>
     <pkg>boost</pkg>
-    <pkg>e1071</pkg>
+    <pkg priority="core">e1071</pkg>
     <pkg priority="core">gbm</pkg>
     <pkg>ipred</pkg>
     <pkg priority="core">kernlab</pkg>
     <pkg>klaR</pkg>
+    <pkg>lars</pkg>
+    <pkg>lasso2</pkg>
     <pkg>mvpart</pkg>
+    <pkg>pamr</pkg>
     <pkg>rpart.permutation</pkg>
     <pkg priority="core">randomForest</pkg>
     <pkg priority="core">rpart</pkg>
