@@ -1,63 +1,102 @@
 <CRANTaskView>
 
   <name>Econometrics</name>
-  <topic>Computational Econometrics &amp; Finance</topic>
+  <topic>Computational Econometrics</topic>
   <maintainer>Achim Zeileis</maintainer>
   
   <info>
-    Base R ships with a lot of functionality useful for computational
-    econometric and finance, in particular in the stats package. This
+    <p>Base R ships with a lot of functionality useful for computational
+    econometrics, in particular in the stats package. This
     functionality is complemented by many packages on CRAN, a brief overview
-    is given below. If you think that some package is missing from the 
-    list, please let me know.
-    
-    The packages can be roughly structured into the following topics:
+    is given below. There is also a considerable overlap between the tools
+    for econometrics in this view and finance in the <view>Finance</view> view.
+    Furthermore, the finance SIG (see links below) is a suitable mailing list for obtaining help
+    and discussing questions about both computational finance and econometrics.</p>
+    <p>The packages in this view can be roughly structured into the following topics.
+    If you think that some package is missing from the list, please let me know.</p>
     <ul>
-      <li><i>Linear models</i>: Models are typically fitted by <tt>lm()</tt>
-          (from stats) and can be analyzed using various diagnostic tests (<pkg>car</pkg>,
-          <pkg>lmtest</pkg>, <pkg>strucchange</pkg>, <pkg>urca</pkg>)	  
-	  and employing HC and HAC covariance matrix estimation (<pkg>sandwich</pkg>).</li>
-      <li><i>Further models</i>: Various extensions of the linear regression
-          model and other model fitting techniques are available in packages
-	  including <pkg>betareg</pkg>, <pkg>dse</pkg>, <pkg>Design</pkg>,
-          <pkg>Hmisc</pkg>, <pkg>MNP</pkg>, <pkg>quantreg</pkg>, <pkg>sem</pkg>,
-          <pkg>systemfit</pkg>, <pkg>VR</pkg>.</li>
-      <li><i>Time series</i>: A lot of classical time series functionality,
-          particularly for regularly spaced time series is available in stats.
-	  There are several implementations of irregularly spaced series available
-	  in packages: <pkg>fBasics</pkg>, <pkg>tseries</pkg>, <pkg>its</pkg>,
-          <pkg>zoo</pkg>. The first three are particularly aimed at finance applications,
-	  the latter provides a more general concept of series with irregular indexes.</li>
-      <li><i>Finance</i>: Several packages offer a collection of tools useful
-          for computational finance, in particular the Rmetrics bundle (<pkg>fBasics</pkg>,
-	  <pkg>fExtremes</pkg>, <pkg>fOptions</pkg>, <pkg>fSeries</pkg>), and the
-	  packages <pkg>tseries</pkg> and <pkg>VaR</pkg>.</li>
-      <li><i>Matrices</i>: For doing matrix manipulations, the base R tools are
-          helpful and the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
+      <li><i>Linear regression models</i>: Linear models can be fitted (via OLS) with <tt>lm()</tt>
+          (from stats) and standard tests for model comparisons are available in various
+	  methods such as <tt>summary()</tt> and <tt>anova()</tt>. Analogous functions
+	  that also support asymptotic tests (<i>z</i> instead of <i>t</i> tests, and
+	  Chi-squared instead of <i>F</i> tests) and plug-in of other covariance
+	  matrices are <tt>coeftest()</tt> and <tt>waldtest()</tt> in <pkg>lmtest</pkg>.
+	  Tests of more general linear hypotheses are implemented in <tt>linear.hypothesis()</tt>
+	  in <pkg>car</pkg>. HC and HAC covariance matrices that can be plugged
+	  into these functions are available in <pkg>sandwich</pkg>. The packages
+	  <pkg>car</pkg> and <pkg>lmtest</pkg> also provide a large collection
+	  of further methods for diagnost checking in linear regression models.
+      <li><i>Microeconometrics</i>: Many standard microeconometric models belong to the
+          family of generalized linear models (GLM) and can be fitted by <tt>glm()</tt>
+	  from package stats. This includes in particular logit and probit models
+	  for modelling choice data and poisson models for count data. Negative 
+	  binomial GLMs are available via <tt>glm.nb()</tt> in package MASS from
+	  the <pkg>VR</pkg> bundle. Zero-inflated count models are provided in 
+	  <pkg>zicounts</pkg>. Basic censored regression models (e.g., tobit models)
+	  can be fitted by <tt>survreg()</tt> in <pkg>survival</pkg>.	  
+	  Further more refined tools for microecnometrics are provided in
+	  <pkg>micEcon</pkg>.</li>
+      <li><i>Further regression models</i>: Various extensions of the linear regression
+          model and other model fitting techniques are available in base R and several
+	  CRAN packages. Nonlinear least squares modelling is availble in <tt>nls()</tt>
+	  in package stats. Relevant packages include <pkg>quantreg</pkg>
+	  (quantile regression), <pkg>sem</pkg> (linear structural equation models,
+	  including two-stage least squares), <pkg>systemfit</pkg> (simultaneous equation
+	  estimation), <pkg>betareg</pkg> (beta regression), <pkg>nlme</pkg> (nonlinear
+	  mixed-effect models), <pkg>VR</pkg> (multinomial logit models in package nnet)	  
+	  and <pkg>MNP</pkg> (Bayesian multinomial probit models). The packages	  
+	  <pkg>Design</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
+	  handling of (generalized) linear regression models.</li>	  	 	  
+      <li><i>Basic time series functionality</i>: The class <tt>"ts"</tt> in package
+          stats is R's standard class for regularly spaced time series which can be
+	  coerced back and forth without loss of information to <tt>"zooreg"</tt>
+	  from package <pkg>zoo</pkg>. <pkg>zoo</pkg> provides infrastructure for
+	  both regularly and irregularly spaced time series (the latter via the class
+	  <tt>"zoo"</tt>) where the time information can be of arbitrary class. Several
+	  other implementations of irregular time series building on the <tt>"POSIXt"</tt>
+	  time-date classes are available in <pkg>its</pkg>, <pkg>tseries</pkg> and 
+	  <pkg>fCalendar</pkg> which are all aimed particularly at finance applications
+	  (see the <view>Finance</view> view).</li>
+      <li><i>Time series modelling</i>: Classical time series modelling tools are
+          contained in the stats package and include <tt>arima()</tt> for ARIMA modelling
+	  and Box-Jenkins-type analysis. Furthermore stats provides <tt>StructTS()</tt>
+	  for fitting structural time series and <tt>decompose()</tt> and <tt>HoltWinters()</tt>
+	  for time series filtering and decomposition. A convenient interface for fitting
+	  dynamic regression models via OLS is available in <pkg>dynlm</pkg>. More advanced
+	  dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root and cointegration
+	  techniques are available in <pkg>urca</pkg> and <pkg>tseries</pkg>.</li>
+      <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
+          ships with many powerful tools for doing matrix manipulations, which are 
+	  complemented by the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
       <li><i>Inequality</i>: For measuring inequality, concentration and poverty the
-          package <pkg>ineq</pkg> provides some basic tools.</li>
+          package <pkg>ineq</pkg> provides some basic tools such as Lorenz curves,
+	  Pen's parade, the Gini coefficient and many more.</li>
       <li><i>Structural change</i>: R is particularly strong when dealing with
           structural changes and changepoints in parametric models, see
           <pkg>strucchange</pkg> and <pkg>segmented</pkg>.</li>
-    </ul>
+      <li><i>Data sets</i>: Many of the packages in this view contain collections of
+          data sets from the econometric literature and the package <pkg>Ecdat</pkg>
+	  contains a complete collection of data sets from various standard econometric
+	  textbooks.</li>
+    </ul>    
   </info>
 
   <packagelist>
     <pkg>betareg</pkg>
     <pkg priority="core">car</pkg>
-    <pkg>dse</pkg>
     <pkg>Design</pkg>
-    <pkg priority="core">fBasics</pkg>
-    <pkg priority="core">fExtremes</pkg>
-    <pkg priority="core">fOptions</pkg>
-    <pkg>fracdiff</pkg>
-    <pkg priority="core">fSeries</pkg>
+    <pkg>dse</pkg>
+    <pkg>dynlm</pkg>
+    <pkg>Ecdat</pkg>
+    <pkg>fCalendar</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
-    <pkg priority="core">its</pkg>
+    <pkg>its</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>Matrix</pkg>
+    <pkg>micEcon</pkg>
     <pkg>MNP</pkg>
+    <pkg>nlme</pkg>
     <pkg>quantreg</pkg>
     <pkg priority="core">sandwich</pkg>
     <pkg>segmented</pkg>
@@ -67,12 +106,14 @@
     <pkg>systemfit</pkg>
     <pkg priority="core">tseries</pkg>
     <pkg priority="core">urca</pkg>
-    <pkg>VaR</pkg>
     <pkg>VR</pkg>
+    <pkg>zicounts</pkg>
     <pkg priority="core">zoo</pkg>    
   </packagelist>
 
   <links>
+    <view>Finance</view>
+    <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing list: R Special Interest Group Finance</a>
     <a href="http://people.su.se/~ma/R_intro/">A Brief Guide to R for Beginners in Econometrics</a>
     <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
   </links>

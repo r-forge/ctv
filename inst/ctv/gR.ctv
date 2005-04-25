@@ -1,0 +1,70 @@
+<CRANTaskView>
+
+  <name>gR</name>
+  <topic>gRaphical models in R</topic>
+  <maintainer>Claus Dethlefsen</maintainer>
+  
+  <info>
+    <p>A graphical model is a class of statistical models that can be
+    represented by a mathematical graph which in turn can be used to
+    identify conditional independence properties. This task view is a
+    collection of packages intended to supply R code to deal with
+    graphical models. If you think that some package is missing from the
+    list, please <a href="mailto:aas.claus.dethlefsen@nja.dk">notify me</a>. 
+    
+    The packages can be roughly structured into the following topics:
+    <ul>
+      <li><i>Representation of graphs</i>: <pkg>mathgraph</pkg>
+          implements matrix representations of graphs and provide a plot function.
+          <!-- <pkg>giRaph</pkg> is an S4 implementation of 4 common
+          representations of graphs--></li>
+      <li><i>Display and interaction</i>: <pkg>dynamicGraph</pkg>
+          uses Tcl/Tk (cross-platform) to provide an advanced graphical user
+	  interface for display and interaction with graphs. The package is
+	  used as front-end to other graphical model packages.</li>
+      <li><i>"Classical" Models</i>: <pkg>gRbase</pkg> sets up (meta) data
+          representation and suggests a way to implement models and fitting
+          engines -- illustrated by hierarchical log-linear models;
+          <pkg>CoCo</pkg> is an advanced suite of functions for
+          contingency tabels (and much more); <pkg>mimR</pkg> provides an
+	  interface to MIM (Mixed Interaction Models) and only runs on Windows;
+	  <pkg>SIN</pkg> provides model selection of Gaussian graphical Markov models;
+	  <pkg>ggm</pkg> fitting graphical Gaussian models.</li>
+      <li><i>Bayesian networks</i>: <pkg>deal</pkg> is a package for learning
+          Bayesian networks.</li>
+      <li><i>BUGS models</i>: The following packages adds functions to
+          support the BUGS and JAGS programs: <pkg>bayesmix</pkg>, <pkg>boa</pkg>,
+	  <pkg>coda</pkg>, <pkg>rbugs</pkg>, <pkg>R2WinBUGS</pkg>.</li>
+    </ul>
+  </info>
+
+  <packagelist>
+    <pkg>CoCo</pkg>
+    <pkg>bayesmix</pkg>
+    <pkg>boa</pkg>
+    <pkg>coda</pkg>
+    <pkg>deal</pkg>
+    <pkg priority="core">dynamicGraph</pkg>
+    <pkg>ggm</pkg>
+    <pkg priority="core">gRbase</pkg>
+    <pkg>mathgraph</pkg>
+    <pkg>mimR</pkg>
+    <pkg>R2WinBUGS</pkg>
+    <pkg>rbugs</pkg>
+    <pkg>SIN</pkg>
+  </packagelist>
+
+  <links>
+    <a href="http://www.r-project.org/gR/">gR homepage and mailinglist</a>
+    <a href="http://www.bioconductor.org/">Bioconductor</a>
+    <a href="http://www-fis.iarc.fr/~martyn/software/jags/">JAGS</a>
+    <a href="http://mathstat.helsinki.fi/openbugs/">OpenBUGS</a>
+    <a href="http://www.hypergraph.dk/">MIM</a>
+    <a href="http://www.cs.ubc.ca/~murphyk/Software/BNT/bnsoft.html">Bayes Net Toolbox (for MATLAB)</a>
+    <a href="http://www.biostat.mcw.edu/software/digram.html">DIGRAM</a>
+    <a href="http://www.phil.cmu.edu/projects/tetrad/">TETRAD</a>
+    <a href="http://www.stats.bris.ac.uk/~peter/Grappa/">Grappa</a>
+    <a href="http://www.statistik.uni-dortmund.de/~ligges/BRugs/">BRugs: an R interface to OpenBUGS</a>
+  </links>
+
+</CRANTaskView>

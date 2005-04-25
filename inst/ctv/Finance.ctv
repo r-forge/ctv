@@ -80,7 +80,6 @@
     <pkg>evir</pkg>
     <pkg>extRemes</pkg>
     <pkg>dse</pkg>
-    <pkg>dse</pkg>
     <pkg priority="core">fBasics</pkg>
     <pkg priority="core">fCalendar</pkg>
     <pkg priority="core">fExtremes</pkg>
@@ -105,12 +104,10 @@
   </packagelist>
 
   <links>
-    <a href="http://cran.r-project.org/src/contrib/Views/Econometrics.html">CRAN
-    Task View for Econometrics </a>
-    <a href="http://www.rmetrics.org">Rmetrics by Diethelm Wuertz contains a
-    wealth of R code for Finance</a> 
-    <a href="http://www.quantlib.org">Quantlib is a C++ library for
-    quantitative finance</a>
+    <view>Econometrics</view>
+    <a href="http://www.rmetrics.org">Rmetrics by Diethelm Wuertz contains a wealth of R code for Finance</a> 
+    <a href="http://www.quantlib.org">Quantlib is a C++ library for quantitative finance</a>
+    <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing list: R Special Interest Group Finance</a>
   </links>
 
 </CRANTaskView>
