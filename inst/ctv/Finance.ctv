@@ -32,7 +32,7 @@
           are provided by the <pkg>car</pkg>, <pkg>lmtest</pkg>,
           <pkg>strucchange</pkg>, <pkg>urca</pkg>, <pkg>uroot</pkg>,
 	  and <pkg>sandwich</pkg> packages. The <pkg>Rcmdr</pkg> and 
-          <pkg>zelig</pkg> packages provide user interfaces that may be of
+          <pkg>Zelig</pkg> packages provide user interfaces that may be of
           interest as well.</li>
       <li><i>Time series</i>: Classical time series functionality is provided
           by the <tt>arima()</tt> and <tt>KalmanLike()</tt>commands in the
@@ -76,7 +76,7 @@
     <pkg>car</pkg>
     <pkg>dse</pkg>
     <pkg>evd</pkg>
-    <pkg>evdBayes</pkg>
+    <pkg>evdbayes</pkg>
     <pkg>evir</pkg>
     <pkg>extRemes</pkg>
     <pkg>dse</pkg>
@@ -99,7 +99,7 @@
     <pkg priority="core">urca</pkg>
     <pkg>uroot</pkg>
     <pkg>VaR</pkg>
-    <pkg>zelig</pkg>
+    <pkg>Zelig</pkg>
     <pkg priority="core">zoo</pkg>    
   </packagelist>
 
