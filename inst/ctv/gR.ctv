@@ -5,12 +5,12 @@
   <maintainer>Claus Dethlefsen</maintainer>
   
   <info>
-    <p>A graphical model is a class of statistical models that can be
+    A graphical model is a class of statistical models that can be
     represented by a mathematical graph which in turn can be used to
     identify conditional independence properties. This task view is a
     collection of packages intended to supply R code to deal with
     graphical models. If you think that some package is missing from the
-    list, please <a href="mailto:aas.claus.dethlefsen@nja.dk">notify me</a>. 
+    list, please <a href="mailto:aas.claus.dethlefsen@nja.dk">notify me</a>.
     
     The packages can be roughly structured into the following topics:
     <ul>
