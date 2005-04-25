@@ -36,7 +36,8 @@
 	  <pkg>zicounts</pkg>. Basic censored regression models (e.g., tobit models)
 	  can be fitted by <tt>survreg()</tt> in <pkg>survival</pkg>.	  
 	  Further more refined tools for microecnometrics are provided in
-	  <pkg>micEcon</pkg>.</li>
+	  <pkg>micEcon</pkg>. The package <pkg>bayesm</pkg> implements a Bayesian
+	  approach to microeconometrics and marketing.</li>
       <li><i>Further regression models</i>: Various extensions of the linear regression
           model and other model fitting techniques are available in base R and several
 	  CRAN packages. Nonlinear least squares modelling is availble in <tt>nls()</tt>
@@ -83,6 +84,7 @@
   </info>
 
   <packagelist>
+    <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
     <pkg priority="core">car</pkg>
     <pkg>Design</pkg>
