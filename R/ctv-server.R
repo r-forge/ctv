@@ -208,12 +208,19 @@ updateViews <- function(repos = ".",
 	     "",
 	     "<body>",
        paste("<h1>", reposname, " Task Views</h1>", sep = ""),
-	     ## add some instructions how to call install.views()
 	     "",
 	     "<table>",
 	     apply(idx, 1, function(x) paste("  <tr valign=\"top\">\n    <td><a href=\"",
 	       x[1], ".html\">", x[1], "</a></td>\n    <td>", gsub("&", "&amp;", x[2]), "</td>\n  </tr>", sep = "")),
-	     "</table>", "", "</body>", "</html>")
+	     "</table>",
+	     "",
+             "<p>To automatically install these views, the ctv package needs to be installed, e.g., via<br>",
+	     "   <tt>install.packages(\"ctv\")</tt><br>",
+	     "   and then the views can be installed via <tt>install.views</tt> (after loading ctv), e.g.,<br>",
+	     "   <tt>install.views(\"Econometrics\")</tt></p>",
+	     "",
+	     "</body>",
+	     "</html>")
     writeLines(idx, con = index)
   }  
   
