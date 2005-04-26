@@ -79,7 +79,6 @@
     <pkg>evdbayes</pkg>
     <pkg>evir</pkg>
     <pkg>extRemes</pkg>
-    <pkg>dse</pkg>
     <pkg priority="core">fBasics</pkg>
     <pkg priority="core">fCalendar</pkg>
     <pkg priority="core">fExtremes</pkg>

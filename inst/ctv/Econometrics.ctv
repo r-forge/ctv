@@ -49,7 +49,7 @@
 	  and <pkg>MNP</pkg> (Bayesian multinomial probit models). The packages	  
 	  <pkg>Design</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
 	  handling of (generalized) linear regression models.</li>	  	 	  
-      <li><i>Basic time series functionality</i>: The class <tt>"ts"</tt> in package
+      <li><i>Basic time series infrastructure</i>: The class <tt>"ts"</tt> in package
           stats is R's standard class for regularly spaced time series which can be
 	  coerced back and forth without loss of information to <tt>"zooreg"</tt>
 	  from package <pkg>zoo</pkg>. <pkg>zoo</pkg> provides infrastructure for
@@ -66,7 +66,7 @@
 	  for time series filtering and decomposition. A convenient interface for fitting
 	  dynamic regression models via OLS is available in <pkg>dynlm</pkg>. More advanced
 	  dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root and cointegration
-	  techniques are available in <pkg>urca</pkg> and <pkg>tseries</pkg>.</li>
+	  techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and <pkg>tseries</pkg>.</li>
       <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
           ships with many powerful tools for doing matrix manipulations, which are 
 	  complemented by the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
@@ -109,6 +109,7 @@
     <pkg>systemfit</pkg>
     <pkg priority="core">tseries</pkg>
     <pkg priority="core">urca</pkg>
+    <pkg>uroot</pkg>
     <pkg>VR</pkg>
     <pkg>zicounts</pkg>
     <pkg priority="core">zoo</pkg>    
