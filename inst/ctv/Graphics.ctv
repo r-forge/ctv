@@ -1,0 +1,106 @@
+<CRANTaskView>
+
+  <name>Graphics</name>
+  <topic>Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp;  
+   Visualization </topic>
+  <maintainer>Nicholas Lewin-Koh</maintainer>
+  
+  <info>
+    R is rich with facilities for creating and developing interesting graphics.
+    Base R contains functionality for many plot types including coplots, 
+    mosaic plots, biplots, and the list goes on. There are devices such as 
+    postscript, png, jpeg and pdf for outputting graphics as well as device
+    drivers for all platforms running R. <pkg>lattice</pkg> and 
+    <pkg> grid</pkg> are supplied with R's reccomended packages and are 
+    usually there in a basic installation. <pkg>lattice</pkg> is an R 
+    implementation of Willaim Cleveland's trellis graphics, while grid 
+    defines a much more flexible graphics environment than the base R graphics.
+    
+    The graphics packages in R can be organized roughly, categories are not 
+    mutually exclusive, into the following topics:
+    <ul>
+      <li><i>Plotting</i>: <pkg>lattice</pkg> is built on top of the <pkg>grid</pkg>
+          graphics system and is an R implementation of Willaim Cleveland's trellis
+	  system for S-PLUS. <pkg>lattice</pkg> allows building of many plot types
+	  with sophisticated layouts based on conditioning. For 3d plots <pkg>lattice</pkg>,
+	  <pkg>scatterplot3d</pkg> and <pkg>misc3d</pkg> provide a selcetion of plots for
+	  different kinds of 3d plotting. <pkg>scatterplot3d</pkg> is based on R's base
+	  graphics system, while <pkg>misc3d</pkg> is based on <pkg>rgl</pkg>.
+	  Further enhancements for specialized plots can be found in <pkg>plotrix</pkg>,
+	  for polar plotting, <pkg>vcd</pkg> for categorical data, <pkg>hexbin</pkg>
+	  <!-- FIXME: hexagon not on CRAN -->
+	  for hexagon binning, and <pkg>gplots</pkg> from the <pkg>gregmisc</pkg> bundle
+	  for some plotting enhancements</li>
+      <li><i>Applications</i>: This area is not much different from the plotting section
+          except that these packages focus on particular applications. The <pkg>gclus</pkg>
+	  package focuses on the ordering of graphs to accentuate cluster structure or natrual
+	  ordering in the data. <pkg>klaR</pkg> focuses on classification methods and how to
+	  visualize the seperation in high dimensional spaces. <pkg>ape</pkg> has functions
+	  for plotting phylogenetic trees, and <pkg>LDheatmap</pkg> does specialized plotting
+	  for linkage disequilibrium in genetic trait mapping applications.</li>
+      <li><i>Devices </i>: Whereas <pkg>grid</pkg> is built on top of the R graphics engine,
+          many in the R community are fed up with the lack of flexibility in the base R graphics
+	  engine and have written seperate device drivers that either emphasize interactivity or
+	  plotting in various graphics formats. R base supplies devices for postscript, pdf, jpeg
+	  and other formats. Devices on CRAN include <pkg>gtkDevice</pkg> which is a device based
+	  on GTK (The Gimp Toolkit), an open source graphics tool kit. <pkg>gtkDevice</pkg>
+	  interfaces well with the <a href="http://www.omegahat.org/RGtk/">RGtk</a> package on the
+	  <a href="http://www.omegahat.org/">Omeghat</a> site.
+	  <pkg>GDD</pkg> provides device drivers for several bitmap formats, including gif and bmp.
+	  <pkg>RSvgDevice</pkg> is an SVG device driver and interfaces will with vector drawing
+	  programs. <pkg>rgl</pkg> provides a device driver based on OpenGL, and is good for 3D
+	  and interactive development. Lastly, the Augsburg group supplies a set of packages that
+	  includes a Java-based device.</li>
+      <li><i>Colors</i>: There are three main packages dealing with color, <pkg>colorspace</pkg>
+          which provides a set of functions for transformaing between colorspaces and mixcolor for
+	  mixing colors within a colorspace. <pkg>RColorBrewer</pkg>, and <pkg>dichromat</pkg>
+	  provide specialized palates, <pkg>dichromat</pkg> is focused on the color impaired.</li>
+      <li><i>Dynamic Graphics</i>: There are several efforts to implement dynamic graphics systems
+          that interface well with R. RGgobi embeds the Ggobi interactive graphics sytem within R,
+	  so that one can display a data frame or several in ggobi directly from R. RoSuDA R packages
+	  from the University of Augsburg group has two packages, iplots and iwidgets as well as
+	  their Java development environment including a java device. Lastly, the <pkg>rgl</pkg>
+	  package has mehcanisms for interactive manipulation of plots.</li>
+      <li><i>Development</i>: For development of of specialized graphics packages in R <pkg>grid</pkg>
+          should probably be the first condieration for any new plot type. <pkg>rgl</pkg> has most
+	  tools for 3D graphics, though it can be slow. An alternative is to use Java and the java
+	  device in the RoSuDA packages, though Java has its own drawbacks. For porting plotting
+	  code to <pkg>grid</pkg>, using the package <pkg>gridBase</pkg> presents a nice intermediate
+	  step to embed base garhics in grid graphics and vice versa.</li>
+    </ul>
+  </info>
+
+  <packagelist>
+    <pkg>ape</pkg>
+    <pkg priority="core">colorspace</pkg> 
+    <pkg>dichromat</pkg>
+    <pkg>gclus</pkg> 
+    <pkg>GDD</pkg> 
+    <pkg>gplots</pkg>
+    <pkg>gridBase</pkg> 
+    <pkg>gtkDevice</pkg> 
+    <pkg>IDPmisc</pkg> 
+    <pkg>klaR</pkg> 
+    <pkg priority="core">lattice</pkg>  
+    <pkg>latticeExtra</pkg> 
+    <pkg>LDheatmap</pkg>
+    <pkg>misc3d</pkg>
+    <pkg>plotrix</pkg> 
+    <pkg priority="core">RColorBrewer</pkg> 
+    <pkg priority="core">rgl</pkg> 
+    <pkg>RGrace</pkg> 
+    <pkg>RGraphics</pkg> 
+    <pkg>RSvgDevice</pkg> 
+    <pkg>tkrplot</pkg> 
+    <pkg priority="core">vcd</pkg> 
+    <pkg>vioplot</pkg> 
+  </packagelist>
+
+  <links>
+    <a href="http://AddictedToR.free.fr/graphiques/">R Graph Gallery</a>
+    <a href="http://www.stat.auckland.ac.nz/~paul/">Paul Murrell's home page</a>
+    <a href="http://stats.math.uni-augsburg.de/R/">RoSuDA R packages</a>
+    <a href="http://www.ggobi.org">Ggobi Data Visualization System</a>
+  </links>
+
+</CRANTaskView>
