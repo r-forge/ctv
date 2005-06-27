@@ -33,11 +33,14 @@
 	  for modelling choice data and poisson models for count data. Negative 
 	  binomial GLMs are available via <tt>glm.nb()</tt> in package MASS from
 	  the <pkg>VR</pkg> bundle. Zero-inflated count models are provided in 
-	  <pkg>zicounts</pkg>. Basic censored regression models (e.g., tobit models)
+	  <pkg>zicounts</pkg>. Further over-dispersed and inflated models, including
+	  hurdle models, are available in package <pkg>pscl</pkg>.	  
+	  Basic censored regression models (e.g., tobit models)
 	  can be fitted by <tt>survreg()</tt> in <pkg>survival</pkg>.	  
 	  Further more refined tools for microecnometrics are provided in
 	  <pkg>micEcon</pkg>. The package <pkg>bayesm</pkg> implements a Bayesian
-	  approach to microeconometrics and marketing.</li>
+	  approach to microeconometrics and marketing. Inference for relative
+	  distributions is contained in package <pkg>reldist</pkg>.</li>
       <li><i>Further regression models</i>: Various extensions of the linear regression
           model and other model fitting techniques are available in base R and several
 	  CRAN packages. Nonlinear least squares modelling is availble in <tt>nls()</tt>
@@ -79,7 +82,7 @@
       <li><i>Data sets</i>: Many of the packages in this view contain collections of
           data sets from the econometric literature and the package <pkg>Ecdat</pkg>
 	  contains a complete collection of data sets from various standard econometric
-	  textbooks.</li>
+	  textbooks. Package <pkg>pwt</pkg> provides the Penn world table.</li>
     </ul>    
   </info>
 
@@ -100,7 +103,10 @@
     <pkg>micEcon</pkg>
     <pkg>MNP</pkg>
     <pkg>nlme</pkg>
+    <pkg>pscl</pkg>
+    <pkg>pwt</pkg>
     <pkg>quantreg</pkg>
+    <pkg>reldist</pkg>
     <pkg priority="core">sandwich</pkg>
     <pkg>segmented</pkg>
     <pkg>sem</pkg>
