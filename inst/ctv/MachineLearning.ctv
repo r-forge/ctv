@@ -27,12 +27,19 @@
              the package <pkg>LogicReg</pkg> implements logic regression.
              Graphical tools for the visualization of
              trees are available in packages <pkg>maptree</pkg> and 
-             <pkg>pinktoe</pkg>.</li>
+             <pkg>pinktoe</pkg>. A recursive partitioning algorithm based on
+             conditional inference procedures with unbiased variable
+             selection and statistical stopping criterion is implemented in package
+             <pkg>party</pkg>. Extensible tools for visualizing binary trees are 
+             available as well.</li>
       <li><i>Regularized and Shrinkage Methods</i>: Regression models with some
              constraint on the parameter estimates can be fitted with the
-             <pkg>lasso2</pkg> and <pkg>lars</pkg> packages. The shrunken
+             <pkg>lasso2</pkg> and <pkg>lars</pkg> packages. The solutions
+             for all values of the shrinkage parameter can be simultaneously 
+             computed using the functionality in package <pkg>elasticnet</pkg>.
+             The shrunken
              centroids classifier and utilities for gene expression analyses are
-             implemented in package <pkg>pamr</pkg>.</li>
+             implemented in package <pkg>pamr</pkg>.</li> 
       <li><i>Random Forests</i>: The reference implementation of the random
              forest algorithm for regression and classification is available in 
              package <pkg>randomForest</pkg>. Package <pkg>ipred</pkg> has bagging
@@ -48,6 +55,12 @@
 	     learning algorithms). An interface to the SVMlight implementation
 	     (only for one-against-all classification) is provided in package
 	     <pkg>klaR</pkg>.</li>
+      <li><i>Association Rules</i>: For transaction data, the package
+             <pkg>arules</pkg> provides both data structures for efficient
+             handling of sparse binary data as well as interfaces to
+             implementations of Apriori and Eclat for mining
+             frequent itemsets, maximal frequent itemsets, closed frequent itemsets
+             and association rules.</li>
       <li><i>Model selection and validation</i>: Package <pkg>e1071</pkg>
              has function <tt>tune()</tt> for hyper parameter tuning and 
              function <tt>errorest()</tt> (<pkg>ipred</pkg>) can be used for
@@ -58,8 +71,10 @@
   </info>
 
   <packagelist>
+    <pkg>arules</pkg>
     <pkg>boost</pkg>
     <pkg priority="core">e1071</pkg>
+    <pkg>elasticnet</pkg>
     <pkg priority="core">gbm</pkg>
     <pkg>ipred</pkg>
     <pkg priority="core">kernlab</pkg>
@@ -68,6 +83,7 @@
     <pkg>lasso2</pkg>
     <pkg>mvpart</pkg>
     <pkg>pamr</pkg>
+    <pkg>party</pkg>
     <pkg>rpart.permutation</pkg>
     <pkg priority="core">randomForest</pkg>
     <pkg priority="core">rpart</pkg>
