@@ -55,12 +55,12 @@
 	     learning algorithms). An interface to the SVMlight implementation
 	     (only for one-against-all classification) is provided in package
 	     <pkg>klaR</pkg>.</li>
-      <li><i>Association Rules</i>: For transaction data, the package
+      <li><i>Association Rules</i>: Package
              <pkg>arules</pkg> provides both data structures for efficient
              handling of sparse binary data as well as interfaces to
              implementations of Apriori and Eclat for mining
-             frequent itemsets, maximal frequent itemsets, closed frequent itemsets
-             and association rules.</li>
+             frequent itemsets, maximal frequent itemsets, closed 
+             frequent itemsets and association rules.</li>
       <li><i>Model selection and validation</i>: Package <pkg>e1071</pkg>
              has function <tt>tune()</tt> for hyper parameter tuning and 
              function <tt>errorest()</tt> (<pkg>ipred</pkg>) can be used for
