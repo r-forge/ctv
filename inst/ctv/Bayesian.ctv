@@ -19,9 +19,11 @@
     methods in Bayesian statistics.  This is followed by a description
     of packages used for post-estimation analysis.  Finally, we review
     packages that link R to other Bayesian sampling engines such as
-    JAGS, OpenBUGS, and WinBUGS.</p>
+    <a href="http://www-fis.iarc.fr/~martyn/software/jags/" target="_top">JAGS</a>,
+    <a href="http://mathstat.helsinki.fi/openbugs/" target="_top">OpenBUGS</a>, and
+    <a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a>.</p>
     
-    <p> This is a preliminary task view, and we have likely missed some
+    <p>This is a preliminary task view, and we have likely missed some
     important information.  Please email the
     <a href="mailto:jhpark@artsci.wustl.edu?subject=Bayesian%20Task%20View">task view maintainer</a>
     with any feedback.</p>
@@ -99,7 +101,7 @@
     and spatial prediction for the binomial spatial model (see the
     <view>Spatial</view> view for more information). 
     
-    The <pkg>MNP</pkg> package fits multinomial probit model using MCMC methods.
+    The <pkg>MNP</pkg> package fits multinomial probit models using MCMC methods.
     
     The <tt>vcov.gam()</tt> function the <pkg>mgcv</pkg> package can
     extract a Bayesian posterior covariance matrix of the parameters
@@ -109,8 +111,7 @@
     for a Gaussian mixture model using a variational approach.
     </li>
     
-    <li><em>Post-estimation tools</em>:
-    
+    <li><em>Post-estimation tools</em>:    
     The <pkg>boa</pkg> package provides functions for diagnostics,
     summarization, and visualization of MCMC sequences.  It imports
     draws from BUGS format, or from plain matrices. <pkg>boa</pkg>
@@ -133,20 +134,18 @@
 
     <li><em>Packages that link R to other sampling engines</em>:
     
-    <pkg>bayesmix</pkg> is an R package to fit Bayesian mixture models
-    using <a  href="http://www-fis.iarc.fr/~martyn/software/jags/"
-    target="_blank">JAGS</a>.
+    <pkg>bayesmix</pkg> is an R package to fit Bayesian mixture models using
+    <a href="http://www-fis.iarc.fr/~martyn/software/jags/" target="_top">JAGS</a>.
     
-    <pkg>BRugs</pkg> provides an R interface on Windows machines to <a
-    href="http://mathstat.helsinki.fi/openbugs/"
-    target="_blank">OpenBUGS</a>.
+    <pkg>BRugs</pkg> provides an R interface on Windows machines to
+    <a href="http://mathstat.helsinki.fi/openbugs/" target="_top">OpenBUGS</a>.
     
-    There are two packages that can be used to interface R with <a
-    href="http://www.mrc-bsu.cam.ac.uk/bugs/"
-    target="_blank">WinBUGS</a>. <pkg>R2WinBUGS</pkg> provides a set of
+    There are two packages that can be used to interface R with
+    <a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a>.
+    <pkg>R2WinBUGS</pkg> provides a set of
     functions to call WinBUGS on a Windows system;  <pkg>rbugs</pkg>
-    supports Linux systems by running WinBUGS through <a
-    href="http://www.winehq.com/" target="_blank">WINE</a>.
+    supports Linux systems by running WinBUGS through
+    <a href="http://www.winehq.com/" target="_top">WINE</a>.
     
     All of these BUGS engines use graphical models for model
     specification.  As such, the <view>gR</view> task view may be of
@@ -192,14 +191,14 @@
     </packagelist>
 
     <links>
-    <a href="http://mcmcpack.wustl.edu/" target="_blank">MCMCpack</a>
-    <a href="http://gsbwww.uchicago.edu/fac/peter.rossi/research/bsm.html" target="_blank">Bayesian Statistics and Marketing (bayesm)</a>
-    <a href="http://www-fis.iarc.fr/~martyn/software/jags/" target="_blank">Just Another Gibbs Sampler (JAGS)</a>
-    <a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_blank">The BUGS Project (WinBUGS)</a>
-    <a href="http://mathstat.helsinki.fi/openbugs/" target="_blank">OpenBUGS</a>
+    <a href="http://mcmcpack.wustl.edu/" target="_top">MCMCpack</a>
+    <a href="http://gsbwww.uchicago.edu/fac/peter.rossi/research/bsm.html" target="_top">Bayesian Statistics and Marketing (bayesm)</a>
+    <a href="http://www-fis.iarc.fr/~martyn/software/jags/" target="_top">Just Another Gibbs Sampler (JAGS)</a>
+    <a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">The BUGS Project (WinBUGS)</a>
+    <a href="http://mathstat.helsinki.fi/openbugs/" target="_top">OpenBUGS</a>
     <view>gR</view>
-    <a href="http://www.public-health.uiowa.edu/boa/" target="_blank">BOA</a>
-    <a href="http://www-fis.iarc.fr/coda/" target="_blank">CODA</a>
+    <a href="http://www.public-health.uiowa.edu/boa/" target="_top">BOA</a>
+    <a href="http://www-fis.iarc.fr/coda/" target="_top">CODA</a>
     </links>
 
 </CRANTaskView>

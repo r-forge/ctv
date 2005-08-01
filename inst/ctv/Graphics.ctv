@@ -11,7 +11,7 @@
     mosaic plots, biplots, and the list goes on. There are devices such as 
     postscript, png, jpeg and pdf for outputting graphics as well as device
     drivers for all platforms running R. <pkg>lattice</pkg> and 
-    <pkg> grid</pkg> are supplied with R's reccomended packages and are 
+    <pkg>grid</pkg> are supplied with R's reccomended packages and are 
     usually there in a basic installation. <pkg>lattice</pkg> is an R 
     implementation of Willaim Cleveland's trellis graphics, while grid 
     defines a much more flexible graphics environment than the base R graphics.
