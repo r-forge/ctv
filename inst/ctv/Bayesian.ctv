@@ -56,12 +56,13 @@
     </li>  
 
     <li><em>Bayesian packages for specific models or methods</em>:
+    The <pkg>baymvb</pkg> package fits multivariate binary regression models (multivariate probit or multivariate t-link models) using posterior simulation.
+    
     <pkg>bqtl</pkg> can be used to fit quantitative trait loci (QTL)
     models. This package allows Bayesian estimation of multi-gene models
     via Laplace approximations and provides tools for interval mapping of 
     genetic loci. <pkg>bim</pkg> provides a function for Bayesian interval
-    mapping using MCMC methods.  Both of
-    these packages contain graphical tools for QTL analysis.
+    mapping using MCMC methods.  Both of these packages contain graphical tools for QTL analysis.
     
     The <pkg>BMA</pkg> package has functions for Bayesian model
     averaging for linear models, generalized linear models, and survival
@@ -160,12 +161,17 @@
   <a href="mailto:jhpark@artsci.wustl.edu?subject=Bayesian%20Task%20View">task view maintainer</a>
   with suggestions.</p>
  
+ <p>
+ Last Update: Tue Aug 23 09:26:49 2005
+ </p>
+ 
   </info>
 
   <packagelist>
     <pkg priority="core">bayesm</pkg>
     <pkg>bayesmix</pkg>
     <pkg priority="core">bayesSurv</pkg>
+    <pkg>baymvb</pkg> 
     <pkg>bim</pkg>
     <pkg>BMA</pkg>
     <pkg priority="core">boa</pkg>
@@ -202,4 +208,5 @@
     </links>
 
 </CRANTaskView>
+
 
