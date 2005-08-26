@@ -102,6 +102,9 @@
     and spatial prediction for the binomial spatial model (see the
     <view>Spatial</view> view for more information). 
     
+    The <tt>mcmcsamp()</tt> function in <pkg>lme4</pkg> allows 
+    MCMC sampling for the linear mixed model and generalized linear mixed model.   
+    
     The <pkg>MNP</pkg> package fits multinomial probit models using MCMC methods.
     
     The <tt>vcov.gam()</tt> function the <pkg>mgcv</pkg> package can
@@ -162,7 +165,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Tue Aug 23 09:26:49 2005
+ Last Update: Thu Aug 25 18:57:26 2005
  </p>
  
   </info>
@@ -186,6 +189,7 @@
     <pkg>geoR</pkg>
     <pkg>geoRglm</pkg>
     <pkg>Hmisc</pkg>
+    <pkg>lme4</pkg>
     <pkg>mcgibbsit</pkg>
     <pkg priority="core">mcmc</pkg>
     <pkg priority="core">MCMCpack</pkg>
