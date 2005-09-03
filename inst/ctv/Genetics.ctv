@@ -1,0 +1,84 @@
+<CRANTaskView>
+
+  <name>Genetics</name>
+  <topic>Statistical Genetics</topic>
+  <maintainer>Giovanni Montana</maintainer>
+  
+  <info>
+    
+    <p>
+    Great advances have been made in the field of genetic analysis over the last years. The availability of millions
+    of single nucleotide polymorphisms (SNPs) in widely available databases, coupled with major advances in SNP genotyping
+    technology that reduce costs and increase throughput, are enabling a host of studies aimed at elucidating the genetic basis
+    of complex disease. The focus in this task view is on R packages implementing statistical methods and algorithms for the
+    analysis of genetic data, an area known as <i>statistical genetics</i>, and for related population genetics
+    studies.
+    </p>
+    
+    <p>
+    A number of R packages are already available and many more are most likely to be developed in the near future.
+    Please send suggestions for additions and extensions to the task view maintainer. 
+    </p>
+    
+    <ul>
+            
+      <li><i>Population Genetics</i>:
+      <pkg>genetics</pkg> implements classes and methods for representing genotype and haplotype data, and has several
+      functions for population genetic analysis (e.g. functions for estimation and testing of Hardy-Weinberg and linkage
+      disequilibria, etc.). <pkg>Geneland</pkg> has functions for detecting spatial structures from genetic data
+      via MCMC estimation. <pkg>rmetasim</pkg> provides an interface to the metasim engine
+      for population genetics simulations. <pkg>hapsim</pkg> simulates haplotype data with pre-specified
+      allele frequencies and LD patterns. A few population genetics functions are also implemeted in <pkg>gap</pkg>. 
+      </li>
+      
+      <li><i>Linkage, LD and haplotype mapping</i>: 
+      Packages in this category provide statistical methods to test associations between genetic markers 
+      and a phenotype. <pkg>gap</pkg> is a package for genetic data analysis of both population and family data;
+	it contains functions for sample size calculations, probability of familial disease aggregation, kinship calculation,
+	and some tests for linkage and association analyses. Among the other functions, <tt>genecounting</tt>
+	estimates haplotype frequencies from genotype data, and <tt>gcontrol</tt> implements a Bayesian genomic
+	control statistics for association studies. 
+	The package <pkg>hapassoc</pkg> performs likelihood inference of trait associations with haplotypes
+      in GLMs. Packages <pkg>haplo.score</pkg> and <pkg>haplo.stats</pkg> offer several
+      score tests for a wide variety of traits (e.g. binary, ordinal, quantitative, and Poisson). 
+      <pkg>haplo.stats</pkg> has a function <tt>haplo.em</tt> for maximum likelihood estimation of haplotype probabilities.
+      All packages above work when haplotype phase is uncertain. <pkg>tdthap</pkg> implements 
+      transmission/disequilibrium tests for extended marker haplotypes. 
+      </li> 
+	
+      <li><i>QTL mapping</i>:
+      Packages in this category develop methods for the analysis of experimental crosses
+       to identify markers contributing to variation in quantitative traits. 
+       <pkg>bqtl</pkg> implement both likelihood-based and Bayesian methods for inbred crosses and recombinant inbred
+       lines. <pkg>qtl</pkg> provides several functions and a data structure for QTL mapping, including
+       a function <tt>scanone</tt> for genome-wide scans. The package <pkg>qtlDesign</pkg> has functions for
+        designing QTL experiments, including power computations.
+      </li>         	
+    
+    </ul>
+
+  </info>
+
+  <packagelist>
+    <pkg>bqtl</pkg> 
+    <pkg priority="core">genetics</pkg>
+    <pkg priority="core">gap</pkg>
+    <pkg>Geneland</pkg>
+    <pkg>hapassoc</pkg>
+    <pkg>haplo.score</pkg>
+    <pkg priority="core">haplo.stats</pkg>
+    <pkg>hapsim</pkg>
+    <pkg>qtl</pkg>
+    <pkg>qtlDesign</pkg>
+    <pkg>rmetasim</pkg>
+  </packagelist>
+
+  <links>
+    <a href="http://www.stats.ox.ac.uk/~marchini/software/popgen/">popgen package</a>
+    <a href="http://research.warnes.net/projects/RGeneticsProject/">R Genetics Project</a>
+    <a href="http://linkage.rockefeller.edu/yyang/resources.html">R code for estimating haplotype frequencies from pooled DNA samples</a>
+    <a href="http://www.ucl.ac.uk/~rmjdjhz/software.htm">Computer programs by Jing Hua Zhao</a>(some are included in the gap package)
+    <a href="http://linkage.rockefeller.edu/soft/">An Alphabetic List of Genetic Analysis Software</a> 
+  </links>
+
+</CRANTaskView>
