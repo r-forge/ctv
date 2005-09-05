@@ -10,7 +10,9 @@
     functionality is complemented by many packages on CRAN, a brief overview
     is given below. There is also a considerable overlap between the tools
     for econometrics in this view and finance in the <view>Finance</view> view.
-    Furthermore, the finance SIG (see links below) is a suitable mailing list for obtaining help
+    Furthermore, the 
+    <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">finance SIG</a>    
+    is a suitable mailing list for obtaining help
     and discussing questions about both computational finance and econometrics.
     
     The packages in this view can be roughly structured into the following topics.
@@ -67,7 +69,9 @@
 	  and Box-Jenkins-type analysis. Furthermore stats provides <tt>StructTS()</tt>
 	  for fitting structural time series and <tt>decompose()</tt> and <tt>HoltWinters()</tt>
 	  for time series filtering and decomposition. A convenient interface for fitting
-	  dynamic regression models via OLS is available in <pkg>dynlm</pkg>. More advanced
+	  dynamic regression models via OLS is available in <pkg>dynlm</pkg>; a different approach
+	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.	  
+	  More advanced
 	  dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root and cointegration
 	  techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and <pkg>tseries</pkg>.</li>
       <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
@@ -92,6 +96,7 @@
     <pkg priority="core">car</pkg>
     <pkg>Design</pkg>
     <pkg>dse</pkg>
+    <pkg>dyn</pkg>
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
     <pkg>fCalendar</pkg>

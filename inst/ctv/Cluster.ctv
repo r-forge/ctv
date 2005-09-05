@@ -1,0 +1,141 @@
+<CRANTaskView>
+
+<name>Cluster</name>
+<topic>Cluster Analysis &amp; Finite Mixture Models</topic>
+<maintainer>Friedrich Leisch</maintainer>
+  
+<info> This CRAN Task View contains a list of packages that can be
+used for finding groups in data and modelling unobserved
+cross-sectional heterogeneity. Many packages provide functionality for
+more than one of the topics listed below, the section headings are
+mainly meant as quick starting points rather than an ultimate
+categorization. Except for packages stats and cluster (which ship with
+base R and hence are part of every R installation), each package is
+listed only once.
+
+<p>
+<strong>Hierarchical Clustering:</strong>
+<ul>
+  <li>
+  Functions <tt>hclust()</tt> from package stats and
+  <tt>agnes()</tt> from <pkg>cluster</pkg> are the
+  primary functions for agglomerative hierarchical clustering,
+  function <tt>diana()</tt> can be
+  used for divisive hierarchical clustering. 
+  </li>
+  <li>
+      Function <tt>dendrogram()</tt> from stats and associated methods can
+  be used for improved visualization for cluster dendrograms.
+  </li>
+  <li><pkg>pvclust</pkg> is a package for assessing the uncertainty in
+  hierarchical cluster analysis. It provides approximately
+  unbiased p-values as well as boostrap p-values.</li>
+</ul>
+</p>
+  
+<p><strong>Partitioning Clustering:</strong>
+<ul>
+  <li>Function <tt>kmeans()</tt> from package stats provides
+  several algorithms
+  for computing partitions with respect to
+  Euclidean distance.</li>
+  <li>Function <tt>pam()</tt> from package <pkg>cluster</pkg> implements
+  partitioning around medoids and can work with arbitray
+  distances. Function <tt>clara()</tt> is a
+  wrapper to <tt>pam()</tt> for larger data sets. Silhouette plots
+  and spanning ellipses can be used for visualization.
+  </li>
+  <li>Package <pkg>flexclust</pkg> provides k-centroid cluster
+  algorithms for arbitrary distance measures, hard competitive
+  learning, neural gas and QT clustering. Neighborhood graphs and
+  image plots of partitions are available for visualization.
+  </li>
+</ul>
+</p>
+  
+<p><strong>Model-based Clustering:</strong>
+<ul>
+  <li>Package <pkg>mclust</pkg> fits mixtures of Gaussians using the EM
+  algorithm. It allows fine control of volume and shape of
+  covariance matrices and agglomerative hierarchical clustering
+  based on maximum likelihood.</li>
+  <li><pkg>prabclus</pkg> clusters a presence-absence matrix
+  object by calculating an MDS 
+  from the distances, and applying maximum likelihood Gaussian
+  mixtures clustering to the MDS
+  points.</li>
+  <li>Mixtures of univariate normal distributions can be printed
+  and plotted using package <pkg>nor1mix</pkg>. Package
+  <pkg>bayesmix</pkg> provides Bayesian estimation using JAGS.</li>
+</ul>
+</p>
+  
+<p><strong>Other Cluster Algorithms:</strong>
+<ul>
+  <li>Package <pkg>amap</pkg> provides alternative implementations
+  of k-means and agglomerative hierarchical clustering.</li>
+  <li>Package <pkg>clue</pkg> implements ensemble methods for both
+  hierarchical and partitioning cluster methods.</li>
+  <li>Fuzzy clustering and bagged clustering are available in
+  package <pkg>e1071</pkg>.</li>
+  <li>The <pkg>hopach</pkg> algorithm is a hybrid between
+  hierarchical methods and PAM and builds a tree by
+  recursively  partitioning a data set.</li>
+  <li>Self-organizing maps are available in package
+  <pkg>som</pkg>.</li>
+</ul>
+</p>
+  
+<p><strong>Cluster-wise Regression:</strong>
+<ul>
+  <li>Package <pkg>flexmix</pkg> implements an user-extensible
+  framework for EM-estimation of mixtures of regression models,
+  including mixtures of (generalized) linear models.</li>
+  <li>Package <pkg>fpc</pkg> provides fixed-point methods both for
+  model-based clustering and linear regression. A collection of
+  asymmetric projection methods can be used to plot various
+  aspects of a clustering.</li>
+  <li>Multigroup mixtures of latent Markov models on
+  mixed categorical and continuous data (including time series)
+  can be fitted using <pkg>depmix</pkg>.
+  </li>
+  <li>Circular and orthogonal regression clustering is available in
+  <pkg>edci</pkg>.</li>
+  <li>Package <pkg>mixreg</pkg> fits mixtures of one-variable
+  regressions and provides bootstrap test for the number of
+  components.
+  </li>
+  <li>Mixed-mode latent class regression with special focus on
+  longitudinal data is implemented by <pkg>mmlcr</pkg>.
+  </li>
+</ul>
+</p>
+  
+</info>
+
+<packagelist>
+<pkg>amap</pkg>
+<pkg>clue</pkg>
+<pkg priority="core">cluster</pkg>
+<pkg>e1071</pkg>
+<pkg>edci</pkg>
+<pkg priority="core">flexclust</pkg>
+<pkg priority="core">flexmix</pkg>
+<pkg>fpc</pkg>
+<pkg>hopach</pkg>
+<pkg priority="core">mclust</pkg>
+<pkg>prabclus</pkg>
+<pkg>pvclust</pkg>
+<pkg>som</pkg>
+<pkg>nor1mix</pkg>
+<pkg>bayesmix</pkg>
+<pkg>depmix</pkg>
+<pkg>mixreg</pkg>
+<pkg>mmlcr</pkg>
+</packagelist>
+
+<links>
+<view>MachineLearning</view>
+</links>
+
+</CRANTaskView>
