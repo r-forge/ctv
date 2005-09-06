@@ -94,9 +94,6 @@
     prior and the likelihood are Gaussian, and when the statistic of
     interest comes from a two-sample problem.
     
-    <pkg>GLMMGibbs</pkg> provides a function to simulate from posterior 
-    distributions of generalised linear mixed models using Gibbs sampling. 
-  
     The function <tt>krige.bayes()</tt> in the <pkg>geoR</pkg> package
     performs Bayesian analysis of geostatistical data allowing
     specification of different levels of uncertainty in the model
@@ -194,8 +191,7 @@
     <pkg>evdbayes</pkg>
     <pkg>exactLoglinTest</pkg>
     <pkg>geoR</pkg>
-    <pkg>geoRglm</pkg>
-    <pkg>GLMMGibbs</pkg>
+    <pkg>geoRglm</pkg>    
     <pkg>Hmisc</pkg>
     <pkg>lme4</pkg>
     <pkg>mcgibbsit</pkg>
