@@ -93,7 +93,10 @@
     posterior (and optionally) the predictive distribution when both the
     prior and the likelihood are Gaussian, and when the statistic of
     interest comes from a two-sample problem.
-        
+    
+    <pkg>GLMMGibbs</pkg> provides a function to simulate from posterior 
+    distributions of generalised linear mixed models using Gibbs sampling. 
+  
     The function <tt>krige.bayes()</tt> in the <pkg>geoR</pkg> package
     performs Bayesian analysis of geostatistical data allowing
     specification of different levels of uncertainty in the model
@@ -106,6 +109,10 @@
     MCMC sampling for the linear mixed model and generalized linear mixed model.   
     
     The <pkg>MNP</pkg> package fits multinomial probit models using MCMC methods.
+    
+    <pkg>sna</pkg>, an R package for social network analysis, 
+    contains functions to generate posterior samples from Butt's 
+    Bayesian network accuracy model using Gibbs sampling. 
     
     The <tt>vcov.gam()</tt> function the <pkg>mgcv</pkg> package can
     extract a Bayesian posterior covariance matrix of the parameters
@@ -165,7 +172,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Thu Aug 25 18:57:26 2005
+ Last Update: Sun Sep  4 19:01:26 2005
  </p>
  
   </info>
@@ -188,6 +195,7 @@
     <pkg>exactLoglinTest</pkg>
     <pkg>geoR</pkg>
     <pkg>geoRglm</pkg>
+    <pkg>GLMMGibbs</pkg>
     <pkg>Hmisc</pkg>
     <pkg>lme4</pkg>
     <pkg>mcgibbsit</pkg>
@@ -197,6 +205,7 @@
     <pkg>MNP</pkg>
     <pkg>R2WinBUGS</pkg>
     <pkg>rbugs</pkg>
+    <pkg>sna</pkg>
     <pkg>vabayelMix</pkg>
     </packagelist>
 
