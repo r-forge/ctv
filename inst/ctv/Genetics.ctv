@@ -34,7 +34,7 @@
       <pkg>LDheatmap</pkg> creates a heat map plot of measures of pairwise LD.
       </li>
 
-      <li>Phylogenetics</i>:
+      <li><i>Phylogenetics</i>:
       Phylogenetic and evolution analyses can be performed via <pkg>ape</pkg> and <pkg>apTreeshape</pkg>. Package <pkg>ouch</pkg> provides Ornstein-Uhlenbeck models for phylogenetic comparative hypotheses, while <pkg>phyloarray</pkg> offers functions for phylogenetic microarray data processing. <pkg>PHYLOGR</pkg> is a suite of functions for the analysis of phylogenetically simulated data sets and phylogenetically-based GLS model fitting.
       </li>
 
