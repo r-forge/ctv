@@ -34,7 +34,8 @@
     various models widely used in marketing and micro-econometrics. The
     models include linear regression models, multinomial logit,
     multinomial probit, multivariate probit, multivariate mixture of
-    normals, hierarchical linear models, and linear instrumental
+    normals, hierarchical linear models, hierarchical multinomial logit,
+    hierarchical negative binomial regression models, and linear instrumental
     variable models.
    
     <pkg>bayesSurv</pkg> contains R functions to perform Bayesian
@@ -217,5 +218,4 @@
     </links>
 
 </CRANTaskView>
-
 

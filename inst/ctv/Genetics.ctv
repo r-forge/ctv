@@ -26,16 +26,23 @@
       <pkg>genetics</pkg> implements classes and methods for representing genotype and haplotype data, and has several
       functions for population genetic analysis (e.g. functions for estimation and testing of Hardy-Weinberg and linkage
       disequilibria, etc.). <pkg>Geneland</pkg> has functions for detecting spatial structures from genetic data
-      within a Bayesian framework via MCMC estimation. <pkg>Malmig</pkg> provides an implementation of Malecot migration model as well as a number of related functions.
+      within a Bayesian framework via MCMC estimation. <pkg>Malmig</pkg> provides an implementation of Malecot migration model
+     as well as a number of related functions.
       <pkg>rmetasim</pkg> provides an interface to the metasim engine
       for population genetics simulations. <pkg>hapsim</pkg> simulates haplotype data with pre-specified
       allele frequencies and LD patterns. A few population genetics functions are also implemeted in <pkg>gap</pkg>.
      <pkg>hierfstat</pkg> allows the estimation of hierarchical F-statistics from haploid or diploid genetic data. 
-      <pkg>LDheatmap</pkg> creates a heat map plot of measures of pairwise LD.
-      </li>
+      <pkg>LDheatmap</pkg> creates a heat map plot of measures of pairwise LD. <pkg>hwde</pkg> fits models for genotypic disequilibria.
+      <pkg>Biodem</pkg> package provides functions for Biodemographycal analysis, e.g. <tt>Fst()</tt> calculates the Fst from the conditional
+       kinship matrix. Package <pkg>kinship</pkg> offers some functions for analysis on pedigrees. 
+      </li> 
 
       <li><i>Phylogenetics</i>:
-      Phylogenetic and evolution analyses can be performed via <pkg>ape</pkg> and <pkg>apTreeshape</pkg>. Package <pkg>ouch</pkg> provides Ornstein-Uhlenbeck models for phylogenetic comparative hypotheses, while <pkg>phyloarray</pkg> offers functions for phylogenetic microarray data processing. <pkg>PHYLOGR</pkg> is a suite of functions for the analysis of phylogenetically simulated data sets and phylogenetically-based GLS model fitting.
+      Phylogenetic and evolution analyses can be performed via <pkg>ape</pkg> and <pkg>apTreeshape</pkg>. Package <pkg>ouch</pkg> provides
+      Ornstein-Uhlenbeck models for phylogenetic comparative hypotheses, while <pkg>phyloarray</pkg> offers functions for phylogenetic microarray
+      data processing. <pkg>PHYLOGR</pkg> is a suite of functions for the analysis of phylogenetically simulated data sets and
+      phylogenetically-based GLS model fitting. <pkg>stepwise</pkg> implements a method for stepwise detection of recombination breakpoints in
+      sequence alignments.
       </li>
 
       <li><i>Linkage, LD and haplotype mapping</i>: 
@@ -52,7 +59,8 @@
       score tests for a wide variety of traits (e.g. binary, ordinal, quantitative, and Poisson). 
       <pkg>haplo.stats</pkg> has a function <tt>haplo.em()</tt> for maximum likelihood estimation of haplotype probabilities.
       All packages above work when haplotype phase is uncertain. <pkg>tdthap</pkg> implements 
-      transmission/disequilibrium tests for extended marker haplotypes. 
+      transmission/disequilibrium tests for extended marker haplotypes. <pkg>ldDesign</pkg> is a package for design of experiments for association
+      studies for detection of linkage disequilibrium.
       </li> 
 	
       <li><i>QTL mapping</i>:
@@ -65,7 +73,8 @@
       </li>
 
      <li><i>Multiple testing</i>:
-      The package <pkg>qvalue</pkg> implements False Discovery Rate; the main function <tt>qvalue()</tt> estimates the q-values from a list of values. Package <pkg>multtest</pkg> also offers several non-parametric bootstrap and permutation resampling-based multiple testing procedures. 
+      The package <pkg>qvalue</pkg> implements False Discovery Rate; the main function <tt>qvalue()</tt> estimates the q-values from a list of p-values.
+      Package <pkg>multtest</pkg> also offers several non-parametric bootstrap and permutation resampling-based multiple testing procedures. 
      </li>
  
     </ul>
@@ -75,15 +84,19 @@
   <packagelist>
     <pkg>ape</pkg>
     <pkg>apTreeshape</pkg>
-    <pkg>bqtl</pkg> 
-    <pkg priority="core">genetics</pkg>
+    <pkg>Biodem</pkg>
+    <pkg>bqtl</pkg>
     <pkg priority="core">gap</pkg>
     <pkg>Geneland</pkg>
+    <pkg priority="core">genetics</pkg>
     <pkg>hapassoc</pkg>
     <pkg>haplo.score</pkg>
     <pkg priority="core">haplo.stats</pkg>
     <pkg>hapsim</pkg>
     <pkg>hierfstat</pkg>
+    <pkg>hwde</pkg>
+    <pkg>kinship</pkg>
+    <pkg>ldDesign</pkg>
     <pkg>LDheatmap</pkg>
     <pkg>Malmig</pkg>
     <pkg>multtest</pkg>
@@ -95,22 +108,23 @@
     <pkg>qtlDesign</pkg>
     <pkg>qvalue</pkg>
     <pkg>rmetasim</pkg>
+    <pkg>stepwise</pkg>
     <pkg>tdthap</pkg>
   </packagelist>
 
   <links>
-    <a href="http://www.stats.ox.ac.uk/~marchini/software/popgen/">popgen package</a>
+    <a href="http://astor.som.jhmi.edu/BayesMendel/">BayesMendel</a>, R software for predicting who may carry a cancer susceptibility gene
+    <a href="http://www.stats.ox.ac.uk/~marchini/software/popgen/">popgen</a>, population structure, coalescent simulations, etc.
     <a href="http://research.warnes.net/projects/RGeneticsProject/">R genetics project</a>
     <a href="http://linkage.rockefeller.edu/yyang/resources.html">R code for estimating haplotype frequencies from pooled DNA samples</a>
     <a href="http://www.ucl.ac.uk/~rmjdjhz/software.htm">Computer programs by Jing Hua Zhao (some are included in the gap package)</a>
     <a href="http://linkage.rockefeller.edu/soft/">An alphabetic list of genetic analysis software</a>
-    <a href="http://wpicr.wpic.pitt.edu/WPICCompGen/hclust.htm">Hclust.R: Software for Choosing Tag NPS</a>
+    <a href="http://wpicr.wpic.pitt.edu/WPICCompGen/hclust.htm">Hclust.R</a>, software for Choosing Tag SNPs
     <a href="http://wpicr.wpic.pitt.edu/WPICCompGen/bars.htm">Bayesian Adaptive Regression Splines (BARS)</a>
-    <a href="http://www.mpipsykl.mpg.de/pages/english/research/mueller_downloads.htm">Direct Simulation Approach (DAS) for simulation of p-values</a>
+    <a href="http://www.mpipsykl.mpg.de/pages/english/research/mueller_downloads.htm">Direct Simulation Approach (DAS)</a>, for simulation of p-values
     <a href="http://www.stat.auckland.ac.nz/~yee/VGAM/">Vector Generalized Linear and Additive Models (VGLMs/VGAMs)</a>
     
     
   </links>
 
 </CRANTaskView>
-
