@@ -71,6 +71,9 @@
     <pkg>BMA</pkg> package to create probabilistic forecasts of
     ensembles using a mixture of normal distributions.
     
+    <pkg>cslogistic</pkg> has a function that performs a Bayesian analaysis of a
+    conditionally specified logistic regression model. 
+    
     <pkg>deal</pkg> provides R functions for Bayesian network analysis;
     the current version of covers discrete and continuous variables
     under Gaussian network structure. 
@@ -170,7 +173,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Sun Sep  4 19:01:26 2005
+ Last Update: Thu Oct 06 10:44:02 2005
  </p>
  
   </info>
@@ -186,6 +189,7 @@
     <pkg>bqtl</pkg>
     <pkg>BRugs</pkg>
     <pkg priority="core">coda</pkg>
+    <pkg>cslogistic</pkg>
     <pkg>deal</pkg>
     <pkg>EbayesThresh</pkg>
     <pkg>ensembleBMA</pkg>
@@ -218,4 +222,5 @@
     </links>
 
 </CRANTaskView>
+
 
