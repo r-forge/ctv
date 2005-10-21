@@ -1,6 +1,7 @@
 \name{ctv-client}
 \alias{install.views}
 \alias{CRAN.views}
+\alias{available.views}
 \alias{print.ctv}
 \alias{print.ctvlist}
 \title{CRAN Task Views: Client-side Tools}
@@ -11,7 +12,7 @@ Client-side tools for installing CRAN task views.
 \usage{
 install.views(views, coreOnly = FALSE, repos = NULL,
   dependencies = TRUE, \dots)
-CRAN.views(repos = NULL, \dots)
+available.views(repos = NULL, \dots)
 
 \method{print}{ctv}(x, packagelist = TRUE, \dots)
 \method{print}{ctvlist}(x, packagelist = FALSE, \dots)
@@ -20,7 +21,7 @@ CRAN.views(repos = NULL, \dots)
   \item{views}{character vector with the short names of the task views whose
     associated packages should be downloaded and installed. Alternatively,
     \code{views} can also be an object of class \code{"ctvlist"} (as returned
-    by \code{CRAN.views}) or an object of class \code{"ctv"} (i.e., an element
+    by \code{available.views}) or an object of class \code{"ctv"} (i.e., an element
     of a \code{"ctvlist"}).}
   \item{coreOnly}{logical. Should all packages or only core packages be installed?
     (recycled to the same length as \code{views})}
@@ -41,14 +42,15 @@ the \file{src/contrib} directory of \file{repos} and then simply calls
 view specified. For each view it can be specified whether all packages or
 only the core packages should be installed.
 
-\code{CRAN.views} returns the names of the task views currently available in
-the file \file{Views.rds}.
+\code{available.views} returns the names of the task views currently
+available in the file \file{Views.rds}. In earlier versions, this was called
+\code{CRAN.views} (which still works and provides the same functionality).
 
 For a closer description of the arguments see als \code{\link{install.packages}}.
 }
 
 \value{
-  \code{CRAN.views} returns an object of class \code{"ctvlist"} of the 
+  \code{available.views} returns an object of class \code{"ctvlist"} of the 
   available task views whose elements are of class \code{"ctv"}.
   
   \code{install.views} has no return value.
@@ -59,7 +61,7 @@ For a closer description of the arguments see als \code{\link{install.packages}}
 \examples{
 \dontrun{
   ## query names of CRAN task views available
-  CRAN.views()
+  available.views()
   
   ## install Econometrics view
   install.views("Econometrics")

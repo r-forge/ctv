@@ -42,7 +42,7 @@ print.ctvlist <- function(x, packagelist = FALSE, ...)
   invisible(x)
 }
 
-CRAN.views <- function(repos = NULL, ...)
+available.views <- CRAN.views <- function(repos = NULL, ...)
 {
   ## getOption("repos") replaces getOption("CRAN") from 2.1.0 on
   if(is.null(repos)) repos <- ifelse(is.null(getOption("repos")), getOption("CRAN"), getOption("repos"))
@@ -76,7 +76,7 @@ install.views <- function(views,
   }
   if(!inherits(views, "ctvlist")) {
     ## get CRAN views and extract names of available views
-    cranviews <- CRAN.views(repos = repos)
+    cranviews <- available.views(repos = repos)
     availnames <- sapply(seq(along = cranviews), function(i) cranviews[[i]]$name)
 
     whichviews <- lapply(views, function(z) {
@@ -94,7 +94,7 @@ install.views <- function(views,
    
   for(i in seq(along = views)) {
     pkgs <- if(coreOnly[i]) subset(views[[i]]$packagelist, core)[,1] else views[[i]]$packagelist[,1]
-    install.packages(pkgs, CRAN = views[[i]]$repository, dependencies = dependencies, ...)
+    install.packages(pkgs, repos = views[[i]]$repository, dependencies = dependencies, ...)
   }
   
   invisible()
