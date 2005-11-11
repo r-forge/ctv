@@ -114,6 +114,9 @@
     
     The <pkg>MNP</pkg> package fits multinomial probit models using MCMC methods.
     
+    <pkg>MSBVAR</pkg> is an R package for estimating Bayesian Vector Autoregression 
+    models and Bayesian structural Vector Autoregression models.
+    
     <pkg>sna</pkg>, an R package for social network analysis, 
     contains functions to generate posterior samples from Butt's 
     Bayesian network accuracy model using Gibbs sampling. 
@@ -176,7 +179,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Thu Oct 27 10:46:49 2005
+ Last Update: Wed Nov 09 11:37:47 2005
  </p>
  
   </info>
@@ -208,6 +211,7 @@
     <pkg priority="core">MCMCpack</pkg>
     <pkg>mgcv</pkg>
     <pkg>MNP</pkg>
+    <pkg>MSBVAR</pkg>
     <pkg>R2WinBUGS</pkg>
     <pkg>rbugs</pkg>
     <pkg>sna</pkg>
@@ -226,4 +230,5 @@
     </links>
 
 </CRANTaskView>
+
 
