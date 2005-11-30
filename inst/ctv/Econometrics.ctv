@@ -69,12 +69,15 @@
           contained in the stats package and include <tt>arima()</tt> for ARIMA modelling
 	  and Box-Jenkins-type analysis. Furthermore stats provides <tt>StructTS()</tt>
 	  for fitting structural time series and <tt>decompose()</tt> and <tt>HoltWinters()</tt>
-	  for time series filtering and decomposition. A convenient interface for fitting
+	  for time series filtering and decomposition. For estimating VAR models, several
+	  methods are available: simple models can be fitted by <tt>ar()</tt> in stats, more
+	  elaborate models are provided by <tt>estVARXls()</tt> in <pkg>dse</pkg> and a Bayesian
+	  approach is available in <pkg>MSBVAR</pkg>. A convenient interface for fitting
 	  dynamic regression models via OLS is available in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.	  
-	  More advanced
-	  dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root and cointegration
-	  techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and <pkg>tseries</pkg>.</li>
+	  More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root
+	  and cointegration techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and
+	  <pkg>tseries</pkg>.</li>
       <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
           ships with many powerful tools for doing matrix manipulations, which are 
 	  complemented by the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
@@ -87,7 +90,9 @@
       <li><i>Data sets</i>: Many of the packages in this view contain collections of
           data sets from the econometric literature and the package <pkg>Ecdat</pkg>
 	  contains a complete collection of data sets from various standard econometric
-	  textbooks. Package <pkg>pwt</pkg> provides the Penn world table.</li>
+	  textbooks. <pkg>micEcdat</pkg> provides several data sets from the Journal of
+	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
+	  data archives. Package <pkg>pwt</pkg> provides the Penn world table.</li>
     </ul>    
   </info>
 
@@ -107,8 +112,10 @@
     <pkg>its</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>Matrix</pkg>
+    <pkg>micEcdat</pkg>
     <pkg>micEcon</pkg>
     <pkg>MNP</pkg>
+    <pkg>MSBVAR</pkg>
     <pkg>nlme</pkg>
     <pkg>pscl</pkg>
     <pkg>pwt</pkg>
