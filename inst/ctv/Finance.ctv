@@ -58,7 +58,7 @@
 	  <pkg>dynlm</pkg> are suitable for dynamic (linear) regression models.
       	  Several packages provide wavelet analysis 
 	  functionality: <pkg>rwt</pkg>, <pkg>wavelets</pkg>, 
-          <pkg>waveslim</pkg>, <pkg>wavetresh</pkg>. Some methods from chaos 
+          <pkg>waveslim</pkg>, <pkg>wavethresh</pkg>. Some methods from chaos 
           theory are provided by the package <pkg>tseriesChaos</pkg>. </li> 
       <li><b>Finance:</b>The Rmetrics bundle comprised of the
           <pkg>fBasics</pkg>, <pkg>fCalendar</pkg>, <pkg>fSeries</pkg>, 
@@ -101,7 +101,7 @@
     <pkg>copula</pkg>
     <pkg>dse</pkg>
     <pkg>dyn</pkg>
-    <pkg>dunlm</pkg>
+    <pkg>dynlm</pkg>
     <pkg>evd</pkg>
     <pkg>evdbayes</pkg>
     <pkg>evir</pkg>
@@ -134,7 +134,7 @@
     <pkg>rwt</pkg> 
     <pkg>wavelets</pkg>
     <pkg>waveslim</pkg>
-    <pkg>wavetresh</pkg> 
+    <pkg>wavethresh</pkg> 
     <pkg>Zelig</pkg>
     <pkg priority="core">zoo</pkg>    
   </packagelist>
