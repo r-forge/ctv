@@ -147,8 +147,10 @@
     Heidelberger and Welch, and Raftery and Lewis diagnostics.
     
     <pkg>mcgibbsit</pkg> provides the Warnes and Raftery MCGibbsit MCMC
-    diagnostic.  It operates on <tt>mcmc</tt> objects.
-    </li>
+    diagnostic. It operates on <tt>mcmc</tt> objects.
+    
+    <pkg>rv</pkg> provides a simulation-based random variable class in R, 
+    in which posterior simulation objects can be conveniently handled as random variables.</li>
 
     <li><em>Packages that link R to other sampling engines</em>:
     
@@ -179,7 +181,8 @@
   with suggestions.</p>
  
  <p>
- Last Update: Wed Nov 09 11:37:47 2005
+ Last Update: Thu Dec 01 16:36:07 2005
+
  </p>
  
   </info>
@@ -214,6 +217,7 @@
     <pkg>MSBVAR</pkg>
     <pkg>R2WinBUGS</pkg>
     <pkg>rbugs</pkg>
+    <pkg>rv</pkg>
     <pkg>sna</pkg>
     <pkg>vabayelMix</pkg>
     </packagelist>

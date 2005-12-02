@@ -1,0 +1,239 @@
+<CRANTaskView>
+
+  <name>Multivariate</name>
+  <topic>Multivariate Statistics</topic>
+  <maintainer>Paul Hewson</maintainer>
+  
+  <info>
+    <p>Base R contains most of the functionality for classical multivariate analysis,
+       somewhere. There are a large number of packages on CRAN which extend this methodology,
+       a brief overview is given below.   Application specific uses of multivariate statistics
+       are described in relevant task views, for example whilst principal components are listed here, 
+       ordination is covered in the <view>Environmetics</view> task view.</p>
+
+       <p>The packages in this view can be roughly structured into the following topics.
+       If you think that some package is missing from the list, please let me know.</p>
+
+   
+
+    <ul>
+      <li><i>Visualising multivariate data</i>:
+          A range of base and lattice functions are useful for visualising pairwise arrays
+	  of 2-dimensional scatterplots and 3-dimensional densities.  Beyond this,
+          <pkg>scatterplot3d</pkg>
+	  provides 3 dimensional scatterplots, <pkg>misc3d</pkg>, dependent upon <pkg>rgl</pkg>,
+	  provides animated functions within R useful for visualising densities.
+	  More specialised multivariate plots include the following: 
+	  <tt>faces()</tt> in <pkg>TeachingDemos</pkg> provides Chernoff's faces; <tt>parcoord()</tt>
+         from MASS (in the 
+          <pkg>VR</pkg> bundle) provides parallel co-ordinate plots;
+          <tt>mosaicplot()</tt> and <tt>stars()</tt> in graphics provide mosaic plots and a choice
+          of star, radar and cobweb plots respectively.   <pkg>gclus</pkg> provides a number of 
+          cluster specific graphical enhancements for scatterplots and parallel co-ordinate plots
+	  See the links for a reference to GGobi; <pkg>xgobi</pkg> interfaces to the XGobi
+	  and XGvis programs which allow linked, dynamic multivariate plots as well as
+	  projection pursuit.</li>
+      <li><i>Multivariate normal distributions</i>:
+          <tt>var()</tt> and <tt>cor()</tt> in stats will provide estimates of the covariance
+          and correlation  matrices respectively. <tt>cov.rob()</tt> in MASS (<pkg>VR</pkg> bundle) 
+          provides robust estimates of the variance-covariance matrix by minimum volume 
+          ellipsoid, minimum covariance determinant or classical product-moment. <pkg>covRobust</pkg> 
+          provides robust covariance estimation via
+	  nearest neighbor variance estimation.          
+          <tt>mvnorm()</tt> in MASS (<pkg>VR</pkg> bundle) simulates from the multivariate normal 
+          distribution.  <pkg>mvtnorm</pkg> also provides simulation as well as probability and 
+          quantile functions for both the multivariate t distribution and multivariate normal 
+          distributions as well as density functions for the multivariate normal distribution.   
+          Density and random numbers for multivariate normal mixtures are provided by 
+          <tt>rmvnorm.mixt()</tt> and <tt>dmvnorm.mixt()</tt> in <pkg>ks</pkg>, multivariate normal
+          mixture fitting is also found within <pkg>bayesm</pkg>.
+	  <pkg>mvnormtest</pkg> provides a multivariate extension
+	  to the Shapiro-Wilks test, <pkg>mvoutlier</pkg> provides multivariate outlier detection based
+	  on robust methods. <pkg>corpcor</pkg> provides shrinkage estimation of large scale covariance
+	  and (partial) correlation. <tt>bkde2D()</tt> from <pkg>KernSmooth</pkg> and <tt>kde2d()</tt>
+	  from MASS (<pkg>VR</pkg> bundle) provide binned and non-binned 2 dimensional kernel density 
+          estimation, <pkg>ks</pkg> also provides multivariate kernel smoothing.</li>
+      <li><i>Linear models</i>:
+          From stats, <tt>lm()</tt> (with a matrix specified as the dependent variable)
+	  offers multivariate linear models and <tt>manova()</tt> offers MANOVA. <pkg>pls.pcr</pkg>
+	  provides partial least squares regression (PLSR) and principal component regression,
+	  <pkg>dr</pkg> provides dimension reduction regression options such as <tt>"sir"</tt> (sliced
+	  inverse regression), <tt>"save"</tt> (sliced average variance estimation).
+	  <pkg>plsgenomics</pkg> provides partial least squares analyses for genomics.
+	  <pkg>pcurve</pkg> provides Principal Curve analysis and visualisation as well as a
+	  further principal component method.</li>
+      <li><i>Projection methods</i>:
+          Principal components can be fitted with <tt>prcomp()</tt> as well as <tt>princomp()</tt>
+	  from stats. <pkg>sca</pkg> provides simple components. <pkg>amap</pkg> provides
+	  further robust and parallelised meathods such as generalised 
+	  and robust principal component analysis via <tt>acpgen()</tt> and <tt>acprob()</tt> 
+          respectively. <pkg>fastICA</pkg> provides
+	  fastICA algorithms to perform ICA and Projection Pursuit, <pkg>mlica</pkg> provides
+	  maximum likelihood fitting for ICA. <tt>cancor()</tt> in stats provides
+	  canonical correlation. Further options for principal components in an ecological
+	  setting are also available within <pkg>ade4</pkg>. <tt>procrustes()</tt> in
+	  <pkg>vegan</pkg> provides procrustes analysis, this package also provides functions
+	  for ordination.   Further information on ordination is given in the
+          <view>Environmetrics</view> task view.</li>
+      <li><i>Principal co-ordinates methods</i>:
+          <tt>cmdscale()</tt> in stats provides classical multidimensional scaling
+	  (principal coordinates analysis), <tt>sammon()</tt> and <tt>isoMDS()</tt> in MASS 
+          (<pkg>VR</pkg> bundle)
+	  offer Sammon and Kruskal's non-metric multidimensional scaling. <pkg>vegan</pkg>
+	  provides wrappers and post-processing for non-metric MDS.</li>
+      <li><i>Clustering Methods</i>:
+         A comprehensive overview of clustering methods available within R is provided by the  
+        <view>Cluster</view> task view, topic related information is also provided in the 
+        <view>Environmetrics</view> 
+        task view. 
+         Standard techniques include hierarchical clustering by 
+         <tt>hclust()</tt> and k-means clustering by <tt>kmeans()</tt> in stats.
+	 <pkg>class</pkg> provides k-nearest neighbours by
+	 <tt>knn()</tt>, a range of 
+         clustering and visualisation techniques are also available in <pkg>cluster</pkg>.</li> 
+      <li><i>Tree methods</i>:
+         Full details on tree methods are given in the <view>MachineLearning</view> task view.   
+	 Suffice to say here that classification trees are sometimes considered within 
+         multivariate methods; <pkg>rpart</pkg> is most used for this purpose,    
+        <pkg>mvpart</pkg> extend regression trees to cover multivariate regression trees.</li>
+      <li><i>Supervised classfication and discriminant analysis</i>:
+          <tt>lda()</tt> and <tt>qda()</tt> within MASS (<pkg>VR</pkg> bundle) provide linear
+	  and quadratic discrimination respectively. <pkg>mda</pkg> provides mixture and
+	  flexible discriminant analysis with <tt>mda()</tt> and <tt>fda()</tt> as well as
+	  multivariate adaptive regression splines with <tt>mars()</tt> and adaptive spline
+	  backfitting with the <tt>bruto()</tt> function.  A number of libraries combine predictor
+	  dimension reduction with the classification. <pkg>klaR</pkg> includes variable
+	  selection and robustness against multicollinearity as well as a number of
+	  visualisation routines. <pkg>superpc</pkg> provides principal components for
+	  supervised classification, whereas <pkg>classPP</pkg> provides projection pursuit
+	  for supervised classification and <pkg>gpls</pkg> provides classification using
+	  generalized partial least squares. <pkg>supclust</pkg> relates to supervised
+	  clustering of genes.   Further information on supervised classification can be found in 
+         the <view>MachineLearning</view> task view. </li>
+      <li><i>Correspondence analysis</i>:
+          <tt>corresp()</tt> and <tt>mca()</tt> in MASS (<pkg>VR</pkg> bundle) provide simple and
+	  multiple correspondence analysis respectively. <tt>ca()</tt> and <tt>mca()</tt>
+	  in <pkg>ade4</pkg> provide correspondence and multiple correspondence analysis
+	  respectively, as well as adding homogeneous table analysis with <tt>hta()</tt>.
+	  Further functionality is also available within <pkg>vegan</pkg>.</li>
+      <li><i>Forward search</i>:
+          The forward search for classical mulivariate methods can be implemented in association
+	  with <pkg>Rfwdmv</pkg></li>
+      <li><i>Missing data</i>:
+          <pkg>mitools</pkg> provides tools for multiple imputation, <pkg>mice</pkg> provides
+	  multivariate imputation by chained equations <pkg>mvmle</pkg> provides ML estimation
+	  for multivariate normal data with missing values, <pkg>norm</pkg> provides multiple
+	  imputation by the EM algorithm for missing multivariate normal data, <pkg>cat</pkg>
+	  provides multiple imputation for categorical data <pkg>mix</pkg> for mixed
+	  categorical and continuous data. <pkg>pan</pkg> provides multiple imputation for
+	  missing panel data.</li>
+      <li><i>Latent variable approaches</i>:
+          <tt>factanal()</tt> in stats provides factor analysis by maximum
+	  likelihood as well as principal component extraction, Bayesian Factor analysis
+	  is provided for Gaussian, ordinal and mixed variables in <pkg>MCMCpack</pkg>.
+	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation.
+	  <pkg>sem</pkg> fits linear structural equation models and <pkg>ltm</pkg> provides
+	  Latent Trait Models under Item Response Theory.</li>
+      <li><i>Modelling non-Gaussian data</i>:
+          <pkg>bivpois</pkg> models bivariate Poisson variables, <pkg>baymvb</pkg> offers
+	  Bayesian models for multivariate binary data. <pkg>MNP</pkg> provides Bayesian
+	  multinomial probit models. <pkg>polycor</pkg> provides polchoric and tetrachoric
+	  correlation matrices.   <pkg>bayesm</pkg> provides a range of models such as seemingly 
+          unrelated regression, Multinomial Logit / Probit, Multivariate Probit and instrumental 
+          variables.</li>
+      <li><i>Matrix manipulations</i>: 
+          As a vector- and matrix-based language, base R ships with many powerful tools for
+	  doing matrix manipulations, which are complemented by the packages <pkg>Matrix</pkg>
+	  and <pkg>SparseM</pkg>.</li>
+      <li><i>Miscellaneous utitlies</i>:
+          <pkg>abind</pkg> generalises <tt>cbind()</tt> and <tt>rbind()</tt> for arrays.
+	  <pkg>SharedHT2</pkg> provides an implementation of Hotelling's T2 test for
+	  microarray experiments. <pkg>panel</pkg> provides methods for modelling panel data.
+	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
+	  Bayesian vector autoregression models, along with impulse responses and forecasting.</li>
+    </ul>    
+  </info>
+
+ <packagelist>
+    <pkg>abind</pkg> 
+    <pkg>ade4</pkg>
+    <pkg>amap</pkg>
+    <pkg>baymvb</pkg> 
+    <pkg>bayesm</pkg>
+    <pkg>bivpois</pkg> 
+    <pkg>cat</pkg> 
+    <pkg>class</pkg> 
+    <pkg>classPP</pkg> 
+    <pkg>cluster</pkg> 
+    <pkg>corpcor</pkg>
+    <pkg>covRobust</pkg>
+    <pkg>dr</pkg>
+    <pkg>fastICA</pkg> 
+    <pkg>gclus</pkg> 
+    <pkg>GPArotation</pkg> 
+    <pkg>gpls</pkg> 
+    <pkg>KernSmooth</pkg>
+    <pkg>klaR</pkg>
+    <pkg>kknn</pkg> 
+    <pkg>ks</pkg>
+    <pkg>ltm</pkg> 
+    <pkg>mAr</pkg> 
+    <pkg>Matrix</pkg>    
+    <pkg>MCMCpack</pkg>   
+    <pkg>mda</pkg> 
+    <pkg>mice</pkg> 
+    <pkg>misc3d</pkg>
+    <pkg>mitools</pkg>
+    <pkg>mix</pkg> 
+    <pkg>mlica</pkg> 
+    <pkg>MNP</pkg>
+    <pkg>MSBVAR</pkg> 
+    <pkg>mvmle</pkg> 
+    <pkg>mvnormtest</pkg>
+    <pkg>mvoutlier</pkg>
+    <pkg>mvpart</pkg> 
+    <pkg>mvtnorm</pkg>  
+    <pkg>norm</pkg>   
+    <pkg>pan</pkg>
+    <pkg>panel</pkg> 
+    <pkg>polycor</pkg> 
+    <pkg>pcurve</pkg>
+    <pkg>pinktoe</pkg> 
+    <pkg>plsgenomics</pkg>
+    <pkg>pls.pcr</pkg>
+    <pkg>randomForest</pkg> 
+    <pkg>Rfwdmv</pkg>
+    <pkg>rgl</pkg>
+    <pkg>rpart</pkg> 
+    <pkg>sca</pkg> 
+    <pkg>scatterplot3d</pkg>
+    <pkg>sem</pkg>
+    <pkg>SharedHT2</pkg> 
+    <pkg>SparseM</pkg>
+    <pkg>supclust</pkg> 
+    <pkg>superpc</pkg> 
+    <pkg>TeachingDemos</pkg>
+    <pkg>tree</pkg> 
+    <pkg>vegan</pkg>
+    <pkg>VR</pkg>
+    <pkg>xgobi</pkg>   
+  </packagelist>
+
+  <links>
+        <view>Cluster</view>
+        <view>Environmetrics</view> 
+        <view>MachineLearning</view>
+        <a href="http://www.ggobi.org">GGobi (interactive dynamic visualisation software, available standalone or as an R library)</a>
+        <a href="http://www.research.att.com/areas/stat/xgobi/">XGobi (interactive, dynamic visulisation software), XGvis (for proximity data / multidimensional scaling)</a>
+        <a href="http://www.stat.auckland.ac.nz/~yee/VGAM/">Vector Generalised Linear and Additive Models, Reduced Rank regression</a>
+  </links>
+  
+</CRANTaskView>
+
+
+
+
+
+
+
+
