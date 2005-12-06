@@ -2,7 +2,7 @@
 
 <name>Cluster</name>
 <topic>Cluster Analysis &amp; Finite Mixture Models</topic>
-<maintainer>Friedrich Leisch</maintainer>
+<maintainer>Friedrich Leisch and Bettina Gruen</maintainer>
   
 <info> This CRAN Task View contains a list of packages that can be
 used for finding groups in data and modelling unobserved
@@ -23,8 +23,7 @@ listed only once.
   function <tt>diana()</tt> can be
   used for divisive hierarchical clustering. 
   </li>
-  <li>
-      Function <tt>dendrogram()</tt> from stats and associated methods can
+  <li>Function <tt>dendrogram()</tt> from stats and associated methods can
   be used for improved visualization for cluster dendrograms.
   </li>
   <li><pkg>pvclust</pkg> is a package for assessing the uncertainty in
@@ -58,7 +57,10 @@ listed only once.
   <li>Package <pkg>mclust</pkg> fits mixtures of Gaussians using the EM
   algorithm. It allows fine control of volume and shape of
   covariance matrices and agglomerative hierarchical clustering
-  based on maximum likelihood.</li>
+  based on maximum likelihood. It provides comprehensive strategies
+  using hierarchical clustering, EM and the Bayesian Information Criterion
+  (BIC) for clustering, density estimation, and discriminant
+  analysis.</li> 
   <li><pkg>prabclus</pkg> clusters a presence-absence matrix
   object by calculating an MDS 
   from the distances, and applying maximum likelihood Gaussian
@@ -66,7 +68,19 @@ listed only once.
   points.</li>
   <li>Mixtures of univariate normal distributions can be printed
   and plotted using package <pkg>nor1mix</pkg>. Package
-  <pkg>bayesmix</pkg> provides Bayesian estimation using JAGS.</li>
+  <pkg>bayesmix</pkg> provides Bayesian estimation using
+  JAGS. Bayesian estimation using a variational approach for
+  multivariate Gausian distributions with a diagonal covariance matrix
+  is provided by package <pkg>vabayelMix</pkg>. Robust estimation
+  using Weighted Likelihood can be done with package
+  <pkg>wle</pkg>.</li>
+  <li>Grouped or conditional data can be used with package
+  <pkg>mixdist</pkg>. Estimation is done using a combination of
+  Newton-type and EM algorithm. Possible component distributions are
+  Gaussian, binomial, Poisson, Gamma, log-normal, Weibull or negative
+  binomial. It allows the specification of constraints on the
+  parameters, e.g. they can be a-priori fixed or constrained to be
+  equal over the components.</li>  
 </ul>
 </p>
   
@@ -74,6 +88,8 @@ listed only once.
 <ul>
   <li>Package <pkg>amap</pkg> provides alternative implementations
   of k-means and agglomerative hierarchical clustering.</li>
+  <li>Package <pkg>cba</pkg> implements clustering techniques for
+  business analytics like "rock" and "proximus".</li>
   <li>Package <pkg>clue</pkg> implements ensemble methods for both
   hierarchical and partitioning cluster methods.</li>
   <li>Fuzzy clustering and bagged clustering are available in
@@ -97,17 +113,27 @@ listed only once.
   aspects of a clustering.</li>
   <li>Multigroup mixtures of latent Markov models on
   mixed categorical and continuous data (including time series)
-  can be fitted using <pkg>depmix</pkg>.
+  can be fitted using <pkg>depmix</pkg>. The parameters are optimized
+  using a general purpose optimization routine given linear and
+  nonlinear constraints on the parameters.  
   </li>
   <li>Circular and orthogonal regression clustering is available in
   <pkg>edci</pkg>.</li>
   <li>Package <pkg>mixreg</pkg> fits mixtures of one-variable
-  regressions and provides bootstrap test for the number of
+  regressions and provides the bootstrap test for the number of
   components.
   </li>
   <li>Mixed-mode latent class regression with special focus on
-  longitudinal data is implemented by <pkg>mmlcr</pkg>.
+  longitudinal data is implemented by <pkg>mmlcr</pkg>. The components 
+  can follow a multivariate distribution of a (censored) Gaussian,
+  multinomial, negative binomial or Poisson distribution. In addition
+  concomitant variables can be specified to model the priors.
   </li>
+  <li><pkg>moc</pkg> fits mixture models to multivariate mixed data
+  using a Newton-type algorithm. The component specific distribution
+  may have one, two or three parameters. Covariates and concomitant
+  variables can be specified as well as constraints for the
+  parameters.</li>
 </ul>
 </p>
   
@@ -115,6 +141,7 @@ listed only once.
 
 <packagelist>
 <pkg>amap</pkg>
+<pkg>cba</pkg>
 <pkg>clue</pkg>
 <pkg priority="core">cluster</pkg>
 <pkg>e1071</pkg>
@@ -130,8 +157,12 @@ listed only once.
 <pkg>nor1mix</pkg>
 <pkg>bayesmix</pkg>
 <pkg>depmix</pkg>
+<pkg>mixdist</pkg>
 <pkg>mixreg</pkg>
 <pkg>mmlcr</pkg>
+<pkg>moc</pkg>
+<pkg>vabayelMix</pkg>
+<pkg>wle</pkg>
 </packagelist>
 
 <links>
