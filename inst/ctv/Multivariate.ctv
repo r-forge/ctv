@@ -101,7 +101,7 @@
 	  flexible discriminant analysis with <tt>mda()</tt> and <tt>fda()</tt> as well as
 	  multivariate adaptive regression splines with <tt>mars()</tt> and adaptive spline
 	  backfitting with the <tt>bruto()</tt> function.  <pkg>class</pkg> provides k-nearest 
-          neighbours by <tt>knn()</tt>, <pkg>knnCat</pkg> provides k-nearest neighbours for 
+          neighbours by <tt>knn()</tt>, <pkg>knncat</pkg> provides k-nearest neighbours for 
           categorical variables.   A number of libraries combine predictor
 	  dimension reduction with the classification. <pkg>klaR</pkg> includes variable
 	  selection and robustness against multicollinearity as well as a number of
@@ -122,7 +122,7 @@
 	  with <pkg>Rfwdmv</pkg>.</li>
       <li><i>Missing data</i>:
           <pkg>mitools</pkg> provides tools for multiple imputation, <pkg>mice</pkg> provides
-	  multivariate imputation by chained equations <pkg>mvmle</pkg> provides ML estimation
+	  multivariate imputation by chained equations <pkg>mvnmle</pkg> provides ML estimation
 	  for multivariate normal data with missing values, <pkg>norm</pkg> provides multiple
 	  imputation by the EM algorithm for missing multivariate normal data, <pkg>cat</pkg>
 	  provides multiple imputation for categorical data <pkg>mix</pkg> for mixed
@@ -175,7 +175,7 @@
     <pkg>kernlab</pkg>
     <pkg>KernSmooth</pkg>
     <pkg>klaR</pkg>
-    <pkg>knnCat</pkg> 
+    <pkg>knncat</pkg> 
     <pkg>ks</pkg>
     <pkg>lattice</pkg>
     <pkg>ltm</pkg> 
@@ -190,7 +190,7 @@
     <pkg>mlica</pkg> 
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg> 
-    <pkg>mvmle</pkg> 
+    <pkg>mvnmle</pkg> 
     <pkg>mvnormtest</pkg>
     <pkg>mvoutlier</pkg>
     <pkg>mvpart</pkg> 
