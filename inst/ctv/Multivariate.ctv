@@ -66,7 +66,7 @@
           <pkg>sca</pkg> provides simple components.  <pkg>pcurve</pkg> provides Principal Curve 
           analysis and visualisation as well as further principal component method. <pkg>kernlab</pkg> 
           uses kernel methods to provide a form of non-linear principal components with 
-          <tt>kpca()</tt> and canonical correlation with  <tt>kcca()</tt>.  <pkg>amap</pkg> provides
+          <tt>kpca()</tt> and canonical correlation with <tt>kcca()</tt>.  <pkg>amap</pkg> provides
 	  further robust and parallelised methods such as a form of generalised 
 	  and robust principal component analysis via <tt>acpgen()</tt> and <tt>acprob()</tt> 
           respectively.
@@ -172,6 +172,7 @@
     <pkg>gclus</pkg> 
     <pkg>GPArotation</pkg> 
     <pkg>gpls</pkg> 
+    <pkg>kernlab</pkg>
     <pkg>KernSmooth</pkg>
     <pkg>klaR</pkg>
     <pkg>knnCat</pkg> 
