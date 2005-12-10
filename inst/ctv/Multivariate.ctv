@@ -45,6 +45,7 @@
           Density and random numbers for multivariate normal mixtures are provided by 
           <tt>rmvnorm.mixt()</tt> and <tt>dmvnorm.mixt()</tt> in <pkg>ks</pkg>,
 FIXME:	  multivariate normal mixture fitting is also found within <pkg>bayesm</pkg>.
+FIXME: only there?
 	  <pkg>mvnormtest</pkg> provides a multivariate extension
 	  to the Shapiro-Wilks test, <pkg>mvoutlier</pkg> provides multivariate outlier detection based
 	  on robust methods. <pkg>corpcor</pkg> provides shrinkage estimation of large scale covariance
@@ -148,6 +149,9 @@ FIXME:	  multivariate normal mixture fitting is also found within <pkg>bayesm</p
 	  Bayesian vector autoregression models, along with impulse responses and forecasting.</li>
     </ul>    
   </info>
+
+
+FIXME: core packages
 
  <packagelist>
     <pkg>abind</pkg> 
