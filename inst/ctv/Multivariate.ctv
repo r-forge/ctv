@@ -17,13 +17,13 @@
     <ul>
       <li><i>Visualising multivariate data</i>:
           A range of base graphics and <pkg>lattice</pkg> functions are useful for
-	  visualising pairwise arrays of 2-dimensional scatterplots and 3-dimensional densities.
+	  visualising pairwise arrays of 2-dimensional scatterplots, clouds and 3-dimensional densities.
 	  Beyond this, <pkg>scatterplot3d</pkg>
 	  provides 3 dimensional scatterplots, <pkg>misc3d</pkg>, dependent upon <pkg>rgl</pkg>,
 	  provides animated functions within R useful for visualising densities.
 	  More specialised multivariate plots include the following: 
 	  <tt>faces()</tt> in <pkg>TeachingDemos</pkg> provides Chernoff's faces;
-	  <tt>parcoord()</tt> rom MASS (in the <pkg>VR</pkg> bundle) provides parallel coordinate plots;
+	  <tt>parcoord()</tt> from MASS (in the <pkg>VR</pkg> bundle) provides parallel coordinate plots;
           <tt>stars()</tt> in graphics provides a choice of star, radar and cobweb plots respectively. 
 	  Mosaic plots are available via <tt>mosaicplot()</tt> in graphics and <tt>mosaic()</tt>
 	  in <pkg>vcd</pkg> that also contains other visualization techniques for multivariate
@@ -42,10 +42,10 @@
           distribution. <pkg>mvtnorm</pkg> also provides simulation as well as probability and 
           quantile functions for both the multivariate t distribution and multivariate normal 
           distributions as well as density functions for the multivariate normal distribution.   
-          Density and random numbers for multivariate normal mixtures are provided by 
-          <tt>rmvnorm.mixt()</tt> and <tt>dmvnorm.mixt()</tt> in <pkg>ks</pkg>,
-FIXME:	  multivariate normal mixture fitting is also found within <pkg>bayesm</pkg>.
-FIXME: only there?
+          Comprehensive information on mixtures is given in the <view>Cluster</view> view, 
+          some density estimates and random numbers are provided by 
+          <tt>rmvnorm.mixt()</tt> and <tt>dmvnorm.mixt()</tt> in <pkg>ks</pkg>, mixture fitting 
+          is also provided within <pkg>bayesm</pkg>.
 	  <pkg>mvnormtest</pkg> provides a multivariate extension
 	  to the Shapiro-Wilks test, <pkg>mvoutlier</pkg> provides multivariate outlier detection based
 	  on robust methods. <pkg>corpcor</pkg> provides shrinkage estimation of large scale covariance
@@ -58,22 +58,24 @@ FIXME: only there?
 	  provides partial least squares regression (PLSR) and principal component regression,
 	  <pkg>dr</pkg> provides dimension reduction regression options such as <tt>"sir"</tt> (sliced
 	  inverse regression), <tt>"save"</tt> (sliced average variance estimation).
-	  <pkg>plsgenomics</pkg> provides partial least squares analyses for genomics.
-	  <pkg>pcurve</pkg> provides Principal Curve analysis and visualisation as well as a
-	  further principal component method.</li>
+	  <pkg>plsgenomics</pkg> provides partial least squares analyses for genomics.</li>
       <li><i>Projection methods</i>:
           Principal components can be fitted with <tt>prcomp()</tt> (based on <tt>svd()</tt>,
 	  preferred) as well as <tt>princomp()</tt> (based on <tt>eigen()</tt> for  compatibility
-	  with S-PLUS) from stats. <pkg>sca</pkg> provides simple components. <pkg>amap</pkg> provides
-	  further robust and parallelised methods such as generalised 
+	  with S-PLUS) from stats. <tt>cancor()</tt> in stats provides canonical correlation.   
+          <pkg>sca</pkg> provides simple components.  <pkg>pcurve</pkg> provides Principal Curve 
+          analysis and visualisation as well as further principal component method. <pkg>kernlab</pkg> 
+          uses kernel methods to provide a form of non-linear principal components with 
+          <tt>kpca()</tt> and canonical correlation with  <tt>kcca()</tt>.  <pkg>amap</pkg> provides
+	  further robust and parallelised methods such as a form of generalised 
 	  and robust principal component analysis via <tt>acpgen()</tt> and <tt>acprob()</tt> 
-          respectively. <pkg>fastICA</pkg> provides fastICA algorithms to perform independent
+          respectively.
+          <pkg>fastICA</pkg> provides fastICA algorithms to perform independent
 	  component analysis (ICA) and Projection Pursuit, <pkg>mlica</pkg> provides
-	  maximum likelihood fitting for ICA. <tt>cancor()</tt> in stats provides
-	  canonical correlation. Further options for principal components in an ecological
+	  maximum likelihood fitting for ICA.  Further options for principal components in an ecological
 	  setting are also available within <pkg>ade4</pkg>. <tt>procrustes()</tt> in
 	  <pkg>vegan</pkg> provides procrustes analysis, this package also provides functions
-	  for ordination. Further information on ordination is given in the
+	  for ordination and further information on that area is given in the
           <view>Environmetrics</view> task view.</li>
       <li><i>Principal coordinates methods</i>:
           <tt>cmdscale()</tt> in stats provides classical multidimensional scaling
@@ -82,11 +84,12 @@ FIXME: only there?
 	  provides wrappers and post-processing for non-metric MDS.</li>
       <li><i>Clustering Methods</i>:
           A comprehensive overview of clustering methods available within R is provided by the  
-          <view>Cluster</view> task view, topic-related information is also provided in the 
-          <view>Environmetrics</view> task view. Standard techniques include hierarchical clustering by 
+          <view>Cluster</view> task view.  Standard techniques include hierarchical clustering by 
           <tt>hclust()</tt> and k-means clustering by <tt>kmeans()</tt> in stats.
-	  <pkg>class</pkg> provides k-nearest neighbours by <tt>knn()</tt>, a range of 
-          clustering and visualisation techniques are also available in <pkg>cluster</pkg>.</li> 
+	   A range of established
+          clustering and visualisation techniques are also available in <pkg>cluster</pkg>. 
+          The <view>Environmetrics</view> task view gives a topic-related overview of some clustering
+          techniques.</li> 
       <li><i>Tree methods</i>:
           Full details on tree methods are given in the <view>MachineLearning</view> task view.   
 	  Suffice to say here that classification trees are sometimes considered within 
@@ -97,7 +100,9 @@ FIXME: only there?
 	  and quadratic discrimination respectively. <pkg>mda</pkg> provides mixture and
 	  flexible discriminant analysis with <tt>mda()</tt> and <tt>fda()</tt> as well as
 	  multivariate adaptive regression splines with <tt>mars()</tt> and adaptive spline
-	  backfitting with the <tt>bruto()</tt> function.  A number of libraries combine predictor
+	  backfitting with the <tt>bruto()</tt> function.  <pkg>class</pkg> provides k-nearest 
+          neighbours by <tt>knn()</tt>, <pkg>knnCat</pkg> provides k-nearest neighbours for 
+          categorical variables.   A number of libraries combine predictor
 	  dimension reduction with the classification. <pkg>klaR</pkg> includes variable
 	  selection and robustness against multicollinearity as well as a number of
 	  visualisation routines. <pkg>superpc</pkg> provides principal components for
@@ -150,9 +155,6 @@ FIXME: only there?
     </ul>    
   </info>
 
-
-FIXME: core packages
-
  <packagelist>
     <pkg>abind</pkg> 
     <pkg priority="core">ade4</pkg>
@@ -172,7 +174,7 @@ FIXME: core packages
     <pkg>gpls</pkg> 
     <pkg>KernSmooth</pkg>
     <pkg>klaR</pkg>
-    <pkg>kknn</pkg> 
+    <pkg>knnCat</pkg> 
     <pkg>ks</pkg>
     <pkg>lattice</pkg>
     <pkg>ltm</pkg> 
