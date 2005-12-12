@@ -74,13 +74,6 @@ listed only once.
   is provided by package <pkg>vabayelMix</pkg>. Robust estimation
   using Weighted Likelihood can be done with package
   <pkg>wle</pkg>.</li>
-  <li>Grouped or conditional data can be used with package
-  <pkg>mixdist</pkg>. Estimation is done using a combination of
-  Newton-type and EM algorithm. Possible component distributions are
-  Gaussian, binomial, Poisson, Gamma, log-normal, Weibull or negative
-  binomial. It allows the specification of constraints on the
-  parameters, e.g. they can be a-priori fixed or constrained to be
-  equal over the components.</li>  
 </ul>
 </p>
   
@@ -157,7 +150,6 @@ listed only once.
 <pkg>nor1mix</pkg>
 <pkg>bayesmix</pkg>
 <pkg>depmix</pkg>
-<pkg>mixdist</pkg>
 <pkg>mixreg</pkg>
 <pkg>mmlcr</pkg>
 <pkg>moc</pkg>
@@ -167,6 +159,7 @@ listed only once.
 
 <links>
 <view>MachineLearning</view>
+<a href="http://www.math.mcmaster.ca/peter/mix/mix.html" target="_top">mixdist package for grouped or conditional data</a>
 </links>
 
 </CRANTaskView>
