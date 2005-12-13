@@ -73,7 +73,7 @@
       <li><b>Risk Management:</b>The <pkg>VaR</pkg> package estimates
           Value-at-Risk, and several packages provide functionality for 
           Extreme Value Theory models: <pkg>evd</pkg>, <pkg>evdbayes</pkg>, 
-          <pkg>evir</pkg>, <pkg>extRremes</pkg>, <pkg>ismec</pkg>, 
+          <pkg>evir</pkg>, <pkg>extRremes</pkg>, <pkg>ismev</pkg>, 
           <pkg>POT</pkg>.   
           The <pkg>mvtnorm</pkg> 
           package provides code for multivariate Normal and t-distributions.
