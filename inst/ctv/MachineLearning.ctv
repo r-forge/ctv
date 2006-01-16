@@ -18,6 +18,10 @@
              regression, classification and survival analysis, following the
 	     ideas in the CART book, are
              implemented in <pkg>rpart</pkg> (shipped with base R) and <pkg>tree</pkg>.
+             A rich toolbox of partitioning algorithms is available in
+             <A HREF="http://www.cs.waikato.ac.nz/~ml/weka/">Weka</A>, 
+             package <pkg>RWeka</pkg> provides an interface to this
+             implementation.
              An adaptation of <pkg>rpart</pkg> for multivariate responses
              is available in package <pkg>mvpart</pkg>. The validity of
              trees can be investigated via permutation approaches with package 
@@ -87,6 +91,7 @@
     <pkg>rpart.permutation</pkg>
     <pkg priority="core">randomForest</pkg>
     <pkg priority="core">rpart</pkg>
+    <pkg>RWeka</pkg>
     <pkg>svmpath</pkg>
     <pkg>tree</pkg>
     <pkg priority="core">VR</pkg>
