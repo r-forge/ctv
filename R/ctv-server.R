@@ -186,8 +186,13 @@ updateViews <- function(repos = ".",
 
     ## check whether all packages used in the ctv are also
     ## present in repos
-    if(!all(x$packagelist[,1] %in% pkgs))
-      warning(paste("Not all packages in task view", sQuote(x$name), "are also available in repository", dQuote(repos)))
+    if(!all(x$packagelist[,1] %in% pkgs)) {
+      nopkgs <- as.vector(x$packagelist[,1])
+      nopkgs <- nopkgs[!nopkgs %in% pkgs]
+      warning(paste("The packages", paste(nopkgs, collapse = ", "),
+        "in task view", sQuote(x$name), "are not available in repository",
+	dQuote(repos)))
+    }
 
     ## store index information and ctv in ctvlist
     idx[i,] <- c(x$name, x$topic)

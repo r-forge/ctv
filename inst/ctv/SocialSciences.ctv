@@ -217,7 +217,7 @@
     <pkg>dynlm</pkg>
     <pkg>effects</pkg>
     <pkg>eha</pkg>
-    <pkg>exactLogLinTest</pkg>
+    <pkg>exactLoglinTest</pkg>
     <pkg>Hmisc</pkg>
     <pkg>forward</pkg>
     <pkg>frailtypack</pkg>
