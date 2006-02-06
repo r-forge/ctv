@@ -9,7 +9,7 @@
        somewhere. There are a large number of packages on CRAN which extend this methodology,
        a brief overview is given below. Application-specific uses of multivariate statistics
        are described in relevant task views, for example whilst principal components are listed here, 
-       ordination is covered in the <view>Environmetics</view> task view.</p>
+       ordination is covered in the <view>Environmetrics</view> task view.</p>
 
        <p>The packages in this view can be roughly structured into the following topics.
        If you think that some package is missing from the list, please let me know.</p>
@@ -31,9 +31,12 @@
           cluster specific graphical enhancements for scatterplots and parallel coordinate plots
 	  See the links for a reference to GGobi; <pkg>xgobi</pkg> interfaces to the XGobi
 	  and XGvis programs which allow linked, dynamic multivariate plots as well as
-	  projection pursuit.</li>
+	  projection pursuit.   <tt>summarize()</tt> and <tt>summary.formula()</tt> in <pkg>Hmisc</pkg> 
+          assist with descriptive functions; from the same package <tt>varclus()</tt> offers variable 
+          clustering while <tt>dataRep()</tt> and <tt>find.matches()</tt> assist in exploring a given 
+          dataset in terms of representativeness and finding matches.</li>
       <li><i>Multivariate normal distributions</i>:
-          <tt>var()</tt> and <tt>cor()</tt> in stats will provide estimates of the covariance
+          <tt>cov()</tt> and <tt>cor()</tt> in stats will provide estimates of the covariance
           and correlation  matrices respectively. <tt>cov.rob()</tt> in MASS
           provides robust estimates of the variance-covariance matrix by minimum volume 
           ellipsoid, minimum covariance determinant or classical product-moment. <pkg>covRobust</pkg> 
@@ -42,19 +45,30 @@
           distribution. <pkg>mvtnorm</pkg> also provides simulation as well as probability and 
           quantile functions for both the multivariate t distribution and multivariate normal 
           distributions as well as density functions for the multivariate normal distribution.   
-          Comprehensive information on mixtures is given in the <view>Cluster</view> view, 
+          <pkg>mnormt</pkg> provides multivariate normal and multivariate t density and distribution
+          functions as well as random number simulation. 
+	  Comprehensive information on mixtures is given in the <view>Cluster</view> view, 
           some density estimates and random numbers are provided by 
           <tt>rmvnorm.mixt()</tt> and <tt>dmvnorm.mixt()</tt> in <pkg>ks</pkg>, mixture fitting 
           is also provided within <pkg>bayesm</pkg>.
 	  <pkg>mvnormtest</pkg> provides a multivariate extension
 	  to the Shapiro-Wilks test, <pkg>mvoutlier</pkg> provides multivariate outlier detection based
-	  on robust methods. <pkg>corpcor</pkg> provides shrinkage estimation of large scale covariance
+	  on robust methods.  <tt>mvnorm.etest()</tt> in <pkg>energy</pkg> provides an assessment 
+          of normality based on E statistics (energy); in the same package <tt>k.sample()</tt>
+          assesses a number of samples for equal distributions.
+          <pkg>corpcor</pkg> provides shrinkage estimation of large scale covariance
 	  and (partial) correlation. <tt>bkde2D()</tt> from <pkg>KernSmooth</pkg> and <tt>kde2d()</tt>
 	  from MASS provide binned and non-binned 2-dimensional kernel density 
-          estimation, <pkg>ks</pkg> also provides multivariate kernel smoothing.</li>
+          estimation, <pkg>ks</pkg> also provides multivariate kernel smoothing.   
+          Functions to simulate from the Wishart distribution are provided in a number of places, such 
+          as <tt>rwishart()</tt> 
+          in <pkg>bayesm</pkg> and <tt>rwish()</tt> in <pkg>MCMCpack</pkg> (the latter also has a density
+          function <tt>dwish()</tt>).   Tests for Wishart-distributed covariance matrices are given by 
+          <tt>mauchly.test()</tt> in stats.</li>
       <li><i>Linear models</i>:
           From stats, <tt>lm()</tt> (with a matrix specified as the dependent variable)
-	  offers multivariate linear models and <tt>manova()</tt> offers MANOVA. <pkg>pls.pcr</pkg>
+	  offers multivariate linear models, <tt>anova.mlm()</tt> provides comparison of 
+          multivariate linear models.   <tt>manova()</tt> offers MANOVA.  <pkg>pls</pkg>
 	  provides partial least squares regression (PLSR) and principal component regression,
 	  <pkg>dr</pkg> provides dimension reduction regression options such as <tt>"sir"</tt> (sliced
 	  inverse regression), <tt>"save"</tt> (sliced average variance estimation).
@@ -63,10 +77,10 @@
           Principal components can be fitted with <tt>prcomp()</tt> (based on <tt>svd()</tt>,
 	  preferred) as well as <tt>princomp()</tt> (based on <tt>eigen()</tt> for  compatibility
 	  with S-PLUS) from stats. <tt>cancor()</tt> in stats provides canonical correlation.   
-          <pkg>sca</pkg> provides simple components.  <pkg>pcurve</pkg> provides Principal Curve 
-          analysis and visualisation as well as further principal component method. <pkg>kernlab</pkg> 
+          <pkg>sca</pkg> provides simple components. <tt>pc1()</tt> in <pkg>Hmisc</pkg> provides the first principal component and gives coefficients for unscaled data.  <pkg>pcurve</pkg> provides Principal Curve 
+          analysis and visualisation as well as a further principal component method. <pkg>kernlab</pkg> 
           uses kernel methods to provide a form of non-linear principal components with 
-          <tt>kpca()</tt> and canonical correlation with <tt>kcca()</tt>.  <pkg>amap</pkg> provides
+          <tt>kpca()</tt> and canonical correlation with  <tt>kcca()</tt>.  <pkg>amap</pkg> provides
 	  further robust and parallelised methods such as a form of generalised 
 	  and robust principal component analysis via <tt>acpgen()</tt> and <tt>acprob()</tt> 
           respectively.
@@ -87,7 +101,8 @@
           <view>Cluster</view> task view.  Standard techniques include hierarchical clustering by 
           <tt>hclust()</tt> and k-means clustering by <tt>kmeans()</tt> in stats.
 	   A range of established
-          clustering and visualisation techniques are also available in <pkg>cluster</pkg>. 
+          clustering and visualisation techniques are also available in <pkg>cluster</pkg>.   Distance 
+          measures  (<tt>edist()</tt>) and hierarchical clustering (<tt>hclust.energy()</tt>) based on               E-statistics are available in <pkg>energy</pkg>.  
           The <view>Environmetrics</view> task view gives a topic-related overview of some clustering
           techniques.</li> 
       <li><i>Tree methods</i>:
@@ -95,7 +110,7 @@
 	  Suffice to say here that classification trees are sometimes considered within 
           multivariate methods; <pkg>rpart</pkg> is most used for this purpose,    
           <pkg>mvpart</pkg> extend regression trees to cover multivariate regression trees.</li>
-      <li><i>Supervised classfication and discriminant analysis</i>:
+      <li><i>Supervised classification and discriminant analysis</i>:
           <tt>lda()</tt> and <tt>qda()</tt> within MASS provide linear
 	  and quadratic discrimination respectively. <pkg>mda</pkg> provides mixture and
 	  flexible discriminant analysis with <tt>mda()</tt> and <tt>fda()</tt> as well as
@@ -127,7 +142,7 @@
 	  imputation by the EM algorithm for missing multivariate normal data, <pkg>cat</pkg>
 	  provides multiple imputation for categorical data <pkg>mix</pkg> for mixed
 	  categorical and continuous data. <pkg>pan</pkg> provides multiple imputation for
-	  missing panel data.</li>
+	  missing panel data.   <tt>aregImpute()</tt> and <tt>transcan()</tt> from <pkg>Hmisc</pkg> provide further imputation methods.</li>
       <li><i>Latent variable approaches</i>:
           <tt>factanal()</tt> in stats provides factor analysis by maximum
 	  likelihood as well as principal component extraction, Bayesian factor analysis
@@ -147,11 +162,11 @@
 	  doing matrix manipulations, which are complemented by the packages <pkg>Matrix</pkg>
 	  and <pkg>SparseM</pkg>.</li>
       <li><i>Miscellaneous utitlies</i>:
-          <pkg>abind</pkg> generalises <tt>cbind()</tt> and <tt>rbind()</tt> for arrays.
+          <pkg>abind</pkg> generalises <tt>cbind()</tt> and <tt>rbind()</tt> for arrays, <tt>mApply()</tt> in <pkg>Hmisc</pkg> generalises <tt>apply()</tt> for matrices and passes multiple functions.
 	  <pkg>SharedHT2</pkg> provides an implementation of Hotelling's T2 test for
 	  microarray experiments. <pkg>panel</pkg> provides methods for modelling panel data.
 	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
-	  Bayesian vector autoregression models, along with impulse responses and forecasting.</li>
+	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <tt>rm.boot()</tt> from <pkg>Hmisc</pkg> bootraps repeated measures models.</li>
     </ul>    
   </info>
 
@@ -172,7 +187,7 @@
     <pkg>gclus</pkg> 
     <pkg>GPArotation</pkg> 
     <pkg>gpls</pkg> 
-    <pkg>kernlab</pkg>
+    <pkg>Hmisc</pkg>
     <pkg>KernSmooth</pkg>
     <pkg>klaR</pkg>
     <pkg>knncat</pkg> 
@@ -225,6 +240,7 @@
         <view>MachineLearning</view>
         <a href="http://www.ggobi.org">GGobi (interactive dynamic visualisation software, available standalone or as an R library)</a>
         <a href="http://www.research.att.com/areas/stat/xgobi/">XGobi (interactive, dynamic visulisation software), XGvis (for proximity data / multidimensional scaling)</a>
+        <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/HmiscMultivar">Hmisc functions related to multivariate analysis</a>
         <a href="http://www.stat.auckland.ac.nz/~yee/VGAM/">Vector Generalised Linear and Additive Models, Reduced Rank regression</a>
   </links>
   
