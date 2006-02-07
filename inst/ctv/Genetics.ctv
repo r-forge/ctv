@@ -6,7 +6,7 @@
   
   <info>
     
-    <p>
+   <p>
     Great advances have been made in the field of genetic analysis over the last years. The availability of millions
     of single nucleotide polymorphisms (SNPs) in widely available databases, coupled with major advances in SNP genotyping
     technology that reduce costs and increase throughput, are enabling a host of studies aimed at elucidating the genetic basis
@@ -39,8 +39,7 @@
 
       <li><i>Phylogenetics</i>:
       Phylogenetic and evolution analyses can be performed via <pkg>ape</pkg> and <pkg>apTreeshape</pkg>. Package <pkg>ouch</pkg> provides
-      Ornstein-Uhlenbeck models for phylogenetic comparative hypotheses, while <pkg>phyloarray</pkg> offers functions for phylogenetic microarray
-      data processing. <pkg>PHYLOGR</pkg> is a suite of functions for the analysis of phylogenetically simulated data sets and
+      Ornstein-Uhlenbeck models for phylogenetic comparative hypotheses. <pkg>PHYLOGR</pkg> is a suite of functions for the analysis of phylogenetically simulated data sets and
       phylogenetically-based GLS model fitting. <pkg>stepwise</pkg> implements a method for stepwise detection of recombination breakpoints in
       sequence alignments.
       </li>
@@ -96,7 +95,6 @@
     <pkg>mapLD</pkg>
     <pkg>multtest</pkg>
     <pkg>ouch</pkg>
-    <pkg>phyloarray</pkg>
     <pkg>PHYLOGR</pkg>
     <pkg>popgen</pkg>
     <pkg>powerpkg</pkg>
