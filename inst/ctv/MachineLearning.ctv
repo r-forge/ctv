@@ -25,10 +25,13 @@
              package <pkg>RWeka</pkg> provides an interface to this
              implementation, including the J4.8-variant of C4.5 and M5.
              <br/>
-             A recursive partitioning algorithm based on
-             conditional inference procedures with unbiased variable
-             selection and statistical stopping criterion is implemented in package
-             <pkg>party</pkg>. Extensible tools for visualizing binary trees
+             Two recursive partitioning algorithms with unbiased variable
+             selection and statistical stopping criterion are implemented in 
+             package <pkg>party</pkg>. Function <tt>ctree()</tt> is based on 
+             non-parametrical conditional inference procedures for testing 
+             independence between response and each input variable whereas
+             <tt>mob()</tt> can be used to partition parametric models.
+             Extensible tools for visualizing binary trees
              and node distributions of the response are available in package
              <pkg>party</pkg> as well.
              <br/>
