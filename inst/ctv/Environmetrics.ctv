@@ -112,7 +112,7 @@
     <pkg priority="core">mgcv</pkg>
     <pkg>VR</pkg>
     <pkg priority="core">ade4</pkg>
-    <pkg>ade4habitat</pkg>
+    <pkg>adehabitat</pkg>
     <pkg>gam</pkg>
     <pkg>grasper</pkg>
     <pkg>tseries</pkg>
