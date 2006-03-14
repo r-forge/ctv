@@ -45,7 +45,8 @@
 	  The <pkg>dse</pkg> packages provides a variety of more
 	  advanced estimation methods; <pkg>fracdiff</pkg> can
 	  estimate fractionally integrated series; <pkg>longmemo</pkg> covers
-	  related material. For volatily
+	  related material; <pkg>FracSim</pkg> simulates fractional Levy
+          series. For volatily 
 	  modeling, the standard GARCH(1,1) model can be estimated with the 
 	  <tt>garch()</tt> function in the <pkg>tseries</pkg> package. Unit
           root and cointegration tests are provided by <pkg>tseries</pkg>,
@@ -54,7 +55,9 @@
           <pkg>fMultivar</pkg> contain a number of estimation functions for 
           ARMA, GARCH, long memory models, unit roots and more. 
 	  The <pkg>ArDec</pkg> implements autoregressive time series 
-	  decomposition in a Bayesian framework.  The <pkg>dyn</pkg> and
+	  decomposition in a Bayesian framework; <pkg>MSBVAR</pkg> provides 
+	  Bayesian estimation of vector autoregressive models.  The
+          <pkg>dyn</pkg> and 
 	  <pkg>dynlm</pkg> are suitable for dynamic (linear) regression models.
       	  Several packages provide wavelet analysis 
 	  functionality: <pkg>rwt</pkg>, <pkg>wavelets</pkg>, 
@@ -73,7 +76,7 @@
       <li><b>Risk Management:</b>The <pkg>VaR</pkg> package estimates
           Value-at-Risk, and several packages provide functionality for 
           Extreme Value Theory models: <pkg>evd</pkg>, <pkg>evdbayes</pkg>, 
-          <pkg>evir</pkg>, <pkg>extRremes</pkg>, <pkg>ismev</pkg>, 
+          <pkg>evir</pkg>, <pkg>extRremes</pkg>, <pkg>ismec</pkg>, 
           <pkg>POT</pkg>.   
           The <pkg>mvtnorm</pkg> 
           package provides code for multivariate Normal and t-distributions.
@@ -88,10 +91,12 @@
           irregularly-spaced time series. <pkg>fCalendar</pkg> also addresses
           calendar issues such as recurring holidays for a large number of
           financial centers, and provides code for high-frequency data sets.
+	  The <pkg>RBloomberg</pkg> package can access Bloomberg data (but
+	  requires a Bloomberg installations on a Windows PC).
           </li>
     </ul>
     <p>
-    <small>Last updated on $Date: 2005/11/24 20:26:14 $.</small>
+    <small>Last updated on $Date: 2006/03/14 04:07:34 $.</small>
     </p>
   </info>
 
@@ -114,14 +119,17 @@
     <pkg priority="core">fPortfolio</pkg>
     <pkg priority="core">fMultivar</pkg>
     <pkg>fracdiff</pkg>
+    <pkg>FracSim</pkg>
     <pkg priority="core">fSeries</pkg>
     <pkg>ismev</pkg>
     <pkg priority="core">its</pkg>    
     <pkg>lmtest</pkg>
     <pkg>longmemo</pkg>
+    <pkg>MSBVAR</pkg>
     <pkg>mvtnorm</pkg>
     <pkg>portfolio</pkg>
     <pkg>POT</pkg>
+    <pkg>RBloomberg</pkg>
     <pkg>Rcmdr</pkg>
     <pkg priority="core">RQuantLib</pkg>
     <pkg>sandwich</pkg>
@@ -144,6 +152,13 @@
     <a href="http://www.rmetrics.org">Rmetrics by Diethelm Wuertz contains a wealth of R code for Finance</a>
     <a href="http://www.quantlib.org">Quantlib is a C++ library for quantitative finance</a>
     <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing list: R Special Interest Group Finance</a>
+    <a href="http://www.russell.com/US/Indexes/US/index_values.asp">Russell
+    indexes data</a>
+    <a href="http://www.msci.com/us/indexperf/index.html">MSCI indexes data</a>
+    <a href="http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html">French/Fama data</a>
+    <a href="http://www.wilshire.com/Indexes/calculator/">Wilshire indexes data</a>
+    <a href="http://www.barra.com/Research/DownloadMonthlyReturns.aspx">Barra
+    indexes data</a>
   </links>
 
 </CRANTaskView>
