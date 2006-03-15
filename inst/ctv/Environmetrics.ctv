@@ -34,7 +34,7 @@
         <li><em>Ordination</em>: 
             <ul>
                 <li>Principal Components Analysis (PCA) is available in <tt>prcomp()</tt> (preferred) and <tt>princomp()</tt> in standard 
-                package stats. Packages <pkg>vegan</pkg> (<tt>rda()</tt>)and <pkg>labdsv</pkg> (<tt>pca()</tt>) provide more ecologically-oriented
+                package stats. Packages <pkg>vegan</pkg> (<tt>rda()</tt>) and <pkg>labdsv</pkg> (<tt>pca()</tt>) provide more ecologically-oriented
                 implementations. A form of PCA used in the climate and climate change fields is Empirical Orthogonal Function (EOF)
                 analysis. <tt>EOF()</tt> in package <pkg>clim.pact</pkg> provides and implementation of EOF.</li>
                 <li>Redundancy Analysis (RDA) is available via <tt>rda()</tt> in <pkg>vegan</pkg> and <tt>pcaiv()</tt> in <pkg>ade4</pkg>.</li>
@@ -149,30 +149,19 @@
     <pkg>eco</pkg>
 </packagelist>
 <links>
-    <view>Spatial</view> CRAN Task View.
-    <a href="http://cc.oulu.fi/~jarioksa/softhelp/vegan.html">Jari Oksanen's vegan pages</a> with links to his course notes 
-    and other vegan-related resources.
-    <a href="http://ecology.msu.montana.edu/labdsv/">Dave Roberts' LabDSV pages</a> with links to example analyses using
-    <pkg>vegan</pkg>, <pkg>labdsv</pkg> and other R/S-Plus functions.
-    <a href="http://www.stat.auckland.ac.nz/~yee/VGAM/">Thomas Yee's VGAM package for R</a>. VGAM fits vector generalized 
-    linear and additive models (VGLMs/VGAMs), as well as reduced-rank VGLMs (RR-VGLMs) and quadratic RR-VGLMs (QRR-VGLMs).
-    A wide range of models can be fit within the VGAM framework, including a true maximum likelihood approach to
-    canonical Gaussian ordination. VGAM is not on CRAN as it is under development.
+    <view>Spatial</view>
+    <a href="http://cc.oulu.fi/~jarioksa/softhelp/vegan.html">Jari Oksanen's vegan pages</a>
+    <a href="http://ecology.msu.montana.edu/labdsv/">Dave Roberts' LabDSV pages</a>
+    <a href="http://www.stat.auckland.ac.nz/~yee/VGAM/">Thomas Yee's VGAM package for R.</a>
     <a href="http://www.stat.auckland.ac.nz/showperson?firstname=Brian&amp;surname=McArdle">Brian McArdle's MultivEcol 
-    package for R</a>. MultivEcol is currently in development but an alpha release is available from Brian's University pages.
-    <a href="http://www.brodgar.com/">Brodgar</a> is a <q>Software Package for Data Exploration, Univariate Analysis, Multivariate 
-    Analysis and Multivariate Time Series Analysis</q> and features a link to R from within the Brodgar 
-    <acronym title="Graphical User interface">GUI</acronym>. Brodgar itself is not free software, but an evaluation copy can be 
-    downloaded from the website which contains the R scripts Brodgar uses for analyses performed via the R link. These R scripts
-    are freely available for use outside Brodgar.
+    package for R.</a>
+    <a href="http://www.brodgar.com/">Brodgar</a>
     <a href="http://pbil.univ-lyon1.fr/ADE-4/">More information on the ade4 package can be found on the ADE4 website</a>
     <a href="http://ordination.okstate.edu/">Mike Palmer's Ordination web site</a>
     <a href="http://www.maths.lancs.ac.uk/~stephena/software.html">Alec Stephenson's summary and description of software for 
     extreme value theory in R/S-Plus</a>
     <a href="http://www.zoo.ufl.edu/bolker/R/">R packages written by Ben Bolker</a>
-    <a href="http://www.tu-dresden.de/fghhihb/petzoldt/zeugs.html">Thomas Petzoldt's page about ecological modelling with R</a>. Page is 
-    in German with an English translation available.
-    <a href="http://www.flr-project.org/doku.php">The FLR project</a> web page for Fisheries Science in R provides a number of packages 
-    for analysing fisheries data (FLCore, FLBayes, FLXSA, FLEDA and FLGrowth)
+    <a href="http://www.tu-dresden.de/fghhihb/petzoldt/zeugs.html">Thomas Petzoldt's page about ecological modelling with R.</a>
+    <a href="http://www.flr-project.org/doku.php">The FLR project web page for Fisheries Science in R.</a>
 </links>
 </CRANTaskView>
