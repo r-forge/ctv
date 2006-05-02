@@ -47,6 +47,19 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   ## getOption("repos") replaces getOption("CRAN") from 2.1.0 on
   if(is.null(repos)) repos <- ifelse(is.null(getOption("repos")), getOption("CRAN"), getOption("repos"))
 
+  if("@CRAN@" %in% repos && interactive()) {
+      cat(gettext("--- Please select a CRAN mirror for use in this session ---\n"))
+      flush.console()
+      chooseCRANmirror()
+      m <- match("@CRAN@", repos)
+      nm <- names(repos)
+      repos[m] <- getOption("repos")["CRAN"]
+      if(is.null(nm)) nm <- rep("", length(repos))
+      nm[m] <- "CRAN"
+      names(repos) <- nm
+  }
+  if("@CRAN@" %in% repos) stop("trying to use CRAN without setting a mirror")
+
   contriburl <- paste(repos, "/src/contrib", sep = "")
   rval <- list()
   
