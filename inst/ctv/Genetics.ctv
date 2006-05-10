@@ -107,6 +107,7 @@
   </packagelist>
 
   <links>
+    <a href="http://www-gene.cimr.cam.ac.uk/clayton/software/">R Software by David Clayton</a>
     <a href="http://astor.som.jhmi.edu/BayesMendel/">BayesMendel, R software for predicting who may carry a cancer susceptibility gene</a>
     <a href="http://research.warnes.net/projects/RGeneticsProject/">R genetics project</a>
     <a href="http://linkage.rockefeller.edu/yyang/resources.html">R code for estimating haplotype frequencies from pooled DNA samples</a>
