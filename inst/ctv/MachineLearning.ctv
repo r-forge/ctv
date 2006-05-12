@@ -50,7 +50,10 @@
              package <pkg>randomForest</pkg>. Package <pkg>ipred</pkg> has bagging
              for regression, classification and survival analysis as well as
              bundling, a combination of multiple models via
-             ensemble learning.</li>
+             ensemble learning. In addition, a random forest variant based on
+             conditional inference trees is implemented in package <pkg>party</pkg>.
+             The <pkg>varSelRF</pkg> package focuses on variable selection by means
+             for random forest algorithms.</li>
       <li><i>Regularized and Shrinkage Methods</i>: Regression models with some
              constraint on the parameter estimates can be fitted with the
              <pkg>lasso2</pkg> and <pkg>lars</pkg> packages. The solutions
@@ -116,6 +119,7 @@
     <pkg>RWeka</pkg>
     <pkg>svmpath</pkg>
     <pkg>tree</pkg>
+    <pkg>varSelRF</pkg>
     <pkg priority="core">VR</pkg>
   </packagelist>
 
