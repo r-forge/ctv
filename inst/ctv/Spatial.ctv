@@ -11,7 +11,7 @@
     these locations may be retrieved if the location is recorded with
     care. Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others on the
-    <a href="http://R-spatial.sourceforge.net/">R-spatial</a>
+    <a target="_top" href="http://R-spatial.sourceforge.net/">R-spatial</a>
     sourceforge repository. The
     contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
@@ -20,46 +20,60 @@
     mailing-list is a good place to begin for obtaining help and discussing
     questions about both accessing data, and analysing it. More
     information about the functions is available from the
-    <a href="http://www.R-project.org/Rgeo/">Rgeo</a> website. The packages in this
+    <a target="_top" href="http://www.R-project.org/Rgeo/">Rgeo</a> website. The packages in this
     view can be roughly structured into the following topics. If you think
     that some package is missing from the list, please let me know.</p>
     <ul>
 
-      <li><p><b>Classes for spatial data</b>: Because many of the packages
-      importing and using spatial data have had to include objects of
-      storing data and functions for vizualising it, an initiative is
-      in progress to construct shared classes and plotting functions
-      for spatial data. The <pkg>sp</pkg> package has been published on
-      CRAN, and wrapper packages are available from a repository for
-      work in progress at the <a href="http://R-spatial.sourceforge.net/">R-spatial</a>
-      Sourceforge home page. Some other packages
-      will become dependent on these classes in the near future. An
+      <li><p><b>Classes for spatial data</b>: Because many of the
+      packages importing and using spatial data have had to include
+      objects of storing data and functions for vizualising it,
+      an initiative is in progress to construct shared classes
+      and plotting functions for spatial data. The <pkg>sp</pkg>
+      package has been published on CRAN, and wrapper packages
+      are available from a repository for work in progress at the
+      <a href="http://R-spatial.sourceforge.net/">R-spatial</a>
+      Sourceforge home page. The <pkg>sp</pkg> package is discussed in a note in
+      <a href="http://cran.r-project.org/doc/Rnews/Rnews_2005-2.pdf">R
+      News</a>.  Some other packages have become dependent on these
+      classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. An
       alternative approach to some of these issues is implemented in
       the <pkg>PBSmapping</pkg> package.</p></li>
 
-      <li><p><b>Reading and writing spatial data</b>: If we think
-      of maps as being vector-based, there are a number of packages
-      for accessing such vector data on CRAN: <pkg>maps</pkg> (with
-      <pkg>mapdata</pkg> and <pkg>mapproj</pkg>) provides access to the
-      same kinds of geographical databases as S, <pkg>RArcInfo</pkg>
-      allows ArcInfo v.7 binary files and *.e00 files to be read,
-      and <pkg>maptools</pkg> and <pkg>shapefiles</pkg> read and
-      write ArcGIS/ArcView shapefiles. For visualization, the colour
-      palettes provided in the <pkg>RColorBrewer</pkg> package are very
-      useful. When raster data are to be accessed, the <pkg>rgdal</pkg>
-      bindings to GDAL have drivers for a broad range of data formats,
-      and can handle very large data sets by subsetting.</p>
+      <li><p><b>Reading and writing spatial data</b>: Maps may be
+      vector-based or raster-based. The <pkg>rgdal</pkg> package provides
+      bindings to <a href="http://www.gdal.org/">GDAL</a>-supported raster
+      formats and <a href="http://www.gdal.org/ogr/">OGR</a>-supported
+      vector formats. It contains functions to write raster
+      files in supported formats. The package also provides <a
+      href="http://www.remotesensing.org/proj/">PROJ.4</a> projection
+      support for vector objects. The Windows binary of <pkg>rgdal</pkg>
+      includes a subset of possible data source drivers; if others
+      are needed, use FWTools conversion utilities. There are a
+      number of other packages for accessing vector data on CRAN:
+      <pkg>maps</pkg> (with <pkg>mapdata</pkg> and <pkg>mapproj</pkg>)
+      provides access to the same kinds of geographical databases as
+      S, <pkg>RArcInfo</pkg> allows ArcInfo v.7 binary files and *.e00
+      files to be read, and <pkg>maptools</pkg> and <pkg>shapefiles</pkg>
+      read and write ArcGIS/ArcView shapefiles. The <pkg>maptools</pkg>
+      package also provides helper functions for writing map polygon
+      files to be read by WinBUGS, Mondrian, and the tmap command
+      in Stata. For visualization, the colour palettes provided in
+      the <pkg>RColorBrewer</pkg> package are very useful, and may
+      be modified or extended using the <code>colorRampPalette</code>
+      function provided with R. The <pkg>classInt</pkg> package provides
+      functions for choosing class intervals for thematic cartography.</p>
 
-      <p>Integration with version 5.* of the leading open source GIS,
-      GRASS, is provided in CRAN package <pkg>GRASS</pkg> (but not version
-      6.0, see below for developments). A family of wrapper packages is
-      being written to interface these packages to <b>sp</b> classes,
-      and can be found on the <a href="http://R-spatial.sourceforge.net/">R-spatial</a>
-      Sourceforge home page. Packages are already available
-      for using data from <pkg>maptools</pkg> and <pkg>rgdal</pkg>,
-      and others for projecting and/or datum transforming <b>sp</b>
-      class objects, and interfacing the newly released version 6.0 of
-      the GRASS GIS.</p></li>
+      <p>Integration with version 5.* of the leading open source
+      GIS, GRASS, is provided in CRAN package <pkg>GRASS</pkg>
+      (but not version 6.0, see below for developments). A family
+      of wrapper packages is being written to interface these
+      packages to <b>sp</b> classes, and can be found on the 
+      <a href="http://R-spatial.sourceforge.net/">R-spatial</a> Sourceforge
+      home page. Packages are already available for interfacing version
+      6.0 of the GRASS GIS, and for interfacing the <pkg>maps</pkg>,
+      <pkg>PBSmapping</pkg>, <pkg>gpclib</pkg>, and <pkg>spatstat</pkg>
+      packages.</p></li>
 
       <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
       package is available as part of the <pkg>VR</pkg> bundle
@@ -67,7 +81,8 @@
       addition, <pkg>spatstat</pkg> allows freedom in defining the
       region(s) of interest, and makes extensions to marked processes
       and spatial covariates. Its strengths are model-fitting and
-      simulation. It is the only package that will enable the user to fit
+      simulation, and it has a useful <a href="http://www.spatstat.org/">
+      homepage</a>. It is the only package that will enable the user to fit
       inhomogeneous point process models with interpoint interactions. The
       <pkg>splancs</pkg> package also allows point data to be analysed
       within a polygonal region of interest, and covers many methods,
@@ -88,10 +103,12 @@
       of variograms, the <pkg>vardiag</pkg> package can be used. The
       <pkg>sgeostat</pkg> package is also available. Within the same
       general topical area are the <pkg>tripack</pkg> for triangulation
-      and the <pkg>akima</pkg> package for spline interpolation. Finally,
-      there is the <pkg>spatialCovariance</pkg> package, which supports
-      the computation of spatial covariance matrices for data on
-      rectangles.</p></li>
+      and the <pkg>akima</pkg> package for spline interpolation. In
+      addition, there are the <pkg>spatialCovariance</pkg> package,
+      which supports the computation of spatial covariance matrices
+      for data on rectangles, the <pkg>regress</pkg> package building
+      in part on <pkg>spatialCovariance</pkg>, and the <pkg>tgp</pkg>
+      package.</p></li>
 
       <li><p><b>Disease mapping and areal data analysis</b>:
       <pkg>DCluster</pkg> is a package for the detection of
@@ -99,9 +116,11 @@
       <pkg>spdep</pkg> package, which provides basic functions for
       building neighbour lists and spatial weights, tests for spatial
       autocorrelation for areal data like Moran's I, and functions for
-      fitting spatial regression models. These models are also used in
-      spatial econometrics, and assume that the spatial dependence can
-      be described by known weights.</p></li>
+      fitting spatial regression models, such as SAR and CAR models. These
+      models assume that the spatial dependence can be described by known
+      weights. The <pkg>spgwr</pkg> package contains an implementation of
+      geographically weighted regression methods for exploring possible
+      non-stationarity.</p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
@@ -110,9 +129,11 @@
       environmental sciences, <pkg>adehabitat</pkg> for the analysis of
       habitat selection by animals, <pkg>pastecs</pkg> for the regulation,
       decomposition and analysis of space-time series, <pkg>vegan</pkg>
-      for ordination methods and other useful functions for community
-      and vegetation ecologists, and many other functions in other
-      contributed packages.</p></li>
+      for ordination methods and other useful functions for community and
+      vegetation ecologists, and many other functions in other contributed
+      packages. The <a href="Environmetrics.html">Environmetrics</a> Task
+      View contains a much more complete survey of relevant functions
+      and packages.</p></li>
     </ul>
   </info>
 
@@ -121,6 +142,7 @@
     <pkg>adehabitat</pkg>
     <pkg>ash</pkg>
     <pkg priority="core">akima</pkg>
+    <pkg priority="core">classInt</pkg>
     <pkg>DCluster</pkg>
     <pkg>fields</pkg>
     <pkg>geoR</pkg>
@@ -137,14 +159,17 @@
     <pkg>RandomFields</pkg>
     <pkg>RArcInfo</pkg>
     <pkg priority="core">RColorBrewer</pkg>
-    <pkg>rgdal</pkg>
+    <pkg>regress</pkg>
+    <pkg priority="core">rgdal</pkg>
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
     <pkg>spatialCovariance</pkg>
-    <pkg>spatstat</pkg>
+    <pkg priority="core">spatstat</pkg>
     <pkg priority="core">spdep</pkg>
+    <pkg>spgwr</pkg>
     <pkg priority="core">splancs</pkg>
+    <pkg>tgp</pkg>
     <pkg priority="core">tripack</pkg>
     <pkg>vardiag</pkg>
     <pkg>vegan</pkg>
@@ -153,8 +178,9 @@
 
     
   <links>
-    <a href="http://www.R-project.org/Rgeo/">Rgeo: Spatial Statistics with R</a>
-    <a href="http://R-spatial.sourceforge.net/">R-spatial Sourceforge home page</a>
+   <a href="Environmetrics.html">CRAN Task View: Environmetrics</a>
+    <a target="_top" href="http://www.R-project.org/Rgeo/">Rgeo: Spatial Statistics with R</a>
+    <a target="_top" href="http://R-spatial.sourceforge.net/">R-spatial Sourceforge home page</a>
     <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Geo/">R-SIG-Geo mailing list</a>
   </links> 
 
