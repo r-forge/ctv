@@ -77,7 +77,7 @@
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.	  
 	  More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root
 	  and cointegration techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and
-	  <pkg>tseries</pkg>.</li>
+	  <pkg>tseries</pkg>. Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
       <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
           ships with many powerful tools for doing matrix manipulations, which are 
 	  complemented by the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
@@ -92,7 +92,8 @@
 	  contains a complete collection of data sets from various standard econometric
 	  textbooks. <pkg>micEcdat</pkg> provides several data sets from the Journal of
 	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
-	  data archives. Package <pkg>pwt</pkg> provides the Penn world table.</li>
+	  data archives. Package <pkg>CDNmoney</pkg> provides Canadian monetary aggregates
+	  and <pkg>pwt</pkg> provides the Penn world table.</li>
     </ul>    
   </info>
 
@@ -101,6 +102,7 @@
     <pkg>betareg</pkg>
     <pkg>bivpois</pkg>
     <pkg priority="core">car</pkg>
+    <pkg>CDNmoney</pkg>
     <pkg>Design</pkg>
     <pkg>dse</pkg>
     <pkg>dyn</pkg>
@@ -128,6 +130,7 @@
     <pkg>strucchange</pkg>
     <pkg>systemfit</pkg>
     <pkg priority="core">tseries</pkg>
+    <pkg>tsfa</pkg>
     <pkg priority="core">urca</pkg>
     <pkg>uroot</pkg>
     <pkg>VR</pkg>
