@@ -81,6 +81,9 @@
     the current version of covers discrete and continuous variables
     under Gaussian network structure. 
     
+    <pkg>DPpackage</pkg> contains functions for semiparametric Bayesian inference 
+    using Dirichlet process priors.
+    
     <pkg>EbayesThresh</pkg> implements Bayesian estimation for
     thresholding methods. Although the original model is developed in
     the context of wavelets, this package is useful when researchers
@@ -188,7 +191,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Sun Apr 16 11:35:07 2006
+ Last Update: Mon Jun 05 01:17:03 2006
 
  </p>
  
@@ -208,6 +211,7 @@
     <pkg priority="core">coda</pkg>
     <pkg>cslogistic</pkg>
     <pkg>deal</pkg>
+    <pkg>DPpackage</pkg>
     <pkg>EbayesThresh</pkg>
     <pkg>ensembleBMA</pkg>
     <pkg>evdbayes</pkg>
