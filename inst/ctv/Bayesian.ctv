@@ -59,9 +59,7 @@
     <li><em>Bayesian packages for specific models or methods</em>:
     <pkg>BACCO</pkg> is an R package for Bayesian analysis of random functions. <pkg>BACCO</pkg> contains two sub-packages,
     emulator and calibrator, that perform Bayesian emulation and calibration of computer programs.
-     
-    The <pkg>baymvb</pkg> package fits multivariate binary regression models (multivariate probit or multivariate t-link models) using posterior simulation.
-       
+          
     <pkg>bqtl</pkg> can be used to fit quantitative trait loci (QTL)
     models. This package allows Bayesian estimation of multi-gene models
     via Laplace approximations and provides tools for interval mapping of 
@@ -191,7 +189,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Mon Jun 05 01:17:03 2006
+ Last Update: Mon Jun 05 17:33:26 2006
 
  </p>
  
@@ -201,8 +199,7 @@
     <pkg>BACCO</pkg>
     <pkg priority="core">bayesm</pkg>
     <pkg>bayesmix</pkg>
-    <pkg priority="core">bayesSurv</pkg>
-    <pkg>baymvb</pkg> 
+    <pkg priority="core">bayesSurv</pkg>    
     <pkg>bim</pkg>
     <pkg>BMA</pkg>
     <pkg priority="core">boa</pkg>
