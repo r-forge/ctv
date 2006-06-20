@@ -18,7 +18,8 @@
           <ul>
           <li><i>Graphical Procedures:</i> A range of base graphics and 
           <pkg>lattice</pkg> functions are useful for
-	  visualising pairwise arrays of 2-dimensional scatterplots, clouds and 3-dimensional densities.    <pkg>cwhplot</pkg> in the <pkg>cwhmisc</pkg> bundle provides <tt>plotSplomT()</tt> which displays correlation values and adds histograms on the diagonal of scatterplot matrices.  	
+	  visualising pairwise arrays of 2-dimensional scatterplots, clouds and 3-dimensional densities.
+	  cwhplot in the <pkg>cwhmisc</pkg> bundle provides <tt>plotSplomT()</tt> which displays correlation values and adds histograms on the diagonal of scatterplot matrices.  	
         Beyond this, <pkg>scatterplot3d</pkg>
 	  provides 3 dimensional scatterplots, <pkg>aplpack</pkg> provides bagplots and <tt>spin3R()</tt>,
           a function for rotating 3d clouds.   <pkg>misc3d</pkg>, dependent upon <pkg>rgl</pkg>,
@@ -73,7 +74,7 @@
           quantile functions for both the multivariate t distribution and multivariate normal 
           distributions as well as density functions for the multivariate normal distribution.   
           <pkg>mnormt</pkg> provides multivariate normal and multivariate t density and distribution
-          functions as well as random number simulation.    
+          functions as well as random number simulation.    <pkg>sn</pkg> provides density, distribution and random number generation for the multivariate skew normal and skew t distribution.
           <pkg>delt</pkg> provides a range of functions for estimating multivariate densities by 
           CART and greedy methods.  
 	  Comprehensive information on mixtures is given in the <view>Cluster</view> view, 
@@ -105,7 +106,7 @@
          <p><strong>Linear models</strong>
           <ul><li>From stats, <tt>lm()</tt> (with a matrix specified as the dependent variable)
 	  offers multivariate linear models, <tt>anova.mlm()</tt> provides comparison of 
-          multivariate linear models.   <tt>manova()</tt> offers MANOVA.  <pkg>pls</pkg>
+          multivariate linear models.   <tt>manova()</tt> offers MANOVA.  <pkg>sn</pkg> provides <tt>msn.mle()</tt> and <tt>mst.mle()</tt> which fit multivariate skew normal and multivariate skew t models.<pkg>pls</pkg>
 	  provides partial least squares regression (PLSR) and principal component regression,
 	  <pkg>dr</pkg> provides dimension reduction regression options such as <tt>"sir"</tt> (sliced
 	  inverse regression), <tt>"save"</tt> (sliced average variance estimation).
@@ -227,11 +228,10 @@
 	  is provided for Gaussian, ordinal and mixed variables in <pkg>MCMCpack</pkg>.
 	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation.    <pkg>ifa</pkg> provides factor analysis with non-Gaussian latent variables (which are actually a mixture of Gaussian densitities).
 	  <pkg>sem</pkg> fits linear structural equation models and <pkg>ltm</pkg> provides
-	  latent trait models under item response theory.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <tt>MFA()</tt> and <tt>HMFA()</tt>for multiple and hierarchical multiple factor analysis as well as <tt>ADFM()</tt> for multiple factor analysis of quantitative and qualitative data.   <pkg>tsfa</pkg> provides factor analysis for time series.</li></ul></p>
+	  latent trait models under item response theory.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <tt>MFA()</tt> and <tt>HMFA()</tt>for multiple and hierarchical multiple factor analysis as well as <tt>ADFM()</tt> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.</li></ul></p>
 
           <p><strong>Modelling non-Gaussian data</strong>
-          <ul><li><pkg>bivpois</pkg> models bivariate Poisson variables, <pkg>baymvb</pkg> offers
-	  Bayesian models for multivariate binary data.    <pkg>mprobit</pkg> provides 
+          <ul><li><pkg>bivpois</pkg> models bivariate Poisson variables.    <pkg>mprobit</pkg> provides 
           multivariate probit model for binary as well as ordinal response, <pkg>MNP</pkg> 
           provides Bayesian multinomial probit models,   <pkg>polycor</pkg> provides 
           polchoric and tetrachoric
@@ -245,11 +245,11 @@
 	  and <pkg>SparseM</pkg>.</li></ul></p>
 
       <p><strong>Miscellaneous utitlies</strong>
-          <ul><li><pkg>abind</pkg> generalises <tt>cbind()</tt> and <tt>rbind()</tt> for arrays, <tt>mApply()</tt> in <pkg>Hmisc</pkg> generalises <tt>apply()</tt> for matrices and passes multiple functions.
-	  <pkg>SharedHT2</pkg> provides an implementation of Hotelling's T2 test for
+          <ul><li><pkg>abind</pkg> generalises <tt>cbind()</tt> and <tt>rbind()</tt> for arrays, <tt>mApply()</tt> in <pkg>Hmisc</pkg> generalises <tt>apply()</tt> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.   <pkg>SharedHT2</pkg> provides an implementation of Hotelling's T2 test for
 	  microarray experiments. <pkg>panel</pkg> provides methods for modelling panel data.
 	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
-	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <tt>rm.boot()</tt> from <pkg>Hmisc</pkg> bootraps repeated measures models.   <pkg>compositions</pkg> provides for compositional data analysis.   <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters.  <pkg>cwhmath</pkg> in the <pkg>cwhmisc</pkg> bundle contains a number of interesting support functions which are of interest, such as <tt>ellipse()</tt>, <tt>normalise()</tt> and various rotation functions.
+	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <tt>rm.boot()</tt> from <pkg>Hmisc</pkg> bootraps repeated measures models.   <pkg>compositions</pkg> provides for compositional data analysis.   <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
+	  cwhmath in the <pkg>cwhmisc</pkg> bundle contains a number of interesting support functions which are of interest, such as <tt>ellipse()</tt>, <tt>normalise()</tt> and various rotation functions.
   </li></ul></p>
        
   </info>
@@ -259,15 +259,12 @@
     <pkg priority="core">ade4</pkg>
     <pkg>amap</pkg>
     <pkg>aplpack</pkg>
-    <pkg>baymvb</pkg> 
     <pkg>bayesm</pkg>
     <pkg>bivpois</pkg> 
     <pkg>calibrate</pkg> 
     <pkg>cat</pkg> 
     <pkg>chplot</pkg>
-    <pkg>chwmisc</pkg>
-    <pkg>chwmath</pkg>
-    <pkg>chwplot</pkg>
+    <pkg>cwhmisc</pkg>
     <pkg>classPP</pkg> 
     <pkg priority="core">cluster</pkg> 
     <pkg>clustvarsel</pkg> 
@@ -287,7 +284,7 @@
     <pkg>ellipse</pkg> 
     <pkg>EMV</pkg>
     <pkg>energy</pkg>
-    <pkg>FactoMimeR</pkg>   
+    <pkg>FactoMineR</pkg>   
     <pkg>fastICA</pkg>
     <pkg>fgac</pkg>
     <pkg>fpc</pkg>   
@@ -304,7 +301,7 @@
     <pkg>KernSmooth</pkg>
     <pkg>klaR</pkg>
     <pkg>knncat</pkg>
-    <pkg>knnfinder</pkg> 
+    <pkg>knnFinder</pkg> 
     <pkg>kohonen</pkg>  
     <pkg>ks</pkg>
     <pkg>lattice</pkg>
@@ -346,9 +343,10 @@
     <pkg>sca</pkg> 
     <pkg>scatterplot3d</pkg>
     <pkg>sem</pkg>
-    <pkg>SensoMimeR</pkg> 
+    <pkg>SensoMineR</pkg> 
     <pkg>SharedHT2</pkg>
     <pkg>smatr</pkg>  
+    <pkg>sn</pkg>
     <pkg>SparseM</pkg>
     <pkg>supclust</pkg> 
     <pkg>superpc</pkg> 
