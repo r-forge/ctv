@@ -82,7 +82,7 @@ priority packages. The distinction is only important for the installation of
 certain views because the user can specify whether all packages (default) or only
 the most important core packages should be installed (with all their dependencies).
 
-/verb/<links>/ is a means of specifying further places where information about
+\verb/<links>/ is a means of specifying further places where information about
 the discussed topic and related issues is discussed, e.g., manuals/books/tutorials
 on how to do Econometrics, say, with \textsf{R}.
 
