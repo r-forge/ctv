@@ -65,7 +65,10 @@
       <li><i>Boosting</i>: Various forms of gradient boosting are
              implemented in packages <pkg>gbm</pkg> (tree-based functional gradient
              descent boosting) and <pkg>boost</pkg> (including LogitBoost
-             and L2Boost).</li>
+             and L2Boost). Package <pkg>GAMBoost</pkg> can be used to fit generalized additive models
+             by a boosting algorithm. An extensible boosting framework for
+             generalized linear, additive and nonparametric models is available in
+             package <pkg>mboost</pkg>.</li>
       <li><i>Support Vector Machines</i>: The function <tt>svm()</tt> from 
              <pkg>e1071</pkg> offers an interface to the LIBSVM library and
              package <pkg>kernlab</pkg> implements a flexible framework 
@@ -73,6 +76,8 @@
 	     learning algorithms). An interface to the SVMlight implementation
 	     (only for one-against-all classification) is provided in package
 	     <pkg>klaR</pkg>.</li>
+      <li><i>Optimization using Genetic Algorithms</i> Packages <pkg>gafit</pkg> and
+             <pkg>rgenoud</pkg> offer optimization routines based on genetic algorithms. </li>
       <li><i>Association Rules</i>: Package
              <pkg>arules</pkg> provides both data structures for efficient
              handling of sparse binary data as well as interfaces to
@@ -103,18 +108,22 @@
     <pkg priority="core">e1071</pkg>
     <pkg>elasticnet</pkg>
     <pkg>ElemStatLearn</pkg>
+    <pkg>gafit</pkg>
+    <pkg>GAMBoost</pkg>
     <pkg priority="core">gbm</pkg>
     <pkg>ipred</pkg>
     <pkg priority="core">kernlab</pkg>
     <pkg>klaR</pkg>
     <pkg>lars</pkg>
     <pkg>lasso2</pkg>
+    <pkg>mboost</pkg>
     <pkg>mvpart</pkg>
     <pkg>pamr</pkg>
     <pkg>party</pkg>
     <pkg>ROCR</pkg>
     <pkg>rpart.permutation</pkg>
     <pkg priority="core">randomForest</pkg>
+    <pkg>rgenoud</pkg>
     <pkg priority="core">rpart</pkg>
     <pkg>RWeka</pkg>
     <pkg>svmpath</pkg>
