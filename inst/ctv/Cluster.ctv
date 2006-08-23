@@ -28,7 +28,7 @@ listed only once.
   </li>
   <li><pkg>pvclust</pkg> is a package for assessing the uncertainty in
   hierarchical cluster analysis. It provides approximately
-  unbiased p-values as well as boostrap p-values.</li>
+  unbiased p-values as well as bootstrap p-values.</li>
 </ul>
 </p>
   
@@ -39,7 +39,7 @@ listed only once.
   for computing partitions with respect to
   Euclidean distance.</li>
   <li>Function <tt>pam()</tt> from package <pkg>cluster</pkg> implements
-  partitioning around medoids and can work with arbitray
+  partitioning around medoids and can work with arbitrary
   distances. Function <tt>clara()</tt> is a
   wrapper to <tt>pam()</tt> for larger data sets. Silhouette plots
   and spanning ellipses can be used for visualization.
@@ -70,7 +70,7 @@ listed only once.
   and plotted using package <pkg>nor1mix</pkg>. Package
   <pkg>bayesmix</pkg> provides Bayesian estimation using
   JAGS. Bayesian estimation using a variational approach for
-  multivariate Gausian distributions with a diagonal covariance matrix
+  multivariate Gaussian distributions with a diagonal covariance matrix
   is provided by package <pkg>vabayelMix</pkg>. Robust estimation
   using Weighted Likelihood can be done with package
   <pkg>wle</pkg>.</li>
