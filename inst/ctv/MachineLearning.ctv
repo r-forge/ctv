@@ -59,6 +59,9 @@
              <pkg>lasso2</pkg> and <pkg>lars</pkg> packages. The solutions
              for all values of the shrinkage parameter can be simultaneously 
              computed using the functionality in package <pkg>elasticnet</pkg>.
+             The L1 regularization path for generalized linear models and
+             Cox models can be obtained from functions available in package 
+             <pkg>glmpath</pkg>.
              The shrunken
              centroids classifier and utilities for gene expression analyses are
              implemented in package <pkg>pamr</pkg>.</li> 
@@ -76,6 +79,10 @@
 	     learning algorithms). An interface to the SVMlight implementation
 	     (only for one-against-all classification) is provided in package
 	     <pkg>klaR</pkg>.</li>
+      <li><i>Bayesian Methods</i>: Bayesian Additive Regression Trees (BART),
+             where the final model is defined in terms of the sum over
+             many weak learners (not unlike ensemble methods), 
+             are implemented in package <pkg>BayesTree</pkg>. </li>
       <li><i>Optimization using Genetic Algorithms</i> Packages <pkg>gafit</pkg> and
              <pkg>rgenoud</pkg> offer optimization routines based on genetic algorithms. </li>
       <li><i>Association Rules</i>: Package
@@ -104,6 +111,7 @@
 
   <packagelist>
     <pkg>arules</pkg>
+    <pkg>BayesTree</pkg>
     <pkg>boost</pkg>
     <pkg priority="core">e1071</pkg>
     <pkg>elasticnet</pkg>
@@ -111,12 +119,13 @@
     <pkg>gafit</pkg>
     <pkg>GAMBoost</pkg>
     <pkg priority="core">gbm</pkg>
+    <pkg>glmpath</pkg>
     <pkg>ipred</pkg>
     <pkg priority="core">kernlab</pkg>
     <pkg>klaR</pkg>
     <pkg>lars</pkg>
     <pkg>lasso2</pkg>
-    <pkg>mboost</pkg>
+    <pkg priority = "core">mboost</pkg>
     <pkg>mvpart</pkg>
     <pkg>pamr</pkg>
     <pkg>party</pkg>
