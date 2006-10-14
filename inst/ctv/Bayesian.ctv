@@ -27,21 +27,23 @@
     important information.  Please email the
     <a href="mailto:jhpark@artsci.wustl.edu?subject=Bayesian%20Task%20View">task view maintainer</a>
     with any feedback.</p>
-  
+    
+    <p>
+    <strong>Bayesian packages for general model fitting</strong>
     <ul>
-    <li><em>Bayesian packages for general model fitting:</em> 
+    <li>
     <pkg>bayesm</pkg> provides R functions for Bayesian inference for
     various models widely used in marketing and micro-econometrics. The
     models include linear regression models, multinomial logit,
     multinomial probit, multivariate probit, multivariate mixture of
     normals, hierarchical linear models, hierarchical multinomial logit,
     hierarchical negative binomial regression models, and linear instrumental
-    variable models. 
-    
-    <pkg>bayesSurv</pkg> contains R functions to perform Bayesian
+    variable models.
+    </li>
+    <li><pkg>bayesSurv</pkg> contains R functions to perform Bayesian
     inference for various survival regression models.   
-    
-    <pkg>MCMCpack</pkg> provides model-specific Markov chain Monte Carlo
+    </li>
+    <li><pkg>MCMCpack</pkg> provides model-specific Markov chain Monte Carlo
     (MCMC) algorithms for wide range of models commonly used in the social
     and behavioral sciences. It contains R functions
     to fit a number of regression models (linear regression, logit,
@@ -50,136 +52,154 @@
     ecological inference.  It also contains a generic Metropolis sampler
     that can be used to fit arbitrary models.  All <pkg>MCMCpack</pkg>
     functions return <tt>mcmc</tt> objects that can be analyzed with
-    methods defined in the <pkg>coda</pkg> package.
-    
-    The package <pkg>mcmc</pkg> consists of an R function for a random-walk 
-    Metropolis algorithm for a continuous random vector.
-    </li>  
+    methods defined in the <pkg>coda</pkg> package.</li>
+    <li>The <pkg>mcmc</pkg> package consists of an R function for a random-walk 
+    Metropolis algorithm for a continuous random vector.</li>
+    </ul>
+    </p>
 
-    <li><em>Bayesian packages for specific models or methods</em>:
+    <p>
+    <strong>Bayesian packages for specific models or methods</strong>
+    <ul>
+    <li>
     <pkg>BACCO</pkg> is an R package for Bayesian analysis of random functions. <pkg>BACCO</pkg> contains two sub-packages,
-    emulator and calibrator, that perform Bayesian emulation and calibration of computer programs.
+    emulator and calibrator, that perform Bayesian emulation and calibration of computer programs.</li>
           
-    <pkg>bqtl</pkg> can be used to fit quantitative trait loci (QTL)
+    <li><pkg>bqtl</pkg> can be used to fit quantitative trait loci (QTL)
     models. This package allows Bayesian estimation of multi-gene models
     via Laplace approximations and provides tools for interval mapping of 
     genetic loci. <pkg>bim</pkg> provides a function for Bayesian interval
-    mapping using MCMC methods.  Both of these packages contain graphical tools for QTL analysis.
+    mapping using MCMC methods.  Both of these packages contain graphical tools for QTL analysis.</li>
     
-    The <pkg>BMA</pkg> package has functions for Bayesian model
+    <li>The <pkg>BMA</pkg> package has functions for Bayesian model
     averaging for linear models, generalized linear models, and survival
     models.  The complementary package <pkg>ensembleBMA</pkg> uses the
     <pkg>BMA</pkg> package to create probabilistic forecasts of
-    ensembles using a mixture of normal distributions.
+    ensembles using a mixture of normal distributions.</li>
     
-    <pkg>cslogistic</pkg> has a function that performs a Bayesian analaysis of a
-    conditionally specified logistic regression model. 
+    <li><pkg>cslogistic</pkg> has a function that performs a Bayesian analaysis of a
+    conditionally specified logistic regression model.</li> 
     
-    <pkg>deal</pkg> provides R functions for Bayesian network analysis;
+    <li><pkg>deal</pkg> provides R functions for Bayesian network analysis;
     the current version of covers discrete and continuous variables
-    under Gaussian network structure. 
+    under Gaussian network structure. </li>
     
-    <pkg>DPpackage</pkg> contains functions for semiparametric Bayesian inference 
-    using Dirichlet process priors.
+    <li><pkg>DPpackage</pkg> contains functions for semiparametric Bayesian inference 
+    using Dirichlet process priors.</li>
     
-    <pkg>EbayesThresh</pkg> implements Bayesian estimation for
+    <li><pkg>EbayesThresh</pkg> implements Bayesian estimation for
     thresholding methods. Although the original model is developed in
     the context of wavelets, this package is useful when researchers
-    need to take advantage of possible sparsity in a parameter set.
+    need to take advantage of possible sparsity in a parameter set.</li>
     
-    <pkg>eco</pkg> fits Bayesian ecological inference models in two by two
-    tables using MCMC methods.
+    <li><pkg>eco</pkg> fits Bayesian ecological inference models in two by two
+    tables using MCMC methods.</li>
     
-    <pkg>evdbayes</pkg> provides tools for Bayesian analysis of extreme value 
-    models.
+    <li><pkg>evdbayes</pkg> provides tools for Bayesian analysis of extreme value 
+    models.</li>
     
-    <pkg>exactLoglinTest</pkg> provides functions for log-linear models that
+    <li><pkg>exactLoglinTest</pkg> provides functions for log-linear models that
     compute  Monte Carlo estimates of conditional P-values for goodness of fit 
-    tests. 
+    tests. </li>
 
-    The <tt>gbayes()</tt> function in <pkg>Hmisc</pkg> derives the
+    <li>The <tt>gbayes()</tt> function in <pkg>Hmisc</pkg> derives the
     posterior (and optionally) the predictive distribution when both the
     prior and the likelihood are Gaussian, and when the statistic of
-    interest comes from a two-sample problem.
+    interest comes from a two-sample problem.</li>
     
-    The function <tt>krige.bayes()</tt> in the <pkg>geoR</pkg> package
+    <li>The function <tt>krige.bayes()</tt> in the <pkg>geoR</pkg> package
     performs Bayesian analysis of geostatistical data allowing
     specification of different levels of uncertainty in the model
     parameters.  The <tt>binom.krige.bayes()</tt> function in the
     <pkg>geoRglm</pkg> package implements Bayesian posterior simulation
     and spatial prediction for the binomial spatial model (see the
-    <view>Spatial</view> view for more information). 
-          
-    The <tt>mcmcsamp()</tt> function in <pkg>lme4</pkg> allows 
-    MCMC sampling for the linear mixed model and generalized linear mixed model.   
+    <view>Spatial</view> view for more information). </li>
     
-    The <pkg>lmm</pkg> package contains R functions to fit linear mixed models using MCMC methods.
+    <li><pkg>MasterBayes</pkg> is an R package that implements MCMC methods to integrate over
+    uncertainity in pedigree configurations estimated from molecular markers and phenotypic data. </li>    
     
-    The <pkg>MNP</pkg> package fits multinomial probit models using MCMC methods.
+    <li>The <tt>mcmcsamp()</tt> function in <pkg>lme4</pkg> allows 
+    MCMC sampling for the linear mixed model and generalized linear mixed model.</li>   
     
-    <pkg>MSBVAR</pkg> is an R package for estimating Bayesian Vector Autoregression 
-    models and Bayesian structural Vector Autoregression models.
+    <li>The <pkg>lmm</pkg> package contains R functions to fit linear mixed models using MCMC methods.</li>
     
-    <pkg>sna</pkg>, an R package for social network analysis, 
+    <li>The <pkg>MNP</pkg> package fits multinomial probit models using MCMC methods.</li>
+    
+    <li><pkg>MSBVAR</pkg> is an R package for estimating Bayesian Vector Autoregression 
+    models and Bayesian structural Vector Autoregression models.</li>
+    
+    <li><pkg>sna</pkg>, an R package for social network analysis, 
     contains functions to generate posterior samples from Butt's 
-    Bayesian network accuracy model using Gibbs sampling.
+    Bayesian network accuracy model using Gibbs sampling.</li>
     
-    The <pkg>tgp</pkg> package implements Bayesian treed Gaussian process models: a spaptial
+    <li>The <pkg>tgp</pkg> package implements Bayesian treed Gaussian process models: a spaptial
     modeling and regression package providing fully Bayesian MCMC posterior inference for
     models ranging from the simple linear model, to nonstationary treed
-    Gaussian process, and others in between. 
+    Gaussian process, and others in between.</li> 
     
-    The <tt>vcov.gam()</tt> function the <pkg>mgcv</pkg> package can
+    <li>The <tt>vcov.gam()</tt> function the <pkg>mgcv</pkg> package can
     extract a Bayesian posterior covariance matrix of the parameters
-    from a fitted <tt>gam</tt> object.
+    from a fitted <tt>gam</tt> object.</li>
      
-    <pkg>vabayelMix</pkg> provides R functions to perform Bayesian inference 
+    <li><pkg>vabayelMix</pkg> provides R functions to perform Bayesian inference 
     for a Gaussian mixture model using a variational approach.
     </li>
+    </ul>
+    </p>
     
-    <li><em>Post-estimation tools</em>:    
+    <p>
+    <strong>Post-estimation tools</strong>
+    <ul>
+    <li>
     The <pkg>boa</pkg> package provides functions for diagnostics,
     summarization, and visualization of MCMC sequences.  It imports
     draws from BUGS format, or from plain matrices. <pkg>boa</pkg>
     provides the Gelman and Rubin, Geweke, Heidelberger and Welch, and
     Raftery and Lewis diagnostics, the Brooks and Gelman multivariate
-    shrink factors.
+    shrink factors.</li>
 
-    The <pkg>coda</pkg> (Convergence
+    <li>The <pkg>coda</pkg> (Convergence
     Diagnosis and Output Analysis) package is a suite of functions that
     can be used to summarize, plot, and and diagnose convergence from
     MCMC samples. <pkg>coda</pkg> also defines an <tt>mcmc</tt> object
     and related methods which are used by other packages.  It can easily
     import MCMC output from WinBUGS, OpenBUGS, and JAGS, or from plain
     matrices.  <pkg>coda</pkg> contains the Gelman and Rubin, Geweke,
-    Heidelberger and Welch, and Raftery and Lewis diagnostics.
+    Heidelberger and Welch, and Raftery and Lewis diagnostics.</li>
     
-    <pkg>mcgibbsit</pkg> provides the Warnes and Raftery MCGibbsit MCMC
-    diagnostic. It operates on <tt>mcmc</tt> objects.
+    <li><pkg>mcgibbsit</pkg> provides the Warnes and Raftery MCGibbsit MCMC
+    diagnostic. It operates on <tt>mcmc</tt> objects.</li>
     
-    <pkg>rv</pkg> provides a simulation-based random variable class in R, 
-    in which posterior simulation objects can be conveniently handled as random variables.</li>
+    <li><pkg>rv</pkg> provides a simulation-based random variable class in R, 
+    in which posterior simulation objects can be conveniently handled as random variables.
+    </li>
+    </ul>
+    </p>
 
-    <li><em>Packages that link R to other sampling engines</em>:
-    
+    <p>
+    <strong>Packages that link R to other sampling engines</strong>
+    <ul>
+    <li>    
     <pkg>bayesmix</pkg> is an R package to fit Bayesian mixture models using
-    <a href="http://www-fis.iarc.fr/~martyn/software/jags/" target="_top">JAGS</a>.
+    <a href="http://www-fis.iarc.fr/~martyn/software/jags/" target="_top">JAGS</a>.</li>
     
-    <pkg>BRugs</pkg> provides an R interface on Windows machines to
-    <a href="http://mathstat.helsinki.fi/openbugs/" target="_top">OpenBUGS</a>.
+    <li><pkg>BRugs</pkg> provides an R interface on Windows machines to
+    <a href="http://mathstat.helsinki.fi/openbugs/" target="_top">OpenBUGS</a>.</li>
     
-    There are two packages that can be used to interface R with
+    <li>There are two packages that can be used to interface R with
     <a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a>.
     <pkg>R2WinBUGS</pkg> provides a set of
     functions to call WinBUGS on a Windows system and a Linux system;  <pkg>rbugs</pkg>
     supports Linux systems by running WinBUGS through
-    <a href="http://www.winehq.com/" target="_top">WINE</a>.
+    <a href="http://www.winehq.com/" target="_top">WINE</a>.</li>
     
-    All of these BUGS engines use graphical models for model
+    <li> All of these BUGS engines use graphical models for model
     specification.  As such, the <view>gR</view> task view may be of
     interest.
     </li>
     </ul>
+    </p>
+    
 
   <p>
   The Bayesian Inference Task View is written by Jong Hee Park and
@@ -189,7 +209,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Mon Jun 05 17:33:26 2006
+ Last Update: Thu Oct 12 11:43:27 2006
 
  </p>
  
@@ -218,6 +238,7 @@
     <pkg>Hmisc</pkg>
     <pkg>lme4</pkg>
     <pkg>lmm</pkg>
+    <pkg>MasterBayes</pkg>
     <pkg>mcgibbsit</pkg>
     <pkg priority="core">mcmc</pkg>
     <pkg priority="core">MCMCpack</pkg>
@@ -244,4 +265,5 @@
     </links>
 
 </CRANTaskView>
+
 
