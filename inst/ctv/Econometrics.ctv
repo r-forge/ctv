@@ -36,9 +36,9 @@
 	  from package stats. This includes in particular logit and probit models
 	  for modelling choice data and poisson models for count data. Negative 
 	  binomial GLMs are available via <tt>glm.nb()</tt> in package MASS from
-	  the <pkg>VR</pkg> bundle. Zero-inflated count models are provided in 
-	  <pkg>zicounts</pkg>. Further over-dispersed and inflated models, including
-	  hurdle models, are available in package <pkg>pscl</pkg>. Bivariate poisson
+	  the <pkg>VR</pkg> bundle. Zero-inflated and hurdle count models are provided in 
+	  in package <pkg>pscl</pkg>, a different implementation of the former is also
+	  available in <pkg>zicounts</pkg>. Bivariate poisson
 	  regression models are implemented in <pkg>bivpois</pkg>.
 	  Basic censored regression models (e.g., tobit models)
 	  can be fitted by <tt>survreg()</tt> in <pkg>survival</pkg>.	  
@@ -50,7 +50,8 @@
           model and other model fitting techniques are available in base R and several
 	  CRAN packages. Nonlinear least squares modelling is availble in <tt>nls()</tt>
 	  in package stats. Relevant packages include <pkg>quantreg</pkg>
-	  (quantile regression),  <pkg>crq</pkg> (censored quantile regression),	  
+	  (quantile regression),  <pkg>crq</pkg> (censored quantile regression),
+	  <pkg>plm</pkg> (linear models for panel data),
 	  <pkg>sem</pkg> (linear structural equation models,
 	  including two-stage least squares), <pkg>systemfit</pkg> (simultaneous equation
 	  estimation), <pkg>betareg</pkg> (beta regression), <pkg>nlme</pkg> (nonlinear
@@ -74,9 +75,10 @@
 	  for fitting structural time series and <tt>decompose()</tt> and <tt>HoltWinters()</tt>
 	  for time series filtering and decomposition. For estimating VAR models, several
 	  methods are available: simple models can be fitted by <tt>ar()</tt> in stats, more
-	  elaborate models are provided by <tt>estVARXls()</tt> in <pkg>dse</pkg> and a Bayesian
-	  approach is available in <pkg>MSBVAR</pkg>. A convenient interface for fitting
-	  dynamic regression models via OLS is available in <pkg>dynlm</pkg>; a different approach
+	  elaborate models are provided package <pkg>vars</pkg>, <tt>estVARXls()</tt> in
+	  <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. A
+	  convenient interface for fitting dynamic regression models via OLS is available
+	  in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.	  
 	  More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root
 	  and cointegration techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and
@@ -93,7 +95,7 @@
       <li><i>Data sets</i>: Many of the packages in this view contain collections of
           data sets from the econometric literature and the package <pkg>Ecdat</pkg>
 	  contains a complete collection of data sets from various standard econometric
-	  textbooks. <pkg>micEcdat</pkg> provides several data sets from the Journal of
+	  textbooks as well as several data sets from the Journal of
 	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
 	  data archives. Package <pkg>CDNmoney</pkg> provides Canadian monetary aggregates
 	  and <pkg>pwt</pkg> provides the Penn world table.</li>
@@ -118,11 +120,11 @@
     <pkg>its</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>Matrix</pkg>
-    <pkg>micEcdat</pkg>
     <pkg>micEcon</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>
     <pkg>nlme</pkg>
+    <pkg>plm</pkg>
     <pkg>pscl</pkg>
     <pkg>pwt</pkg>
     <pkg>quantreg</pkg>
@@ -137,6 +139,7 @@
     <pkg>tsfa</pkg>
     <pkg priority="core">urca</pkg>
     <pkg>uroot</pkg>
+    <pkg>vars</pkg>
     <pkg>VR</pkg>
     <pkg>zicounts</pkg>
     <pkg priority="core">zoo</pkg>    
