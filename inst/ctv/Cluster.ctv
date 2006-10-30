@@ -29,6 +29,8 @@ listed only once.
   <li><pkg>pvclust</pkg> is a package for assessing the uncertainty in
   hierarchical cluster analysis. It provides approximately
   unbiased p-values as well as bootstrap p-values.</li>
+  <li><pkg>hybridHclust</pkg> implements hybrid hierarchical
+  clustering via mutual clusters.</li>
 </ul>
 </p>
   
@@ -49,12 +51,14 @@ listed only once.
   learning, neural gas and QT clustering. Neighborhood graphs and
   image plots of partitions are available for visualization.
   </li>
-</ul>
-</p>
+  <li>Package <pkg>trimcluster</pkg> provides trimmed k-means
+  clustering.</li>
+</ul> </p>
   
 <p><strong>Model-based Clustering:</strong>
 <ul>
-  <li>Package <pkg>mclust</pkg> fits mixtures of Gaussians using the EM
+  <li>Package <pkg>mclust</pkg> (and for backward compatibility
+  <pkg>mclust02</pkg>) fits mixtures of Gaussians using the EM
   algorithm. It allows fine control of volume and shape of
   covariance matrices and agglomerative hierarchical clustering
   based on maximum likelihood. It provides comprehensive strategies
@@ -74,8 +78,9 @@ listed only once.
   is provided by package <pkg>vabayelMix</pkg>. Robust estimation
   using Weighted Likelihood can be done with package
   <pkg>wle</pkg>.</li>
-</ul>
-</p>
+  <li>Package <pkg>MFDA</pkg> implements model-based functional data
+  analysis.</li>
+</ul> </p>
   
 <p><strong>Other Cluster Algorithms:</strong>
 <ul>
@@ -134,6 +139,7 @@ listed only once.
 
 <packagelist>
 <pkg>amap</pkg>
+<pkg>bayesmix</pkg>
 <pkg>cba</pkg>
 <pkg>clue</pkg>
 <pkg priority="core">cluster</pkg>
@@ -143,16 +149,18 @@ listed only once.
 <pkg priority="core">flexmix</pkg>
 <pkg>fpc</pkg>
 <pkg>hopach</pkg>
+<pkg>hybridHclust</pkg>
 <pkg priority="core">mclust</pkg>
+<pkg>MFDA</pkg>
 <pkg>prabclus</pkg>
 <pkg>pvclust</pkg>
 <pkg>som</pkg>
 <pkg>nor1mix</pkg>
-<pkg>bayesmix</pkg>
 <pkg>depmix</pkg>
 <pkg>mixreg</pkg>
 <pkg>mmlcr</pkg>
 <pkg>moc</pkg>
+<pkg>trimcluster</pkg>
 <pkg>vabayelMix</pkg>
 <pkg>wle</pkg>
 </packagelist>
