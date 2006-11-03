@@ -190,8 +190,8 @@
     <a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">WinBUGS</a>.
     <pkg>R2WinBUGS</pkg> provides a set of
     functions to call WinBUGS on a Windows system and a Linux system;  <pkg>rbugs</pkg>
-    supports Linux systems by running WinBUGS through
-    <a href="http://www.winehq.com/" target="_top">WINE</a>.</li>
+    supports Linux systems through <a href="http://mathstat.helsinki.fi/openbugs/" target="_top">OpenBugs</a> 
+    on Linux (LinBUGS).</li>
     
     <li> All of these BUGS engines use graphical models for model
     specification.  As such, the <view>gR</view> task view may be of
@@ -209,7 +209,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Thu Oct 12 11:43:27 2006
+ Last Update: Thu Nov 02 10:11:21 2006
 
  </p>
  
@@ -265,5 +265,4 @@
     </links>
 
 </CRANTaskView>
-
 
