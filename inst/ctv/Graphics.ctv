@@ -17,31 +17,31 @@
     defines a much more flexible graphics environment than the base R graphics.
     
     R's base graphics are implemented in the same way as in the S3
-system developed by Becker, Chambers, and Wilks. There is a static
-device, which is treated as a static canvas and objects are drawn on
-the device through R plotting commands. The device has a set of global
-parameters such as margins and layouts which can be manipulated by the
-user using <tt>par()</tt> commands. The R graphics engine does not maintain a
-user visible graphics list, and there is no system of double
-buffering, so objects cannot be easily edited without redrawing a whole
-plot. However, the base R graphics can produce many plots with
-extremely fine graphics in many specialized instances.  
+    system developed by Becker, Chambers, and Wilks. There is a static
+    device, which is treated as a static canvas and objects are drawn on
+    the device through R plotting commands. The device has a set of global
+    parameters such as margins and layouts which can be manipulated by the
+    user using <tt>par()</tt> commands. The R graphics engine does not maintain a
+    user visible graphics list, and there is no system of double
+    buffering, so objects cannot be easily edited without redrawing a whole
+    plot. However, the base R graphics can produce many plots with
+    extremely fine graphics in many specialized instances.  
 
-   One can quickly run into trouble with R's base graphic system if
-one wants to design complex layouts where scaling is maintained
-properly on resizing, nested graphs are desired or more interactivity
-is needed. <pkg>grid</pkg> was designed by Paul Murrell to overcome
-some of these limitations and as a result packages like
-<pkg>lattice<\pkg>, <pkg>vcd<\pkg> or hexbin
-(on <a href="http://www.BioConductor.org/">BioConductor</a>) use
-grid for the underlying primitives. When using plots designed with
-grid one needs to keep in mind that grid is based on a system of
-viewports and graphic objects. To add objects one needs to use grid
-commands, e.g., <tt>grid.polygon()</tt> rather than <tt>polygon()</tt>. Also grid
-maintains a stack of viewports from the device and one needs to make
-sure the desired viewport is at the top of the stack. There is a great
-deal of explanatory documentation included with <pkg>grid</pkg> as
-vignettes.     
+    One can quickly run into trouble with R's base graphic system if
+    one wants to design complex layouts where scaling is maintained
+    properly on resizing, nested graphs are desired or more interactivity
+    is needed. <pkg>grid</pkg> was designed by Paul Murrell to overcome
+    some of these limitations and as a result packages like
+    <pkg>lattice</pkg>, <pkg>vcd</pkg> or hexbin
+    (on <a href="http://www.BioConductor.org/">BioConductor</a>) use
+    grid for the underlying primitives. When using plots designed with
+    grid one needs to keep in mind that grid is based on a system of
+    viewports and graphic objects. To add objects one needs to use grid
+    commands, e.g., <tt>grid.polygon()</tt> rather than <tt>polygon()</tt>. Also grid
+    maintains a stack of viewports from the device and one needs to make
+    sure the desired viewport is at the top of the stack. There is a great
+    deal of explanatory documentation included with <pkg>grid</pkg> as
+    vignettes.     
 
 
     The graphics packages in R can be organized roughly into the following 
@@ -55,20 +55,20 @@ vignettes.
           Wilkinson. Like <pkg>lattice</pkg>, <pkg>ggplot</pkg> (also built on top of grid)
 	  assists in trellis-like graphics, but allows for much more. Since it is built on
 	  the idea of a semantics for graphics there is much more emphasis on reshaping
-	  data, transformation, and assembling the elements of a plot.
+	  data, transformation, and assembling the elements of a plot.</li>
       <li><i>Plotting</i>:
           Enhancements for specialized plots can be found in <pkg>plotrix</pkg>,
 	  for polar plotting, <pkg>vcd</pkg> for categorical data, hexbin
 	  (on <a href="http://www.BioConductor.org/">BioConductor</a>)
-	  for hexagon binning, and <pkg>gplots</pkg> from the <pkg>gregmisc</pkg> bundle
-	  for some plotting enhancements</li>
+	  for hexagon binning, and gplots from the <pkg>gregmisc</pkg> bundle
+	  for some plotting enhancements.
           For 3D plots <pkg>lattice</pkg>,
 	  <pkg>scatterplot3d</pkg> and <pkg>misc3d</pkg> provide a selection of plots for
 	  different kinds of 3D plotting. <pkg>scatterplot3d</pkg> is based on R's base
 	  graphics system, while <pkg>misc3d</pkg> is based on
           <pkg>rgl</pkg>. The package <pkg>onion</pkg> for visualizing 
           quaternions and octonions is well suited to display 3D graphics
-          based on derived meshes.	  
+          based on derived meshes.</li>
       <li><i>Applications</i>: This area is not much different from the plotting section
           except that these packages focus on particular applications. The <pkg>gclus</pkg>
 	  package focuses on the ordering of graphs to accentuate cluster structure or 
@@ -77,7 +77,7 @@ vignettes.
           some similar plots in <pkg>fpc</pkg>. <pkg>ape</pkg> has functions for plotting 
           phylogenetic trees, and <pkg>LDheatmap</pkg> does specialized plotting for 
           linkage disequilibrium in genetic trait mapping applications. <pkg>Rgraphviz</pkg>
-          and <pkg>igraph</pkg> have functions for plotting and layout of graphs</li>
+          and <pkg>igraph</pkg> have functions for plotting and layout of graphs.</li>
       <li><i>Devices</i>: Whereas <pkg>grid</pkg> is built on top of
           the R graphics engine, many in the R community have found the R
           graphics engine somewhat inflexible and have written separate device
