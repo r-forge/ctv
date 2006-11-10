@@ -157,7 +157,7 @@
     <pkg>RGraphics</pkg>
     <pkg>RSvgDevice</pkg>
     <pkg>tkrplot</pkg>
-    <pkg>scatterplot3D</pkg>
+    <pkg>scatterplot3d</pkg>
     <pkg priority="core">vcd</pkg>
     <pkg>vioplot</pkg>
     <pkg>xgobi</pkg>
