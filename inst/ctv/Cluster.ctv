@@ -132,6 +132,11 @@ listed only once.
   may have one, two or three parameters. Covariates and concomitant
   variables can be specified as well as constraints for the
   parameters.</li>
+  <li><pkg>mixtools</pkg> provides fitting with the EM algorithm of
+  mixtures of multinomials, multivariate normals, normals with
+  repeated measures, Poisson regressions and Gaussian regressions
+  (with random effects) and with the Metropolis-Hastings algorithm of
+  mixtures of Gaussian regressions.</li>
 </ul>
 </p>
   
@@ -151,6 +156,7 @@ listed only once.
 <pkg>hopach</pkg>
 <pkg>hybridHclust</pkg>
 <pkg priority="core">mclust</pkg>
+<pkg>mixtools</pkg>
 <pkg>MFDA</pkg>
 <pkg>prabclus</pkg>
 <pkg>pvclust</pkg>
