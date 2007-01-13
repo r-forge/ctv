@@ -61,10 +61,12 @@
     <p>
     <strong>Bayesian packages for specific models or methods</strong>
     <ul>
-    <li>
-    <pkg>BACCO</pkg> is an R package for Bayesian analysis of random functions. <pkg>BACCO</pkg> contains two sub-packages,
+    <li><pkg>BACCO</pkg> is an R package for Bayesian analysis of random functions. <pkg>BACCO</pkg> contains two sub-packages,
     emulator and calibrator, that perform Bayesian emulation and calibration of computer programs.</li>
-          
+    
+    <li><pkg>BayHaz</pkg> contains a suite of R functions for Bayesian estimation of smooth hazard rates via Compound
+    Poisson Process (CPP) priors.</li>     
+
     <li><pkg>bqtl</pkg> can be used to fit quantitative trait loci (QTL)
     models. This package allows Bayesian estimation of multi-gene models
     via Laplace approximations and provides tools for interval mapping of 
@@ -209,7 +211,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Thu Nov 02 10:11:21 2006
+ Last Update: Fri Jan 12 13:47:08 2007
 
  </p>
  
@@ -219,6 +221,7 @@
     <pkg>BACCO</pkg>
     <pkg priority="core">bayesm</pkg>
     <pkg>bayesmix</pkg>
+    <pkg>BayHaz</pkg>
     <pkg priority="core">bayesSurv</pkg>    
     <pkg>bim</pkg>
     <pkg>BMA</pkg>
@@ -265,4 +268,5 @@
     </links>
 
 </CRANTaskView>
+
 
