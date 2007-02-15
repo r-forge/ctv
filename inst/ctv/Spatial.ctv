@@ -40,6 +40,12 @@
       alternative approach to some of these issues is implemented in
       the <pkg>PBSmapping</pkg> package.</p></li>
 
+      <li><p><b>Handling spatial data</b>: A number of packages have
+      been written using sp classes. The <pkg>spsurvey</pkg> provides a
+      range of sampling functions. The <pkg>trip</pkg> package extends sp
+      classes to permit the accessing and manipulating of spatial data
+      for animal tracking. </p></li>
+
       <li><p><b>Reading and writing spatial data</b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
       bindings to <a href="http://www.gdal.org/">GDAL</a>-supported raster
@@ -58,22 +64,21 @@
       read and write ArcGIS/ArcView shapefiles. The <pkg>maptools</pkg>
       package also provides helper functions for writing map polygon
       files to be read by WinBUGS, Mondrian, and the tmap command
-      in Stata. For visualization, the colour palettes provided in
+      in Stata. It also provides interface functions between
+      <pkg>PBSmapping</pkg> and <pkg>spatstat</pkg> and sp classes,
+      in addition to <pkg>maps</pkg> databases and sp classes. There is
+      also an interface to GSHHS shoreline databases. For visualization,
+      the colour palettes provided in
       the <pkg>RColorBrewer</pkg> package are very useful, and may
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R. The <pkg>classInt</pkg> package provides
       functions for choosing class intervals for thematic cartography.</p>
 
-      <p>Integration with version 5.* of the leading open source
-      GIS, GRASS, is provided in CRAN package <pkg>GRASS</pkg>
-      (but not version 6.0, see below for developments). A family
-      of wrapper packages is being written to interface these
-      packages to <b>sp</b> classes, and can be found on the 
-      <a href="http://R-spatial.sourceforge.net/">R-spatial</a> Sourceforge
-      home page. Packages are already available for interfacing version
-      6.0 of the GRASS GIS, and for interfacing the <pkg>maps</pkg>,
-      <pkg>PBSmapping</pkg>, <pkg>gpclib</pkg>, and <pkg>spatstat</pkg>
-      packages.</p></li>
+      <p>Integration with version 6.* of the leading open source
+      GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
+      <pkg>rgdal</pkg> and <pkg>maptools</pkg> for exchanging data.
+      Integration with legacy version 5.* GRASS, continues to be provided
+      in CRAN package <pkg>GRASS</pkg>.</p></li>
 
       <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
       package is available as part of the <pkg>VR</pkg> bundle
@@ -167,9 +172,12 @@
     <pkg>spatialCovariance</pkg>
     <pkg priority="core">spatstat</pkg>
     <pkg priority="core">spdep</pkg>
+    <pkg>spgrass6</pkg>
     <pkg>spgwr</pkg>
     <pkg priority="core">splancs</pkg>
+    <pkg>spsurvey</pkg>
     <pkg>tgp</pkg>
+    <pkg>trip</pkg>
     <pkg priority="core">tripack</pkg>
     <pkg>vardiag</pkg>
     <pkg>vegan</pkg>
