@@ -70,6 +70,13 @@ listed only once.
   from the distances, and applying maximum likelihood Gaussian
   mixtures clustering to the MDS
   points.</li>
+  <li>Bayesian estimation of finite mixtures of multivariate Gaussians
+  is possible using package <pkg>bayesm</pkg>. The package provides
+  functionality for sampling from such a mixture as well as estimating
+  the model using Gibbs sampling. Additional functionality for
+  analyzing the MCMC chains is available for averaging
+  the moments over MCMC draws, for determining the marginal densities
+  and for clustering observations.</li>  
   <li>Mixtures of univariate normal distributions can be printed
   and plotted using package <pkg>nor1mix</pkg>. Package
   <pkg>bayesmix</pkg> provides Bayesian estimation using
@@ -144,6 +151,7 @@ listed only once.
 
 <packagelist>
 <pkg>amap</pkg>
+<pkg>bayesm</pkg>
 <pkg>bayesmix</pkg>
 <pkg>cba</pkg>
 <pkg>clue</pkg>
