@@ -36,7 +36,7 @@
     various models widely used in marketing and micro-econometrics. The
     models include linear regression models, multinomial logit,
     multinomial probit, multivariate probit, multivariate mixture of
-    normals, hierarchical linear models, hierarchical multinomial logit,
+    normals (including clustering), hierarchical linear models, hierarchical multinomial logit,
     hierarchical negative binomial regression models, and linear instrumental
     variable models.
     </li>
@@ -129,6 +129,9 @@
     
     <li><pkg>MSBVAR</pkg> is an R package for estimating Bayesian Vector Autoregression 
     models and Bayesian structural Vector Autoregression models.</li>
+
+    <li>The <pkg>pcsl</pkg> package provides R functions to fit item-response theory models using MCMC methods
+    and to compute highest density regions for the Beta distribution and the inverse gamma distribution.</li>
     
     <li><pkg>sna</pkg>, an R package for social network analysis, 
     contains functions to generate posterior samples from Butt's 
@@ -211,7 +214,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Fri Jan 12 13:47:08 2007
+ Last Update: Fri Feb 23 12:19:59 2007
 
  </p>
  
@@ -258,7 +261,7 @@
 
     <links>
     <a href="http://mcmcpack.wustl.edu/" target="_top">MCMCpack</a>
-    <a href="http://gsbwww.uchicago.edu/fac/peter.rossi/research/bsm.html" target="_top">Bayesian Statistics and Marketing (bayesm)</a>
+    <a href="http://faculty.chicagogsb.edu/peter.rossi/research/bsm.html" target="_top">Bayesian Statistics and Marketing (bayesm)</a>
     <a href="http://www-fis.iarc.fr/~martyn/software/jags/" target="_top">Just Another Gibbs Sampler (JAGS)</a>
     <a href="http://www.mrc-bsu.cam.ac.uk/bugs/" target="_top">The BUGS Project (WinBUGS)</a>
     <a href="http://mathstat.helsinki.fi/openbugs/" target="_top">OpenBUGS</a>
@@ -268,5 +271,4 @@
     </links>
 
 </CRANTaskView>
-
 
