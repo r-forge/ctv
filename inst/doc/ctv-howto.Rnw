@@ -90,7 +90,7 @@ For a template of a \verb/.ctv/ file, look at the included \verb/Econometrics.ct
 It can be read and printed by
 
 <<>>=
-library(ctv)
+library("ctv")
 x <- read.ctv(file.path(.find.package("ctv"), "ctv", "Econometrics.ctv"))
 x
 @
