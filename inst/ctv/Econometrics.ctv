@@ -88,6 +88,11 @@
       <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
           ships with many powerful tools for doing matrix manipulations, which are 
 	  complemented by the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
+      <li><i>Bootstrap</i>: In addition to the recommended <pkg>boot</pkg> package,
+          there are some other general bootstrapping techniques available in
+	  <pkg>bootstrap</pkg> or <pkg>simpleboot</pkg> as well some bootstrap techniques
+	  designed for time-series data, such as the maximum entropy bootstrap in
+	  <pkg>meboot</pkg> or the <tt>tsbootstrap()</tt> from <pkg>tseries</pkg>.</li>
       <li><i>Inequality</i>: For measuring inequality, concentration and poverty the
           package <pkg>ineq</pkg> provides some basic tools such as Lorenz curves,
 	  Pen's parade, the Gini coefficient and many more.</li>
@@ -108,6 +113,8 @@
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
     <pkg>bivpois</pkg>
+    <pkg>boot</pkg>
+    <pkg>bootstrap</pkg>
     <pkg priority="core">car</pkg>
     <pkg>crq</pkg>
     <pkg>CDNmoney</pkg>
@@ -123,6 +130,7 @@
     <pkg>its</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>Matrix</pkg>
+    <pkg>meboot</pkg>
     <pkg>micEcon</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>
@@ -135,6 +143,7 @@
     <pkg priority="core">sandwich</pkg>
     <pkg>segmented</pkg>
     <pkg>sem</pkg>
+    <pkg>simpleboot</pkg>
     <pkg>SparseM</pkg>
     <pkg>strucchange</pkg>
     <pkg>systemfit</pkg>
