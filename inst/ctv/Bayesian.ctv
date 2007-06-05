@@ -41,7 +41,12 @@
     variable models.
     </li>
     <li><pkg>bayesSurv</pkg> contains R functions to perform Bayesian
-    inference for various survival regression models.   
+    inference for survival regression models with flexible error and random effects distributions.  
+    </li>
+    <li><pkg>DPpackage</pkg> contains R functions for Bayesian nonparametric and semiparametric models.   
+    DPpackage currently includes semiparametric models for 
+    density estimation, ROC curve analysis, interval censored data, binary regression models, generalized 
+    linear mixed models, and IRT type models.
     </li>
     <li><pkg>MCMCpack</pkg> provides model-specific Markov chain Monte Carlo
     (MCMC) algorithms for wide range of models commonly used in the social
@@ -71,7 +76,7 @@
     models. This package allows Bayesian estimation of multi-gene models
     via Laplace approximations and provides tools for interval mapping of 
     genetic loci. <pkg>bim</pkg> provides a function for Bayesian interval
-    mapping using MCMC methods.  Both of these packages contain graphical tools for QTL analysis.</li>
+    mapping using MCMC methods. Both of these packages contain graphical tools for QTL analysis.</li>
     
     <li>The <pkg>BMA</pkg> package has functions for Bayesian model
     averaging for linear models, generalized linear models, and survival
@@ -85,10 +90,7 @@
     <li><pkg>deal</pkg> provides R functions for Bayesian network analysis;
     the current version of covers discrete and continuous variables
     under Gaussian network structure. </li>
-    
-    <li><pkg>DPpackage</pkg> contains functions for semiparametric Bayesian inference 
-    using Dirichlet process priors.</li>
-    
+        
     <li><pkg>EbayesThresh</pkg> implements Bayesian estimation for
     thresholding methods. Although the original model is developed in
     the context of wavelets, this package is useful when researchers
@@ -132,10 +134,17 @@
 
     <li>The <pkg>pcsl</pkg> package provides R functions to fit item-response theory models using MCMC methods
     and to compute highest density regions for the Beta distribution and the inverse gamma distribution.</li>
+
+    <li>The <pkg>RJaCGH</pkg> package implements Bayesian analysis of CGH microarrays using hidden Markov chain models. 
+    The selection of the number of states is made via their posterior probability computed by 
+    reversible jump Markov chain Monte Carlo Methods.</li>
     
     <li><pkg>sna</pkg>, an R package for social network analysis, 
     contains functions to generate posterior samples from Butt's 
     Bayesian network accuracy model using Gibbs sampling.</li>
+    
+    <li><pkg>spBayes</pkg> provides R functions that fit Gaussian spatial process models for univariate as well
+as multivariate point-referenced data using MCMC methods.</li>
     
     <li>The <pkg>tgp</pkg> package implements Bayesian treed Gaussian process models: a spaptial
     modeling and regression package providing fully Bayesian MCMC posterior inference for
@@ -214,7 +223,7 @@
   with suggestions.</p>
  
  <p>
- Last Update: Fri Feb 23 12:19:59 2007
+ Last Update: Mon Jun 04 15:43:04 2007
 
  </p>
  
@@ -234,7 +243,7 @@
     <pkg priority="core">coda</pkg>
     <pkg>cslogistic</pkg>
     <pkg>deal</pkg>
-    <pkg>DPpackage</pkg>
+    <pkg priority="core">DPpackage</pkg>
     <pkg>EbayesThresh</pkg>
     <pkg>ensembleBMA</pkg>
     <pkg>evdbayes</pkg>
@@ -253,8 +262,10 @@
     <pkg>MSBVAR</pkg>
     <pkg>R2WinBUGS</pkg>
     <pkg>rbugs</pkg>
+    <pkg>RJaCGH</pkg>
     <pkg>rv</pkg>
     <pkg>sna</pkg>
+    <pkg>spBayes</pkg>
     <pkg>tgp</pkg>
     <pkg>vabayelMix</pkg>
     </packagelist>
