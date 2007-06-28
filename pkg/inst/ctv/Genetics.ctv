@@ -208,7 +208,6 @@ population based studies.  The software has been implemented to take advantage o
     <pkg>LDheatmap</pkg>
     <pkg>lodplot</pkg>
     <pkg>luca</pkg>
-    <pkg>Malmig</pkg>
     <pkg>mapLD</pkg>
     <pkg>multtest</pkg>
     <pkg>ouch</pkg>
