@@ -116,7 +116,7 @@ and some tests for linkage and association analyses. Among the other functions,
           performs likelihood inference of trait associations with haplotypes in GLMs, and
 <pkg>haplo.ccs</pkg>
           estimates haplotype and covariate relative risks in case-control data by weighted logistic regression.
-<pkg>haplo.stats</a>
+<pkg>haplo.stats</pkg>
           also contains functions for the analysis of indirectly measured haplotypes. The statistical methods assume 
 that all subjects are unrelated and that haplotypes are ambiguous (due to unknown linkage phase of the genetic markers).
 <pkg>tdthap</pkg>
