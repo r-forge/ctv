@@ -63,7 +63,9 @@
           calculates the Fst from the conditional
        kinship matrix. Package
 <pkg>kinship</pkg>
-          offers some functions for analysis on pedigrees.
+          offers some functions for analysis on pedigrees. The
+<pkg>adegenet</pkg> 
+          implements a number of different methods for analysing population structure using multivariate statistics, graphics and spatial statistics.
         </li>
         <li>
           <i>
@@ -189,6 +191,7 @@ population based studies.  The software has been implemented to take advantage o
   </info>
 
   <packagelist>
+    <pkg>adegenet</pkg>
     <pkg>ape</pkg>
     <pkg>apTreeshape</pkg>
     <pkg>Biodem</pkg>
