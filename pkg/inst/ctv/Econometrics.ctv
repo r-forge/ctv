@@ -85,7 +85,9 @@
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.	  
 	  More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root
 	  and cointegration techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and
-	  <pkg>tseries</pkg>. Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
+	  <pkg>tseries</pkg>. Time series factor analysis is available in <pkg>tsfa</pkg>.
+	  Package <pkg>sde</pkg> provides simulation and inference for stochastic
+	  differential equations.</li>
       <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
           ships with many powerful tools for doing matrix manipulations, which are 
 	  complemented by the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
@@ -143,6 +145,7 @@
     <pkg>quantreg</pkg>
     <pkg>reldist</pkg>
     <pkg priority="core">sandwich</pkg>
+    <pkg>sde</pkg>
     <pkg>segmented</pkg>
     <pkg>sem</pkg>
     <pkg>simpleboot</pkg>
