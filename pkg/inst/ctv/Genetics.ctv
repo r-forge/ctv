@@ -267,6 +267,9 @@ population based studies.  The software has been implemented to take advantage o
     <a href="http://www.qimr.edu.au/davidD/#R">
       R Software by David Duffy
     </a>
+    <a href="http://pbil.univ-lyon1.fr/software/mareymap/">
+      MareyMap: GUI for comparing physical and genetic maps for estimation of recombination rates
+    </a>
   </links>
 
 </CRANTaskView>
