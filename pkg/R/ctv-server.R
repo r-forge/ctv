@@ -6,7 +6,7 @@ read.ctv <- function(file)
   ## read raw XML
   x <- xmlTreeParse(file)
   if(xmlSize(x$doc$children) > 1) warning("ctv should contain only one view")
-  x <- xmlChildren(x$doc$children[[1]])
+  x <- xmlChildren(x$doc$children $ CRANTaskView)
 
   ## valid task view?
   ctvNames <- c("name", "topic", "maintainer", "info", "packagelist", "links")
