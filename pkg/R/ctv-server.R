@@ -7,12 +7,14 @@ read.ctv <- function(file)
   x <- xmlTreeParse(file)
   if(xmlSize(x$doc$children) > 1) warning("ctv should contain only one view")
   x <- xmlChildren(x$doc$children[[1]])
-  
+
   ## valid task view?
   ctvNames <- c("name", "topic", "maintainer", "info", "packagelist", "links")
   missingChildren <- !(ctvNames %in% names(x))
-  if(any(missingChildren)) stop(paste("The following ctv nodes are missing:", ctvNames[missingChildren]))
-  
+  if(any(missingChildren))
+    stop("The following ctv nodes are missing: ",
+      paste(ctvNames[missingChildren], collapse=", "))
+
   ## convenience function for transforming
   ## XMLNodes into a character vector
   xmlPaste <- function(x, indent = "",
@@ -22,26 +24,26 @@ read.ctv <- function(file)
   {
     ## get tag name
     name <- xmlName(x, full = TRUE)
-  
+
     ## if final node, return text
     if(name == "text")
       return(paste(indent, xmlValue(x), sep = ""))
 
     ## if pkg or view, return link
-    if(name == "pkg") 
+    if(name == "pkg")
       return(paste("<a href=\"", packageURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))
-    if(name == "view") 
-      return(paste(viewprefix, "<a href=\"", viewURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))    
+    if(name == "view")
+      return(paste(viewprefix, "<a href=\"", viewURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))
     if(name == "info")
       name <- "p"
-  
+
     ## get attributes
     tmp <- if(!is.null(xmlAttrs(x)))
       paste(names(xmlAttrs(x)), paste("\"", xmlAttrs(x), "\"", sep = ""), sep = "=", collapse = " ")
       else ""
 
     ## start tag
-    rval <- paste(indent, "<", name, ifelse(tmp != "", " ", ""), tmp, ">", sep = "")  
+    rval <- paste(indent, "<", name, ifelse(tmp != "", " ", ""), tmp, ">", sep = "")
     ## content
     subIndent <- paste(indent, "  ", sep = "")
     for(i in xmlChildren(x))
@@ -73,7 +75,7 @@ read.ctv <- function(file)
     rval <- t(sapply(xmlChildren(x$packagelist), package1))
     colnames(rval) <- NULL
     rownames(rval) <- NULL
-    rval <- data.frame(name = I(rval[,1]), core = rval[,2] == "core")    
+    rval <- data.frame(name = I(rval[,1]), core = rval[,2] == "core")
     rval[order(tolower(rval[,1])), ]
   }
   links <- function(x) as.vector(xmlSApply(x$links, function(z) xmlPaste(z, viewprefix = "CRAN Task View: ")))
@@ -98,12 +100,12 @@ ctv2html <- function(x,
 {
   if(is.character(x)) x <- read.ctv(x)
   if(is.null(file)) file <- paste(x$name, ".html", sep = "")
-  
+
   ## auxiliary functions
   ampersSub <- function(x) gsub("&", "&amp;", x)
   zpaste <- function(..., sep = "", collapse = NULL) paste(..., sep = sep, collapse = collapse)
 
-  ## create HTML  
+  ## create HTML
   ## header
   htm1 <- c("<html>",
             "<head>",
@@ -115,7 +117,7 @@ ctv2html <- function(x,
      zpaste("  <h2>", reposname, " Task View: ", ampersSub(x$topic), "</h2>"),
      zpaste("  <h3>Maintainer: ", ampersSub(x$maintainer), "</h3>"))
 
-  ## info section	    
+  ## info section
   htm2 <- ampersSub(x$info)
 
   ## package list
@@ -124,7 +126,7 @@ ctv2html <- function(x,
            if(b) " (core)" else "", "</li>")
   htm3 <- c(zpaste("  <h3>", reposname, " packages:</h3>"),
             "  <ul>",
-	    sapply(1:NROW(x$packagelist), function(i) pkg2html(x$packagelist[i,1], x$packagelist[i,2])), 
+	    sapply(1:NROW(x$packagelist), function(i) pkg2html(x$packagelist[i,1], x$packagelist[i,2])),
 	    "  </ul>")
 
   ## further links
@@ -133,7 +135,7 @@ ctv2html <- function(x,
             sapply(x$links, function(x) paste("    <li>", ampersSub(x), "</li>", sep = "")),
 	    "  </ul>")
 
-  ## collect code chunks	    
+  ## collect code chunks
   htm <- c(htm1, "", htm2, "", htm3, "", htm4, "", "</body>", "</html>")
 
   ## write and return results
@@ -155,27 +157,27 @@ updateViews <- function(repos = ".",
   path <- file.path(repos, "src", "contrib", "Views")
   files <- dir(path, pattern = "\\.ctv$")
   if(length(files) < 1) stop(paste("no .ctv files found at path", path))
-  
+
   ## compute correct installdirs
   contribdir <- file.path(repos, "src", "contrib")
   viewdir <- file.path(contribdir, "Views")
   viewsrds <- file.path(contribdir, viewsrds)
   index <- file.path(viewdir, index)
-  
+
   ## available packages in repos
   pkgs <- as.vector(read.dcf(file.path(contribdir, "PACKAGES"), fields = "Package"))
-  
+
   ## setup object which will be stored in Views.rds
   rval <- list()
   class(rval) <- "ctvlist"
-  
+
   ## setup information for index.html
   idx <- matrix(rep("", 2 * length(files)), ncol = 2)
-  
+
   for(i in 1:length(files)) {
     ## read .ctv and store in list
     x <- read.ctv(file.path(path, files[i]))
-    
+
     ## generate HTML code
     ctv2html(x, file = file.path(viewdir, paste(x$name, ".html", sep = "")),
              css = css, reposname = reposname, ...)
@@ -198,10 +200,10 @@ updateViews <- function(repos = ".",
     idx[i,] <- c(x$name, x$topic)
     rval[[i]] <- x
   }
-  
-  ## save all views 
+
+  ## save all views
   .saveRDS(rval, file = viewsrds) ## compress = TRUE currently does not work for reading from an url
-  
+
   ## generate index HTML file
   if(is.character(index)) {
     idx <- c("<html>",
@@ -228,7 +230,7 @@ updateViews <- function(repos = ".",
 	     "</body>",
 	     "</html>")
     writeLines(idx, con = index)
-  }  
-  
+  }
+
   invisible(rval)
 }
