@@ -1,16 +1,16 @@
-#### Read all CTV's in the package:
+#### Read all CTVs in the package:
 
-library(ctv)
+library("ctv")
 
-cDIR <- system.file("ctv", package="ctv")
-ctvs <- list.files(cDIR, pattern = "\\.ctv$")
+cdir <- system.file("ctv", package="ctv")
+ctvs <- list.files(cdir, pattern = "\\.ctv$")
 ctvs
 
 rr <- sapply(ctvs,
 	     function(ctv) {
 		 cat(sprintf("%25s  ",ctv))
-		 R <- read.ctv(file.path(cDIR, ctv))
-		 cat("[Ok]\n")
+		 R <- read.ctv(file.path(cdir, ctv))
+		 cat("[ok]\n")
                  R
 	     },
 	     simplify=FALSE)
