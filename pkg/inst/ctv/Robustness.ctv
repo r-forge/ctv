@@ -97,8 +97,8 @@
       Here, <pkg>robustbase</pkg> contains a slightly more flexible
       version, <tt>covMcd()</tt> than <pkg>robust</pkg>'s
       <tt>fastmcd()</tt>, and similarly for <tt>covOGK()</tt>.
-      OTOH, <pkg>robust</pkg>'s <tt>covRob</tt> has automatically chosen
-      methods, notably <tt>pairwiseQC</tt> for large dimensionality p.
+      OTOH, <pkg>robust</pkg>'s <tt>covRob()</tt> has automatically chosen
+      methods, notably <tt>pairwiseQC()</tt> for large dimensionality p.
 
       <pkg>mvoutlier</pkg> (building on <pkg>robustbase</pkg>) provides
       sign methods for outlier identification in high dimensions.
