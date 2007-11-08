@@ -107,16 +107,28 @@
       nearest neighbor variance estimation (NNVE) method of Wang and
       Raftery (2002).
 
+      See also
+          <view>Multivariate</view>
+          <view>Cluster</view>
       </li>
-
-
-      <li><i>Time Series</i>: ...       </li>
 
       <li><i>Large Data Sets</i>: ...       </li>
 
+      See also
+          <view>MachineLearning</view>
+
       <li><i>Descriptive Statistics / Exploratory Data Analysis</i>: ... </li>
 
+      <li><i>Time Series</i>:
+      As far as we know, functionality is badly missing here;
+      Peter Ruckdeschel has started to lead an effort for robust
+      time-series package.
+      </li>
+
       <li><i>Econometric Models</i>: ... </li>
+
+      See also
+          <view>Econometrics</view>
 
       <li><i>Robust Methods for Bioinformatics</i>:
 
@@ -133,10 +145,11 @@
     <pkg priority="core">robustbase</pkg>
     <pkg priority="core">robust</pkg>
     <pkg priority="core">rrcov</pkg>
+    <pkg>quantreg</pkg>
+
     <pkg>mvoutlier</pkg>
     <pkg>covRobust</pkg>
     <pkg>wle</pkg>
-
 
     <pkg priority="core">VR</pkg>
   </packagelist>
