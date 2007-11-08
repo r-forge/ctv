@@ -76,7 +76,8 @@
 	  for fitting structural time series and <tt>decompose()</tt> and <tt>HoltWinters()</tt>
 	  for time series filtering and decomposition. Some extensions to these
 	  methods, in particular for forecasting and model selection, are provided in
-	  the <pkg>forecasting</pkg> bundle. For estimating VAR models, several
+	  the <pkg>forecasting</pkg> bundle. Miscellaneous time series filters are
+	  available in <pkg>mFilter</pkg>. For estimating VAR models, several
 	  methods are available: simple models can be fitted by <tt>ar()</tt> in stats, more
 	  elaborate models are provided package <pkg>vars</pkg>, <tt>estVARXls()</tt> in
 	  <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. A
@@ -134,6 +135,7 @@
     <pkg priority="core">lmtest</pkg>
     <pkg>Matrix</pkg>
     <pkg>meboot</pkg>
+    <pkg>mFilter</pkg>
     <pkg>micEcon</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>

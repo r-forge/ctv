@@ -11,15 +11,15 @@
     <p>
     Robust (or "resistant") methods for statistics modelling have been
     available in S from the start, in R in package <pkg>stats</pkg>
-    (e.g., <tt>median</tt>, <tt>mean(*,trim= . )</tt>, <tt>mad()</tt>,
+    (e.g., <tt>median</tt>, <tt>mean(*, trim = . )</tt>, <tt>mad()</tt>,
     <tt>IQR()</tt>,
     or also <tt>fivenum()</tt>, the statistic behind <tt>boxplot()</tt> in
     <pkg>graphics</pkg>.
     Much further important functionality has been made available in package
-    <tt>MASS</tt> (inside the <pkg>VR</pkg> bundle by Bill Venables and Brian
-    Ripley, see <em>the</em> book<a
-    href="www.stats.ox.ac.uk/pub/MASS4/">Modern Applied Statistics with S</a>),
-    notably <tt>rlm()</tt> for robust regression and <tt>cov.rob</tt> for
+    MASS (inside the <pkg>VR</pkg> bundle by Bill Venables and Brian
+    Ripley, see <em>the</em> book
+    <a href="http://www.stats.ox.ac.uk/pub/MASS4/">Modern Applied Statistics with S</a>),
+    notably <tt>rlm()</tt> for robust regression and <tt>cov.rob()</tt> for
     robust multivariate scatter and covariance.
     </p>
     <p>
@@ -33,7 +33,7 @@
 
     <p>
     An international group of scientists working in the field of robust
-    statistics has made efforts (since Oct.2005) to coordinate several of
+    statistics has made efforts (since October 2005) to coordinate several of
     the scattered developments and make the important ones available
     through a set of R packages complementing each other.
 
@@ -142,8 +142,7 @@
   </packagelist>
 
   <links>
-    <a href="http://www.statistik.tuwien.ac.at/rsr/">Robust Statistics in R
-    (TU Vienna)</a>
+    <a href="http://www.statistik.tuwien.ac.at/rsr/">Robust Statistics in R (TU Vienna)</a>
     <a href="https://stat.ethz.ch/mailman/listinfo/r-sig-robust/">R Special
     Interest Group on Robust Statistics</a>
   </links>
