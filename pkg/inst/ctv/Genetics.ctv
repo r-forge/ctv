@@ -270,6 +270,8 @@ population based studies.  The software has been implemented to take advantage o
     <a href="http://pbil.univ-lyon1.fr/software/mareymap/">
       MareyMap: GUI for comparing physical and genetic maps for estimation of recombination rates
     </a>
+    <a href="http://csg.sph.umich.edu/boehnke/p_act.php">p_ACT : R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests.
+    </a>
   </links>
 
 </CRANTaskView>
