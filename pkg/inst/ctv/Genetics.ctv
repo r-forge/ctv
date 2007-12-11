@@ -16,7 +16,7 @@
       <p>
         A number of R packages are already available and many more are most likely to be developed in the near future.
     Please send your comments and suggestions to either of the task view maintainer's 
-        <a href="http://stats.ma.ic.ac.uk/gmontana/public_html/">
+        <a href="http://stats.ma.ic.ac.uk/g/gmontana/public_html/">
           Giovanni Montana
         </a>
         or
@@ -186,6 +186,17 @@ population based studies.  The software has been implemented to take advantage o
 <pkg>multtest</pkg>
           also offers several non-parametric bootstrap and permutation resampling-based multiple testing procedures.
         </li>
+        <li>
+          <i>
+            Importing Sequence Data
+          </i>:
+      There are utilities in the
+<pkg>seqinR</pkg>
+          package to import sequence data from various sources, including files of aligned sequences in mase, clustal, phylip, fasta and msf format which will be of utility to some population genetic analysis.  Users interested in using R for sequence data and bioinformatics are also referred to the
+    <a href="http://www.bioconductor.org/">
+      BioConductor
+    </a>
+          project.
       </ul>
     </p>
   </info>
@@ -222,6 +233,7 @@ population based studies.  The software has been implemented to take advantage o
     <pkg>qtlDesign</pkg>
     <pkg>qvalue</pkg>
     <pkg>rmetasim</pkg>
+    <pkg>seqinR</pkg>
     <pkg>SNPassoc</pkg>
     <pkg>SNPmaxsel</pkg>
     <pkg>snp.plotter</pkg>
@@ -231,6 +243,9 @@ population based studies.  The software has been implemented to take advantage o
   </packagelist>
 
   <links>
+    <a href="http://rgenetics.org/">
+      The Rgenetics Project
+    </a>
     <a href="http://www-gene.cimr.cam.ac.uk/clayton/software/">
       R Software by David Clayton
     </a>
@@ -262,16 +277,24 @@ population based studies.  The software has been implemented to take advantage o
       Vector Generalized Linear and Additive Models (VGLMs/VGAMs)
     </a>
     <a href="http://people.fas.harvard.edu/~tjhoffm/pbatR.html">
-      P2BAT: Tools for the statistical analysis of family-based association studies
+      P2BAT
     </a>
+      : Tools for the statistical analysis of family-based association studies.
     <a href="http://www.qimr.edu.au/davidD/#R">
       R Software by David Duffy
     </a>
     <a href="http://pbil.univ-lyon1.fr/software/mareymap/">
-      MareyMap: GUI for comparing physical and genetic maps for estimation of recombination rates
+      MareyMap
     </a>
-    <a href="http://csg.sph.umich.edu/boehnke/p_act.php">p_ACT : R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests.
+      : GUI for comparing physical and genetic maps for estimation of recombination rates.
+    <a href="http://csg.sph.umich.edu/boehnke/p_act.php">
+      p_ACT 
     </a>
+      : R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests.
+    <a href="http://www.bioconductor.org/">
+      BioConductor
+    </a>
+      an open source and open development software project for the analysis and comprehension of genomic data based on R.
   </links>
 
 </CRANTaskView>
