@@ -191,7 +191,7 @@ population based studies.  The software has been implemented to take advantage o
             Importing Sequence Data
           </i>:
       There are utilities in the
-<pkg>seqinR</pkg>
+<pkg>seqinr</pkg>
           package to import sequence data from various sources, including files of aligned sequences in mase, clustal, phylip, fasta and msf format which will be of utility to some population genetic analysis.  Users interested in using R for sequence data and bioinformatics are also referred to the
     <a href="http://www.bioconductor.org/">
       BioConductor
@@ -234,7 +234,7 @@ population based studies.  The software has been implemented to take advantage o
     <pkg>qtlDesign</pkg>
     <pkg>qvalue</pkg>
     <pkg>rmetasim</pkg>
-    <pkg>seqinR</pkg>
+    <pkg>seqinr</pkg>
     <pkg>SNPassoc</pkg>
     <pkg>SNPmaxsel</pkg>
     <pkg>snp.plotter</pkg>
