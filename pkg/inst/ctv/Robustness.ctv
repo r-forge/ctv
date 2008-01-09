@@ -13,8 +13,8 @@
     available in S from the start, in R in package <pkg>stats</pkg>
     (e.g., <tt>median</tt>, <tt>mean(*, trim = . )</tt>, <tt>mad()</tt>,
     <tt>IQR()</tt>,
-    or also <tt>fivenum()</tt>, the statistic behind <tt>boxplot()</tt> in
-    <pkg>graphics</pkg>.
+    or also <tt>fivenum()</tt> (the statistic behind <tt>boxplot()</tt> in
+    <pkg>graphics</pkg>) or <tt>lowess()</tt>.
     Much further important functionality has been made available in package
     MASS (inside the <pkg>VR</pkg> bundle by Bill Venables and Brian
     Ripley, see <em>the</em> book
@@ -107,14 +107,14 @@
       nearest neighbor variance estimation (NNVE) method of Wang and
       Raftery (2002).
 
-      See also
-          <view>Multivariate</view>
+      See also the CRAN task views
+          <view>Multivariate</view> and
           <view>Cluster</view>
       </li>
 
       <li><i>Large Data Sets</i>: ...       </li>
 
-      See also
+      See also the CRAN task view
           <view>MachineLearning</view>
 
       <li><i>Descriptive Statistics / Exploratory Data Analysis</i>: ... </li>
@@ -125,18 +125,20 @@
       time-series package.
       </li>
 
-      <li><i>Econometric Models</i>: ... </li>
+      <li><i>Econometric Models</i>: ...
 
-      See also
-          <view>Econometrics</view>
+       See also the CRAN task view <view>Econometrics</view>
+      </li>
 
       <li><i>Robust Methods for Bioinformatics</i>:
 
       There are several packages in the <a
       href="http://www.bioconductor.org/">Bioconductor project</a>
       providing specialized robust methods.
-
        </li>
+
+      <li><i>Other approaches to robust and resistant methodology</i>:
+      </li>
 
     </ul>
   </info>
@@ -148,6 +150,7 @@
     <pkg>quantreg</pkg>
 
     <pkg>mvoutlier</pkg>
+    <pkg>sandwich</pkg>
     <pkg>covRobust</pkg>
     <pkg>wle</pkg>
 
