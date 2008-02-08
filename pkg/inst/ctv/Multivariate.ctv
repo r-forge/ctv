@@ -192,7 +192,7 @@ graphics, of which interactive parallel co-ordinate plots and mosaic plots may b
 	  multivariate adaptive regression splines with <tt>mars()</tt> and adaptive spline
 	  backfitting with the <tt>bruto()</tt> function.   Multivariate adaptive regression splines can also be found in <pkg>earth</pkg>.  <pkg>rda</pkg> provides classification 
           for high dimensional data by means of shrunken centroids regularized discriminant analysis.
-          <pkg>class</pkg> provides k-nearest 
+          Package class from the <pkg>VR</pkg> provides k-nearest 
           neighbours by <tt>knn()</tt>, <pkg>knncat</pkg> provides k-nearest neighbours for 
           categorical variables.   <pkg>SensoMineR</pkg> provides <tt>FDA()</tt> for factorial discriminant analysis.   A number of packages provide for 
 	  dimension reduction with the classification. <pkg>klaR</pkg> includes variable
@@ -263,29 +263,28 @@ graphics, of which interactive parallel co-ordinate plots and mosaic plots may b
  <packagelist>
     <pkg>abind</pkg> 
     <pkg priority="core">ade4</pkg>
-<pkg>agsemisc</pkg>
-<pkg>AIS</pkg>
+    <pkg>agsemisc</pkg>
+    <pkg>AIS</pkg>
     <pkg>amap</pkg>
     <pkg>aplpack</pkg>
-<pkg>ash</pkg>
+    <pkg>ash</pkg>
     <pkg>bayesm</pkg>
     <pkg>bivpois</pkg> 
     <pkg>calibrate</pkg> 
-<pkg>ca</pkg>   
-<pkg>car</pkg>   
-<pkg>caret</pkg> 
-<pkg>caretLSF</pkg> 
-<pkg>cat</pkg> 
+    <pkg>ca</pkg>   
+    <pkg>car</pkg>   
+    <pkg>caret</pkg> 
+    <pkg>caretLSF</pkg> 
+    <pkg>cat</pkg> 
     <pkg>chplot</pkg>
     <pkg>cwhmisc</pkg>
-<pkg>class</pkg> 
     <pkg>classPP</pkg> 
-<pkg>clue</pkg> 
+    <pkg>clue</pkg> 
     <pkg priority="core">cluster</pkg> 
-<pkg>clusterGeneration</pkg>
-<pkg>clusterSim</pkg> 
+    <pkg>clusterGeneration</pkg>
+    <pkg>clusterSim</pkg> 
     <pkg>clustvarsel</pkg> 
-<pkg>clv</pkg> 
+    <pkg>clv</pkg> 
     <pkg>cocorresp</pkg> 
     <pkg>compositions</pkg>
     <pkg>concor</pkg>
@@ -294,69 +293,69 @@ graphics, of which interactive parallel co-ordinate plots and mosaic plots may b
     <pkg>covRobust</pkg>
     <pkg>cramer</pkg> 
     <pkg>cwhmisc</pkg> 
-<pkg>DEA</pkg>
+    <pkg>DEA</pkg>
     <pkg>delt</pkg> 
     <pkg>denpro</pkg>
     <pkg>DescribeDisplay</pkg>
-<pkg>desirability</pkg>
+    <pkg>desirability</pkg>
     <pkg>dprep</pkg> 
     <pkg>dr</pkg>
-<pkg>e1071</pkg>
-<pkg>earth</pkg>  
+    <pkg>e1071</pkg>
+    <pkg>earth</pkg>  
     <pkg>ellipse</pkg> 
     <pkg>EMV</pkg>
     <pkg>energy</pkg>
-<pkg>eRm</pkg> 
+    <pkg>eRm</pkg> 
     <pkg>FactoMineR</pkg>   
-<pkg>FAiR</pkg>
+    <pkg>FAiR</pkg>
     <pkg>fastICA</pkg>
-<pkg>feature</pkg> 
+    <pkg>feature</pkg> 
     <pkg>fgac</pkg>
     <pkg>fpc</pkg>   
-<pkg>fso</pkg> 
+    <pkg>fso</pkg> 
     <pkg>gclus</pkg> 
-<pkg>GenKern</pkg>
+    <pkg>GenKern</pkg>
     <pkg>geometry</pkg> 
-<pkg>geozoo</pkg>
-<pkg>gmodels</pkg> 
+    <pkg>geozoo</pkg>
+    <pkg>gmodels</pkg> 
     <pkg>GPArotation</pkg> 
     <pkg>gpls</pkg>
     <pkg>hddplot</pkg>  
-<pkg>hier.part</pkg>
+    <pkg>hier.part</pkg>
     <pkg>Hmisc</pkg>
     <pkg>homals</pkg>
     <pkg>hopach</pkg>
-<pkg>hybridHclust</pkg> 
-<pkg>ICS</pkg>
-<pkg>ICSNP</pkg>
+    <pkg>hybridHclust</pkg> 
+    <pkg>ICS</pkg>
+    <pkg>ICSNP</pkg>
     <pkg>ifa</pkg>
-<pkg>iplots</pkg>  
-<pkg>JADE</pkg>
+    <pkg>iplots</pkg>  
+    <pkg>JADE</pkg>
     <pkg>kernlab</pkg>   
     <pkg>KernSmooth</pkg>
-<pkg>kknn</pkg>
+    <pkg>kknn</pkg>
     <pkg>klaR</pkg>
     <pkg>knncat</pkg>
     <pkg>knnFinder</pkg> 
     <pkg>kohonen</pkg>  
     <pkg>ks</pkg>
     <pkg>lattice</pkg>
-<pkg>LLAhclust</pkg> 
+    <pkg>LLAhclust</pkg> 
     <pkg>ltm</pkg> 
     <pkg>mAr</pkg> 
-<pkg>matrixcalc</pkg>
+    <pkg>matrixcalc</pkg>
     <pkg>Matrix</pkg>    
     <pkg>MCMCpack</pkg>  
-<pkg>mclust</pkg> 
+    <pkg>mclust</pkg> 
     <pkg>mda</pkg> 
-<pkg>MFDA</pkg>
+    <pkg>MFDA</pkg>
     <pkg>mice</pkg> 
     <pkg>misc3d</pkg>
     <pkg>mitools</pkg>
     <pkg>mix</pkg>
-<pkg>mlCopulaSelection</pkg>  
+    <pkg>mlCopulaSelection</pkg>  
     <pkg>mlica</pkg>
-<pkg>monomvn</pkg> 
+    <pkg>monomvn</pkg> 
     <pkg>mnormt</pkg>  
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg> 
@@ -365,60 +364,60 @@ graphics, of which interactive parallel co-ordinate plots and mosaic plots may b
     <pkg>mvoutlier</pkg>
     <pkg>mvpart</pkg> 
     <pkg>mvtnorm</pkg>
-<pkg>nFactors</pkg>   
+    <pkg>nFactors</pkg>   
     <pkg>norm</pkg>   
     <pkg>pan</pkg>
     <pkg>panel</pkg> 
-<pkg>paran</pkg>
-<pkg>party</pkg>  
+    <pkg>paran</pkg>
+    <pkg>party</pkg>  
     <pkg>pcaPP</pkg>
-<pkg>PearsonICA</pkg> 
-<pkg>poLCA</pkg> 
+    <pkg>PearsonICA</pkg> 
+    <pkg>poLCA</pkg> 
     <pkg>polycor</pkg> 
     <pkg>pcurve</pkg>
     <pkg>plsgenomics</pkg>
     <pkg>pls</pkg>
-<pkg>ppls</pkg> 
-<pkg>predbasescor</pkg>
-<pkg>prin</pkg>
-<pkg>proxy</pkg>  
+    <pkg>ppls</pkg> 
+    <pkg>predbayescor</pkg>
+    <pkg>prim</pkg>
+    <pkg>proxy</pkg>  
     <pkg>psy</pkg>
     <pkg>PTAk</pkg>
-<pkg>rda</pkg>
-<pkg>relaimpo</pkg>    
+    <pkg>rda</pkg>
+    <pkg>relaimpo</pkg>    
     <pkg>Rfwdmv</pkg>
     <pkg>rgl</pkg>
     <pkg>rggobi</pkg>
     <pkg>robustbase</pkg>
     <pkg>ROCR</pkg>   
     <pkg>rpart</pkg>
-<pkg>rpart.permutation</pkg>
+    <pkg>rpart.permutation</pkg>
     <pkg>rrcov</pkg>  
-<pkg>rrp</pkg> 
+    <pkg>rrp</pkg> 
     <pkg>sca</pkg> 
     <pkg>scatterplot3d</pkg>
     <pkg>sem</pkg>
     <pkg>SensoMineR</pkg>
-<pkg>seriation</pkg>  
+    <pkg>seriation</pkg>  
     <pkg>SharedHT2</pkg>
-<pkg>simba</pkg> 
+    <pkg>simba</pkg> 
     <pkg>smatr</pkg>  
     <pkg>sn</pkg>
-<pkg>spam</pkg> 
+    <pkg>spam</pkg> 
     <pkg>SparseM</pkg>
-<pkg>spatialNP</pkg> 
+    <pkg>SpatialNP</pkg> 
     <pkg>supclust</pkg> 
     <pkg>superpc</pkg>
-<pkg>trimcluster</pkg>  
+    <pkg>trimcluster</pkg>  
     <pkg>tsfa</pkg>
-<pkg>TWIX</pkg>
+    <pkg>TWIX</pkg>
     <pkg priority="core">vegan</pkg>
     <pkg>vcd</pkg>
-<pkg>VGAM</pkg> 
-<pkg>VIM</pkg>
+    <pkg>VGAM</pkg> 
+    <pkg>VIM</pkg>
     <pkg priority="core">VR</pkg>
     <pkg>xgobi</pkg>   
-<pkg>YaleToolkit</pkg> 
+    <pkg>YaleToolkit</pkg> 
   </packagelist>
 
   <links>
