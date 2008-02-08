@@ -2,7 +2,7 @@
 
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
-  <maintainer>Paul Hewson, email: paul dot hewson at plymouth dot ac dot uk</maintainer>
+  <maintainer>Paul Hewson</maintainer>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -12,7 +12,8 @@
        ordination is covered in the <view>Environmetrics</view> task view.   Further information on supervised classification can be found in the <view>MachineLearning</view> task view, and unsupervised classification in the <view>Cluster</view> task view.</p>
 
        <p>The packages in this view can be roughly structured into the following topics.
-       If you think that some package is missing from the list, please let me know.</p>
+       If you think that some package is missing from the list, please let me know
+       (email: paul dot hewson at plymouth dot ac dot uk).</p>
     
           <p><strong>Visualising multivariate data</strong>
           <ul>
