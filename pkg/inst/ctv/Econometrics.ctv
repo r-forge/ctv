@@ -110,8 +110,11 @@
 	  contains a complete collection of data sets from various standard econometric
 	  textbooks as well as several data sets from the Journal of
 	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
-	  data archives. Package <pkg>CDNmoney</pkg> provides Canadian monetary aggregates
-	  and <pkg>pwt</pkg> provides the Penn world table.</li>
+	  data archives. <pkg>FinTS</pkg> is the R companion to Tsay's 'Analysis of
+	  Financial Time Series' (2nd ed., 2005, Wiley) containing data sets, functions
+          and script files required to work some of the examples.	  
+	  Package <pkg>CDNmoney</pkg> provides Canadian monetary aggregates
+	  and <pkg>pwt</pkg> provides (several releases of) the Penn world table.</li>
     </ul>    
   </info>
 
@@ -131,6 +134,7 @@
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
     <pkg>fCalendar</pkg>
+    <pkg>FinTS</pkg>
     <pkg>forecasting</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
