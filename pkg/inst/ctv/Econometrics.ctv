@@ -72,19 +72,21 @@
 	  (see the <view>Finance</view> view).</li>
       <li><i>Time series modelling</i>: Classical time series modelling tools are
           contained in the stats package and include <tt>arima()</tt> for ARIMA modelling
-	  and Box-Jenkins-type analysis. Furthermore stats provides <tt>StructTS()</tt>
+	  and Box-Jenkins-type analysis. Furthermore, stats provides <tt>StructTS()</tt>
 	  for fitting structural time series and <tt>decompose()</tt> and <tt>HoltWinters()</tt>
 	  for time series filtering and decomposition. Some extensions to these
 	  methods, in particular for forecasting and model selection, are provided in
 	  the <pkg>forecasting</pkg> bundle. Miscellaneous time series filters are
 	  available in <pkg>mFilter</pkg>. For estimating VAR models, several
 	  methods are available: simple models can be fitted by <tt>ar()</tt> in stats, more
-	  elaborate models are provided package <pkg>vars</pkg>, <tt>estVARXls()</tt> in
+	  elaborate models are provided in package <pkg>vars</pkg>, <tt>estVARXls()</tt> in
 	  <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. A
 	  convenient interface for fitting dynamic regression models via OLS is available
 	  in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.	  
-	  More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root
+	  More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian
+	  linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
+	  Kalman filtering/smoothing and Bayesian methods). Unit root
 	  and cointegration techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and
 	  <pkg>tseries</pkg>. Time series factor analysis is available in <pkg>tsfa</pkg>.
 	  Package <pkg>sde</pkg> provides simulation and inference for stochastic
@@ -123,6 +125,7 @@
     <pkg>crq</pkg>
     <pkg>CDNmoney</pkg>
     <pkg>Design</pkg>
+    <pkg>dlm</pkg>
     <pkg>dse</pkg>
     <pkg>dyn</pkg>
     <pkg>dynlm</pkg>
