@@ -1,0 +1,12 @@
+Changes in Version 0.4-0
+
+  o New function update.views() which can query the list
+    of packages contained in a view, query what is the
+    latest version of those packages available and only
+    install/update the packages that are not current.
+
+  o Added infrastructure for version number, date and
+    contact e-mail address of the maintainer.
+    
+  o Adapted the server-side tools to the new web-structure
+    of CRAN.

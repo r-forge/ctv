@@ -2,6 +2,7 @@
 \alias{install.views}
 \alias{CRAN.views}
 \alias{available.views}
+\alias{update.views}
 \alias{print.ctv}
 \alias{print.ctvlist}
 \title{CRAN Task Views: Client-side Tools}
@@ -10,9 +11,11 @@ Client-side tools for installing CRAN task views.
 }
 
 \usage{
+available.views(repos = NULL, \dots)
 install.views(views, coreOnly = FALSE, repos = NULL,
   dependencies = TRUE, \dots)
-available.views(repos = NULL, \dots)
+update.views(views, coreOnly = FALSE, repos = NULL,
+  dependencies = TRUE, lib.loc = NULL, \dots)
 
 \method{print}{ctv}(x, packagelist = TRUE, \dots)
 \method{print}{ctvlist}(x, packagelist = FALSE, \dots)
@@ -30,6 +33,8 @@ available.views(repos = NULL, \dots)
   \item{dependencies}{logical. Should uninstalled packages on
     which the packages associated with the task views depends 
     (or suggests/imports) also be installed?}
+  \item{lib.loc}{character vector describing the location of R library trees
+    to search through (and update packages therein).}
   \item{\dots}{further arguments passed to \code{\link{install.packages}}.}
   \item{x}{an object of class \code{"ctv"} or \code{"ctvlist"} respectively.}
   \item{packagelist}{logical. Should the packagelist also be printed?}
@@ -46,14 +51,20 @@ only the core packages should be installed.
 available in the file \file{Views.rds}. In earlier versions, this was called
 \code{CRAN.views} (which still works and provides the same functionality).
 
-For a closer description of the arguments see als \code{\link{install.packages}}.
+\code{update.views} queries which packages from a view are not yet
+installed (using \code{\link{installed.packages}}) and which of the installed
+packages are older than the packages available (using \code{\link{available.packages}}).
+It subsequently installs only the packages that are not current or not
+installed yet.
+
+For a closer description of the arguments see also \code{\link{install.packages}}.
 }
 
 \value{
   \code{available.views} returns an object of class \code{"ctvlist"} of the 
   available task views whose elements are of class \code{"ctv"}.
   
-  \code{install.views} has no return value.
+  \code{install.views} and \code{update.views} have no return value.
 }
 
 \seealso{\code{\link{install.packages}}}
@@ -67,6 +78,9 @@ For a closer description of the arguments see als \code{\link{install.packages}}
   install.views("Econometrics")
   ## only with core packages
   install.views("Econometrics", coreOnly = TRUE)
+
+  ## update Econometrics view
+  update.views("Econometrics")
 }
 }
 \keyword{utilities}

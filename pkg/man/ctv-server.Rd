@@ -51,11 +51,14 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
   
   \code{ctv2html} returns invisibly a vector with the HTML code generated.
   
-  \code{read.ctv} returns a list of class \code{"ctv"} with slots:
+  \code{read.ctv} returns a list of class \code{"ctv"} with elements:
   \itemize
   \item{name}{character, name of the task view (must be a valid name for an R object).}
   \item{topic}{character, topic of the task view.}
   \item{maintainer}{character, maintainer of the task view.}
+  \item{email}{character, valid e-mail address (optional).}
+  \item{version}{character, version number (optional).}
+  \item{date}{character, date in ISO format (optional).}
   \item{info}{character, HTML code with informations about the task view.}
   \item{packagelist}{data frame with the columns \code{name}
     (character, name of package) and \code{core} (logical, Is priority core?).}

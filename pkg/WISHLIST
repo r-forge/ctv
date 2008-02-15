@@ -1,19 +1,6 @@
 FEATURES
 ********
 
-  o update.views()
-    This should query the list of packages contained in 
-    a CTV, query what is the latest version of those
-    packages available and only install/update the 
-    packages that are not current.
-    
-  o add (unified) infrastructure for e-mail contact
-    It would be nice if there was some way that we could
-    include contact information for the maintainers within
-    a .ctv file. It would be important that this could be
-    found and used by human readers and R, but not by
-    robots.
-
   o repository type
     There was some discussion, in particular with KH,
     that some infrastructure should be added to CRAN

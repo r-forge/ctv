@@ -6,7 +6,7 @@ read.ctv <- function(file)
   ## read raw XML
   x <- xmlTreeParse(file)
   if(xmlSize(x$doc$children) > 1) warning("ctv should contain only one view")
-  x <- xmlChildren(x$doc$children $ CRANTaskView)
+  x <- xmlChildren(x$doc$children$CRANTaskView)
 
   ## valid task view?
   ctvNames <- c("name", "topic", "maintainer", "info", "packagelist", "links")
@@ -65,6 +65,9 @@ read.ctv <- function(file)
   name <- function(x) xmlValue(x$name)
   topic <- function(x) xmlValue(x$topic)
   maintainer <- function(x) xmlValue(x$maintainer)
+  email <- function(x) as.vector(xmlAttrs(x$maintainer)["email"])
+  viewversion <- function(x) if("version" %in% names(x)) xmlValue(x$version) else NULL
+  viewdate <- function(x) if("version" %in% names(x)) as.vector(xmlAttrs(x$version)["date"]) else NULL
   info <- function(x) newlineSub(xmlPaste(x$info, indent = "    "))
   package1 <- function(x) {
     rval <- xmlAttrs(x)["priority"]
@@ -80,11 +83,18 @@ read.ctv <- function(file)
   }
   links <- function(x) as.vector(xmlSApply(x$links, function(z) xmlPaste(z, viewprefix = "CRAN Task View: ")))
 
+  viewversion <- viewversion(x)
+  if(!is.null(viewversion)) viewversion <- as.character(package_version(viewversion))
+  viewdate <- viewdate(x)
+  if(!is.null(viewdate)) viewdate <- as.character(as.Date(viewdate))
 
   ## collect nodes and return
   rval <- list(name = name(x),
                topic = topic(x),
 	       maintainer = maintainer(x),
+	       email = email(x),
+	       version = viewversion,
+	       date = viewdate,
 	       info = info(x),
 	       packagelist = packagelist(x),
 	       links = links(x))
