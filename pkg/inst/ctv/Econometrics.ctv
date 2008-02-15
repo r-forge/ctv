@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version date="2008-02-15">1.0</version>
+  <version>2008-02-15</version>
   
   <info>
     Base R ships with a lot of functionality useful for computational

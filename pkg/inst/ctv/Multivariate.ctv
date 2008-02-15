@@ -2,7 +2,8 @@
 
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
-  <maintainer>Paul Hewson</maintainer>
+  <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
+  <version>2008-02-08</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -12,19 +13,18 @@
        ordination is covered in the <view>Environmetrics</view> task view.   Further information on supervised classification can be found in the <view>MachineLearning</view> task view, and unsupervised classification in the <view>Cluster</view> task view.</p>
 
        <p>The packages in this view can be roughly structured into the following topics.
-       If you think that some package is missing from the list, please let me know
-       (email: paul dot hewson at plymouth dot ac dot uk).</p>
+       If you think that some package is missing from the list, please let me know.</p>
     
           <p><strong>Visualising multivariate data</strong>
           <ul>
           <li><i>Graphical Procedures:</i> A range of base graphics (e.g. <tt>pairs()</tt> and <tt>coplot()</tt>) and 
           <pkg>lattice</pkg> functions (e.g. <tt>xyplot()</tt> and <tt>splom()</tt>) are useful for
 	  visualising pairwise arrays of 2-dimensional scatterplots, clouds and 3-dimensional densities.   
-<tt>scatterplot.matrix</tt> in the <pkg>car</pkg> provides usefully enhanced pairwise scatterplots.
+          <tt>scatterplot.matrix</tt> in the <pkg>car</pkg> provides usefully enhanced pairwise scatterplots.
 	  cwhplot in the <pkg>cwhmisc</pkg> bundle provides <tt>plotSplomT()</tt> which displays correlation values and adds histograms on the diagonal of scatterplot matrices.  	
-        Beyond this, <pkg>scatterplot3d</pkg>
+          Beyond this, <pkg>scatterplot3d</pkg>
 	  provides 3 dimensional scatterplots, 
-<pkg>aplpack</pkg> provides bagplots and <tt>spin3R()</tt>,
+          <pkg>aplpack</pkg> provides bagplots and <tt>spin3R()</tt>,
           a function for rotating 3d clouds.   <pkg>misc3d</pkg>, dependent upon <pkg>rgl</pkg>,
 	  provides animated functions within R useful for visualising densities.   <pkg>YaleToolkit</pkg> provides a range of useful visualisation techniques for multivariate data, as does <pkg>agsemisc</pkg>.
 	  More specialised multivariate plots include the following: 
@@ -48,7 +48,8 @@
           interfaces to the XGobi
 	  and XGvis programs which allow linked, dynamic multivariate plots as well as
 	  projection pursuit.   Finally, <pkg>iplots</pkg> allows particularly powerful dynamic interactive 
-graphics, of which interactive parallel co-ordinate plots and mosaic plots may be of great interest.   Seriation methods are provided by <pkg>seriation</pkg> which can reorder matrices and dendrograms. </li>
+          graphics, of which interactive parallel co-ordinate plots and mosaic plots may be of great interest.
+	  Seriation methods are provided by <pkg>seriation</pkg> which can reorder matrices and dendrograms. </li>
          
          <li><i>Data Preprocessing:</i><pkg>AIS</pkg> provides informative initial descriptions of a multivariate dataset.
           <tt>summarize()</tt> and <tt>summary.formula()</tt> in <pkg>Hmisc</pkg> 

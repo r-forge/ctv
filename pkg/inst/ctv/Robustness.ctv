@@ -5,7 +5,8 @@
   <name>Robustness</name>
   <topic>Robust Statistical Methodology</topic>
   <!--  &amp; Resistant  ?? -->
-  <maintainer>Martin Maechler</maintainer>
+  <maintainer email="Martin.Maechler@R-project.org">Martin Maechler</maintainer>
+  <version>2008-01-09</version>
 
   <info>
     <p>

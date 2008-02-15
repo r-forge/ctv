@@ -1,9 +1,9 @@
 <CRANTaskView>
 
   <name>Graphics</name>
-  <topic>Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp;  
-   Visualization </topic>
-  <maintainer>Nicholas Lewin-Koh</maintainer>
+  <topic>Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization </topic>
+  <maintainer email="nikko@hailmail.net">Nicholas Lewin-Koh</maintainer>
+  <version>2007-06-08</version>
   
   <info>
     R is rich with facilities for creating and developing interesting graphics.

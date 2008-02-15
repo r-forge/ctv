@@ -2,7 +2,8 @@
 
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
-  <maintainer>Giovanni Montana and Neil Shephard</maintainer>
+  <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana and Neil Shephard</maintainer>
+  <version>2007-12-11</version>
 
   <info>
     <p>
@@ -15,7 +16,7 @@
       </p>
       <p>
         A number of R packages are already available and many more are most likely to be developed in the near future.
-    Please send your comments and suggestions to either of the task view maintainer's 
+    Please send your comments and suggestions to either of the task view maintainers 
         <a href="http://stats.ma.ic.ac.uk/g/gmontana/public_html/">
           Giovanni Montana
         </a>

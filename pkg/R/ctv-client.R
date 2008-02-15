@@ -5,8 +5,7 @@ print.ctv <- function(x, packagelist = TRUE, ...)
 	    x$topic, "\nMaintainer: ",
 	    x$maintainer,
 	    if(!is.null(x$email)) sprintf("\nContact:    %s", x$email),
-	    if(!is.null(x$version)) sprintf("\nVersion:    %s", x$version),
-	    if(!is.null(x$date)) sprintf("\nDate:       %s", x$date),	    
+	    sprintf("\nVersion:    %s", x$version),
 	    "\n",
 	    ifelse(is.null(x$repository), "", paste("Repository: ", x$repository, sep = "")),
 	    "\n", sep = ""))

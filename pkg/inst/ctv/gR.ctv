@@ -2,7 +2,8 @@
 
   <name>gR</name>
   <topic>gRaphical models in R</topic>
-  <maintainer>Claus Dethlefsen</maintainer>
+  <maintainer email="aas.claus.dethlefsen@nja.dk">Claus Dethlefsen</maintainer>
+  <version>2005-04-25</version>
   
   <info>
     A graphical model is a class of statistical models that can be

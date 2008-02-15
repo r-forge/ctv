@@ -1,7 +1,7 @@
 read.ctv <- function(file)
 {
   ## XML package is only needed here (i.e., only server-side)
-  if(!("package:XML" %in% search())) stopifnot(require(XML))
+  if(!("package:XML" %in% search())) stopifnot(require("XML"))
 
   ## read raw XML
   x <- xmlTreeParse(file)
@@ -9,7 +9,7 @@ read.ctv <- function(file)
   x <- xmlChildren(x$doc$children$CRANTaskView)
 
   ## valid task view?
-  ctvNames <- c("name", "topic", "maintainer", "info", "packagelist", "links")
+  ctvNames <- c("name", "topic", "maintainer", "version", "info", "packagelist", "links")
   missingChildren <- !(ctvNames %in% names(x))
   if(any(missingChildren))
     stop("The following ctv nodes are missing: ",
@@ -19,7 +19,7 @@ read.ctv <- function(file)
   ## XMLNodes into a character vector
   xmlPaste <- function(x, indent = "",
                        viewprefix = "",
-                       packageURL = "../Descriptions/",
+                       packageURL = "../packages/",
                        viewURL = "")
   {
     ## get tag name
@@ -31,7 +31,7 @@ read.ctv <- function(file)
 
     ## if pkg or view, return link
     if(name == "pkg")
-      return(paste("<a href=\"", packageURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))
+      return(paste("<a href=\"", packageURL, xmlValue(x), "/index.html\">", xmlValue(x), "</a>", sep = ""))
     if(name == "view")
       return(paste(viewprefix, "<a href=\"", viewURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))
     if(name == "info")
@@ -66,8 +66,7 @@ read.ctv <- function(file)
   topic <- function(x) xmlValue(x$topic)
   maintainer <- function(x) xmlValue(x$maintainer)
   email <- function(x) as.vector(xmlAttrs(x$maintainer)["email"])
-  viewversion <- function(x) if("version" %in% names(x)) xmlValue(x$version) else NULL
-  viewdate <- function(x) if("version" %in% names(x)) as.vector(xmlAttrs(x$version)["date"]) else NULL
+  ctvversion <- function(x) xmlValue(x$version)
   info <- function(x) newlineSub(xmlPaste(x$info, indent = "    "))
   package1 <- function(x) {
     rval <- xmlAttrs(x)["priority"]
@@ -83,18 +82,12 @@ read.ctv <- function(file)
   }
   links <- function(x) as.vector(xmlSApply(x$links, function(z) xmlPaste(z, viewprefix = "CRAN Task View: ")))
 
-  viewversion <- viewversion(x)
-  if(!is.null(viewversion)) viewversion <- as.character(package_version(viewversion))
-  viewdate <- viewdate(x)
-  if(!is.null(viewdate)) viewdate <- as.character(as.Date(viewdate))
-
   ## collect nodes and return
   rval <- list(name = name(x),
                topic = topic(x),
 	       maintainer = maintainer(x),
 	       email = email(x),
-	       version = viewversion,
-	       date = viewdate,
+	       version = ctvversion(x),
 	       info = info(x),
 	       packagelist = packagelist(x),
 	       links = links(x))
@@ -104,8 +97,8 @@ read.ctv <- function(file)
 
 ctv2html <- function(x,
                      file = NULL,
-                     css = "../../../R.css",
-		     packageURL = "../Descriptions/",
+                     css = "../../R.css",
+		     packageURL = "../packages/",
 		     reposname = "CRAN")
 {
   if(is.character(x)) x <- read.ctv(x)
@@ -125,14 +118,18 @@ ctv2html <- function(x,
 	    "",
 	    "<body>",
      zpaste("  <h2>", reposname, " Task View: ", ampersSub(x$topic), "</h2>"),
-     zpaste("  <h3>Maintainer: ", ampersSub(x$maintainer), "</h3>"))
+            "  <table>",
+     zpaste("    <tr><td valign=\"top\"><b>Maintainer:</b></td><td>", ampersSub(x$maintainer), "</td></tr>"),
+     if(!is.null(x$email)) zpaste("    <tr><td valign=\"top\"><b>Contact:</b></td><td>", gsub("@", " at ", x$email), "</td></tr>"),
+     zpaste("    <tr><td valign=\"top\"><b>Version:</b></td><td>", ampersSub(x$version), "</td></tr>"),
+            "  </table>")
 
   ## info section
   htm2 <- ampersSub(x$info)
 
   ## package list
   pkg2html <- function(a, b)
-    zpaste("    <li><a href=\"", packageURL, a, ".html\">", a, "</a>",
+    zpaste("    <li><a href=\"", packageURL, a, "/index.html\">", a, "</a>",
            if(b) " (core)" else "", "</li>")
   htm3 <- c(zpaste("  <h3>", reposname, " packages:</h3>"),
             "  <ul>",
@@ -154,7 +151,7 @@ ctv2html <- function(x,
 }
 
 updateViews <- function(repos = ".",
-			css = "../../../R.css",
+			css = "../../R.css",
 			reposname = "CRAN",
 			...)
 {
@@ -163,16 +160,15 @@ updateViews <- function(repos = ".",
   viewsrds <- "Views.rds"
   index <- "index.html"
 
-  ## list all .ctv files
-  path <- file.path(repos, "src", "contrib", "Views")
-  files <- dir(path, pattern = "\\.ctv$")
-  if(length(files) < 1) stop(paste("no .ctv files found at path", path))
-
-  ## compute correct installdirs
-  contribdir <- file.path(repos, "src", "contrib")
-  viewdir <- file.path(contribdir, "Views")
-  viewsrds <- file.path(contribdir, viewsrds)
+  ## compute correct installation dirs
+  viewdir <- file.path(repos, "web", "views")
   index <- file.path(viewdir, index)
+  contribdir <- file.path(repos, "src", "contrib")
+  viewsrds <- file.path(contribdir, viewsrds)
+
+  ## available views
+  files <- dir(viewdir, pattern = "\\.ctv$")
+  if(length(files) < 1) stop(paste("no .ctv files found at path", viewdir))
 
   ## available packages in repos
   pkgs <- as.vector(read.dcf(file.path(contribdir, "PACKAGES"), fields = "Package"))
@@ -186,7 +182,7 @@ updateViews <- function(repos = ".",
 
   for(i in 1:length(files)) {
     ## read .ctv and store in list
-    x <- read.ctv(file.path(path, files[i]))
+    x <- read.ctv(file.path(viewdir, files[i]))
 
     ## generate HTML code
     ctv2html(x, file = file.path(viewdir, paste(x$name, ".html", sep = "")),
@@ -234,8 +230,11 @@ updateViews <- function(repos = ".",
              "<p>To automatically install these views, the ctv package needs to be installed, e.g., via<br>",
 	     "   <tt>install.packages(\"ctv\")</tt><br>",
 	     "   <tt>library(\"ctv\")</tt><br>",
-	     "   and then the views can be installed via <tt>install.views</tt> (after loading ctv), e.g.,<br>",
-	     "   <tt>install.views(\"Econometrics\")</tt></p>",
+	     "   and then the views can be installed via <tt>install.views</tt> or <tt>update.views</tt>",	     
+	     "   (which first assesses which of the packages are already installed and up-to-date), e.g.,<br>",
+	     "   <tt>install.views(\"Econometrics\")</tt><br>",
+	     "   or<br>",
+	     "   <tt>update.views(\"Econometrics\")</tt></p>",
 	     "",
 	     "</body>",
 	     "</html>")

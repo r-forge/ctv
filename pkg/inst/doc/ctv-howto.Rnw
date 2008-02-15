@@ -32,7 +32,7 @@ are given below:
   <name>Econometrics</name>
   <topic>Computational Econometrics &amp; Finance</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version date="2008-02-15">1.0</version>
+  <version>2008-02-15</version>
 
   <info>
     Emphasize something <b>important</b> with standard HTML tags,
@@ -69,8 +69,7 @@ and \verb/&/ that need to be escaped by their HTML counterparts.)
 \verb/<maintainer>/ gives the name of the maintainer in plain text
 with support for specification of an e-mail address.
 
-\verb/<version>/ gives the version number (in a format recognized by \textsf{R},
-with support for specification of an associated date (in ISO format).
+\verb/<version>/ is specified by a date (in ISO format).
 
 \verb/<info>/ should be a short description of the packages that explains
 which packages are useful for which tasks. It can also contain any further

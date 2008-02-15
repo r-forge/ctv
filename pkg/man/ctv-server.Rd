@@ -8,10 +8,10 @@ Server-side tools for maintaining CRAN task views.
 }
 
 \usage{
-updateViews(repos = ".", css = "../../../R.css", reposname = "CRAN", \dots)
+updateViews(repos = ".", css = "../../R.css", reposname = "CRAN", \dots)
 
 read.ctv(file)
-ctv2html(x, file = NULL, css = "../../../R.css", packageURL = "../Descriptions/", reposname = "CRAN")
+ctv2html(x, file = NULL, css = "../../R.css", packageURL = "../packages/", reposname = "CRAN")
 }
 \arguments{
   \item{repos}{character, the base URL of the CRAN-style repository where the \file{Views.rds}
@@ -57,8 +57,7 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
   \item{topic}{character, topic of the task view.}
   \item{maintainer}{character, maintainer of the task view.}
   \item{email}{character, valid e-mail address (optional).}
-  \item{version}{character, version number (optional).}
-  \item{date}{character, date in ISO format (optional).}
+  \item{version}{character, version specified via date in ISO format.}
   \item{info}{character, HTML code with informations about the task view.}
   \item{packagelist}{data frame with the columns \code{name}
     (character, name of package) and \code{core} (logical, Is priority core?).}

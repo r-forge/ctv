@@ -1,9 +1,8 @@
-<!-- Version 1.0, last modified: 23 January 2006 by J. Fox -->
-
 <CRANTaskView> 
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
-  <maintainer>John Fox</maintainer> 
+  <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
+  <version>2006-01-23</version>
   
   <info> 
   

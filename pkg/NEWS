@@ -1,11 +1,10 @@
 Changes in Version 0.4-0
 
-  o New function update.views() which can query the list
-    of packages contained in a view, query what is the
-    latest version of those packages available and only
-    install/update the packages that are not current.
+  o New function update.views() which only installs the
+    packages from a view that are not installed or not
+    up-to-date.
 
-  o Added infrastructure for version number, date and
+  o Added infrastructure for view version/date and
     contact e-mail address of the maintainer.
     
   o Adapted the server-side tools to the new web-structure
