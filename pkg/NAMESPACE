@@ -1,0 +1,17 @@
+import("utils")
+
+export(
+## client-side tools
+   "CRAN.views",
+   "available.views",
+   "install.views",
+   "update.views",
+
+## server-side tools
+  "read.ctv",
+  "ctv2html",
+  "updateViews")
+
+## methods
+  S3method("print", "ctv")
+  S3method("print", "ctvlist")
