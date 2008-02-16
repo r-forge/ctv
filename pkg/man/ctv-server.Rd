@@ -1,14 +1,14 @@
 \name{ctv-server}
 \alias{read.ctv}
 \alias{ctv2html}
-\alias{updateViews}
+\alias{repos_update_views}
 \title{CRAN Task Views: Server-side Tools}
 \description{
 Server-side tools for maintaining CRAN task views.
 }
 
 \usage{
-updateViews(repos = ".", css = "../../R.css", reposname = "CRAN", \dots)
+repos_update_views(repos = ".", css = "../../R.css", reposname = "CRAN", \dots)
 
 read.ctv(file)
 ctv2html(x, file = NULL, css = "../../R.css", packageURL = "../packages/", reposname = "CRAN")

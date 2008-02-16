@@ -150,10 +150,10 @@ ctv2html <- function(x,
   invisible(htm)
 }
 
-updateViews <- function(repos = ".",
-			css = "../../R.css",
-			reposname = "CRAN",
-			...)
+repos_update_views <- function(repos = ".",
+			       css = "../../R.css",
+		   	       reposname = "CRAN",
+			       ...)
 {
   ## These could easily be changed, but are currently not
   ## exported arguments

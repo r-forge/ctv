@@ -10,7 +10,7 @@ export(
 ## server-side tools
   "read.ctv",
   "ctv2html",
-  "updateViews")
+  "repos_update_views")
 
 ## methods
   S3method("print", "ctv")
