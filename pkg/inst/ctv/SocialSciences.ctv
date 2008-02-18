@@ -104,8 +104,7 @@
           </li>
           
           <li>
-          <i>Robust regression:</i> The <tt>rlm</tt> function fits linear models by M-estimation and <tt>lqs</tt> computes bounded-influence estimators; both are in the MASS package. (The <tt>cov.rob</tt> function in the same package computes a robust covariance-matrix estimator.) Also see the <pkg>quantreg</pkg> package, which computes linear, nonlinear, and nonparametric quantile regressions; the <pkg>roblm</pkg> package, for MM estimation; and the <pkg>riv</pkg> package, for robust instrumental-variables estimation.
-          </li> 
+          <i>Robust regression:</i> The <tt>rlm</tt> function fits linear models by M-estimation and <tt>lqs</tt> computes bounded-influence estimators; both are in the MASS package. (The <tt>cov.rob</tt> function in the same package computes a robust covariance-matrix estimator.) Also see the <pkg>quantreg</pkg> package, which computes linear, nonlinear, and nonparametric quantile regressions; <tt>lmrob</tt> in <pkg>robustbase</pkg> and <tt>lmRob</tt> in <pkg>robust</pkg> for MM estimation; and the <pkg>riv</pkg> package, for robust instrumental-variables estimation.</li> 
           
           <li>
           <i>Structural-equation models:</i> The <pkg>sem</pkg> package fits general (i.e., latent-variable) SEMs by FIML, and structural equations in observed-variable models by 2SLS. Categorical variables in SEMs can be accommodated via the <pkg>polycor</pkg> package. The <pkg>systemfit</pkg> package implements a wider variety of estimators for observed-variables models, including nonlinear simultaneous-equations models. See also the <pkg>pls</pkg> package, for partial least-squares estimation, and the <view>gR</view> task view for graphical models.
@@ -259,7 +258,8 @@
     <pkg>qvcalc</pkg>
     <pkg>riv</pkg>
     <pkg>rmeta</pkg>
-    <pkg>roblm</pkg>
+    <pkg>robust</pkg>
+    <pkg>robustbase</pkg>
     <pkg>sampling</pkg>
     <pkg priority="core">sandwich</pkg>
     <pkg priority="core">sem</pkg>
