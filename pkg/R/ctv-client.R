@@ -193,7 +193,7 @@ update.views <- function(views,
 
   ## install packages required
   apkgs <- apkgs[pkgs,,drop=FALSE]
-  install.packages(apkgs[,1], contriburl = apkgs[,"Repository"],
+  if(NROW(apkgs) > 0) install.packages(apkgs[,1], contriburl = apkgs[,"Repository"],
     lib = lib.loc, dependencies = dependencies, ...)
   
   invisible()

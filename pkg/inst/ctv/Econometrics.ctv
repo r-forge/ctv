@@ -21,35 +21,35 @@
     The packages in this view can be roughly structured into the following topics.
     If you think that some package is missing from the list, please let me know.
     <ul>
-      <li><i>Linear regression models</i>: Linear models can be fitted (via OLS) with <tt>lm()</tt>
+      <li><i>Linear regression models</i>: Linear models can be fitted (via OLS) with <code>lm()</code>
           (from stats) and standard tests for model comparisons are available in various
-	  methods such as <tt>summary()</tt> and <tt>anova()</tt>. Analogous functions
+	  methods such as <code>summary()</code> and <code>anova()</code>. Analogous functions
 	  that also support asymptotic tests (<i>z</i> instead of <i>t</i> tests, and
 	  Chi-squared instead of <i>F</i> tests) and plug-in of other covariance
-	  matrices are <tt>coeftest()</tt> and <tt>waldtest()</tt> in <pkg>lmtest</pkg>.
-	  Tests of more general linear hypotheses are implemented in <tt>linear.hypothesis()</tt>
+	  matrices are <code>coeftest()</code> and <code>waldtest()</code> in <pkg>lmtest</pkg>.
+	  Tests of more general linear hypotheses are implemented in <code>linear.hypothesis()</code>
 	  in <pkg>car</pkg>. HC and HAC covariance matrices that can be plugged
 	  into these functions are available in <pkg>sandwich</pkg>. The packages
 	  <pkg>car</pkg> and <pkg>lmtest</pkg> also provide a large collection
 	  of further methods for diagnost checking in linear regression models.</li>
       <li><i>Microeconometrics</i>: Many standard microeconometric models belong to the
-          family of generalized linear models (GLM) and can be fitted by <tt>glm()</tt>
+          family of generalized linear models (GLM) and can be fitted by <code>glm()</code>
 	  from package stats. This includes in particular logit and probit models
 	  for modelling choice data and poisson models for count data. Negative 
-	  binomial GLMs are available via <tt>glm.nb()</tt> in package MASS from
+	  binomial GLMs are available via <code>glm.nb()</code> in package MASS from
 	  the <pkg>VR</pkg> bundle. Zero-inflated and hurdle count models are provided in 
 	  in package <pkg>pscl</pkg>, a different implementation of the former is also
 	  available in <pkg>zicounts</pkg>. Bivariate poisson
 	  regression models are implemented in <pkg>bivpois</pkg>.
 	  Basic censored regression models (e.g., tobit models)
-	  can be fitted by <tt>survreg()</tt> in <pkg>survival</pkg>.	  
+	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>.	  
 	  Further more refined tools for microecnometrics are provided in
 	  <pkg>micEcon</pkg>. The package <pkg>bayesm</pkg> implements a Bayesian
 	  approach to microeconometrics and marketing. Inference for relative
 	  distributions is contained in package <pkg>reldist</pkg>.</li>
       <li><i>Further regression models</i>: Various extensions of the linear regression
           model and other model fitting techniques are available in base R and several
-	  CRAN packages. Nonlinear least squares modelling is availble in <tt>nls()</tt>
+	  CRAN packages. Nonlinear least squares modelling is availble in <code>nls()</code>
 	  in package stats. Relevant packages include <pkg>quantreg</pkg>
 	  (quantile regression),  <pkg>crq</pkg> (censored quantile regression),
 	  <pkg>plm</pkg> (linear models for panel data),
@@ -61,26 +61,26 @@
 	  and <pkg>MNP</pkg> (Bayesian multinomial probit models). The packages	  
 	  <pkg>Design</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
 	  handling of (generalized) linear regression models.</li>	  	 	  
-      <li><i>Basic time series infrastructure</i>: The class <tt>"ts"</tt> in package
+      <li><i>Basic time series infrastructure</i>: The class <code>"ts"</code> in package
           stats is R's standard class for regularly spaced time series which can be
-	  coerced back and forth without loss of information to <tt>"zooreg"</tt>
+	  coerced back and forth without loss of information to <code>"zooreg"</code>
 	  from package <pkg>zoo</pkg>. <pkg>zoo</pkg> provides infrastructure for
 	  both regularly and irregularly spaced time series (the latter via the class
-	  <tt>"zoo"</tt>) where the time information can be of arbitrary class. Several
-	  other implementations of irregular time series building on the <tt>"POSIXt"</tt>
+	  <code>"zoo"</code>) where the time information can be of arbitrary class. Several
+	  other implementations of irregular time series building on the <code>"POSIXt"</code>
 	  time-date classes are available in <pkg>its</pkg>, <pkg>tseries</pkg> and 
 	  <pkg>fCalendar</pkg> which are all aimed particularly at finance applications
 	  (see the <view>Finance</view> view).</li>
       <li><i>Time series modelling</i>: Classical time series modelling tools are
-          contained in the stats package and include <tt>arima()</tt> for ARIMA modelling
-	  and Box-Jenkins-type analysis. Furthermore, stats provides <tt>StructTS()</tt>
-	  for fitting structural time series and <tt>decompose()</tt> and <tt>HoltWinters()</tt>
+          contained in the stats package and include <code>arima()</code> for ARIMA modelling
+	  and Box-Jenkins-type analysis. Furthermore, stats provides <code>StructTS()</code>
+	  for fitting structural time series and <code>decompose()</code> and <code>HoltWinters()</code>
 	  for time series filtering and decomposition. Some extensions to these
 	  methods, in particular for forecasting and model selection, are provided in
 	  the <pkg>forecasting</pkg> bundle. Miscellaneous time series filters are
 	  available in <pkg>mFilter</pkg>. For estimating VAR models, several
-	  methods are available: simple models can be fitted by <tt>ar()</tt> in stats, more
-	  elaborate models are provided in package <pkg>vars</pkg>, <tt>estVARXls()</tt> in
+	  methods are available: simple models can be fitted by <code>ar()</code> in stats, more
+	  elaborate models are provided in package <pkg>vars</pkg>, <code>estVARXls()</code> in
 	  <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. A
 	  convenient interface for fitting dynamic regression models via OLS is available
 	  in <pkg>dynlm</pkg>; a different approach
@@ -99,7 +99,7 @@
           there are some other general bootstrapping techniques available in
 	  <pkg>bootstrap</pkg> or <pkg>simpleboot</pkg> as well some bootstrap techniques
 	  designed for time-series data, such as the maximum entropy bootstrap in
-	  <pkg>meboot</pkg> or the <tt>tsbootstrap()</tt> from <pkg>tseries</pkg>.</li>
+	  <pkg>meboot</pkg> or the <code>tsbootstrap()</code> from <pkg>tseries</pkg>.</li>
       <li><i>Inequality</i>: For measuring inequality, concentration and poverty the
           package <pkg>ineq</pkg> provides some basic tools such as Lorenz curves,
 	  Pen's parade, the Gini coefficient and many more.</li>

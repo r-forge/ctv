@@ -36,6 +36,10 @@ read.ctv <- function(file)
       return(paste(viewprefix, "<a href=\"", viewURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))
     if(name == "info")
       name <- "p"
+    if(name == "code")
+      return(paste("<tt>", xmlValue(x), "</tt>", sep = ""))
+    if(name == "forge")
+      return(paste("<a href=\"http://R-Forge.R-project.org/projects/", xmlValue(x),"/\">", xmlValue(x), "</a>", sep = ""))
 
     ## get attributes
     tmp <- if(!is.null(xmlAttrs(x)))
@@ -107,6 +111,8 @@ ctv2html <- function(x,
   ## auxiliary functions
   ampersSub <- function(x) gsub("&", "&amp;", x)
   zpaste <- function(..., sep = "", collapse = NULL) paste(..., sep = sep, collapse = collapse)
+  obfuscate <- function(x) paste(sprintf("&#x%x;",
+    as.integer(sapply(unlist(strsplit(gsub("@", " at ", x), NULL)), charToRaw))), collapse = "")    
 
   ## create HTML
   ## header
@@ -120,7 +126,7 @@ ctv2html <- function(x,
      zpaste("  <h2>", reposname, " Task View: ", ampersSub(x$topic), "</h2>"),
             "  <table>",
      zpaste("    <tr><td valign=\"top\"><b>Maintainer:</b></td><td>", ampersSub(x$maintainer), "</td></tr>"),
-     if(!is.null(x$email)) zpaste("    <tr><td valign=\"top\"><b>Contact:</b></td><td>", gsub("@", " at ", x$email), "</td></tr>"),
+     if(!is.null(x$email)) zpaste("    <tr><td valign=\"top\"><b>Contact:</b></td><td>", obfuscate(x$email), "</td></tr>"),
      zpaste("    <tr><td valign=\"top\"><b>Version:</b></td><td>", ampersSub(x$version), "</td></tr>"),
             "  </table>")
 
