@@ -48,7 +48,7 @@
     The graphics packages in R can be organized roughly into the following 
     topics, which range from the more user oriented at the top to the more developer 
     oriented at the bottom. The categories are not mutually exclusive but are for the 
-    convienice of presentation:
+    convenience of presentation:
     <ul>
 
       <li><i>Plotting</i>:
@@ -85,7 +85,7 @@
 	  Large data sets can present very different challenges from moderate and small 
           datasets. Aside from overplotting, rendering 1,000,000 points can tax even modern 
           GPU's. For univariate data <pkg> lvplot <\pkg> produces letter value boxplots which
-          alliviate some of the problems that standard boxplots exhibit for large data sets. 
+          alleviate some of the problems that standard boxplots exhibit for large data sets. 
           For bivariate data <pkg>ash</pkg> can produce a bivariate smoothed histogram very 
           quickly, and 
           hexbin, on <a href="http://www.BioConductor.org/">BioConductor</a>, can bin bivariate
@@ -101,7 +101,7 @@
            do not use sophisticated algorithms for node placement, so may not be useful
            for very large trees. <pkg>igraph</pkg> has the Tilford-Rheingold algorithm 
            implementead and is useful for plotting larger trees. <pkg>diagram</pkg> as 
-           facitiies for flow diagrams and simple graphs. For more sophisticated graphs 
+           facilities for flow diagrams and simple graphs. For more sophisticated graphs 
            <pkg>Rgraphviz</pkg> and <pkg>igraph</pkg> have functions for plotting and 
            layout, especially useful for representing large networks</li>. 
           </ul>
