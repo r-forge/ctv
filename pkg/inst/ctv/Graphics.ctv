@@ -188,7 +188,6 @@
     <pkg priority="core">ggplot2</pkg>
     <pkg>gplots</pkg>
     <pkg>gridBase</pkg>
-    <pkg>gtkDevice</pkg>
     <pkg>iplots</pkg>
     <pkg>IDPmisc</pkg>
     <pkg>JavaGD</pkg>
