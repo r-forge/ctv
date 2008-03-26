@@ -11,7 +11,7 @@
     mosaic plots, biplots, and the list goes on. There are devices such as 
     postscript, png, jpeg and pdf for outputting graphics as well as device
     drivers for all platforms running R. <pkg>lattice</pkg> and 
-    <pkg> grid</pkg> are supplied with R's recommended packages and are 
+    <pkg>grid</pkg> are supplied with R's recommended packages and are 
     included in every binary distribution. <pkg>lattice</pkg> is an R 
     implementation of William Cleveland's trellis graphics, while grid 
     defines a much more flexible graphics environment than the base R graphics.
@@ -24,7 +24,7 @@
     user using <tt>par()</tt> commands. The R graphics engine does not maintain a
     user visible graphics list, and there is no system of double
     buffering, so objects cannot be easily edited without redrawing a whole
-    plot. This situation may change in R 2.7, where developers are working on double 
+    plot. This situation may change in R 2.7.x, where developers are working on double 
     buffering for R devices. Even so, the base R graphics can produce many plots with
     extremely fine graphics in many specialized instances.  
 
@@ -80,20 +80,20 @@
            structure or natural ordering in the data. While not for graphics directly 
           <pkg>cba</pkg> and <pkg>seriation</pkg> 
           have functions for creating 1 dimensional orderings from higher dimensional criteria. 
- 	  For ordering an array of displays, <pkg>biclust</pkg> can be useful. 
+ 	  For ordering an array of displays, <pkg>biclust</pkg> can be useful.</li>
           <li><i>Large Data Sets</i>:
 	  Large data sets can present very different challenges from moderate and small 
           datasets. Aside from overplotting, rendering 1,000,000 points can tax even modern 
-          GPU's. For univariate data <pkg> lvplot <\pkg> produces letter value boxplots which
+          GPU's. For univariate data <pkg>lvplot</pkg> produces letter value boxplots which
           alleviate some of the problems that standard boxplots exhibit for large data sets. 
           For bivariate data <pkg>ash</pkg> can produce a bivariate smoothed histogram very 
           quickly, and 
           hexbin, on <a href="http://www.BioConductor.org/">BioConductor</a>, can bin bivariate
           data onto a hexagonal lattice, the advantage being that the irregular lines and 
           orientation of hexagons do not create linear artifacts. For multivariate data, 
-          hexbin can be used to create a scatterplot matrix, combined with <pkg> lattice <\pkg>.
-          An alternative is to use <pkg>scagnostics<\pkg> to produce a scaterplot matrix
-          of "data about the data", and look for interesting combinations of variables.  
+          hexbin can be used to create a scatterplot matrix, combined with <pkg>lattice</pkg>.
+          An alternative is to use <pkg>scagnostics</pkg> to produce a scaterplot matrix
+          of "data about the data", and look for interesting combinations of variables.</li>
           <li><i>Trees and Graphs</i>: 
            <pkg>ape</pkg> and <pkg>ade4</pkg> have functions for plotting 
            phylogenetic trees, which can be used for plotting dendrograms from 
@@ -104,7 +104,7 @@
            facilities for flow diagrams and simple graphs. For more sophisticated graphs 
            <pkg>Rgraphviz</pkg> and <pkg>igraph</pkg> have functions for plotting and 
            layout, especially useful for representing large networks</li>. 
-          </ul>
+          </ul></li>
 	  
       <li><i>Graphics Systems</i>: <pkg>lattice</pkg> is built on top of the <pkg>grid</pkg>
           graphics system and is an R implementation of William Cleveland's trellis
@@ -158,9 +158,9 @@
           device, <pkg>JavaGD</pkg>. Their interactive graphics tools contain functions for
           alpha blending, which produces darker shading around areas with more
           data. This is exceptionally useful for parallel coordinate plots where
-          many lines can quickly obscure patterns. <pkg>playwith<\pkg> has facilities for 
+          many lines can quickly obscure patterns. <pkg>playwith</pkg> has facilities for 
           building interactive versions of R graphics using the <pkg>cairoDevice</pkg> and 
-          <pkg>RGtk2<\pkg>. Lastly, the <pkg>rgl</pkg> package has mechanisms for
+          <pkg>RGtk2</pkg>. Lastly, the <pkg>rgl</pkg> package has mechanisms for
           interactive manipulation of plots, especially 3D rotations and surfaces.</li>        
       <li><i>Development</i>: For development of specialized
           graphics packages in R, <pkg>grid</pkg> should probably be the first
