@@ -21,7 +21,7 @@
     device, which is treated as a static canvas and objects are drawn on
     the device through R plotting commands. The device has a set of global
     parameters such as margins and layouts which can be manipulated by the
-    user using <tt>par()</tt> commands. The R graphics engine does not maintain a
+    user using <code>par()</code> commands. The R graphics engine does not maintain a
     user visible graphics list, and there is no system of double
     buffering, so objects cannot be easily edited without redrawing a whole
     plot. This situation may change in R 2.7.x, where developers are working on double 
@@ -38,7 +38,7 @@
     grid for the underlying primitives. When using plots designed with
     grid one needs to keep in mind that grid is based on a system of
     viewports and graphic objects. To add objects one needs to use grid
-    commands, e.g., <tt>grid.polygon()</tt> rather than <tt>polygon()</tt>. Also grid
+    commands, e.g., <code>grid.polygon()</code> rather than <code>polygon()</code>. Also grid
     maintains a stack of viewports from the device and one needs to make
     sure the desired viewport is at the top of the stack. There is a great
     deal of explanatory documentation included with <pkg>grid</pkg> as
@@ -136,12 +136,12 @@
           development. Lastly, the Augsburg group supplies a set of packages
           that includes a Java-based device, <pkg>JavaGD</pkg>.</li>
       <li><i>Colors</i>: The package <pkg>colorspace</pkg> provides a set of functions for
-          transforming between color spaces and <tt>mixcolor()</tt> for mixing colors
+          transforming between color spaces and <code>mixcolor()</code> for mixing colors
           within a color space.
 	  Based on the HCL colors provided in <pkg>colorspace</pkg>, <pkg>vcd</pkg>
 	  provides a set of functions for choosing color palettes suitable for
-	  coding categorical variables (<tt>rainbow_hcl()</tt>) and numerical 
-	  information (<tt>sequential_hcl()</tt>, <tt>diverge_hcl()</tt>). Similar
+	  coding categorical variables (<code>rainbow_hcl()</code>) and numerical 
+	  information (<code>sequential_hcl()</code>, <code>diverge_hcl()</code>). Similar
 	  types of palettes are provided in <pkg>RColorBrewer</pkg> and <pkg>dichromat</pkg>
           is focused on palettes for color-impaired viewers.</li>
       <li><i>Interactive Graphics</i>: There are several efforts to

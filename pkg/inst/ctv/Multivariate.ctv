@@ -17,28 +17,28 @@
     
           <p><strong>Visualising multivariate data</strong>
           <ul>
-          <li><i>Graphical Procedures:</i> A range of base graphics (e.g. <tt>pairs()</tt> and <tt>coplot()</tt>) and 
-          <pkg>lattice</pkg> functions (e.g. <tt>xyplot()</tt> and <tt>splom()</tt>) are useful for
+          <li><i>Graphical Procedures:</i> A range of base graphics (e.g. <code>pairs()</code> and <code>coplot()</code>) and 
+          <pkg>lattice</pkg> functions (e.g. <code>xyplot()</code> and <code>splom()</code>) are useful for
 	  visualising pairwise arrays of 2-dimensional scatterplots, clouds and 3-dimensional densities.   
-          <tt>scatterplot.matrix</tt> in the <pkg>car</pkg> provides usefully enhanced pairwise scatterplots.
-	  cwhplot in the <pkg>cwhmisc</pkg> bundle provides <tt>plotSplomT()</tt> which displays correlation values and adds histograms on the diagonal of scatterplot matrices.  	
+          <code>scatterplot.matrix</code> in the <pkg>car</pkg> provides usefully enhanced pairwise scatterplots.
+	  cwhplot in the <pkg>cwhmisc</pkg> bundle provides <code>plotSplomT()</code> which displays correlation values and adds histograms on the diagonal of scatterplot matrices.  	
           Beyond this, <pkg>scatterplot3d</pkg>
 	  provides 3 dimensional scatterplots, 
-          <pkg>aplpack</pkg> provides bagplots and <tt>spin3R()</tt>,
+          <pkg>aplpack</pkg> provides bagplots and <code>spin3R()</code>,
           a function for rotating 3d clouds.   <pkg>misc3d</pkg>, dependent upon <pkg>rgl</pkg>,
 	  provides animated functions within R useful for visualising densities.   <pkg>YaleToolkit</pkg> provides a range of useful visualisation techniques for multivariate data, as does <pkg>agsemisc</pkg>.
 	  More specialised multivariate plots include the following: 
-	  <tt>faces()</tt> in <pkg>aplpack</pkg> provides Chernoff's faces;
-	  <tt>parcoord()</tt> from MASS (in the <pkg>VR</pkg> bundle) provides parallel 
-          coordinate plots; <tt>stars()</tt> in graphics provides a choice of star, radar 
-          and cobweb plots respectively. <tt>mstree()</tt> in <pkg>ade4</pkg> and <tt>spantree()</tt> in <pkg>vegan</pkg> provide minimum spanning tree functionality.  <pkg>calibrate</pkg> supports biplot and scatterplot 
+	  <code>faces()</code> in <pkg>aplpack</pkg> provides Chernoff's faces;
+	  <code>parcoord()</code> from MASS (in the <pkg>VR</pkg> bundle) provides parallel 
+          coordinate plots; <code>stars()</code> in graphics provides a choice of star, radar 
+          and cobweb plots respectively. <code>mstree()</code> in <pkg>ade4</pkg> and <code>spantree()</code> in <pkg>vegan</pkg> provide minimum spanning tree functionality.  <pkg>calibrate</pkg> supports biplot and scatterplot 
           axis labelling,  <pkg>chplot</pkg> provides convex hull plots. <pkg>geometry</pkg>, 
           which provides an interface to the qhull library,
-          gives indices to the relevant points via <tt>convexhulln()</tt>.
-          <pkg>ellipse</pkg> draws ellipses for two parameters, and provides <tt>plotcorr()</tt>,
+          gives indices to the relevant points via <code>convexhulln()</code>.
+          <pkg>ellipse</pkg> draws ellipses for two parameters, and provides <code>plotcorr()</code>,
           visual display of a correlation matrix.   <pkg>denpro</pkg> provides level set trees 
           for multivariate visualisation.   Mosaic plots are available via 
-          <tt>mosaicplot()</tt> in graphics and <tt>mosaic()</tt>
+          <code>mosaicplot()</code> in graphics and <code>mosaic()</code>
 	  in <pkg>vcd</pkg> that also contains other visualization techniques for multivariate
 	  categorical data. <pkg>gclus</pkg> provides a number of 
           cluster specific graphical enhancements for scatterplots and parallel coordinate plots
@@ -52,15 +52,15 @@
 	  Seriation methods are provided by <pkg>seriation</pkg> which can reorder matrices and dendrograms. </li>
          
          <li><i>Data Preprocessing:</i><pkg>AIS</pkg> provides informative initial descriptions of a multivariate dataset.
-          <tt>summarize()</tt> and <tt>summary.formula()</tt> in <pkg>Hmisc</pkg> 
-          assist with descriptive functions; from the same package <tt>varclus()</tt> offers variable 
-          clustering while <tt>dataRep()</tt> and <tt>find.matches()</tt> assist in exploring a given 
+          <code>summarize()</code> and <code>summary.formula()</code> in <pkg>Hmisc</pkg> 
+          assist with descriptive functions; from the same package <code>varclus()</code> offers variable 
+          clustering while <code>dataRep()</code> and <code>find.matches()</code> assist in exploring a given 
           dataset in terms of representativeness and finding matches.  
-          <pkg>knnFinder</pkg> provides <tt>nn()</tt> which uses a kd-tree to (quickly) find a 
+          <pkg>knnFinder</pkg> provides <code>nn()</code> which uses a kd-tree to (quickly) find a 
           given number of similar variables using using k-nearest neighbours,
          <pkg>dprep</pkg> provides preprocessing and visualization functions specifically for 
          classification such as checking for variable redundancy, performing a range of 
-         normalisations.   Whilst <tt>dist()</tt> in base and <tt>daisy()</tt> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices. <pkg>simba</pkg> provides functions for dealing with presence / absence data including similarity matrices and reshaping.</li></ul></p>
+         normalisations.   Whilst <code>dist()</code> in base and <code>daisy()</code> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices. <pkg>simba</pkg> provides functions for dealing with presence / absence data including similarity matrices and reshaping.</li></ul></p>
 
 <p><strong>Hypothesis testing</strong>  
  
@@ -69,16 +69,16 @@
 
           <p><strong>Multivariate distributions</strong>
 
-          <ul><li><i>Descriptive measures:</i> <tt>cov()</tt> and <tt>cor()</tt> in stats 
+          <ul><li><i>Descriptive measures:</i> <code>cov()</code> and <code>cor()</code> in stats 
           will provide estimates of the covariance
-          and correlation  matrices respectively. <pkg>ICSNP</pkg> offers several descriptive measures such as <tt>spatial.median()</tt> which provides an estimate of the spatial median and further functions which provide estimates of scatter.   Further robust methods are provided such as <tt>cov.rob()</tt> in MASS which
+          and correlation  matrices respectively. <pkg>ICSNP</pkg> offers several descriptive measures such as <code>spatial.median()</code> which provides an estimate of the spatial median and further functions which provide estimates of scatter.   Further robust methods are provided such as <code>cov.rob()</code> in MASS which
           provides robust estimates of the variance-covariance matrix by minimum volume 
           ellipsoid, minimum covariance determinant or classical product-moment. <pkg>covRobust</pkg> 
-          provides robust covariance estimation via nearest neighbor variance estimation.    <pkg>robustbase</pkg> provides robust covariance estimation via fast minimum covariance determinant with <tt>covMCD()</tt> and the Orthogonalized pairwise estimate of Gnanadesikan-Kettenring via <tt>covOGK()</tt>.   Scalable robust methods are provided within <pkg>rrcov</pkg> also using fast minimum covariance determinant with <tt>covMcd()</tt> as well as M-estimators with <tt>covMest()</tt>. 
+          provides robust covariance estimation via nearest neighbor variance estimation.    <pkg>robustbase</pkg> provides robust covariance estimation via fast minimum covariance determinant with <code>covMCD()</code> and the Orthogonalized pairwise estimate of Gnanadesikan-Kettenring via <code>covOGK()</code>.   Scalable robust methods are provided within <pkg>rrcov</pkg> also using fast minimum covariance determinant with <code>covMcd()</code> as well as M-estimators with <code>covMest()</code>. 
           <pkg>corpcor</pkg> provides shrinkage estimation of large scale covariance
 	  and (partial) correlation matrices.   </li>  
           <li><i>Densities (estimation and simulation):</i>          
-          <tt>mvnorm()</tt> in MASS simulates from the multivariate normal 
+          <code>mvnorm()</code> in MASS simulates from the multivariate normal 
           distribution. <pkg>mvtnorm</pkg> also provides simulation as well as probability and 
           quantile functions for both the multivariate t distribution and multivariate normal 
           distributions as well as density functions for the multivariate normal distribution, <pkg>mvtnormpcs</pkg> provides functions based on Dunnett.   
@@ -88,24 +88,24 @@
           CART and greedy methods.  
 	  Comprehensive information on mixtures is given in the <view>Cluster</view> view, 
           some density estimates and random numbers are provided by 
-          <tt>rmvnorm.mixt()</tt> and <tt>dmvnorm.mixt()</tt> in <pkg>ks</pkg>, mixture fitting 
+          <code>rmvnorm.mixt()</code> and <code>dmvnorm.mixt()</code> in <pkg>ks</pkg>, mixture fitting 
           is also provided within <pkg>bayesm</pkg>.   Functions to simulate from the 
           Wishart distribution are provided in a number of places, such 
-          as <tt>rwishart()</tt> 
-          in <pkg>bayesm</pkg> and <tt>rwish()</tt> in <pkg>MCMCpack</pkg> 
+          as <code>rwishart()</code> 
+          in <pkg>bayesm</pkg> and <code>rwish()</code> in <pkg>MCMCpack</pkg> 
           (the latter also has a density
-          function <tt>dwish()</tt>).  <tt>bkde2D()</tt> from <pkg>KernSmooth</pkg> and 
-          <tt>kde2d()</tt>
+          function <code>dwish()</code>).  <code>bkde2D()</code> from <pkg>KernSmooth</pkg> and 
+          <code>kde2d()</code>
 	  from MASS provide binned and non-binned 2-dimensional kernel density 
           estimation, <pkg>ks</pkg> also provides multivariate kernel smoothing as does <pkg>ash</pkg> and <pkg>GenKern</pkg>.   <pkg>prim</pkg> provides patient rule induction methods to attempt to find regions of high density in high dimensional multivariate data, <pkg>feature</pkg> also provides methods for determining feature significance in multivariate data (such as in relation to local modes).</li>
 
 	  <li><i>Assessing normality:</i> <pkg>mvnormtest</pkg> provides a multivariate extension
 	  to the Shapiro-Wilks test, <pkg>mvoutlier</pkg> provides multivariate outlier detection based
-	  on robust methods.  <pkg>ICS</pkg> provides tests for multi-normality.      <tt>mvnorm.etest()</tt> in <pkg>energy</pkg> provides an assessment 
-          of normality based on E statistics (energy); in the same package <tt>k.sample()</tt>
-          assesses a number of samples for equal distributions.   <tt>mardia()</tt> in <pkg>dprep</pkg>          provides the Mardia test for normality.   Tests for Wishart-distributed covariance matrices 
+	  on robust methods.  <pkg>ICS</pkg> provides tests for multi-normality.      <code>mvnorm.etest()</code> in <pkg>energy</pkg> provides an assessment 
+          of normality based on E statistics (energy); in the same package <code>k.sample()</code>
+          assesses a number of samples for equal distributions.   <code>mardia()</code> in <pkg>dprep</pkg>          provides the Mardia test for normality.   Tests for Wishart-distributed covariance matrices 
           are given by 
-          <tt>mauchly.test()</tt> in stats.   </li>
+          <code>mauchly.test()</code> in stats.   </li>
           
           <li><i>Copulas:</i><pkg>copula</pkg> provides 
           routines for a range of (elliptical and archimedean) copulas including 
@@ -113,41 +113,41 @@
           generalised archimedian copula, bivariate copulas can be fitted with <pkg>mlCopulaSelection</pkg>. </li></ul></p>
 
          <p><strong>Linear models</strong>
-          <ul><li>From stats, <tt>lm()</tt> (with a matrix specified as the dependent variable)
-	  offers multivariate linear models, <tt>anova.mlm()</tt> provides comparison of 
-          multivariate linear models.   <tt>manova()</tt> offers MANOVA.  <pkg>sn</pkg> provides <tt>msn.mle()</tt> and <tt>mst.mle()</tt> which fit multivariate skew normal and multivariate skew t models.<pkg>pls</pkg>
+          <ul><li>From stats, <code>lm()</code> (with a matrix specified as the dependent variable)
+	  offers multivariate linear models, <code>anova.mlm()</code> provides comparison of 
+          multivariate linear models.   <code>manova()</code> offers MANOVA.  <pkg>sn</pkg> provides <code>msn.mle()</code> and <code>mst.mle()</code> which fit multivariate skew normal and multivariate skew t models.<pkg>pls</pkg>
 	  provides partial least squares regression (PLSR) and principal component regression, <pkg>ppls</pkg> provides penalized partial least squares, 
-	  <pkg>dr</pkg> provides dimension reduction regression options such as <tt>"sir"</tt> (sliced
-	  inverse regression), <tt>"save"</tt> (sliced average variance estimation).
+	  <pkg>dr</pkg> provides dimension reduction regression options such as <code>"sir"</code> (sliced
+	  inverse regression), <code>"save"</code> (sliced average variance estimation).
 	  <pkg>plsgenomics</pkg> provides partial least squares analyses for genomics.    <pkg>relaimpo</pkg> provides functions to investigate the relative importance of regression parameters.</li></ul></p>
 
           <p><strong>Projection methods</strong>
-          <ul><li><i>Principal components:</i> these can be fitted with <tt>prcomp()</tt> 
-          (based on <tt>svd()</tt>,
-	  preferred) as well as <tt>princomp()</tt> (based on <tt>eigen()</tt> for  compatibility
-	  with S-PLUS) from stats.  <pkg>sca</pkg> provides simple components. <tt>pc1()</tt> in <pkg>Hmisc</pkg> 
+          <ul><li><i>Principal components:</i> these can be fitted with <code>prcomp()</code> 
+          (based on <code>svd()</code>,
+	  preferred) as well as <code>princomp()</code> (based on <code>eigen()</code> for  compatibility
+	  with S-PLUS) from stats.  <pkg>sca</pkg> provides simple components. <code>pc1()</code> in <pkg>Hmisc</pkg> 
           provides the first principal component and gives coefficients for unscaled 
           data.  Additional support for an assessment of the scree plot can be found in <pkg>nFactors</pkg>, whereas <pkg>paran</pkg> provides routines for Horn's evaluation of the number of dimensions to retain.   <pkg>pcurve</pkg> provides Principal Curve 
-          analysis and visualisation as well as a further principal component method.   For wide matrices, <pkg>gmodels</pkg> provides <tt>fast.prcomp()</tt> and <tt>fast.svd()</tt>.
+          analysis and visualisation as well as a further principal component method.   For wide matrices, <pkg>gmodels</pkg> provides <code>fast.prcomp()</code> and <code>fast.svd()</code>.
           <pkg>kernlab</pkg> 
           uses kernel methods to provide a form of non-linear principal components with 
-          <tt>kpca()</tt>.    <pkg>pcaPP</pkg> provides robust principal components by means
+          <code>kpca()</code>.    <pkg>pcaPP</pkg> provides robust principal components by means
           of projection pursuit.   <pkg>amap</pkg> provides
 	  further robust and parallelised methods such as a form of generalised 
-	  and robust principal component analysis via <tt>acpgen()</tt> and <tt>acprob()</tt> 
+	  and robust principal component analysis via <code>acpgen()</code> and <code>acprob()</code> 
           respectively.   Further options for principal components 
           in an ecological setting are available within <pkg>ade4</pkg> 
           and in a sensory setting in <pkg>SensoMineR</pkg>.   <pkg>psy</pkg> provides a
-          variety of routines useful in psychometry, in this context these include <tt>sphpca()</tt> which 
-          maps onto a sphere and <tt>fpca()</tt> where some variables may be considered as 
-          dependent as well as <tt>scree.plot()</tt> which has the option of adding simulation results to help assess the observed data.   <pkg>PTAk</pkg> provides principal tensor analysis analagous to both PCA and correspondence analysis.   <pkg>smatr</pkg> provides standardised major axis estimation with specific application to allometry.</li>
+          variety of routines useful in psychometry, in this context these include <code>sphpca()</code> which 
+          maps onto a sphere and <code>fpca()</code> where some variables may be considered as 
+          dependent as well as <code>scree.plot()</code> which has the option of adding simulation results to help assess the observed data.   <pkg>PTAk</pkg> provides principal tensor analysis analagous to both PCA and correspondence analysis.   <pkg>smatr</pkg> provides standardised major axis estimation with specific application to allometry.</li>
 
-          <li><i>Canonical Correlation:</i>   <tt>cancor()</tt> in stats provides 
+          <li><i>Canonical Correlation:</i>   <code>cancor()</code> in stats provides 
           canonical correlation.   <pkg>kernlab</pkg> 
-          uses kernel methods to provide robust canonical correlation with  <tt>kcca()</tt>. 
+          uses kernel methods to provide robust canonical correlation with  <code>kcca()</code>. 
           <pkg>concor</pkg> provides a number of concordance methods.</li>
 
-         <li><i>Redundancy Analysis:</i> <pkg>calibrate</pkg> provides <tt>rda()</tt> for 
+         <li><i>Redundancy Analysis:</i> <pkg>calibrate</pkg> provides <code>rda()</code> for 
           redundancy analysis as well as further options for canonical correlation.   <pkg>fso</pkg> provides fuzzy set ordination, which extends ordination beyond methods available from linear algebra.</li>    
           
          <li><i>Independent Components:</i> <pkg>fastICA</pkg> provides fastICA 
@@ -155,26 +155,26 @@
 	  component analysis (ICA) and Projection Pursuit, <pkg>mlica</pkg> provides
 	  maximum likelihood fitting for ICA, and <pkg>PearsonICA</pkg> uses score functions.   <pkg>ICS</pkg> provides either an invariant co-ordinate system or independent components.   <pkg>JADE</pkg> adds an interface to the JADE algorithm, as well as providing some diagnostics for ICA.</li>
 
-         <li><i>Procrustes analysis:</i>  <tt>procrustes()</tt> in
+         <li><i>Procrustes analysis:</i>  <code>procrustes()</code> in
 	  <pkg>vegan</pkg> provides procrustes analysis, this package also provides functions
 	  for ordination and further information on that area is given in the
-          <view>Environmetrics</view> task view.    Generalised procrustes analysis via <tt>GPA()</tt> is available from <pkg>FactoMineR</pkg>.  
+          <view>Environmetrics</view> task view.    Generalised procrustes analysis via <code>GPA()</code> is available from <pkg>FactoMineR</pkg>.  
            </li></ul></p>
 
           <p><strong>Principal coordinates / scaling methods</strong>
-          <ul><li><tt>cmdscale()</tt> in stats provides classical multidimensional scaling
-	  (principal coordinates analysis), <tt>sammon()</tt> and <tt>isoMDS()</tt> in MASS 
+          <ul><li><code>cmdscale()</code> in stats provides classical multidimensional scaling
+	  (principal coordinates analysis), <code>sammon()</code> and <code>isoMDS()</code> in MASS 
 	  offer Sammon and Kruskal's non-metric multidimensional scaling. <pkg>vegan</pkg>
-	  provides wrappers and post-processing for non-metric MDS.   <tt>indscal()</tt> is provided by <pkg>SensoMineR</pkg>.</li></ul></p>
+	  provides wrappers and post-processing for non-metric MDS.   <code>indscal()</code> is provided by <pkg>SensoMineR</pkg>.</li></ul></p>
 
           <p><strong>Unsupervised classification</strong>
 	  <ul><li><i>Cluster analysis:</i> A comprehensive overview of clustering 
           methods available within R is provided by the  
           <view>Cluster</view> task view.  Standard techniques include hierarchical clustering by 
-          <tt>hclust()</tt> and k-means clustering by <tt>kmeans()</tt> in stats.
+          <code>hclust()</code> and k-means clustering by <code>kmeans()</code> in stats.
 	   A range of established
-          clustering and visualisation techniques are also available in <pkg>cluster</pkg>, some cluster validation routines are available in <pkg>clv</pkg> and the Rand index can be computed from <tt>classAgreement()</tt> in <pkg>e1071</pkg>.  Trimmed cluster analysis is available from <pkg>trimcluster</pkg>, cluster ensembles are available from <pkg>clue</pkg>, methods to assist with choice of routines are available in <pkg>clusterSim</pkg> and hybrid methodology is provided by <pkg>hybridHclust</pkg>.  Distance 
-          measures  (<tt>edist()</tt>) and hierarchical clustering (<tt>hclust.energy()</tt>) based on            E-statistics are available in <pkg>energy</pkg>.   <pkg>LLAhclust</pkg> provides variable and object clustering based on a likelihood linkage method, which also provides indices for assessing the results. Mahalanobis distance based clustering (for fixed points as well as clusterwise regression) are available from <pkg>fpc</pkg>.  <pkg>clustvarsel</pkg> 
+          clustering and visualisation techniques are also available in <pkg>cluster</pkg>, some cluster validation routines are available in <pkg>clv</pkg> and the Rand index can be computed from <code>classAgreement()</code> in <pkg>e1071</pkg>.  Trimmed cluster analysis is available from <pkg>trimcluster</pkg>, cluster ensembles are available from <pkg>clue</pkg>, methods to assist with choice of routines are available in <pkg>clusterSim</pkg> and hybrid methodology is provided by <pkg>hybridHclust</pkg>.  Distance 
+          measures  (<code>edist()</code>) and hierarchical clustering (<code>hclust.energy()</code>) based on            E-statistics are available in <pkg>energy</pkg>.   <pkg>LLAhclust</pkg> provides variable and object clustering based on a likelihood linkage method, which also provides indices for assessing the results. Mahalanobis distance based clustering (for fixed points as well as clusterwise regression) are available from <pkg>fpc</pkg>.  <pkg>clustvarsel</pkg> 
           provides variable selection within model based clustering.   Fuzzy clustering is available within <pkg>cluster</pkg> as well as via the  <pkg>hopach</pkg> (Hierarchical Ordered Partitioning and 
           Collapsing Hybrid) algorithm.    <pkg>kohonen</pkg> provides supervised and unsuperised SOMs 
           for high dimensional spectra or patterns.  <pkg>clusterGeneration</pkg> helps simulate clusters. The <view>Environmetrics</view> 
@@ -183,20 +183,20 @@
           <li><i>Tree methods:</i>
           Full details on tree methods are given in the <view>MachineLearning</view> task view.   
 	  Suffice to say here that classification trees are sometimes considered within 
-          multivariate methods; <pkg>rpart</pkg> is most used for this purpose,  <pkg>rpart.permutation</pkg> provides permutation tests for <tt>rpart()</tt> models.   <pkg>TWIX</pkg> provides trees with extra splits.   <pkg>hier.part</pkg> partitions the variance in a multivariate data set. 
+          multivariate methods; <pkg>rpart</pkg> is most used for this purpose,  <pkg>rpart.permutation</pkg> provides permutation tests for <code>rpart()</code> models.   <pkg>TWIX</pkg> provides trees with extra splits.   <pkg>hier.part</pkg> partitions the variance in a multivariate data set. 
           <pkg>mvpart</pkg> extend regression trees to cover multivariate 
           regression trees, <pkg>party</pkg> provides recursive partitioning and <pkg>rrp</pkg> provides random recursive partitioning.   Classification and regression training is provided by <pkg>caret</pkg> with some parallel processing capacity added by <pkg>caretLSF</pkg>.   <pkg>kknn</pkg> provides k-nearest neighbour methods which can be used for regression as well as classification.</li></ul></p>
 
           <p><strong>Supervised classification and discriminant analysis</strong>
-          <ul><li><tt>lda()</tt> and <tt>qda()</tt> within MASS provide linear
+          <ul><li><code>lda()</code> and <code>qda()</code> within MASS provide linear
 	  and quadratic discrimination respectively. <pkg>mda</pkg> provides mixture and
-	  flexible discriminant analysis with <tt>mda()</tt> and <tt>fda()</tt> as well as
-	  multivariate adaptive regression splines with <tt>mars()</tt> and adaptive spline
-	  backfitting with the <tt>bruto()</tt> function.   Multivariate adaptive regression splines can also be found in <pkg>earth</pkg>.  <pkg>rda</pkg> provides classification 
+	  flexible discriminant analysis with <code>mda()</code> and <code>fda()</code> as well as
+	  multivariate adaptive regression splines with <code>mars()</code> and adaptive spline
+	  backfitting with the <code>bruto()</code> function.   Multivariate adaptive regression splines can also be found in <pkg>earth</pkg>.  <pkg>rda</pkg> provides classification 
           for high dimensional data by means of shrunken centroids regularized discriminant analysis.
           Package class from the <pkg>VR</pkg> provides k-nearest 
-          neighbours by <tt>knn()</tt>, <pkg>knncat</pkg> provides k-nearest neighbours for 
-          categorical variables.   <pkg>SensoMineR</pkg> provides <tt>FDA()</tt> for factorial discriminant analysis.   A number of packages provide for 
+          neighbours by <code>knn()</code>, <pkg>knncat</pkg> provides k-nearest neighbours for 
+          categorical variables.   <pkg>SensoMineR</pkg> provides <code>FDA()</code> for factorial discriminant analysis.   A number of packages provide for 
 	  dimension reduction with the classification. <pkg>klaR</pkg> includes variable
 	  selection and robustness against multicollinearity as well as a number of
 	  visualisation routines. <pkg>superpc</pkg> provides principal components for
@@ -209,12 +209,12 @@
 
 
           <p><strong>Correspondence analysis</strong>
-          <ul><li><tt>corresp()</tt> and <tt>mca()</tt> in MASS provide simple and
-	  multiple correspondence analysis respectively.   <pkg>ca</pkg> also provides single, multiple and joint correspondence analysis.   <tt>ca()</tt> and <tt>mca()</tt>
+          <ul><li><code>corresp()</code> and <code>mca()</code> in MASS provide simple and
+	  multiple correspondence analysis respectively.   <pkg>ca</pkg> also provides single, multiple and joint correspondence analysis.   <code>ca()</code> and <code>mca()</code>
 	  in <pkg>ade4</pkg> provide correspondence and multiple correspondence analysis
-	  respectively, as well as adding homogeneous table analysis with <tt>hta()</tt>.
+	  respectively, as well as adding homogeneous table analysis with <code>hta()</code>.
 	  Further functionality is also available within <pkg>vegan</pkg> co-correspondence 
-          is available from <pkg>cocorresp</pkg>.   <pkg>FactoMineR</pkg> provides <tt>CA()</tt> and <tt>MCA()</tt> which also enable simple and multiple corresondence analysis as well as associated graphical routines.   <pkg>homals</pkg> provides homogeneity analysis.</li></ul></p>
+          is available from <pkg>cocorresp</pkg>.   <pkg>FactoMineR</pkg> provides <code>CA()</code> and <code>MCA()</code> which also enable simple and multiple corresondence analysis as well as associated graphical routines.   <pkg>homals</pkg> provides homogeneity analysis.</li></ul></p>
 
           <p><strong>Forward search</strong>
           <ul><li>The forward search for classical mulivariate methods can be implemented in association
@@ -227,17 +227,17 @@
 	  imputation by the EM algorithm for missing multivariate normal data, <pkg>cat</pkg>
 	  provides multiple imputation for categorical data <pkg>mix</pkg> for mixed
 	  categorical and continuous data. <pkg>pan</pkg> provides multiple imputation for
-	  missing panel data.  <pkg>VIM</pkg> provides methods for the visualisation as well as imputation of missing data.    <tt>aregImpute()</tt> and <tt>transcan()</tt> from
+	  missing panel data.  <pkg>VIM</pkg> provides methods for the visualisation as well as imputation of missing data.    <code>aregImpute()</code> and <code>transcan()</code> from
           <pkg>Hmisc</pkg> provide further imputation methods.   
           <pkg>EMV</pkg> provides knn methods for missing data. <pkg>monomvn</pkg> deals with estimation models where the missing data pattern is monotone. </li></ul></p>
      
           <p><strong>Latent variable approaches</strong>
-          <ul><li><tt>factanal()</tt> in stats provides factor analysis by maximum
+          <ul><li><code>factanal()</code> in stats provides factor analysis by maximum
 	  likelihood, Bayesian factor analysis
 	  is provided for Gaussian, ordinal and mixed variables in <pkg>MCMCpack</pkg>.
 	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation.    <pkg>FAiR</pkg> provides factor analysis solved using genetic algorithms.   <pkg>ifa</pkg> provides factor analysis with non-Gaussian latent variables (which are actually a mixture of Gaussian densitities).
 	  <pkg>sem</pkg> fits linear structural equation models and <pkg>ltm</pkg> provides
-	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <tt>MFA()</tt> and <tt>HMFA()</tt>for multiple and hierarchical multiple factor analysis as well as <tt>ADFM()</tt> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul></p>
+	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <code>MFA()</code> and <code>HMFA()</code>for multiple and hierarchical multiple factor analysis as well as <code>ADFM()</code> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul></p>
 
           <p><strong>Modelling non-Gaussian data</strong>
           <ul><li><pkg>bivpois</pkg> models bivariate Poisson variables.    <pkg>mprobit</pkg> provides 
@@ -254,11 +254,11 @@
 	  and <pkg>SparseM</pkg>.    <pkg>matrixcalc</pkg> adds functions for matrix differential calculus.   Some further sparse matrix functionality is also available from <pkg>spam</pkg>.</li></ul></p>
 
       <p><strong>Miscellaneous utitlies</strong>
-          <ul><li>The technique of Data Envlopment Analysis has been made available in <pkg>DEA</pkg>.   <pkg>abind</pkg> generalises <tt>cbind()</tt> and <tt>rbind()</tt> for arrays, <tt>mApply()</tt> in <pkg>Hmisc</pkg> generalises <tt>apply()</tt> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.   <pkg>SharedHT2</pkg> provides an implementation of Hotelling's T2 test for
+          <ul><li>The technique of Data Envlopment Analysis has been made available in <pkg>DEA</pkg>.   <pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.   <pkg>SharedHT2</pkg> provides an implementation of Hotelling's T2 test for
 	  microarray experiments. <pkg>panel</pkg> provides methods for modelling panel data.
 	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
-	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <tt>rm.boot()</tt> from <pkg>Hmisc</pkg> bootstraps repeated measures models.   <pkg>compositions</pkg> provides for compositional data analysis.   <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
-	  cwhmath in the <pkg>cwhmisc</pkg> bundle contains a number of interesting support functions which are of interest, such as <tt>ellipse()</tt>, <tt>normalise()</tt> and various rotation functions.   <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul></p>
+	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.   <pkg>compositions</pkg> provides for compositional data analysis.   <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
+	  cwhmath in the <pkg>cwhmisc</pkg> bundle contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.   <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul></p>
        
   </info>
 
