@@ -2,8 +2,7 @@
 
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
-  <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2008-04-02</version>
+  <maintainer>Achim Zeileis</maintainer>
   
   <info>
     Base R ships with a lot of functionality useful for computational
@@ -21,77 +20,70 @@
     The packages in this view can be roughly structured into the following topics.
     If you think that some package is missing from the list, please let me know.
     <ul>
-      <li><i>Linear regression models</i>: Linear models can be fitted (via OLS) with <code>lm()</code>
+      <li><i>Linear regression models</i>: Linear models can be fitted (via OLS) with <tt>lm()</tt>
           (from stats) and standard tests for model comparisons are available in various
-	  methods such as <code>summary()</code> and <code>anova()</code>. Analogous functions
+	  methods such as <tt>summary()</tt> and <tt>anova()</tt>. Analogous functions
 	  that also support asymptotic tests (<i>z</i> instead of <i>t</i> tests, and
 	  Chi-squared instead of <i>F</i> tests) and plug-in of other covariance
-	  matrices are <code>coeftest()</code> and <code>waldtest()</code> in <pkg>lmtest</pkg>.
-	  Tests of more general linear hypotheses are implemented in <code>linear.hypothesis()</code>
+	  matrices are <tt>coeftest()</tt> and <tt>waldtest()</tt> in <pkg>lmtest</pkg>.
+	  Tests of more general linear hypotheses are implemented in <tt>linear.hypothesis()</tt>
 	  in <pkg>car</pkg>. HC and HAC covariance matrices that can be plugged
 	  into these functions are available in <pkg>sandwich</pkg>. The packages
 	  <pkg>car</pkg> and <pkg>lmtest</pkg> also provide a large collection
 	  of further methods for diagnost checking in linear regression models.</li>
       <li><i>Microeconometrics</i>: Many standard microeconometric models belong to the
-          family of generalized linear models (GLM) and can be fitted by <code>glm()</code>
+          family of generalized linear models (GLM) and can be fitted by <tt>glm()</tt>
 	  from package stats. This includes in particular logit and probit models
 	  for modelling choice data and poisson models for count data. Negative 
-	  binomial GLMs are available via <code>glm.nb()</code> in package MASS from
+	  binomial GLMs are available via <tt>glm.nb()</tt> in package MASS from
 	  the <pkg>VR</pkg> bundle. Zero-inflated and hurdle count models are provided in 
-	  in package <pkg>pscl</pkg>, a different implementation of the former is also
-	  available in <pkg>zicounts</pkg>. Bivariate poisson
+	  in package <pkg>pscl</pkg>. Bivariate poisson
 	  regression models are implemented in <pkg>bivpois</pkg>.
 	  Basic censored regression models (e.g., tobit models)
-	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>.	  
+	  can be fitted by <tt>survreg()</tt> in <pkg>survival</pkg>.	  
 	  Further more refined tools for microecnometrics are provided in
 	  <pkg>micEcon</pkg>. The package <pkg>bayesm</pkg> implements a Bayesian
 	  approach to microeconometrics and marketing. Inference for relative
 	  distributions is contained in package <pkg>reldist</pkg>.</li>
       <li><i>Further regression models</i>: Various extensions of the linear regression
           model and other model fitting techniques are available in base R and several
-	  CRAN packages. Nonlinear least squares modelling is availble in <code>nls()</code>
+	  CRAN packages. Nonlinear least squares modelling is availble in <tt>nls()</tt>
 	  in package stats. Relevant packages include <pkg>quantreg</pkg>
 	  (quantile regression),  <pkg>crq</pkg> (censored quantile regression),
 	  <pkg>plm</pkg> (linear models for panel data),
 	  <pkg>sem</pkg> (linear structural equation models,
 	  including two-stage least squares), <pkg>systemfit</pkg> (simultaneous equation
-	  estimation), <pkg>np</pkg> (nonparametric kernel methods),	  
-	  <pkg>betareg</pkg> (beta regression), <pkg>nlme</pkg> (nonlinear
+	  estimation), <pkg>betareg</pkg> (beta regression), <pkg>nlme</pkg> (nonlinear
 	  mixed-effect models), <pkg>VR</pkg> (multinomial logit models in package nnet)	  
 	  and <pkg>MNP</pkg> (Bayesian multinomial probit models). The packages	  
 	  <pkg>Design</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
 	  handling of (generalized) linear regression models.</li>	  	 	  
-      <li><i>Basic time series infrastructure</i>: The class <code>"ts"</code> in package
+      <li><i>Basic time series infrastructure</i>: The class <tt>"ts"</tt> in package
           stats is R's standard class for regularly spaced time series which can be
-	  coerced back and forth without loss of information to <code>"zooreg"</code>
+	  coerced back and forth without loss of information to <tt>"zooreg"</tt>
 	  from package <pkg>zoo</pkg>. <pkg>zoo</pkg> provides infrastructure for
 	  both regularly and irregularly spaced time series (the latter via the class
-	  <code>"zoo"</code>) where the time information can be of arbitrary class. Several
-	  other implementations of irregular time series building on the <code>"POSIXt"</code>
+	  <tt>"zoo"</tt>) where the time information can be of arbitrary class. Several
+	  other implementations of irregular time series building on the <tt>"POSIXt"</tt>
 	  time-date classes are available in <pkg>its</pkg>, <pkg>tseries</pkg> and 
 	  <pkg>fCalendar</pkg> which are all aimed particularly at finance applications
 	  (see the <view>Finance</view> view).</li>
       <li><i>Time series modelling</i>: Classical time series modelling tools are
-          contained in the stats package and include <code>arima()</code> for ARIMA modelling
-	  and Box-Jenkins-type analysis. Furthermore, stats provides <code>StructTS()</code>
-	  for fitting structural time series and <code>decompose()</code> and <code>HoltWinters()</code>
+          contained in the stats package and include <tt>arima()</tt> for ARIMA modelling
+	  and Box-Jenkins-type analysis. Furthermore stats provides <tt>StructTS()</tt>
+	  for fitting structural time series and <tt>decompose()</tt> and <tt>HoltWinters()</tt>
 	  for time series filtering and decomposition. Some extensions to these
 	  methods, in particular for forecasting and model selection, are provided in
-	  the <pkg>forecasting</pkg> bundle. Miscellaneous time series filters are
-	  available in <pkg>mFilter</pkg>. For estimating VAR models, several
-	  methods are available: simple models can be fitted by <code>ar()</code> in stats, more
-	  elaborate models are provided in package <pkg>vars</pkg>, <code>estVARXls()</code> in
+	  the <pkg>forecasting</pkg> bundle. For estimating VAR models, several
+	  methods are available: simple models can be fitted by <tt>ar()</tt> in stats, more
+	  elaborate models are provided package <pkg>vars</pkg>, <tt>estVARXls()</tt> in
 	  <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. A
 	  convenient interface for fitting dynamic regression models via OLS is available
 	  in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.	  
-	  More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian
-	  linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
-	  Kalman filtering/smoothing and Bayesian methods). Unit root
+	  More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Unit root
 	  and cointegration techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and
-	  <pkg>tseries</pkg>. Time series factor analysis is available in <pkg>tsfa</pkg>.
-	  Package <pkg>sde</pkg> provides simulation and inference for stochastic
-	  differential equations.</li>
+	  <pkg>tseries</pkg>. Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
       <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
           ships with many powerful tools for doing matrix manipulations, which are 
 	  complemented by the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
@@ -99,7 +91,7 @@
           there are some other general bootstrapping techniques available in
 	  <pkg>bootstrap</pkg> or <pkg>simpleboot</pkg> as well some bootstrap techniques
 	  designed for time-series data, such as the maximum entropy bootstrap in
-	  <pkg>meboot</pkg> or the <code>tsbootstrap()</code> from <pkg>tseries</pkg>.</li>
+	  <pkg>meboot</pkg> or the <tt>tsbootstrap()</tt> from <pkg>tseries</pkg>.</li>
       <li><i>Inequality</i>: For measuring inequality, concentration and poverty the
           package <pkg>ineq</pkg> provides some basic tools such as Lorenz curves,
 	  Pen's parade, the Gini coefficient and many more.</li>
@@ -111,11 +103,8 @@
 	  contains a complete collection of data sets from various standard econometric
 	  textbooks as well as several data sets from the Journal of
 	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
-	  data archives. <pkg>FinTS</pkg> is the R companion to Tsay's 'Analysis of
-	  Financial Time Series' (2nd ed., 2005, Wiley) containing data sets, functions
-          and script files required to work some of the examples.	  
-	  Package <pkg>CDNmoney</pkg> provides Canadian monetary aggregates
-	  and <pkg>pwt</pkg> provides (several releases of) the Penn world table.</li>
+	  data archives. Package <pkg>CDNmoney</pkg> provides Canadian monetary aggregates
+	  and <pkg>pwt</pkg> provides the Penn world table.</li>
     </ul>    
   </info>
 
@@ -129,13 +118,11 @@
     <pkg>crq</pkg>
     <pkg>CDNmoney</pkg>
     <pkg>Design</pkg>
-    <pkg>dlm</pkg>
     <pkg>dse</pkg>
     <pkg>dyn</pkg>
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
     <pkg>fCalendar</pkg>
-    <pkg>FinTS</pkg>
     <pkg>forecasting</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
@@ -143,19 +130,16 @@
     <pkg priority="core">lmtest</pkg>
     <pkg>Matrix</pkg>
     <pkg>meboot</pkg>
-    <pkg>mFilter</pkg>
     <pkg>micEcon</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>
     <pkg>nlme</pkg>
-    <pkg>np</pkg>
     <pkg>plm</pkg>
     <pkg>pscl</pkg>
     <pkg>pwt</pkg>
     <pkg>quantreg</pkg>
     <pkg>reldist</pkg>
     <pkg priority="core">sandwich</pkg>
-    <pkg>sde</pkg>
     <pkg>segmented</pkg>
     <pkg>sem</pkg>
     <pkg>simpleboot</pkg>
@@ -168,7 +152,6 @@
     <pkg>uroot</pkg>
     <pkg>vars</pkg>
     <pkg>VR</pkg>
-    <pkg>zicounts</pkg>
     <pkg priority="core">zoo</pkg>    
   </packagelist>
 
