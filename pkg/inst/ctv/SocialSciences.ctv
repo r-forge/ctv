@@ -1,9 +1,8 @@
-<!-- Version 1.0, last modified: 23 January 2006 by J. Fox -->
-
 <CRANTaskView> 
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
-  <maintainer>John Fox</maintainer> 
+  <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
+  <version>2006-01-23</version>
   
   <info> 
   
@@ -26,19 +25,22 @@
     <p><strong>Linear and Generalized Linear Models:</strong></p>
     
     <p>
-      Univariate and multivariate linear models are fit by the <tt>lm</tt> function, generalized linear models by the <tt>glm</tt> function, both in the R-base stats package. Beyond <tt>summary</tt> and <tt>plot</tt> methods for <tt>lm</tt> and <tt>glm</tt> objects, there is a wide array of functions that support these objects: 
+      Univariate and multivariate linear models are fit by the <code>lm</code> function, generalized linear models by the <code>glm</code> function, both in the R-base stats package. Beyond <code>summary</code> and <code>plot</code> methods for <code>lm</code> and <code>glm</code> objects, there is a wide array of functions that support these objects: 
       
       <ul>
           <li>
-          The generic <tt>anova</tt> function in the stats package constructs sequential analysis of variance and analysis of deviance tables, and can compute <i>F</i> and likelihood-ratio tests for nested models. (It is typical for other classes of statistical models in R to have <tt>anova</tt> methods as well.) The generic <tt>Anova</tt> function in the <pkg>car</pkg> package (associated with Fox, <i>An R and S-PLUS Companion to Applied Regression,</i> Sage, 2002) constructs so-called "Type-II" and "Type-III" tests for linear and generalized linear models.
+          The generic <code>anova</code> function in the stats package constructs sequential analysis of variance and analysis of deviance tables, and can compute <i>F</i> and likelihood-ratio tests for nested models. (It is typical for other classes of statistical models in R to have <code>anova</code> methods as well.) The generic <code>Anova</code> function in the <pkg>car</pkg> package (associated with Fox, <i>An R and S-PLUS Companion to Applied Regression,</i> Sage, 2002) constructs so-called "Type-II" and "Type-III" tests for linear and generalized linear models.
           </li>
       
           <li>
-          <i>F</i> and Wald tests for a variety of hypotheses are available from the <tt>coeftest</tt> and <tt>waldtest</tt> functions in the <pkg>lmtest</pkg> package, and the <tt>linear.hypothesis</tt> function in the <pkg>car</pkg> package. All of these functions permit the use of heteroscedasticity and heteroscedasticity/autocorrelation-consistent covariance matrices, as computed, e.g., by functions in the <pkg>sandwich</pkg> and <pkg>car</pkg> packages. Also see the <tt>glh.test</tt> function in the <pkg>gmodels</pkg> package. Nonlinear functions of parameters can be tested via the <tt>delta.method</tt> function in the <pkg>alr3</pkg> package (associated with Weisberg, <i>Applied Linear Regression, 3rd Ed.,</i> Wiley, 2005). The <pkg>multcomp</pkg> package includes functions for multiple comparisons. The <tt>vuong</tt> function in the <pkg>pscl</pkg> package tests non-nested hypotheses for generalized linear and some other models. Also see the <pkg>Design</pkg> package for tests on linear and generalized linear models.
+          <i>F</i> and Wald tests for a variety of hypotheses are available from the <code>coeftest</code> and <code>waldtest</code> functions in the <pkg>lmtest</pkg> package, and the <code>linear.hypothesis</code> function in the <pkg>car</pkg> package. All of these functions permit the use of heteroscedasticity and heteroscedasticity/autocorrelation-consistent covariance matrices, as computed, e.g., by functions in the <pkg>sandwich</pkg> and <pkg>car</pkg> packages. Also see the <code>glh.test</code> function in the <pkg>gmodels</pkg> package. Nonlinear functions of parameters can be tested via the <code>delta.method</code> function in the <pkg>alr3</pkg> package (associated with Weisberg, <i>Applied Linear Regression, 3rd Ed.,</i> Wiley, 2005). The <pkg>multcomp</pkg> package includes functions for multiple comparisons. The <code>vuong</code> function in the <pkg>pscl</pkg> package tests non-nested hypotheses for generalized linear and some other models. Also see the <pkg>Design</pkg> package for tests on linear and generalized linear models.
           </li>
          
           <li>
-          A basic R installation has excellent facilities for linear and generalized linear model "diagnostics," including, for example, hat-values and deletion statistics such as studentized residuals and Cook's distances (<tt>hatvalues,</tt> <tt>rstudent,</tt> and <tt>cooks.distance,</tt> all in the stats package). These are augmented by other packages: several functions in the <pkg>car</pkg> package, which emphasizes graphical methods, e.g., <tt>cr.plots</tt> for component-plus-residual plots and <tt>av.plots</tt> for added-variable plots, in addition to numerical diagnostics, such <tt>vif</tt> for (generalized) variance-inflation factors; the <pkg>dr</pkg> package for dimension reduction in regression, including SIR, SAVE, and pHd; and the <pkg>lmtest</pkg> package, which implements a wide variety of tests (e.g., for heteroscedasticity, nonlinearity, and autocorrelation). More diagnostic methods, e.g., for inverse-response plots, may be found in the <pkg>alr3</pkg> package. The <pkg>forward</pkg> package implements diagnostics based on a "forward search" (Atkinson and Riani, <i>Robust Diagnostic Regression Analysis,</i> Springer, 2000). Other collinearity diagnostics are in the <pkg>perturb</pkg> package. Diagnostics may also be found in the <pkg>Design</pkg> package.
+          A basic R installation has excellent facilities for linear and generalized linear model
+	  "diagnostics," including, for example, hat-values and deletion statistics such as studentized
+	  residuals and Cook's distances (<code>hatvalues</code>, <code>rstudent</code>, and
+	  <code>cooks.distance</code>, all in the stats package). These are augmented by other packages: several functions in the <pkg>car</pkg> package, which emphasizes graphical methods, e.g., <code>cr.plots</code> for component-plus-residual plots and <code>av.plots</code> for added-variable plots, in addition to numerical diagnostics, such <code>vif</code> for (generalized) variance-inflation factors; the <pkg>dr</pkg> package for dimension reduction in regression, including SIR, SAVE, and pHd; and the <pkg>lmtest</pkg> package, which implements a wide variety of tests (e.g., for heteroscedasticity, nonlinearity, and autocorrelation). More diagnostic methods, e.g., for inverse-response plots, may be found in the <pkg>alr3</pkg> package. The <pkg>forward</pkg> package implements diagnostics based on a "forward search" (Atkinson and Riani, <i>Robust Diagnostic Regression Analysis,</i> Springer, 2000). Other collinearity diagnostics are in the <pkg>perturb</pkg> package. Diagnostics may also be found in the <pkg>Design</pkg> package.
           </li>
           
           <li>
@@ -50,26 +52,27 @@
     <p><strong>Analysis of Categorical and Count Data:</strong></p>
     
     <p>
-    Binomial logit and probit models, as well as Poisson-regression and loglinear models for contingency tables (including models for "over-dispersed" binomial and Poisson data), can be fit with the <tt>glm</tt> function in the stats package. For over-dispersed data, see also the <pkg>aod</pkg> package and the <tt>glm.nb</tt> function in the recommended MASS package (in the <pkg>VR</pkg> package-bundle, associated with Venables and Ripley, <i>Modern Applied Statistics in S, Fourth Ed.</i>, Springer, 2002), which fits negative-binomial GLMs. The multinomial logit model is fit by the <tt>multinom</tt> function in the recommended nnet package (also part of the <pkg>VR</pkg> bundle), and ordered logit and probit models by the <tt>polr</tt> function in the MASS package. Also see the <pkg>MNP</pkg> package for the multinomial probit model, and <pkg>multinomRob</pkg> for the analysis of overdispersed multinomial data. 
+    Binomial logit and probit models, as well as Poisson-regression and loglinear models for contingency tables (including models for "over-dispersed" binomial and Poisson data), can be fit with the <code>glm</code> function in the stats package. For over-dispersed data, see also the <pkg>aod</pkg> package and the <code>glm.nb</code> function in the recommended MASS package (in the <pkg>VR</pkg> package-bundle, associated with Venables and Ripley, <i>Modern Applied Statistics in S, Fourth Ed.</i>, Springer, 2002), which fits negative-binomial GLMs. The multinomial logit model is fit by the <code>multinom</code> function in the recommended nnet package (also part of the <pkg>VR</pkg> bundle), and ordered logit and probit models by the <code>polr</code> function in the MASS package. Also see the <pkg>MNP</pkg> package for the multinomial probit model, and <pkg>multinomRob</pkg> for the analysis of overdispersed multinomial data. 
     </p>
     
     <p>
     There are other noteworthy facilities for analyzing categorical and count data:
       <ul>
           <li>
-          The <tt>table</tt> function in the R-base base package and the <tt>xtabs</tt> and <tt>ftable</tt> functions in the stats package construct contingency tables. 
+          The <code>table</code> function in the R-base base package and the <code>xtabs</code> and <code>ftable</code> functions in the stats package construct contingency tables. 
           </li>
         
           <li> 
-          The <tt>chisq.test</tt> and <tt>fisher.test</tt> functions in the stats package may be used to test for independence in two-way contingency tables. 
+          The <code>chisq.test</code> and <code>fisher.test</code> functions in the stats package may be used to test for independence in two-way contingency tables. 
           </li>
         
           <li>
-          The <tt>loglm</tt> and <tt>loglin</tt> functions in the MASS package fit hierachical loglinear models to contingency tables, the former as a front end to <tt>glm,</tt> the latter by iterative proportional fitting.
+          The <code>loglm</code> and <code>loglin</code> functions in the MASS package fit hierachical
+	  loglinear models to contingency tables, the former as a front end to <code>glm</code>, the latter by iterative proportional fitting.
           </li>
           
           <li>
-          Also see the <pkg>brlr</pkg> package for biased-reduced logistic regression (useful, e.g., in cases of complete separation); the <pkg>catspec</pkg> package for multi-way percentage tables and models for square tables; the <pkg>exactLoglinTest</pkg> package for exact tests of loglinear models; the <pkg>gllm</pkg> package for the analysis of incomplete tables; the <tt>clogit</tt> function in the <pkg>survival</pkg> package for conditional logistic regression; and the <pkg>vcd</pkg> package for graphical displays of categorical data.
+          Also see the <pkg>brlr</pkg> package for biased-reduced logistic regression (useful, e.g., in cases of complete separation); the <pkg>catspec</pkg> package for multi-way percentage tables and models for square tables; the <pkg>exactLoglinTest</pkg> package for exact tests of loglinear models; the <pkg>gllm</pkg> package for the analysis of incomplete tables; the <code>clogit</code> function in the <pkg>survival</pkg> package for conditional logistic regression; and the <pkg>vcd</pkg> package for graphical displays of categorical data.
           </li>
           
           <li>
@@ -85,15 +88,18 @@
     
       <ul>
           <li>
-          <i>Nonlinear regression:</i> The <tt>nls</tt> function in the stats package fits nonlinear models by least-squares.    
+          <i>Nonlinear regression:</i> The <code>nls</code> function in the stats package fits nonlinear models by least-squares.    
           </li>
           
           <li>
-          <a NAME="GLS"><i>Generalized least-squares regression:</i></a> The <tt>gls</tt> function in the recommended <pkg>nlme</pkg> package fits models by generalized least squares. (The <tt>lm</tt> function can also fit weighted least-squares regressions; also see the <pkg>dyn</pkg> and <pkg>dynlm</pkg> packages, which allow <tt>gls,</tt> <tt>lm,</tt> and other regression functions to handle time-series data structures.)
+          <a NAME="GLS"><i>Generalized least-squares regression:</i></a> The <code>gls</code> function in the
+	  recommended <pkg>nlme</pkg> package fits models by generalized least squares. (The <code>lm</code>
+	  function can also fit weighted least-squares regressions; also see the <pkg>dyn</pkg> and
+	  <pkg>dynlm</pkg> packages, which allow <code>gls</code>, <code>lm</code>, and other regression functions to handle time-series data structures.)
           </li>
           
           <li>
-          <i>Mixed-effects models:</i> The recommended <pkg>nlme</pkg> package, associated with Pinheiro and Bates, <i>Mixed-Effects Models in S and S-PLUS</i> (Springer, 2000), fits linear and nonlinear mixed-effects models, commonly used in the social sciences for hierarchical and longitudinal data. Generalized linear mixed-effects models may be fit by the <tt>glmmPQL</tt> function in the MASS package, and by the <tt>lmer</tt> function in the <pkg>Matrix</pkg> package (related to the <pkg>lme4</pkg> package, which largely supersedes <pkg>nlme</pkg> for <i>linear</i> mixed models). Also see the <pkg>lmeSplines</pkg> and <pkg>lmm</pkg> packages.
+          <i>Mixed-effects models:</i> The recommended <pkg>nlme</pkg> package, associated with Pinheiro and Bates, <i>Mixed-Effects Models in S and S-PLUS</i> (Springer, 2000), fits linear and nonlinear mixed-effects models, commonly used in the social sciences for hierarchical and longitudinal data. Generalized linear mixed-effects models may be fit by the <code>glmmPQL</code> function in the MASS package, and by the <code>lmer</code> function in the <pkg>Matrix</pkg> package (related to the <pkg>lme4</pkg> package, which largely supersedes <pkg>nlme</pkg> for <i>linear</i> mixed models). Also see the <pkg>lmeSplines</pkg> and <pkg>lmm</pkg> packages.
           </li>
           
           <li>
@@ -101,19 +107,20 @@
           </li> 
           
           <li>
-          <i>Nonparametric regression analysis:</i> This is one of the conspicuous strengths of R. A standard R installation includes several functions for smoothing scatterplots, including <tt>loess.smooth</tt> and <tt>smooth.spline,</tt> both in the stats package. The <tt>loess</tt> function in the stats package fits simple and multiple-regression models by local polynomial regression. Generalized additive models are covered by several packages, including the recommended <pkg>mgcv</pkg> package, and the <pkg>gam</pkg> package, the latter associated with Hastie and Tibshirani, <i>Generalized Additive Models</i> (Chapman and Hall, 1990). Some other noteworthy contributed packages in this area are <pkg>gss</pkg>, which fits spline regressions, <pkg>locfit</pkg>, for local-polynomial regression (and also density estimation) (Loader, <i>Local Regression and Likelihood,</i> Springer, 1999), <pkg>sm</pkg>, for a variety of smoothing techniques, including for regression (Bowman and Azzalini, <i>Applied Smoothing Techniques for Data Analysis,</i> Oxford, 1997), and <pkg>acepack</pkg> for ACE (alternating conditional expecations) and AVAS (additivity and variance stabilization) nonparametric transformation of the response and explanatory variables in regression.
+          <i>Nonparametric regression analysis:</i> This is one of the conspicuous strengths of R. A standard
+	  R installation includes several functions for smoothing scatterplots, including
+	  <code>loess.smooth</code> and <code>smooth.spline</code>, both in the stats package. The <code>loess</code> function in the stats package fits simple and multiple-regression models by local polynomial regression. Generalized additive models are covered by several packages, including the recommended <pkg>mgcv</pkg> package, and the <pkg>gam</pkg> package, the latter associated with Hastie and Tibshirani, <i>Generalized Additive Models</i> (Chapman and Hall, 1990). Some other noteworthy contributed packages in this area are <pkg>gss</pkg>, which fits spline regressions, <pkg>locfit</pkg>, for local-polynomial regression (and also density estimation) (Loader, <i>Local Regression and Likelihood,</i> Springer, 1999), <pkg>sm</pkg>, for a variety of smoothing techniques, including for regression (Bowman and Azzalini, <i>Applied Smoothing Techniques for Data Analysis,</i> Oxford, 1997), and <pkg>acepack</pkg> for ACE (alternating conditional expecations) and AVAS (additivity and variance stabilization) nonparametric transformation of the response and explanatory variables in regression.
           </li>
           
           <li>
-          <i>Robust regression:</i> The <tt>rlm</tt> function fits linear models by M-estimation and <tt>lqs</tt> computes bounded-influence estimators; both are in the MASS package. (The <tt>cov.rob</tt> function in the same package computes a robust covariance-matrix estimator.) Also see the <pkg>quantreg</pkg> package, which computes linear, nonlinear, and nonparametric quantile regressions; the <pkg>roblm</pkg> package, for MM estimation; and the <pkg>riv</pkg> package, for robust instrumental-variables estimation.
-          </li> 
+          <i>Robust regression:</i> The <code>rlm</code> function fits linear models by M-estimation and <code>lqs</code> computes bounded-influence estimators; both are in the MASS package. (The <code>cov.rob</code> function in the same package computes a robust covariance-matrix estimator.) Also see the <pkg>quantreg</pkg> package, which computes linear, nonlinear, and nonparametric quantile regressions; <code>lmrob</code> in <pkg>robustbase</pkg> and <code>lmRob</code> in <pkg>robust</pkg> for MM estimation; and the <pkg>riv</pkg> package, for robust instrumental-variables estimation.</li> 
           
           <li>
           <i>Structural-equation models:</i> The <pkg>sem</pkg> package fits general (i.e., latent-variable) SEMs by FIML, and structural equations in observed-variable models by 2SLS. Categorical variables in SEMs can be accommodated via the <pkg>polycor</pkg> package. The <pkg>systemfit</pkg> package implements a wider variety of estimators for observed-variables models, including nonlinear simultaneous-equations models. See also the <pkg>pls</pkg> package, for partial least-squares estimation, and the <view>gR</view> task view for graphical models.
           </li>
           
           <li>
-          <i>Selection bias and censored regression:</i> Censored regression models, such as the tobit model, can be fit by the <tt>survreg</tt> function in the recommended <pkg>survival</pkg> package. The <tt>rq</tt> function in the <pkg>quantreg</pkg> package can estimate censored quantile-regression models. The <tt>hurdle</tt> and <tt>zeroinfl</tt> functions in the <pkg>pscl</pkg> package fit hurdle and zero-inflated Poisson and negative-binomial models to count data. The <tt>heckit</tt> function in the <pkg>micEcon</pkg> package implements two-step Heckman estimators to correct for sample-selection bias. Also see under <a href="#Survival">Survival Analysis</a> below.
+          <i>Selection bias and censored regression:</i> Censored regression models, such as the tobit model, can be fit by the <code>survreg</code> function in the recommended <pkg>survival</pkg> package. The <code>rq</code> function in the <pkg>quantreg</pkg> package can estimate censored quantile-regression models. The <code>hurdle</code> and <code>zeroinfl</code> functions in the <pkg>pscl</pkg> package fit hurdle and zero-inflated Poisson and negative-binomial models to count data. The <code>heckit</code> function in the <pkg>micEcon</pkg> package implements two-step Heckman estimators to correct for sample-selection bias. Also see under <a href="#Survival">Survival Analysis</a> below.
           </li>
       </ul>
     </p>
@@ -129,7 +136,7 @@
           </li>
           
           <li>
-          <i>"Dimensional" Analysis:</i> Exploratory maximum-likelihood factor analysis is implemented in the <tt>factanal</tt> function in the stats package, which also provides for varimax and promax factor rotation.  (Confirmatory factor-analysis models can be fit with the <pkg>sem</pkg> package.) Additional rotations are available through functions in the <pkg>GPArotation</pkg> package. The <tt>prcomp</tt> and <tt>princomp</tt> functions in the stats package perform principal-components analysis. The <tt>cmdscale</tt> function in the stats package performs <i>metric</i> multidimensional scaling, while the <tt>isoMDS</tt> and <tt>sammon</tt> functions in the MASS package perform <i>non-metric</i> multidimensional scaling. For methods of cluster analysis and mixtures see the <view>Cluster</view> task view. The <pkg>BradleyTerry</pkg> package fits the Bradley-Terry model for paired comparisons. The <pkg>ltm</pkg> package fits Rasch and other item-response models to binary items. The <pkg>concord</pkg> and <pkg>irr</pkg> packages contain functions for assessing inter-rater reliability; also see the <pkg>psy</pkg> package. 
+          <i>"Dimensional" Analysis:</i> Exploratory maximum-likelihood factor analysis is implemented in the <code>factanal</code> function in the stats package, which also provides for varimax and promax factor rotation.  (Confirmatory factor-analysis models can be fit with the <pkg>sem</pkg> package.) Additional rotations are available through functions in the <pkg>GPArotation</pkg> package. The <code>prcomp</code> and <code>princomp</code> functions in the stats package perform principal-components analysis. The <code>cmdscale</code> function in the stats package performs <i>metric</i> multidimensional scaling, while the <code>isoMDS</code> and <code>sammon</code> functions in the MASS package perform <i>non-metric</i> multidimensional scaling. For methods of cluster analysis and mixtures see the <view>Cluster</view> task view. The <pkg>BradleyTerry</pkg> package fits the Bradley-Terry model for paired comparisons. The <pkg>ltm</pkg> package fits Rasch and other item-response models to binary items. The <pkg>concord</pkg> and <pkg>irr</pkg> packages contain functions for assessing inter-rater reliability; also see the <pkg>psy</pkg> package. 
           </li>
           
           <li>
@@ -145,7 +152,7 @@
           </li>
           
           <li>
-          <i>Model Selection:</i> The <tt>step</tt> function in the stats package and the more broadly applicable <tt>stepAIC</tt> function in the MASS package perform forward, backward, and forward-backward stepwise selection for a variety of statistical models. The <tt>regsubsets</tt> function in the <pkg>leaps</pkg> package performs all-subsets regression. The <pkg>BMA</pkg> package performs Bayesian model averaging. Beyond these, see the <view>MachineLearning</view> task view.
+          <i>Model Selection:</i> The <code>step</code> function in the stats package and the more broadly applicable <code>stepAIC</code> function in the MASS package perform forward, backward, and forward-backward stepwise selection for a variety of statistical models. The <code>regsubsets</code> function in the <pkg>leaps</pkg> package performs all-subsets regression. The <pkg>BMA</pkg> package performs Bayesian model averaging. Beyond these, see the <view>MachineLearning</view> task view.
           </li>
           
           <li>
@@ -260,7 +267,8 @@
     <pkg>qvcalc</pkg>
     <pkg>riv</pkg>
     <pkg>rmeta</pkg>
-    <pkg>roblm</pkg>
+    <pkg>robust</pkg>
+    <pkg>robustbase</pkg>
     <pkg>sampling</pkg>
     <pkg priority="core">sandwich</pkg>
     <pkg priority="core">sem</pkg>
