@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana and Neil Shephard</maintainer>
-  <version>2007-12-11</version>
+  <version>2008-04-26</version>
 
   <info>
     <p>
@@ -16,14 +16,7 @@
       </p>
       <p>
         A number of R packages are already available and many more are most likely to be developed in the near future.
-    Please send your comments and suggestions to either of the task view maintainers 
-        <a href="http://stats.ma.ic.ac.uk/g/gmontana/public_html/">
-          Giovanni Montana
-        </a>
-        or
-        <a href="maito:nshephard_at_gmail.com">
-          Neil Shephard
-        </a>.
+    Please send your comments and suggestions to either of the task view maintainers. 
       </p>
       <ul>
         <li>
@@ -55,12 +48,12 @@
 <pkg>mapLD</pkg>
           measures linkage disequilibrium and constructs haplotype blocks.
 <pkg>hwde</pkg>
-          fits models for genotypic disequilibria.
+          fits models for genotypic disequilibria.  Whilst
+<pkg>HardyWeinberg</pkg>
+          provides graphical representation of disequilibria via ternary plots (also known as de Finetti diagrams).
 <pkg>Biodem</pkg>
           package provides functions for Biodemographical analysis, e.g.
-          <tt>
-            Fst()
-          </tt>
+          <code>Fst()</code>
           calculates the Fst from the conditional
        kinship matrix. Package
 <pkg>kinship</pkg>
@@ -96,19 +89,16 @@
           is a package for genetic data analysis of both population and family data;
 it contains functions for sample size calculations, probability of familial disease aggregation, kinship calculation,
 and some tests for linkage and association analyses. Among the other functions,
-          <tt>
-            genecounting()
-          </tt>
+          <code>genecounting()</code>
           estimates haplotype frequencies from genotype data, and
-          <tt>
-            gcontrol()
-          </tt>
+          <code>gcontrol()</code>
           implements a Bayesian genomic control statistics for association studies. For family data,
 <pkg>tdthap</pkg>
-          offers an implementation of the
-       Transmission/Disequilibrium Test (TDT) for extended marker haplotypes, whereas
+          offers an implementation of the Transmission/Disequilibrium Test (TDT) for extended marker haplotypes, whereas
 <pkg>powerpkg</pkg>
-          performs power analyses for the affected sib pair and the TDT design.
+          performs power analyses for the affected sib pair and the TDT design.  The
+<pkg>catmap</pkg>
+          can be used for the meta-analysis of case-contorl and TDT data.
         </li>
         <li>
           <i>
@@ -163,9 +153,7 @@ population based studies.  The software has been implemented to take advantage o
 <pkg>qtl</pkg>
           provides several functions and a data structure for QTL mapping, including
        a function
-          <tt>
-            scanone()
-          </tt>
+          <code>scanone()</code>
           for genome-wide scans. The package
 <pkg>qtlDesign</pkg>
           has functions for designing QTL experiments, including power computations.
@@ -179,9 +167,7 @@ population based studies.  The software has been implemented to take advantage o
       The package
 <pkg>qvalue</pkg>
           implements False Discovery Rate; the main function
-          <tt>
-            qvalue()
-          </tt>
+          <code>qvalue()</code>
           estimates the q-values from a list of p-values.
       Package
 <pkg>multtest</pkg>
@@ -209,12 +195,14 @@ population based studies.  The software has been implemented to take advantage o
     <pkg>apTreeshape</pkg>
     <pkg>Biodem</pkg>
     <pkg>bqtl</pkg>
+    <pkg>catmap</pkg>
     <pkg priority="core">gap</pkg>
     <pkg>GenABEL</pkg>
     <pkg>Geneland</pkg>
     <pkg priority="core">genetics</pkg>
     <pkg>hapassoc</pkg>
     <pkg>haplo.ccs</pkg>
+    <pkg>HardyWeinberg</pkg>
     <pkg priority="core">haplo.stats</pkg>
     <pkg>hapsim</pkg>
     <pkg>hierfstat</pkg>
@@ -279,24 +267,20 @@ population based studies.  The software has been implemented to take advantage o
       Vector Generalized Linear and Additive Models (VGLMs/VGAMs)
     </a>
     <a href="http://people.fas.harvard.edu/~tjhoffm/pbatR.html">
-      P2BAT
+      P2BAT - Tools for the statistical analysis of family-based association studies
     </a>
-      : Tools for the statistical analysis of family-based association studies.
     <a href="http://www.qimr.edu.au/davidD/#R">
       R Software by David Duffy
     </a>
     <a href="http://pbil.univ-lyon1.fr/software/mareymap/">
-      MareyMap
+      MareyMap - GUI for comparing physical and genetic maps for estimation of recombination rates
     </a>
-      : GUI for comparing physical and genetic maps for estimation of recombination rates.
     <a href="http://csg.sph.umich.edu/boehnke/p_act.php">
-      p_ACT 
+      p_ACT - R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests
     </a>
-      : R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests.
     <a href="http://www.bioconductor.org/">
-      BioConductor
+      BioConductor - an open source and open development software project for the analysis and comprehension of genomic data based on R
     </a>
-      an open source and open development software project for the analysis and comprehension of genomic data based on R.
   </links>
 
 </CRANTaskView>
