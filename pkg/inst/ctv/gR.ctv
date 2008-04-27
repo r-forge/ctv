@@ -1,8 +1,8 @@
-	<CRANTaskView>
+<CRANTaskView>
 
   <name>gR</name>
   <topic>gRaphical models in R</topic>
-  <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
+  <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
   <version>2005-04-25</version>
   
   <info>
@@ -11,7 +11,7 @@
     identify conditional independence properties. This task view is a
     collection of packages intended to supply R code to deal with
     graphical models. If you think that some package is missing from the
-    list, please <a href="mailto:aas.claus.dethlefsen@nja.dk">notify me</a>.
+    list, please notify me.
     
     The packages can be roughly structured into the following topics:
     <ul>
