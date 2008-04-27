@@ -1,8 +1,8 @@
-<CRANTaskView>
+	<CRANTaskView>
 
   <name>gR</name>
   <topic>gRaphical models in R</topic>
-  <maintainer email="aas.claus.dethlefsen@nja.dk">Claus Dethlefsen</maintainer>
+  <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
   <version>2005-04-25</version>
   
   <info>
