@@ -1,256 +1,232 @@
 <CRANTaskView>
 
   <name>gR</name>
-  <topic>gRaphical models in R</topic>
-  <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
+  <topic>gRaphical Models in R</topic>
+  <maintainer email="sorenh@agrsci.dk">S&amp;oslash;ren H&amp;oslash;jsgaard</maintainer>
   <version>2008-04-28</version>
   
   <info>
-  <a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
+  <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
   defines a graphical model as <i>a graph that represents independencies
   among random variables by a graph in which each node is a random
   variable, and the missing edges between the nodes represent
-  conditional independencies.</i>
+  conditional independencies</i>.
 
   This task view is a collection of packages intended to supply R code
-     to deal with graphical models.
+  to deal with graphical models.</p>
 
-    <ul>   </ul>
-
-     <i>Note: I	have recently become maintainer of the gR task view
-     and I am currently updating the view. Please do contact me if a
-     package is missing, a description is inadequate etc. </i>
+  <p><i>Note: I	have recently become maintainer of the gR task view
+  and I am currently updating the view. Please do contact me if a
+  package is missing, a description is inadequate etc. </i></p>
     
-    <ul>   </ul>
-
-    The packages can be roughly structured into the following topics
-    (although several of them have functionalities which go across these categories):
+  <p>The packages can be roughly structured into the following topics
+  (although several of them have functionalities which go across these categories):</p>
 
 
+  <p><strong>Representation, manipulation and display of graphs</strong>
+  <ul>
+    <li>
+    <pkg>graph</pkg> A package to handle graph data structures.
+    </li>
+
+    <li>
+    <pkg>Rgraphviz</pkg> Provides plotting capabilities for R graph
+    objects (from the <pkg>graph</pkg> package).
+    </li>
+
+    <li>
+    <pkg>RBGL</pkg> Interface to boost C++ graph library (based on graph
+    objects from the <pkg>graph</pkg> package).
+    </li>
+
+    <li>
+    <pkg>gRain</pkg> An alternative interface to graphs. Uses the
+    <pkg>graph</pkg> and <pkg>RBGL</pkg> and implements additional graph
+    operations. 
+    </li>
+
+    <li>
+    <pkg>dynamicGraph</pkg> Provides an advanced
+    graphical user interface for display and interaction with
+    graphs (based on Tcl/Tk).
+    </li>
+
+    <li>
+    <pkg>mathgraph</pkg> Implements matrix representations of graphs and
+    provide a plot function.
+    </li>
+
+    <li>
+    <pkg>diagram</pkg> Functions for visualising simple graphs (networks), plotting flow diagrams
+    </li>
+    
+    <li>
+    <pkg>giRaph</pkg> Supply classes and methods to represent and manipulate graphs
+    </li>
+    
+    <li>
+    <pkg>igraph</pkg> Routines for simple graphs, network analysis.
+    </li>
+  </ul>
+  </p>
 
 
+  <p><strong>Classical models - General purpose packages</strong>
+  <ul>
+    <li>
+    <pkg>gRbase</pkg> Sets up a
+    meta data representation which is used by several other
+    packages (among these are <pkg>mimR</pkg> and
+    <pkg>gRain</pkg>). gRbase suggests a way to implement models and fitting
+    engines - illustrated by hierarchical log-linear models.
+    </li>
 
-<p><strong>Representation, manipulation and display of graphs</strong></p>
-<ul>
+    <li>
+      <pkg>mimR</pkg> General package for model selection in contingency
+      tabels, graphical Gaussian models and mixed interaction
+      models. The package provides an interface to the MIM
+      program and only runs on Windows.  
+    </li>
 
-<li>
-<pkg>graph</pkg> A package to handle graph data structures.
-</li>
+    <li>      
+    <pkg>CoCo</pkg>An advanced suite of functions for
+    contingency tabels, graphical Gaussian models and mixed
+    interaction models.  
+    </li>
 
-<li>
-<pkg>Rgraphviz</pkg> Provides plotting capabilities for R graph
-objects (from the <pkg>graph</pkg> package).
-</li>
+    <li>
+    <pkg>ggm</pkg> Fitting graphical Gaussian models.
+    </li>
+  </ul>
+  </p>
 
-<li>
-<pkg>RBGL</pkg> Interface to boost C++ graph library (based on graph
-objects from the <pkg>graph</pkg> package).
-</li>
+  <p><strong>Miscellaneous: Model search, specialized types of models etc.</strong>
+  <ul>
+    <li>
+    <pkg>SIN</pkg> SIN model selection in Gaussian graphical Markov models.
+    </li>
 
-<li>
-<pkg>gRain</pkg> An alternative interface to graphs. Uses the
-<pkg>graph</pkg> and <pkg>RBGL</pkg> and implements additional graph
-operations. 
-</li>
+    <li>
+    <pkg>pcalg</pkg> Estimating the skeleton and equivalence class of a DAG
+    </li>
 
-<li>
-<pkg>dynamicGraph</pkg> Provides an advanced
-graphical user interface for display and interaction with
-graphs (based on Tcl/Tk).
-</li>
+    <li>
+    <pkg>qp</pkg> q-order partial correlation graph search algorithm. A robust
+    procedure for structure learning of undirected Gaussian
+    graphical Markov models from "small n, large p" data.
+    </li>
 
-<li>
-<pkg>mathgraph</pkg> Implements matrix representations of graphs and
-provide a plot function.
-</li>
+    <li>
+    <pkg>gRc</pkg>
+    Inference in graphical Gaussian models with edge and vertex
+    symmetries (Graphical Gaussian models with colours).
+    </li>
 
-<li>
-<pkg>diagram</pkg> Functions for visualising simple graphs (networks), plotting flow diagrams
-</li>
+    <li>
+    <pkg>rggm</pkg> Robustified methods for Gaussian Graphical Models. 
+    </li>
 
-<li>
-<pkg>giRaph</pkg> Supply classes and methods to represent and manipulate graphs
-</li>
+    <li>
+    <pkg>gmvalid</pkg> Simulate data sets given a dependence model,
+    validate graphical models using the bootstrap, find the best
+    prediction model using cross validation.  
+    </li>
+  </ul>
+  </p>
 
+  <p><strong>Bayesian Networks/Probabilistic expert systems</strong>
+  <ul>
+    <li>
+    <pkg>gRain</pkg> Implements propagation (message passing) in graphical
+    models (Bayesian networks).
+    </li>
 
-<li>
-<pkg>igraph</pkg> Routines for simple graphs, network analysis.
-</li>
+    <li>
+    <pkg>deal</pkg> Learning Bayesian networks with mixed (discrete and
+    continuous) variables.
+    </li>
+  </ul>
+  </p>
 
-</ul>
+  <p><strong>BUGS models</strong>
+  <ul>
+    <li>
+    <pkg>BRugs</pkg> OpenBUGS and its R / S-PLUS interface BRugs
+    </li>
 
+    <li>
+    <pkg>R2WinBUGS</pkg> Running WinBUGS and OpenBUGS from R / S-PLUS
+    </li>
 
-<p><strong>Classical models - general purpose packages</strong></p>
-<ul>
-<li>
-<pkg>gRbase</pkg> Sets up a
-          meta data representation which is used by several other
-          packages (among these are <pkg>mimR</pkg> and
-          <pkg>gRain</pkg>). gRbase suggests a way to implement models and fitting
-          engines - illustrated by hierarchical log-linear models.
-</li>
-<li>
-  <pkg>mimR</pkg> General package for model selection in contingency
-            tabels, graphical Gaussian models and mixed interaction
-            models. The package provides an interface to the MIM
-            program and only runs on Windows.  
-</li>
+    <li>
+    <pkg>rbugs</pkg> Fusing R and OpenBugs
+    </li>
 
-<li>      
-<pkg>CoCo</pkg>An advanced suite of functions for
-  contingency tabels, graphical Gaussian models and mixed
-  interaction models.  
-</li>
+    <li>
+    <pkg>boa</pkg> Bayesian Output Analysis Program (BOA) for MCMC.
+    </li>
 
-<li>
- <pkg>ggm</pkg> Fitting graphical Gaussian models.
-</li>
+    <li>
+    <pkg>coda</pkg> Output analysis and diagnostics for MCMC.
+    </li>
 
-</ul>
+    <li>
+    <pkg>bayesmix</pkg> Bayesian Mixture Models with JAGS
+    </li>
 
-<p><strong>Miscellaneous: model search, specialized types of models etc.</strong></p>
-<ul>
+    <li>
+    <pkg>bayesmix</pkg> Bayesian network structure learning
+    </li>
 
-<li>
-  <pkg>SIN</pkg> SIN model selection in Gaussian graphical Markov models.
-</li>
+    <li>
+    <pkg>bnlearn</pkg> Bayesian network structure learning
+    </li>
 
+    <li>
+    <pkg>G1DBN</pkg> A package performing Dynamic Bayesian Network inference.
+    </li>
 
-<li>
-<pkg>pcalg</pkg> Estimating the skeleton and equivalence class of a DAG
-</li>
-
-
-<li>
-<pkg>qp</pkg> q-order partial correlation graph search algorithm. A robust
-               procedure for structure learning of undirected Gaussian
-               graphical Markov models from "small n, large p" data.
-</li>
-
-<li>
-<pkg>gRc</pkg>
-Inference in graphical Gaussian models with edge and vertex
-symmetries (Graphical Gaussian models with colours).
-</li>
-
-<li>
-<pkg>rggm</pkg> Robustified methods for Gaussian Graphical Models. 
-</li>
-
-
-<li>
-<pkg>gmvalid</pkg> Simulate data sets given a dependence model,
-validate graphical models using the bootstrap, find the best
-prediction model using cross validation.  
-</li>
-
-
-
-
-</ul>
-
-<p><strong>Bayesian Networks/Probabilistic expert systems</strong></p>
-<ul>
-
-<li>
-<pkg>gRain</pkg> Implements propagation (message passing) in graphical
-models (Bayesian networks).
-</li>
-
-<li>
-<pkg>deal</pkg> Learning Bayesian networks with mixed (discrete and
-continuous) variables.
-</li>
-</ul>
-
-<p><strong>BUGS models</strong></p>
-<ul>
-
-<li>
-<pkg>BRugs</pkg> OpenBUGS and its R / S-PLUS interface BRugs
-</li>
-
-<li>
-<pkg>R2WinBUGS</pkg> Running WinBUGS and OpenBUGS from R / S-PLUS
-</li>
-
-<li>
-<pkg>rbugs</pkg> Fusing R and OpenBugs
-</li>
-
-<li>
-<pkg>boa</pkg> Bayesian Output Analysis Program (BOA) for MCMC.
-</li>
-
-<li>
-<pkg>coda</pkg> Output analysis and diagnostics for MCMC.
-</li>
-
-<li>
-<pkg>bayesmix</pkg> Bayesian Mixture Models with JAGS
-</li>
-
-<li>
-<pkg>bayesmix</pkg> Bayesian network structure learning
-</li>
-
-<li>
-<pkg>bnlearn</pkg> Bayesian network structure learning
-</li>
-
-<li>
-<pkg>G1DBN</pkg> A package performing Dynamic Bayesian Network inference.
-</li>
-
-<li>
-<pkg>ergm</pkg> Fit, Simulate and Diagnose Exponential-Family Models for Networks
-</li>
-
-</ul>
-
-
-
-
-</info>
-
-
+    <li>
+    <pkg>ergm</pkg> Fit, Simulate and Diagnose Exponential-Family Models for Networks
+    </li>
+  </ul>
+  </p>
+  </info>
 
   <packagelist>
-<pkg>graph</pkg>
-<pkg>Rgraphviz</pkg>
-<pkg>RBGL</pkg>
-<pkg>gRain</pkg>
-<pkg>dynamicGraph</pkg>
-<pkg>mathgraph</pkg>
-<pkg>diagram</pkg>
-<pkg>giRaph</pkg>
-<pkg>igraph</pkg> 
-<pkg>gRbase</pkg> 
-<pkg priority="core">gRbase</pkg>
-<pkg>mimR</pkg> 
-<pkg>CoCo</pkg>
-<pkg>ggm</pkg>
-<pkg>SIN</pkg>
-<pkg>pcalg</pkg> 
-<pkg>qp</pkg>
-<pkg>gRc</pkg>
-<pkg>rggm</pkg>
-<pkg>gmvalid</pkg>
-<pkg>deal</pkg>
-<pkg>BRugs</pkg>
-<pkg>R2WinBUGS</pkg>
-<pkg>rbugs</pkg>
-<pkg>boa</pkg> 
-<pkg>coda</pkg>
-<pkg>bayesmix</pkg>
-<pkg>bnlearn</pkg>
-<pkg>G1DBN</pkg>
-<pkg>ergm</pkg>
-
+    <pkg>bayesmix</pkg>
+    <pkg>bnlearn</pkg>
+    <pkg>boa</pkg> 
+    <pkg>BRugs</pkg>
+    <pkg>CoCo</pkg>
+    <pkg>coda</pkg>
+    <pkg>deal</pkg>
+    <pkg>diagram</pkg>
+    <pkg>dynamicGraph</pkg>
+    <pkg>ergm</pkg>
+    <pkg>G1DBN</pkg>
+    <pkg>ggm</pkg>
+    <pkg>giRaph</pkg>
+    <pkg>gmvalid</pkg>
+    <pkg>gRain</pkg>
+    <pkg>graph</pkg>
+    <pkg priority="core">gRbase</pkg>
+    <pkg>gRc</pkg>
+    <pkg>igraph</pkg> 
+    <pkg>mathgraph</pkg>
+    <pkg>mimR</pkg> 
+    <pkg>pcalg</pkg> 
+    <pkg>qp</pkg>
+    <pkg>SIN</pkg>
+    <pkg>R2WinBUGS</pkg>
+    <pkg>RBGL</pkg>
+    <pkg>rbugs</pkg>
+    <pkg>rggm</pkg>
+    <pkg>Rgraphviz</pkg>
   </packagelist>
 
   <links>
-    <a href="http://www.r-project.org/gR/">gR homepage and mailinglist</a>
+    <a href="http://www.R-project.org/gR/">gR homepage and mailin glist</a>
     <a href="http://www.bioconductor.org/">Bioconductor</a>
     <a href="http://www-fis.iarc.fr/~martyn/software/jags/">JAGS</a>
     <a href="http://mathstat.helsinki.fi/openbugs/">OpenBUGS</a>
