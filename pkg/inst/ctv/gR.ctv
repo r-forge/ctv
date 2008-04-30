@@ -15,57 +15,71 @@
   This task view is a collection of packages intended to supply R code
   to deal with graphical models.</p>
 
+
+  The description of each package is accompanied by the statement
+  [demo: y/n; vignette: y/n; url: y/n]. The aim is to give users
+  indications of to which extent a package is documented beyond the bare
+standard documentation. This information is retrieved from the package descriptions. 
+
   <p><i>Note: I	have recently become maintainer of the gR task view
-  and I am currently updating the view. Please do contact me if a
+  and I am currently in the process of updating the view. Please do contact me if a
   package is missing, a description is inadequate etc. </i></p>
     
   <p>The packages can be roughly structured into the following topics
   (although several of them have functionalities which go across these categories):</p>
 
-
   <p><strong>Representation, manipulation and display of graphs</strong>
   <ul>
     <li>
-    <pkg>graph</pkg> A package to handle graph data structures.
+    <pkg>graph</pkg> [demo: n; vignette: y; url: n] 
+	A package to handle graph data structures.
     </li>
 
     <li>
-    <pkg>Rgraphviz</pkg> Provides plotting capabilities for R graph
+    <pkg>Rgraphviz</pkg> [demo: n; vignette: y; url: n] 
+	Provides plotting capabilities for R graph
     objects (from the <pkg>graph</pkg> package).
     </li>
 
     <li>
-    <pkg>RBGL</pkg> Interface to boost C++ graph library (based on graph
+    <pkg>RBGL</pkg> [demo: n; vignette: y; url: y] 
+	Interface to boost C++ graph library (based on graph
     objects from the <pkg>graph</pkg> package).
     </li>
 
     <li>
-    <pkg>gRain</pkg> An alternative interface to graphs. Uses the
+    <pkg>gRain</pkg>   [demo: y; vignette: n; url: y]
+    An alternative interface to graphs. Uses the
     <pkg>graph</pkg> and <pkg>RBGL</pkg> and implements additional graph
     operations. 
     </li>
 
     <li>
-    <pkg>dynamicGraph</pkg> Provides an advanced
+    <pkg>dynamicGraph</pkg>   [demo: y; vignette: n; url: y]
+    Provides an advanced
     graphical user interface for display and interaction with
     graphs (based on Tcl/Tk).
     </li>
 
     <li>
-    <pkg>mathgraph</pkg> Implements matrix representations of graphs and
+    <pkg>mathgraph</pkg>   [demo: n; vignette: n; url: n]
+    Implements matrix representations of graphs and
     provide a plot function.
     </li>
 
     <li>
-    <pkg>diagram</pkg> Functions for visualising simple graphs (networks), plotting flow diagrams
+    <pkg>diagram</pkg>  [demo: y; vignette: n; url: n] 
+    Functions for visualising simple graphs (networks), plotting flow diagrams
     </li>
     
     <li>
-    <pkg>giRaph</pkg> Supply classes and methods to represent and manipulate graphs
+    <pkg>giRaph</pkg> [demo: y; vignette: n; url: y] 
+    Supply classes and methods to represent and manipulate graphs
     </li>
     
     <li>
-    <pkg>igraph</pkg> Routines for simple graphs, network analysis.
+    <pkg>igraph</pkg>   [demo: n; vignette: n; url: y]
+    Routines for simple graphs, network analysis.
     </li>
   </ul>
   </p>
@@ -131,6 +145,14 @@
     validate graphical models using the bootstrap, find the best
     prediction model using cross validation.  
     </li>
+
+    <li>
+    <pkg>GeneNet</pkg> Modeling and Inferring Gene Networks. GeneNet
+	is a package for analyzing gene expression (time series) data with
+	focus on the inference of gene networks.
+    </li>
+
+
   </ul>
   </p>
 
@@ -168,10 +190,6 @@
 
     <li>
     <pkg>coda</pkg> Output analysis and diagnostics for MCMC.
-    </li>
-
-    <li>
-    <pkg>bayesmix</pkg> Bayesian Mixture Models with JAGS
     </li>
 
     <li>
