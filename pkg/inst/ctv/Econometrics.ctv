@@ -106,11 +106,14 @@
           structural changes and changepoints in parametric models, see
           <pkg>strucchange</pkg> and <pkg>segmented</pkg>.</li>
       <li><i>Data sets</i>: Many of the packages in this view contain collections of
-          data sets from the econometric literature and the package <pkg>Ecdat</pkg>
-	  contains a complete collection of data sets from various standard econometric
+          data sets from the econometric literature. Packages <pkg>AER</pkg> and <pkg>Ecdat</pkg>
+	  contain a comprehensive collections of data sets from various standard econometric
 	  textbooks as well as several data sets from the Journal of
 	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
-	  data archives. <pkg>FinTS</pkg> is the R companion to Tsay's 'Analysis of
+	  data archives. <pkg>AER</pkg> additionally provides an extensive set of
+	  examples reproducing analyses from the textbooks/papers, illustrating
+	  various econometric methods.	  
+	  <pkg>FinTS</pkg> is the R companion to Tsay's 'Analysis of
 	  Financial Time Series' (2nd ed., 2005, Wiley) containing data sets, functions
           and script files required to work some of the examples.	  
 	  Package <pkg>CDNmoney</pkg> provides Canadian monetary aggregates
@@ -119,6 +122,7 @@
   </info>
 
   <packagelist>
+    <pkg>AER</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
     <pkg>bivpois</pkg>
