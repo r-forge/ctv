@@ -94,6 +94,11 @@
       <li><i>Matrix manipulations</i>: As a vector- and matrix-based language, base R
           ships with many powerful tools for doing matrix manipulations, which are 
 	  complemented by the packages <pkg>Matrix</pkg> and <pkg>SparseM</pkg>.</li>
+      <li><i>Optimization and mathematical programming</i>: R and many of its contributed
+          packages provide many specialized functions for solving particular optimization
+	  problems, e.g., in regression as discussed above. Further functionality for
+	  solving more general optimization problems, e.g., likelihood maximization, is
+	  discussed in the the <view>Optimization</view> task view.      
       <li><i>Bootstrap</i>: In addition to the recommended <pkg>boot</pkg> package,
           there are some other general bootstrapping techniques available in
 	  <pkg>bootstrap</pkg> or <pkg>simpleboot</pkg> as well some bootstrap techniques
@@ -176,6 +181,7 @@
 
   <links>
     <view>Finance</view>
+    <view>Optimization</view>
     <view>SocialSciences</view>
     <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing list: R Special Interest Group Finance</a>
     <a href="http://people.su.se/~ma/R_intro/">A Brief Guide to R for Beginners in Econometrics</a>
