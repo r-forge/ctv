@@ -31,30 +31,34 @@
 	  in <pkg>car</pkg>. HC and HAC covariance matrices that can be plugged
 	  into these functions are available in <pkg>sandwich</pkg>. The packages
 	  <pkg>car</pkg> and <pkg>lmtest</pkg> also provide a large collection
-	  of further methods for diagnost checking in linear regression models.</li>
-      <li><i>Microeconometrics</i>: Many standard microeconometric models belong to the
+	  of further methods for diagnost checking in linear regression models.
+	  Instrumental variables regression (two-stage least squares) is
+	  provided by <code>ivreg()</code> in <pkg>AER</pkg>, another implementation
+	  is <code>tsls()</code> in package <pkg>sem</pkg>.</li>
+      <li><p><i>Microeconometrics</i>: Many standard microeconometric models belong to the
           family of generalized linear models (GLM) and can be fitted by <code>glm()</code>
 	  from package stats. This includes in particular logit and probit models
 	  for modelling choice data and poisson models for count data. Negative 
 	  binomial GLMs are available via <code>glm.nb()</code> in package MASS from
 	  the <pkg>VR</pkg> bundle. Zero-inflated and hurdle count models are provided in 
 	  in package <pkg>pscl</pkg>. Bivariate poisson
-	  regression models are implemented in <pkg>bivpois</pkg>.<br>
-          Several models for multinomial responses are available: multinomial models
+	  regression models are implemented in <pkg>bivpois</pkg>.</p>
+          <p>Several models for multinomial responses are available: multinomial models
 	  with individual-specific covariates only in <code>multinom()</code>
 	  from package nnet in the <pkg>VR</pkg> bundle, and with both individual- and
 	  choice-specific variables in <pkg>mlogit</pkg>. A Bayesian approach to 
 	  multinomial probit models is provided by <pkg>MNP</pkg>. Furthermore,
 	  proportional-odds logistic regression for ordered responses is implemented in
-	  <code>polr()</code> from package MASS (in <pkg>VR</pkg>).<br>	  
-	  Basic censored regression models (e.g., tobit models)
-	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>.
+	  <code>polr()</code> from package MASS (in <pkg>VR</pkg>).</p>	  
+	  <p>Basic censored regression models (e.g., tobit models)
+	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>, a convenience
+	  interface <code>tobit()</code> is in package <pkg>AER</pkg>.
 	  More advanced models for sample selection are available in
-	  <pkg>sampleSel.<br>
-	  Further more refined tools for microecnometrics are provided in
+	  <pkg>sampleSelection</pkg>.</p>
+	  <p>Further more refined tools for microecnometrics are provided in
 	  <pkg>micEcon</pkg>. The package <pkg>bayesm</pkg> implements a Bayesian
 	  approach to microeconometrics and marketing. Inference for relative
-	  distributions is contained in package <pkg>reldist</pkg>.</li>	  	  
+	  distributions is contained in package <pkg>reldist</pkg>.</p></li>
       <li><i>Further regression models</i>: Various extensions of the linear regression
           model and other model fitting techniques are available in base R and several
 	  CRAN packages. Nonlinear least squares modelling is availble in <code>nls()</code>
