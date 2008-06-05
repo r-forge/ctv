@@ -30,7 +30,7 @@ are given below:
 <CRANTaskView>
 
   <name>Econometrics</name>
-  <topic>Computational Econometrics &amp; Finance</topic>
+  <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
   <version>2008-02-15</version>
 
@@ -95,6 +95,14 @@ the most important core packages should be installed (with all their dependencie
 the discussed topic and related issues is discussed, e.g., manuals/books/tutorials
 on how to do Econometrics, say, with \textsf{R}.
 
+\textit{Remark:} If you need to include special characters, e.g., an umlaut, in
+a \verb/.ctv/ file, you can do so in the \verb/<info>/ section by simply writing
+it in HTML code (note, however, that \verb/&/ is the escape character in XML/HTML).
+Otherwise, you can include special characters
+in UTF-8 encoding provided you add the declaration
+\verb/<?xml version="1.0" encoding="UTF-8"?>/ in the first line of the \verb/.ctv/ file.
+This applies in particular if you need an umlaut in the \verb/<maintainer>/ field.
+
 For a template of a \verb/.ctv/ file, look at the included \verb/Econometrics.ctv/.
 It can be read and printed by
 
@@ -104,8 +112,9 @@ x <- read.ctv(file.path(.find.package("ctv"), "ctv", "Econometrics.ctv"))
 x
 @
 
-The resulting object could be transformed into HTML by \verb/ctv2html(x)/.
-Once this view has been installed at a CRAN-style repository, it can be installed by
+The resulting object can be transformed into HTML by \verb/ctv2html(x)/.
+Once this view has been installed at a CRAN-style repository as
+\texttt{http://CRAN.R-project.org/web/views/}, it can be installed by
 the user by \verb/install.views("Econometrics")/.
 
 \end{document}

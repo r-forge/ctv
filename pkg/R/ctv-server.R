@@ -120,6 +120,8 @@ ctv2html <- function(x,
             "<head>",
      zpaste("  <title>", reposname, " Task View: ", ampersSub(x$topic), "</title>"),
      zpaste("  <link rel=stylesheet type=\"text/css\" href=\"", css, "\">"),
+     if(any(unlist(sapply(x[sapply(x, is.character)], Encoding)) == "UTF-8"))
+            "  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">",          
             "</head>",
 	    "",
 	    "<body>",

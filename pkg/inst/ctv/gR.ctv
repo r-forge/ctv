@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView>
 
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
-  <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
+  <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
   <version>2008-05-07</version>
   
   <info>

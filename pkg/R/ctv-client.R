@@ -66,7 +66,7 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   contriburl <- paste(repos, "/src/contrib", sep = "")
   rval <- list()
   
-  for(i in seq(along = contriburl)) {
+  for(i in seq(along.with = contriburl)) {
     ## load Views.rds from repository    
     x <- suppressWarnings(try(.readRDS(viewurl <- url(paste(contriburl[i], "Views.rds", sep = "/"),
       open = "rb")), silent = TRUE))

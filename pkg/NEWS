@@ -1,3 +1,18 @@
+Changes in Version 0.4-3
+
+  o Enabled UTF-8 support for character fields in CTV files.
+
+
+Changes in Version 0.4-2
+
+  o Updated vignette to better reflect the latest changes.
+  
+
+Changes in Version 0.4-1
+
+  o Added new tags <code> and <forge> for CTV files.
+
+
 Changes in Version 0.4-0
 
   o New function update.views() which only installs the
