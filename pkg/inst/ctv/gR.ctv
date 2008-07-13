@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView>
 
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
-  <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
-  <version>2008-05-07</version>
+  <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
+  <version>2008-07-07</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -178,10 +177,6 @@
 
   <p><strong>BUGS models</strong>
   <ul>
-    <li>
-    <pkg>BRugs</pkg> [vignette: n; demo: n]
-    OpenBUGS and its R / S-PLUS interface BRugs
-    </li>
 
     <li>
     <pkg>R2WinBUGS</pkg> [vignette: y; demo: n]
@@ -230,7 +225,6 @@
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
     <pkg>boa</pkg> 
-    <pkg>BRugs</pkg>
     <pkg>CoCo</pkg>
     <pkg>coda</pkg>
     <pkg>deal</pkg>
