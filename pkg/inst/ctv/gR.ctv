@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView>
 
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
-  <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
+  <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
   <version>2008-07-07</version>
   
   <info>
@@ -190,11 +191,11 @@
 
 
     <li>
-    <pkg>BRugs</pkg> [vignette: n; demo: n]
+    BRugs [vignette: n; demo: n]
     Provides an R interface on Windows machines to OpenBUGS. It works only
     under Windows and used to be available from CRAN, now it is
     located at the <a href="http://www.stats.ox.ac.uk/pub/RWin/">
-    CRANextras </a> repository. 
+    CRANextras</a> repository. 
 
 
 
@@ -258,7 +259,6 @@
     <pkg>qp</pkg>
     <pkg>SIN</pkg>
     <pkg>R2WinBUGS</pkg>
-    <pkg>BRugs</pkg>
     <pkg>RBGL</pkg>
     <pkg>rbugs</pkg>
     <pkg>rggm</pkg>
