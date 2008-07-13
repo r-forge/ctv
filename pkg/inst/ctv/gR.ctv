@@ -188,6 +188,19 @@
     Fusing R and OpenBugs
     </li>
 
+
+    <li>
+    <pkg>BRugs</pkg> [vignette: n; demo: n]
+    Provides an R interface on Windows machines to OpenBUGS. It works only
+    under Windows and used to be available from CRAN, now it is
+    located at the <a href="http://www.stats.ox.ac.uk/pub/RWin/">
+    CRANextras </a> repository. 
+
+
+
+
+    </li>
+
     <li>
     <pkg>boa</pkg> [vignette: n; demo: n]
     Bayesian Output Analysis Program (BOA) for MCMC.
@@ -245,6 +258,7 @@
     <pkg>qp</pkg>
     <pkg>SIN</pkg>
     <pkg>R2WinBUGS</pkg>
+    <pkg>BRugs</pkg>
     <pkg>RBGL</pkg>
     <pkg>rbugs</pkg>
     <pkg>rggm</pkg>
