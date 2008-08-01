@@ -114,13 +114,20 @@ ctv2html <- function(x,
   obfuscate <- function(x) paste(sprintf("&#x%x;",
     as.integer(sapply(unlist(strsplit(gsub("@", " at ", x), NULL)), charToRaw))), collapse = "")    
 
+  utf8 <- any(unlist(sapply(x[sapply(x, is.character)], Encoding)) == "UTF-8")
+  strip_encoding <- function(x) {
+    if(is.character(x)) Encoding(x) <- "unknown"
+    return(x)
+  }
+  for(i in 1:length(x)) x[[i]] <- strip_encoding(x[[i]])
+
   ## create HTML
   ## header
   htm1 <- c("<html>",
             "<head>",
      zpaste("  <title>", reposname, " Task View: ", ampersSub(x$topic), "</title>"),
      zpaste("  <link rel=stylesheet type=\"text/css\" href=\"", css, "\">"),
-     if(any(unlist(sapply(x[sapply(x, is.character)], Encoding)) == "UTF-8"))
+     if(utf8)
             "  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">",          
             "</head>",
 	    "",
