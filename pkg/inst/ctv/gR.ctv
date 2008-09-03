@@ -83,6 +83,10 @@
     Routines for simple graphs, network analysis.
     </li>
   </ul>
+  In addition, there is the
+  <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html" target="_top">Rgraphviz</a>
+  package on Bioconductor that provides plotting capabilities for R graph
+  objects (from the <pkg>graph</pkg> package) [vignette: y; demo: n].
   </p>
 
 
