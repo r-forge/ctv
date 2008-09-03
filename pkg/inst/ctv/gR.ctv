@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
-  <version>2008-07-07</version>
+  <version>2008-09-03</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -36,11 +36,11 @@
 	A package to handle graph data structures.
     </li>
 
-    <li>
+<!--    <li>
     <pkg>Rgraphviz</pkg> [vignette: y; demo: n] 
 	Provides plotting capabilities for R graph
     objects (from the <pkg>graph</pkg> package).
-    </li>
+    </li> -->
 
     <li>
     <pkg>RBGL</pkg> [vignette: y; demo: n] 
@@ -262,11 +262,11 @@
     <pkg>RBGL</pkg>
     <pkg>rbugs</pkg>
     <pkg>rggm</pkg>
-    <pkg>Rgraphviz</pkg>
   </packagelist>
 
   <links>
     <a href="http://www.R-project.org/gR/">gR homepage and mailing list</a>
+    <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html">Rgraphviz package (Bioconductor)</a>
     <a href="http://www.bioconductor.org/">Bioconductor</a>
     <a href="http://www-fis.iarc.fr/~martyn/software/jags/">JAGS</a>
     <a href="http://mathstat.helsinki.fi/openbugs/">OpenBUGS</a>
