@@ -1,3 +1,8 @@
+Changes in Version 0.4-4
+
+  o Enhanced UTF-8 support.
+
+
 Changes in Version 0.4-3
 
   o Enabled UTF-8 support for character fields in CTV files.
