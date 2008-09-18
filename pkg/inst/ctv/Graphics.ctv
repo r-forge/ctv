@@ -34,7 +34,7 @@
     is needed. <pkg>grid</pkg> was designed by Paul Murrell to overcome
     some of these limitations and as a result packages like
     <pkg>lattice</pkg>, <pkg>ggplot2</pkg>, <pkg>vcd</pkg> or hexbin
-    (on <a href="http://www.BioConductor.org/">BioConductor</a>) use
+    (on <a href="http://www.Bioconductor.org/">Bioconductor</a>) use
     grid for the underlying primitives. When using plots designed with
     grid one needs to keep in mind that grid is based on a system of
     viewports and graphic objects. To add objects one needs to use grid
@@ -54,7 +54,7 @@
       <li><i>Plotting</i>:
           Enhancements for specialized plots can be found in <pkg>plotrix</pkg>,
 	  for polar plotting, <pkg>vcd</pkg> for categorical data, hexbin
-	  (on <a href="http://www.BioConductor.org/">BioConductor</a>)
+	  (on <a href="http://www.Bioconductor.org/">Bioconductor</a>)
 	  for hexagon binning, <pkg>gclus</pkg> for ordering plots and 
           gplots from the <pkg>gregmisc</pkg> bundle
 	  for some plotting enhancements. Some specialized graphs, like Chernoff faces 
@@ -88,7 +88,7 @@
           alleviate some of the problems that standard boxplots exhibit for large data sets. 
           For bivariate data <pkg>ash</pkg> can produce a bivariate smoothed histogram very 
           quickly, and 
-          hexbin, on <a href="http://www.BioConductor.org/">BioConductor</a>, can bin bivariate
+          hexbin, on <a href="http://www.Bioconductor.org/">Bioconductor</a>, can bin bivariate
           data onto a hexagonal lattice, the advantage being that the irregular lines and 
           orientation of hexagons do not create linear artifacts. For multivariate data, 
           hexbin can be used to create a scatterplot matrix, combined with <pkg>lattice</pkg>.
@@ -213,7 +213,7 @@
     <view>Cluster</view>
     <view>Multivariate</view> 
     <view>Spatial</view>
-    <a href="http://http://bioconductor.org/packages/bioc/stable/src/contrib/html/hexbin.html">hexbin on BioConductor</a>
+    <bioc>hexbin</bioc>
     <a href="http://AddictedToR.free.fr/graphiques/">R Graph Gallery</a>
     <a href="http://www.stat.auckland.ac.nz/~paul/">Paul Murrell's home page</a>
     <a href="http://stats.math.uni-augsburg.de/R/">RoSuDA R packages</a>

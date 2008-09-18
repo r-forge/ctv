@@ -84,7 +84,7 @@
     </li>
   </ul>
   In addition, there is the
-  <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html" target="_top">Rgraphviz</a>
+  <bioc>Rgraphviz</bioc>
   package on Bioconductor that provides plotting capabilities for R graph
   objects (from the <pkg>graph</pkg> package) [vignette: y; demo: n].
   </p>
@@ -270,8 +270,8 @@
 
   <links>
     <a href="http://www.R-project.org/gR/">gR homepage and mailing list</a>
-    <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html">Rgraphviz package (Bioconductor)</a>
-    <a href="http://www.bioconductor.org/">Bioconductor</a>
+    <bioc>Rgraphviz</bioc>
+    <a href="http://www.Bioconductor.org/">Bioconductor</a>
     <a href="http://www-fis.iarc.fr/~martyn/software/jags/">JAGS</a>
     <a href="http://mathstat.helsinki.fi/openbugs/">OpenBUGS</a>
     <a href="http://www.hypergraph.dk/">MIM</a>

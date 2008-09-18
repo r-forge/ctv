@@ -17,11 +17,24 @@ read.ctv <- function(file)
 
   ## convenience function for transforming
   ## XMLNodes into a character vector
-  xmlPaste <- function(x, indent = "",
-                       viewprefix = "",
+  xmlPaste <- function(x, indent = "", prefix = FALSE,
                        packageURL = "../packages/",
                        viewURL = "")
   {
+
+    ## set prefixes
+    if(prefix) {    
+      viewprefix <- "CRAN Task View: "
+      forgeprefix <- "R-Forge Package: "
+      biocprefix <- "Bioconductor Package: "
+      target <- " target=\"_top\""
+    } else {
+      viewprefix <- ""
+      forgeprefix <- ""
+      biocprefix <- ""
+      target <- ""
+    }
+
     ## get tag name
     name <- xmlName(x, full = TRUE)
 
@@ -39,7 +52,11 @@ read.ctv <- function(file)
     if(name == "code")
       return(paste("<tt>", xmlValue(x), "</tt>", sep = ""))
     if(name == "forge")
-      return(paste("<a href=\"http://R-Forge.R-project.org/projects/", xmlValue(x),"/\">", xmlValue(x), "</a>", sep = ""))
+      return(paste(forgeprefix, "<a href=\"http://R-Forge.R-project.org/projects/",
+        xmlValue(x), "/\"", target, "><font color=\"#0076D5\">", xmlValue(x), "</font></a>", sep = ""))
+    if(name == "bioc")
+      return(paste(biocprefix, "<a href=\"http://www.Bioconductor.org/packages/release/bioc/html/",
+        xmlValue(x), ".html\"", target, "><font color=\"#2C92A1\">", xmlValue(x), "</font></a>", sep = ""))
 
     ## get attributes
     tmp <- if(!is.null(xmlAttrs(x)))
@@ -84,7 +101,7 @@ read.ctv <- function(file)
     rval <- data.frame(name = I(rval[,1]), core = rval[,2] == "core")
     rval[order(tolower(rval[,1])), ]
   }
-  links <- function(x) as.vector(xmlSApply(x$links, function(z) xmlPaste(z, viewprefix = "CRAN Task View: ")))
+  links <- function(x) as.vector(xmlSApply(x$links, function(z) xmlPaste(z, prefix = TRUE)))
 
   ## collect nodes and return
   rval <- list(name = name(x),

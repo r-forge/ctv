@@ -74,13 +74,14 @@ with support for specification of an e-mail address.
 \verb/<info>/ should be a short description of the packages that explains
 which packages are useful for which tasks. It can also contain any further
 informations and should be written in plain HTML code, i.e., any HTML markup
-can be used. There are four additional tags available: \verb/<pkg>/, \verb/<view>/,
-\verb/<forge>/, and \verb/<code>/. \verb/<pkg>/ and
+can be used. There are five additional tags available: \verb/<pkg>/, \verb/<view>/,
+\verb/<bioc>/, \verb/<forge>/, and \verb/<code>/. \verb/<pkg>/ and
 \verb/<view>/ should be used as markup for packages and views (in the same repository), respectively.
 During generation of the corresponding HTML file, they will be replaced by
-hyperlinks to the packages/views. Similarly, \verb/<forge>/ can be used to
-refer to projects on \textsf{R}-Forge and these will be replaced by the appropriate
-hyperlinks to the project on \texttt{http://R-Forge.R-project.org/}.
+hyperlinks to the packages/views. Similarly, \verb/<bioc>/ and \verb/<forge>/can be used to
+refer to projects on Bioconductor and \textsf{R}-Forge. These will be replaced by the appropriate
+hyperlinks to the project on \texttt{http://www.Bioconductor.org/}
+and \texttt{http://R-Forge.R-project.org/}, respectively.
 Finally, \verb/<code>/ can be used as markup for \textsf{R} code which will 
 simply be set in a typewriter font.
 

@@ -181,7 +181,7 @@ population based studies.  The software has been implemented to take advantage o
 <pkg>seqinr</pkg>
           package to import sequence data from various sources, including files of aligned sequences in mase, clustal, phylip, fasta and msf format which will be of utility to some population genetic analysis.  Users interested in using R for sequence data and bioinformatics are also referred to the
     <a href="http://www.bioconductor.org/">
-      BioConductor
+      Bioconductor
     </a>
           project.
         </li>
@@ -279,7 +279,7 @@ population based studies.  The software has been implemented to take advantage o
       p_ACT - R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests
     </a>
     <a href="http://www.bioconductor.org/">
-      BioConductor - an open source and open development software project for the analysis and comprehension of genomic data based on R
+      Bioconductor - An open source and open development software project for the analysis and comprehension of genomic data based on R
     </a>
   </links>
 
