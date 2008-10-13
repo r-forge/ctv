@@ -12,7 +12,7 @@
     is given below. There is also a considerable overlap between the tools
     for econometrics in this view and for finance in the <view>Finance</view> view.
     Furthermore, the 
-    <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">finance SIG</a>    
+    <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Finance SIG</a>    
     is a suitable mailing list for obtaining help
     and discussing questions about both computational finance and econometrics.
     Finally, there is also some overlap with the <view>SocialSciences</view> that
@@ -38,7 +38,7 @@
       <li><p><i>Microeconometrics</i>: Many standard microeconometric models belong to the
           family of generalized linear models (GLM) and can be fitted by <code>glm()</code>
 	  from package stats. This includes in particular logit and probit models
-	  for modelling choice data and poisson models for count data. Negative 
+	  for modeling choice data and poisson models for count data. Negative 
 	  binomial GLMs are available via <code>glm.nb()</code> in package MASS from
 	  the <pkg>VR</pkg> bundle. Zero-inflated and hurdle count models are provided in 
 	  in package <pkg>pscl</pkg>. Bivariate poisson
@@ -61,7 +61,7 @@
 	  distributions is contained in package <pkg>reldist</pkg>.</p></li>
       <li><p><i>Further regression models</i>: Various extensions of the linear regression
           model and other model fitting techniques are available in base R and several
-	  CRAN packages. Nonlinear least squares modelling is availble in <code>nls()</code>
+	  CRAN packages. Nonlinear least squares modeling is availble in <code>nls()</code>
 	  in package stats. Relevant packages include <pkg>quantreg</pkg>
 	  (quantile regression),  <pkg>crq</pkg> (censored quantile regression),
 	  <pkg>plm</pkg> (linear models for panel data),
@@ -80,10 +80,14 @@
 	  <code>"zoo"</code>) where the time information can be of arbitrary class. Several
 	  other implementations of irregular time series building on the <code>"POSIXt"</code>
 	  time-date classes are available in <pkg>its</pkg>, <pkg>tseries</pkg> and 
-	  <pkg>fCalendar</pkg> which are all aimed particularly at finance applications
-	  (see the <view>Finance</view> view).</p></li>
-      <li><p><i>Time series modelling</i>: Classical time series modelling tools are
-          contained in the stats package and include <code>arima()</code> for ARIMA modelling
+	  <pkg>fCalendar</pkg> which are all aimed particularly at finance applications.
+	  See the <view>TimeSeries</view> and <view>Finance</view> task views for
+	  more information.</p></li>
+      <li><p><i>Time series modeling</i>: The <view>TimeSeries</view> task view contains
+          detailed information about time series analysis in R. Here, only a brief overview
+	  of the most important methods for econometrics is given.      
+          Classical time series modeling tools are
+          contained in the stats package and include <code>arima()</code> for ARIMA modeling
 	  and Box-Jenkins-type analysis. Furthermore, stats provides <code>StructTS()</code>
 	  for fitting structural time series and <code>decompose()</code> and <code>HoltWinters()</code>
 	  for time series filtering and decomposition. Some extensions to these
@@ -197,6 +201,7 @@
     <view>Finance</view>
     <view>Optimization</view>
     <view>SocialSciences</view>
+    <view>TimeSeries</view>
     <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing List: R Special Interest Group Finance</a>
     <a href="http://www.jstatsoft.org/v27/">Journal of Statistical Software: Special Volume on 'Econometrics in R'</a>
     <a href="http://people.su.se/~ma/R_intro/">A Brief Guide to R for Beginners in Econometrics</a>
