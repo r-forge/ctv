@@ -219,7 +219,7 @@
     <pkg priority="core">boot</pkg>
     <pkg>bootstrap</pkg>
     <pkg>BradleyTerry</pkg>
-    <pkg>brlr</pkg>
+    <pkg>brglm</pkg>
     <pkg priority="core">car</pkg>
     <pkg priority="core">cat</pkg> 
     <pkg>catspec</pkg>
