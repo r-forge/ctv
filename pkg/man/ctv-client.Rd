@@ -12,10 +12,8 @@ Client-side tools for installing CRAN task views.
 
 \usage{
 available.views(repos = NULL, \dots)
-install.views(views, coreOnly = FALSE, repos = NULL,
-  dependencies = TRUE, \dots)
-update.views(views, coreOnly = FALSE, repos = NULL,
-  dependencies = TRUE, lib.loc = NULL, \dots)
+install.views(views, coreOnly = FALSE, repos = NULL, \dots)
+update.views(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, \dots)
 
 \method{print}{ctv}(x, packagelist = TRUE, \dots)
 \method{print}{ctvlist}(x, packagelist = FALSE, \dots)
@@ -30,9 +28,6 @@ update.views(views, coreOnly = FALSE, repos = NULL,
     (recycled to the same length as \code{views})}
   \item{repos}{character, the base URL of the repository. By default \code{getOption("repos")}
     is tried and otherwise \code{getOption("CRAN")} is used.}
-  \item{dependencies}{logical. Should uninstalled packages on
-    which the packages associated with the task views depends 
-    (or suggests/imports) also be installed?}
   \item{lib.loc}{character vector describing the location of R library trees
     to search through (and update packages therein).}
   \item{\dots}{further arguments passed to \code{\link{install.packages}}.}

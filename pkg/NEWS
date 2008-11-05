@@ -1,3 +1,13 @@
+Changes in Version 0.4-6
+
+  o Changed interface of install.views() and update.views():
+    Argument "dependencies = TRUE" has been removed (but can
+    still be specified through "..."). Hence, by default, the
+    defaults of install.packages() are inherited. However,
+    is still possible to get the prior behaviour by setting
+    dependencies explicitly in install.views()/update.views().
+
+
 Changes in Version 0.4-5
 
   o Enhanced support for R-Forge and Bioconductor links

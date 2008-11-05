@@ -80,11 +80,7 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   return(rval)
 }
 
-install.views <- function(views,
-                          coreOnly = FALSE,
-			  repos = NULL,
-                          dependencies = TRUE,
-			  ...)
+install.views <- function(views, coreOnly = FALSE, repos = NULL, ...)
 {
   if(inherits(views, "ctv")) {
     views <- list(views)
@@ -110,18 +106,13 @@ install.views <- function(views,
    
   for(i in seq(along = views)) {
     pkgs <- if(coreOnly[i]) subset(views[[i]]$packagelist, core)[,1] else views[[i]]$packagelist[,1]
-    install.packages(pkgs, repos = views[[i]]$repository, dependencies = dependencies, ...)
+    install.packages(pkgs, repos = views[[i]]$repository, ...)
   }
   
   invisible()
 }
 
-update.views <- function(views,
-                         coreOnly = FALSE,
-			 repos = NULL,
-			 dependencies = TRUE,
-			 lib.loc = NULL,
-			 ...)
+update.views <- function(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, ...)
 {
   if(inherits(views, "ctv")) {
     views <- list(views)
@@ -194,7 +185,7 @@ update.views <- function(views,
   ## install packages required
   apkgs <- apkgs[pkgs,,drop=FALSE]
   if(NROW(apkgs) > 0) install.packages(apkgs[,1], contriburl = apkgs[,"Repository"],
-    lib = lib.loc, dependencies = dependencies, ...)
+    lib = lib.loc, ...)
   
   invisible()
 }
