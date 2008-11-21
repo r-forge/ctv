@@ -2,8 +2,8 @@
 
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
-  <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana and Neil Shephard</maintainer>
-  <version>2008-04-26</version>
+  <maintainer email="nshephard@gmail.com">Giovanni Montana and Neil Shephard</maintainer>
+  <version>2008-11-21</version>
 
   <info>
     <p>
@@ -16,7 +16,14 @@
       </p>
       <p>
         A number of R packages are already available and many more are most likely to be developed in the near future.
-    Please send your comments and suggestions to either of the task view maintainers. 
+    Please send your comments and suggestions to either of the task view maintainer's 
+        <a href="http://stats.ma.ic.ac.uk/g/gmontana/public_html/">
+          Giovanni Montana
+        </a>
+        or
+        <a href="maito:nshephard_at_gmail.com">
+          Neil Shephard
+        </a>.
       </p>
       <ul>
         <li>
@@ -53,7 +60,9 @@
           provides graphical representation of disequilibria via ternary plots (also known as de Finetti diagrams).
 <pkg>Biodem</pkg>
           package provides functions for Biodemographical analysis, e.g.
-          <code>Fst()</code>
+          <code>
+            Fst()
+          </code>
           calculates the Fst from the conditional
        kinship matrix. Package
 <pkg>kinship</pkg>
@@ -89,9 +98,13 @@
           is a package for genetic data analysis of both population and family data;
 it contains functions for sample size calculations, probability of familial disease aggregation, kinship calculation,
 and some tests for linkage and association analyses. Among the other functions,
-          <code>genecounting()</code>
+          <code>
+            genecounting()
+          </code>
           estimates haplotype frequencies from genotype data, and
-          <code>gcontrol()</code>
+          <code>
+            gcontrol()
+          </code>
           implements a Bayesian genomic control statistics for association studies. For family data,
 <pkg>tdthap</pkg>
           offers an implementation of the Transmission/Disequilibrium Test (TDT) for extended marker haplotypes, whereas
@@ -112,6 +125,7 @@ and some tests for linkage and association analyses. Among the other functions,
 <pkg>haplo.stats</pkg>
           also contains functions for the analysis of indirectly measured haplotypes. The statistical methods assume 
 that all subjects are unrelated and that haplotypes are ambiguous (due to unknown linkage phase of the genetic markers).
+<pkg>SimHap</pkg> is another package that infers haplotypes and tests for associations and incorporates multiple-imputation to deal with haplotype phase uncertainty.
 <pkg>tdthap</pkg>
           implements transmission/disequilibrium tests for extended marker haplotypes.
 <pkg>ldDesign</pkg>
@@ -123,23 +137,25 @@ that all subjects are unrelated and that haplotypes are ambiguous (due to unknow
         </li>
         <li>
           <i>
-            Genome-Wide Association
+            Genome-Wide Association Studies (GWAS)
           </i>:
       With recent technical advances in high-throughput genotyping technologies the possibility of performing 
-Genome-Wide Association (GWA) analyses is now a feasible strategy.  A number of packages are available to facilitate
+Genome-Wide Association Studies is now a feasible strategy.  A number of packages are available to facilitate
 the analysis of these large data sets.
 <pkg>GenAbel</pkg> 
-          is designed for the efficent storage and handling of GWA data with fast analysis tools for quality control,
+          is designed for the efficent storage and handling of GWAS data with fast analysis tools for quality control,
  association with binary and quantitative traits, as well as tools for visualizing results.
 <pkg>pbatR</pkg>
           provides a GUI to the powerful PBAT software which performs family and population based family and 
 population based studies.  The software has been implemented to take advantage of parallel processing, which vastly
- reduces the computational time required for GWA's.
+ reduces the computational time required for GWAS.
 <pkg>SNPassoc</pkg>
-          is another package for carrying out GWA analysis.  It provides descriptive statistics of the data 
+          is another package for carrying out GWAS analysis.  It provides descriptive statistics of the data 
 (inlcuding patterns of missing data) and tests for Hardy-Weinberg equilibrium.  Single-point analyses with binary or
  quantitative traits are implemented via generalized linear models, and multiple SNPs can be anlaysed for haplotypic
  associations or epistasis.
+<pkg>snpMatrix</pkg>
+	Implements classes and methods for large-scale SNP association studies.
         </li>        
         <li>
           <i>
@@ -153,7 +169,9 @@ population based studies.  The software has been implemented to take advantage o
 <pkg>qtl</pkg>
           provides several functions and a data structure for QTL mapping, including
        a function
-          <code>scanone()</code>
+          <code>
+            scanone()
+          </code>
           for genome-wide scans. The package
 <pkg>qtlDesign</pkg>
           has functions for designing QTL experiments, including power computations.
@@ -167,7 +185,9 @@ population based studies.  The software has been implemented to take advantage o
       The package
 <pkg>qvalue</pkg>
           implements False Discovery Rate; the main function
-          <code>qvalue()</code>
+          <code>
+            qvalue()
+          </code>
           estimates the q-values from a list of p-values.
       Package
 <pkg>multtest</pkg>
@@ -181,7 +201,7 @@ population based studies.  The software has been implemented to take advantage o
 <pkg>seqinr</pkg>
           package to import sequence data from various sources, including files of aligned sequences in mase, clustal, phylip, fasta and msf format which will be of utility to some population genetic analysis.  Users interested in using R for sequence data and bioinformatics are also referred to the
     <a href="http://www.bioconductor.org/">
-      Bioconductor
+      BioConductor
     </a>
           project.
         </li>
@@ -224,6 +244,7 @@ population based studies.  The software has been implemented to take advantage o
     <pkg>qvalue</pkg>
     <pkg>rmetasim</pkg>
     <pkg>seqinr</pkg>
+    <pkg>SimHap</pkg>
     <pkg>SNPassoc</pkg>
     <pkg>SNPmaxsel</pkg>
     <pkg>snp.plotter</pkg>
@@ -267,20 +288,20 @@ population based studies.  The software has been implemented to take advantage o
       Vector Generalized Linear and Additive Models (VGLMs/VGAMs)
     </a>
     <a href="http://people.fas.harvard.edu/~tjhoffm/pbatR.html">
-      P2BAT - Tools for the statistical analysis of family-based association studies
-    </a>
+      P2BAT
+    </a> : Tools for the statistical analysis of family-based association studies.
     <a href="http://www.qimr.edu.au/davidD/#R">
       R Software by David Duffy
     </a>
     <a href="http://pbil.univ-lyon1.fr/software/mareymap/">
-      MareyMap - GUI for comparing physical and genetic maps for estimation of recombination rates
-    </a>
+      MareyMap
+    </a> : GUI for comparing physical and genetic maps for estimation of recombination rates.
     <a href="http://csg.sph.umich.edu/boehnke/p_act.php">
-      p_ACT - R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests
-    </a>
+      p_ACT 
+    </a> : R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests.
     <a href="http://www.bioconductor.org/">
-      Bioconductor - An open source and open development software project for the analysis and comprehension of genomic data based on R
-    </a>
+      BioConductor
+    </a> : an open source and open development software project for the analysis and comprehension of genomic data based on R.
   </links>
 
 </CRANTaskView>
