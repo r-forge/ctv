@@ -288,20 +288,20 @@ population based studies.  The software has been implemented to take advantage o
       Vector Generalized Linear and Additive Models (VGLMs/VGAMs)
     </a>
     <a href="http://people.fas.harvard.edu/~tjhoffm/pbatR.html">
-      P2BAT
-    </a> : Tools for the statistical analysis of family-based association studies.
+      P2BAT: Tools for the statistical analysis of family-based association studies.
+    </a> 
     <a href="http://www.qimr.edu.au/davidD/#R">
       R Software by David Duffy
     </a>
     <a href="http://pbil.univ-lyon1.fr/software/mareymap/">
-      MareyMap
-    </a> : GUI for comparing physical and genetic maps for estimation of recombination rates.
+      MareyMap: GUI for comparing physical and genetic maps for estimation of recombination rates.
+    </a>
     <a href="http://csg.sph.umich.edu/boehnke/p_act.php">
-      p_ACT 
-    </a> : R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests.
+      p_ACT : R program that adjusts sets of up to 1000 p-values from association tests between correlated traits and SNPs for multiple testing, accounting for the correlation between tests.
+    </a
     <a href="http://www.bioconductor.org/">
-      BioConductor
-    </a> : an open source and open development software project for the analysis and comprehension of genomic data based on R.
+      BioConductor: an open source and open development software project for the analysis and comprehension of genomic data based on R.
+    </a> 
   </links>
 
 </CRANTaskView>
