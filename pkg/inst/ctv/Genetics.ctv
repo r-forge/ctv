@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2008-11-30</version>
+  <version>2008-12-08</version>
   <info>
     <p>
       <p>
@@ -15,10 +15,7 @@
       </p>
       <p>
         A number of R packages are already available and many more are most likely to be developed in the near future.
-        Please send your comments and suggestions to either of the task view maintainer's 
-        <a href="mailto:g.montana_at_imperial.ac.uk">
-          Giovanni Montana
-        </a>
+        Please send your comments and suggestions to the task view maintainer.
       </p>
       <ul>
         <li>
