@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2006-01-23</version>
+  <version>2009-01-12</version>
   
   <info> 
   
@@ -93,10 +93,11 @@
           </li>
           
           <li>
-          <a NAME="GLS"><i>Generalized least-squares regression:</i></a> The <code>gls</code> function in the
-	  recommended <pkg>nlme</pkg> package fits models by generalized least squares. (The <code>lm</code>
-	  function can also fit weighted least-squares regressions; also see the <pkg>dyn</pkg> and
-	  <pkg>dynlm</pkg> packages, which allow <code>gls</code>, <code>lm</code>, and other regression functions to handle time-series data structures.)
+          <a NAME="GLS"><i>Generalized least-squares regression and time-series regression:</i></a> The <code>gls</code> function in the
+	  recommended <pkg>nlme</pkg> package fits models by generalized least squares. The <code>lm</code>
+	  function can also fit weighted least-squares regressions. Also see the 
+	  <pkg>dynlm</pkg> package, which allows <code>lm</code> to handle time-series data structures, and the <pkg>dyn</pkg> package, which extends this
+	  capability to <code>glm</code> and other regression functions that are sufficiently similar to <code>lm</code> in their internal structure.	  
           </li>
           
           <li>
