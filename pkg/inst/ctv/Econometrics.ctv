@@ -174,7 +174,7 @@
     <pkg>MSBVAR</pkg>
     <pkg>nlme</pkg>
     <pkg>np</pkg>
-    <pkg>plm</pkg>
+    <pkg priority="core">plm</pkg>
     <pkg>pscl</pkg>
     <pkg>pwt</pkg>
     <pkg>quantreg</pkg>
