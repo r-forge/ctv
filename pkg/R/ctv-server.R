@@ -25,13 +25,15 @@ read.ctv <- function(file)
     ## set prefixes
     if(prefix) {    
       viewprefix <- "CRAN Task View: "
-      forgeprefix <- "R-Forge Package: "
       biocprefix <- "Bioconductor Package: "
+      forgeprefix <- "R-Forge Project: "
+      googlecodeprefix <- "Google Code Project: "
       target <- " target=\"_top\""
     } else {
       viewprefix <- ""
-      forgeprefix <- ""
       biocprefix <- ""
+      forgeprefix <- ""
+      googlecodeprefix <- ""
       target <- ""
     }
 
@@ -53,6 +55,9 @@ read.ctv <- function(file)
       return(paste("<tt>", xmlValue(x), "</tt>", sep = ""))
     if(name == "forge")
       return(paste(forgeprefix, "<a href=\"http://R-Forge.R-project.org/projects/",
+        xmlValue(x), "/\"", target, "><font color=\"#0076D5\">", xmlValue(x), "</font></a>", sep = ""))
+    if(name == "googlecode")
+      return(paste(googlecodeprefix, "<a href=\"http://code.google.com/p/",
         xmlValue(x), "/\"", target, "><font color=\"#0076D5\">", xmlValue(x), "</font></a>", sep = ""))
     if(name == "bioc")
       return(paste(biocprefix, "<a href=\"http://www.Bioconductor.org/packages/release/bioc/html/",
