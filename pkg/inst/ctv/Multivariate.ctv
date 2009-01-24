@@ -185,7 +185,10 @@
 	  Suffice to say here that classification trees are sometimes considered within 
           multivariate methods; <pkg>rpart</pkg> is most used for this purpose.   <pkg>TWIX</pkg> provides trees with extra splits.   <pkg>hier.part</pkg> partitions the variance in a multivariate data set. 
           <pkg>mvpart</pkg> extend regression trees to cover multivariate 
-          regression trees, <pkg>party</pkg> provides recursive partitioning and <pkg>rrp</pkg> provides random recursive partitioning.   Classification and regression training is provided by <pkg>caret</pkg> with some parallel processing capacity added by <pkg>caretLSF</pkg>.   <pkg>kknn</pkg> provides k-nearest neighbour methods which can be used for regression as well as classification.</li></ul></p>
+          regression trees, <pkg>party</pkg> provides recursive partitioning and <pkg>rrp</pkg> provides
+	  random recursive partitioning.   Classification and regression training is provided by
+	  <pkg>caret</pkg>. (Formerly, caretLSF provided additional parallel processing capacity
+	  which has now been incorporated into <pkg>caret</pkg>.)   <pkg>kknn</pkg> provides k-nearest neighbour methods which can be used for regression as well as classification.</li></ul></p>
 
           <p><strong>Supervised classification and discriminant analysis</strong>
           <ul><li><code>lda()</code> and <code>qda()</code> within MASS provide linear
@@ -276,7 +279,6 @@
     <pkg>ca</pkg>   
     <pkg>car</pkg>   
     <pkg>caret</pkg> 
-    <pkg>caretLSF</pkg> 
     <pkg>cat</pkg> 
     <pkg>chplot</pkg>
     <pkg>cwhmisc</pkg>
