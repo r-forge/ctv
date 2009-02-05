@@ -1,3 +1,13 @@
+Changes in Version 0.4-9
+
+  o added CITATION file
+
+
+Changes in Version 0.4-8
+
+  o new <googlecode> tag
+
+
 Changes in Version 0.4-7
 
   o removed \itemize in .Rd files for new R-devel.

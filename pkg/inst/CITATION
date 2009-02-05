@@ -1,0 +1,18 @@
+citHeader("To cite ctv in publications use:")
+
+citEntry(entry="Article",
+         title = "CRAN Task Views",
+         author = personList(as.person("Achim Zeileis")),
+         journal      = "R News",
+         year         = "2005",
+	 volume       = "5",
+	 number       = "1",
+	 pages        = "39--40",
+         url          = "http://CRAN.R-project.org/doc/Rnews/",
+         
+         textVersion = 
+         paste("Achim Zeileis (2005).",
+               "CRAN Task Views.",
+               "R News 5(1), 39-40.",
+	       "URL http://CRAN.R-project.org/doc/Rnews/")
+)
