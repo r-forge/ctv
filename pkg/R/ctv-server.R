@@ -51,6 +51,8 @@ read.ctv <- function(file)
       return(paste(viewprefix, "<a href=\"", viewURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))
     if(name == "info")
       name <- "p"
+    if(name == "comment")
+      return(NULL)
     if(name == "code")
       return(paste("<tt>", xmlValue(x), "</tt>", sep = ""))
     if(name == "forge")
@@ -72,8 +74,10 @@ read.ctv <- function(file)
     rval <- paste(indent, "<", name, ifelse(tmp != "", " ", ""), tmp, ">", sep = "")
     ## content
     subIndent <- paste(indent, "  ", sep = "")
-    for(i in xmlChildren(x))
-      rval <- paste(rval, xmlPaste(i, indent = subIndent, packageURL = packageURL, viewURL = viewURL), sep = "\n")
+    for(i in xmlChildren(x)) {
+      xmlPaste_i <- xmlPaste(i, indent = subIndent, packageURL = packageURL, viewURL = viewURL)
+      if(!is.null(xmlPaste_i)) rval <- paste(rval, xmlPaste_i, sep = "\n")
+    }
     ## end tag
     rval <- paste(rval, paste(indent, "</", name, ">", sep = ""), sep = "\n")
 
@@ -106,7 +110,7 @@ read.ctv <- function(file)
     rval <- data.frame(name = I(rval[,1]), core = rval[,2] == "core")
     rval[order(tolower(rval[,1])), ]
   }
-  links <- function(x) as.vector(xmlSApply(x$links, function(z) xmlPaste(z, prefix = TRUE)))
+  links <- function(x) unlist(xmlSApply(x$links, function(z) xmlPaste(z, prefix = TRUE)))
 
   ## collect nodes and return
   rval <- list(name = name(x),
@@ -145,17 +149,18 @@ ctv2html <- function(x,
 
   ## create HTML
   ## header
-  htm1 <- c("<html>",
+  htm1 <- c("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">",
+            "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
             "<head>",
      zpaste("  <title>", reposname, " Task View: ", ampersSub(x$topic), "</title>"),
-     zpaste("  <link rel=stylesheet type=\"text/css\" href=\"", css, "\">"),
+     zpaste("  <link rel=stylesheet type=\"text/css\" href=\"", css, "\" />"),
      if(utf8)
             "  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">",          
             "</head>",
 	    "",
 	    "<body>",
      zpaste("  <h2>", reposname, " Task View: ", ampersSub(x$topic), "</h2>"),
-            "  <table>",
+     zpaste("  <table summary=\"", x$name, " task view information\">"),
      zpaste("    <tr><td valign=\"top\"><b>Maintainer:</b></td><td>", ampersSub(x$maintainer), "</td></tr>"),
      if(!is.null(x$email)) zpaste("    <tr><td valign=\"top\"><b>Contact:</b></td><td>", obfuscate(x$email), "</td></tr>"),
      zpaste("    <tr><td valign=\"top\"><b>Version:</b></td><td>", ampersSub(x$version), "</td></tr>"),

@@ -1,3 +1,9 @@
+Changes in Version 0.5-0
+
+  o Improved server-side tools: read.ctv() and ctv2html()
+     now try harder to provide tidy XHTML code.
+
+
 Changes in Version 0.4-9
 
   o added CITATION file
