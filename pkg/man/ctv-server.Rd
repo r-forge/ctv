@@ -8,10 +8,10 @@ Server-side tools for maintaining CRAN task views.
 }
 
 \usage{
-repos_update_views(repos = ".", css = "../../R.css", reposname = "CRAN", \dots)
+repos_update_views(repos = ".", css = "../CRAN_web.css", reposname = "CRAN", \dots)
 
 read.ctv(file)
-ctv2html(x, file = NULL, css = "../../R.css", packageURL = "../packages/", reposname = "CRAN")
+ctv2html(x, file = NULL, css = "../CRAN_web.css", packageURL = "../packages/", reposname = "CRAN")
 }
 \arguments{
   \item{repos}{character, the base URL of the CRAN-style repository where the \file{Views.rds}

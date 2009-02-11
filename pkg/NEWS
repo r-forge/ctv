@@ -1,7 +1,24 @@
+Changes in Version 0.5-1
+
+  o In .ctv files a new tag is allowed: <ohat> for
+    links to Omegahat projects.
+    
+  o The tags <rforge> and <gcode> replace the previous
+    <forge> and <googlecode>, respectively, in order
+    to be more consistent with the terminology used
+    in the CRAN Web pages.
+
+  o Further improvements of server-side tools in order
+    to provide tidy XHTML code.
+
+  o The default style file included in the server-side
+    tools is now CRAN_web.css (rather than R.css).
+
+
 Changes in Version 0.5-0
 
   o Improved server-side tools: read.ctv() and ctv2html()
-     now try harder to provide tidy XHTML code.
+    now try harder to provide tidy XHTML code.
 
 
 Changes in Version 0.4-9

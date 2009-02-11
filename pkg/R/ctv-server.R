@@ -26,14 +26,16 @@ read.ctv <- function(file)
     if(prefix) {    
       viewprefix <- "CRAN Task View: "
       biocprefix <- "Bioconductor Package: "
-      forgeprefix <- "R-Forge Project: "
-      googlecodeprefix <- "Google Code Project: "
+      ohatprefix <- "Omegahat Package: "
+      rforgeprefix <- "R-Forge Project: "
+      gcodeprefix <- "Google Code Project: "
       target <- " target=\"_top\""
     } else {
       viewprefix <- ""
       biocprefix <- ""
-      forgeprefix <- ""
-      googlecodeprefix <- ""
+      ohatprefix <- ""
+      rforgeprefix <- ""
+      gcodeprefix <- ""
       target <- ""
     }
 
@@ -50,20 +52,23 @@ read.ctv <- function(file)
     if(name == "view")
       return(paste(viewprefix, "<a href=\"", viewURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))
     if(name == "info")
-      name <- "p"
+      name <- "div"
     if(name == "comment")
       return(NULL)
     if(name == "code")
       return(paste("<tt>", xmlValue(x), "</tt>", sep = ""))
-    if(name == "forge")
-      return(paste(forgeprefix, "<a href=\"http://R-Forge.R-project.org/projects/",
-        xmlValue(x), "/\"", target, "><font color=\"#0076D5\">", xmlValue(x), "</font></a>", sep = ""))
-    if(name == "googlecode")
-      return(paste(googlecodeprefix, "<a href=\"http://code.google.com/p/",
-        xmlValue(x), "/\"", target, "><font color=\"#0076D5\">", xmlValue(x), "</font></a>", sep = ""))
+    if(name == "rforge")
+      return(paste(rforgeprefix, "<a href=\"http://R-Forge.R-project.org/projects/",
+        xmlValue(x), "/\"", target, "><span class=\"Rforge\">", xmlValue(x), "</span></a>", sep = ""))
+    if(name == "gcode")
+      return(paste(gcodeprefix, "<a href=\"http://code.google.com/p/",
+        xmlValue(x), "/\"", target, "><span class=\"Gcode\">", xmlValue(x), "</span></a>", sep = ""))
     if(name == "bioc")
       return(paste(biocprefix, "<a href=\"http://www.Bioconductor.org/packages/release/bioc/html/",
-        xmlValue(x), ".html\"", target, "><font color=\"#2C92A1\">", xmlValue(x), "</font></a>", sep = ""))
+        xmlValue(x), ".html\"", target, "><span class=\"BioC\">", xmlValue(x), "</span></a>", sep = ""))
+    if(name == "ohat")
+      return(paste(ohatprefix, "<a href=\"http://www.Omegahat.org/",
+        xmlValue(x), "/\"", target, "><span class=\"Ohat\">", xmlValue(x), "</span></a>", sep = ""))
 
     ## get attributes
     tmp <- if(!is.null(xmlAttrs(x)))
@@ -127,7 +132,7 @@ read.ctv <- function(file)
 
 ctv2html <- function(x,
                      file = NULL,
-                     css = "../../R.css",
+                     css = "../CRAN_web.css",
 		     packageURL = "../packages/",
 		     reposname = "CRAN")
 {
@@ -193,7 +198,7 @@ ctv2html <- function(x,
 }
 
 repos_update_views <- function(repos = ".",
-			       css = "../../R.css",
+			       css = "../CRAN_web.css",
 		   	       reposname = "CRAN",
 			       ...)
 {
@@ -254,7 +259,8 @@ repos_update_views <- function(repos = ".",
 
   ## generate index HTML file
   if(is.character(index)) {
-    idx <- c("<html>",
+    idx <- c("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">",
+             "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
              "",
 	     "<head>",
        paste("  <title>", reposname, " Task Views</title>", sep = ""),
@@ -264,7 +270,7 @@ repos_update_views <- function(repos = ".",
 	     "<body>",
        paste("<h1>", reposname, " Task Views</h1>", sep = ""),
 	     "",
-	     "<table>",
+       paste("<table summary=\"", reposname," Task Views\">", sep = ""),
 	     apply(idx, 1, function(x) paste("  <tr valign=\"top\">\n    <td><a href=\"",
 	       x[1], ".html\">", x[1], "</a></td>\n    <td>", gsub("&", "&amp;", x[2]), "</td>\n  </tr>", sep = "")),
 	     "</table>",
