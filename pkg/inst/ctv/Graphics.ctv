@@ -73,7 +73,7 @@
           section except that these packages have tools that may not for display, but can 
           aid in creating effective displays. Also included are packages with more esoteric 
           plotting methods. For specific subject areas, like maps, or clustering the excellent
-          task views contributed by other dedicated useRs is an excellent place to start. 
+          task views contributed by other dedicated useRs is an excellent place to start.</li>
           <ul>
           <li><i>Effect ordering</i>:
           The <pkg>gclus</pkg> package focuses on the ordering of graphs to accentuate cluster 
@@ -104,8 +104,7 @@
            facilities for flow diagrams and simple graphs. For more sophisticated graphs 
            <pkg>Rgraphviz</pkg> and <pkg>igraph</pkg> have functions for plotting and 
            layout, especially useful for representing large networks</li>. 
-          </ul></li>
-	  
+          </ul>
       <li><i>Graphics Systems</i>: <pkg>lattice</pkg> is built on top of the <pkg>grid</pkg>
           graphics system and is an R implementation of William Cleveland's trellis
 	  system for S-PLUS. <pkg>lattice</pkg> allows for building many types of plots

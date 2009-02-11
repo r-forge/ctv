@@ -29,7 +29,7 @@
   <p>The packages can be roughly structured into the following topics
   (although several of them have functionalities which go across these categories):</p>
 
-  <p><strong>Representation, manipulation and display of graphs</strong>
+  <p><strong>Representation, manipulation and display of graphs</strong></p>
   <ul>
     <li>
     <pkg>graph</pkg> [vignette: y; demo: n] 
@@ -87,10 +87,9 @@
   <bioc>Rgraphviz</bioc>
   package on Bioconductor that provides plotting capabilities for R graph
   objects (from the <pkg>graph</pkg> package) [vignette: y; demo: n].
-  </p>
 
 
-  <p><strong>Classical models - General purpose packages</strong>
+  <p><strong>Classical models - General purpose packages</strong></p>
   <ul>
     <li>
     <pkg>gRbase</pkg> [vignette: y; demo: y]
@@ -121,9 +120,8 @@
     Fitting graphical Gaussian models.
     </li>
   </ul>
-  </p>
 
-  <p><strong>Miscellaneous: Model search, specialized types of models etc.</strong>
+  <p><strong>Miscellaneous: Model search, specialized types of models etc.</strong></p>
   <ul>
     <li>
     <pkg>SIN</pkg> [vignette: n; demo: n]
@@ -162,9 +160,8 @@
 
 
   </ul>
-  </p>
 
-  <p><strong>Bayesian Networks/Probabilistic expert systems</strong>
+  <p><strong>Bayesian Networks/Probabilistic expert systems</strong></p>
   <ul>
     <li>
     <pkg>gRain</pkg> [vignette: y; demo: n] 
@@ -178,9 +175,8 @@
     continuous) variables.
     </li>
   </ul>
-  </p>
 
-  <p><strong>BUGS models</strong>
+  <p><strong>BUGS models</strong></p>
   <ul>
 
     <li>
@@ -236,7 +232,6 @@
     Fit, Simulate and Diagnose Exponential-Family Models for Networks
     </li>
   </ul>
-  </p>
   </info>
 
   <packagelist>

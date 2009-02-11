@@ -15,7 +15,7 @@
        <p>The packages in this view can be roughly structured into the following topics.
        If you think that some package is missing from the list, please let me know.</p>
     
-          <p><strong>Visualising multivariate data</strong>
+          <p><strong>Visualising multivariate data</strong></p>
           <ul>
           <li><i>Graphical Procedures:</i> A range of base graphics (e.g. <code>pairs()</code> and <code>coplot()</code>) and 
           <pkg>lattice</pkg> functions (e.g. <code>xyplot()</code> and <code>splom()</code>) are useful for
@@ -60,14 +60,14 @@
           given number of similar variables using using k-nearest neighbours,
          <pkg>dprep</pkg> provides preprocessing and visualization functions specifically for 
          classification such as checking for variable redundancy, performing a range of 
-         normalisations.   Whilst <code>dist()</code> in base and <code>daisy()</code> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices. <pkg>simba</pkg> provides functions for dealing with presence / absence data including similarity matrices and reshaping.</li></ul></p>
+         normalisations.   Whilst <code>dist()</code> in base and <code>daisy()</code> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices. <pkg>simba</pkg> provides functions for dealing with presence / absence data including similarity matrices and reshaping.</li></ul>
 
-<p><strong>Hypothesis testing</strong>  
+<p><strong>Hypothesis testing</strong></p>
  
-<ul><li><pkg>ICSNP</pkg> provides Hotellings T2 test as well as a range of non-parametric tests including location tests based on marginal ranks, spatial median and spatial signs computation, estimates of shape.  Non-parametric two sample tests are also available from <pkg>cramer</pkg> and spatial sign and rank tests to investigate location, sphericity and independence are available in <pkg>SpatialNP</pkg>. </li></ul>  </p>
+<ul><li><pkg>ICSNP</pkg> provides Hotellings T2 test as well as a range of non-parametric tests including location tests based on marginal ranks, spatial median and spatial signs computation, estimates of shape.  Non-parametric two sample tests are also available from <pkg>cramer</pkg> and spatial sign and rank tests to investigate location, sphericity and independence are available in <pkg>SpatialNP</pkg>. </li></ul>
 
 
-          <p><strong>Multivariate distributions</strong>
+          <p><strong>Multivariate distributions</strong></p>
 
           <ul><li><i>Descriptive measures:</i> <code>cov()</code> and <code>cor()</code> in stats 
           will provide estimates of the covariance
@@ -110,18 +110,18 @@
           <li><i>Copulas:</i><pkg>copula</pkg> provides 
           routines for a range of (elliptical and archimedean) copulas including 
           normal, t, Clayton, Frank, Gumbel, <pkg>fgac</pkg> provides 
-          generalised archimedian copula, bivariate copulas can be fitted with <pkg>mlCopulaSelection</pkg>. </li></ul></p>
+          generalised archimedian copula, bivariate copulas can be fitted with <pkg>mlCopulaSelection</pkg>. </li></ul>
 
-         <p><strong>Linear models</strong>
+         <p><strong>Linear models</strong></p>
           <ul><li>From stats, <code>lm()</code> (with a matrix specified as the dependent variable)
 	  offers multivariate linear models, <code>anova.mlm()</code> provides comparison of 
           multivariate linear models.   <code>manova()</code> offers MANOVA.  <pkg>sn</pkg> provides <code>msn.mle()</code> and <code>mst.mle()</code> which fit multivariate skew normal and multivariate skew t models.<pkg>pls</pkg>
 	  provides partial least squares regression (PLSR) and principal component regression, <pkg>ppls</pkg> provides penalized partial least squares, 
 	  <pkg>dr</pkg> provides dimension reduction regression options such as <code>"sir"</code> (sliced
 	  inverse regression), <code>"save"</code> (sliced average variance estimation).
-	  <pkg>plsgenomics</pkg> provides partial least squares analyses for genomics.    <pkg>relaimpo</pkg> provides functions to investigate the relative importance of regression parameters.</li></ul></p>
+	  <pkg>plsgenomics</pkg> provides partial least squares analyses for genomics.    <pkg>relaimpo</pkg> provides functions to investigate the relative importance of regression parameters.</li></ul>
 
-          <p><strong>Projection methods</strong>
+          <p><strong>Projection methods</strong></p>
           <ul><li><i>Principal components:</i> these can be fitted with <code>prcomp()</code> 
           (based on <code>svd()</code>,
 	  preferred) as well as <code>princomp()</code> (based on <code>eigen()</code> for  compatibility
@@ -159,15 +159,15 @@
 	  <pkg>vegan</pkg> provides procrustes analysis, this package also provides functions
 	  for ordination and further information on that area is given in the
           <view>Environmetrics</view> task view.    Generalised procrustes analysis via <code>GPA()</code> is available from <pkg>FactoMineR</pkg>.  
-           </li></ul></p>
+           </li></ul>
 
-          <p><strong>Principal coordinates / scaling methods</strong>
+          <p><strong>Principal coordinates / scaling methods</strong></p>
           <ul><li><code>cmdscale()</code> in stats provides classical multidimensional scaling
 	  (principal coordinates analysis), <code>sammon()</code> and <code>isoMDS()</code> in MASS 
 	  offer Sammon and Kruskal's non-metric multidimensional scaling. <pkg>vegan</pkg>
-	  provides wrappers and post-processing for non-metric MDS.   <code>indscal()</code> is provided by <pkg>SensoMineR</pkg>.</li></ul></p>
+	  provides wrappers and post-processing for non-metric MDS.   <code>indscal()</code> is provided by <pkg>SensoMineR</pkg>.</li></ul>
 
-          <p><strong>Unsupervised classification</strong>
+          <p><strong>Unsupervised classification</strong></p>
 	  <ul><li><i>Cluster analysis:</i> A comprehensive overview of clustering 
           methods available within R is provided by the  
           <view>Cluster</view> task view.  Standard techniques include hierarchical clustering by 
@@ -188,9 +188,9 @@
           regression trees, <pkg>party</pkg> provides recursive partitioning and <pkg>rrp</pkg> provides
 	  random recursive partitioning.   Classification and regression training is provided by
 	  <pkg>caret</pkg>. (Formerly, caretLSF provided additional parallel processing capacity
-	  which has now been incorporated into <pkg>caret</pkg>.)   <pkg>kknn</pkg> provides k-nearest neighbour methods which can be used for regression as well as classification.</li></ul></p>
+	  which has now been incorporated into <pkg>caret</pkg>.)   <pkg>kknn</pkg> provides k-nearest neighbour methods which can be used for regression as well as classification.</li></ul>
 
-          <p><strong>Supervised classification and discriminant analysis</strong>
+          <p><strong>Supervised classification and discriminant analysis</strong></p>
           <ul><li><code>lda()</code> and <code>qda()</code> within MASS provide linear
 	  and quadratic discrimination respectively. <pkg>mda</pkg> provides mixture and
 	  flexible discriminant analysis with <code>mda()</code> and <code>fda()</code> as well as
@@ -208,22 +208,22 @@
 	  generalised partial least squares.  <pkg>hddplot</pkg> provides cross-validated linear discriminant calculations to determine the optimum number of features.   <pkg>supclust</pkg> relates to supervised
 	  clustering of genes.  <pkg>ROCR</pkg> provides a range of methods for assessing classifier performance.   <pkg>predbayescor</pkg> provides naive Bayes classification.
         Further information on supervised classification can be found in 
-          the <view>MachineLearning</view> task view.</li></ul></p>
+          the <view>MachineLearning</view> task view.</li></ul>
 
 
-          <p><strong>Correspondence analysis</strong>
+          <p><strong>Correspondence analysis</strong></p>
           <ul><li><code>corresp()</code> and <code>mca()</code> in MASS provide simple and
 	  multiple correspondence analysis respectively.   <pkg>ca</pkg> also provides single, multiple and joint correspondence analysis.   <code>ca()</code> and <code>mca()</code>
 	  in <pkg>ade4</pkg> provide correspondence and multiple correspondence analysis
 	  respectively, as well as adding homogeneous table analysis with <code>hta()</code>.
 	  Further functionality is also available within <pkg>vegan</pkg> co-correspondence 
-          is available from <pkg>cocorresp</pkg>.   <pkg>FactoMineR</pkg> provides <code>CA()</code> and <code>MCA()</code> which also enable simple and multiple corresondence analysis as well as associated graphical routines.   <pkg>homals</pkg> provides homogeneity analysis.</li></ul></p>
+          is available from <pkg>cocorresp</pkg>.   <pkg>FactoMineR</pkg> provides <code>CA()</code> and <code>MCA()</code> which also enable simple and multiple corresondence analysis as well as associated graphical routines.   <pkg>homals</pkg> provides homogeneity analysis.</li></ul>
 
-          <p><strong>Forward search</strong>
+          <p><strong>Forward search</strong></p>
           <ul><li>The forward search for classical mulivariate methods can be implemented in association
-	  with <pkg>Rfwdmv</pkg>.</li></ul></p>
+	  with <pkg>Rfwdmv</pkg>.</li></ul>
 
-          <p><strong>Missing data</strong>
+          <p><strong>Missing data</strong></p>
           <ul><li><pkg>mitools</pkg> provides tools for multiple imputation, <pkg>mice</pkg> provides
 	  multivariate imputation by chained equations <pkg>mvnmle</pkg> provides ML estimation
 	  for multivariate normal data with missing values, <pkg>norm</pkg> provides multiple
@@ -232,36 +232,36 @@
 	  categorical and continuous data. <pkg>pan</pkg> provides multiple imputation for
 	  missing panel data.  <pkg>VIM</pkg> provides methods for the visualisation as well as imputation of missing data.    <code>aregImpute()</code> and <code>transcan()</code> from
           <pkg>Hmisc</pkg> provide further imputation methods.   
-          <pkg>EMV</pkg> provides knn methods for missing data. <pkg>monomvn</pkg> deals with estimation models where the missing data pattern is monotone. </li></ul></p>
+          <pkg>EMV</pkg> provides knn methods for missing data. <pkg>monomvn</pkg> deals with estimation models where the missing data pattern is monotone. </li></ul>
      
-          <p><strong>Latent variable approaches</strong>
+          <p><strong>Latent variable approaches</strong></p>
           <ul><li><code>factanal()</code> in stats provides factor analysis by maximum
 	  likelihood, Bayesian factor analysis
 	  is provided for Gaussian, ordinal and mixed variables in <pkg>MCMCpack</pkg>.
 	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation.    <pkg>FAiR</pkg> provides factor analysis solved using genetic algorithms.   <pkg>ifa</pkg> provides factor analysis with non-Gaussian latent variables (which are actually a mixture of Gaussian densitities).
 	  <pkg>sem</pkg> fits linear structural equation models and <pkg>ltm</pkg> provides
-	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <code>MFA()</code> and <code>HMFA()</code>for multiple and hierarchical multiple factor analysis as well as <code>ADFM()</code> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul></p>
+	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <code>MFA()</code> and <code>HMFA()</code>for multiple and hierarchical multiple factor analysis as well as <code>ADFM()</code> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul>
 
-          <p><strong>Modelling non-Gaussian data</strong>
+          <p><strong>Modelling non-Gaussian data</strong></p>
           <ul><li><pkg>bivpois</pkg> models bivariate Poisson variables.    <pkg>mprobit</pkg> provides 
           multivariate probit model for binary as well as ordinal response, <pkg>MNP</pkg> 
           provides Bayesian multinomial probit models,   <pkg>polycor</pkg> provides 
           polchoric and tetrachoric
 	  correlation matrices. <pkg>bayesm</pkg> provides a range of models such as seemingly 
           unrelated regression, multinomial logit/probit, multivariate probit and instrumental 
-          variables.    <pkg>VGAM</pkg> provides Vector Generalised Linear and Additive Models, Reduced Rank regression</li></ul></p>
+          variables.    <pkg>VGAM</pkg> provides Vector Generalised Linear and Additive Models, Reduced Rank regression</li></ul>
 
-          <p><strong>Matrix manipulations</strong>
+          <p><strong>Matrix manipulations</strong></p>
           <ul><li>As a vector- and matrix-based language, base R ships with many powerful tools for
 	  doing matrix manipulations, which are complemented by the packages <pkg>Matrix</pkg>
-	  and <pkg>SparseM</pkg>.    <pkg>matrixcalc</pkg> adds functions for matrix differential calculus.   Some further sparse matrix functionality is also available from <pkg>spam</pkg>.</li></ul></p>
+	  and <pkg>SparseM</pkg>.    <pkg>matrixcalc</pkg> adds functions for matrix differential calculus.   Some further sparse matrix functionality is also available from <pkg>spam</pkg>.</li></ul>
 
-      <p><strong>Miscellaneous utitlies</strong>
+      <p><strong>Miscellaneous utitlies</strong></p>
           <ul><li>The technique of Data Envlopment Analysis has been made available in <pkg>DEA</pkg>.   <pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.   <pkg>SharedHT2</pkg> provides an implementation of Hotelling's T2 test for
 	  microarray experiments. <pkg>panel</pkg> provides methods for modelling panel data.
 	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
 	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.   <pkg>compositions</pkg> provides for compositional data analysis.   <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
-	  cwhmath in the <pkg>cwhmisc</pkg> bundle contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.   <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul></p>
+	  cwhmath in the <pkg>cwhmisc</pkg> bundle contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.   <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
        
   </info>
 

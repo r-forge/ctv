@@ -5,7 +5,6 @@
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
   <version>2008-12-08</version>
   <info>
-    <p>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
         of single nucleotide polymorphisms (SNPs) in widely available databases, coupled with major advances in SNP genotyping
@@ -236,7 +235,6 @@
           project.
         </li>
       </ul>
-    </p>
   </info>
 
   <packagelist>

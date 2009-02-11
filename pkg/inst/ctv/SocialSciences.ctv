@@ -26,7 +26,7 @@
     
     <p>
       Univariate and multivariate linear models are fit by the <code>lm</code> function, generalized linear models by the <code>glm</code> function, both in the R-base stats package. Beyond <code>summary</code> and <code>plot</code> methods for <code>lm</code> and <code>glm</code> objects, there is a wide array of functions that support these objects: 
-      
+    </p>  
       <ul>
           <li>
           The generic <code>anova</code> function in the stats package constructs sequential analysis of variance and analysis of deviance tables, and can compute <i>F</i> and likelihood-ratio tests for nested models. (It is typical for other classes of statistical models in R to have <code>anova</code> methods as well.) The generic <code>Anova</code> function in the <pkg>car</pkg> package (associated with Fox, <i>An R and S-PLUS Companion to Applied Regression,</i> Sage, 2002) constructs so-called "Type-II" and "Type-III" tests for linear and generalized linear models.
@@ -47,7 +47,6 @@
           Several packages contain functions that are useful for interpreting linear and generalized linear models that have been fit to data: The <pkg>qvcalc</pkg> packages computes "quasi variances" for factors in linear and generalized linear models (and more generally). The <pkg>effects</pkg> package constructs effect displays, including, e.g., "adjusted means," for linear and generalized linear models. The <pkg>Zelig</pkg> package (see under <a href="#Collections">"Collections"</a>) creates displays for many kinds of statistical models.
           </li>
       </ul>
-    </p>
       
     <p><strong>Analysis of Categorical and Count Data:</strong></p>
     
@@ -57,6 +56,7 @@
     
     <p>
     There are other noteworthy facilities for analyzing categorical and count data:
+    </p>
       <ul>
           <li>
           The <code>table</code> function in the R-base base package and the <code>xtabs</code> and <code>ftable</code> functions in the stats package construct contingency tables. 
@@ -80,13 +80,12 @@
           The <pkg>gnm</pkg> package estimates generalized <i>nonlinear</i> models, and can be used, e.g., to fit certain specialized models to mobility tables.
           </li>
       </ul>
-    </p>
       
     <p><strong>Other Regression Models:</strong></p>
     
     <p>
     It is possible to fit a very wide variety of regression models with the facilities provided by the base and recommended packages, and a much wider variety of models with contributed packages:
-    
+    </p>
       <ul>
           <li>
           <i>Nonlinear regression:</i> The <code>nls</code> function in the stats package fits nonlinear models by least-squares.    
@@ -130,13 +129,12 @@
           <i>Selection bias and censored regression:</i> Censored regression models, such as the tobit model, can be fit by the <code>survreg</code> function in the recommended <pkg>survival</pkg> package. The <code>rq</code> function in the <pkg>quantreg</pkg> package can estimate censored quantile-regression models. The <code>hurdle</code> and <code>zeroinfl</code> functions in the <pkg>pscl</pkg> package fit hurdle and zero-inflated Poisson and negative-binomial models to count data. The <code>heckit</code> function in the <pkg>micEcon</pkg> package implements two-step Heckman estimators to correct for sample-selection bias. Also see under <a href="#Survival">Survival Analysis</a> below.
           </li>
       </ul>
-    </p>
     
     <p><strong>Other Statistical Methods:</strong></p>
     
     <p>
     Here is a brief survey of implementations in R of other statistical methods commonly used by social scientists:
-    
+    </p>
       <ul>
           <li>
           <a NAME="Survival"></a><i>Survival (Event-History) Analysis:</i> There is an extensive implementation of methods of survival analysis in the recommended <pkg>survival</pkg> package, which is associated with Therneau and Grambsch, <i>Modeling Survival Data</i> (Springer, 2000). Also see the  <pkg>eha</pkg>, <pkg>survrec</pkg>, <pkg>frailtypack</pkg>, and <pkg>Design</pkg> packages.   
@@ -190,13 +188,12 @@
           <i>Propensity Scores and Matching:</i> See the <pkg>Matching</pkg>, <pkg>MatchIt</pkg>, <pkg>optmatch</pkg>, and <pkg>USPS</pkg> packages.
           </li>   
       </ul>
-    </p>
     
     <p><a NAME="Collections"></a><strong>Collections of Functions:</strong></p>
     
     <p>
     There are some packages that are so heterogeneous that they are difficult to classify, yet contain functions (typically in multiple domains) that are potentially of interest to social scientists:
-    
+    </p>
       <ul>
           <li> 
           I have already made several references to the recommended MASS package, which is associated with Venables and Ripley's <i>Modern Applied Statistics With S</i>. Other recommended packages associated with this book are nnet, for fitting neural networks (but also, as mentioned, multinomial logistic-regression models); spatial for spatial statistics; and class, which contains functions for classification. All are part of the <pkg>VR</pkg> bundle.
@@ -210,7 +207,6 @@
           The <pkg>Zelig</pkg> package integrates a wide array of statistical models of interest to social scientists (see the <a href="http://gking.harvard.edu/zelig">Zelig web site</a> for details).
           </li>
       </ul>       
-    </p>
     
   </info>
   
