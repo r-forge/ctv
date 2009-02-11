@@ -6,7 +6,7 @@
   <version>2008-03-18</version>
   
   <info>
-    R is rich with facilities for creating and developing interesting graphics.
+    <p>R is rich with facilities for creating and developing interesting graphics.
     Base R contains functionality for many plot types including coplots, 
     mosaic plots, biplots, and the list goes on. There are devices such as 
     postscript, png, jpeg and pdf for outputting graphics as well as device
@@ -14,9 +14,9 @@
     <pkg>grid</pkg> are supplied with R's recommended packages and are 
     included in every binary distribution. <pkg>lattice</pkg> is an R 
     implementation of William Cleveland's trellis graphics, while grid 
-    defines a much more flexible graphics environment than the base R graphics.
+    defines a much more flexible graphics environment than the base R graphics.</p>
     
-    R's base graphics are implemented in the same way as in the S3
+    <p>R's base graphics are implemented in the same way as in the S3
     system developed by Becker, Chambers, and Wilks. There is a static
     device, which is treated as a static canvas and objects are drawn on
     the device through R plotting commands. The device has a set of global
@@ -26,9 +26,9 @@
     buffering, so objects cannot be easily edited without redrawing a whole
     plot. This situation may change in R 2.7.x, where developers are working on double 
     buffering for R devices. Even so, the base R graphics can produce many plots with
-    extremely fine graphics in many specialized instances.  
+    extremely fine graphics in many specialized instances.</p> 
 
-    One can quickly run into trouble with R's base graphic system if
+    <p>One can quickly run into trouble with R's base graphic system if
     one wants to design complex layouts where scaling is maintained
     properly on resizing, nested graphs are desired or more interactivity
     is needed. <pkg>grid</pkg> was designed by Paul Murrell to overcome
@@ -42,13 +42,13 @@
     maintains a stack of viewports from the device and one needs to make
     sure the desired viewport is at the top of the stack. There is a great
     deal of explanatory documentation included with <pkg>grid</pkg> as
-    vignettes.     
+    vignettes.</p>   
 
 
-    The graphics packages in R can be organized roughly into the following 
+    <p>The graphics packages in R can be organized roughly into the following 
     topics, which range from the more user oriented at the top to the more developer 
     oriented at the bottom. The categories are not mutually exclusive but are for the 
-    convenience of presentation:
+    convenience of presentation:</p>
     <ul>
 
       <li><i>Plotting</i>:
@@ -73,7 +73,7 @@
           section except that these packages have tools that may not for display, but can 
           aid in creating effective displays. Also included are packages with more esoteric 
           plotting methods. For specific subject areas, like maps, or clustering the excellent
-          task views contributed by other dedicated useRs is an excellent place to start.</li>
+          task views contributed by other dedicated useRs is an excellent place to start.
           <ul>
           <li><i>Effect ordering</i>:
           The <pkg>gclus</pkg> package focuses on the ordering of graphs to accentuate cluster 
@@ -103,8 +103,9 @@
            implementead and is useful for plotting larger trees. <pkg>diagram</pkg> as 
            facilities for flow diagrams and simple graphs. For more sophisticated graphs 
            <pkg>Rgraphviz</pkg> and <pkg>igraph</pkg> have functions for plotting and 
-           layout, especially useful for representing large networks</li>. 
+           layout, especially useful for representing large networks.</li>
           </ul>
+	  </li>
       <li><i>Graphics Systems</i>: <pkg>lattice</pkg> is built on top of the <pkg>grid</pkg>
           graphics system and is an R implementation of William Cleveland's trellis
 	  system for S-PLUS. <pkg>lattice</pkg> allows for building many types of plots
