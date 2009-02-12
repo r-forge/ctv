@@ -16,7 +16,7 @@ ctv2html(x, file = NULL, css = "../CRAN_web.css", packageURL = "../packages/", r
 \arguments{
   \item{repos}{character, the base URL of the CRAN-style repository where the \file{Views.rds}
     and \file{.html} files should be installed. The \file{.ctv} files should
-    be located in the \file{src/contrib/Views} directory.}
+    be located in the \file{web/views/} directory.}
   \item{css}{character specifying the path and name of the cascade style
     sheet that should be included in the HTML files.}
   \item{reposname}{character giving the name of the CRAN-style repository,
