@@ -12,47 +12,25 @@
   among random variables by a graph in which each node is a random
   variable, and the missing edges between the nodes represent
   conditional independencies</i>.
+  </p>
 
   This task view is a collection of packages intended to supply R code
-  to deal with graphical models.</p>
-
+  to deal with graphical models.
 
   The description of each package is accompanied by the statement
   [vignette: y/n; demo: y/n]. The aim is to give users
   indications of to which extent a package is documented beyond the bare
   standard documentation. 
-
-  <p><i>Note: I	have recently become maintainer of the gR task view
-  and I am currently in the process of updating the view. Please do contact me if a
-  package is missing, a description is inadequate etc. </i></p>
     
   <p>The packages can be roughly structured into the following topics
   (although several of them have functionalities which go across these categories):</p>
 
   <p><strong>Representation, manipulation and display of graphs</strong></p>
   <ul>
-    <li>
-    <pkg>graph</pkg> [vignette: y; demo: n] 
-	A package to handle graph data structures.
-    </li>
-
-<!--    <li>
-    <pkg>Rgraphviz</pkg> [vignette: y; demo: n] 
-	Provides plotting capabilities for R graph
-    objects (from the <pkg>graph</pkg> package).
-    </li> -->
 
     <li>
-    <pkg>RBGL</pkg> [vignette: y; demo: n] 
-	Interface to boost C++ graph library (based on graph
-    objects from the <pkg>graph</pkg> package).
-    </li>
-
-    <li>
-    <pkg>gRain</pkg>   [vignette: y; demo: y]
-    An alternative interface to graphs. Uses the
-    <pkg>graph</pkg> and <pkg>RBGL</pkg> and implements additional graph
-    operations. 
+    <pkg>diagram</pkg>  [vignette: n; demo: y]
+    Functions for visualising simple graphs (networks), plotting flow diagrams
     </li>
 
     <li>
@@ -63,25 +41,46 @@
     </li>
 
     <li>
+    <pkg>giRaph</pkg> [vignette: n; demo: y]
+    Supply classes and methods to represent and manipulate graphs
+    </li>
+
+    <li>
+    <pkg>graph</pkg> [vignette: y; demo: n] 
+	A package to handle graph data structures.
+    </li>
+
+    <li>
+    <pkg>gRbase</pkg>   [vignette: y; demo: y]
+    An alternative interface to graphs. Uses the
+    <pkg>graph</pkg> and <pkg>RBGL</pkg> and implements additional graph
+    operations. 
+    </li>
+
+    <li>
+    <pkg>igraph</pkg>   [vignette: n; demo: n]
+    Routines for simple graphs, network analysis.
+    </li>
+
+    <li>
     <pkg>mathgraph</pkg>   [vignette: n; demo: n]
     Implements matrix representations of graphs and
     provide a plot function.
     </li>
 
     <li>
-    <pkg>diagram</pkg>  [vignette: n; demo: y]
-    Functions for visualising simple graphs (networks), plotting flow diagrams
+    <pkg>network</pkg>   [vignette: n; demo: n]
+    Tools to create and modify network objects.  The network class can
+    represent a range of relational data types, and supports arbitrary
+    vertex/edge/graph attributes. 
     </li>
-    
+
     <li>
-    <pkg>giRaph</pkg> [vignette: n; demo: y]
-    Supply classes and methods to represent and manipulate graphs
+    <pkg>RBGL</pkg> [vignette: y; demo: n] 
+	Interface to boost C++ graph library (based on graph
+    objects from the <pkg>graph</pkg> package).
     </li>
-    
-    <li>
-    <pkg>igraph</pkg>   [vignette: n; demo: n]
-    Routines for simple graphs, network analysis.
-    </li>
+
   </ul>
   In addition, there is the
   <bioc>Rgraphviz</bioc>
@@ -91,15 +90,28 @@
 
   <p><strong>Classical models - General purpose packages</strong></p>
   <ul>
-    <li>
-    <pkg>gRbase</pkg> [vignette: y; demo: y]
-	Sets up a
-    meta data representation which is used by several other
-    packages (among these are <pkg>mimR</pkg> and
-    <pkg>gRain</pkg>). gRbase suggests a way to implement models and fitting
-    engines - illustrated by hierarchical log-linear models.
+
+    <li>      
+      <pkg>CoCo</pkg>[vignette: n; demo: y]
+      An advanced suite of functions for
+      contingency tabels, graphical Gaussian models and mixed
+      interaction models.  
     </li>
 
+    <li>
+      <pkg>ggm</pkg> [vignette: n; demo: n]
+      Fitting graphical Gaussian models.
+    </li>
+
+    <li>
+      <pkg>gRbase</pkg> [vignette: y; demo: y]
+      Sets up a
+      meta data representation which is used by several other
+      packages (among these are <pkg>mimR</pkg> and
+      <pkg>gRain</pkg>). gRbase suggests a way to implement models and fitting
+      engines - illustrated by hierarchical log-linear models.
+    </li>
+    
     <li>
       <pkg>mimR</pkg> [vignette: n; demo: n]
       General package for model selection in contingency
@@ -108,98 +120,98 @@
       program and only runs on Windows.  
     </li>
 
-    <li>      
-    <pkg>CoCo</pkg>[vignette: n; demo: y]
-    An advanced suite of functions for
-    contingency tabels, graphical Gaussian models and mixed
-    interaction models.  
-    </li>
-
-    <li>
-    <pkg>ggm</pkg> [vignette: n; demo: n]
-    Fitting graphical Gaussian models.
-    </li>
   </ul>
+
 
   <p><strong>Miscellaneous: Model search, specialized types of models etc.</strong></p>
   <ul>
+
     <li>
-    <pkg>SIN</pkg> [vignette: n; demo: n]
-    SIN model selection in Gaussian graphical Markov models.
+      <pkg>SIN</pkg> [vignette: n; demo: n]
+      This package provides routines to perform SIN model selection as
+      described in Drton and Perlman (2004).  The selected models are
+      represented in the format of the 'ggm' package, which allows in 
+      particular parameter estimation in the selected model. 
     </li>
 
     <li>
-    <pkg>pcalg</pkg> [vignette: y; demo: n]
-    Estimating the skeleton and equivalence class of a DAG
+      <pkg>pcalg</pkg> [vignette: y; demo: n]
+      Standard and robust estimation of the skeleton (ugraph) and the equivalence class
+      of a Directed Acyclic Graph (DAG) via the PC-Algorithm. The equivalence class is
+      represented by its (unique) Completed Partially Directed Acyclic Graph (CPDAG).
     </li>
 
     <li>
-    <pkg>qp</pkg> [vignette: n; demo: n]
-    q-order partial correlation graph search algorithm. A robust
-    procedure for structure learning of undirected Gaussian
-    graphical Markov models from "small n, large p" data.
+      <pkg>qp</pkg> [vignette: n; demo: n]
+      This package is deprecated and it is now only a stub for the newer version called
+      qpgraph available through the Bioconductor project. The q-order partial correlation
+      graph search algorithm, q-partial, or qp, algorithm for short, is a robust
+      procedure for structure learning of undirected Gaussian graphical Markov models
+      from "small n, large p" data, that is, multivariate normal data coming from a
+      number of random variables p larger than the number of multidimensional data points
+      n as in the case of, e.g., microarray data.
     </li>
 
     <li>
-    <pkg>gRc</pkg> [vignette: n; demo: n]
-    Inference in graphical Gaussian models with edge and vertex
-    symmetries (Graphical Gaussian models with colours).
+      <pkg>gRc</pkg> [vignette: n; demo: n]
+      Inference in graphical Gaussian models with edge and vertex
+      symmetries (Graphical Gaussian models with colours).
     </li>
-
+    
     <li>
-    <pkg>rggm</pkg> [vignette: n; demo: n]
-    Robustified methods for Gaussian Graphical Models. 
+      <pkg>rggm</pkg> [vignette: n; demo: n]
+      Robustified methods for Gaussian Graphical Models. 
     </li>
-
+    
     <li>
-    <pkg>GeneNet</pkg> [vignette: n; demo: n]
-    Modeling and Inferring Gene Networks. GeneNet
-	is a package for analyzing gene expression (time series) data with
-	focus on the inference of gene networks.
+      <pkg>GeneNet</pkg> [vignette: n; demo: n]
+      Modeling and Inferring Gene Networks. GeneNet
+      is a package for analyzing gene expression (time series) data with
+      focus on the inference of gene networks.
     </li>
-
 
   </ul>
 
+
+
   <p><strong>Bayesian Networks/Probabilistic expert systems</strong></p>
   <ul>
-    <li>
-    <pkg>gRain</pkg> [vignette: y; demo: n] 
-    Implements propagation (message passing) in graphical
-    models (Bayesian networks).
-    </li>
 
     <li>
     <pkg>deal</pkg> [vignette: n; demo: n]
     Learning Bayesian networks with mixed (discrete and
     continuous) variables.
     </li>
+
+    <li>
+    <pkg>gRain</pkg> [vignette: y; demo: n] 
+    Implements propagation (message passing) in graphical
+    models (Bayesian networks).
+    </li>
+
   </ul>
+
 
   <p><strong>BUGS models</strong></p>
   <ul>
 
     <li>
-    <pkg>R2WinBUGS</pkg> [vignette: y; demo: n]
-    Running WinBUGS and OpenBUGS from R / S-PLUS
-    </li>
-
-    <li>
-    <pkg>rbugs</pkg> [vignette: n; demo: n]
-    Fusing R and OpenBugs
+    <pkg>bayesmix</pkg> [vignette: n; demo: n]
+    Bayesian mixture models of univariate Gaussian distributions using JAGS
     </li>
 
 
     <li>
-    BRugs [vignette: n; demo: n]
-    Provides an R interface on Windows machines to OpenBUGS. It works only
-    under Windows and used to be available from CRAN, now it is
-    located at the <a href="http://www.stats.ox.ac.uk/pub/RWin/">
-    CRANextras</a> repository. 
-
-
-
-
+    <pkg>bnlearn</pkg> [vignette: n; demo: n] 
+    Bayesian network structure learning via constraint-based (also known as
+    'conditional independence') and score-based algorithms. This package implements the
+    Grow-Shrink (GS) algorithm, the Incremental Association (IAMB) algorithm, the
+    Interleaved-IAMB (Inter-IAMB) algorithm, the Fast-IAMB (Fast-IAMB) algorithm, the
+    Max-Min Parents and Children (MMPC) algorithm and the Hill-Climbing (HC) greedy
+    search algorithm for both discrete and Gaussian networks, along with many score
+    functions and conditional independence tests. Some utility functions (model
+    comparison and manipulation, random data generation, arc orientation testing) are
+    also included.
     </li>
 
     <li>
@@ -208,30 +220,44 @@
     </li>
 
     <li>
+    BRugs [vignette: n; demo: n]
+    An R / S-PLUS package containing OpenBUGS and its R / S-PLUS interface
+    BRugs. Notice: currently the only supported OS is Windows, we expect to support Linux in
+    future releases.
+    </li>
+
+    <li>
     <pkg>coda</pkg> [vignette: n; demo: n]
-    Output analysis and diagnostics for MCMC.
-    </li>
-
-    <li>
-    <pkg>bayesmix</pkg> [vignette: n; demo: n]
-    Bayesian network structure learning
-    </li>
-
-    <li>
-    <pkg>bnlearn</pkg> [vignette: n; demo: n] 
-    Bayesian network structure learning
-    </li>
-
-    <li>
-    <pkg>G1DBN</pkg> [vignette: n; demo: n] 
-    A package performing Dynamic Bayesian Network inference.
+    Output analysis and diagnostics for Markov Chain Monte Carlo simulations.
     </li>
 
     <li>
     <pkg>ergm</pkg> [vignette: n; demo: n]
-    Fit, Simulate and Diagnose Exponential-Family Models for Networks
+    An integrated set of tools to analyze and simulate networks based on
+    exponential-family random graph models (ERGM). "ergm" is a part of the 
+    <a href="http://statnet.org/">statnet</a>
+    suite of packages for network analysis.
     </li>
+
+    <li>
+    <pkg>G1DBN</pkg> [vignette: n; demo: n] 
+    G1DBN performs DBN inference using 1st order conditional dependencies.
+    </li>
+    
+    <li>
+    <pkg>rbugs</pkg> [vignette: n; demo: n]
+    Fusing R and OpenBugs
+    </li>
+
+    <li>
+    <pkg>R2WinBUGS</pkg> [vignette: y; demo: n]
+    Running WinBUGS and OpenBUGS from R / S-PLUS
+    </li>
+
   </ul>
+
+
+
   </info>
 
   <packagelist>
