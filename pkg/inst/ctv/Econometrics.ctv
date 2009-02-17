@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-02-12</version>
+  <version>2009-02-17</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -121,7 +121,9 @@
       <li>Classical time series modeling tools are
           contained in the stats package and include <code>arima()</code> for ARIMA modeling
 	  and Box-Jenkins-type analysis.</li>
-      <li>structural time series models are provided by <code>StructTS()</code> in stats.</li>
+      <li>Fitting linear regression models with AR error terms via OLS is possible
+          using <code>gls()</code> from <pkg>nlme</pkg>.</li>
+      <li>Structural time series models are provided by <code>StructTS()</code> in stats.</li>
       <li>Filtering and decomposition for time series is available in
           <code>decompose()</code> and <code>HoltWinters()</code> in stats.</li>
       <li>Extensions to these
