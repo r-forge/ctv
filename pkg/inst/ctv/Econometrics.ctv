@@ -136,6 +136,7 @@
 	  in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.</li>
       <li>More advanced dynamic system equations can be fitted using <pkg>dse</pkg>.</li>
+      <li>Various nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li>
       <li>Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
 	  Kalman filtering/smoothing and Bayesian methods).</li>
       <li>Unit root and cointegration techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and
@@ -241,7 +242,8 @@
     <pkg>strucchange</pkg>
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
-    <pkg priority="core">tseries</pkg>
+    <pkg>tsDyn</pkg>
+    <pkg priority="core">tseries</pkg>    
     <pkg>tsfa</pkg>
     <pkg priority="core">urca</pkg>
     <pkg>uroot</pkg>
