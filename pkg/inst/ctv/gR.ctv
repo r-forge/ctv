@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
-  <version>2009-02-17</version>
+  <version>2009-02-25</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -159,11 +159,6 @@
     </li>
     
     <li>
-      <pkg>rggm</pkg> [vignette: n; demo: n]
-      Robustified methods for Gaussian Graphical Models. 
-    </li>
-    
-    <li>
       <pkg>GeneNet</pkg> [vignette: n; demo: n]
       Modeling and Inferring Gene Networks. GeneNet
       is a package for analyzing gene expression (time series) data with
@@ -286,7 +281,6 @@
     <pkg>R2WinBUGS</pkg>
     <pkg>RBGL</pkg>
     <pkg>rbugs</pkg>
-    <pkg>rggm</pkg>
   </packagelist>
 
   <links>
