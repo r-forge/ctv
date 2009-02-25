@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-02-17</version>
+  <version>2009-02-25</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -81,6 +81,8 @@
       <li>Quantile regression: <pkg>quantreg</pkg> (now including also censored
           quantile regression, previously only available in <pkg>crq</pkg>).</li>
       <li>Linear models for panel data: <pkg>plm</pkg>.</li>
+      <li>Generalized method of moments (GMM) and generalized empirical likelihood (GEL):
+          <pkg>gmm</pkg>.</li>
       <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
       <li>Simultaneous equation estimation: <pkg>systemfit</pkg>.</li>
       <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
@@ -215,6 +217,7 @@
     <pkg>FinTS</pkg>
     <pkg>forecasting</pkg>
     <pkg>frontier</pkg>
+    <pkg>gmm</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
     <pkg>its</pkg>
