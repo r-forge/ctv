@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2008-05-09</version>
+  <version>2009-02-25</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -56,8 +56,6 @@
           assist with descriptive functions; from the same package <code>varclus()</code> offers variable 
           clustering while <code>dataRep()</code> and <code>find.matches()</code> assist in exploring a given 
           dataset in terms of representativeness and finding matches.  
-          <pkg>knnFinder</pkg> provides <code>nn()</code> which uses a kd-tree to (quickly) find a 
-          given number of similar variables using using k-nearest neighbours,
          <pkg>dprep</pkg> provides preprocessing and visualization functions specifically for 
          classification such as checking for variable redundancy, performing a range of 
          normalisations.   Whilst <code>dist()</code> in base and <code>daisy()</code> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices. <pkg>simba</pkg> provides functions for dealing with presence / absence data including similarity matrices and reshaping.</li></ul>
@@ -232,7 +230,7 @@
 	  categorical and continuous data. <pkg>pan</pkg> provides multiple imputation for
 	  missing panel data.  <pkg>VIM</pkg> provides methods for the visualisation as well as imputation of missing data.    <code>aregImpute()</code> and <code>transcan()</code> from
           <pkg>Hmisc</pkg> provide further imputation methods.   
-          <pkg>EMV</pkg> provides knn methods for missing data. <pkg>monomvn</pkg> deals with estimation models where the missing data pattern is monotone. </li></ul>
+	  <pkg>monomvn</pkg> deals with estimation models where the missing data pattern is monotone. </li></ul>
      
           <p><strong>Latent variable approaches</strong></p>
           <ul><li><code>factanal()</code> in stats provides factor analysis by maximum
@@ -307,7 +305,6 @@
     <pkg>e1071</pkg>
     <pkg>earth</pkg>  
     <pkg>ellipse</pkg> 
-    <pkg>EMV</pkg>
     <pkg>energy</pkg>
     <pkg>eRm</pkg> 
     <pkg>FactoMineR</pkg>   
@@ -340,7 +337,6 @@
     <pkg>kknn</pkg>
     <pkg>klaR</pkg>
     <pkg>knncat</pkg>
-    <pkg>knnFinder</pkg> 
     <pkg>kohonen</pkg>  
     <pkg>ks</pkg>
     <pkg>lattice</pkg>
