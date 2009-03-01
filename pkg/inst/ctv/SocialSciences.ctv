@@ -73,7 +73,7 @@
           
           <li>
           Also see <pkg>brglm</pkg> package for bias-reduction in binomial-response GLMs (useful, e.g., in cases of complete separation);
-	  the <pkg>catspec</pkg> package for multi-way percentage tables and models for square tables; the <pkg>exactLoglinTest</pkg> package for exact tests of loglinear models; the <pkg>gllm</pkg> package for the analysis of incomplete tables; the <code>clogit</code> function in the <pkg>survival</pkg> package for conditional logistic regression; and the <pkg>vcd</pkg> package for graphical displays of categorical data.
+	  the <pkg>catspec</pkg> package for multi-way percentage tables and models for square tables; the <pkg>exactLoglinTest</pkg> package for exact tests of loglinear models; the <code>clogit</code> function in the <pkg>survival</pkg> package for conditional logistic regression; and the <pkg>vcd</pkg> package for graphical displays of categorical data.
           </li>
           
           <li>
@@ -234,7 +234,6 @@
     <pkg priority="core">gam</pkg>
     <pkg>gee</pkg>
     <pkg>geepack</pkg>
-    <pkg>gllm</pkg>
     <pkg>gmodels</pkg>
     <pkg>gnm</pkg>
     <pkg>gss</pkg> 
