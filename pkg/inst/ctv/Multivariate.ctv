@@ -201,8 +201,7 @@
 	  dimension reduction with the classification. <pkg>klaR</pkg> includes variable
 	  selection and robustness against multicollinearity as well as a number of
 	  visualisation routines. <pkg>superpc</pkg> provides principal components for
-	  supervised classification, whereas <pkg>classPP</pkg> provides projection pursuit
-	  for supervised classification and <pkg>gpls</pkg> provides classification using
+	  supervised classification, whereas <pkg>gpls</pkg> provides classification using
 	  generalised partial least squares.  <pkg>hddplot</pkg> provides cross-validated linear discriminant calculations to determine the optimum number of features.   <pkg>supclust</pkg> relates to supervised
 	  clustering of genes.  <pkg>ROCR</pkg> provides a range of methods for assessing classifier performance.   <pkg>predbayescor</pkg> provides naive Bayes classification.
         Further information on supervised classification can be found in 
@@ -280,7 +279,6 @@
     <pkg>cat</pkg> 
     <pkg>chplot</pkg>
     <pkg>cwhmisc</pkg>
-    <pkg>classPP</pkg> 
     <pkg>clue</pkg> 
     <pkg priority="core">cluster</pkg> 
     <pkg>clusterGeneration</pkg>
