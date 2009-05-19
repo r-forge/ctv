@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2009-02-25</version>
+  <version>2009-05-19</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -150,8 +150,8 @@
           
          <li><i>Independent Components:</i> <pkg>fastICA</pkg> provides fastICA 
          algorithms to perform independent
-	  component analysis (ICA) and Projection Pursuit, <pkg>mlica</pkg> provides
-	  maximum likelihood fitting for ICA, and <pkg>PearsonICA</pkg> uses score functions.   <pkg>ICS</pkg> provides either an invariant co-ordinate system or independent components.   <pkg>JADE</pkg> adds an interface to the JADE algorithm, as well as providing some diagnostics for ICA.</li>
+	  component analysis (ICA) and Projection Pursuit, and <pkg>PearsonICA</pkg>
+	  uses score functions.   <pkg>ICS</pkg> provides either an invariant co-ordinate system or independent components.   <pkg>JADE</pkg> adds an interface to the JADE algorithm, as well as providing some diagnostics for ICA.</li>
 
          <li><i>Procrustes analysis:</i>  <code>procrustes()</code> in
 	  <pkg>vegan</pkg> provides procrustes analysis, this package also provides functions
@@ -352,7 +352,6 @@
     <pkg>mitools</pkg>
     <pkg>mix</pkg>
     <pkg>mlCopulaSelection</pkg>  
-    <pkg>mlica</pkg>
     <pkg>monomvn</pkg> 
     <pkg>mnormt</pkg>  
     <pkg>MNP</pkg>
