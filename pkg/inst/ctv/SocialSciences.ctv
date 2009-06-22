@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2009-01-12</version>
+  <version>2009-06-22</version>
   
   <info> 
   
@@ -149,7 +149,7 @@
           </li>  
           
           <li>
-          <i>Missing Data:</i> A variety of packages implement methods for handling missing data by multiple imputation, including the <pkg>norm</pkg>, <pkg>cat</pkg>, <pkg>mix</pkg>, and <pkg>pan</pkg> packages associated with Shafer, <i>Analysis of Incomplete Multivariate Data</i> (Chapman and Hall, 1997), and the <pkg>mice</pkg> and <pkg>mitools</pkg> packages (the latter for drawing inferences from multiply imputed data sets). Also see the <pkg>EMV</pkg> and <pkg>mvnmle</pkg> packages. There are also some facilities for missing-data imputation in the general <pkg>Hmisc</pkg> package, which is described below, under <a href="#Collections">"Collections"</a>.
+          <i>Missing Data:</i> A variety of packages implement methods for handling missing data by multiple imputation, including the <pkg>cat</pkg>, <pkg>mix</pkg>, and <pkg>pan</pkg> packages associated with Shafer, <i>Analysis of Incomplete Multivariate Data</i> (Chapman and Hall, 1997), and the <pkg>mice</pkg> and <pkg>mitools</pkg> packages (the latter for drawing inferences from multiply imputed data sets). Also see the <pkg>EMV</pkg> and <pkg>mvnmle</pkg> packages. There are also some facilities for missing-data imputation in the general <pkg>Hmisc</pkg> package, which is described below, under <a href="#Collections">"Collections"</a>.
           </li>
           
           <li>
@@ -258,7 +258,6 @@
     <pkg>multinomRob</pkg>
     <pkg>network</pkg>
     <pkg priority="core">nlme</pkg>
-    <pkg priority="core">norm</pkg>
     <pkg>optmatch</pkg>
     <pkg priority="core">pan</pkg>
     <pkg>pls</pkg>

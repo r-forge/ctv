@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2009-05-19</version>
+  <version>2009-06-22</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -223,8 +223,7 @@
           <p><strong>Missing data</strong></p>
           <ul><li><pkg>mitools</pkg> provides tools for multiple imputation, <pkg>mice</pkg> provides
 	  multivariate imputation by chained equations <pkg>mvnmle</pkg> provides ML estimation
-	  for multivariate normal data with missing values, <pkg>norm</pkg> provides multiple
-	  imputation by the EM algorithm for missing multivariate normal data, <pkg>cat</pkg>
+	  for multivariate normal data with missing values, <pkg>cat</pkg>
 	  provides multiple imputation for categorical data <pkg>mix</pkg> for mixed
 	  categorical and continuous data. <pkg>pan</pkg> provides multiple imputation for
 	  missing panel data.  <pkg>VIM</pkg> provides methods for the visualisation as well as imputation of missing data.    <code>aregImpute()</code> and <code>transcan()</code> from
@@ -362,7 +361,6 @@
     <pkg>mvpart</pkg> 
     <pkg>mvtnorm</pkg>
     <pkg>nFactors</pkg>   
-    <pkg>norm</pkg>   
     <pkg>pan</pkg>
     <pkg>panel</pkg> 
     <pkg>paran</pkg>
