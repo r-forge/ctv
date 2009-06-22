@@ -143,7 +143,7 @@
       <li>Various nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li>
       <li>Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
 	  Kalman filtering/smoothing and Bayesian methods).</li>
-      <li>Unit root and cointegration techniques are available in <pkg>urca</pkg>, <pkg>uroot</pkg> and
+      <li>Unit root and cointegration techniques are available in <pkg>urca</pkg> and
 	  <pkg>tseries</pkg>.</li>
       <li>Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
       <li>Package <pkg>sde</pkg> provides simulation and inference for stochastic
@@ -251,7 +251,6 @@
     <pkg priority="core">tseries</pkg>    
     <pkg>tsfa</pkg>
     <pkg priority="core">urca</pkg>
-    <pkg>uroot</pkg>
     <pkg>vars</pkg>
     <pkg>VR</pkg>
     <pkg priority="core">zoo</pkg>    
