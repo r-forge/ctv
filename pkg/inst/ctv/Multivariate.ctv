@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2009-06-23</version>
+  <version>2009-06-24</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -56,9 +56,7 @@
           assist with descriptive functions; from the same package <code>varclus()</code> offers variable 
           clustering while <code>dataRep()</code> and <code>find.matches()</code> assist in exploring a given 
           dataset in terms of representativeness and finding matches.  
-         <pkg>dprep</pkg> provides preprocessing and visualization functions specifically for 
-         classification such as checking for variable redundancy, performing a range of 
-         normalisations.   Whilst <code>dist()</code> in base and <code>daisy()</code> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices. <pkg>simba</pkg> provides functions for dealing with presence / absence data including similarity matrices and reshaping.</li></ul>
+          Whilst <code>dist()</code> in base and <code>daisy()</code> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices. <pkg>simba</pkg> provides functions for dealing with presence / absence data including similarity matrices and reshaping.</li></ul>
 
 <p><strong>Hypothesis testing</strong></p>
  
@@ -101,7 +99,7 @@
 	  to the Shapiro-Wilks test, <pkg>mvoutlier</pkg> provides multivariate outlier detection based
 	  on robust methods.  <pkg>ICS</pkg> provides tests for multi-normality.      <code>mvnorm.etest()</code> in <pkg>energy</pkg> provides an assessment 
           of normality based on E statistics (energy); in the same package <code>k.sample()</code>
-          assesses a number of samples for equal distributions.   <code>mardia()</code> in <pkg>dprep</pkg>          provides the Mardia test for normality.   Tests for Wishart-distributed covariance matrices 
+          assesses a number of samples for equal distributions. Tests for Wishart-distributed covariance matrices 
           are given by 
           <code>mauchly.test()</code> in stats.   </li>
           
@@ -296,7 +294,6 @@
     <pkg>denpro</pkg>
     <pkg>DescribeDisplay</pkg>
     <pkg>desirability</pkg>
-    <pkg>dprep</pkg> 
     <pkg>dr</pkg>
     <pkg>e1071</pkg>
     <pkg>earth</pkg>  
