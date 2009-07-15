@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-06-22</version>
+  <version>2009-07-15</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -51,7 +51,9 @@
 	  from package stats. This includes in particular logit and probit models
 	  for modeling choice data and poisson models for count data.</li>
       <li>Negative binomial GLMs are available via <code>glm.nb()</code> in package MASS from
-	  the <pkg>VR</pkg> bundle.</li>
+	  the <pkg>VR</pkg> bundle. Another implementation of negative binomial models
+	  is provided by <pkg>aod</pkg>, which also contains other models for overdispersed
+	  data.</li>
       <li>Zero-inflated and hurdle count models are provided in in package <pkg>pscl</pkg>.</li>
       <li>Bivariate poisson regression models are implemented in <pkg>bivpois</pkg>.</li>
       <li>Multinomial responses: Multinomial models
@@ -87,9 +89,10 @@
       <li>Simultaneous equation estimation: <pkg>systemfit</pkg>.</li>
       <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
       <li>Beta regression: <pkg>betareg</pkg> and <pkg>lme4</pkg>.</li>
-      <li>Nonlinear mixed-effect models: <pkg>nlme</pkg>.</li>
+      <li>Nonlinear mixed-effect models: <pkg>nlme</pkg> and <pkg>lme4</pkg>.</li>
       <li>The packages <pkg>Design</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
-	  handling of (generalized) linear regression models.</li>
+	  handling of (generalized) linear regression models. <pkg>Zelig</pkg> is a unified
+	  easy-to-use interface to a wide range of regression models.</li>
     </ul>
 
     <p><strong>Basic time series infrastructure</strong></p>
@@ -200,6 +203,7 @@
 
   <packagelist>
     <pkg>AER</pkg>
+    <pkg>aod</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
     <pkg>bivpois</pkg>
@@ -253,6 +257,7 @@
     <pkg priority="core">urca</pkg>
     <pkg>vars</pkg>
     <pkg>VR</pkg>
+    <pkg>Zelig</pkg>
     <pkg priority="core">zoo</pkg>    
   </packagelist>
 
