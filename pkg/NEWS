@@ -1,3 +1,14 @@
+Changes in Version 0.5-3
+
+  o The R-Forge links created from <rforge> are now
+    forced to be in lower case.
+  
+
+Changes in Version 0.5-2
+
+  o Minor changes to improve generation of tidy HTML.
+  
+
 Changes in Version 0.5-1
 
   o In .ctv files a new tag is allowed: <ohat> for
