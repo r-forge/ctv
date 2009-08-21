@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-07-15</version>
+  <version>2009-08-21</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -54,8 +54,7 @@
 	  the <pkg>VR</pkg> bundle. Another implementation of negative binomial models
 	  is provided by <pkg>aod</pkg>, which also contains other models for overdispersed
 	  data.</li>
-      <li>Zero-inflated and hurdle count models are provided in in package <pkg>pscl</pkg>.</li>
-      <li>Bivariate poisson regression models are implemented in <pkg>bivpois</pkg>.</li>
+      <li>Zero-inflated and hurdle count models are provided in package <pkg>pscl</pkg>.</li>
       <li>Multinomial responses: Multinomial models
 	  with individual-specific covariates only are available in <code>multinom()</code>
 	  from package nnet in the <pkg>VR</pkg> bundle. In implementation with both individual- and
@@ -206,7 +205,6 @@
     <pkg>aod</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
-    <pkg>bivpois</pkg>
     <pkg>boot</pkg>
     <pkg>bootstrap</pkg>
     <pkg priority="core">car</pkg>

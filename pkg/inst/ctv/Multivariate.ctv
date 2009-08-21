@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2009-06-24</version>
+  <version>2009-08-21</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -200,11 +200,9 @@
 	  selection and robustness against multicollinearity as well as a number of
 	  visualisation routines. <pkg>superpc</pkg> provides principal components for
 	  supervised classification, whereas <pkg>gpls</pkg> provides classification using
-	  generalised partial least squares.  <pkg>hddplot</pkg> provides cross-validated linear discriminant calculations to determine the optimum number of features.   <pkg>supclust</pkg> relates to supervised
-	  clustering of genes.  <pkg>ROCR</pkg> provides a range of methods for assessing classifier performance.   <pkg>predbayescor</pkg> provides naive Bayes classification.
+	  generalised partial least squares.  <pkg>hddplot</pkg> provides cross-validated linear discriminant calculations to determine the optimum number of features. <pkg>ROCR</pkg> provides a range of methods for assessing classifier performance.   <pkg>predbayescor</pkg> provides naive Bayes classification.
         Further information on supervised classification can be found in 
           the <view>MachineLearning</view> task view.</li></ul>
-
 
           <p><strong>Correspondence analysis</strong></p>
           <ul><li><code>corresp()</code> and <code>mca()</code> in MASS provide simple and
@@ -237,7 +235,7 @@
 	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <code>MFA()</code> and <code>HMFA()</code>for multiple and hierarchical multiple factor analysis as well as <code>ADFM()</code> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul>
 
           <p><strong>Modelling non-Gaussian data</strong></p>
-          <ul><li><pkg>bivpois</pkg> models bivariate Poisson variables.    <pkg>mprobit</pkg> provides 
+          <ul><li><pkg>mprobit</pkg> provides 
           multivariate probit model for binary as well as ordinal response, <pkg>MNP</pkg> 
           provides Bayesian multinomial probit models,   <pkg>polycor</pkg> provides 
           polchoric and tetrachoric
@@ -268,7 +266,6 @@
     <pkg>aplpack</pkg>
     <pkg>ash</pkg>
     <pkg>bayesm</pkg>
-    <pkg>bivpois</pkg> 
     <pkg>calibrate</pkg> 
     <pkg>ca</pkg>   
     <pkg>car</pkg>   
@@ -396,7 +393,6 @@
     <pkg>spam</pkg> 
     <pkg>SparseM</pkg>
     <pkg>SpatialNP</pkg> 
-    <pkg>supclust</pkg> 
     <pkg>superpc</pkg>
     <pkg>trimcluster</pkg>  
     <pkg>tsfa</pkg>
