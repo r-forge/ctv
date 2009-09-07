@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-08-21</version>
+  <version>2009-09-07</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -132,7 +132,7 @@
           <code>decompose()</code> and <code>HoltWinters()</code> in stats.</li>
       <li>Extensions to these
 	  methods, in particular for forecasting and model selection, are provided in
-	  the <pkg>forecasting</pkg> bundle.</li>
+	  the <pkg>forecast</pkg> package.</li>
       <li>Miscellaneous time series filters are available in <pkg>mFilter</pkg>.</li>
       <li>For estimating VAR models, several
 	  methods are available: simple models can be fitted by <code>ar()</code> in stats, more
@@ -168,6 +168,12 @@
           and script files required to work some of the examples.</li>
       <li><pkg>CDNmoney</pkg> provides Canadian monetary aggregates.</li>
       <li><pkg>pwt</pkg> provides (several releases of) the Penn world table.</li>
+      <li>The packages <pkg>expsmooth</pkg>, <pkg>fma</pkg>, and <pkg>Mcomp</pkg> are
+          data packages (from the former forecasting bundle) with time series data
+	  from the books 'Forecasting with Exponential Smoothing: The State Space Approach'
+	  (Hyndman, Koehler, Ord, Snyder, 2008, Springer) and 'Forecasting: Methods and Applications'
+	  (Makridakis, Wheelwright, Hyndman, 3rd ed., 1998, Wiley) and the M-competitions,
+	  respectively.
     </ul>
 
     <p><strong>Miscellaneous</strong></p>
@@ -216,8 +222,10 @@
     <pkg>dyn</pkg>
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
+    <pkg>expsmooth</pkg>
     <pkg>FinTS</pkg>
-    <pkg>forecasting</pkg>
+    <pkg>fma</pkg>
+    <pkg>forecast</pkg>
     <pkg>frontier</pkg>
     <pkg>gmm</pkg>
     <pkg>Hmisc</pkg>
@@ -226,6 +234,7 @@
     <pkg>lme4</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>Matrix</pkg>
+    <pkg>Mcomp</pkg>
     <pkg>meboot</pkg>
     <pkg>mFilter</pkg>
     <pkg>micEcon</pkg>
