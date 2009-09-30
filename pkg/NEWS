@@ -1,3 +1,9 @@
+Changes in Version 0.5-4
+
+  o grep(..., extended = FALSE) replaced by the more
+    appropriate grep(..., fixed = TRUE).
+  
+
 Changes in Version 0.5-3
 
   o The R-Forge links created from <rforge> are now
