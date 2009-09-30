@@ -93,7 +93,7 @@ read.ctv <- function(file)
   ## the input was UTF-8
     for(i in c(":", ",", ";", ")", ".", "?", "!"))
       x <- gsub(paste("\n[ ]*\\", i, sep = ""), i, x)
-    x <- gsub("(\n<a", "(<a", x, extended = FALSE)
+    x <- gsub("(\n<a", "(<a", x, fixed = TRUE)
     return(x)
   }
 
