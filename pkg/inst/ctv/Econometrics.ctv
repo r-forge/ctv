@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-09-07</version>
+  <version>2009-10-06</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -145,8 +145,8 @@
       <li>Various nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li>
       <li>Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
 	  Kalman filtering/smoothing and Bayesian methods).</li>
-      <li>Unit root and cointegration techniques are available in <pkg>urca</pkg> and
-	  <pkg>tseries</pkg>.</li>
+      <li>Unit root and cointegration techniques are available in <pkg>urca</pkg>,
+	  <pkg>tseries</pkg>, and <pkg>CADFtest</pkg>.</li>
       <li>Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
       <li>Package <pkg>sde</pkg> provides simulation and inference for stochastic
 	  differential equations.</li>
@@ -213,6 +213,7 @@
     <pkg>betareg</pkg>
     <pkg>boot</pkg>
     <pkg>bootstrap</pkg>
+    <pkg>CADFtest</pkg>
     <pkg priority="core">car</pkg>
     <pkg>crq</pkg>
     <pkg>CDNmoney</pkg>
