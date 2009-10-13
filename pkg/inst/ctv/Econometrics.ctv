@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-10-06</version>
+  <version>2009-10-13</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -79,8 +79,8 @@
     <ul>
       <li>Nonlinear least squares modeling is availble in <code>nls()</code>
 	  in package stats.</li>
-      <li>Quantile regression: <pkg>quantreg</pkg> (now including also censored
-          quantile regression, previously only available in <pkg>crq</pkg>).</li>
+      <li>Quantile regression: <pkg>quantreg</pkg> (including linear, nonlinear, censored,
+          locally polynomial and additive quantile regressions).</li>
       <li>Linear models for panel data: <pkg>plm</pkg>.</li>
       <li>Generalized method of moments (GMM) and generalized empirical likelihood (GEL):
           <pkg>gmm</pkg>.</li>
@@ -215,7 +215,6 @@
     <pkg>bootstrap</pkg>
     <pkg>CADFtest</pkg>
     <pkg priority="core">car</pkg>
-    <pkg>crq</pkg>
     <pkg>CDNmoney</pkg>
     <pkg>Design</pkg>
     <pkg>dlm</pkg>
