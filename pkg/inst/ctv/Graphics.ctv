@@ -3,7 +3,7 @@
   <name>Graphics</name>
   <topic>Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization </topic>
   <maintainer email="nikko@hailmail.net">Nicholas Lewin-Koh</maintainer>
-  <version>2008-03-18</version>
+  <version>2009-10-28</version>
   
   <info>
     <p>R is rich with facilities for creating and developing interesting graphics.
@@ -56,7 +56,7 @@
 	  for polar plotting, <pkg>vcd</pkg> for categorical data, hexbin
 	  (on <a href="http://www.Bioconductor.org/">Bioconductor</a>)
 	  for hexagon binning, <pkg>gclus</pkg> for ordering plots and 
-          gplots from the <pkg>gregmisc</pkg> bundle
+          <pkg>gplots</pkg>
 	  for some plotting enhancements. Some specialized graphs, like Chernoff faces 
           are implemented in <pkg>aplpack</pkg>, which also has a nice implementation 
           of Tukey's bag plot.

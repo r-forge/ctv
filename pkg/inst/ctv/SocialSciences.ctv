@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2009-06-23</version>
+  <version>2009-10-28</version>
   
   <info> 
   
@@ -51,7 +51,13 @@
     <p><strong>Analysis of Categorical and Count Data:</strong></p>
     
     <p>
-    Binomial logit and probit models, as well as Poisson-regression and loglinear models for contingency tables (including models for "over-dispersed" binomial and Poisson data), can be fit with the <code>glm</code> function in the stats package. For over-dispersed data, see also the <pkg>aod</pkg> package and the <code>glm.nb</code> function in the recommended MASS package (in the <pkg>VR</pkg> package-bundle, associated with Venables and Ripley, <i>Modern Applied Statistics in S, Fourth Ed.</i>, Springer, 2002), which fits negative-binomial GLMs. The multinomial logit model is fit by the <code>multinom</code> function in the recommended nnet package (also part of the <pkg>VR</pkg> bundle), and ordered logit and probit models by the <code>polr</code> function in the MASS package. Also see the <pkg>MNP</pkg> package for the multinomial probit model, and <pkg>multinomRob</pkg> for the analysis of overdispersed multinomial data. 
+    Binomial logit and probit models, as well as Poisson-regression and loglinear models for contingency
+    tables (including models for "over-dispersed" binomial and Poisson data), can be fit with the
+    <code>glm</code> function in the stats package. For over-dispersed data, see also the <pkg>aod</pkg>
+    package and the <code>glm.nb</code> function in the recommended <pkg>MASS</pkg> package (associated with
+    Venables and Ripley, <i>Modern Applied Statistics in S, Fourth Ed.</i>, Springer, 2002), which fits
+    negative-binomial GLMs. The multinomial logit model is fit by the <code>multinom</code> function in the
+    recommended <pkg>nnet</pkg> package, and ordered logit and probit models by the <code>polr</code> function in the MASS package. Also see the <pkg>MNP</pkg> package for the multinomial probit model, and <pkg>multinomRob</pkg> for the analysis of overdispersed multinomial data. 
     </p>
     
     <p>
@@ -169,7 +175,7 @@
           </li>
           
           <li>
-          <i>Spatial Statistics:</i> In addition to the recommended spatial package (part of the <pkg>VR</pkg> bundle), see the <view>Spatial</view> task view  for an extensive list of functions and packages for spatial data analysis.
+          <i>Spatial Statistics:</i> In addition to the recommended <pkg>spatial</pkg> package, see the <view>Spatial</view> task view  for an extensive list of functions and packages for spatial data analysis.
           </li>
           
           <li>
@@ -196,7 +202,11 @@
     </p>
       <ul>
           <li> 
-          I have already made several references to the recommended MASS package, which is associated with Venables and Ripley's <i>Modern Applied Statistics With S</i>. Other recommended packages associated with this book are nnet, for fitting neural networks (but also, as mentioned, multinomial logistic-regression models); spatial for spatial statistics; and class, which contains functions for classification. All are part of the <pkg>VR</pkg> bundle.
+          I have already made several references to the recommended <pkg>MASS</pkg> package, which is
+	  associated with Venables and Ripley's <i>Modern Applied Statistics With S</i>. Other recommended
+	  packages associated with this book are <pkg>nnet</pkg>, for fitting neural networks (but also, as
+	  mentioned, multinomial logistic-regression models); <pkg>spatial</pkg> for spatial statistics; and
+	  <pkg>class</pkg>, which contains functions for classification.
           </li>
           
           <li>
@@ -219,6 +229,7 @@
     <pkg>brglm</pkg>
     <pkg priority="core">car</pkg>
     <pkg>catspec</pkg>
+    <pkg>class</pkg>
     <pkg>concord</pkg>
     <pkg>Design</pkg>
     <pkg>dr</pkg>
@@ -244,6 +255,7 @@
     <pkg priority="core">lmtest</pkg>
     <pkg>locfit</pkg>
     <pkg>ltm</pkg>
+    <pkg priority="core">MASS</pkg>
     <pkg>Matching</pkg>
     <pkg>MatchIt</pkg>
     <pkg priority="core">Matrix</pkg>
@@ -257,6 +269,7 @@
     <pkg>multinomRob</pkg>
     <pkg>network</pkg>
     <pkg priority="core">nlme</pkg>
+    <pkg>nnet</pkg>
     <pkg>optmatch</pkg>
     <pkg priority="core">pan</pkg>
     <pkg>pls</pkg>
@@ -272,13 +285,13 @@
     <pkg priority="core">sandwich</pkg>
     <pkg priority="core">sem</pkg>
     <pkg>sna</pkg>
+    <pkg>spatial</pkg>
     <pkg priority="core">survival</pkg>
     <pkg>survrec</pkg>
     <pkg priority="core">survey</pkg>
     <pkg priority="core">systemfit</pkg>
     <pkg>sm</pkg>
     <pkg>USPS</pkg>
-    <pkg priority="core">VR</pkg>
     <pkg priority="core">Zelig</pkg>
   </packagelist>
   
