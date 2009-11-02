@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
-  <version>2009-02-25</version>
+  <version>2009-11-02</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -90,13 +90,6 @@
 
   <p><strong>Classical models - General purpose packages</strong></p>
   <ul>
-
-    <li>      
-      <pkg>CoCo</pkg>[vignette: n; demo: y]
-      An advanced suite of functions for
-      contingency tabels, graphical Gaussian models and mixed
-      interaction models.  
-    </li>
 
     <li>
       <pkg>ggm</pkg> [vignette: n; demo: n]
@@ -259,7 +252,6 @@
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
     <pkg>boa</pkg> 
-    <pkg>CoCo</pkg>
     <pkg>coda</pkg>
     <pkg>deal</pkg>
     <pkg>diagram</pkg>

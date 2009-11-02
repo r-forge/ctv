@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2008-12-08</version>
+  <version>2009-11-02</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -168,9 +168,6 @@
           also contains tests for haplotype associations under a GLM framework, but also provides score tests of
           association as well as providing novel functionality for building haplotypes in a sequential manner, 
           power and sample-size calculations and the preparation of data matrices for use in other methods.
-<pkg>SimHap</pkg>
-          is a third package that infers haplotypes and tests for associations and incorporates multiple-imputation
-          to deal with haplotype phase uncertainty.
 <pkg>haplo.ccs</pkg>
           utilises the haplotype estimation of <pkg>haplo.stats</pkg> and performs case-control association tests
           via weighted logistic regression.
@@ -276,7 +273,6 @@
     <pkg>qvalue</pkg>
     <pkg>rmetasim</pkg>
     <pkg>seqinr</pkg>
-    <pkg>SimHap</pkg>
     <pkg>SNPassoc</pkg>
     <pkg>SNPmaxsel</pkg>
     <pkg>snp.plotter</pkg>
