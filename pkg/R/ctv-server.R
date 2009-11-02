@@ -246,6 +246,7 @@ repos_update_views <- function(repos = ".",
     if(!all(x$packagelist[,1] %in% pkgs)) {
       nopkgs <- as.vector(x$packagelist[,1])
       nopkgs <- nopkgs[!nopkgs %in% pkgs]
+      options(useFancyQuotes = FALSE)
       warning(paste("The packages", paste(nopkgs, collapse = ", "),
         "in task view", sQuote(x$name), "are not available in repository",
 	dQuote(repos)))

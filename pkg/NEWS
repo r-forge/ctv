@@ -1,3 +1,9 @@
+Changes in Version 0.5-5
+
+  o simplified printing of warnings (with
+    useFancyQuotes = FALSE).
+  
+
 Changes in Version 0.5-4
 
   o grep(..., extended = FALSE) replaced by the more

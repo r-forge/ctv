@@ -1,6 +1,6 @@
 Package: ctv
-Version: 0.5-4
-Date: 2009-09-30
+Version: 0.5-5
+Date: 2009-11-02
 Title: CRAN Task Views
 Author: Achim Zeileis, Kurt Hornik
 Maintainer: Achim Zeileis <Achim.Zeileis@R-project.org>
