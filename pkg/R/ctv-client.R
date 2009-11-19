@@ -105,7 +105,8 @@ install.views <- function(views, coreOnly = FALSE, repos = NULL, ...)
   coreOnly <- rep(coreOnly, length.out = length(views)) 
    
   for(i in seq(along = views)) {
-    pkgs <- if(coreOnly[i]) subset(views[[i]]$packagelist, core)[,1] else views[[i]]$packagelist[,1]
+    pkgs <- if(coreOnly[i]) views[[i]]$packagelist$name[views[[i]]$packagelist$core]
+      else views[[i]]$packagelist$name
     install.packages(pkgs, repos = views[[i]]$repository, ...)
   }
   
@@ -136,7 +137,8 @@ update.views <- function(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, 
   ## get full package list
   coreOnly <- rep(coreOnly, length.out = length(views)) 
   pkgs <- lapply(seq(along = views), function(i)
-    if(coreOnly[i]) subset(views[[i]]$packagelist, core)[,1] else views[[i]]$packagelist[,1])
+    if(coreOnly[i]) views[[i]]$packagelist$name[views[[i]]$packagelist$core]
+      else views[[i]]$packagelist$name)
   pkgs <- sort(unique(unlist(pkgs)))
 
   ## getOption("repos")
