@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2009-11-02</version>
+  <version>2009-12-10</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -66,9 +66,7 @@
             Phylogenetics
           </i>:
           Phylogenetic and evolution analyses can be performed via
-<pkg>ape</pkg>
-          and
-<pkg>apTreeshape</pkg>. Package
+<pkg>ape</pkg>. Package
 <pkg>ouch</pkg>
           provides Ornstein-Uhlenbeck models for phylogenetic comparative hypotheses.
 <pkg>PHYLOGR</pkg>
@@ -237,7 +235,6 @@
   <packagelist>
     <pkg>adegenet</pkg>
     <pkg>ape</pkg>
-    <pkg>apTreeshape</pkg>
     <pkg>Biodem</pkg>
     <pkg>bqtl</pkg>
     <pkg>catmap</pkg>
