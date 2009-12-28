@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-10-28</version>
+  <version>2009-12-28</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -68,7 +68,9 @@
 	  More advanced models for sample selection are available in
 	  <pkg>sampleSelection</pkg>.</li>
       <li>Miscellaneous: Further more refined tools for microecnometrics are provided in
-	  <pkg>micEcon</pkg>. Stochastic frontier analysis is in <pkg>frontier</pkg>.
+	  <pkg>micEcon</pkg> (e.g., Cobb-Douglas, translog, CES, SNQ profit functions and more).
+          The almost ideal demand system (AIDS) is in <pkg>micEconAids</pkg>.	  
+	  Stochastic frontier analysis is in <pkg>frontier</pkg>.
 	  The package <pkg>bayesm</pkg> implements a Bayesian
 	  approach to microeconometrics and marketing. Inference for relative
 	  distributions is contained in package <pkg>reldist</pkg>.</li>
@@ -239,6 +241,7 @@
     <pkg>meboot</pkg>
     <pkg>mFilter</pkg>
     <pkg>micEcon</pkg>
+    <pkg>micEconAids</pkg>
     <pkg>mlogit</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>
