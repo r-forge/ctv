@@ -18,7 +18,7 @@
   to deal with graphical models.
 
   The description of each package is accompanied by the statement
-  [vignette: y/n; demo: y/n]. The aim is to give users
+  [vignette: y/n]. The aim is to give users
   indications of to which extent a package is documented beyond the bare
   standard documentation. 
     
@@ -29,75 +29,75 @@
   <ul>
 
     <li>
-    <pkg>diagram</pkg>  [vignette: n; demo: y]
+    <pkg>diagram</pkg>  [vignette: y]
     Functions for visualising simple graphs (networks), plotting flow diagrams
     </li>
 
     <li>
-    <pkg>dynamicGraph</pkg>   [vignette: n; demo: y]
+    <pkg>dynamicGraph</pkg>   [vignette: n]
     Provides an advanced
     graphical user interface for display and interaction with
     graphs (based on Tcl/Tk).
     </li>
 
     <li>
-    <pkg>giRaph</pkg> [vignette: n; demo: y]
+    <pkg>giRaph</pkg> [vignette: n]
     Supply classes and methods to represent and manipulate graphs
     </li>
 
     <li>
-    <pkg>graph</pkg> [vignette: y; demo: n] 
-	A package to handle graph data structures.
+    <pkg>graph</pkg> [vignette: y] 
+    A package to handle graph data structures.
     </li>
 
     <li>
-    <pkg>gRbase</pkg>   [vignette: y; demo: y]
-    An alternative interface to graphs. Uses the
-    <pkg>graph</pkg> and <pkg>RBGL</pkg> and implements additional graph
-    operations. 
+      <pkg>gRbase</pkg>   [vignette: y]
+      An alternative interface to graphs. Uses the
+      <pkg>graph</pkg> and <pkg>RBGL</pkg> and implements additional graph
+      operations. 
     </li>
 
     <li>
-    <pkg>igraph</pkg>   [vignette: n; demo: n]
-    Routines for simple graphs, network analysis.
+      <pkg>igraph</pkg>   [vignette: n]
+      Routines for simple graphs, network analysis.
     </li>
 
     <li>
-    <pkg>mathgraph</pkg>   [vignette: n; demo: n]
-    Implements matrix representations of graphs and
-    provide a plot function.
+      <pkg>mathgraph</pkg>   [vignette: n]
+      Implements matrix representations of graphs and
+      provide a plot function.
     </li>
 
     <li>
-    <pkg>network</pkg>   [vignette: n; demo: n]
-    Tools to create and modify network objects.  The network class can
-    represent a range of relational data types, and supports arbitrary
-    vertex/edge/graph attributes. 
+      <pkg>network</pkg>   [vignette: n; demo: n]
+      Tools to create and modify network objects.  The network class can
+      represent a range of relational data types, and supports arbitrary
+      vertex/edge/graph attributes. 
     </li>
 
     <li>
-    <pkg>RBGL</pkg> [vignette: y; demo: n] 
-	Interface to boost C++ graph library (based on graph
-    objects from the <pkg>graph</pkg> package).
+      <pkg>RBGL</pkg> [vignette: y] 
+      Interface to boost C++ graph library (based on graph
+      objects from the <pkg>graph</pkg> package).
     </li>
 
   </ul>
   In addition, there is the
   <bioc>Rgraphviz</bioc>
   package on Bioconductor that provides plotting capabilities for R graph
-  objects (from the <pkg>graph</pkg> package) [vignette: y; demo: n].
-
+  objects (from the <pkg>graph</pkg> package) [vignette: y].
+  
 
   <p><strong>Classical models - General purpose packages</strong></p>
   <ul>
 
     <li>
-      <pkg>ggm</pkg> [vignette: n; demo: n]
+      <pkg>ggm</pkg> [vignette: n]
       Fitting graphical Gaussian models.
     </li>
-
+    
     <li>
-      <pkg>gRbase</pkg> [vignette: y; demo: y]
+      <pkg>gRbase</pkg> [vignette: y]
       Sets up a
       meta data representation which is used by several other
       packages (among these are <pkg>mimR</pkg> and
@@ -106,7 +106,7 @@
     </li>
     
     <li>
-      <pkg>mimR</pkg> [vignette: n; demo: n]
+      <pkg>mimR</pkg> [vignette: n]
       General package for model selection in contingency
       tabels, graphical Gaussian models and mixed interaction
       models. The package provides an interface to the MIM
@@ -120,7 +120,7 @@
   <ul>
 
     <li>
-      <pkg>SIN</pkg> [vignette: n; demo: n]
+      <pkg>SIN</pkg> [vignette: n]
       This package provides routines to perform SIN model selection as
       described in Drton and Perlman (2004).  The selected models are
       represented in the format of the 'ggm' package, which allows in 
@@ -128,14 +128,14 @@
     </li>
 
     <li>
-      <pkg>pcalg</pkg> [vignette: y; demo: n]
+      <pkg>pcalg</pkg> [vignette: y]
       Standard and robust estimation of the skeleton (ugraph) and the equivalence class
       of a Directed Acyclic Graph (DAG) via the PC-Algorithm. The equivalence class is
       represented by its (unique) Completed Partially Directed Acyclic Graph (CPDAG).
     </li>
 
     <li>
-      <pkg>qp</pkg> [vignette: n; demo: n]
+      <pkg>qp</pkg> [vignette: n]
       This package is deprecated and it is now only a stub for the newer version called
       qpgraph available through the Bioconductor project. The q-order partial correlation
       graph search algorithm, q-partial, or qp, algorithm for short, is a robust
@@ -146,16 +146,25 @@
     </li>
 
     <li>
-      <pkg>gRc</pkg> [vignette: n; demo: n]
+      <pkg>gRc</pkg> [vignette: n]
       Inference in graphical Gaussian models with edge and vertex
       symmetries (Graphical Gaussian models with colours).
     </li>
     
     <li>
-      <pkg>GeneNet</pkg> [vignette: n; demo: n]
+      <pkg>GeneNet</pkg> [vignette: n]
       Modeling and Inferring Gene Networks. GeneNet
       is a package for analyzing gene expression (time series) data with
       focus on the inference of gene networks.
+    </li>
+
+    <li>
+      <pkg>parcor</pkg> [vignette: n]
+      The package estimates the matrix of partial correlations based on different regularized
+      regression methods: lasso, adaptive lasso, PLS, and Ridge Regression. In addition, the package
+      provides model selection for lasso, adaptive lasso and Ridge
+      regression based on 
+      cross-validation.
     </li>
 
   </ul>
@@ -165,14 +174,28 @@
   <p><strong>Bayesian Networks/Probabilistic expert systems</strong></p>
   <ul>
 
+
     <li>
-    <pkg>deal</pkg> [vignette: n; demo: n]
+    <pkg>bnlearn</pkg> [vignette: n] 
+    Bayesian network structure learning via constraint-based (also known as
+    'conditional independence') and score-based algorithms. This package implements the
+    Grow-Shrink (GS) algorithm, the Incremental Association (IAMB) algorithm, the
+    Interleaved-IAMB (Inter-IAMB) algorithm, the Fast-IAMB (Fast-IAMB) algorithm, the
+    Max-Min Parents and Children (MMPC) algorithm and the Hill-Climbing (HC) greedy
+    search algorithm for both discrete and Gaussian networks, along with many score
+    functions and conditional independence tests. Some utility functions (model
+    comparison and manipulation, random data generation, arc orientation testing) are
+    also included.
+    </li>
+
+    <li>
+    <pkg>deal</pkg> [vignette: n]
     Learning Bayesian networks with mixed (discrete and
     continuous) variables.
     </li>
 
     <li>
-    <pkg>gRain</pkg> [vignette: y; demo: n] 
+    <pkg>gRain</pkg> [vignette: y] 
     Implements propagation (message passing) in graphical
     models (Bayesian networks).
     </li>
@@ -188,19 +211,6 @@
     Bayesian mixture models of univariate Gaussian distributions using JAGS
     </li>
 
-
-    <li>
-    <pkg>bnlearn</pkg> [vignette: n; demo: n] 
-    Bayesian network structure learning via constraint-based (also known as
-    'conditional independence') and score-based algorithms. This package implements the
-    Grow-Shrink (GS) algorithm, the Incremental Association (IAMB) algorithm, the
-    Interleaved-IAMB (Inter-IAMB) algorithm, the Fast-IAMB (Fast-IAMB) algorithm, the
-    Max-Min Parents and Children (MMPC) algorithm and the Hill-Climbing (HC) greedy
-    search algorithm for both discrete and Gaussian networks, along with many score
-    functions and conditional independence tests. Some utility functions (model
-    comparison and manipulation, random data generation, arc orientation testing) are
-    also included.
-    </li>
 
     <li>
     <pkg>boa</pkg> [vignette: n; demo: n]
@@ -267,6 +277,7 @@
     <pkg>igraph</pkg> 
     <pkg>mathgraph</pkg>
     <pkg>mimR</pkg> 
+    <pkg>parcor</pkg> 
     <pkg>pcalg</pkg> 
     <pkg>qp</pkg>
     <pkg>SIN</pkg>
