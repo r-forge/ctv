@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2009-12-10</version>
+  <version>2010-02-07</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -34,11 +34,7 @@
 <pkg>hapsim</pkg>
           simulates haplotype data with pre-specified allele frequencies and LD patterns. A few 
           population genetics functions are also implemeted in
-<pkg>gap</pkg>
-          and
-<pkg>popgen</pkg>.
-<pkg>popgen</pkg>
-          has functions for clustering SNP genotype data and SNP simulation from a Multinomial-Dirichlet model.
+<pkg>gap</pkg>.
 <pkg>hierfstat</pkg>
           allows the estimation of hierarchical F-statistics from haploid or diploid genetic data.
 <pkg>LDheatmap</pkg>
@@ -263,7 +259,6 @@
     <pkg>pbatR</pkg>
     <pkg>phangorn</pkg>
     <pkg>PHYLOGR</pkg>
-    <pkg>popgen</pkg>
     <pkg>powerpkg</pkg>
     <pkg>qtl</pkg>
     <pkg>qtlDesign</pkg>
