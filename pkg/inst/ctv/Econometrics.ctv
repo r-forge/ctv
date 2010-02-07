@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2009-12-28</version>
+  <version>2010-02-07</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -91,7 +91,9 @@
       <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
       <li>Beta regression: <pkg>betareg</pkg> and <pkg>lme4</pkg>.</li>
       <li>Nonlinear mixed-effect models: <pkg>nlme</pkg> and <pkg>lme4</pkg>.</li>
-      <li>The packages <pkg>Design</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
+      <li>Generalized additive models (GAMs): <pkg>mgcv</pkg>, <pkg>gam</pkg>, <pkg>gamlss</pkg>
+          and <pkg>VGAM</pkg>.</li> 
+      <li>Miscellaneous: The packages <pkg>VGAM</pkg>, <pkg>Design</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
 	  handling of (generalized) linear regression models. <pkg>Zelig</pkg> is a unified
 	  easy-to-use interface to a wide range of regression models.</li>
     </ul>
@@ -229,6 +231,8 @@
     <pkg>fma</pkg>
     <pkg>forecast</pkg>
     <pkg>frontier</pkg>
+    <pkg>gam</pkg>
+    <pkg>gamlss</pkg>
     <pkg>gmm</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
@@ -240,6 +244,7 @@
     <pkg>Mcomp</pkg>
     <pkg>meboot</pkg>
     <pkg>mFilter</pkg>
+    <pkg>mgcv</pkg>
     <pkg>micEcon</pkg>
     <pkg>micEconAids</pkg>
     <pkg>mlogit</pkg>
@@ -268,6 +273,7 @@
     <pkg>tsfa</pkg>
     <pkg priority="core">urca</pkg>
     <pkg>vars</pkg>
+    <pkg>VGAM</pkg>
     <pkg>Zelig</pkg>
     <pkg priority="core">zoo</pkg>    
   </packagelist>
