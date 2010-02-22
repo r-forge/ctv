@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2010-02-07</version>
+  <version>2010-02-22</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -90,6 +90,7 @@
       <li>Simultaneous equation estimation: <pkg>systemfit</pkg>.</li>
       <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
       <li>Beta regression: <pkg>betareg</pkg> and <pkg>lme4</pkg>.</li>
+      <li>Truncated (Gaussian) regression: <pkg>truncreg</pkg>.</li>
       <li>Nonlinear mixed-effect models: <pkg>nlme</pkg> and <pkg>lme4</pkg>.</li>
       <li>Generalized additive models (GAMs): <pkg>mgcv</pkg>, <pkg>gam</pkg>, <pkg>gamlss</pkg>
           and <pkg>VGAM</pkg>.</li> 
@@ -268,6 +269,7 @@
     <pkg>strucchange</pkg>
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
+    <pkg>truncreg</pkg>
     <pkg>tsDyn</pkg>
     <pkg priority="core">tseries</pkg>    
     <pkg>tsfa</pkg>
