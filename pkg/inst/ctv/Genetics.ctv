@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2010-02-07</version>
+  <version>2010-03-04</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -61,6 +61,8 @@
           <i>
             Phylogenetics
           </i>:
+	  The <view>Phylogenetics</view> view has more detailed information,
+	  the most important packages are also mentioned here.	  
           Phylogenetic and evolution analyses can be performed via
 <pkg>ape</pkg>. Package
 <pkg>ouch</pkg>
@@ -275,11 +277,12 @@
   </packagelist>
 
   <links>
+    <view>Phylogenetics</view>
     <a href="http://rgenetics.org/">
       The Rgenetics Project
     </a>
     <a href="http://www.bioconductor.org/">
-      BioConductor
+      Bioconductor
     </a> 
     <a href="http://mayoresearch.mayo.edu/mayo/research/biostat/splusfunctions.cfm">
      R packages from Divison of Biostatistics, Mayo Clinic
