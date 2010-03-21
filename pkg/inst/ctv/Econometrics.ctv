@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2010-02-22</version>
+  <version>2010-03-21</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -84,6 +84,7 @@
       <li>Quantile regression: <pkg>quantreg</pkg> (including linear, nonlinear, censored,
           locally polynomial and additive quantile regressions).</li>
       <li>Linear models for panel data: <pkg>plm</pkg>.</li>
+      <li>Bayesian methods for panel data: <pkg>BayesPanel</pkg>.</li>
       <li>Generalized method of moments (GMM) and generalized empirical likelihood (GEL):
           <pkg>gmm</pkg>.</li>
       <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
@@ -207,6 +208,10 @@
       <li><i>Structural change</i>: R is particularly strong when dealing with
           structural changes and changepoints in parametric models, see
           <pkg>strucchange</pkg> and <pkg>segmented</pkg>.</li>
+
+      <li><i>Exchange rate regimes</i>: Methods for inference about exchange
+          rate regimes, in particular in a structural change setting, are provided
+	  by <pkg>fxregime</pkg>.</li>
     </ul>
 
   </info>
@@ -215,6 +220,7 @@
     <pkg>AER</pkg>
     <pkg>aod</pkg>
     <pkg>bayesm</pkg>
+    <pkg>BayesPanel</pkg>
     <pkg>betareg</pkg>
     <pkg>boot</pkg>
     <pkg>bootstrap</pkg>
@@ -232,6 +238,7 @@
     <pkg>fma</pkg>
     <pkg>forecast</pkg>
     <pkg>frontier</pkg>
+    <pkg>fxregime</pkg>
     <pkg>gam</pkg>
     <pkg>gamlss</pkg>
     <pkg>gmm</pkg>
