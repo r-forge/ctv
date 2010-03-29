@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2010-03-21</version>
+  <version>2010-03-29</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -68,7 +68,10 @@
 	  More advanced models for sample selection are available in
 	  <pkg>sampleSelection</pkg>.</li>
       <li>Miscellaneous: Further more refined tools for microecnometrics are provided in
-	  <pkg>micEcon</pkg> (e.g., Cobb-Douglas, translog, CES, SNQ profit functions and more).
+	  the <pkg>micEcon</pkg> family of packages: Analysis with
+	  Cobb-Douglas, translog, and quadratic functions is in <pkg>micEcon</pkg>;
+	  the constant elasticity of scale (CES) function is in <pkg>micEconCES</pkg>;
+	  the symmetric normalized quadratic profit (SNQP) function is in <pkg>micEconSNQP</pkg>.
           The almost ideal demand system (AIDS) is in <pkg>micEconAids</pkg>.	  
 	  Stochastic frontier analysis is in <pkg>frontier</pkg>.
 	  The package <pkg>bayesm</pkg> implements a Bayesian
@@ -90,7 +93,7 @@
       <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
       <li>Simultaneous equation estimation: <pkg>systemfit</pkg>.</li>
       <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
-      <li>Beta regression: <pkg>betareg</pkg> and <pkg>lme4</pkg>.</li>
+      <li>Beta regression: <pkg>betareg</pkg> and <pkg>gamlss</pkg>.</li>
       <li>Truncated (Gaussian) regression: <pkg>truncreg</pkg>.</li>
       <li>Nonlinear mixed-effect models: <pkg>nlme</pkg> and <pkg>lme4</pkg>.</li>
       <li>Generalized additive models (GAMs): <pkg>mgcv</pkg>, <pkg>gam</pkg>, <pkg>gamlss</pkg>
@@ -255,6 +258,8 @@
     <pkg>mgcv</pkg>
     <pkg>micEcon</pkg>
     <pkg>micEconAids</pkg>
+    <pkg>micEconCES</pkg>
+    <pkg>micEconSNQP</pkg>
     <pkg>mlogit</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>
