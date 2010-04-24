@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2010-03-29</version>
+  <version>2010-04-24</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -49,7 +49,8 @@
       <li>Many standard microeconometric models belong to the
           family of generalized linear models (GLM) and can be fitted by <code>glm()</code>
 	  from package stats. This includes in particular logit and probit models
-	  for modeling choice data and poisson models for count data.</li>
+	  for modeling choice data and poisson models for count data. Effects for typical
+	  values of regressors in these models can be obtained and visualized using <pkg>effects</pkg>.</li>
       <li>Negative binomial GLMs are available via <code>glm.nb()</code> in package <pkg>MASS</pkg>.
 	  Another implementation of negative binomial models
 	  is provided by <pkg>aod</pkg>, which also contains other models for overdispersed
@@ -236,6 +237,7 @@
     <pkg>dyn</pkg>
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
+    <pkg>effects</pkg>
     <pkg>expsmooth</pkg>
     <pkg>FinTS</pkg>
     <pkg>fma</pkg>
