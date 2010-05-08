@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2009-10-28</version>
+  <version>2010-05-08</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -26,7 +26,7 @@
 	  provides 3 dimensional scatterplots, 
           <pkg>aplpack</pkg> provides bagplots and <code>spin3R()</code>,
           a function for rotating 3d clouds.   <pkg>misc3d</pkg>, dependent upon <pkg>rgl</pkg>,
-	  provides animated functions within R useful for visualising densities.   <pkg>YaleToolkit</pkg> provides a range of useful visualisation techniques for multivariate data, as does <pkg>agsemisc</pkg>.
+	  provides animated functions within R useful for visualising densities.   <pkg>YaleToolkit</pkg> provides a range of useful visualisation techniques for multivariate data.
 	  More specialised multivariate plots include the following: 
 	  <code>faces()</code> in <pkg>aplpack</pkg> provides Chernoff's faces;
 	  <code>parcoord()</code> from <pkg>MASS</pkg> provides parallel 
@@ -260,7 +260,6 @@
  <packagelist>
     <pkg>abind</pkg> 
     <pkg priority="core">ade4</pkg>
-    <pkg>agsemisc</pkg>
     <pkg>AIS</pkg>
     <pkg>amap</pkg>
     <pkg>aplpack</pkg>

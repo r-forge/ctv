@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2009-10-28</version>
+  <version>2010-05-08</version>
   
   <info> 
   
@@ -79,7 +79,7 @@
           
           <li>
           Also see <pkg>brglm</pkg> package for bias-reduction in binomial-response GLMs (useful, e.g., in cases of complete separation);
-	  the <pkg>catspec</pkg> package for multi-way percentage tables and models for square tables; the <pkg>exactLoglinTest</pkg> package for exact tests of loglinear models; the <code>clogit</code> function in the <pkg>survival</pkg> package for conditional logistic regression; and the <pkg>vcd</pkg> package for graphical displays of categorical data.
+	  the <pkg>exactLoglinTest</pkg> package for exact tests of loglinear models; the <code>clogit</code> function in the <pkg>survival</pkg> package for conditional logistic regression; and the <pkg>vcd</pkg> package for graphical displays of categorical data.
           </li>
           
           <li>
@@ -228,7 +228,6 @@
     <pkg>BradleyTerry</pkg>
     <pkg>brglm</pkg>
     <pkg priority="core">car</pkg>
-    <pkg>catspec</pkg>
     <pkg>class</pkg>
     <pkg>concord</pkg>
     <pkg>Design</pkg>
