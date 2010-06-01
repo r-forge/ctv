@@ -169,8 +169,7 @@ update.views <- function(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, 
 
   ## query installed packages
   ipkgs <- installed.packages(lib.loc = lib.loc)
-  ipkgs <- cbind(Name = ifelse(is.na(ipkgs[,"Bundle"]), ipkgs[,"Package"], ipkgs[,"Bundle"]), ipkgs)
-  ipkgs <- ipkgs[which(ipkgs[,"Name"] %in% pkgs),,drop=FALSE]
+  ipkgs <- ipkgs[which(ipkgs[,"Package"] %in% pkgs),,drop=FALSE]
   
   ## determine which packages need to be updated
   if(NROW(ipkgs) > 0) {    

@@ -1,3 +1,9 @@
+Changes in Version 0.6-0
+
+  o update.views() was updated reflecting that bundles are not
+    supported anymore.
+  
+
 Changes in Version 0.5-6
 
   o modified code to avoid non-standard evaluation in subset().
