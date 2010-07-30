@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2010-03-04</version>
+  <version>2010-07-30</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -67,9 +67,6 @@
 <pkg>ape</pkg>. Package
 <pkg>ouch</pkg>
           provides Ornstein-Uhlenbeck models for phylogenetic comparative hypotheses.
-<pkg>PHYLOGR</pkg>
-          is a suite of functions for the analysis of phylogenetically simulated data sets and
-          phylogenetically-based GLS model fitting.
 <pkg>stepwise</pkg>
           implements a method for stepwise detection of recombination breakpoints in
           sequence alignments.
@@ -115,9 +112,7 @@
           <code>
             scanone()
           </code>
-          for genome-wide scans. The package
-<pkg>qtlDesign</pkg>
-          has functions for designing QTL experiments, including power computations.
+          for genome-wide scans.
 <pkg>qtlbim</pkg>
           implements Bayesian Interval Mapping for QTL.
 <pkg>wgaim</pkg>
@@ -145,9 +140,7 @@
           </code>
           implements a Bayesian genomic control statistics for association studies. For family data,
 <pkg>tdthap</pkg>
-          offers an implementation of the Transmission/Disequilibrium Test (TDT) for extended marker haplotypes, whereas
-<pkg>powerpkg</pkg>
-          performs power analyses for the affected sib pair and the TDT design.  The
+          offers an implementation of the Transmission/Disequilibrium Test (TDT) for extended marker haplotypes.  The
 <pkg>catmap</pkg>
           can be used for the meta-analysis of case-contorl and TDT data.
         </li>
@@ -260,10 +253,7 @@
     <pkg>ouch</pkg>
     <pkg>pbatR</pkg>
     <pkg>phangorn</pkg>
-    <pkg>PHYLOGR</pkg>
-    <pkg>powerpkg</pkg>
     <pkg>qtl</pkg>
-    <pkg>qtlDesign</pkg>
     <pkg>qvalue</pkg>
     <pkg>rmetasim</pkg>
     <pkg>seqinr</pkg>

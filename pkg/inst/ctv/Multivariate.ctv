@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2010-05-08</version>
+  <version>2010-07-30</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -51,7 +51,7 @@
           graphics, of which interactive parallel co-ordinate plots and mosaic plots may be of great interest.
 	  Seriation methods are provided by <pkg>seriation</pkg> which can reorder matrices and dendrograms. </li>
          
-         <li><i>Data Preprocessing:</i><pkg>AIS</pkg> provides informative initial descriptions of a multivariate dataset.
+         <li><i>Data Preprocessing:</i>
           <code>summarize()</code> and <code>summary.formula()</code> in <pkg>Hmisc</pkg> 
           assist with descriptive functions; from the same package <code>varclus()</code> offers variable 
           clustering while <code>dataRep()</code> and <code>find.matches()</code> assist in exploring a given 
@@ -106,7 +106,7 @@
           <li><i>Copulas:</i><pkg>copula</pkg> provides 
           routines for a range of (elliptical and archimedean) copulas including 
           normal, t, Clayton, Frank, Gumbel, <pkg>fgac</pkg> provides 
-          generalised archimedian copula, bivariate copulas can be fitted with <pkg>mlCopulaSelection</pkg>. </li></ul>
+          generalised archimedian copula. </li></ul>
 
          <p><strong>Linear models</strong></p>
           <ul><li>From stats, <code>lm()</code> (with a matrix specified as the dependent variable)
@@ -212,10 +212,6 @@
 	  Further functionality is also available within <pkg>vegan</pkg> co-correspondence 
           is available from <pkg>cocorresp</pkg>.   <pkg>FactoMineR</pkg> provides <code>CA()</code> and <code>MCA()</code> which also enable simple and multiple corresondence analysis as well as associated graphical routines.   <pkg>homals</pkg> provides homogeneity analysis.</li></ul>
 
-          <p><strong>Forward search</strong></p>
-          <ul><li>The forward search for classical mulivariate methods can be implemented in association
-	  with <pkg>Rfwdmv</pkg>.</li></ul>
-
           <p><strong>Missing data</strong></p>
           <ul><li><pkg>mitools</pkg> provides tools for multiple imputation, <pkg>mice</pkg> provides
 	  multivariate imputation by chained equations <pkg>mvnmle</pkg> provides ML estimation
@@ -230,7 +226,7 @@
           <ul><li><code>factanal()</code> in stats provides factor analysis by maximum
 	  likelihood, Bayesian factor analysis
 	  is provided for Gaussian, ordinal and mixed variables in <pkg>MCMCpack</pkg>.
-	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation.    <pkg>FAiR</pkg> provides factor analysis solved using genetic algorithms.   <pkg>ifa</pkg> provides factor analysis with non-Gaussian latent variables (which are actually a mixture of Gaussian densitities).
+	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation.    <pkg>FAiR</pkg> provides factor analysis solved using genetic algorithms.
 	  <pkg>sem</pkg> fits linear structural equation models and <pkg>ltm</pkg> provides
 	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <code>MFA()</code> and <code>HMFA()</code>for multiple and hierarchical multiple factor analysis as well as <code>ADFM()</code> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul>
 
@@ -249,8 +245,8 @@
 	  and <pkg>SparseM</pkg>.    <pkg>matrixcalc</pkg> adds functions for matrix differential calculus.   Some further sparse matrix functionality is also available from <pkg>spam</pkg>.</li></ul>
 
       <p><strong>Miscellaneous utitlies</strong></p>
-          <ul><li>The technique of Data Envlopment Analysis has been made available in <pkg>DEA</pkg>.   <pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.   <pkg>SharedHT2</pkg> provides an implementation of Hotelling's T2 test for
-	  microarray experiments. <pkg>panel</pkg> provides methods for modelling panel data.
+          <ul><li><pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.
+	  <pkg>panel</pkg> provides methods for modelling panel data.
 	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
 	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.   <pkg>compositions</pkg> provides for compositional data analysis.   <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
 	  <pkg>cwhmisc</pkg> contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.   <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
@@ -260,7 +256,6 @@
  <packagelist>
     <pkg>abind</pkg> 
     <pkg priority="core">ade4</pkg>
-    <pkg>AIS</pkg>
     <pkg>amap</pkg>
     <pkg>aplpack</pkg>
     <pkg>ash</pkg>
@@ -285,7 +280,6 @@
     <pkg>covRobust</pkg>
     <pkg>cramer</pkg> 
     <pkg>cwhmisc</pkg> 
-    <pkg>DEA</pkg>
     <pkg>delt</pkg> 
     <pkg>denpro</pkg>
     <pkg>DescribeDisplay</pkg>
@@ -318,7 +312,6 @@
     <pkg>hybridHclust</pkg> 
     <pkg>ICS</pkg>
     <pkg>ICSNP</pkg>
-    <pkg>ifa</pkg>
     <pkg>iplots</pkg>  
     <pkg>JADE</pkg>
     <pkg>kernlab</pkg>   
@@ -343,7 +336,6 @@
     <pkg>misc3d</pkg>
     <pkg>mitools</pkg>
     <pkg>mix</pkg>
-    <pkg>mlCopulaSelection</pkg>  
     <pkg>monomvn</pkg> 
     <pkg>mnormt</pkg>  
     <pkg>MNP</pkg>
@@ -373,7 +365,6 @@
     <pkg>PTAk</pkg>
     <pkg>rda</pkg>
     <pkg>relaimpo</pkg>    
-    <pkg>Rfwdmv</pkg>
     <pkg>rgl</pkg>
     <pkg>rggobi</pkg>
     <pkg>robustbase</pkg>
@@ -386,7 +377,6 @@
     <pkg>sem</pkg>
     <pkg>SensoMineR</pkg>
     <pkg>seriation</pkg>  
-    <pkg>SharedHT2</pkg>
     <pkg>simba</pkg> 
     <pkg>smatr</pkg>  
     <pkg>sn</pkg>
