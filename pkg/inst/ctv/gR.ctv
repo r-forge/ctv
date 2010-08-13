@@ -3,8 +3,8 @@
 
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
-  <maintainer email="sorenh@agrsci.dk">Søren Højsgaard</maintainer>
-  <version>2010-02-06</version>
+  <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
+  <version>2010-08-14</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -167,6 +167,13 @@
       cross-validation.
     </li>
 
+    <li>
+      <pkg>catnet</pkg> [vignette: y]
+      A package that handles discrete Bayesian network models and provides
+      inference using the frequentist approach 
+    </li>
+
+
   </ul>
 
 
@@ -196,8 +203,10 @@
 
     <li>
     <pkg>gRain</pkg> [vignette: y] 
-    Implements propagation (message passing) in graphical
-    models (Bayesian networks).
+    A package for probability propagation in graphical
+    independence networks, also known as probabilistic
+    expert systems (which includes Bayesian networks as
+    a special case).
     </li>
 
   </ul>
@@ -262,6 +271,7 @@
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
     <pkg>boa</pkg> 
+    <pkg>catnet</pkg>
     <pkg>coda</pkg>
     <pkg>deal</pkg>
     <pkg>diagram</pkg>
