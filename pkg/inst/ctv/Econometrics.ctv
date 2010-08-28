@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2010-04-24</version>
+  <version>2010-08-28</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -88,7 +88,6 @@
       <li>Quantile regression: <pkg>quantreg</pkg> (including linear, nonlinear, censored,
           locally polynomial and additive quantile regressions).</li>
       <li>Linear models for panel data: <pkg>plm</pkg>.</li>
-      <li>Bayesian methods for panel data: <pkg>BayesPanel</pkg>.</li>
       <li>Generalized method of moments (GMM) and generalized empirical likelihood (GEL):
           <pkg>gmm</pkg>.</li>
       <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
@@ -224,7 +223,6 @@
     <pkg>AER</pkg>
     <pkg>aod</pkg>
     <pkg>bayesm</pkg>
-    <pkg>BayesPanel</pkg>
     <pkg>betareg</pkg>
     <pkg>boot</pkg>
     <pkg>bootstrap</pkg>
