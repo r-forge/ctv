@@ -6,6 +6,7 @@ export(
    "available.views",
    "install.views",
    "update.views",
+   "download.views",
 
 ## server-side tools
   "read.ctv",

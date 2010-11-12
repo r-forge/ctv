@@ -1,3 +1,13 @@
+Changes in Version 0.7-0
+
+  o added download.views() function (as suggested by Peter
+    Ruckdeschel)
+    
+  o restructured internals of install.views() and update.views()
+    so that all can use the same code for determining the list
+    of packages that is going to be installed/updated/downloaded.
+
+  
 Changes in Version 0.6-0
 
   o update.views() was updated reflecting that bundles are not

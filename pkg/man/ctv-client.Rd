@@ -2,6 +2,7 @@
 \alias{install.views}
 \alias{CRAN.views}
 \alias{available.views}
+\alias{download.views}
 \alias{update.views}
 \alias{print.ctv}
 \alias{print.ctvlist}
@@ -14,6 +15,7 @@ Client-side tools for installing CRAN task views.
 available.views(repos = NULL, \dots)
 install.views(views, coreOnly = FALSE, repos = NULL, \dots)
 update.views(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, \dots)
+download.views(views, destdir, coreOnly = FALSE, repos = NULL, \dots)
 
 \method{print}{ctv}(x, packagelist = TRUE, \dots)
 \method{print}{ctvlist}(x, packagelist = FALSE, \dots)
@@ -30,7 +32,9 @@ update.views(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, \dots)
     is tried and otherwise \code{getOption("CRAN")} is used.}
   \item{lib.loc}{character vector describing the location of R library trees
     to search through (and update packages therein).}
-  \item{\dots}{further arguments passed to \code{\link{install.packages}}.}
+  \item{destdir}{directory where downloaded packages are to be stored.}
+  \item{\dots}{further arguments passed to \code{\link{install.packages}} or
+    \code{\link{download.packages}} respectively.}
   \item{x}{an object of class \code{"ctv"} or \code{"ctvlist"} respectively.}
   \item{packagelist}{logical. Should the packagelist also be printed?}
 }
@@ -51,6 +55,9 @@ installed (using \code{\link{installed.packages}}) and which of the installed
 packages are older than the packages available (using \code{\link{available.packages}}).
 It subsequently installs only the packages that are not current or not
 installed yet.
+
+\code{download.views} works exactly as \code{install.views} except that it
+\code{\link{download.packages}} instead of \code{install.packages}.
 
 For a closer description of the arguments see also \code{\link{install.packages}}.
 }
