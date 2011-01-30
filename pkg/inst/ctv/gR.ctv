@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
-  <version>2010-08-14</version>
+  <version>2011-01-30</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -98,11 +98,22 @@
     
     <li>
       <pkg>gRbase</pkg> [vignette: y]
-      Sets up a
-      meta data representation which is used by several other
-      packages (among these are <pkg>mimR</pkg> and
-      <pkg>gRain</pkg>). gRbase suggests a way to implement models and fitting
-      engines - illustrated by hierarchical log-linear models.
+      The gRbase package provides certain general constructs
+      which are used by other graphical modelling packages (in
+      particular by <pkg>gRain</pkg>).
+      This includes 1) the concept of gmData (graphical meta
+      data), 2) several graph algorithms 3) facilities for
+      table operations, 4) functions for testing for
+      conditional independence. gRbase also illustrates how
+      hierarchical log-linear models (hllm) may be
+      implemented.
+    </li>
+
+    <li>
+      <pkg>gRapHD</pkg> [vignette: y]
+      Package for selecting and fitting high-dimensional graphical
+      models for discrete, Gaussian, or mixed discrete and Gaussian
+      data. Link: http://www.jstatsoft.org/v37/i01
     </li>
     
     <li>
