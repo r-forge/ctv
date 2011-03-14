@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2010-08-28</version>
+  <version>2011-03-14</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -63,11 +63,11 @@
 	  multinomial probit models is provided by <pkg>MNP</pkg>. Furthermore,
 	  proportional-odds logistic regression for ordered responses is implemented in
 	  <code>polr()</code> from package <pkg>MASS</pkg>.</li>
-      <li>Basic censored regression models (e.g., tobit models)
+      <li>Censored responses: Basic censored regression models (e.g., tobit models)
 	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>, a convenience
-	  interface <code>tobit()</code> is in package <pkg>AER</pkg>.
-	  More advanced models for sample selection are available in
-	  <pkg>sampleSelection</pkg>.</li>
+	  interface <code>tobit()</code> is in package <pkg>AER</pkg>. Further censored
+	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
+	  Models for sample selection are available in <pkg>sampleSelection</pkg>.</li>
       <li>Miscellaneous: Further more refined tools for microecnometrics are provided in
 	  the <pkg>micEcon</pkg> family of packages: Analysis with
 	  Cobb-Douglas, translog, and quadratic functions is in <pkg>micEcon</pkg>;
@@ -87,7 +87,8 @@
 	  in package stats.</li>
       <li>Quantile regression: <pkg>quantreg</pkg> (including linear, nonlinear, censored,
           locally polynomial and additive quantile regressions).</li>
-      <li>Linear models for panel data: <pkg>plm</pkg>.</li>
+      <li>Linear models for panel data: <pkg>plm</pkg>. A package for spatial panel
+          models, <rforge>splm</rforge>, is under development on R-Forge.</li>
       <li>Generalized method of moments (GMM) and generalized empirical likelihood (GEL):
           <pkg>gmm</pkg>.</li>
       <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
@@ -178,7 +179,7 @@
       <li><pkg>CDNmoney</pkg> provides Canadian monetary aggregates.</li>
       <li><pkg>pwt</pkg> provides (several releases of) the Penn world table.</li>
       <li>The packages <pkg>expsmooth</pkg>, <pkg>fma</pkg>, and <pkg>Mcomp</pkg> are
-          data packages (from the former forecasting bundle) with time series data
+          data packages with time series data
 	  from the books 'Forecasting with Exponential Smoothing: The State Space Approach'
 	  (Hyndman, Koehler, Ord, Snyder, 2008, Springer) and 'Forecasting: Methods and Applications'
 	  (Makridakis, Wheelwright, Hyndman, 3rd ed., 1998, Wiley) and the M-competitions,
@@ -229,6 +230,7 @@
     <pkg>CADFtest</pkg>
     <pkg priority="core">car</pkg>
     <pkg>CDNmoney</pkg>
+    <pkg>censReg</pkg>
     <pkg>Design</pkg>
     <pkg>dlm</pkg>
     <pkg>dse</pkg>
@@ -302,6 +304,7 @@
     <a href="http://people.su.se/~ma/R_intro/">A Brief Guide to R for Beginners in Econometrics</a>
     <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
     <a href="http://www2.cirano.qc.ca/~bacc/">BACC Software for Bayesian Econometrics (Bayesian Analysis, Computation and Communication)</a>
-  </links>
+    <rforge>splm</rforge>
+</links>
 
 </CRANTaskView>
