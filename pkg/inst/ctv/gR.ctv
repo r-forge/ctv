@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
-  <version>2011-01-30</version>
+  <version>2011-04-13</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -258,11 +258,6 @@
     </li>
 
     <li>
-    <pkg>G1DBN</pkg> [vignette: n; demo: n] 
-    G1DBN performs DBN inference using 1st order conditional dependencies.
-    </li>
-    
-    <li>
     <pkg>rbugs</pkg> [vignette: n; demo: n]
     Fusing R and OpenBugs
     </li>
@@ -288,7 +283,6 @@
     <pkg>diagram</pkg>
     <pkg>dynamicGraph</pkg>
     <pkg>ergm</pkg>
-    <pkg>G1DBN</pkg>
     <pkg>ggm</pkg>
     <pkg>giRaph</pkg>
     <pkg>gRain</pkg>
