@@ -67,9 +67,9 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   rval <- list()
   
   for(i in seq(along.with = contriburl)) {
-    ## load Views.rds from repository    
-    x <- suppressWarnings(try(.readRDS(viewurl <- url(paste(contriburl[i], "Views.rds", sep = "/"),
-      open = "rb")), silent = TRUE))
+    ## load Views.rds from repository
+    viewurl <- gzcon(url(paste(contriburl[i], "Views.rds", sep = "/"), open = "rb"))
+    x <- suppressWarnings(try(.readRDS(viewurl), silent = TRUE))
     if(inherits(x, "try-error")) next else close(viewurl)
 
     ## add repository information    
@@ -169,7 +169,7 @@ update.views <- function(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, 
 
     ## install packages required
     apkgs <- apkgs[pkgs,,drop=FALSE]
-    if(NROW(apkgs) > 0) install.packages(apkgs[,1], contriburl = apkgs[,"Repository"], lib = lib.loc, ...)
+    if(NROW(apkgs) > 0) install.packages(apkgs[,1], repos = repos, lib = lib.loc, ...)
   }
   
   invisible()

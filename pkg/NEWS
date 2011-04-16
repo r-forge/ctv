@@ -1,3 +1,9 @@
+Changes in Version 0.7-1
+
+  o fixed available.views() for R 2.13.0 as the underlying .readRDS()
+    needed to be changed.
+    
+
 Changes in Version 0.7-0
 
   o added download.views() function (as suggested by Peter
