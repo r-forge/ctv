@@ -1,3 +1,12 @@
+Changes in Version 0.7-2
+
+  o avoid usage of &#8810; in Cluster.ctv because it is not processed
+    correctly on all platforms
+
+  o further improvement to available.views() which now uses readRDS() if
+    available.
+    
+
 Changes in Version 0.7-1
 
   o fixed available.views() for R 2.13.0 as the underlying .readRDS()
