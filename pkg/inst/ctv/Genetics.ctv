@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2010-07-30</version>
+  <version>2011-04-26</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -35,8 +35,6 @@
           simulates haplotype data with pre-specified allele frequencies and LD patterns. A few 
           population genetics functions are also implemeted in
 <pkg>gap</pkg>.
-<pkg>hierfstat</pkg>
-          allows the estimation of hierarchical F-statistics from haploid or diploid genetic data.
 <pkg>LDheatmap</pkg>
           creates a heat map plot of measures of pairwise LD.
 <pkg>mapLD</pkg>
@@ -239,7 +237,6 @@
     <pkg>HardyWeinberg</pkg>
     <pkg priority="core">haplo.stats</pkg>
     <pkg>hapsim</pkg>
-    <pkg>hierfstat</pkg>
     <pkg>hwde</pkg>
     <pkg>ibdreg</pkg>
     <pkg>kinship</pkg>
