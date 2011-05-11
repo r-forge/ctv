@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
-  <version>2011-04-13</version>
+  <version>2011-05-11</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -46,14 +46,9 @@
     </li>
 
     <li>
-    <pkg>graph</pkg> [vignette: y] 
-    A package to handle graph data structures.
-    </li>
-
-    <li>
       <pkg>gRbase</pkg>   [vignette: y]
       An alternative interface to graphs. Uses the
-      <pkg>graph</pkg> and <pkg>RBGL</pkg> and implements additional graph
+      <bioc>graph</bioc> and <pkg>RBGL</pkg> and implements additional graph
       operations. 
     </li>
 
@@ -78,14 +73,14 @@
     <li>
       <pkg>RBGL</pkg> [vignette: y] 
       Interface to boost C++ graph library (based on graph
-      objects from the <pkg>graph</pkg> package).
+      objects from the <bioc>graph</bioc> package).
     </li>
 
   </ul>
-  In addition, there is the
-  <bioc>Rgraphviz</bioc>
-  package on Bioconductor that provides plotting capabilities for R graph
-  objects (from the <pkg>graph</pkg> package) [vignette: y].
+  In addition, there are the <bioc>graph</bioc> [vignette: y] and
+  <bioc>Rgraphviz</bioc> [vignette: y]
+  packages on Bioconductor that provide graph data structures and corresponding
+  plotting capabilities, respectively.
   
 
   <p><strong>Classical models - General purpose packages</strong></p>
@@ -286,7 +281,6 @@
     <pkg>ggm</pkg>
     <pkg>giRaph</pkg>
     <pkg>gRain</pkg>
-    <pkg>graph</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRc</pkg>
     <pkg>igraph</pkg> 
@@ -303,6 +297,7 @@
 
   <links>
     <a href="http://www.R-project.org/gR/">gR homepage and mailing list</a>
+    <bioc>graph</bioc>
     <bioc>Rgraphviz</bioc>
     <a href="http://www.Bioconductor.org/">Bioconductor</a>
     <a href="http://www-fis.iarc.fr/~martyn/software/jags/">JAGS</a>
