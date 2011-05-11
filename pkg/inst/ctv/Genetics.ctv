@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2011-04-26</version>
+  <version>2011-05-11</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -201,7 +201,7 @@
           </code>
           estimates the q-values from a list of p-values.
           Package
-<pkg>multtest</pkg>
+<bioc>multtest</bioc> on Bioconductor
           also offers several non-parametric bootstrap and permutation resampling-based multiple testing procedures.
         </li>
         <li>
@@ -246,7 +246,6 @@
     <pkg>luca</pkg>
     <pkg>mapLD</pkg>
     <pkg>multic</pkg>
-    <pkg>multtest</pkg>
     <pkg>ouch</pkg>
     <pkg>pbatR</pkg>
     <pkg>phangorn</pkg>
@@ -271,6 +270,7 @@
     <a href="http://www.bioconductor.org/">
       Bioconductor
     </a> 
+    <bioc>multtest</bioc>
     <a href="http://mayoresearch.mayo.edu/mayo/research/biostat/splusfunctions.cfm">
      R packages from Divison of Biostatistics, Mayo Clinic
     </a> 
