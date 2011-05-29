@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2011-05-11</version>
+  <version>2011-05-29</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -166,6 +166,7 @@
       <li>Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
       <li>Package <pkg>sde</pkg> provides simulation and inference for stochastic
 	  differential equations.</li>
+      <li>Asymmetric price transmission modeling is available in <pkg>apt</pkg>.</li>
     </ul>
 
     <p><strong>Data sets</strong></p>
@@ -190,6 +191,8 @@
 	  (Hyndman, Koehler, Ord, Snyder, 2008, Springer) and 'Forecasting: Methods and Applications'
 	  (Makridakis, Wheelwright, Hyndman, 3rd ed., 1998, Wiley) and the M-competitions,
 	  respectively.</li>
+      <li>Package <pkg>erer</pkg> contains functions and datasets for the book of
+          'Empirical Research in Economics: Growing up with R' (Sun, forthcoming).</li>
     </ul>
 
     <p><strong>Miscellaneous</strong></p>
@@ -229,6 +232,7 @@
   <packagelist>
     <pkg>AER</pkg>
     <pkg>aod</pkg>
+    <pkg>apt</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
     <pkg>boot</pkg>
@@ -244,6 +248,7 @@
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
     <pkg>effects</pkg>
+    <pkg>erer</pkg>
     <pkg>expsmooth</pkg>
     <pkg>FinTS</pkg>
     <pkg>fma</pkg>
