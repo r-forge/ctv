@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2011-05-11</version>
+  <version>2011-11-04</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -181,11 +181,11 @@
           provides a GUI to the powerful PBAT software which performs family and population based family and 
           population based studies.  The software has been implemented to take advantage of parallel processing, which
           vastly reduces the computational time required for GWAS.
-<pkg>SNPassoc</pkg>
+<!-- <pkg>SNPassoc</pkg>
           is another package for carrying out GWAS analysis.  It provides descriptive statistics of the data 
           (inlcuding patterns of missing data) and tests for Hardy-Weinberg equilibrium.  Single-point analyses with binary 
           or quantitative traits are implemented via generalized linear models, and multiple SNPs can be anlaysed for 
-          haplotypic associations or epistasis.
+          haplotypic associations or epistasis. -->
 <pkg>snpMatrix</pkg>
 	  Implements classes and methods for large-scale SNP association studies.
         </li>        
@@ -253,7 +253,6 @@
     <pkg>qvalue</pkg>
     <pkg>rmetasim</pkg>
     <pkg>seqinr</pkg>
-    <pkg>SNPassoc</pkg>
     <pkg>SNPmaxsel</pkg>
     <pkg>snp.plotter</pkg>
     <pkg>stepwise</pkg>
