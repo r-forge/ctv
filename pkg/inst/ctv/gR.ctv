@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@agrsci.dk">Soren Hojsgaard</maintainer>
-  <version>2011-05-11</version>
+  <version>2011-11-09</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -48,7 +48,7 @@
     <li>
       <pkg>gRbase</pkg>   [vignette: y]
       An alternative interface to graphs. Uses the
-      <bioc>graph</bioc> and <pkg>RBGL</pkg> and implements additional graph
+      <bioc>graph</bioc> and <bioc>RBGL</bioc> and implements additional graph
       operations. 
     </li>
 
@@ -71,7 +71,7 @@
     </li>
 
     <li>
-      <pkg>RBGL</pkg> [vignette: y] 
+      <bioc>RBGL</bioc> [vignette: y] 
       Interface to boost C++ graph library (based on graph
       objects from the <bioc>graph</bioc> package).
     </li>
@@ -291,13 +291,13 @@
     <pkg>qp</pkg>
     <pkg>SIN</pkg>
     <pkg>R2WinBUGS</pkg>
-    <pkg>RBGL</pkg>
     <pkg>rbugs</pkg>
   </packagelist>
 
   <links>
     <a href="http://www.R-project.org/gR/">gR homepage and mailing list</a>
     <bioc>graph</bioc>
+    <bioc>RBGL</bioc>
     <bioc>Rgraphviz</bioc>
     <a href="http://www.Bioconductor.org/">Bioconductor</a>
     <a href="http://www-fis.iarc.fr/~martyn/software/jags/">JAGS</a>
