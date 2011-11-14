@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2010-05-08</version>
+  <version>2011-11-14</version>
   
   <info> 
   
@@ -33,14 +33,14 @@
           </li>
       
           <li>
-          <i>F</i> and Wald tests for a variety of hypotheses are available from the <code>coeftest</code> and <code>waldtest</code> functions in the <pkg>lmtest</pkg> package, and the <code>linear.hypothesis</code> function in the <pkg>car</pkg> package. All of these functions permit the use of heteroscedasticity and heteroscedasticity/autocorrelation-consistent covariance matrices, as computed, e.g., by functions in the <pkg>sandwich</pkg> and <pkg>car</pkg> packages. Also see the <code>glh.test</code> function in the <pkg>gmodels</pkg> package. Nonlinear functions of parameters can be tested via the <code>delta.method</code> function in the <pkg>alr3</pkg> package (associated with Weisberg, <i>Applied Linear Regression, 3rd Ed.,</i> Wiley, 2005). The <pkg>multcomp</pkg> package includes functions for multiple comparisons. The <code>vuong</code> function in the <pkg>pscl</pkg> package tests non-nested hypotheses for generalized linear and some other models. Also see the <pkg>Design</pkg> package for tests on linear and generalized linear models.
+          <i>F</i> and Wald tests for a variety of hypotheses are available from the <code>coeftest</code> and <code>waldtest</code> functions in the <pkg>lmtest</pkg> package, and the <code>linear.hypothesis</code> function in the <pkg>car</pkg> package. All of these functions permit the use of heteroscedasticity and heteroscedasticity/autocorrelation-consistent covariance matrices, as computed, e.g., by functions in the <pkg>sandwich</pkg> and <pkg>car</pkg> packages. Also see the <code>glh.test</code> function in the <pkg>gmodels</pkg> package. Nonlinear functions of parameters can be tested via the <code>delta.method</code> function in the <pkg>alr3</pkg> package (associated with Weisberg, <i>Applied Linear Regression, 3rd Ed.,</i> Wiley, 2005). The <pkg>multcomp</pkg> package includes functions for multiple comparisons. The <code>vuong</code> function in the <pkg>pscl</pkg> package tests non-nested hypotheses for generalized linear and some other models. Also see the <pkg>rms</pkg> package for tests on linear and generalized linear models.
           </li>
          
           <li>
           A basic R installation has excellent facilities for linear and generalized linear model
 	  "diagnostics," including, for example, hat-values and deletion statistics such as studentized
 	  residuals and Cook's distances (<code>hatvalues</code>, <code>rstudent</code>, and
-	  <code>cooks.distance</code>, all in the stats package). These are augmented by other packages: several functions in the <pkg>car</pkg> package, which emphasizes graphical methods, e.g., <code>cr.plots</code> for component-plus-residual plots and <code>av.plots</code> for added-variable plots, in addition to numerical diagnostics, such <code>vif</code> for (generalized) variance-inflation factors; the <pkg>dr</pkg> package for dimension reduction in regression, including SIR, SAVE, and pHd; and the <pkg>lmtest</pkg> package, which implements a wide variety of tests (e.g., for heteroscedasticity, nonlinearity, and autocorrelation). More diagnostic methods, e.g., for inverse-response plots, may be found in the <pkg>alr3</pkg> package. The <pkg>forward</pkg> package implements diagnostics based on a "forward search" (Atkinson and Riani, <i>Robust Diagnostic Regression Analysis,</i> Springer, 2000). Other collinearity diagnostics are in the <pkg>perturb</pkg> package. Diagnostics may also be found in the <pkg>Design</pkg> package.
+	  <code>cooks.distance</code>, all in the stats package). These are augmented by other packages: several functions in the <pkg>car</pkg> package, which emphasizes graphical methods, e.g., <code>cr.plots</code> for component-plus-residual plots and <code>av.plots</code> for added-variable plots, in addition to numerical diagnostics, such <code>vif</code> for (generalized) variance-inflation factors; the <pkg>dr</pkg> package for dimension reduction in regression, including SIR, SAVE, and pHd; and the <pkg>lmtest</pkg> package, which implements a wide variety of tests (e.g., for heteroscedasticity, nonlinearity, and autocorrelation). More diagnostic methods, e.g., for inverse-response plots, may be found in the <pkg>alr3</pkg> package. The <pkg>forward</pkg> package implements diagnostics based on a "forward search" (Atkinson and Riani, <i>Robust Diagnostic Regression Analysis,</i> Springer, 2000). Other collinearity diagnostics are in the <pkg>perturb</pkg> package. Diagnostics may also be found in the <pkg>rms</pkg> package.
           </li>
           
           <li>
@@ -143,7 +143,7 @@
     </p>
       <ul>
           <li>
-          <a NAME="Survival"></a><i>Survival (Event-History) Analysis:</i> There is an extensive implementation of methods of survival analysis in the recommended <pkg>survival</pkg> package, which is associated with Therneau and Grambsch, <i>Modeling Survival Data</i> (Springer, 2000). Also see the  <pkg>eha</pkg>, <pkg>survrec</pkg>, <pkg>frailtypack</pkg>, and <pkg>Design</pkg> packages.   
+          <a NAME="Survival"></a><i>Survival (Event-History) Analysis:</i> There is an extensive implementation of methods of survival analysis in the recommended <pkg>survival</pkg> package, which is associated with Therneau and Grambsch, <i>Modeling Survival Data</i> (Springer, 2000). Also see the  <pkg>eha</pkg>, <pkg>survrec</pkg>, <pkg>frailtypack</pkg>, and <pkg>rms</pkg> packages.   
           </li>
           
           <li>
@@ -210,7 +210,7 @@
           </li>
           
           <li>
-          The <pkg>Hmisc</pkg> and <pkg>Design</pkg> packages (both mentioned above), associated with Harrell, <i>Regression Modeling Strategies</i> (Springer, 2001), provide functions for data manipulation, linear models, logistic-regression models, and survival analysis, many of them "front ends" to or modifications of other facilities in R.
+          The <pkg>Hmisc</pkg> and <pkg>rms</pkg> packages (both mentioned above), associated with Harrell, <i>Regression Modeling Strategies</i> (Springer, 2001), provide functions for data manipulation, linear models, logistic-regression models, and survival analysis, many of them "front ends" to or modifications of other facilities in R.
           </li>
           
           <li>
@@ -230,7 +230,6 @@
     <pkg priority="core">car</pkg>
     <pkg>class</pkg>
     <pkg>concord</pkg>
-    <pkg>Design</pkg>
     <pkg>dr</pkg>
     <pkg>dyn</pkg>
     <pkg>dynlm</pkg>
@@ -278,6 +277,7 @@
     <pkg priority="core">quantreg</pkg>
     <pkg>qvcalc</pkg>
     <pkg>rmeta</pkg>
+    <pkg>rms</pkg>
     <pkg>robust</pkg>
     <pkg>robustbase</pkg>
     <pkg>sampling</pkg>

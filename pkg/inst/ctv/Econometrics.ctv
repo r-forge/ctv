@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2011-05-29</version>
+  <version>2011-11-14</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -105,7 +105,7 @@
       <li>Nonlinear mixed-effect models: <pkg>nlme</pkg> and <pkg>lme4</pkg>.</li>
       <li>Generalized additive models (GAMs): <pkg>mgcv</pkg>, <pkg>gam</pkg>, <pkg>gamlss</pkg>
           and <pkg>VGAM</pkg>.</li> 
-      <li>Miscellaneous: The packages <pkg>VGAM</pkg>, <pkg>Design</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
+      <li>Miscellaneous: The packages <pkg>VGAM</pkg>, <pkg>rms</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
 	  handling of (generalized) linear regression models. <pkg>Zelig</pkg> is a unified
 	  easy-to-use interface to a wide range of regression models.</li>
     </ul>
@@ -241,7 +241,6 @@
     <pkg priority="core">car</pkg>
     <pkg>CDNmoney</pkg>
     <pkg>censReg</pkg>
-    <pkg>Design</pkg>
     <pkg>dlm</pkg>
     <pkg>dse</pkg>
     <pkg>dyn</pkg>
@@ -285,6 +284,7 @@
     <pkg>pwt</pkg>
     <pkg>quantreg</pkg>
     <pkg>reldist</pkg>
+    <pkg>rms</pkg>
     <pkg>sampleSelection</pkg>
     <pkg priority="core">sandwich</pkg>
     <pkg>sde</pkg>
