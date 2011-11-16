@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2011-11-14</version>
+  <version>2011-11-16</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -74,6 +74,8 @@
 	  interface <code>tobit()</code> is in package <pkg>AER</pkg>. Further censored
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
 	  Models for sample selection are available in <pkg>sampleSelection</pkg>.</li>
+      <li>Multivariate probit models: Estimation and marginal effect computations can be
+          carried out with <pkg>mvProbit</pkg>.</li>
       <li>Miscellaneous: Further more refined tools for microecnometrics are provided in
 	  the <pkg>micEcon</pkg> family of packages: Analysis with
 	  Cobb-Douglas, translog, and quadratic functions is in <pkg>micEcon</pkg>;
@@ -275,6 +277,7 @@
     <pkg>mlogit</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>
+    <pkg>mvProbit</pkg>
     <pkg>nlme</pkg>
     <pkg>nnet</pkg>
     <pkg>np</pkg>
