@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2011-11-04</version>
+  <version>2011-11-18</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -194,7 +194,7 @@
             Multiple testing
           </i>:
           The package
-<pkg>qvalue</pkg>
+<bioc>qvalue</bioc> on Bioconductor
           implements False Discovery Rate; the main function
           <code>
             qvalue()
@@ -250,7 +250,6 @@
     <pkg>pbatR</pkg>
     <pkg>phangorn</pkg>
     <pkg>qtl</pkg>
-    <pkg>qvalue</pkg>
     <pkg>rmetasim</pkg>
     <pkg>seqinr</pkg>
     <pkg>SNPmaxsel</pkg>
@@ -270,6 +269,7 @@
       Bioconductor
     </a> 
     <bioc>multtest</bioc>
+    <bioc>qvalue</bioc>
     <a href="http://mayoresearch.mayo.edu/mayo/research/biostat/splusfunctions.cfm">
      R packages from Divison of Biostatistics, Mayo Clinic
     </a> 
