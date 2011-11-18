@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2011-11-09</version>
+  <version>2011-11-18</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -42,10 +42,8 @@
 	  in <pkg>vcd</pkg> that also contains other visualization techniques for multivariate
 	  categorical data. <pkg>gclus</pkg> provides a number of 
           cluster specific graphical enhancements for scatterplots and parallel coordinate plots
-	  See the links for a reference to GGobi; <pkg>rggobi</pkg> interfaces with GGobi,
-          <pkg>DescribeDisplay</pkg> provides an interface 
-          to GGobi plugins yielding publication quality graphs.    <pkg>xgobi</pkg> 
-          interfaces to the XGobi
+	  See the links for a reference to GGobi. <pkg>rggobi</pkg> interfaces with GGobi.
+	  <pkg>xgobi</pkg> interfaces to the XGobi
 	  and XGvis programs which allow linked, dynamic multivariate plots as well as
 	  projection pursuit.   Finally, <pkg>iplots</pkg> allows particularly powerful dynamic interactive 
           graphics, of which interactive parallel co-ordinate plots and mosaic plots may be of great interest.
@@ -282,7 +280,6 @@
     <pkg>cwhmisc</pkg> 
     <pkg>delt</pkg> 
     <pkg>denpro</pkg>
-    <pkg>DescribeDisplay</pkg>
     <pkg>desirability</pkg>
     <pkg>dr</pkg>
     <pkg>e1071</pkg>
