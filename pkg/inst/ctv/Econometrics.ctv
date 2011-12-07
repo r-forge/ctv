@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2011-11-16</version>
+  <version>2011-12-07</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -95,10 +95,17 @@
 	  in package stats.</li>
       <li>Quantile regression: <pkg>quantreg</pkg> (including linear, nonlinear, censored,
           locally polynomial and additive quantile regressions).</li>
-      <li>Linear models for panel data: <pkg>plm</pkg>. A package for spatial panel
-          models, <rforge>splm</rforge>, is under development on R-Forge.</li>
+      <li>Linear models for panel data: <pkg>plm</pkg>, providing a wide range of within,
+          between, and random-effect methods (among others) along with corrected standard
+	  errors, tests, etc. For panel-corrected standard errors in OLS and GEE models,
+	  see <pkg>geepack</pkg> and <pkg>pcse</pkg>.</li>
       <li>Generalized method of moments (GMM) and generalized empirical likelihood (GEL):
           <pkg>gmm</pkg>.</li>
+      <li>Spatial econometric models: The <view>Spatial</view> view gives details about
+          handling spatial data, along with information about (regression) modeling. In particular,
+	  spatial regression models can be fitted using <pkg>spdep</pkg> and <pkg>sphet</pkg> (the
+	  latter using a GMM approach). A package for spatial panel
+          models, <rforge>splm</rforge>, is under development on R-Forge.</li>
       <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
       <li>Simultaneous equation estimation: <pkg>systemfit</pkg>.</li>
       <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
@@ -258,6 +265,7 @@
     <pkg>fxregime</pkg>
     <pkg>gam</pkg>
     <pkg>gamlss</pkg>
+    <pkg>geepack</pkg>
     <pkg>gmm</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
@@ -282,6 +290,7 @@
     <pkg>nnet</pkg>
     <pkg>np</pkg>
     <pkg>ordinal</pkg>
+    <pkg>pcse</pkg>
     <pkg priority="core">plm</pkg>
     <pkg>pscl</pkg>
     <pkg>pwt</pkg>
@@ -295,6 +304,8 @@
     <pkg>sem</pkg>
     <pkg>simpleboot</pkg>
     <pkg>SparseM</pkg>
+    <pkg>spdep</pkg>
+    <pkg>sphet</pkg>
     <pkg>strucchange</pkg>
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
@@ -313,11 +324,14 @@
     <view>Finance</view>
     <view>Optimization</view>
     <view>SocialSciences</view>
+    <view>Spatial</view>
     <view>TimeSeries</view>
     <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing List: R Special Interest Group Finance</a>
     <a href="http://www.jstatsoft.org/v27/">Journal of Statistical Software: Special Volume on 'Econometrics in R'</a>
     <a href="http://people.su.se/~ma/R_intro/">A Brief Guide to R for Beginners in Econometrics</a>
     <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
+    <a href="http://www.springer.com/978-0-387-77316-2">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
+    <a href="http://www.worldscibooks.com/economics/6895.html">Book: Hands-On Intermediate Econometrics Using R (Vinod)</a>
     <a href="http://www2.cirano.qc.ca/~bacc/">BACC Software for Bayesian Econometrics (Bayesian Analysis, Computation and Communication)</a>
     <rforge>splm</rforge>
 </links>
