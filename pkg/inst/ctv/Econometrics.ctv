@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2011-12-07</version>
+  <version>2011-12-08</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -98,7 +98,8 @@
       <li>Linear models for panel data: <pkg>plm</pkg>, providing a wide range of within,
           between, and random-effect methods (among others) along with corrected standard
 	  errors, tests, etc. For panel-corrected standard errors in OLS and GEE models,
-	  see <pkg>geepack</pkg> and <pkg>pcse</pkg>.</li>
+	  see <pkg>geepack</pkg> and <pkg>pcse</pkg>. Estimation of linear models with
+	  multiple group fixed effects is contained in <pkg>lfe</pkg>.</li>
       <li>Generalized method of moments (GMM) and generalized empirical likelihood (GEL):
           <pkg>gmm</pkg>.</li>
       <li>Spatial econometric models: The <view>Spatial</view> view gives details about
@@ -270,6 +271,7 @@
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
     <pkg>its</pkg>
+    <pkg>lfe</pkg>
     <pkg>lme4</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>MASS</pkg>
