@@ -14,7 +14,7 @@ Client-side tools for installing CRAN task views.
 \usage{
 available.views(repos = NULL, \dots)
 install.views(views, coreOnly = FALSE, repos = NULL, \dots)
-update.views(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, \dots)
+update.views(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, filters = NULL, \dots)
 download.views(views, destdir, coreOnly = FALSE, repos = NULL, \dots)
 
 \method{print}{ctv}(x, packagelist = TRUE, \dots)
@@ -32,6 +32,9 @@ download.views(views, destdir, coreOnly = FALSE, repos = NULL, \dots)
     is tried and otherwise \code{getOption("CRAN")} is used.}
   \item{lib.loc}{character vector describing the location of R library trees
     to search through (and update packages therein).}
+  \item{filters}{a character vector or list to filter
+    \code{\link{available.packages}}, e.g., for filtering with respect to
+    operating system type or free and open-source software license.}
   \item{destdir}{directory where downloaded packages are to be stored.}
   \item{\dots}{further arguments passed to \code{\link{install.packages}} or
     \code{\link{download.packages}} respectively.}

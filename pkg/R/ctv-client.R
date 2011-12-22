@@ -132,7 +132,7 @@ download.views <- function(views, destdir, coreOnly = FALSE, repos = NULL, ...)
   invisible()
 }
 
-update.views <- function(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, ...)
+update.views <- function(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, filters = NULL, ...)
 {
   pkg_list <- .get_pkgs_from_ctv_or_repos(views = views, coreOnly = coreOnly, repos = repos)
     
@@ -142,35 +142,35 @@ update.views <- function(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, 
     repos <- names(pkg_list)[i]
         
     ## query available packages
-    apkgs <- available.packages(contriburl = contrib.url(repos))
+    apkgs <- available.packages(contriburl = contrib.url(repos), filters = filters)
 
     ## compute intersection
-    unavail <- which(!(pkgs %in% as.character(apkgs[,1])))
-    if(length(unavail) > 0) {
+    unavail <- which(!(pkgs %in% as.character(apkgs[, 1L])))
+    if(length(unavail) > 0L) {
       warning(sprintf("The following packages are not available: %s", paste(pkgs[unavail], collapse = ", ")))
       pkgs <- pkgs[-unavail]
     }
-    apkgs <- apkgs[pkgs,,drop=FALSE]
+    apkgs <- apkgs[pkgs, , drop = FALSE]
 
     ## query installed packages
     ipkgs <- installed.packages(lib.loc = lib.loc)
-    ipkgs <- ipkgs[which(ipkgs[,"Package"] %in% pkgs),,drop=FALSE]
+    ipkgs <- ipkgs[which(ipkgs[, "Package"] %in% pkgs), , drop = FALSE]
   
     ## determine which packages need to be updated
-    if(NROW(ipkgs) > 0) {    
-      not_installed <- which(!(pkgs %in% ipkgs[,1]))
+    if(NROW(ipkgs) > 0L) {    
+      not_installed <- which(!(pkgs %in% ipkgs[, 1L]))
     
-      cpkgs <- if(length(not_installed) > 0) pkgs[-not_installed] else pkgs
+      cpkgs <- if(length(not_installed) > 0L) pkgs[-not_installed] else pkgs
       get_highest_version <- function(x)
-        as.character(max(package_version(ipkgs[which(ipkgs[,1] %in% x),"Version"])))
+        as.character(max(package_version(ipkgs[which(ipkgs[, 1L] %in% x),"Version"])))
       not_uptodate <- which(package_version(apkgs[cpkgs, "Version"]) >
         package_version(sapply(cpkgs, get_highest_version)))
       pkgs <- sort(c(pkgs[not_installed], cpkgs[not_uptodate]))
     }
 
     ## install packages required
-    apkgs <- apkgs[pkgs,,drop=FALSE]
-    if(NROW(apkgs) > 0) install.packages(apkgs[,1], repos = repos, lib = lib.loc, ...)
+    apkgs <- apkgs[pkgs, , drop = FALSE]
+    if(NROW(apkgs) > 0L) install.packages(apkgs[, 1L], repos = repos, lib = lib.loc, ...)
   }
   
   invisible()
