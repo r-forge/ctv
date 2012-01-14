@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2011-12-19</version>
+  <version>2012-01-14</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -73,6 +73,7 @@
 	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>, a convenience
 	  interface <code>tobit()</code> is in package <pkg>AER</pkg>. Further censored
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
+	  Interval regression models are in <pkg>intReg</pkg>.
 	  Furthermore, hurdle models for left-censored data at zero can be estimated with
 	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>.</li>
       <li>Multivariate probit models: Estimation and marginal effect computations can be
@@ -271,6 +272,7 @@
     <pkg>gmm</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
+    <pkg>intReg</pkg>
     <pkg>its</pkg>
     <pkg>lfe</pkg>
     <pkg>lme4</pkg>
