@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2011-11-18</version>
+  <version>2012-03-14</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -48,9 +48,7 @@
           <code>
             Fst()
           </code>
-          calculates the Fst from the conditional kinship matrix. Package
-<pkg>kinship</pkg>
-          offers some functions for analysis on pedigrees. The
+          calculates the Fst from the conditional kinship matrix. The
 <pkg>adegenet</pkg> 
           implements a number of different methods for analysing population structure using multivariate
           statistics, graphics and spatial statistics.
@@ -239,7 +237,6 @@
     <pkg>hapsim</pkg>
     <pkg>hwde</pkg>
     <pkg>ibdreg</pkg>
-    <pkg>kinship</pkg>
     <pkg>ldDesign</pkg>
     <pkg>LDheatmap</pkg>
     <pkg>lodplot</pkg>
