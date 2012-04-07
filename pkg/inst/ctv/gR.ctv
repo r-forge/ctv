@@ -15,6 +15,11 @@
   statistics and machine learning.</i>
   </p>
 
+  A supplementary view is that graphical models are based on
+  exploiting conditional independencies for constructing complex
+  stochastic models with a modular structure. That is, a complex
+  stochastic model is built up by simpler building blocks. 
+
 
   This task view is a collection of packages intended to supply R code
   to deal with graphical models.
@@ -115,6 +120,16 @@
       implemented. 
       Link: <a href="http://www.jstatsoft.org/v14/i17">http://www.jstatsoft.org/v14/i17 </a> 
     </li>
+
+
+    <li>
+      <pkg>gRim</pkg> 
+      Implements graphical interaction models for contingency tables
+      (i.e. log-linear models) and graphical Gaussian models for the
+      multivariate normal data (i.e. covariance selection models) and
+      mixed interaction models. 
+    </li>
+
 
     <li>
       <pkg>gRapHD</pkg> 
@@ -318,6 +333,7 @@
     <pkg>gRain</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRc</pkg>
+    <pkg>gRim</pkg>
     <pkg>igraph</pkg> 
     <pkg>mathgraph</pkg>
     <pkg>mimR</pkg> 
