@@ -3,7 +3,7 @@
 
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
-  <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
+  <maintainer email="sorenh@math.aau.dk">Søren Højsgaard</maintainer>
   <version>2012-04-07</version>
   
   <info>
@@ -11,7 +11,7 @@
   defines a graphical model as follows: <i>A graphical model is a
   probabilistic model for which a graph denotes the conditional
   independence structure between random variables. They are commonly
-  used in probability theory, statistics—particularly Bayesian
+  used in probability theory, statistics - particularly Bayesian
   statistics and machine learning.</i>
   </p>
 
