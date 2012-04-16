@@ -3,7 +3,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert</maintainer>
-  <version>2012-03-19</version>
+  <version>2012-04-16</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -154,8 +154,6 @@
       <li>package <pkg>ecolMod</pkg> contains the figures, data sets and examples from a book 
        on ecological modelling (Soetaert and Herman, 2009).
       </li>
-      <li><pkg>primer</pkg> is a support package for the book of Stevens (2009).
-      </li>
     </ul>
     
   </info>
@@ -175,7 +173,6 @@
     <pkg>PKtools</pkg>
     <pkg>pomp</pkg>
     <pkg>pracma</pkg>
-    <pkg>primer</pkg>
     <pkg>PSM</pkg>
     <pkg>ReacTran</pkg>
     <pkg priority="core">rootSolve</pkg>
@@ -197,7 +194,6 @@
     <a href="http://www.springer.com/978-0-387-75838-1">Book: Iacus, SM. 2008. Simulation and Inference for Stochastic Differential Equations: with R examples, Springer</a>
     <a href = "http://www.springer.com/life+sciences/ecology/book/978-1-4020-8623-6">
         Book: Soetaert, K. and P.M.J. Herman, 2009. A Practical Guide to Ecological Modelling, using R as a simulation Platform, Springer.</a>
-    <a href="http://www.springer.com/life+sci/ecology/book/978-0-387-89881-0">Book: Stevens, H, 2009. A Primer of Ecology with R, Springer.</a> 
     <a href="http://www.springer.com/statistics/computanional+statistics/book/978-3-642-28069-6">Book: Soetaert, K., Cash, J. and Mazzia, F. 2012. Solving Differential Equations in R, Springer.</a>
   </links>
 </CRANTaskView>
