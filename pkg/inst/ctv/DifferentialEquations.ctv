@@ -189,8 +189,8 @@
     <view>Optimization</view>
     <view>Pharmacokinetics</view>
     <a href="http://en.wikipedia.org/wiki/Differential_equation">Wikipedia: Differential equation</a>
-    <a href="http://pomp.r-forge.r-project.org">R-forge website for package <pkg>pomp</pkg></a>
-    <a href="http://deSolve.r-forge.r-project.org">R-Forge website for package <pkg>deSolve</pkg></a>
+    <a href="http://pomp.r-forge.r-project.org">R-forge website for package pomp</a>
+    <a href="http://deSolve.r-forge.r-project.org">R-Forge website for package deSolve</a>
     <a href="http://www.springer.com/978-0-387-75838-1">Book: Iacus, SM. 2008. Simulation and Inference for Stochastic Differential Equations: with R examples, Springer</a>
     <a href = "http://www.springer.com/life+sciences/ecology/book/978-1-4020-8623-6">
         Book: Soetaert, K. and P.M.J. Herman, 2009. A Practical Guide to Ecological Modelling, using R as a simulation Platform, Springer.</a>
