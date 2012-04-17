@@ -118,7 +118,7 @@
       conditional independence. gRbase also illustrates how
       hierarchical log-linear models (hllm) may be
       implemented. 
-      Link: <a href="http://www.jstatsoft.org/v14/i17">http://www.jstatsoft.org/v14/i17 </a> 
+      Link: <a href="http://www.jstatsoft.org/v14/i17/">http://www.jstatsoft.org/v14/i17/</a> 
     </li>
 
 
@@ -136,7 +136,7 @@
       Package for selecting and fitting high-dimensional graphical
       models for discrete, Gaussian, or mixed discrete and Gaussian
       data. 
-      Link: <a href="http://www.jstatsoft.org/v37/i01"> http://www.jstatsoft.org/v37/i01 </a>
+      Link: <a href="http://www.jstatsoft.org/v37/i01/">http://www.jstatsoft.org/v37/i01/</a>
     </li>
     
     <li>
@@ -145,7 +145,7 @@
       tabels, graphical Gaussian models and mixed interaction
       models. The package provides an interface to the MIM
       program and only runs on Windows.
-      Link: <a href="http://www.jstatsoft.org/v11/i06"> http://www.jstatsoft.org/v11/i06</a>   
+      Link: <a href="http://www.jstatsoft.org/v11/i06/">http://www.jstatsoft.org/v11/i06/</a>   
     </li>
 
   </ul>
@@ -200,6 +200,7 @@
       <pkg>gRc</pkg> 
       Inference in graphical Gaussian models with edge and vertex
       symmetries (Graphical Gaussian models with colours).
+      Link: <a href="http://www.jstatsoft.org/v23/i06/">http://www.jstatsoft.org/v23/i06/</a>   
     </li>
     
     <li>
@@ -263,7 +264,7 @@
     independence networks, also known as probabilistic
     expert systems (which includes Bayesian networks as
     a special case).
-    Link: <a href="http://www.jstatsoft.org/v46/i10"> http://www.jstatsoft.org/v46/i10</a>   
+    Link: <a href="http://www.jstatsoft.org/v46/i10/">http://www.jstatsoft.org/v46/i10/</a>   
     </li>
 
   </ul>
