@@ -108,7 +108,7 @@
           handling spatial data, along with information about (regression) modeling. In particular,
 	  spatial regression models can be fitted using <pkg>spdep</pkg> and <pkg>sphet</pkg> (the
 	  latter using a GMM approach). <pkg>splm</pkg> is a package for spatial panel
-          models.</li>
+          models. Spatial probit models are available in <pkg>spatialprobit</pkg>.</li>
       <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
       <li>Simultaneous equation estimation: <pkg>systemfit</pkg>.</li>
       <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
@@ -310,6 +310,7 @@
     <pkg>sem</pkg>
     <pkg>simpleboot</pkg>
     <pkg>SparseM</pkg>
+    <pkg>spatialprobit</pkg>
     <pkg>spdep</pkg>
     <pkg>sphet</pkg>
     <pkg>splm</pkg>
