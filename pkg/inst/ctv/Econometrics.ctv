@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2012-01-14</version>
+  <version>2012-06-09</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -107,8 +107,8 @@
       <li>Spatial econometric models: The <view>Spatial</view> view gives details about
           handling spatial data, along with information about (regression) modeling. In particular,
 	  spatial regression models can be fitted using <pkg>spdep</pkg> and <pkg>sphet</pkg> (the
-	  latter using a GMM approach). A package for spatial panel
-          models, <rforge>splm</rforge>, is under development on R-Forge.</li>
+	  latter using a GMM approach). <pkg>splm</pkg> is a package for spatial panel
+          models.</li>
       <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
       <li>Simultaneous equation estimation: <pkg>systemfit</pkg>.</li>
       <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
@@ -312,6 +312,7 @@
     <pkg>SparseM</pkg>
     <pkg>spdep</pkg>
     <pkg>sphet</pkg>
+    <pkg>splm</pkg>
     <pkg>strucchange</pkg>
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
@@ -339,7 +340,6 @@
     <a href="http://www.springer.com/978-0-387-77316-2">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
     <a href="http://www.worldscibooks.com/economics/6895.html">Book: Hands-On Intermediate Econometrics Using R (Vinod)</a>
     <a href="http://www2.cirano.qc.ca/~bacc/">BACC Software for Bayesian Econometrics (Bayesian Analysis, Computation and Communication)</a>
-    <rforge>splm</rforge>
 </links>
 
 </CRANTaskView>
