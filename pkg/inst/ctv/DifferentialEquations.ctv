@@ -3,7 +3,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2012-05-29</version>
+  <version>2012-06-09</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -40,6 +40,9 @@
        </li>
        <li> The package <pkg>pomp</pkg> contains functions for statistical inference for
         partially observed Markov processes. 
+       </li>
+       <li> The <pkg>Sim.DiffProc</pkg> package simulates diffusion processes and 
+        has functions for numerical solution of stochastic differential equations.
        </li>
        <li> Package <pkg>GillespieSSA</pkg> implements Gillespie's exact stochastic 
         simulation algorithm (Direct method) and several approximate methods. 
@@ -176,6 +179,7 @@
     <pkg>scaRabee</pkg>
     <pkg priority="core">sde</pkg>
     <pkg>simecol</pkg>
+    <pkg>Sim.DiffProc</pkg>
   </packagelist>
 
   <links>
