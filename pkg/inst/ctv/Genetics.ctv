@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2012-04-16</version>
+  <version>2012-06-24</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -80,9 +80,7 @@
           externally to test for genetic linkage with covariates by regression modelling. 
 <pkg>multic</pkg>
           also utilises IBD sharing statistics calculated externally for detecting quantitative trait loci
-          under polygenic and major gene models via variance components.
-<pkg>lodplot</pkg>
-          provides routines for plotting and visualising genome-wide linkage studies.  Whilst not 
+          under polygenic and major gene models via variance components. Whilst not 
           official R packages one software suite in particular is worthy of mention.
 <a href="http://pngu.mgh.harvard.edu/~purcell/plink/">
   PLINK
@@ -233,7 +231,6 @@
     <pkg>ibdreg</pkg>
     <pkg>ldDesign</pkg>
     <pkg>LDheatmap</pkg>
-    <pkg>lodplot</pkg>
     <pkg>luca</pkg>
     <pkg>mapLD</pkg>
     <pkg>multic</pkg>
