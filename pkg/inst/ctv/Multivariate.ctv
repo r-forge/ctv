@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2012-06-04</version>
+  <version>2012-06-24</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -168,8 +168,8 @@
           <code>hclust()</code> and k-means clustering by <code>kmeans()</code> in stats.
 	   A range of established
           clustering and visualisation techniques are also available in <pkg>cluster</pkg>, some cluster validation routines are available in <pkg>clv</pkg> and the Rand index can be computed from <code>classAgreement()</code> in <pkg>e1071</pkg>.  Trimmed cluster analysis is available from <pkg>trimcluster</pkg>, cluster ensembles are available from <pkg>clue</pkg>, methods to assist with choice of routines are available in <pkg>clusterSim</pkg> and hybrid methodology is provided by <pkg>hybridHclust</pkg>.  Distance 
-          measures  (<code>edist()</code>) and hierarchical clustering (<code>hclust.energy()</code>) based on            E-statistics are available in <pkg>energy</pkg>.   Mahalanobis distance based clustering (for fixed points as well as clusterwise regression) are available from <pkg>fpc</pkg>.  <pkg>clustvarsel</pkg> 
-          provides variable selection within model based clustering.   Fuzzy clustering is available within <pkg>cluster</pkg> as well as via the 
+          measures  (<code>edist()</code>) and hierarchical clustering (<code>hclust.energy()</code>) based on            E-statistics are available in <pkg>energy</pkg>.   Mahalanobis distance based clustering (for fixed points as well as clusterwise regression) are available from <pkg>fpc</pkg>.  
+	  Fuzzy clustering is available within <pkg>cluster</pkg> as well as via the 
 	  <bioc>hopach</bioc> (Hierarchical Ordered Partitioning and 
           Collapsing Hybrid) algorithm.    <pkg>kohonen</pkg> provides supervised and unsuperised SOMs 
           for high dimensional spectra or patterns.  <pkg>clusterGeneration</pkg> helps simulate clusters. The <view>Environmetrics</view> 
@@ -269,7 +269,6 @@
     <pkg priority="core">cluster</pkg> 
     <pkg>clusterGeneration</pkg>
     <pkg>clusterSim</pkg> 
-    <pkg>clustvarsel</pkg> 
     <pkg>clv</pkg> 
     <pkg>cocorresp</pkg> 
     <pkg>concor</pkg>
