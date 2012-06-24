@@ -32,7 +32,7 @@
 	  <code>parcoord()</code> from <pkg>MASS</pkg> provides parallel 
           coordinate plots; <code>stars()</code> in graphics provides a choice of star, radar 
           and cobweb plots respectively. <code>mstree()</code> in <pkg>ade4</pkg> and <code>spantree()</code> in <pkg>vegan</pkg> provide minimum spanning tree functionality.  <pkg>calibrate</pkg> supports biplot and scatterplot 
-          axis labelling,  <pkg>chplot</pkg> provides convex hull plots. <pkg>geometry</pkg>, 
+          axis labelling. <pkg>geometry</pkg>, 
           which provides an interface to the qhull library,
           gives indices to the relevant points via <code>convexhulln()</code>.
           <pkg>ellipse</pkg> draws ellipses for two parameters, and provides <code>plotcorr()</code>,
@@ -260,7 +260,6 @@
     <pkg>ca</pkg>   
     <pkg>car</pkg>   
     <pkg>caret</pkg> 
-    <pkg>chplot</pkg>
     <pkg>class</pkg>
     <pkg>clue</pkg> 
     <pkg priority="core">cluster</pkg> 
