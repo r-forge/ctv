@@ -358,7 +358,6 @@
     <pkg>ROCR</pkg>   
     <pkg>rpart</pkg>
     <pkg>rrcov</pkg>  
-    <pkg>rrp</pkg> 
     <pkg>sca</pkg> 
     <pkg>scatterplot3d</pkg>
     <pkg>sem</pkg>
