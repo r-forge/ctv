@@ -334,7 +334,6 @@
     <pkg>gRain</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRc</pkg>
-<!--    <pkg>gRim</pkg> -->
     <pkg>igraph</pkg> 
     <pkg>mathgraph</pkg>
     <pkg>mimR</pkg> 
