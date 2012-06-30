@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2012-04-07</version>
+  <version>2012-07-01</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -121,7 +121,7 @@
       Link: <a href="http://www.jstatsoft.org/v14/i17/">http://www.jstatsoft.org/v14/i17/</a> 
     </li>
 
-
+<!--
     <li>
       <pkg>gRim</pkg> 
       Implements graphical interaction models for contingency tables
@@ -129,7 +129,7 @@
       multivariate normal data (i.e. covariance selection models) and
       mixed interaction models. 
     </li>
-
+-->
 
     <li>
       <pkg>gRapHD</pkg> 
@@ -334,7 +334,7 @@
     <pkg>gRain</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRc</pkg>
-    <pkg>gRim</pkg>
+<!--    <pkg>gRim</pkg> -->
     <pkg>igraph</pkg> 
     <pkg>mathgraph</pkg>
     <pkg>mimR</pkg> 
