@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2012-07-01</version>
+  <version>2012-07-09</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -211,15 +211,6 @@
     </li>
 
     <li>
-      <pkg>parcor</pkg> 
-      The package estimates the matrix of partial correlations based on different regularized
-      regression methods: lasso, adaptive lasso, PLS, and Ridge Regression. In addition, the package
-      provides model selection for lasso, adaptive lasso and Ridge
-      regression based on 
-      cross-validation.
-    </li>
-
-    <li>
       <pkg>catnet</pkg> 
       A package that handles discrete Bayesian network models and provides
       inference using the frequentist approach 
@@ -337,7 +328,6 @@
     <pkg>igraph</pkg> 
     <pkg>mathgraph</pkg>
     <pkg>mimR</pkg> 
-    <pkg>parcor</pkg> 
     <pkg>pcalg</pkg> 
     <pkg>qp</pkg>
     <pkg>SIN</pkg>
