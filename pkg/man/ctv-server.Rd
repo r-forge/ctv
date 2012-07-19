@@ -22,7 +22,9 @@ ctv2html(x, file = NULL, css = "../CRAN_web.css", packageURL = "../packages/", r
   \item{reposname}{character giving the name of the CRAN-style repository,
     used for generating HTML pages.}
   \item{\dots}{further arguments passed to \code{ctv2html}.}
-  \item{file}{character specifying a CRAN task view \file{.ctv} file.}
+  \item{file}{character specifying a file path: for \code{read.ctv} a CRAN
+    task view \file{.ctv} file, and for \code{ctv2html} the corresponding
+    output \file{.html} file.}
   \item{x}{an object of class \code{"ctv"} as returned by \code{read.ctv}.}
   \item{packageURL}{character specifying the path (relative to the view directory)
     to the package descriptions.}
