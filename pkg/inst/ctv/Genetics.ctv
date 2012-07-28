@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2012-06-24</version>
+  <version>2012-07-28</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -46,10 +46,11 @@
             Fst()
           </code>
           calculates the Fst from the conditional kinship matrix. The
-<pkg>adegenet</pkg> 
-          implements a number of different methods for analysing population structure using multivariate
+<pkg>adegenet</pkg> package implements a number of different methods for analysing population structure using multivariate
           statistics, graphics and spatial statistics.
+The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statistics from haploid or diploid genetic data with any numbers of levels in the hierarchy. 
         </li>
+
         <li>
           <i>
             Phylogenetics
