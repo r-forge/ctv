@@ -219,8 +219,6 @@
 
   </ul>
 
-
-
   <p><strong>Bayesian Networks/Probabilistic expert systems</strong></p>
   <ul>
 
@@ -244,18 +242,17 @@
     </li>
 
     <li>
-    <pkg>deal</pkg> 
-    Learning Bayesian networks with mixed (discrete and
-    continuous) variables.
+      <pkg>deal</pkg> 
+      Learning Bayesian networks with mixed (discrete and continuous) variables.
     </li>
 
     <li>
-    <pkg>gRain</pkg>
-    A package for probability propagation in graphical
-    independence networks, also known as probabilistic
-    expert systems (which includes Bayesian networks as
-    a special case).
-    Link: <a href="http://www.jstatsoft.org/v46/i10/">http://www.jstatsoft.org/v46/i10/</a>   
+      <pkg>gRain</pkg>
+      A package for probability propagation in graphical
+      independence networks, also known as probabilistic
+      expert systems (which includes Bayesian networks as
+      a special case).
+      Link: <a href="http://www.jstatsoft.org/v46/i10/">http://www.jstatsoft.org/v46/i10/</a>   
     </li>
 
   </ul>
@@ -265,44 +262,74 @@
   <ul>
 
     <li>
-    <pkg>bayesmix</pkg> 
-    Bayesian mixture models of univariate Gaussian distributions using JAGS
+      <pkg>bayesmix</pkg> 
+      Bayesian mixture models of univariate Gaussian distributions using
+      JAGS. 
     </li>
 
 
     <li>
-    <pkg>boa</pkg> 
-    Bayesian Output Analysis Program (BOA) for MCMC.
+      <pkg>boa</pkg> 
+      boa: Bayesian Output Analysis Program (BOA) for MCMC. A
+      menu-driven program and library of functions for carrying out
+      convergence diagnostics and statistical and graphical analysis of
+      Markov chain Monte Carlo sampling output. 
     </li>
 
     <li>
-    BRugs 
-    An R / S-PLUS package containing OpenBUGS and its R / S-PLUS interface
-    BRugs. Notice: currently the only supported OS is Windows, we expect to support Linux in
-    future releases.
+      <pkg>BRugs</pkg> 
+      BRugs: R interface to the OpenBUGS MCMC software. 
+      Fully-interactive R interface to the OpenBUGS software for Bayesian
+      analysis using MCMC sampling. Runs natively and stably in 32-bit
+      R under Windows. Versions running on Linux and on 64-bit R under
+      Windows are in "beta" status and less efficient.
     </li>
 
     <li>
-    <pkg>coda</pkg> 
-    Output analysis and diagnostics for Markov Chain Monte Carlo simulations.
+      <pkg>coda</pkg> 
+      coda: Output analysis and diagnostics for MCMC.
+      Output analysis and diagnostics for Markov Chain Monte Carlo simulations.
     </li>
 
     <li>
-    <pkg>ergm</pkg> 
-    An integrated set of tools to analyze and simulate networks based on
-    exponential-family random graph models (ERGM). "ergm" is a part of the 
-    <a href="http://statnet.org/">statnet</a>
-    suite of packages for network analysis.
+      <pkg>ergm</pkg> 
+      ergm: Fit, Simulate and Diagnose Exponential-Family Models for
+      Networks.
+      An integrated set of tools to analyze and simulate networks based on
+      exponential-family random graph models (ERGM). "ergm" is a part of
+      the <a href="http://statnet.org/">statnet</a> suite of packages for network analysis. 
+    </li>
+
+    <li>
+      <pkg>R2OpenBUGS</pkg> 
+      R2OpenBUGS: Running OpenBUGS from R. 
+      Using this package, it is possible to call a BUGS model, summarize
+      inferences and convergence in a table and graph, and save the
+      simulations in arrays for easy access in R. 
+    </li>
+
+    <li>
+      <pkg>R2WinBUGS</pkg> 
+      Running WinBUGS and OpenBUGS from R / S-PLUS. 
+      Using this package, it is possible to call a BUGS model, summarize
+      inferences and convergence in a table and graph, and save the
+      simulations in arrays for easy access in R / S-PLUS. In S-PLUS,
+      the openbugs functionality and the windows emulation functionality
+      is not yet available. 
     </li>
 
     <li>
     <pkg>rbugs</pkg> 
-    Fusing R and OpenBugs
+    Fusing R and OpenBugs.
+    Functions to prepare files needed for running BUGS in batch-mode, and
+    running BUGS from R. Support for Linux and Windows systems with
+    OpenBugs is emphasized. 
     </li>
 
     <li>
-    <pkg>R2WinBUGS</pkg> 
-    Running WinBUGS and OpenBUGS from R / S-PLUS
+    <pkg>rjags</pkg> 
+    rjags: Bayesian graphical models using MCMC.
+    Interface to the JAGS MCMC library. 
     </li>
 
   </ul>
@@ -331,8 +358,10 @@
     <pkg>pcalg</pkg> 
     <pkg>qp</pkg>
     <pkg>SIN</pkg>
+    <pkg>R2OpenBUGS</pkg> 
     <pkg>R2WinBUGS</pkg>
     <pkg>rbugs</pkg>
+    <pkg>rjags</pkg> 
   </packagelist>
 
   <links>
@@ -343,9 +372,9 @@
     <bioc>Rgraphviz</bioc>
     <a href="http://www.Bioconductor.org/">Bioconductor</a>
     <a href="http://www-fis.iarc.fr/~martyn/software/jags/">JAGS</a>
-    <a href="http://mathstat.helsinki.fi/openbugs/">OpenBUGS</a>
+    <a href="http://www.openbugs.info/w/">OpenBUGS</a>
     <a href="http://www.hypergraph.dk/">MIM</a>
-    <a href="http://www.cs.ubc.ca/~murphyk/Software/BNT/bnsoft.html">Bayes Net Toolbox (for MATLAB)</a>
+    <a href="https://code.google.com/p/bnt/">Bayes Net Toolbox for MATLAB</a>
     <a href="http://www.phil.cmu.edu/projects/tetrad/">TETRAD</a>
     <a href="http://www.stats.bris.ac.uk/~peter/Grappa/">Grappa</a>
   </links>
