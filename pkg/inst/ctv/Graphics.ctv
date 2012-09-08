@@ -3,7 +3,7 @@
   <name>Graphics</name>
   <topic>Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization </topic>
   <maintainer email="nikko@hailmail.net">Nicholas Lewin-Koh</maintainer>
-  <version>2009-10-28</version>
+  <version>2012-09-08</version>
   
   <info>
     <p>R is rich with facilities for creating and developing interesting graphics.
@@ -127,8 +127,7 @@
           which is an interface to the Gimp Tool Kit, similar to pyGTK2. <pkg>GDD</pkg>
           provides device drivers for several bitmap formats, including GIF and
           BMP. <pkg>RSvgDevice</pkg> is an SVG device driver and interfaces well with
-          with vector drawing programs, or R web development packages, such as
-          <pkg>Rpad</pkg>. When SVG devices are for web display developers should be
+          with vector drawing programs. When SVG devices are for web display developers should be
           aware that internet explorer does not support SVG, but has their own
           standard. Trust Microsoft.
           <pkg>rgl</pkg> provides a device driver
