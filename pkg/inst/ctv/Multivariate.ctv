@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2012-06-24</version>
+  <version>2012-09-14</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -21,7 +21,6 @@
           <pkg>lattice</pkg> functions (e.g. <code>xyplot()</code> and <code>splom()</code>) are useful for
 	  visualising pairwise arrays of 2-dimensional scatterplots, clouds and 3-dimensional densities.   
           <code>scatterplot.matrix</code> in the <pkg>car</pkg> provides usefully enhanced pairwise scatterplots.
-	  The <pkg>cwhmisc</pkg> package provides <code>plotSplomT()</code> which displays correlation values and adds histograms on the diagonal of scatterplot matrices.  	
           Beyond this, <pkg>scatterplot3d</pkg>
 	  provides 3 dimensional scatterplots, 
           <pkg>aplpack</pkg> provides bagplots and <code>spin3R()</code>,
@@ -245,7 +244,7 @@
 	  <pkg>panel</pkg> provides methods for modelling panel data.
 	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
 	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.  <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
-	  <pkg>cwhmisc</pkg> contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.   <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
+	  <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
        
   </info>
 
@@ -272,7 +271,6 @@
     <pkg>corpcor</pkg>
     <pkg>covRobust</pkg>
     <pkg>cramer</pkg> 
-    <pkg>cwhmisc</pkg> 
     <pkg>delt</pkg> 
     <pkg>denpro</pkg>
     <pkg>desirability</pkg>
