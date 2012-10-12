@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2012-06-09</version>
+  <version>2012-10-12</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -179,6 +179,8 @@
       <li>Package <pkg>sde</pkg> provides simulation and inference for stochastic
 	  differential equations.</li>
       <li>Asymmetric price transmission modeling is available in <pkg>apt</pkg>.</li>
+      <li><pkg>AutoSEARCH</pkg>: General-to-specific (GETS) model selection of the mean and
+        log-volatility specifications of a log-ARCH-X model.</li>
     </ul>
 
     <p><strong>Data sets</strong></p>
@@ -242,9 +244,10 @@
   </info>
 
   <packagelist>
-    <pkg>AER</pkg>
+    <pkg priority="core">AER</pkg>
     <pkg>aod</pkg>
     <pkg>apt</pkg>
+    <pkg>AutoSEARCH</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
     <pkg>boot</pkg>
