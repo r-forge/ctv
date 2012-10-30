@@ -147,7 +147,7 @@
           </li>
           
           <li>
-          <i>"Dimensional" Analysis:</i> Exploratory maximum-likelihood factor analysis is implemented in the <code>factanal</code> function in the stats package, which also provides for varimax and promax factor rotation.  (Confirmatory factor-analysis models can be fit with the <pkg>sem</pkg> package.) Additional rotations are available through functions in the <pkg>GPArotation</pkg> package. The <code>prcomp</code> and <code>princomp</code> functions in the stats package perform principal-components analysis. The <code>cmdscale</code> function in the stats package performs <i>metric</i> multidimensional scaling, while the <code>isoMDS</code> and <code>sammon</code> functions in the MASS package perform <i>non-metric</i> multidimensional scaling. For methods of cluster analysis and mixtures see the <view>Cluster</view> task view. The <pkg>BradleyTerry</pkg> package fits the Bradley-Terry model for paired comparisons. The <pkg>ltm</pkg> package fits Rasch and other item-response models to binary items. The <pkg>irr</pkg> package contains functions for assessing inter-rater reliability; also see the <pkg>psy</pkg> package. 
+          <i>"Dimensional" Analysis:</i> Exploratory maximum-likelihood factor analysis is implemented in the <code>factanal</code> function in the stats package, which also provides for varimax and promax factor rotation.  (Confirmatory factor-analysis models can be fit with the <pkg>sem</pkg> package.) Additional rotations are available through functions in the <pkg>GPArotation</pkg> package. The <code>prcomp</code> and <code>princomp</code> functions in the stats package perform principal-components analysis. The <code>cmdscale</code> function in the stats package performs <i>metric</i> multidimensional scaling, while the <code>isoMDS</code> and <code>sammon</code> functions in the MASS package perform <i>non-metric</i> multidimensional scaling. For methods of cluster analysis and mixtures see the <view>Cluster</view> task view. The <pkg>BradleyTerry2</pkg> package fits the Bradley-Terry model for paired comparisons. The <pkg>ltm</pkg> package fits Rasch and other item-response models to binary items. The <pkg>irr</pkg> package contains functions for assessing inter-rater reliability; also see the <pkg>psy</pkg> package. 
           </li>
           
           <li>
@@ -225,7 +225,7 @@
     <pkg>aod</pkg>
     <pkg priority="core">boot</pkg>
     <pkg>bootstrap</pkg>
-    <pkg>BradleyTerry</pkg>
+    <pkg>BradleyTerry2</pkg>
     <pkg>brglm</pkg>
     <pkg priority="core">car</pkg>
     <pkg>class</pkg>
@@ -300,6 +300,7 @@
     <view>gR</view>
     <view>MachineLearning</view>
     <view>Multivariate</view>
+    <view>Psychometrics</view>
     <view>Spatial</view>
     <a href="http://lib.stat.cmu.edu/S/Harrell/Design.html">Design Library</a>
     <a href="http://lib.stat.cmu.edu/S/Harrell/Hmisc.html">The Hmisc Library</a>
