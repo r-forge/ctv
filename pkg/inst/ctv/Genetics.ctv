@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2012-07-28</version>
+  <version>2012-11-01</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -34,8 +34,6 @@
 <pkg>gap</pkg>.
 <pkg>LDheatmap</pkg>
           creates a heat map plot of measures of pairwise LD.
-<pkg>mapLD</pkg>
-          measures linkage disequilibrium and constructs haplotype blocks.
 <pkg>hwde</pkg>
           fits models for genotypic disequilibria.  Whilst
 <pkg>HardyWeinberg</pkg>
@@ -156,8 +154,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
           is a package for design of experiments for association studies for detection of linkage disequilibrium.
 <pkg>LDheatmap</pkg>
           creates a heat map plot of measures of pairwise LD.
-<pkg>mapLD</pkg>
-          measures linkage disequilibrium and constructs haplotype blocks.
         </li>
         <li>
           <i>
@@ -233,7 +229,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     <pkg>ldDesign</pkg>
     <pkg>LDheatmap</pkg>
     <pkg>luca</pkg>
-    <pkg>mapLD</pkg>
     <pkg>multic</pkg>
     <pkg>ouch</pkg>
     <pkg>pbatR</pkg>
