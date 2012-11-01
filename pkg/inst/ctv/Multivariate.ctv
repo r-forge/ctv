@@ -172,7 +172,7 @@
 	  <bioc>hopach</bioc> (Hierarchical Ordered Partitioning and 
           Collapsing Hybrid) algorithm.    <pkg>kohonen</pkg> provides supervised and unsuperised SOMs 
           for high dimensional spectra or patterns.  <pkg>clusterGeneration</pkg> helps simulate clusters. The <view>Environmetrics</view> 
-          task view also gives a topic-related overview of some clustering techniques.   Model based clustering is available in <pkg>mclust</pkg> and model based clustering for functional data is available in <pkg>MFDA</pkg>.</li>
+          task view also gives a topic-related overview of some clustering techniques.   Model based clustering is available in <pkg>mclust</pkg>.</li>
 
           <li><i>Tree methods:</i>
           Full details on tree methods are given in the <view>MachineLearning</view> task view.   
@@ -314,7 +314,6 @@
     <pkg>MCMCpack</pkg>  
     <pkg>mclust</pkg> 
     <pkg>mda</pkg> 
-    <pkg>MFDA</pkg>
     <pkg>mice</pkg> 
     <pkg>misc3d</pkg>
     <pkg>mitools</pkg>
