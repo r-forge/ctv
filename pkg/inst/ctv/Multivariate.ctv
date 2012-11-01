@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2012-09-17</version>
+  <version>2012-11-01</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -241,7 +241,6 @@
 
       <p><strong>Miscellaneous utitlies</strong></p>
           <ul><li><pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.
-	  <pkg>panel</pkg> provides methods for modelling panel data.
 	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
 	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.  <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
 	  <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
@@ -331,7 +330,6 @@
     <pkg>mvtnorm</pkg>
     <pkg>nFactors</pkg>   
     <pkg>pan</pkg>
-    <pkg>panel</pkg> 
     <pkg>paran</pkg>
     <pkg>party</pkg>  
     <pkg>pcaPP</pkg>
