@@ -66,8 +66,7 @@
           will provide estimates of the covariance
           and correlation  matrices respectively. <pkg>ICSNP</pkg> offers several descriptive measures such as <code>spatial.median()</code> which provides an estimate of the spatial median and further functions which provide estimates of scatter.   Further robust methods are provided such as <code>cov.rob()</code> in MASS which
           provides robust estimates of the variance-covariance matrix by minimum volume 
-          ellipsoid, minimum covariance determinant or classical product-moment. <pkg>covRobust</pkg> 
-          provides robust covariance estimation via nearest neighbor variance estimation.    <pkg>robustbase</pkg> provides robust covariance estimation via fast minimum covariance determinant with <code>covMCD()</code> and the Orthogonalized pairwise estimate of Gnanadesikan-Kettenring via <code>covOGK()</code>.   Scalable robust methods are provided within <pkg>rrcov</pkg> also using fast minimum covariance determinant with <code>covMcd()</code> as well as M-estimators with <code>covMest()</code>. 
+          ellipsoid, minimum covariance determinant or classical product-moment. <pkg>robustbase</pkg> provides robust covariance estimation via fast minimum covariance determinant with <code>covMCD()</code> and the Orthogonalized pairwise estimate of Gnanadesikan-Kettenring via <code>covOGK()</code>.   Scalable robust methods are provided within <pkg>rrcov</pkg> also using fast minimum covariance determinant with <code>covMcd()</code> as well as M-estimators with <code>covMest()</code>. 
           <pkg>corpcor</pkg> provides shrinkage estimation of large scale covariance
 	  and (partial) correlation matrices.   </li>  
           <li><i>Densities (estimation and simulation):</i>          
@@ -268,7 +267,6 @@
     <pkg>concor</pkg>
     <pkg>copula</pkg>     
     <pkg>corpcor</pkg>
-    <pkg>covRobust</pkg>
     <pkg>cramer</pkg> 
     <pkg>delt</pkg> 
     <pkg>denpro</pkg>
