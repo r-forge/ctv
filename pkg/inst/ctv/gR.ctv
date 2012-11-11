@@ -154,12 +154,33 @@
   <p><strong>Miscellaneous: Model search, specialized types of models etc.</strong></p>
   <ul>
 
+
+
     <li>
-      <pkg>SIN</pkg> 
-      This package provides routines to perform SIN model selection as
-      described in Drton and Perlman (2004).  The selected models are
-      represented in the format of the 'ggm' package, which allows in 
-      particular parameter estimation in the selected model. 
+      <pkg>catnet</pkg> 
+      A package that handles discrete Bayesian network models and provides
+      inference using the frequentist approach 
+    </li>
+    
+    <li>
+      <pkg>GeneNet</pkg> 
+      Modeling and Inferring Gene Networks. GeneNet
+      is a package for analyzing gene expression (time series) data with
+      focus on the inference of gene networks.
+    </li>
+
+    <li>
+      <pkg>gRc</pkg> 
+      Inference in graphical Gaussian models with edge and vertex
+      symmetries (Graphical Gaussian models with colours).
+      Link: <a href="http://www.jstatsoft.org/v23/i06/">http://www.jstatsoft.org/v23/i06/</a>   
+    </li>
+
+    <li>
+      <pkg>lcd</pkg> 
+      Learn Chain graphs via Decomposition. 
+      Functions for learning chain graphs (and as a special case, Bayesian
+      networks) via the decomposition approach.       
     </li>
 
     <li>
@@ -182,7 +203,6 @@
       of, e.g., microarray data.
     </li>
 
-
     <li>
       <bioc>qpgraph</bioc> 
       q-order partial correlation graphs, or qp-graphs for short, are
@@ -198,11 +218,14 @@
 
 <!--
     <li>
-      <pkg>gRc</pkg> 
-      Inference in graphical Gaussian models with edge and vertex
-      symmetries (Graphical Gaussian models with colours).
-      Link: <a href="http://www.jstatsoft.org/v23/i06/">http://www.jstatsoft.org/v23/i06/</a>   
+      <pkg>SIN</pkg> 
+      This package provides routines to perform SIN model selection as
+      described in Drton and Perlman (2004).  The selected models are
+      represented in the format of the 'ggm' package, which allows in 
+      particular parameter estimation in the selected model. 
     </li>
+<<<<<<< .mine
+=======
 -->
     
     <li>
@@ -211,12 +234,7 @@
       is a package for analyzing gene expression (time series) data with
       focus on the inference of gene networks.
     </li>
-
-    <li>
-      <pkg>catnet</pkg> 
-      A package that handles discrete Bayesian network models and provides
-      inference using the frequentist approach 
-    </li>
+>>>>>>> .r1282
 
 
   </ul>
