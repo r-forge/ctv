@@ -139,7 +139,7 @@
       Link: <a href="http://www.jstatsoft.org/v37/i01/">http://www.jstatsoft.org/v37/i01/</a>
     </li>
     
-    <li>
+<!--    <li>
       <pkg>mimR</pkg> 
       General package for model selection in contingency
       tables, graphical Gaussian models and mixed interaction
@@ -147,6 +147,7 @@
       program and only runs on Windows.
       Link: <a href="http://www.jstatsoft.org/v11/i06/">http://www.jstatsoft.org/v11/i06/</a>   
     </li>
+-->
 
   </ul>
 
@@ -370,7 +371,6 @@
     <pkg>igraph</pkg> 
     <pkg>lcd</pkg> 
     <pkg>mathgraph</pkg>
-    <pkg>mimR</pkg> 
     <pkg>pcalg</pkg> 
     <pkg>qp</pkg>
     <pkg>QUIC</pkg>
