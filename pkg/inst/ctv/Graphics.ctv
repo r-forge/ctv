@@ -3,7 +3,7 @@
   <name>Graphics</name>
   <topic>Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization </topic>
   <maintainer email="nikko@hailmail.net">Nicholas Lewin-Koh</maintainer>
-  <version>2012-09-08</version>
+  <version>2012-12-10</version>
   
   <info>
     <p>R is rich with facilities for creating and developing interesting graphics.
@@ -126,10 +126,7 @@
           types. The cairo device is desgned to work with <pkg>RGTK2</pkg>,
           which is an interface to the Gimp Tool Kit, similar to pyGTK2. <pkg>GDD</pkg>
           provides device drivers for several bitmap formats, including GIF and
-          BMP. <pkg>RSvgDevice</pkg> is an SVG device driver and interfaces well with
-          with vector drawing programs. When SVG devices are for web display developers should be
-          aware that internet explorer does not support SVG, but has their own
-          standard. Trust Microsoft.
+          BMP.
           <pkg>rgl</pkg> provides a device driver
           based on OpenGL, and is good for 3D and interactive
           development. Lastly, the Augsburg group supplies a set of packages
@@ -199,7 +196,6 @@
     <pkg priority="core">rgl</pkg>
     <pkg>rggobi</pkg>
     <pkg>RGraphics</pkg>
-    <pkg>RSvgDevice</pkg>
     <pkg>RSVGTipsDevice</pkg>
     <pkg>tkrplot</pkg>
     <pkg>scatterplot3d</pkg>
