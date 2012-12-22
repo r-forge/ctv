@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2012-11-01</version>
+  <version>2012-12-22</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -176,7 +176,7 @@
           <li><i>Tree methods:</i>
           Full details on tree methods are given in the <view>MachineLearning</view> task view.   
 	  Suffice to say here that classification trees are sometimes considered within 
-          multivariate methods; <pkg>rpart</pkg> is most used for this purpose.   <pkg>TWIX</pkg> provides trees with extra splits.   <pkg>hier.part</pkg> partitions the variance in a multivariate data set. 
+          multivariate methods; <pkg>rpart</pkg> is most used for this purpose.   <pkg>TWIX</pkg> provides trees with extra splits.
           <pkg>mvpart</pkg> extend regression trees to cover multivariate 
           regression trees, <pkg>party</pkg> provides recursive partitioning.   Classification and regression training is provided by
 	  <pkg>caret</pkg>.  <pkg>kknn</pkg> provides k-nearest neighbour methods which can be used for regression as well as classification.</li></ul>
@@ -289,7 +289,6 @@
     <pkg>gmodels</pkg> 
     <pkg>GPArotation</pkg> 
     <pkg>hddplot</pkg>  
-    <pkg>hier.part</pkg>
     <pkg>Hmisc</pkg>
     <pkg>homals</pkg>
     <pkg>hybridHclust</pkg> 
