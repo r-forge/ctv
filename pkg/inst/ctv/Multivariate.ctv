@@ -119,8 +119,8 @@
 	  preferred) as well as <code>princomp()</code> (based on <code>eigen()</code> for  compatibility
 	  with S-PLUS) from stats.  <pkg>sca</pkg> provides simple components. <code>pc1()</code> in <pkg>Hmisc</pkg> 
           provides the first principal component and gives coefficients for unscaled 
-          data.  Additional support for an assessment of the scree plot can be found in <pkg>nFactors</pkg>, whereas <pkg>paran</pkg> provides routines for Horn's evaluation of the number of dimensions to retain.   <pkg>pcurve</pkg> provides Principal Curve 
-          analysis and visualisation as well as a further principal component method.   For wide matrices, <pkg>gmodels</pkg> provides <code>fast.prcomp()</code> and <code>fast.svd()</code>.
+          data.  Additional support for an assessment of the scree plot can be found in <pkg>nFactors</pkg>, whereas <pkg>paran</pkg> provides routines for Horn's evaluation of the number of dimensions to retain.
+	  For wide matrices, <pkg>gmodels</pkg> provides <code>fast.prcomp()</code> and <code>fast.svd()</code>.
           <pkg>kernlab</pkg> 
           uses kernel methods to provide a form of non-linear principal components with 
           <code>kpca()</code>.    <pkg>pcaPP</pkg> provides robust principal components by means
@@ -332,7 +332,6 @@
     <pkg>PearsonICA</pkg> 
     <pkg>poLCA</pkg> 
     <pkg>polycor</pkg> 
-    <pkg>pcurve</pkg>
     <pkg>plsgenomics</pkg>
     <pkg>pls</pkg>
     <pkg>ppls</pkg> 
