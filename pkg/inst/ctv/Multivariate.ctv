@@ -194,7 +194,7 @@
 	  selection and robustness against multicollinearity as well as a number of
 	  visualisation routines. <pkg>superpc</pkg> provides principal components for
 	  supervised classification, whereas <bioc>gpls</bioc> provides classification using
-	  generalised partial least squares.  <pkg>hddplot</pkg> provides cross-validated linear discriminant calculations to determine the optimum number of features. <pkg>ROCR</pkg> provides a range of methods for assessing classifier performance.   <pkg>predbayescor</pkg> provides naive Bayes classification.
+	  generalised partial least squares.  <pkg>hddplot</pkg> provides cross-validated linear discriminant calculations to determine the optimum number of features. <pkg>ROCR</pkg> provides a range of methods for assessing classifier performance.
         Further information on supervised classification can be found in 
           the <view>MachineLearning</view> task view.</li></ul>
 
@@ -336,7 +336,6 @@
     <pkg>plsgenomics</pkg>
     <pkg>pls</pkg>
     <pkg>ppls</pkg> 
-    <pkg>predbayescor</pkg>
     <pkg>prim</pkg>
     <pkg>proxy</pkg>  
     <pkg>psy</pkg>
