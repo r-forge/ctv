@@ -258,8 +258,7 @@ repos_update_views <- function(repos = ".",
   }
 
   ## save all views
-  save_view_rds <- function(...) if(exists("saveRDS") && is.function(saveRDS)) saveRDS(...) else .saveRDS(...)
-  save_view_rds(rval, file = viewsrds) ## compress = TRUE currently does not work for reading from an url
+  saveRDS(rval, file = viewsrds) ## compress = TRUE currently does not work for reading from an url
 
   ## generate index HTML file
   if(is.character(index)) {

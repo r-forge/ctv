@@ -69,8 +69,7 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   for(i in seq(along.with = contriburl)) {
     ## load Views.rds from repository
     viewurl <- gzcon(url(paste(contriburl[i], "Views.rds", sep = "/"), open = "rb"))
-    read_view_rds <- function(...) if(exists("readRDS") && is.function(readRDS)) readRDS(...) else .readRDS(...)
-    x <- suppressWarnings(try(read_view_rds(viewurl), silent = TRUE))
+    x <- suppressWarnings(try(readRDS(viewurl), silent = TRUE))
     if(inherits(x, "try-error")) next else close(viewurl)
 
     ## add repository information    

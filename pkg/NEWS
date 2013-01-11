@@ -1,3 +1,9 @@
+Changes in Version 0.7-5
+
+  o Package depends on R >= 2.13.0 now in order to use only
+    saveRDS()/readRDS() and not .saveRDS()/.readRDS().
+    
+
 Changes in Version 0.7-4
 
   o update.views() gains a "filter" argument passed to available.packages(),

@@ -74,7 +74,7 @@ with support for specification of an e-mail address.
 \verb/<info>/ should be a short description of the packages that explains
 which packages are useful for which tasks. It can also contain any further
 informations and should be written in plain HTML code, i.e., any HTML markup
-can be used (preferably following XHTML conventions). There are five additional
+can be used (preferably following XHTML conventions). There are seven additional
 tags available: \verb/<pkg>/, \verb/<view>/,
 \verb/<bioc>/, \verb/<ohat>/, \verb/<rforge>/, \verb/<gcode>/, and \verb/<code>/. \verb/<pkg>/ and
 \verb/<view>/ should be used as markup for packages and views (in the same repository), respectively.
