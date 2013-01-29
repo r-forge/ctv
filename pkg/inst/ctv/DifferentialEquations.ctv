@@ -53,7 +53,7 @@
      In an ODE, the unknown quantity is a function of a single independent variable.
      Several packages offer to solve ODEs.
      <ul>
-       <li> The <pkg>odesolve</pkg> package was the first to solve ordinary differential equations in R.
+       <li> The "odesolve" package was the first to solve ordinary differential equations in R.
         It contains two integration methods. It is not actively maintained and has been replaced by the package <pkg>deSolve</pkg>.
        </li>
        <li> The package <pkg>deSolve</pkg> contains several solvers for solving ODEs. 
@@ -66,7 +66,7 @@
     <p><strong>Delay Differential Equations (DDEs)</strong></p> 
      In a DDE, the derivative at a certain time is a function of the variable value at a previous time.
      <ul>
-       <li> The package <pkg>PBSddesolve</pkg> (originally published as  <pkg>ddesolve</pkg>) 
+       <li> The package <pkg>PBSddesolve</pkg> (originally published as "ddesolve") 
         includes a solver for non-stiff DDE problems.
        </li>
        <li> Functions in the package <pkg>deSolve</pkg> can solve both stiff and non-stiff DDE problems.
@@ -149,7 +149,7 @@
       <li>Package <pkg>pracma</pkg> contains solvers for ODEs, as pure R scripts,
        useful as a learning tool.
       </li> 
-      <li> The  <pkg>PBSmodelling</pkg> package adds GUI functions to models. 
+      <li> The <pkg>PBSmodelling</pkg> package adds GUI functions to models. 
       </li>
       <li>package <pkg>ecolMod</pkg> contains the figures, data sets and examples from a book 
        on ecological modelling (Soetaert and Herman, 2009).
@@ -169,6 +169,7 @@
     <pkg>mkin</pkg>    
     <pkg>nlmeODE</pkg>
     <pkg>PBSddesolve</pkg>
+    <pkg>PBSmodelling</pkg>
     <pkg>PKfit</pkg>    
     <pkg>PKtools</pkg>
     <pkg>pomp</pkg>
