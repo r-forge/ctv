@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2012-10-30</version>
+  <version>2013-01-29</version>
   
   <info> 
   
@@ -155,7 +155,7 @@
           </li>  
           
           <li>
-          <i>Missing Data:</i> A variety of packages implement methods for handling missing data by multiple imputation, including the <pkg>mix</pkg>, and <pkg>pan</pkg> packages associated with Shafer, <i>Analysis of Incomplete Multivariate Data</i> (Chapman and Hall, 1997), and the <pkg>mice</pkg> and <pkg>mitools</pkg> packages (the latter for drawing inferences from multiply imputed data sets). Also see the <pkg>EMV</pkg> and <pkg>mvnmle</pkg> packages. There are also some facilities for missing-data imputation in the general <pkg>Hmisc</pkg> package, which is described below, under <a href="#Collections">"Collections"</a>.
+          <i>Missing Data:</i> A variety of packages implement methods for handling missing data by multiple imputation, including the <pkg>mix</pkg>, and <pkg>pan</pkg> packages associated with Shafer, <i>Analysis of Incomplete Multivariate Data</i> (Chapman and Hall, 1997), and the <pkg>mice</pkg> and <pkg>mitools</pkg> packages (the latter for drawing inferences from multiply imputed data sets). There are also some facilities for missing-data imputation in the general <pkg>Hmisc</pkg> package, which is described below, under <a href="#Collections">"Collections"</a>.
           </li>
           
           <li>
@@ -221,8 +221,10 @@
   </info>
   
   <packagelist>
+    <pkg>acepack</pkg>
     <pkg priority="core">alr3</pkg>
     <pkg>aod</pkg>
+    <pkg>BMA</pkg>
     <pkg priority="core">boot</pkg>
     <pkg>bootstrap</pkg>
     <pkg>BradleyTerry2</pkg>
@@ -243,18 +245,22 @@
     <pkg>geepack</pkg>
     <pkg>gmodels</pkg>
     <pkg>gnm</pkg>
+    <pkg>GPArotation</pkg>
     <pkg>gss</pkg> 
     <pkg>irr</pkg>
+    <pkg>lattice</pkg>
     <pkg>leaps</pkg>
     <pkg>lmeSplines</pkg>
     <pkg>lmm</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>locfit</pkg>
+    <pkg>lme4</pkg>
     <pkg>ltm</pkg>
     <pkg priority="core">MASS</pkg>
     <pkg>Matching</pkg>
     <pkg>MatchIt</pkg>
     <pkg priority="core">Matrix</pkg>
+    <pkg>meta</pkg>
     <pkg priority="core">mgcv</pkg>
     <pkg priority="core">mice</pkg>
     <pkg>micEcon</pkg>
@@ -263,17 +269,20 @@
     <pkg>MNP</pkg>
     <pkg>multcomp</pkg> 
     <pkg>multinomRob</pkg>
+    <pkg>mvnmle</pkg>
     <pkg>network</pkg>
     <pkg priority="core">nlme</pkg>
     <pkg>nnet</pkg>
     <pkg>optmatch</pkg>
     <pkg priority="core">pan</pkg>
+    <pkg>perturb</pkg>
     <pkg>pls</pkg>
     <pkg>polycor</pkg>
     <pkg>pscl</pkg>
     <pkg>psy</pkg>
     <pkg priority="core">quantreg</pkg>
     <pkg>qvcalc</pkg>
+    <pkg>rgl</pkg>
     <pkg>rmeta</pkg>
     <pkg>rms</pkg>
     <pkg>robust</pkg>
@@ -289,6 +298,7 @@
     <pkg priority="core">systemfit</pkg>
     <pkg>sm</pkg>
     <pkg>USPS</pkg>
+    <pkg>vcd</pkg>
     <pkg priority="core">Zelig</pkg>
   </packagelist>
   
