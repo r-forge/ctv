@@ -1,3 +1,10 @@
+Changes in Version 0.7-6
+
+  o New function check_ctv_packages() for maintainers of CRAN task views.
+    This checks whether <info> and <packagelist> are consistent and
+    whether all packages are actually in the repository.
+    
+
 Changes in Version 0.7-5
 
   o Package depends on R >= 2.13.0 now in order to use only

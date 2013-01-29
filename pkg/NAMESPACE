@@ -11,6 +11,7 @@ export(
 ## server-side tools
   "read.ctv",
   "ctv2html",
+  "check_ctv_packages",
   "repos_update_views")
 
 ## methods

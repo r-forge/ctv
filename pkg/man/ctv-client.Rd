@@ -6,7 +6,7 @@
 \alias{update.views}
 \alias{print.ctv}
 \alias{print.ctvlist}
-\title{CRAN Task Views: Client-side Tools}
+\title{CRAN Task Views: Installing/Updating/Downloading Packages}
 \description{
 Client-side tools for installing CRAN task views.
 }

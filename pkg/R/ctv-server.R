@@ -294,3 +294,27 @@ repos_update_views <- function(repos = ".",
 
   invisible(rval)
 }
+
+check_ctv_packages <- function(file, repos = TRUE, ...)
+{
+  pkg_list <- read.ctv(file)$packagelist[, 1]
+  pkg_info <- unique(sapply(
+      getNodeSet(
+        xmlTreeParse(file, useInternalNodes = TRUE),
+      "//*/pkg"),
+    xmlValue))
+  
+  rval <- list(
+    "Packages in <info> but not in <packagelist>" = pkg_info[!(pkg_info %in% pkg_list)],
+    "Packages in <packagelist> but not in <info>" = pkg_list[!(pkg_list %in% pkg_info)],
+    "Packages in <packagelist> but not in repos"  = character(0)
+  )
+  
+  if(!identical(repos, FALSE)) {
+    if(identical(repos, TRUE)) repos <- getOption("repos")
+    pkg_repos <- as.vector(available.packages(contriburl = contrib.url(repos, "source"), ..., filters = "duplicates")[, 1])
+    rval[[3]] <- pkg_list[!(pkg_list %in% pkg_repos)]
+  }
+
+  rval
+}
