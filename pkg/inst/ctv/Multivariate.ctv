@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2012-12-22</version>
+  <version>2013-01-29</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -73,7 +73,7 @@
           <code>mvnorm()</code> in MASS simulates from the multivariate normal 
           distribution. <pkg>mvtnorm</pkg> also provides simulation as well as probability and 
           quantile functions for both the multivariate t distribution and multivariate normal 
-          distributions as well as density functions for the multivariate normal distribution, <pkg>mvtnormpcs</pkg> provides functions based on Dunnett.   
+          distributions as well as density functions for the multivariate normal distribution.   
           <pkg>mnormt</pkg> provides multivariate normal and multivariate t density and distribution
           functions as well as random number simulation.    <pkg>sn</pkg> provides density, distribution and random number generation for the multivariate skew normal and skew t distribution.
           <pkg>delt</pkg> provides a range of functions for estimating multivariate densities by 
@@ -318,6 +318,7 @@
     <pkg>monomvn</pkg> 
     <pkg>mnormt</pkg>  
     <pkg>MNP</pkg>
+    <pkg>mprobit</pkg>
     <pkg>MSBVAR</pkg> 
     <pkg>mvnmle</pkg> 
     <pkg>mvnormtest</pkg>
