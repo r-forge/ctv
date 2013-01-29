@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2012-10-12</version>
+  <version>2013-01-29</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -318,6 +318,7 @@
     <pkg>sphet</pkg>
     <pkg>splm</pkg>
     <pkg>strucchange</pkg>
+    <pkg>survival</pkg>
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
     <pkg>truncreg</pkg>
