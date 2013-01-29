@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2012-11-11</version>
+  <version>2013-01-29</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -366,20 +366,25 @@
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
     <pkg>boa</pkg> 
+    <pkg>BRugs</pkg>
     <pkg>catnet</pkg>
     <pkg>coda</pkg>
+    <pkg>dclone</pkg>
     <pkg>deal</pkg>
     <pkg>diagram</pkg>
     <pkg>dynamicGraph</pkg>
     <pkg>ergm</pkg>
+    <pkg>GeneNet</pkg>
     <pkg>ggm</pkg>
     <pkg>giRaph</pkg>
     <pkg>gRain</pkg>
+    <pkg>gRapHD</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRc</pkg>
     <pkg>igraph</pkg> 
     <pkg>lcd</pkg> 
     <pkg>mathgraph</pkg>
+    <pkg>network</pkg>
     <pkg>pcalg</pkg> 
     <pkg>qp</pkg>
     <pkg>QUIC</pkg>
