@@ -3,7 +3,7 @@
   <name>Graphics</name>
   <topic>Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization </topic>
   <maintainer email="nikko@hailmail.net">Nicholas Lewin-Koh</maintainer>
-  <version>2012-12-13</version>
+  <version>2013-01-29</version>
   
   <info>
     <p>R is rich with facilities for creating and developing interesting graphics.
@@ -11,7 +11,7 @@
     mosaic plots, biplots, and the list goes on. There are devices such as 
     postscript, png, jpeg and pdf for outputting graphics as well as device
     drivers for all platforms running R. <pkg>lattice</pkg> and 
-    <pkg>grid</pkg> are supplied with R's recommended packages and are 
+    grid are supplied with R's recommended packages and are 
     included in every binary distribution. <pkg>lattice</pkg> is an R 
     implementation of William Cleveland's trellis graphics, while grid 
     defines a much more flexible graphics environment than the base R graphics.</p>
@@ -31,7 +31,7 @@
     <p>One can quickly run into trouble with R's base graphic system if
     one wants to design complex layouts where scaling is maintained
     properly on resizing, nested graphs are desired or more interactivity
-    is needed. <pkg>grid</pkg> was designed by Paul Murrell to overcome
+    is needed. grid was designed by Paul Murrell to overcome
     some of these limitations and as a result packages like
     <pkg>lattice</pkg>, <pkg>ggplot2</pkg>, <pkg>vcd</pkg> or hexbin
     (on <a href="http://www.Bioconductor.org/">Bioconductor</a>) use
@@ -41,7 +41,7 @@
     commands, e.g., <code>grid.polygon()</code> rather than <code>polygon()</code>. Also grid
     maintains a stack of viewports from the device and one needs to make
     sure the desired viewport is at the top of the stack. There is a great
-    deal of explanatory documentation included with <pkg>grid</pkg> as
+    deal of explanatory documentation included with grid as
     vignettes.</p>   
 
 
@@ -84,9 +84,7 @@
           <li><i>Large Data Sets</i>:
 	  Large data sets can present very different challenges from moderate and small 
           datasets. Aside from overplotting, rendering 1,000,000 points can tax even modern 
-          GPU's. For univariate data <pkg>lvplot</pkg> produces letter value boxplots which
-          alleviate some of the problems that standard boxplots exhibit for large data sets. 
-          For bivariate data <pkg>ash</pkg> can produce a bivariate smoothed histogram very 
+          GPU's. For bivariate data <pkg>ash</pkg> can produce a bivariate smoothed histogram very 
           quickly, and 
           hexbin, on <a href="http://www.Bioconductor.org/">Bioconductor</a>, can bin bivariate
           data onto a hexagonal lattice, the advantage being that the irregular lines and 
@@ -100,30 +98,30 @@
            clustering procedures. While these packages produce decent graphics, they 
            do not use sophisticated algorithms for node placement, so may not be useful
            for very large trees. <pkg>igraph</pkg> has the Tilford-Rheingold algorithm 
-           implementead and is useful for plotting larger trees. <pkg>diagram</pkg> as 
+           implementead and is useful for plotting larger trees. <pkg>diagram</pkg> has 
            facilities for flow diagrams and simple graphs. For more sophisticated graphs 
-           <pkg>Rgraphviz</pkg> and <pkg>igraph</pkg> have functions for plotting and 
+           <bioc>Rgraphviz</bioc> and <pkg>igraph</pkg> have functions for plotting and 
            layout, especially useful for representing large networks.</li>
           </ul>
 	  </li>
-      <li><i>Graphics Systems</i>: <pkg>lattice</pkg> is built on top of the <pkg>grid</pkg>
+      <li><i>Graphics Systems</i>: <pkg>lattice</pkg> is built on top of the grid
           graphics system and is an R implementation of William Cleveland's trellis
 	  system for S-PLUS. <pkg>lattice</pkg> allows for building many types of plots
 	  with sophisticated layouts based on conditioning. <pkg>ggplot2</pkg> is an R 
           implementation of the system described in "A Grammar of Graphics" by Leland 
-          Wilkinson. Like <pkg>lattice</pkg>, <pkg>ggplot</pkg> (also built on top of grid)
+          Wilkinson. Like <pkg>lattice</pkg>, <pkg>ggplot2</pkg> (also built on top of grid)
 	  assists in trellis-like graphics, but allows for much more. Since it is built on
 	  the idea of a semantics for graphics there is much more emphasis on reshaping
 	  data, transformation, and assembling the elements of a plot.</li>
 
-      <li><i>Devices</i>: Whereas <pkg>grid</pkg> is built on top of
+      <li><i>Devices</i>: Whereas grid is built on top of
           the R graphics engine, many in the R community have found the R
           graphics engine somewhat inflexible and have written separate device
           drivers that either emphasize interactivity or plotting in various
           graphics formats. R base supplies devices for PostScript, PDF, JPEG
           and other formats. Devices on CRAN include <pkg>cairoDevice</pkg> which
           is a device based libcairo, which can actually render to many device
-          types. The cairo device is desgned to work with <pkg>RGTK2</pkg>,
+          types. The cairo device is desgned to work with <pkg>RGtk2</pkg>,
           which is an interface to the Gimp Tool Kit, similar to pyGTK2.
           <pkg>rgl</pkg> provides a device driver
           based on OpenGL, and is good for 3D and interactive
@@ -136,7 +134,7 @@
 	  provides a set of functions for choosing color palettes suitable for
 	  coding categorical variables (<code>rainbow_hcl()</code>) and numerical 
 	  information (<code>sequential_hcl()</code>, <code>diverge_hcl()</code>). Similar
-	  types of palettes are provided in <pkg>RColorBrewer</pkg> and <pkg>dichromat</pkg>
+	  types of palettes are provided in <pkg>RColorBrewer</pkg>. <pkg>dichromat</pkg>
           is focused on palettes for color-impaired viewers.</li>
       <li><i>Interactive Graphics</i>: There are several efforts to
           implement interactive graphics systems that interface well with R. In an interactive 
@@ -157,12 +155,12 @@
           <pkg>RGtk2</pkg>. Lastly, the <pkg>rgl</pkg> package has mechanisms for
           interactive manipulation of plots, especially 3D rotations and surfaces.</li>        
       <li><i>Development</i>: For development of specialized
-          graphics packages in R, <pkg>grid</pkg> should probably be the first
+          graphics packages in R, grid should probably be the first
           consideration for any new plot type. <pkg>rgl</pkg> has better tools for
           3D graphics, since the device is interactive, though it can be slow. 
           An alternative is to use Java and
           the Java device in the RoSuDA packages, though Java has its own
-          drawbacks. For porting plotting code to <pkg>grid</pkg>, using the
+          drawbacks. For porting plotting code to grid, using the
           package <pkg>gridBase</pkg> presents a nice intermediate step to embed
           base graphics in grid graphics and vice versa.</li> 
     </ul>
@@ -173,14 +171,19 @@
     <pkg>animation</pkg>
     <pkg>ape</pkg>
     <pkg>aplpack</pkg>
+    <pkg>ash</pkg>
+    <pkg>biclust</pkg>
     <pkg>cairoDevice</pkg>
     <pkg>Cairo</pkg>
+    <pkg>cba</pkg>
     <pkg>colorspace</pkg>
+    <pkg>diagram</pkg>
     <pkg>dichromat</pkg>
     <pkg>gclus</pkg>
     <pkg priority="core">ggplot2</pkg>
     <pkg>gplots</pkg>
     <pkg>gridBase</pkg>
+    <pkg>igraph</pkg>
     <pkg>iplots</pkg>
     <pkg>IDPmisc</pkg>
     <pkg>JavaGD</pkg>
@@ -188,14 +191,19 @@
     <pkg priority="core">lattice</pkg>
     <pkg>latticeExtra</pkg>
     <pkg>misc3d</pkg>
+    <pkg>onion</pkg>
+    <pkg>playwith</pkg>
     <pkg priority="core">plotrix</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg priority="core">rgl</pkg>
     <pkg>rggobi</pkg>
     <pkg>RGraphics</pkg>
+    <pkg>RGtk2</pkg>
     <pkg>RSVGTipsDevice</pkg>
+    <pkg>scagnostics</pkg>
     <pkg>tkrplot</pkg>
     <pkg>scatterplot3d</pkg>
+    <pkg>seriation</pkg>
     <pkg priority="core">vcd</pkg>
     <pkg>vioplot</pkg>
     <pkg>xgobi</pkg>
@@ -206,6 +214,7 @@
     <view>Multivariate</view> 
     <view>Spatial</view>
     <bioc>hexbin</bioc>
+    <bioc>Rgraphviz</bioc>
     <a href="http://AddictedToR.free.fr/graphiques/">R Graph Gallery</a>
     <a href="http://www.stat.auckland.ac.nz/~paul/">Paul Murrell's home page</a>
     <a href="http://stats.math.uni-augsburg.de/R/">RoSuDA R packages</a>
