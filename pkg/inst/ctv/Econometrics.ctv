@@ -170,11 +170,12 @@
 	  in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.</li>
       <li>More advanced dynamic system equations can be fitted using <pkg>dse</pkg>.</li>
-      <li>Various nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li>
+      <li>Various linear and nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li>
+      <li>Periodic autoregressive models are provided by <pkg>partsm</pkg>.
       <li>Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
 	  Kalman filtering/smoothing and Bayesian methods).</li>
       <li>Unit root and cointegration techniques are available in <pkg>urca</pkg>,
-	  <pkg>tseries</pkg>, and <pkg>CADFtest</pkg>.</li>
+	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>, and <pkg>tsDyn</pkg>.</li>
       <li>Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
       <li>Package <pkg>sde</pkg> provides simulation and inference for stochastic
 	  differential equations.</li>
@@ -299,6 +300,7 @@
     <pkg>nnet</pkg>
     <pkg>np</pkg>
     <pkg>ordinal</pkg>
+    <pkg>partsm</pkg>
     <pkg>pcse</pkg>
     <pkg priority="core">plm</pkg>
     <pkg>pscl</pkg>
