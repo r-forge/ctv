@@ -147,8 +147,9 @@
     <p><strong>Time series modeling</strong></p>
 
     <ul>
-      <li>The <view>TimeSeries</view> task view contains
-          detailed information about time series analysis in R. Here, only a brief overview
+      <li>The <view>TimeSeries</view> task view contains detailed information about time series analysis in R.
+          Time series models for financial econometrics (e.g., GARCH, stochastic volatility models, or 
+	  stochastic differential equations, etc.) are described in the <view>Finance</view>. Here, only a brief overview
 	  of the most important methods for econometrics is given.</li>
       <li>Classical time series modeling tools are
           contained in the stats package and include <code>arima()</code> for ARIMA modeling
@@ -177,11 +178,7 @@
       <li>Unit root and cointegration techniques are available in <pkg>urca</pkg>,
 	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>, and <pkg>tsDyn</pkg>.</li>
       <li>Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
-      <li>Package <pkg>sde</pkg> provides simulation and inference for stochastic
-	  differential equations.</li>
       <li>Asymmetric price transmission modeling is available in <pkg>apt</pkg>.</li>
-      <li><pkg>AutoSEARCH</pkg>: General-to-specific (GETS) model selection of the mean and
-        log-volatility specifications of a log-ARCH-X model.</li>
     </ul>
 
     <p><strong>Data sets</strong></p>
