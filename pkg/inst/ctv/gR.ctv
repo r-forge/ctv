@@ -121,7 +121,6 @@
       Link: <a href="http://www.jstatsoft.org/v14/i17/">http://www.jstatsoft.org/v14/i17/</a> 
     </li>
 
-<!--
     <li>
       <pkg>gRim</pkg> 
       Implements graphical interaction models for contingency tables
@@ -129,7 +128,6 @@
       multivariate normal data (i.e. covariance selection models) and
       mixed interaction models. 
     </li>
--->
 
     <li>
       <pkg>gRapHD</pkg> 
@@ -168,6 +166,15 @@
       Modeling and Inferring Gene Networks. GeneNet
       is a package for analyzing gene expression (time series) data with
       focus on the inference of gene networks.
+    </li>
+
+    <li>
+      <pkg>parcor</pkg> 
+      The package estimates the matrix of partial correlations based on different regularized
+      regression methods: lasso, adaptive lasso, PLS, and Ridge Regression. In addition, the package
+      provides model selection for lasso, adaptive lasso and Ridge
+      regression based on 
+      cross-validation.
     </li>
 
     <li>
@@ -381,6 +388,7 @@
     <pkg>gRapHD</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRc</pkg>
+    <pkg>gRim</pkg> 
     <pkg>igraph</pkg> 
     <pkg>lcd</pkg> 
     <pkg>mathgraph</pkg>
