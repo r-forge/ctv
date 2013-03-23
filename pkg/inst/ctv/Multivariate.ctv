@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2013-01-29</version>
+  <version>2013-03-23</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -140,7 +140,8 @@
           <pkg>concor</pkg> provides a number of concordance methods.</li>
 
          <li><i>Redundancy Analysis:</i> <pkg>calibrate</pkg> provides <code>rda()</code> for 
-          redundancy analysis as well as further options for canonical correlation. </li>    
+          redundancy analysis as well as further options for canonical correlation.
+	  <pkg>fso</pkg> provides fuzzy set ordination, which extends ordination beyond methods available from linear algebra.</li>    
           
          <li><i>Independent Components:</i> <pkg>fastICA</pkg> provides fastICA 
          algorithms to perform independent
@@ -171,7 +172,7 @@
 	  <bioc>hopach</bioc> (Hierarchical Ordered Partitioning and 
           Collapsing Hybrid) algorithm.    <pkg>kohonen</pkg> provides supervised and unsuperised SOMs 
           for high dimensional spectra or patterns.  <pkg>clusterGeneration</pkg> helps simulate clusters. The <view>Environmetrics</view> 
-          task view also gives a topic-related overview of some clustering techniques.   Model based clustering is available in <pkg>mclust</pkg>.</li>
+          task view also gives a topic-related overview of some clustering techniques.   Model based clustering is available in <pkg>mclust</pkg> and model based clustering for functional data is available in <pkg>MFDA</pkg>.</li>
 
           <li><i>Tree methods:</i>
           Full details on tree methods are given in the <view>MachineLearning</view> task view.   
@@ -220,7 +221,8 @@
           <ul><li><code>factanal()</code> in stats provides factor analysis by maximum
 	  likelihood, Bayesian factor analysis
 	  is provided for Gaussian, ordinal and mixed variables in <pkg>MCMCpack</pkg>.
-	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation. 
+	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation.
+	  <pkg>FAiR</pkg> provides factor analysis solved using genetic algorithms.
 	  <pkg>sem</pkg> fits linear structural equation models and <pkg>ltm</pkg> provides
 	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <code>MFA()</code> and <code>HMFA()</code>for multiple and hierarchical multiple factor analysis as well as <code>ADFM()</code> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul>
 
@@ -242,7 +244,9 @@
           <ul><li><pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.
 	  <pkg>mAr</pkg> provides for vector auto-regression, <pkg>MSBVAR</pkg> provides for
 	  Bayesian vector autoregression models, along with impulse responses and forecasting.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.  <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
-	  <pkg>desirability</pkg> provides functions for multivariate optimisation.   <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
+	  <pkg>cwhmisc</pkg> contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.
+	  <pkg>desirability</pkg> provides functions for multivariate optimisation.
+	  <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
        
   </info>
 
@@ -268,6 +272,7 @@
     <pkg>copula</pkg>     
     <pkg>corpcor</pkg>
     <pkg>cramer</pkg> 
+    <pkg>cwhmisc</pkg> 
     <pkg>delt</pkg> 
     <pkg>denpro</pkg>
     <pkg>desirability</pkg>
@@ -278,10 +283,12 @@
     <pkg>energy</pkg>
     <pkg>eRm</pkg> 
     <pkg>FactoMineR</pkg>   
+    <pkg>FAiR</pkg>
     <pkg>fastICA</pkg>
     <pkg>feature</pkg> 
     <pkg>fgac</pkg>
     <pkg>fpc</pkg>   
+    <pkg>fso</pkg> 
     <pkg>gclus</pkg> 
     <pkg>GenKern</pkg>
     <pkg>geometry</pkg> 
@@ -311,6 +318,7 @@
     <pkg>MCMCpack</pkg>  
     <pkg>mclust</pkg> 
     <pkg>mda</pkg> 
+    <pkg>MFDA</pkg>
     <pkg>mice</pkg> 
     <pkg>misc3d</pkg>
     <pkg>mitools</pkg>
