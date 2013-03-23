@@ -227,8 +227,7 @@
 	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <code>MFA()</code> and <code>HMFA()</code>for multiple and hierarchical multiple factor analysis as well as <code>ADFM()</code> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul>
 
           <p><strong>Modelling non-Gaussian data</strong></p>
-          <ul><li><pkg>mprobit</pkg> provides 
-          multivariate probit model for binary as well as ordinal response, <pkg>MNP</pkg> 
+          <ul><li><pkg>MNP</pkg> 
           provides Bayesian multinomial probit models,   <pkg>polycor</pkg> provides 
           polchoric and tetrachoric
 	  correlation matrices. <pkg>bayesm</pkg> provides a range of models such as seemingly 
@@ -326,7 +325,6 @@
     <pkg>monomvn</pkg> 
     <pkg>mnormt</pkg>  
     <pkg>MNP</pkg>
-    <pkg>mprobit</pkg>
     <pkg>MSBVAR</pkg> 
     <pkg>mvnmle</pkg> 
     <pkg>mvnormtest</pkg>
