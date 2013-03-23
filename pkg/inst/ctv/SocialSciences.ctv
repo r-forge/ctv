@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2013-01-29</version>
+  <version>2013-03-23</version>
   
   <info> 
   
@@ -167,7 +167,7 @@
           </li>
           
           <li>
-          <i>Social Network Analysis:</i> There are several packages useful for social network analysis, including <pkg>sna</pkg> for sociometric analysis of networks (e.g., blockmodeling), and <pkg>network</pkg> for manipulating and displaying network objects.
+          <i>Social Network Analysis:</i> There are several packages useful for social network analysis, including <pkg>sna</pkg> for sociometric analysis of networks (e.g., blockmodeling), <pkg>network</pkg> for manipulating and displaying network objects, and <pkg>latentnet</pkg> for latent position and cluster models for networks.
           </li>
           
           <li>
@@ -248,6 +248,7 @@
     <pkg>GPArotation</pkg>
     <pkg>gss</pkg> 
     <pkg>irr</pkg>
+    <pkg>latentnet</pkg>
     <pkg>lattice</pkg>
     <pkg>leaps</pkg>
     <pkg>lmeSplines</pkg>
