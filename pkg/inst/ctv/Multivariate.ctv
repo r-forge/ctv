@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2013-03-23</version>
+  <version>2013-04-05</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -76,8 +76,6 @@
           distributions as well as density functions for the multivariate normal distribution.   
           <pkg>mnormt</pkg> provides multivariate normal and multivariate t density and distribution
           functions as well as random number simulation.    <pkg>sn</pkg> provides density, distribution and random number generation for the multivariate skew normal and skew t distribution.
-          <pkg>delt</pkg> provides a range of functions for estimating multivariate densities by 
-          CART and greedy methods.  
 	  Comprehensive information on mixtures is given in the <view>Cluster</view> view, 
           some density estimates and random numbers are provided by 
           <code>rmvnorm.mixt()</code> and <code>dmvnorm.mixt()</code> in <pkg>ks</pkg>, mixture fitting 
@@ -272,7 +270,6 @@
     <pkg>corpcor</pkg>
     <pkg>cramer</pkg> 
     <pkg>cwhmisc</pkg> 
-    <pkg>delt</pkg> 
     <pkg>denpro</pkg>
     <pkg>desirability</pkg>
     <pkg>dr</pkg>
