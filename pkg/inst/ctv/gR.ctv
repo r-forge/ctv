@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2013-01-29</version>
+  <version>2013-04-06</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -393,6 +393,7 @@
     <pkg>lcd</pkg> 
     <pkg>mathgraph</pkg>
     <pkg>network</pkg>
+    <pkg>parcor</pkg> 
     <pkg>pcalg</pkg> 
     <pkg>qp</pkg>
     <pkg>QUIC</pkg>
