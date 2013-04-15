@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2013-03-23</version>
+  <version>2013-04-15</version>
   
   <info> 
   
@@ -106,7 +106,7 @@
           </li>
           
           <li>
-          <i>Mixed-effects models:</i> The recommended <pkg>nlme</pkg> package, associated with Pinheiro and Bates, <i>Mixed-Effects Models in S and S-PLUS</i> (Springer, 2000), fits linear and nonlinear mixed-effects models, commonly used in the social sciences for hierarchical and longitudinal data. Generalized linear mixed-effects models may be fit by the <code>glmmPQL</code> function in the MASS package, and by the <code>lmer</code> function in the <pkg>Matrix</pkg> package (related to the <pkg>lme4</pkg> package, which largely supersedes <pkg>nlme</pkg> for <i>linear</i> mixed models). Also see the <pkg>lmeSplines</pkg> and <pkg>lmm</pkg> packages.
+          <i>Mixed-effects models:</i> The recommended <pkg>nlme</pkg> package, associated with Pinheiro and Bates, <i>Mixed-Effects Models in S and S-PLUS</i> (Springer, 2000), fits linear and nonlinear mixed-effects models, commonly used in the social sciences for hierarchical and longitudinal data. Generalized linear mixed-effects models may be fit by the <code>glmmPQL</code> function in the MASS package, and by the <code>lmer</code> function in the <pkg>Matrix</pkg> package (related to the <pkg>lme4</pkg> package, which largely supersedes <pkg>nlme</pkg> for <i>linear</i> mixed models). Also see the <pkg>lmm</pkg> package.
           </li>
           
           <li>
@@ -251,7 +251,6 @@
     <pkg>latentnet</pkg>
     <pkg>lattice</pkg>
     <pkg>leaps</pkg>
-    <pkg>lmeSplines</pkg>
     <pkg>lmm</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>locfit</pkg>
