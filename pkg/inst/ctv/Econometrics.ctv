@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2013-03-31</version>
+  <version>2013-04-17</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -63,7 +63,9 @@
 	  (GAMs) for multinomial responses can be fitted with the <pkg>VGAM</pkg> package.	  
 	  A Bayesian approach to multinomial probit models is provided by <pkg>MNP</pkg>.
 	  Various Bayesian multinomial models (including logit and probit) are available
-	  in <pkg>bayesm</pkg>.</li>
+	  in <pkg>bayesm</pkg>. Furthermore, the package <pkg>RSGHB</pkg> fits various
+	  hierarchical Bayesian specifications based on direct specification of the likelihood
+	  function.</li>
       <li>Ordered responses: Proportional-odds regression for ordered responses is implemented
           in <code>polr()</code> from package <pkg>MASS</pkg>. The package <pkg>ordinal</pkg>
 	  provides cumulative link models for ordered data which encompasses proportional
@@ -76,6 +78,8 @@
 	  Interval regression models are in <pkg>intReg</pkg>.
 	  Furthermore, hurdle models for left-censored data at zero can be estimated with
 	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>.</li>
+      <li>Instrumental variables for binary responses: The <pkg>LARF</pkg> package estimates
+          local average response functions for binary treatments and binary instruments.</li>
       <li>Multivariate probit models: Estimation and marginal effect computations can be
           carried out with <pkg>mvProbit</pkg>.</li>
       <li>Miscellaneous: Further more refined tools for microecnometrics are provided in
@@ -205,6 +209,8 @@
 	  respectively.</li>
       <li>Package <pkg>erer</pkg> contains functions and datasets for the book of
           'Empirical Research in Economics: Growing up with R' (Sun, forthcoming).</li>
+      <li>The package <a href="http://github.com/floswald/psidR/">psidR</a> available from GitHub can build panel data
+          sets from the Panel Study of Income Dynamics (PSID).</li>
     </ul>
 
     <p><strong>Miscellaneous</strong></p>
@@ -275,6 +281,7 @@
     <pkg>ineq</pkg>
     <pkg>intReg</pkg>
     <pkg>its</pkg>
+    <pkg>LARF</pkg>
     <pkg>lfe</pkg>
     <pkg>lme4</pkg>
     <pkg priority="core">lmtest</pkg>
@@ -305,6 +312,7 @@
     <pkg>quantreg</pkg>
     <pkg>reldist</pkg>
     <pkg>rms</pkg>
+    <pkg>RSGHB</pkg>
     <pkg>sampleSelection</pkg>
     <pkg priority="core">sandwich</pkg>
     <pkg>sde</pkg>
@@ -344,6 +352,7 @@
     <a href="http://www.springer.com/978-0-387-77316-2">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
     <a href="http://www.worldscibooks.com/economics/6895.html">Book: Hands-On Intermediate Econometrics Using R (Vinod)</a>
     <a href="http://www2.cirano.qc.ca/~bacc/">BACC Software for Bayesian Econometrics (Bayesian Analysis, Computation and Communication)</a>
+    <a href="http://github.com/floswald/psidR/">psidR Package (GitHub)</a>
 </links>
 
 </CRANTaskView>
