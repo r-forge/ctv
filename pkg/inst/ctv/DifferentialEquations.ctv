@@ -3,7 +3,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2013-04-15</version>
+  <version>2013-04-25</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -25,7 +25,7 @@
      is a suitable mailing list for discussing the use of R for solving differential equation models 
      and other dynamic models such as individual-based or agent-based models.
     </p>
-    <p> This task view was created together with Thomas Petzoldt from TU Dresden. 
+    <p> This task view was created to provide an overview on the topic.
      If we forgot something, or if a new package should be mentioned here, please let
      <a href="mailto:karline_DOT_soetaert_AT_nioz_DOT_nl;thomas_DOT_petzoldt_AT_tu-dresden_DOT_de?subject=DifferentialEquations%20Task%20View">us</a> know.
     </p>
@@ -172,6 +172,7 @@
     <pkg>primer</pkg>
     <pkg>PSM</pkg>
     <pkg>ReacTran</pkg>
+    <pkg>Sim.DiffProc</pkg>
     <pkg priority="core">rootSolve</pkg>
     <pkg>scaRabee</pkg>
     <pkg priority="core">sde</pkg>
@@ -180,8 +181,8 @@
 
   <links>
     <view>ChemPhys</view>
-    <view>Econometrics </view>
-    <view>Environmetrics </view>
+    <view>Econometrics</view>
+    <view>Environmetrics</view>
     <view>Optimization</view>
     <view>Pharmacokinetics</view>
     <a href="http://en.wikipedia.org/wiki/Differential_equation">Wikipedia: Differential equation</a>
