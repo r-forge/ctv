@@ -172,7 +172,6 @@
     <pkg>primer</pkg>
     <pkg>PSM</pkg>
     <pkg>ReacTran</pkg>
-    <pkg>Sim.DiffProc</pkg>
     <pkg priority="core">rootSolve</pkg>
     <pkg>scaRabee</pkg>
     <pkg priority="core">sde</pkg>
