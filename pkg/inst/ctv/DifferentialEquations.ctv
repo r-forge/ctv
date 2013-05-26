@@ -3,7 +3,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2013-04-25</version>
+  <version>2013-05-26</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -63,6 +63,9 @@
     <p><strong>Delay Differential Equations (DDEs)</strong></p> 
      In a DDE, the derivative at a certain time is a function of the variable value at a previous time.
      <ul>
+       <li> The package <pkg>PBSddesolve</pkg> (originally published as "ddesolve") 
+        includes a solver for non-stiff DDE problems.
+       </li>
        <li> Functions in the package <pkg>deSolve</pkg> can solve both stiff and non-stiff DDE problems.
        </li> 
      </ul>
@@ -164,6 +167,7 @@
     <pkg>GillespieSSA</pkg>
     <pkg>mkin</pkg>    
     <pkg>nlmeODE</pkg>
+    <pkg>PBSddesolve</pkg>
     <pkg>PBSmodelling</pkg>
     <pkg>PKfit</pkg>    
     <pkg>PKtools</pkg>
