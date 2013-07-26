@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2013-04-06</version>
+  <version>2013-07-26</version>
   
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -279,25 +279,21 @@
     </li>
 
     <li>
-      <pkg>RHugin</pkg>
+      <rforge>RHugin</rforge>
       The Hugin Decision Engine (HDE) is commercial software produced by 
       HUGIN EXPERT A/S for building and making inference from Bayesian
-      belief networks. The RHugin package provides a suite of
+      belief networks. The <rforge>RHugin</rforge> package (available from R-Forge, not CRAN) provides a suite of
       functions allowing the HDE to be controlled from within the R
-      environment for statistical computing. The RHugin package can
+      environment for statistical computing. The <rforge>RHugin</rforge> package can
       thus be used to build Bayesian belief networks, enter and
       propagate evidence, and to retrieve beliefs. Additionally, the
-      RHugin package can read and write hkb and NET files, making it
-      easy to work simultaneously with both the RHugin package and the
+      <rforge>RHugin</rforge> package can read and write hkb and NET files, making it
+      easy to work simultaneously with both the <rforge>RHugin</rforge> package and the
       Hugin GUI. A licensed copy of the HDE (or the trial version) is
-      required for the RHugin package to function, hence the target
+      required for the <rforge>RHugin</rforge> package to function, hence the target
       audience for the package is Hugin users who would like to take
       advantage of the statistical and programatic capabilities of R.  
-      Notice: RHugin is NOT on CRAN.
-      Link: <a href="http://rhugin.r-forge.r-project.org/">http://rhugin.r-forge.r-project.org/</a>   
     </li>
-
-
 
   </ul>
 
@@ -418,7 +414,6 @@
     <pkg>pcalg</pkg> 
     <pkg>qp</pkg>
     <pkg>QUIC</pkg>
-    <pkg>RHugin</pkg>
     <pkg>SIN</pkg>
     <pkg>R2OpenBUGS</pkg> 
     <pkg>R2WinBUGS</pkg>
@@ -432,6 +427,7 @@
     <bioc>qpgraph</bioc>
     <bioc>RBGL</bioc>
     <bioc>Rgraphviz</bioc>
+    <rforge>RHugin</rforge>
     <a href="http://www.Bioconductor.org/">Bioconductor</a>
     <a href="http://mcmc-jags.sourceforge.net/">JAGS</a>
     <a href="http://www.openbugs.info/w/">OpenBUGS</a>
@@ -440,8 +436,6 @@
     <a href="https://code.google.com/p/bnt/">Bayes Net Toolbox for MATLAB</a>
     <a href="http://www.phil.cmu.edu/projects/tetrad/">TETRAD</a>
     <a href="http://www.stats.bris.ac.uk/~peter/Grappa/">Grappa</a>
-    <a href="http://rhugin.r-forge.r-project.org/">RHugin</a>
-
   </links>
 
 </CRANTaskView>
