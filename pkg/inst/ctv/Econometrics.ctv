@@ -200,7 +200,8 @@
 	  Financial Time Series' (2nd ed., 2005, Wiley) containing data sets, functions
           and script files required to work some of the examples.</li>
       <li><pkg>CDNmoney</pkg> provides Canadian monetary aggregates.</li>
-      <li><pkg>pwt</pkg> provides (several releases of) the Penn world table.</li>
+      <li><pkg>pwt</pkg> provides the Penn World Table from versions 5.6, 6.x, 7.x. The version 8.x
+          data are available in <pkg>pwt8</pkg>.</li>
       <li>The packages <pkg>expsmooth</pkg>, <pkg>fma</pkg>, and <pkg>Mcomp</pkg> are
           data packages with time series data
 	  from the books 'Forecasting with Exponential Smoothing: The State Space Approach'
@@ -309,6 +310,7 @@
     <pkg priority="core">plm</pkg>
     <pkg>pscl</pkg>
     <pkg>pwt</pkg>
+    <pkg>pwt8</pkg>
     <pkg>quantreg</pkg>
     <pkg>reldist</pkg>
     <pkg>rms</pkg>
