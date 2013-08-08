@@ -3,7 +3,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2013-05-26</version>
+  <version>2013-08-08</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -22,7 +22,7 @@
     </p>
     <p>The 
     <a href="https://www.stat.math.ethz.ch/mailman/listinfo/r-sig-dynamic-models">dynamic models SIG</a>    
-     is a suitable mailing list for discussing the use of R for solving differential equation models 
+     is a suitable mailing list for discussing the use of R for solving differential equation 
      and other dynamic models such as individual-based or agent-based models.
     </p>
     <p> This task view was created to provide an overview on the topic.
@@ -41,9 +41,10 @@
        <li> The package <pkg>pomp</pkg> contains functions for statistical inference for
         partially observed Markov processes. 
        </li>
-       <li> Package <pkg>GillespieSSA</pkg> implements Gillespie's exact stochastic 
-        simulation algorithm (Direct method) and several approximate methods. 
-       </li>
+       <li> Packages <pkg>adaptivetau</pkg> and <pkg>GillespieSSA</pkg> implement 
+        Gillespie's "exact stochastic simulation algorithm (direct method) 
+        and several approximate methods.
+       </li> 
      </ul>  
       
     <p><strong>Ordinary Differential Equations (ODEs)</strong></p> 
@@ -164,6 +165,7 @@
     <pkg>deTestSet</pkg>
     <pkg>ecolMod</pkg>
     <pkg>FME</pkg>
+    <pkg>adaptivetau</pkg>
     <pkg>GillespieSSA</pkg>
     <pkg>mkin</pkg>    
     <pkg>nlmeODE</pkg>
