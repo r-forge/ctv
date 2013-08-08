@@ -42,7 +42,7 @@
         partially observed Markov processes. 
        </li>
        <li> Packages <pkg>adaptivetau</pkg> and <pkg>GillespieSSA</pkg> implement 
-        Gillespie's "exact stochastic simulation algorithm (direct method) 
+        Gillespie's "exact" stochastic simulation algorithm (direct method) 
         and several approximate methods.
        </li> 
      </ul>  
