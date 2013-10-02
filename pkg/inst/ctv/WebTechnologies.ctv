@@ -118,7 +118,7 @@ Data Sources on the Web Accessible via R
 <pkg>rfishbase</pkg>: A programmatic interface to fishbase.org.
 </li>
 <li>
-<pkg>rtreebase</pkg>: An R package for discovery, access and manipulation of online phylogenies.
+<pkg>treebase</pkg>: An R package for discovery, access and manipulation of online phylogenies.
 </li>
 <li>
 <pkg>taxize</pkg>: Taxonomic information from around the web.
@@ -174,7 +174,7 @@ programming interface. Currently, <pkg>rPlant</pkg> functions interact with the 
 <pkg>cgdsr</pkg>: R-Based API for accessing the MSKCC Cancer Genomics Data Server (CGDS). 
 </li>
 <li>
-<pkg>rsnps</pkg>: Wrapper to the openSNP data API and the Broad Institute SNP Annotation and Proxy Search. 
+<a href="https://github.com/ropensci/rsnps">rsnps</a> (not on CRAN): Wrapper to the openSNP data API and the Broad Institute SNP Annotation and Proxy Search. 
 </li>
 <li>
 <pkg>rentrez</pkg>: Talk with NCBI entrez using R.
@@ -429,7 +429,7 @@ Sunlight Foundation set of APIs.
 Examples include dbpedia, eurostat and sourceforge.
 </li>
 <li>
-<pkg>rDrop</pkg>: Dropbox interface.
+<a href="https://github.com/karthikram/rDrop">rDrop</a> (not on CRAN): Dropbox interface.
 </li>
 <li>
 <pkg>zendeskR</pkg>: This package provides an R wrapper for the Zendesk API.
@@ -472,7 +472,6 @@ Examples include dbpedia, eurostat and sourceforge.
 <pkg>Rcolombos</pkg>
 <pkg priority="core">RCurl</pkg>
 <pkg>rdatamarket</pkg>
-<pkg>rDrop</pkg>
 <pkg>rebird</pkg>
 <pkg>Reol</pkg>
 <pkg>rentrez</pkg>
@@ -495,10 +494,9 @@ Examples include dbpedia, eurostat and sourceforge.
 <pkg>rplos</pkg>
 <pkg>rpubchem</pkg>
 <pkg>RSiteCatalyst</pkg>
-<pkg>rsnps</pkg>
 <pkg>RSocrata</pkg>
 <pkg>RTDAmeritrade</pkg>
-<pkg>rtreebase</pkg>
+<pkg>treebase</pkg>
 <pkg>rvertnet</pkg>
 <pkg>RWeather</pkg>
 <pkg>scrapeR</pkg>
@@ -526,6 +524,7 @@ Examples include dbpedia, eurostat and sourceforge.
   <a href="https://github.com/ropensci/rbhl">GitHub package: rbhl</a>
   <a href="https://github.com/ropensci/rbison">GitHub package: rbison</a>
   <a href="https://github.com/ramnathv/rCharts">GitHub package: rCharts</a>
+  <a href="https://github.com/karthikram/rDrop">GitHub package: rDrop</a>
   <a href="https://github.com/ropensci/rgauges">GitHub package: rgauges</a>
   <a href="https://github.com/ropensci/rmetadata">GitHub package: rmetadata</a>
   <a href="https://github.com/JNCC-UK/rnbn">GitHub package: rnbn</a>
@@ -533,6 +532,7 @@ Examples include dbpedia, eurostat and sourceforge.
   <a href="https://github.com/ropensci/rnpn">GitHub package: rnpn</a>
   <a href="https://github.com/ropensci/rorcid">GitHub package: rorcid</a>
   <a href="https://github.com/ropensci/rpubmed">GitHub package: rpubmed</a>
+  <a href="https://github.com/ropensci/rsnps">GitHub package: rsnps</a>
   <a href="https://github.com/metagraf/rVega">GitHub package: rVega</a>
   <a href="https://github.com/ropensci/rWBclimate">GitHub package: rWBclimate</a>
   <a href="https://github.com/cpsievert/XML2R">GitHub package: XML2R</a>
