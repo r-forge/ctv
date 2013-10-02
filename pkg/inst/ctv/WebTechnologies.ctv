@@ -5,13 +5,11 @@
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
 <version>2013-09-29</version>
 
-<info> This Task View contains information about using R to obtain and parse data from the web. The base version of R does 
+<info> This task view contains information about using R to obtain and parse data from the web. The base version of R does 
 not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting 
 with the web. If you have any comments or suggestions for additions or improvements please 
-<a href="mailto:scott@ropensci.org">contact</a> the maintainer of the Task View.
+<a href="mailto:scott@ropensci.org">contact</a> the maintainer of the task view.
 A list of available packages and functions is presented below, grouped by the type of activity.
-
-
 
 <h2>
 Tools for Working with the Web from R
@@ -24,7 +22,7 @@ The <pkg>repmis</pkg> package contains a <code>source_data()</code> command to l
 </li>
 <li>
 The package <pkg>XML</pkg> contains functions for parsing XML and HTML, and supports 
-xpath for searching XML (think regex for strings). A helpful function Read to read data from one or more HTML tables is <code>readHTMLTable()</code>.
+xpath for searching XML (think regex for strings). A helpful function to read data from one or more HTML tables is <code>readHTMLTable()</code>.
 </li>
 <li>
 <pkg>scrapeR</pkg> provides additional tools for scraping data from HTML and XML documents. 
@@ -54,8 +52,8 @@ This provides a great deal of control over the HTTP/FTP connection and the form 
 while providing a higher-level interface than is available just using R socket connections. It also provide tools for Web authentication.
 </li>
 <li>
-<pkg>httr</pkg>: a light wrapper around RCurl that makes many things easier, but still allows you to access the lower level 
-functionality of RCurl. It has convenient http verbs: <code>GET()</code>, <code>POST()</code>, <code>PUT()</code>, 
+<pkg>httr</pkg>: A light wrapper around <pkg>RCurl</pkg> that makes many things easier, but still allows you to access the lower level 
+functionality of <pkg>RCurl</pkg>. It has convenient http verbs: <code>GET()</code>, <code>POST()</code>, <code>PUT()</code>, 
 <code>DELETE()</code>, <code>PATCH()</code>, <code>HEAD()</code>, <code>BROWSE()</code>. These wrap functions are more convenient to 
 use, though less configurable than counterparts in <pkg>RCurl</pkg>. 
 http status codes  are helpful for debugging http calls. This package makes this easier using, 
@@ -90,7 +88,7 @@ scripts or reports on centralized servers, and build R based apps.
 <ul>
 <li>
 <a href="https://github.com/rstudio/ggvis">ggvis</a> (not on CRAN) makes it easy to describe interactive web graphics in R. 
-It fuses the ideas of <pkg>ggplot2</pkg> and <pkg>shiny</pkg>, rendering graphics on the web with Vega.
+It fuses the ideas of ggplot2 and <pkg>shiny</pkg>, rendering graphics on the web with Vega.
 </li>
 <li>
 <a href="https://github.com/ramnathv/rCharts">rCharts</a>  (not on CRAN) allows for interactive javascript charts from R.
@@ -342,7 +340,7 @@ Converts dates to POSIX format. Supports CSV and JSON. Manages throttling by Soc
 <pkg>RSiteCatalyst</pkg>: Functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
 </li>
 <li>
-<a href="https://code.google.com/p/r-google-analytics/">RGoogleAnalytics</a> (not on CRAN): Provides access to Google Analytics. 
+<gcode>r-google-analytics</gcode> (not on CRAN): Provides access to Google Analytics. 
 </li>
 </ul>
 
@@ -371,7 +369,7 @@ It retrieves content from news outlets The Observer, The Guardian, and guardian.
 
 <ul>
 <li>
-<pkg>nhlscraper</pkg>: Compiling the NHL Real Time Scoring System Database for easy use in R.
+<pkg>nhlscrapr</pkg>: Compiling the NHL Real Time Scoring System Database for easy use in R.
 </li>
 </ul>
 
@@ -385,11 +383,11 @@ for static maps, and use the map as a background image to overlay plots within R
 <li>
 <pkg>osmar</pkg>: This package provides infrastructure to access OpenStreetMap data from different sources
 to work with the data in common R manner and to convert data into available infrastructure provided by existing R packages 
-(e.g., into <pkg>sp</pkg> and <pkg>igraph</pkg> objects).
+(e.g., into sp and igraph objects).
 </li>
 <li>
 <pkg>ggmap</pkg>: Allows for the easy visualization of spatial data and models on top of Google Maps, 
-OpenStreetMaps, Stamen Maps, or CloudMade Maps using <pkg>ggplot2</pkg>.
+OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
 </li>
 </ul>
 
@@ -427,7 +425,8 @@ Sunlight Foundation set of APIs.
 <pkg>sos4R</pkg>: R client for the OGC Sensor Observation Service. 
 </li>
 <li>
-<pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
+<pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources.
+Examples include dbpedia, eurostat and sourceforge.
 </li>
 <li>
 <pkg>rDrop</pkg>: Dropbox interface.
@@ -436,7 +435,6 @@ Sunlight Foundation set of APIs.
 <pkg>zendeskR</pkg>: This package provides an R wrapper for the Zendesk API.
 </li>
 </ul>
-
 
 </info>
 
@@ -467,7 +465,7 @@ Sunlight Foundation set of APIs.
 <pkg>MTurkR</pkg>
 <pkg>NCBI2R</pkg>
 <pkg>ngramr</pkg> 
-<pkg>nhlscraper</pkg>
+<pkg>nhlscrapr</pkg>
 <pkg>OAIHarvester</pkg>
 <pkg>opencpu</pkg>
 <pkg>osmar</pkg>
@@ -519,10 +517,25 @@ Sunlight Foundation set of APIs.
 <pkg>zendeskR</pkg>
 </packagelist>
 
-
-
 <links>
-<a href="http://www.omegahat.org/" target="_top">omegahat project for statistical computing</a>
+  <a href="https://github.com/ropensci/alm">GitHub package: alm</a>
+  <a href="https://github.com/nachocab/clickme">GitHub package: clickme</a>
+  <a href="https://github.com/rstudio/ggvis">GitHub package: ggvis</a>
+  <a href="https://github.com/ropensci/neotoma">GitHub package: neotoma</a>
+  <a href="https://github.com/ropensci/rAltmetric">GitHub package: rAltmetic</a>
+  <a href="https://github.com/ropensci/rbhl">GitHub package: rbhl</a>
+  <a href="https://github.com/ropensci/rbison">GitHub package: rbison</a>
+  <a href="https://github.com/ramnathv/rCharts">GitHub package: rCharts</a>
+  <a href="https://github.com/ropensci/rgauges">GitHub package: rgauges</a>
+  <a href="https://github.com/ropensci/rmetadata">GitHub package: rmetadata</a>
+  <a href="https://github.com/JNCC-UK/rnbn">GitHub package: rnbn</a>
+  <a href="https://github.com/ropensci/rnoaa">GitHub package: rnoaa</a>
+  <a href="https://github.com/ropensci/rnpn">GitHub package: rnpn</a>
+  <a href="https://github.com/ropensci/rorcid">GitHub package: rorcid</a>
+  <a href="https://github.com/ropensci/rpubmed">GitHub package: rpubmed</a>
+  <a href="https://github.com/metagraf/rVega">GitHub package: rVega</a>
+  <a href="https://github.com/ropensci/rWBclimate">GitHub package: rWBclimate</a>
+  <a href="https://github.com/cpsievert/XML2R">GitHub package: XML2R</a>
 </links>
 
 </CRANTaskView>
