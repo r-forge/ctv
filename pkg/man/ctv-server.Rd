@@ -76,7 +76,7 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
 
 \examples{
 ## read .ctv file
-x <- read.ctv(file.path(.find.package("ctv"), "ctv", "Econometrics.ctv"))
+x <- read.ctv(system.file("ctv", "Econometrics.ctv", package = "ctv"))
 x
 
 \dontrun{

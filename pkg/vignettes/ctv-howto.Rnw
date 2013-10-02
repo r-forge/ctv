@@ -112,7 +112,7 @@ It can be read and printed by
 
 <<>>=
 library("ctv")
-x <- read.ctv(file.path(.find.package("ctv"), "ctv", "Econometrics.ctv"))
+x <- read.ctv(system.file("ctv", "Econometrics.ctv", package = "ctv"))
 x
 @
 

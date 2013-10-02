@@ -1,3 +1,13 @@
+Changes in Version 0.7-8
+
+  o Use system.file() instead of .find.package() in vignette.
+
+
+Changes in Version 0.7-7
+
+  o Use system.file() instead of .find.package() in ?read.ctv.
+
+
 Changes in Version 0.7-6
 
   o New function check_ctv_packages() for maintainers of CRAN task views.

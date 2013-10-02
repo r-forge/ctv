@@ -1,6 +1,6 @@
 Package: ctv
-Version: 0.7-6
-Date: 2013-01-29
+Version: 0.7-8
+Date: 2013-04-12
 Title: CRAN Task Views
 Authors@R: c(person(given = "Achim", family = "Zeileis", role = c("aut", "cre"), email = "Achim.Zeileis@R-project.org"),
              person(given = "Kurt", family = "Hornik", role = "aut", email = "Kurt.Hornik@R-project.org"))
