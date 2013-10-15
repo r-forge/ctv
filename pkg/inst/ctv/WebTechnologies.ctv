@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2013-10-02</version>
+<version>2013-10-15</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does 
 not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting 
@@ -278,9 +278,6 @@ Pubmed Central records.
 <a href="https://github.com/ropensci/rAltmetric">rAltmetic</a> (not on CRAN): Query and visualize metrics from 
 Altmetric.com.</li>
 <li>
-<pkg>rImpactStory</pkg>: Programmatic interface to the ImpactStory API.
-</li>
-<li>
 <a href="https://github.com/ropensci/alm">alm</a> (not on CRAN): R wrapper to the almetrics API platform developed by PLoS.</li>
 <li>
 <pkg>ngramr</pkg>: Retrieve and plot word frequencies through time from the Google Ngram Viewer.
@@ -481,7 +478,6 @@ Examples include dbpedia, eurostat and sourceforge.
 <pkg>rfishbase</pkg>
 <pkg>rgbif</pkg>
 <pkg>RgoogleMaps</pkg>
-<pkg>rImpactStory</pkg>
 <pkg priority="core">rjson</pkg>
 <pkg priority="core">RJSONIO</pkg>
 <pkg>RLastFM</pkg>
