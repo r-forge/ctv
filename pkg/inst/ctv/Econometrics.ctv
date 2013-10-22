@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2013-10-14</version>
+  <version>2013-10-22</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -75,7 +75,8 @@
 	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>, a convenience
 	  interface <code>tobit()</code> is in package <pkg>AER</pkg>. Further censored
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
-	  Interval regression models are in <pkg>intReg</pkg>.
+	  Interval regression models are in <pkg>intReg</pkg>. Censored regression models with
+	  conditional heteroskedasticity are in <pkg>crch</pkg>.
 	  Furthermore, hurdle models for left-censored data at zero can be estimated with
 	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>.</li>
       <li>Instrumental variables for binary responses: The <pkg>LARF</pkg> package estimates
@@ -262,6 +263,7 @@
     <pkg priority="core">car</pkg>
     <pkg>CDNmoney</pkg>
     <pkg>censReg</pkg>
+    <pkg>crch</pkg>
     <pkg>dlm</pkg>
     <pkg>dse</pkg>
     <pkg>dyn</pkg>
