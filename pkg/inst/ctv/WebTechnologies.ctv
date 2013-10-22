@@ -3,13 +3,13 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2013-10-15</version>
+<version>2013-10-22</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does 
 not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting 
-with the web. If you have any comments or suggestions for additions or improvements please 
-<a href="mailto:scott@ropensci.org">contact</a> the maintainer of the task view.
-A list of available packages and functions is presented below, grouped by the type of activity.
+with the web. A list of available packages and functions is presented below, grouped by the type of activity.
+
+If you have any comments or suggestions for additions or improvements for this taskview, go to Github and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on Github, <a href="mailto:scott@ropensci.org">send Scott an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.
 
 <h2>
 Tools for Working with the Web from R
@@ -17,6 +17,9 @@ Tools for Working with the Web from R
 
 <p><strong>Parsing Data from the Web</strong></p>
 <ul>
+<li>
+txt, csv, etc.: you can use <code>read.csv()</code> after acquiring the csv file from the web via e.g., <code>getURL()</code> from RCurl. <code>read.csv()</code> works with http but not https, i.e.: <code>read.csv("http://...")</code>, but not <code>read.csv("https://...")</code>. 
+</li>
 <li>
 The <pkg>repmis</pkg> package contains a <code>source_data()</code> command to load plain-text data from a URL (either http or https).
 </li>
@@ -37,13 +40,18 @@ The <pkg>rjson</pkg> converts R object into Javascript object notation (JSON) ob
 <li>
 An alternative to the <pkg>rjson</pkg> is <pkg>RJSONIO</pkg> which also converts to and from data in JSON format (it is fast for parsing).
 </li>
-<li>An alternative to the <pkg>XML</pkg> package is <pkg>selectr</pkg>, which parses CSS3 Selectors and translates 
-them to XPath 1.0 expressions. 
+<li>An alternative to the <pkg>XML</pkg> package is <pkg>selectr</pkg>, which parses CSS3 Selectors and translates them to XPath 1.0 expressions. 
+</li>
+<li>
+Custom formats: Some web APIs provide custom data formats which are usually modified xml or json, and handled by <pkg>XML</pkg> and <pkg>rjson</pkg> or <pkg>RJSONIO</pkg>, respectively.
+</li>
+<li>
+An alternative to <pkg>XML</pkg> is <a href="http://sjp.co.nz/projects/selectr/">selectr</a>, which parses CSS3 Selectors and translates them to XPath 1.0 expressions. <pkg>XML</pkg> package is often used for parsing xml and html, but <a href="http://sjp.co.nz/projects/selectr/">selectr</a> translates CSS selectors to XPath, so can use the CSS selectors instead of XPath. The  <a href="http://selectorgadget.com/">selectorgadget browser extension</a> can be used to identify page elements.
 </li>
 </ul>
 
 
-<p><strong>Curl/HTTP/FTP and Authentication:</strong></p>
+<p><strong>Curl/HTTP/FTP</strong></p>
 <ul>
 <li>
 <pkg>RCurl</pkg>: A low level curl wrapper that allows one to compose general HTTP requests and provides convenient functions 
@@ -55,17 +63,17 @@ while providing a higher-level interface than is available just using R socket c
 <pkg>httr</pkg>: A light wrapper around <pkg>RCurl</pkg> that makes many things easier, but still allows you to access the lower level 
 functionality of <pkg>RCurl</pkg>. It has convenient http verbs: <code>GET()</code>, <code>POST()</code>, <code>PUT()</code>, 
 <code>DELETE()</code>, <code>PATCH()</code>, <code>HEAD()</code>, <code>BROWSE()</code>. These wrap functions are more convenient to 
-use, though less configurable than counterparts in <pkg>RCurl</pkg>. 
-http status codes  are helpful for debugging http calls. This package makes this easier using, 
-for example, <code>stop_for_status()</code> gets the http status code from a response object, 
-and stops the function if the call was not successful. 
-</li>
-<li>Using web resources can require authentication, either via API keys, OAuth, username:password combination, 
-or via other means. <pkg>ROAuth</pkg> is a package that provides a separate R interface to OAuth. OAuth is the most complicated authentication 
-process, and can be most easily done using <pkg>httr</pkg> (see package demos). 
+use, though less configurable than counterparts in <pkg>RCurl</pkg>. The equivalent of httr's <code>GET()</code> in <pkg>RCurl</pkg> is <code>getForm()</code>. Likewise, the equivalent of <pkg>httr</pkg>'s <code>POST()</code> in <pkg>RCurl</pkg> is <code>postForm()</code>.  
+http status codes are helpful for debugging http calls. This package makes this easier using, for example, <code>stop_for_status()</code> gets the http status code from a response object, and stops the function if the call was not successful.  See also <code>warn_for_status()</code>. Note that you can pass in additional Curl options to the <code>config</code> parameter in http calls.
 </li>
 </ul>
 
+<p><strong>Authentication</strong></p>
+<ul>
+<li>
+Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work.  API keys and username:password combos can be combined within a url for a call to a web resource (api key: http://api.foo.org/?key=yourkey; user/pass: http://username:password@api.foo.org), or can be specified via commands in <pkg>RCurl</pkg> or <pkg>httr</pkg>. OAuth is the most complicated authentication process, and can be most easily done using <pkg>httr</pkg>. See the 6 demos within <pkg>httr</pkg>, three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth 2.0 (facebook, github, google). <pkg>ROAuth</pkg> is a package that provides a separate R interface to OAuth. OAuth is easier to to do in <pkg>httr</pkg>, so start there. 
+</li>
+</ul>
 
 <p><strong>Web Frameworks</strong></p>
 
@@ -74,21 +82,26 @@ process, and can be most easily done using <pkg>httr</pkg> (see package demos).
 The <pkg>shiny</pkg> package makes it easy to build interactive web applications with R. 
 </li>
 <li>
-The <pkg>Rook</pkg> web server interface contains the specification and convenience software for building and 
-running Rook applications. 
+The <pkg>Rook</pkg> web server interface contains the specification and convenience software for building and running Rook applications. 
 </li>
 <li>
-The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, 
-LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute 
-scripts or reports on centralized servers, and build R based apps.
+The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps. See also <pkg>opencpucran</pkg>.
+</li>
+<li>
+A package by Yihui Xie called <pkg>servr</pkg> provides a simple HTTP server to serve files under a given directory based on the <pkg>httpuv</pkg> package.
+</li>
+<li>
+The <pkg>httpuv</pkg> package, made by Joe Cheng at RStudio, provides low-level socket and protocol support for handling HTTP and WebSocket requests directly within R.
+</li>
+<li>
+Plot.ly is a company that allows you to create visualizations in the web using R (and Python). They have an R package in development <a href="https://github.com/cparmer/Plotly/tree/master/API/packages/R">here</a>, as well as access to their services via an API <a href="https://plot.ly/API/">here</a>.
 </li>
 </ul>
 
 <p><strong>JavaScript</strong></p>
 <ul>
 <li>
-<a href="https://github.com/rstudio/ggvis">ggvis</a> (not on CRAN) makes it easy to describe interactive web graphics in R. 
-It fuses the ideas of ggplot2 and <pkg>shiny</pkg>, rendering graphics on the web with Vega.
+<a href="https://github.com/rstudio/ggvis">ggvis</a> (not on CRAN) makes it easy to describe interactive web graphics in R. It fuses the ideas of ggplot2 and <pkg>shiny</pkg>, rendering graphics on the web with Vega.
 </li>
 <li>
 <a href="https://github.com/ramnathv/rCharts">rCharts</a>  (not on CRAN) allows for interactive javascript charts from R.
@@ -98,6 +111,9 @@ It fuses the ideas of ggplot2 and <pkg>shiny</pkg>, rendering graphics on the we
 </li>
 <li>
 <a href="https://github.com/nachocab/clickme">clickme</a> (not on CRAN) is an R package to create interactive plots. 
+</li>
+<li>
+<a href="https://github.com/tdhock/animint">animint</a> (not on CRAN) allows an interactive animation to be defined using a list of ggplots with clickSelects and showSelected aesthetics, then exported to CSV/JSON/D3/JavaScript for viewing in a web browser.
 </li>
 </ul>
 
@@ -314,6 +330,9 @@ Altmetric.com.</li>
 <pkg>RSocrata</pkg>: Provided with a Socrata dataset resource URL, or a Socrata SoDA web API query, returns an R data frame. 
 Converts dates to POSIX format. Supports CSV and JSON. Manages throttling by Socrata.
 </li>
+<li>
+<pkg>OAIHarvester</pkg>: Harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
+</li>
 </ul>
 
 <p><strong>Machine Learning as a Service</strong></p>
@@ -367,6 +386,9 @@ It retrieves content from news outlets The Observer, The Guardian, and guardian.
 <ul>
 <li>
 <pkg>nhlscrapr</pkg>: Compiling the NHL Real Time Scoring System Database for easy use in R.
+</li>
+<li>
+<pkg>pitchRx</pkg>: Tools for Collecting and Visualizing Major League Baseball PITCHfx Data
 </li>
 </ul>
 
@@ -431,12 +453,16 @@ Examples include dbpedia, eurostat and sourceforge.
 <li>
 <pkg>zendeskR</pkg>: This package provides an R wrapper for the Zendesk API.
 </li>
+<li>
+<pkg>AWS.tools</pkg>: An R package to interact with Amazon Web Services (EC2/S3).
+</li>
 </ul>
 
 </info>
 
 <packagelist>
 <pkg>anametrix</pkg>
+<pkg>AWS.tools</pkg>
 <pkg>BerkeleyEarth</pkg>
 <pkg>bigml</pkg>
 <pkg>cgdsr</pkg>
@@ -532,6 +558,7 @@ Examples include dbpedia, eurostat and sourceforge.
   <a href="https://github.com/metagraf/rVega">GitHub package: rVega</a>
   <a href="https://github.com/ropensci/rWBclimate">GitHub package: rWBclimate</a>
   <a href="https://github.com/cpsievert/XML2R">GitHub package: XML2R</a>
+  <a href="https://github.com/tdhock/animint">GitHub package: animint</a>
 </links>
 
 </CRANTaskView>
