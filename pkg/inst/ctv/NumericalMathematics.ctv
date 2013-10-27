@@ -2,26 +2,26 @@
 
 <CRANTaskView>
 
-  <name>NumericalMath</name>
-  <topic>Numerical Mathematics With R</topic>
+  <name>NumericalMathematics</name>
+  <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2013-10-25</version>
+  <version>2013-10-27</version>
   
   <info>
 
-    <p>This task view on Numerical Mathematics lists R packages and functions 
+    <p>This task view on numerical mathematics lists R packages and functions 
     that are useful for solving numerical problems in linear algebra and 
     analysis. It shows that R is a viable computing environment for 
     implementing and applying numerical methods outside the realm of 
     statistics.</p>
 
-    <p>The task view will <i>not</i> cover differential equations, 
+    <p>The task view will <em>not</em> cover differential equations, 
     optimization problems and solvers, or packages and functions operating 
     on times series, because all these topics are treated extensively in 
     the corresponding task views <view>DifferentialEquations</view>, 
     <view>Optimization</view>, and <view>TimeSeries</view>. These task views 
     together will provide a good overview of what is available in R for the 
-    area of Numerical Mathematics.</p>
+    area of numerical mathematics.</p>
 
     <p>The task view has been created to provide an overview of the topic. 
     If some packages are missing or certain topics in numerical math 
@@ -29,7 +29,7 @@
 
     <h4>Numerical Linear Algebra</h4>
 
-    <p>As Statistics is based to a large extend on Linear Algebra, many 
+    <p>As statistics is based to a large extend on linear algebra, many 
     numerical linear algebra routines are present in R, and some only 
     implicitely. Examples of explicitely available functions are vector and 
     matrix operations, matrix (QR) decompositions, solving linear equations, 
@@ -70,7 +70,7 @@
     contributed packages.</p>
 
     <ul>
-    <li>Package <pkg>gsl</pkg> provides an interface to the 'Gnu Scientific 
+    <li>Package <pkg>gsl</pkg> provides an interface to the 'GNU Scientific 
         Library' that contains implementations of many special functions, for 
         example the Airy and Bessel functions, elliptic and exponential 
         integrals, the hypergeometric function, Lambert's W function, and
@@ -86,7 +86,7 @@
         whole complex plane, is computed in <pkg>hypergeo</pkg>, including 
         transformation formulas and special values of the parameters.</li>
     <li>Elliptic and modular functions are available in package 
-        <pkg>elliptic</pkg>, including the Weierstrass P Function and Jacobi's 
+        <pkg>elliptic</pkg>, including the Weierstrass P function and Jacobi's 
         theta functions.
         There are tools for visualizing complex functions.</li>
     </ul>
@@ -96,10 +96,10 @@
     <p>Function polyroot() in base R determines all zeros of a polynomial,  
     based on the Jenkins-Traub algorithm. Linear regression function lm() 
     can perform polynomial fitting when using <code>poly()</code> in the model 
-    formula (with option <code>raw=TRUE</code>).</p>
+    formula (with option <code>raw = TRUE</code>).</p>
 
     <ul>
-    <li>Packages <pkg>polynom</pkg> and <pkg>polynomF</pkg> provide similar 
+    <li>Packages <pkg>polynom</pkg> and <pkg>PolynomF</pkg> provide similar 
         functionality for manipulating univariate polynomials, like 
         evaluating polynomials (Horner scheme), differentiating or integrating 
         them, or solving polynomials, i.e. finding all roots (based on an 
@@ -169,7 +169,7 @@
     <p>Base R provides functions <code>approx()</code> for constant and linear 
     interpolation, and <code>spline()</code> for cubic (Hermite) spline 
     interpolation, while <code>smooth.spline()</code> performs cubic spline 
-    approximation. Recommended package <pkg>splines</pkg> creates periodic 
+    approximation. Base package splines creates periodic 
     interpolation splines in function <code>periodicSpline()</code>.</p>
 
     <ul>
@@ -177,7 +177,7 @@
         <pkg>akima</pkg> package: <code>aspline()</code> for univariate data, 
         <code>bicubic()</code> or <code>interp()</code> for data on a 2D 
         rectangular domain.</li>
-    <li>Package <pkg>signal</pkg> contains several <i>filters</i> to smooth 
+    <li>Package <pkg>signal</pkg> contains several <em>filters</em> to smooth 
         discrete data, notably <code>interp1()</code> for linear, spline, and 
         cubic interpolation, <code>pchip()</code> for piecewise cubic Hermite 
         interpolation, and <code>sgolay()</code> for Savitzky-Golay 
@@ -214,11 +214,11 @@
         strategies such as line searches or trust regions.</li>
     </ul>
 
-    <h4>Discrete Math and Number Theory</h4>
+    <h4>Discrete Mathematics and Number Theory</h4>
 
     <p>Not so many functions are available for numerical number theory.
     Note that integers in double precision can be represented exactly up to 
-    <code>2^53-1</code>, above that limit a multi-precision package such as
+    <code>2^53 - 1</code>, above that limit a multi-precision package such as
     <pkg>gmp</pkg> is needed, see below.</p>
 
     <ul>
@@ -233,11 +233,11 @@
     <li>Package <pkg>combinat</pkg> generates all permutations or all 
         combinations of a certain length of a set of elements (i.e. a vector); 
         also computes binomial coefficients. <pkg>pcenum</pkg> provides 
-        methods to <i>iterate</i> through all permutations or combinations 
+        methods to <em>iterate</em> through all permutations or combinations 
         without retrieving them all at one time.</li>
     </ul>
 
-    <h4>Multi-precision Arithmetic and Symbolic Math</h4>
+    <h4>Multi-Precision Arithmetic and Symbolic Mathematics</h4>
 
     <ul>
     <li>Multiple precision arithmetic is available in R through package 
@@ -250,7 +250,7 @@
         libraries. Special numbers and some special functions are included, 
         as well as routines for root finding, integration, and optimization 
         in arbitrary precision.</li>
-    <li>Package <pkg>rSymPy</pkg> accesses the symbolic algebra system 'sympy' 
+    <li>Package <pkg>rSymPy</pkg> accesses the symbolic algebra system 'SymPy' 
         (written in Python) from R. 
         It supports arbitrary precision computations, linear algebra and 
         calculus, solving equations, discrete mathematics, and much more.</li>
@@ -259,28 +259,29 @@
         in calculus and linear algebra.</li>
     </ul>
 
-    <h4>Matlab, Octave, and Python Interfaces</h4>
+    <h4>MATLAB, Octave, and Python Interfaces</h4>
 
-    <p>Interfaces to numerical computation software such as Matlab 
+    <p>Interfaces to numerical computation software such as MATLAB 
     (commercial) or Octave (free) will be important when solving difficult 
     numerical problems. Please note that the commercial programs SAS and 
     Mathematica do have facilities to call R functions.</p>
 
     <ul>
     <li>The <pkg>matlab</pkg> emulation package contains about 30 simple 
-        functions, replicating Matlab functions, using the respective Matlab 
+        functions, replicating MATLAB functions, using the respective MATLAB 
         names and being implemented in pure R.</li>
     <li>Package <pkg>R.matlab</pkg> provides tools to read and write MAT 
-        files, which is the Matlab data format. It also enables a 
-        one-directional interface with a Matlab process, sending and 
+        files, which is the MATLAB data format. It also enables a 
+        one-directional interface with a MATLAB process, sending and 
         retrieving objects through a TCP/IP connection.</li>
     <li>Package <pkg>RcppOctave</pkg> provides an interface to Octave (a 
-        Matlab clone). It enables calling Octave functions, passing variables 
+        MATLAB clone). It enables calling Octave functions, passing variables 
         between R and Octave, and browsing Octave documentation.</li>
-    <li>Python, through its modules 'numpy', 'scipy', and 'pandas', has 
-        elaborate and efficient numerical tools available. R Package 
-        <pkg>rpython</pkg> permits calls from R to Python, while project 
-        <b>RPy</b> (with Python module 'rpy2') interfaces R from Python.</li>
+    <li>Python, through its modules 'NumPy', 'SciPy', and 'pandas', has 
+        elaborate and efficient numerical tools available. R package 
+        <pkg>rPython</pkg> permits calls from R to Python, while project 
+        <a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python module 'rpy2')
+	interfaces R from Python.</li>
     </ul>
         
   </info>
@@ -315,21 +316,21 @@
     <pkg>pcenum</pkg>
     <pkg>polyCub</pkg>
     <pkg priority="core">polynom</pkg>
-    <pkg>polynomF</pkg>
+    <pkg>PolynomF</pkg>
     <pkg>pracma</pkg>
     <pkg>R.matlab</pkg>
     <pkg>R2Cuba</pkg>
+    <pkg>Rcpp</pkg>
     <pkg>RcppArmadillo</pkg>
     <pkg>RcppEigen</pkg>
     <pkg>RcppOctave</pkg>
     <pkg>Rmpfr</pkg>
-    <pkg>rpython</pkg>
+    <pkg>rPython</pkg>
     <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
     <pkg>signal</pkg>
     <pkg>SparseGrid</pkg>
     <pkg>SphericalCubature</pkg>
-    <pkg>splines</pkg>
     <pkg>statmod</pkg>
     <pkg>stinepack</pkg>
     <pkg>ssvd</pkg>
@@ -342,7 +343,7 @@
     <view>Optimization</view>
     <view>TimeSeries</view>
 
-    <span>Textbook: <a href="http://tinyurl.com/hdvhomaur">Hands-on Matrix 
+    <span>Textbook: <a href="http://tinyurl.com/hdvhomaur">Hands-On Matrix 
         Algebra Using R</a></span>
     <span>Textbook: 
     <a href="http://www.crcpress.com/product/isbn/9781420068726">Introduction 
@@ -356,7 +357,6 @@
         The Art of Numerical Computing</a>
     <a href="http://mathworld.wolfram.com/">E. Weisstein's 
         Wolfram MathWorld</a>
-    <!-- <a href="">...</a> -->
   </links>
 
 </CRANTaskView>
