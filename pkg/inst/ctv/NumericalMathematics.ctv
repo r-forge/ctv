@@ -5,23 +5,23 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2013-10-27</version>
+  <version>2013-10-28</version>
   
   <info>
 
     <p>This task view on numerical mathematics lists R packages and functions 
     that are useful for solving numerical problems in linear algebra and 
     analysis. It shows that R is a viable computing environment for 
-    implementing and applying numerical methods outside the realm of 
+    implementing and applying numerical methods, also outside the realm of 
     statistics.</p>
 
     <p>The task view will <em>not</em> cover differential equations, 
     optimization problems and solvers, or packages and functions operating 
     on times series, because all these topics are treated extensively in 
     the corresponding task views <view>DifferentialEquations</view>, 
-    <view>Optimization</view>, and <view>TimeSeries</view>. These task views 
-    together will provide a good overview of what is available in R for the 
-    area of numerical mathematics.</p>
+    <view>Optimization</view>, and <view>TimeSeries</view>. All these task 
+    views together will provide a good overview of what is available in R for 
+    the area of numerical mathematics.</p>
 
     <p>The task view has been created to provide an overview of the topic. 
     If some packages are missing or certain topics in numerical math 
@@ -56,8 +56,8 @@
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
         iterative thresholding method, while <pkg>irlba</pkg> will compute 
         approximate singular values/vectors of large matrices.</li>
-    <li>Packages <pkg>RcppArmadillo</pkg> and <pkg>RcppEigen</pkg> provide 
-        integration with the C++ template libraries 'Armadillo' resp. 'Eigen' 
+    <li>Packages <pkg>RcppArmadillo</pkg> and <pkg>RcppEigen</pkg> enable the 
+        integration of the C++ template libraries 'Armadillo' resp. 'Eigen' 
         for linear algebra applications written in C++ and integrated in R 
         using <pkg>Rcpp</pkg> for performance and ease of use.</li>
     </ul>
@@ -78,10 +78,10 @@
     <li>Airy and Bessel functions, for real and complex numbers, are also 
         computed in package <pkg>Bessel</pkg>, with approximations for large 
         arguments.</li>
-    <li>Package <pkg>pracma</pkg> includes some special functions, such as 
-        error functions, incomplete and complex gamma function, exponential 
-        and logarithmic integrals, Fresnel integrals, the polygamma and the 
-        Riemann zeta function.</li>
+    <li>Package <pkg>pracma</pkg> includes special functions, such as 
+        error functions and inverses, incomplete and complex gamma function, 
+        exponential and logarithmic integrals, Fresnel integrals, the 
+        polygamma and the Riemann zeta function.</li>
     <li>The hypergeometric (and generalized hypergeometric) function, for the 
         whole complex plane, is computed in <pkg>hypergeo</pkg>, including 
         transformation formulas and special values of the parameters.</li>
@@ -121,21 +121,22 @@
 
     <h4>Differentiation and Integration</h4>
 
-    <p><code>integrate()</code> is the standard approach for integrating 
-    univariate functions in R. It applies an adaptive Gauss-Kronrod quadrature 
-    and can handle singularities and unbounded domains to a certain extent. 
-    It sometimes has problems with too many subdivisions.</p>
+    <p><code>D()</code> and <code>deriv()</code> in base R compute derivatives  
+    of simple expressions symbolically.
+    Function <code>integrate()</code> implements an approach for numerically 
+    integrating univariate functions in R. It applies adaptive Gauss-Kronrod 
+    quadrature and can handle singularities and unbounded domains to a certain 
+    extent.</p>
 
     <ul>
     <li><pkg>numDeriv</pkg> sets the standard for numerical differentiation 
         in R, providing numerical gradients, Jacobians, and Hessians, computed 
         by simple finite differences, Richardson extrapolation, or the highly 
         accurate complex step approach.</li>
-    <li>Package <pkg>pracma</pkg>, too, contains functions for computing 
-        numerical derivatives, including Richardson extrapolation or the 
-        complex step approach. <code>fderiv()</code> computes numerical 
-        derivatives of higher orders.
-        <pkg>pracma</pkg> contains several routines for numerical integration: 
+    <li>Package <pkg>pracma</pkg> contains functions for computing numerical 
+        derivatives, including Richardson extrapolation or complex step. 
+        <code>fderiv()</code> computes numerical derivatives of higher orders.
+        <pkg>pracma</pkg> has several routines for numerical integration: 
         adaptive Lobatto quadrature, Romberg integration, Newton-Cotes 
         formulas, Clenshaw-Curtis quadrature rules. <code>integral2()</code> 
         integrates functions in two dimensions, also for domains characterized 
@@ -176,7 +177,8 @@
     <li>Interpolation of irregularly spaced data is possible with the 
         <pkg>akima</pkg> package: <code>aspline()</code> for univariate data, 
         <code>bicubic()</code> or <code>interp()</code> for data on a 2D 
-        rectangular domain.</li>
+        rectangular domain. (This package is distributed under ACM license and 
+        not available for commercial use.)</li>
     <li>Package <pkg>signal</pkg> contains several <em>filters</em> to smooth 
         discrete data, notably <code>interp1()</code> for linear, spline, and 
         cubic interpolation, <code>pchip()</code> for piecewise cubic Hermite 
@@ -184,9 +186,10 @@
         smoothing.</li>
     <li>Package <pkg>pracma</pkg> provides barycentric Lagrange interpolation 
         (in 1 and 2 dimensions) in <code>barylag()</code> resp. 
-        <code>barylag2()</code>, and interpolation and approximation of data 
-        with rational functions, i.e. in the presence of singularities, in 
-        <code>ratinterp()</code> and <code>rationalfit()</code>.</li>
+        <code>barylag2()</code>, 1D akima in <code>akimaInterp()</code>, and 
+        interpolation and approximation of data with rational functions, i.e. 
+        in the presence of singularities, in <code>ratinterp()</code> and 
+        <code>rationalfit()</code>.</li>
     <li><code>sinterp()</code> in package <pkg>stinepack</pkg> realizes 
         interpolation based on piecewise rational functions by applying 
         Stineman's algorithm. The interpolating function will be monoton in 
@@ -216,7 +219,7 @@
 
     <h4>Discrete Mathematics and Number Theory</h4>
 
-    <p>Not so many functions are available for numerical number theory.
+    <p>Not so many functions are available for computational number theory.
     Note that integers in double precision can be represented exactly up to 
     <code>2^53 - 1</code>, above that limit a multi-precision package such as
     <pkg>gmp</pkg> is needed, see below.</p>
@@ -228,11 +231,11 @@
         functions or Euler's Phi function.</li>
     <li><pkg>contfrac</pkg> contains various utilities for evaluating 
         continued fractions and partial convergents.</li>
-    <li>And the <pkg>partitions</pkg> package enumerates additive partitions 
+    <li>The <pkg>partitions</pkg> package enumerates additive partitions 
         of integers, including restricted and unequal partitions.</li>
     <li>Package <pkg>combinat</pkg> generates all permutations or all 
         combinations of a certain length of a set of elements (i.e. a vector); 
-        also computes binomial coefficients. <pkg>pcenum</pkg> provides 
+        it also computes binomial coefficients. <pkg>pcenum</pkg> provides 
         methods to <em>iterate</em> through all permutations or combinations 
         without retrieving them all at one time.</li>
     </ul>
@@ -280,8 +283,8 @@
     <li>Python, through its modules 'NumPy', 'SciPy', and 'pandas', has 
         elaborate and efficient numerical tools available. R package 
         <pkg>rPython</pkg> permits calls from R to Python, while project 
-        <a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python module 'rpy2')
-	interfaces R from Python.</li>
+        <a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python 
+        module 'rpy2') interfaces R from Python.</li>
     </ul>
         
   </info>
