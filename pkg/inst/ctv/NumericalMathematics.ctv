@@ -31,7 +31,7 @@
 
     <p>As statistics is based to a large extend on linear algebra, many 
     numerical linear algebra routines are present in R, and some only 
-    implicitely. Examples of explicitely available functions are vector and 
+    implicitly. Examples of explicitly available functions are vector and 
     matrix operations, matrix (QR) decompositions, solving linear equations, 
     eigenvalues/-vectors, singular value decomposition, or least-squares 
     approximation.</p>
@@ -41,8 +41,8 @@
         for dense and sparse matrices and operations on them, for example 
         Cholesky and Schur decomposition, matrix exponential, or norms and 
         conditional numbers for sparse matrices.</li>
-    <li>Recommended package <pkg>MASS</pkg> adds generalized inverses and null 
-        spaces of matrices.</li>
+    <li>Recommended package <pkg>MASS</pkg> adds generalized (Penrose) 
+        inverses and null spaces of matrices.</li>
     <li><pkg>expm</pkg> computes the exponential, logarithm, and square root 
         of square matrices, but also powers of matrices or the Frechet 
         derivative. <code>expm()</code> is to be preferred to the function 
@@ -56,6 +56,8 @@
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
         iterative thresholding method, while <pkg>irlba</pkg> will compute 
         approximate singular values/vectors of large matrices.</li>
+    <li><pkg>eigeninv</pkg> generates matrices with a given set of 
+        eigenvalues ('inverse eigenvalue problem').</li>
     <li>Packages <pkg>RcppArmadillo</pkg> and <pkg>RcppEigen</pkg> enable the 
         integration of the C++ template libraries 'Armadillo' resp. 'Eigen' 
         for linear algebra applications written in C++ and integrated in R 
@@ -82,9 +84,11 @@
         error functions and inverses, incomplete and complex gamma function, 
         exponential and logarithmic integrals, Fresnel integrals, the 
         polygamma and the Riemann zeta function.</li>
-    <li>The hypergeometric (and generalized hypergeometric) function, for the 
-        whole complex plane, is computed in <pkg>hypergeo</pkg>, including 
-        transformation formulas and special values of the parameters.</li>
+    <li><pkg>appell</pkg> computes Gauss' 2F1 and Appell's F1 hypergeometric 
+        functions for complex parameters and arguments quite accurately.</li>
+    <li>The hypergeometric (and generalized hypergeometric) function, is 
+        computed in <pkg>hypergeo</pkg>, including transformation formulas 
+        and special values of the parameters.</li>
     <li>Elliptic and modular functions are available in package 
         <pkg>elliptic</pkg>, including the Weierstrass P function and Jacobi's 
         theta functions.
@@ -133,6 +137,8 @@
         in R, providing numerical gradients, Jacobians, and Hessians, computed 
         by simple finite differences, Richardson extrapolation, or the highly 
         accurate complex step approach.</li>
+    <li><pkg>features</pkg> extracts features from functional data, such as 
+        first and second derivatives, or curvature at critical points.</li>
     <li>Package <pkg>pracma</pkg> contains functions for computing numerical 
         derivatives, including Richardson extrapolation or complex step. 
         <code>fderiv()</code> computes numerical derivatives of higher orders.
@@ -146,7 +152,7 @@
         and Legendre quadrature rules, explicitly returning nodes and weights 
         in each case. Function <code>gaussquad()</code> in package 
         <pkg>statmod</pkg> does a similar job.</li>
-    <li>Adaptive multivariate integration over hyperrectangles in 
+    <li>Adaptive multivariate integration over hyper-rectangles in 
         n-dimensional space is available in package <pkg>cubature</pkg> as 
         function <code>adaptIntegrate()</code>, based on C code by Stephen 
         Johnson. The integrand functions can even be multi-valued.</li>
@@ -186,9 +192,9 @@
         smoothing.</li>
     <li>Package <pkg>pracma</pkg> provides barycentric Lagrange interpolation 
         (in 1 and 2 dimensions) in <code>barylag()</code> resp. 
-        <code>barylag2()</code>, 1D akima in <code>akimaInterp()</code>, and 
-        interpolation and approximation of data with rational functions, i.e. 
-        in the presence of singularities, in <code>ratinterp()</code> and 
+        <code>barylag2d()</code>, 1-dim. akima in <code>akimaInterp()</code>, 
+        and interpolation and approximation of data with rational functions, 
+        i.e. in the presence of singularities, in <code>ratinterp()</code> and 
         <code>rationalfit()</code>.</li>
     <li><code>sinterp()</code> in package <pkg>stinepack</pkg> realizes 
         interpolation based on piecewise rational functions by applying 
@@ -238,6 +244,7 @@
         it also computes binomial coefficients. <pkg>pcenum</pkg> provides 
         methods to <em>iterate</em> through all permutations or combinations 
         without retrieving them all at one time.</li>
+    <li><pkg>magic</pkg> creates and investigates magical squares.</li>
     </ul>
 
     <h4>Multi-Precision Arithmetic and Symbolic Mathematics</h4>
@@ -292,18 +299,22 @@
   <packagelist>
 
     <pkg>akima</pkg>
+    <pkg>appell</pkg>
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
     <pkg>combinat</pkg>
     <pkg>contfrac</pkg>
     <pkg>cubature</pkg>
+    <pkg>eigeninv</pkg>
     <pkg>elliptic</pkg>
     <pkg>expm</pkg>
+    <pkg>features</pkg>
     <pkg>gaussquad</pkg>
     <pkg>gmp</pkg>
     <pkg priority="core">gsl</pkg>
     <pkg>hypergeo</pkg>
     <pkg>irlba</pkg>
+    <pkg>magic</pkg>
     <pkg>MASS</pkg>
     <pkg priority="core">Matrix</pkg>
     <pkg>matlab</pkg>
@@ -349,7 +360,7 @@
     <span>Textbook: <a href="http://tinyurl.com/hdvhomaur">Hands-On Matrix 
         Algebra Using R</a></span>
     <span>Textbook: 
-    <a href="http://www.crcpress.com/product/isbn/9781420068726">Introduction 
+    <a href="http://www.ms.unimelb.edu.au/spuRs/">Introduction 
         to Scientific Programming and Simulation Using R</a></span>
     <span>Textbook: <a href="http://tinyurl.com/vbnmiseur">Numerical 
     Methods in Science and Engineering Using R</a> [to appear]</span>
