@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2013-11-23</version>
+<version>2013-11-29</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does 
 not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting 
@@ -273,9 +273,6 @@ Canada Website Including tools for scraping data, creating metadata and formatin
 Energy and Climate Change and related data sources. The current version focuses on total final energy consumption 
 statistics at the local authority, MSOA, and LSOA geographies. Methods for calculating the generation mix of grid 
 electricity and its associated carbon intensity are also provided.
-</li>
-<li>
-<pkg>Metadata</pkg>: Collates metadata for climate surface stations.
 </li>
 <li>
 <pkg>sos4R</pkg>: A client for Sensor Observation Services (SOS) as specified by the 
@@ -647,7 +644,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>httpuv</pkg>
 <pkg priority="core">httr</pkg>
 <pkg>imguR</pkg>
-<pkg>Metadata</pkg>
 <pkg>MTurkR</pkg>
 <pkg>NCBI2R</pkg>
 <pkg>ngramr</pkg> 
