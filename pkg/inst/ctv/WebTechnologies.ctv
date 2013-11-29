@@ -259,9 +259,6 @@ station metadata is extracted. In addition functions for selecting individual va
 for them is provided. 
 </li>
 <li>
-<pkg>BerkeleyEarth</pkg>: Data input for Berkeley Earth Surface Temperature. 
-</li>
-<li>
 <pkg>waterData</pkg>: An R Package for retrieval, analysis, and anomaly calculation of daily hydrologic time series data. 
 </li>
 <li>
@@ -619,7 +616,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>alm</pkg>	
 <pkg>anametrix</pkg>
 <pkg>AWS.tools</pkg>
-<pkg>BerkeleyEarth</pkg>
 <pkg>bigml</pkg>
 <pkg>cgdsr</pkg>
 <pkg>CHCN</pkg>
