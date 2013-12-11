@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2013-03-20</version>
+  <version>2013-12-10</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -28,6 +28,9 @@
 <pkg>Geneland</pkg>
           has functions for detecting spatial structures from genetic data
           within a Bayesian framework via MCMC estimation.
+<pkg>rmetasim</pkg>
+          provides an interface to the metasim engine
+      for population genetics simulations.
 <pkg>hapsim</pkg>
           simulates haplotype data with pre-specified allele frequencies and LD patterns. A few 
           population genetics functions are also implemeted in
@@ -236,6 +239,7 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     <pkg>phangorn</pkg>
     <pkg>qtl</pkg>
     <pkg>qtlbim</pkg>
+    <pkg>rmetasim</pkg>
     <pkg>seqinr</pkg>
     <pkg>SNPmaxsel</pkg>
     <pkg>snp.plotter</pkg>
