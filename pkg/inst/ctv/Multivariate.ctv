@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2013-05-26</version>
+  <version>2013-12-11</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -35,7 +35,8 @@
           which provides an interface to the qhull library,
           gives indices to the relevant points via <code>convexhulln()</code>.
           <pkg>ellipse</pkg> draws ellipses for two parameters, and provides <code>plotcorr()</code>,
-          visual display of a correlation matrix.  Mosaic plots are available via 
+          visual display of a correlation matrix.  <pkg>denpro</pkg> provides level set trees 
+          for multivariate visualisation.  Mosaic plots are available via 
           <code>mosaicplot()</code> in graphics and <code>mosaic()</code>
 	  in <pkg>vcd</pkg> that also contains other visualization techniques for multivariate
 	  categorical data. <pkg>gclus</pkg> provides a number of 
@@ -271,6 +272,7 @@
     <pkg>covRobust</pkg>
     <pkg>cramer</pkg> 
     <pkg>cwhmisc</pkg> 
+    <pkg>denpro</pkg>
     <pkg>desirability</pkg>
     <pkg>dr</pkg>
     <pkg>e1071</pkg>
