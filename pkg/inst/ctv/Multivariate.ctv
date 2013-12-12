@@ -265,7 +265,8 @@
     <pkg>clue</pkg> 
     <pkg priority="core">cluster</pkg> 
     <pkg>clusterGeneration</pkg>
-    <pkg>clusterSim</pkg> 
+    <pkg>clusterSim</pkg>
+    <pkg>clustvarsel</pkg>
     <pkg>clv</pkg> 
     <pkg>cocorresp</pkg> 
     <pkg>concor</pkg>
