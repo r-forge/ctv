@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2013-10-22</version>
+  <version>2013-12-16</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -78,7 +78,8 @@
 	  Interval regression models are in <pkg>intReg</pkg>. Censored regression models with
 	  conditional heteroskedasticity are in <pkg>crch</pkg>.
 	  Furthermore, hurdle models for left-censored data at zero can be estimated with
-	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>.</li>
+	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>
+	  and semiparametric extensions of these are provided by <pkg>SemiParSampleSel</pkg>.</li>
       <li>Instrumental variables for binary responses: The <pkg>LARF</pkg> package estimates
           local average response functions for binary treatments and binary instruments.</li>
       <li>Multivariate probit models: Estimation and marginal effect computations can be
@@ -324,6 +325,7 @@
     <pkg>sde</pkg>
     <pkg>segmented</pkg>
     <pkg>sem</pkg>
+    <pkg>SemiParSampleSel</pkg>
     <pkg>simpleboot</pkg>
     <pkg>SparseM</pkg>
     <pkg>spatialprobit</pkg>
