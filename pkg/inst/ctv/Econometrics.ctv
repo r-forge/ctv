@@ -61,8 +61,8 @@
       <li>Zero-inflated and hurdle count models are provided in package <pkg>pscl</pkg>.</li>
       <li>Multinomial responses: Multinomial models
 	  with individual-specific covariates only are available in <code>multinom()</code>
-	  from package <pkg>nnet</pkg>. An implementation with both individual- and
-	  choice-specific variables is <pkg>mlogit</pkg>. Generalized additive models
+	  from package <pkg>nnet</pkg>. Implementations with both individual- and
+	  choice-specific variables are <pkg>mlogit</pkg> and <pkg>mnlogit</pkg>. Generalized additive models
 	  (GAMs) for multinomial responses can be fitted with the <pkg>VGAM</pkg> package.	  
 	  A Bayesian approach to multinomial probit models is provided by <pkg>MNP</pkg>.
 	  Various Bayesian multinomial models (including logit and probit) are available
@@ -307,6 +307,7 @@
     <pkg>micEconSNQP</pkg>
     <pkg>midasr</pkg>
     <pkg>mlogit</pkg>
+    <pkg>mnlogit</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>
     <pkg>mvProbit</pkg>
