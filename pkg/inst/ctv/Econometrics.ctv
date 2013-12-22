@@ -50,7 +50,10 @@
           family of generalized linear models (GLM) and can be fitted by <code>glm()</code>
 	  from package stats. This includes in particular logit and probit models
 	  for modeling choice data and poisson models for count data. Effects for typical
-	  values of regressors in these models can be obtained and visualized using <pkg>effects</pkg>.</li>
+	  values of regressors in these models can be obtained and visualized using <pkg>effects</pkg>.
+	  Marginal effects tables for certain GLMs can be obtained using the packages
+	  <code>mfx()</code> function from the <pkg>tonymisc</pkg> package and the
+	  <pkg>mfx</pkg> package.</li>
       <li>Negative binomial GLMs are available via <code>glm.nb()</code> in package <pkg>MASS</pkg>.
 	  Another implementation of negative binomial models
 	  is provided by <pkg>aod</pkg>, which also contains other models for overdispersed
@@ -295,6 +298,7 @@
     <pkg>Mcomp</pkg>
     <pkg>meboot</pkg>
     <pkg>mFilter</pkg>
+    <pkg>mfx</pkg>
     <pkg>mgcv</pkg>
     <pkg>mhurdle</pkg>
     <pkg>micEcon</pkg>
@@ -336,6 +340,7 @@
     <pkg>survival</pkg>
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
+    <pkg>tonymisc</pkg>
     <pkg>truncreg</pkg>
     <pkg>tsDyn</pkg>
     <pkg priority="core">tseries</pkg>    
