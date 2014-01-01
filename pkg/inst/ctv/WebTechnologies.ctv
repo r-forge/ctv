@@ -241,9 +241,6 @@ programming interface. Currently, <pkg>rPlant</pkg> functions interact with the 
 <li>
 <pkg>seqinr</pkg>: Exploratory data analysis and data visualization for biological sequence (DNA and protein) data.
 </li>
-<li>
-<pkg>seq2R</pkg>: Detect compositional changes in genomic sequences - with some interaction with GenBank.
-</li>
 </ul>
 
 <p><strong>Earth Science</strong></p>
@@ -687,7 +684,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>scholar</pkg>
 <pkg>scrapeR</pkg>
 <pkg>selectr</pkg>
-<pkg>seq2R</pkg>
 <pkg>seqinr</pkg>
 <pkg>servr</pkg>
 <pkg priority="core">shiny</pkg>
