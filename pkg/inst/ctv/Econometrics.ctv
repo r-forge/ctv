@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2013-12-16</version>
+  <version>2014-01-01</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -51,8 +51,7 @@
 	  from package stats. This includes in particular logit and probit models
 	  for modeling choice data and poisson models for count data. Effects for typical
 	  values of regressors in these models can be obtained and visualized using <pkg>effects</pkg>.
-	  Marginal effects tables for certain GLMs can be obtained using the packages
-	  <code>mfx()</code> function from the <pkg>tonymisc</pkg> package and the
+	  Marginal effects tables for certain GLMs can be obtained using the 
 	  <pkg>mfx</pkg> package.</li>
       <li>Negative binomial GLMs are available via <code>glm.nb()</code> in package <pkg>MASS</pkg>.
 	  Another implementation of negative binomial models
@@ -341,7 +340,6 @@
     <pkg>survival</pkg>
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
-    <pkg>tonymisc</pkg>
     <pkg>truncreg</pkg>
     <pkg>tsDyn</pkg>
     <pkg priority="core">tseries</pkg>    
