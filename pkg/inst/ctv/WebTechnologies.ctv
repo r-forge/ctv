@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2013-11-29</version>
+<version>2014-01-01</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does 
 not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting 
@@ -681,7 +681,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>RSiteCatalyst</pkg>
 <pkg>rsnps</pkg>
 <pkg>RSocrata</pkg>
-<pkg>RTDAmeritrade</pkg>
 <pkg>treebase</pkg>
 <pkg>rvertnet</pkg>
 <pkg>RWeather</pkg>
