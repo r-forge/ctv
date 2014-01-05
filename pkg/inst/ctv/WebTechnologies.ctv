@@ -364,7 +364,9 @@ Pubmed Central records.
 The <a href="http://www.omegahat.org/Sxslt/">Sxslt</a> package is an R interface to Dan Veillard's libxslt translator. 
 It allows R programmers to use XSLT directly from within R, and also allows XSL code to make use of R functions.
 </li>
+<li>
 The <a href="http://www.omegahat.org/Aspell/">Aspell</a> package provides an interface to the aspell library for checking the spelling of words and documents.
+</li>
 </ul>
 
 <p><strong>Marketing</strong></p>
