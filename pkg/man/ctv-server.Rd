@@ -10,7 +10,10 @@ Server-side tools for maintaining CRAN task views.
 
 \usage{
 read.ctv(file)
-ctv2html(x, file = NULL, css = "../CRAN_web.css", packageURL = "../packages/", reposname = "CRAN")
+
+ctv2html(x, file = NULL, css = "../CRAN_web.css",
+  packageURL = "../packages/", reposname = "CRAN")
+
 check_ctv_packages(file, repos = TRUE, \dots)
 
 repos_update_views(repos = ".", css = "../CRAN_web.css", reposname = "CRAN", \dots)

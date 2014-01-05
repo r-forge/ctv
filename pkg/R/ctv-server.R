@@ -69,6 +69,8 @@ read.ctv <- function(file)
     if(name == "ohat")
       return(paste(ohatprefix, "<a href=\"http://www.Omegahat.org/",
         xmlValue(x), "/\"", target, "><span class=\"Ohat\">", xmlValue(x), "</span></a>", sep = ""))
+    if(name == "br")
+      return("<br/>")
 
     ## get attributes
     tmp <- if(!is.null(xmlAttrs(x)))

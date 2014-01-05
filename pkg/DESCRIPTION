@@ -1,6 +1,6 @@
 Package: ctv
-Version: 0.7-8
-Date: 2013-04-12
+Version: 0.7-9
+Date: 2014-01-05
 Title: CRAN Task Views
 Authors@R: c(person(given = "Achim", family = "Zeileis", role = c("aut", "cre"), email = "Achim.Zeileis@R-project.org"),
              person(given = "Kurt", family = "Hornik", role = "aut", email = "Kurt.Hornik@R-project.org"))
@@ -8,4 +8,4 @@ Description: Server-side and client-side tools for task views
              to CRAN-style repositories
 Depends: R (>= 2.13.0), utils
 Suggests: XML
-License: GPL-2
+License: GPL-2 | GPL-3

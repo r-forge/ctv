@@ -1,3 +1,8 @@
+Changes in Version 0.7-9
+
+  o <br/> tags are preserved as such in the <info> section.
+
+
 Changes in Version 0.7-8
 
   o Use system.file() instead of .find.package() in vignette.

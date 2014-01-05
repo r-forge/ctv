@@ -37,7 +37,7 @@ are given below:
   <info>
     Emphasize something <b>important</b> with standard HTML tags,
     and reference the package <pkg>foo</pkg> and also the view
-    <view>MachineLearning</view>.
+    <view>TimeSeries</view>.
   </info>
 
   <packagelist>
@@ -47,7 +47,7 @@ are given below:
 
   <links>
     <a href="http://path/to/homepage/">The Title of a Relevant Homepage</a>
-    <view>MachineLearning</view>
+    <view>TimeSeries</view>
   </links>
 
 </CRANTaskView>
@@ -119,6 +119,8 @@ x
 The resulting object can be transformed into HTML by \verb/ctv2html(x)/.
 Once this view has been installed at a CRAN-style repository as
 \texttt{http://CRAN.R-project.org/web/views/}, it can be installed by
-the user by \verb/install.views("Econometrics")/.
+the user by \verb/install.views("Econometrics")/ or \verb/update.views("Econometrics")/
+(which first checks whether up-to-date versions of any packages are already
+installed).
 
 \end{document}
