@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2014-01-01</version>
+<version>2014-01-12</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does 
 not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting 
@@ -456,9 +456,6 @@ best seller lists.
 <pkg>imguR</pkg>: A package to share plots using the image hosting service imgur.com.
 </li>
 <li>
-<pkg>RLastFM</pkg>: A package to interface to the last.fm API.
-</li>
-<li>
 The <a href="http://www.omegahat.org/RUbigraph/">RUbigraph</a> package provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs. 
 You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics such as shape, color, size. 
 </li>
@@ -668,7 +665,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>RgoogleMaps</pkg>
 <pkg priority="core">rjson</pkg>
 <pkg priority="core">RJSONIO</pkg>
-<pkg>RLastFM</pkg>
 <pkg>RMendeley</pkg>
 <pkg>RNCBI</pkg>
 <pkg>RNCEP</pkg>
