@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2014-01-12</version>
+<version>2014-02-21</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does 
 not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting 
@@ -529,10 +529,6 @@ The <a href="http://www.omegahat.org/Rflickr">Rflickr</a> package provides an R 
 <pkg>wethepeople</pkg>: An R client for interacting with the White House's "We The People" petition API.
 </li>
 <li>
-<pkg>govdat</pkg>: Interface to various APIs for government data, including New York Times congress API, and the 
-Sunlight Foundation set of APIs.
-</li>
-<li>
 <pkg>govStatJPN</pkg>: Functions to get public survey data in Japan.
 </li>
 </ul>
@@ -630,7 +626,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>gooJSON</pkg>
 <pkg>googlePublicData</pkg>
 <pkg>googleVis</pkg>
-<pkg>govdat</pkg>
 <pkg>govStatJPN</pkg>
 <pkg>GuardianR</pkg>
 <pkg>httpuv</pkg>
