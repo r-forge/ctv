@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2013-11-02</version>
+  <version>2014-02-22</version>
   
   <info>
 
@@ -20,7 +20,7 @@
     on times series, because all these topics are treated extensively in 
     the corresponding task views <view>DifferentialEquations</view>, 
     <view>Optimization</view>, and <view>TimeSeries</view>. All these task 
-    views together will provide a good overview of what is available in R for 
+    views together will provide a good selection of what is available in R for 
     the area of numerical mathematics.</p>
 
     <p>The task view has been created to provide an overview of the topic. 
@@ -29,7 +29,7 @@
 
     <h4>Numerical Linear Algebra</h4>
 
-    <p>As statistics is based to a large extend on linear algebra, many 
+    <p>As statistics is based to a large extent on linear algebra, many 
     numerical linear algebra routines are present in R, and some only 
     implicitly. Examples of explicitly available functions are vector and 
     matrix operations, matrix (QR) decompositions, solving linear equations, 
@@ -47,17 +47,23 @@
         of square matrices, but also powers of matrices or the Frechet 
         derivative. <code>expm()</code> is to be preferred to the function 
         with the same name in <pkg>Matrix</pkg>.</li>
-    <li>Package <pkg>onion</pkg> provides routines for manipulating 
-        quaternions and octonians (normed division algebras over the real 
-        numbers); quaternions can be useful for handling rotations in 
-        three-dimensional space.</li>
+    <li><pkg>SparseM</pkg> provides classes and methods for sparse matrices 
+        and for solving linear and least-squares problems in sparse linear 
+        algebra</li>
     <li><pkg>svd</pkg> provides R bindings to state-of-the-art implementations 
         of singular value decomposition (SVD) and eigenvalue/eigenvector 
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
         iterative thresholding method, while <pkg>irlba</pkg> will compute 
         approximate singular values/vectors of large matrices.</li>
+    <li>The packages <pkg>geigen</pkg> and <pkg>QZ</pkg> compute generalized 
+        eigenvalues and -vectors for pairs of matrices, and QZ (generalized 
+        Schur) decompositions.</li>
     <li><pkg>eigeninv</pkg> generates matrices with a given set of 
         eigenvalues ('inverse eigenvalue problem').</li>
+    <li>Package <pkg>onion</pkg> contains routines for manipulating 
+        quaternions and octonians (normed division algebras over the real 
+        numbers); quaternions can be useful for handling rotations in 
+        three-dimensional space.</li>
     <li>Packages <pkg>RcppArmadillo</pkg> and <pkg>RcppEigen</pkg> enable the 
         integration of the C++ template libraries 'Armadillo' resp. 'Eigen' 
         for linear algebra applications written in C++ and integrated in R 
@@ -176,8 +182,8 @@
     <p>Base R provides functions <code>approx()</code> for constant and linear 
     interpolation, and <code>spline()</code> for cubic (Hermite) spline 
     interpolation, while <code>smooth.spline()</code> performs cubic spline 
-    approximation. Base package splines creates periodic 
-    interpolation splines in function <code>periodicSpline()</code>.</p>
+    approximation. Base package splines creates periodic interpolation 
+    splines in function <code>periodicSpline()</code>.</p>
 
     <ul>
     <li>Interpolation of irregularly spaced data is possible with the 
@@ -221,6 +227,8 @@
     <li>Package <pkg>nleqslv</pkg> solves nonlinear systems of equations 
         using alternatively the Broyden or Newton method, supported by 
         strategies such as line searches or trust regions.</li>
+    <li><pkg>ktsolve</pkg> defines a common interface for solving a set of
+        equations with <code>BB</code> or <code>nleqslv</code>.</li>
     </ul>
 
     <h4>Discrete Mathematics and Number Theory</h4>
@@ -310,10 +318,12 @@
     <pkg>expm</pkg>
     <pkg>features</pkg>
     <pkg>gaussquad</pkg>
+    <pkg>geigen</pkg>
     <pkg>gmp</pkg>
     <pkg priority="core">gsl</pkg>
     <pkg>hypergeo</pkg>
     <pkg>irlba</pkg>
+    <pkg>ktsolve</pkg>
     <pkg>magic</pkg>
     <pkg>MASS</pkg>
     <pkg priority="core">Matrix</pkg>
@@ -332,6 +342,7 @@
     <pkg priority="core">polynom</pkg>
     <pkg>PolynomF</pkg>
     <pkg>pracma</pkg>
+    <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
     <pkg>R2Cuba</pkg>
     <pkg>Rcpp</pkg>
@@ -344,6 +355,7 @@
     <pkg>Ryacas</pkg>
     <pkg>signal</pkg>
     <pkg>SparseGrid</pkg>
+    <pkg>SparseM</pkg>
     <pkg>SphericalCubature</pkg>
     <pkg>statmod</pkg>
     <pkg>stinepack</pkg>
@@ -357,13 +369,15 @@
     <view>Optimization</view>
     <view>TimeSeries</view>
 
-    <span>Textbook: <a href="http://tinyurl.com/hdvhomaur">Hands-On Matrix 
-        Algebra Using R</a></span>
+    <span>Textbook:
+    <a href="http://www.worldscientific.com/worldscibooks/10.1142/7814">
+        Hands-On Matrix Algebra Using R</a></span>
     <span>Textbook: 
     <a href="http://www.ms.unimelb.edu.au/spuRs/">Introduction 
         to Scientific Programming and Simulation Using R</a></span>
-    <span>Textbook: <a href="http://tinyurl.com/vbnmiseur">Numerical 
-    Methods in Science and Engineering Using R</a> [to appear]</span>
+    <span>Textbook:
+    <a href="http://www.crcpress.com/product/isbn/9781439884485">
+    Numerical Methods in Science and Engineering Using R</a> [to appear]</span>
 
     <a href="http://www.nr.com/aands/">Abramowitz and Stegun. 
         Handbook of Mathematical Functions</a>
