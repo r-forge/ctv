@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2014-01-01</version>
+  <version>2014-02-28</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -180,12 +180,12 @@
 	  in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.</li>
       <li>More advanced dynamic system equations can be fitted using <pkg>dse</pkg>.</li>
-      <li>Various linear and nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li>
+<!--      <li>Various linear and nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li> -->
       <li>Periodic autoregressive models are provided by <pkg>partsm</pkg>.</li>
       <li>Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
 	  Kalman filtering/smoothing and Bayesian methods).</li>
       <li>Unit root and cointegration techniques are available in <pkg>urca</pkg>,
-	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>, and <pkg>tsDyn</pkg>.</li>
+	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>.</li> <!-- , and <pkg>tsDyn</pkg> -->
       <li>Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
       <li>Asymmetric price transmission modeling is available in <pkg>apt</pkg>.</li>
     </ul>
@@ -341,7 +341,6 @@
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
     <pkg>truncreg</pkg>
-    <pkg>tsDyn</pkg>
     <pkg priority="core">tseries</pkg>    
     <pkg>tsfa</pkg>
     <pkg priority="core">urca</pkg>
