@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2014-02-26</version>
+<version>2014-03-02</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -106,10 +106,7 @@ This API is used for example to integrate statistical functionality into systems
 A package by <a href="http://yihui.name/">Yihui Xie</a> called <pkg>servr</pkg> provides a simple HTTP server to serve files under a given directory based on the <pkg>httpuv</pkg> package.
 </li>
 <li>
-The <pkg>httpuv</pkg> package, made by Joe Cheng at RStudio, provides low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which <pkg>httpuv</pkg> replaces, is <pkg>websockets</pkg>, also made by Joe Cheng.
-</li>
-<li>
-<pkg>websockets</pkg>: A simple HTML5 websocket interface for R, made by Joe Cheng.
+The <pkg>httpuv</pkg> package, made by Joe Cheng at RStudio, provides low-level socket and protocol support for handling HTTP and WebSocket requests directly within R.
 </li>
 <li>
 Plot.ly is a company that allows you to create visualizations in the web using R (and Python). They have an R package in development <a href="https://github.com/cparmer/Plotly/tree/master/API/packages/R">here</a>, as well as access to their services via an API <a href="https://plot.ly/API/">here</a>.
@@ -705,7 +702,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>twitteR</pkg>
 <pkg>waterData</pkg>
 <pkg>weatherData</pkg>
-<pkg>websockets</pkg>
 <pkg>wethepeople</pkg>
 <pkg>WDI</pkg>
 <pkg priority="core">XML</pkg>
