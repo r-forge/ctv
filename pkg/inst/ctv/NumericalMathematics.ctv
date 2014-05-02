@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2014-02-22</version>
+  <version>2014-05-02</version>
   
   <info>
 
@@ -60,6 +60,9 @@
         Schur) decompositions.</li>
     <li><pkg>eigeninv</pkg> generates matrices with a given set of 
         eigenvalues ('inverse eigenvalue problem').</li>
+    <li>Package <pkg>rARPACK</pkg>, a wrapper for the ARPACK library, is 
+        typically used to compute only a few eigenvalues/vectors, e.g., a small 
+        number of largest eigenvalues.</li>
     <li>Package <pkg>onion</pkg> contains routines for manipulating 
         quaternions and octonians (normed division algebras over the real 
         numbers); quaternions can be useful for handling rotations in 
@@ -206,6 +209,9 @@
         interpolation based on piecewise rational functions by applying 
         Stineman's algorithm. The interpolating function will be monoton in 
         regions where the specified points change monotonically.</li>
+    <li>Package <pkg>conicfit</pkg> encompasses several algorithms for fitting 
+        circles, ellipses, and other conics, applying geometric and algebraic 
+        approaches.</li>
     </ul>
 
     <h4>Root Finding</h4>
@@ -311,6 +317,7 @@
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
     <pkg>combinat</pkg>
+    <pkg>conicfit</pkg>
     <pkg>contfrac</pkg>
     <pkg>cubature</pkg>
     <pkg>eigeninv</pkg>
@@ -345,6 +352,7 @@
     <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
     <pkg>R2Cuba</pkg>
+    <pkg>rARPACK</pkg>
     <pkg>Rcpp</pkg>
     <pkg>RcppArmadillo</pkg>
     <pkg>RcppEigen</pkg>
