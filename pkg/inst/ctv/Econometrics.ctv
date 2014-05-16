@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2014-02-28</version>
+  <version>2014-05-16</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -174,8 +174,8 @@
       <li>Miscellaneous time series filters are available in <pkg>mFilter</pkg>.</li>
       <li>For estimating VAR models, several
 	  methods are available: simple models can be fitted by <code>ar()</code> in stats, more
-	  elaborate models are provided in package <pkg>vars</pkg>, <code>estVARXls()</code> in
-	  <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. A
+	  elaborate models are provided in package <pkg>vars</pkg> and <code>estVARXls()</code> in
+	  <pkg>dse</pkg>. A
 	  convenient interface for fitting dynamic regression models via OLS is available
 	  in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.</li>
@@ -308,7 +308,6 @@
     <pkg>mlogit</pkg>
     <pkg>mnlogit</pkg>
     <pkg>MNP</pkg>
-    <pkg>MSBVAR</pkg>
     <pkg>mvProbit</pkg>
     <pkg>nlme</pkg>
     <pkg>nnet</pkg>
