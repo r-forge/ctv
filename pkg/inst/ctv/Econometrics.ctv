@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2014-05-16</version>
+  <version>2014-06-08</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -180,7 +180,7 @@
 	  in <pkg>dynlm</pkg>; a different approach
 	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.</li>
       <li>More advanced dynamic system equations can be fitted using <pkg>dse</pkg>.</li>
-<!--      <li>Various linear and nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li> -->
+      <li>Various linear and nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li>
       <li>Periodic autoregressive models are provided by <pkg>partsm</pkg>.</li>
       <li>Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
 	  Kalman filtering/smoothing and Bayesian methods).</li>
@@ -340,6 +340,7 @@
     <pkg>systemfit</pkg>
     <pkg>timeSeries</pkg>
     <pkg>truncreg</pkg>
+    <pkg>tsDyn</pkg>
     <pkg priority="core">tseries</pkg>    
     <pkg>tsfa</pkg>
     <pkg priority="core">urca</pkg>
