@@ -98,7 +98,7 @@
           </li>
           
           <li>
-          <a NAME="GLS"><i>Generalized least-squares regression and time-series regression:</i></a> The <code>gls</code> function in the
+          <a name="GLS"><i>Generalized least-squares regression and time-series regression:</i></a> The <code>gls</code> function in the
 	  recommended <pkg>nlme</pkg> package fits models by generalized least squares. The <code>lm</code>
 	  function can also fit weighted least-squares regressions. Also see the 
 	  <pkg>dynlm</pkg> package, which allows <code>lm</code> to handle time-series data structures, and the <pkg>dyn</pkg> package, which extends this
@@ -143,7 +143,7 @@
     </p>
       <ul>
           <li>
-          <a NAME="Survival"></a><i>Survival (Event-History) Analysis:</i> There is an extensive implementation of methods of survival analysis in the recommended <pkg>survival</pkg> package, which is associated with Therneau and Grambsch, <i>Modeling Survival Data</i> (Springer, 2000). Also see the  <pkg>eha</pkg>, <pkg>survrec</pkg>, <pkg>frailtypack</pkg>, and <pkg>rms</pkg> packages.   
+          <a name="Survival"></a><i>Survival (Event-History) Analysis:</i> There is an extensive implementation of methods of survival analysis in the recommended <pkg>survival</pkg> package, which is associated with Therneau and Grambsch, <i>Modeling Survival Data</i> (Springer, 2000). Also see the  <pkg>eha</pkg>, <pkg>survrec</pkg>, <pkg>frailtypack</pkg>, and <pkg>rms</pkg> packages.   
           </li>
           
           <li>
@@ -195,7 +195,7 @@
           </li>   
       </ul>
     
-    <p><a NAME="Collections"></a><strong>Collections of Functions:</strong></p>
+    <p><a name="Collections"></a><strong>Collections of Functions:</strong></p>
     
     <p>
     There are some packages that are so heterogeneous that they are difficult to classify, yet contain functions (typically in multiple domains) that are potentially of interest to social scientists:
