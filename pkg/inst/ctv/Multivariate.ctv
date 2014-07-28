@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2014-05-16</version>
+  <version>2014-07-29</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -57,7 +57,7 @@
 
 <p><strong>Hypothesis testing</strong></p>
  
-<ul><li><pkg>ICSNP</pkg> provides Hotellings T2 test as well as a range of non-parametric tests including location tests based on marginal ranks, spatial median and spatial signs computation, estimates of shape.  Non-parametric two sample tests are also available from <pkg>cramer</pkg> and spatial sign and rank tests to investigate location, sphericity and independence are available in <pkg>SpatialNP</pkg>. </li></ul>
+<ul><li><pkg>ICSNP</pkg> provides Hotellings T2 test as well as a range of non-parametric tests including location tests based on marginal ranks, spatial median and spatial signs computation, estimates of shape.  Spatial sign and rank tests to investigate location, sphericity and independence are available in <pkg>SpatialNP</pkg>. </li></ul>
 
 
           <p><strong>Multivariate distributions</strong></p>
@@ -241,7 +241,7 @@
 
       <p><strong>Miscellaneous utitlies</strong></p>
           <ul><li><pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.
-	  <pkg>mAr</pkg> provides for vector auto-regression.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.  <pkg>cramer</pkg> Multivariate nonparametric Cramer-Test for the two-sample-problem  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
+	  <pkg>mAr</pkg> provides for vector auto-regression.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
 	  <pkg>cwhmisc</pkg> contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.
 	  <pkg>desirability</pkg> provides functions for multivariate optimisation.
 	  <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
@@ -271,7 +271,6 @@
     <pkg>copula</pkg>     
     <pkg>corpcor</pkg>
     <pkg>covRobust</pkg>
-    <pkg>cramer</pkg> 
     <pkg>cwhmisc</pkg> 
     <pkg>denpro</pkg>
     <pkg>desirability</pkg>
