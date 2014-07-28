@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2014-06-28</version>
+<version>2014-07-29</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -368,9 +368,6 @@ The <a href="http://www.omegahat.org/Zillow/">Zillow</a> package provides an R i
 </li>
 <li>
 <a href="https://github.com/ropensci/rmetadata">rmetadata</a> (not on CRAN): Get scholarly metadata from around the web.
-</li>
-<li>
-<pkg>RMendeley</pkg>: Implementation of the Mendeley API in R.
 </li>
 <li>
 <pkg>rentrez</pkg>: Talk with NCBI entrez using R.
@@ -739,7 +736,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg priority="core">RJSONIO</pkg>
 <pkg>rnoaa</pkg>
 <pkg>jsonlite</pkg>
-<pkg>RMendeley</pkg>
 <pkg>RNCBI</pkg>
 <pkg>RNCEP</pkg>
 <pkg>ROAuth</pkg>
