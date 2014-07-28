@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2014-06-08</version>
+  <version>2014-07-29</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -153,8 +153,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
           via weighted logistic regression.
 <pkg>tdthap</pkg>
           implements transmission/disequilibrium tests for extended marker haplotypes.
-<pkg>ldDesign</pkg>
-          is a package for design of experiments for association studies for detection of linkage disequilibrium.
 <pkg>LDheatmap</pkg>
           creates a heat map plot of measures of pairwise LD.
         </li>
@@ -230,7 +228,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     <pkg>hierfstat</pkg>
     <pkg>hwde</pkg>
     <pkg>ibdreg</pkg>
-    <pkg>ldDesign</pkg>
     <pkg>LDheatmap</pkg>
     <pkg>luca</pkg>
     <pkg>multic</pkg>
