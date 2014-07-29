@@ -15,6 +15,8 @@ read.ctv <- function(file)
     stop("The following ctv nodes are missing: ",
       paste(ctvNames[missingChildren], collapse=", "))
 
+  xmlCode <- function(x, ...) htmlify(xmlValue(x, ...))
+
   ## convenience function for transforming
   ## XMLNodes into a character vector
   xmlPaste <- function(x, indent = "", prefix = FALSE,
@@ -44,49 +46,68 @@ read.ctv <- function(file)
 
     ## if final node, return text
     if(name == "text")
-      return(paste(indent, xmlValue(x), sep = ""))
+      return(paste0(indent, xmlCode(x)))
 
     ## if pkg or view, return link
     if(name == "pkg")
-      return(paste("<a href=\"", packageURL, xmlValue(x), "/index.html\">", xmlValue(x), "</a>", sep = ""))
+      return(paste0("<a href=\"",
+                    packageURL, xmlCode(x), "/index.html\">", xmlCode(x),
+                    "</a>"))
     if(name == "view")
-      return(paste(viewprefix, "<a href=\"", viewURL, xmlValue(x), ".html\">", xmlValue(x), "</a>", sep = ""))
+      return(paste0(viewprefix,
+                    "<a href=\"",
+                    viewURL, xmlCode(x), ".html\">", xmlCode(x),
+                    "</a>"))
     if(name == "info")
       name <- "div"
     if(name == "comment")
       return(NULL)
     if(name == "code")
-      return(paste("<tt>", xmlValue(x), "</tt>", sep = ""))
+      return(paste0("<tt>", xmlCode(x), "</tt>"))
     if(name == "rforge")
-      return(paste(rforgeprefix, "<a href=\"http://R-Forge.R-project.org/projects/",
-        tolower(xmlValue(x)), "/\"", target, "><span class=\"Rforge\">", xmlValue(x), "</span></a>", sep = ""))
+      return(paste0(rforgeprefix,
+                    "<a href=\"http://R-Forge.R-project.org/projects/",
+                    tolower(xmlCode(x)), "/\"", target,
+                    "><span class=\"Rforge\">", xmlCode(x),
+                    "</span></a>"))
     if(name == "gcode")
-      return(paste(gcodeprefix, "<a href=\"http://code.google.com/p/",
-        xmlValue(x), "/\"", target, "><span class=\"Gcode\">", xmlValue(x), "</span></a>", sep = ""))
+      return(paste0(gcodeprefix,
+                    "<a href=\"http://code.google.com/p/",
+                    xmlCode(x), "/\"", target,
+                    "><span class=\"Gcode\">", xmlCode(x),
+                    "</span></a>"))
     if(name == "bioc")
-      return(paste(biocprefix, "<a href=\"http://www.Bioconductor.org/packages/release/bioc/html/",
-        xmlValue(x), ".html\"", target, "><span class=\"BioC\">", xmlValue(x), "</span></a>", sep = ""))
+      return(paste0(biocprefix,
+                    "<a href=\"http://www.Bioconductor.org/packages/release/bioc/html/",
+                    xmlCode(x), ".html\"", target,
+                    "><span class=\"BioC\">", xmlCode(x),
+                    "</span></a>"))
     if(name == "ohat")
-      return(paste(ohatprefix, "<a href=\"http://www.Omegahat.org/",
-        xmlValue(x), "/\"", target, "><span class=\"Ohat\">", xmlValue(x), "</span></a>", sep = ""))
+      return(paste0(ohatprefix,
+                    "<a href=\"http://www.Omegahat.org/",
+                    xmlCode(x), "/\"", target,
+                    "><span class=\"Ohat\">", xmlCode(x),
+                    "</span></a>", sep = ""))
     if(name == "br")
       return("<br/>")
 
     ## get attributes
     tmp <- if(!is.null(xmlAttrs(x)))
-      paste(names(xmlAttrs(x)), paste("\"", xmlAttrs(x), "\"", sep = ""), sep = "=", collapse = " ")
+      paste(names(xmlAttrs(x)),
+            paste0("\"", htmlify(xmlAttrs(x)), "\""),
+            sep = "=", collapse = " ")
       else ""
 
     ## start tag
-    rval <- paste(indent, "<", name, ifelse(tmp != "", " ", ""), tmp, ">", sep = "")
+    rval <- paste0(indent, "<", name, ifelse(tmp != "", " ", ""), tmp, ">")
     ## content
-    subIndent <- paste(indent, "  ", sep = "")
+    subIndent <- paste0(indent, "  ")
     for(i in xmlChildren(x)) {
       xmlPaste_i <- xmlPaste(i, indent = subIndent, packageURL = packageURL, viewURL = viewURL)
       if(!is.null(xmlPaste_i)) rval <- paste(rval, xmlPaste_i, sep = "\n")
     }
     ## end tag
-    rval <- paste(rval, paste(indent, "</", name, ">", sep = ""), sep = "\n")
+    rval <- paste(rval, paste0(indent, "</", name, ">"), sep = "\n")
 
     return(rval)
   }
@@ -94,7 +115,7 @@ read.ctv <- function(file)
   ## FIXME: This returns latin1 in a latin1 locale even if
   ## the input was UTF-8
     for(i in c(":", ",", ";", ")", ".", "?", "!"))
-      x <- gsub(paste("\n[ ]*\\", i, sep = ""), i, x)
+      x <- gsub(paste0("\n[ ]*\\", i), i, x)
     x <- gsub("(\n<a", "(<a", x, fixed = TRUE)
     return(x)
   }
@@ -141,20 +162,12 @@ ctv2html <- function(x,
 		     reposname = "CRAN")
 {
   if(is.character(x)) x <- read.ctv(x)
-  if(is.null(file)) file <- paste(x$name, ".html", sep = "")
+  if(is.null(file)) file <- paste0(x$name, ".html")
 
   ## auxiliary functions
   ampersSub <- function(x) gsub("&", "&amp;", x)
-  zpaste <- function(..., sep = "", collapse = NULL) paste(..., sep = sep, collapse = collapse)
   obfuscate <- function(x) paste(sprintf("&#x%x;",
     as.integer(sapply(unlist(strsplit(gsub("@", " at ", x), NULL)), charToRaw))), collapse = "")    
-  htmlify <- function(s) {
-      s <- gsub("&", "&amp;", s, fixed = TRUE)
-      s <- gsub("<", "&lt;", s, fixed = TRUE)
-      s <- gsub(">", "&gt;", s, fixed = TRUE)
-      s <- gsub('"', "&quot;", s, fixed = TRUE)
-      s
-  }
 
   ## utf8 <- any(unlist(sapply(x[sapply(x, is.character)], Encoding)) == "UTF-8")
   strip_encoding <- function(x) {
@@ -165,12 +178,12 @@ ctv2html <- function(x,
 
   ## create HTML
   ## header
-  title <- zpaste(reposname, " Task View: ", htmlify(x$topic))
+  title <- paste0(reposname, " Task View: ", htmlify(x$topic))
   htm1 <- c("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">",
             "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
             "<head>",
-            zpaste("  <title>", title, "</title>"),
-            zpaste("  <link rel=\"stylesheet\" type=\"text/css\" href=\"", css, "\" />"),
+            paste0("  <title>", title, "</title>"),
+            paste0("  <link rel=\"stylesheet\" type=\"text/css\" href=\"", css, "\" />"),
             ## if(utf8)
             "  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />",
             sprintf("  <meta name=\"citation_title\" content=\"%s\" />", title),
@@ -189,21 +202,21 @@ ctv2html <- function(x,
             "</head>",
 	    "",
 	    "<body>",
-     zpaste("  <h2>", reposname, " Task View: ", ampersSub(x$topic), "</h2>"),
-     zpaste("  <table summary=\"", x$name, " task view information\">"),
-     zpaste("    <tr><td valign=\"top\"><b>Maintainer:</b></td><td>", ampersSub(x$maintainer), "</td></tr>"),
-     if(!is.null(x$email)) zpaste("    <tr><td valign=\"top\"><b>Contact:</b></td><td>", obfuscate(x$email), "</td></tr>"),
-     zpaste("    <tr><td valign=\"top\"><b>Version:</b></td><td>", ampersSub(x$version), "</td></tr>"),
+     paste0("  <h2>", reposname, " Task View: ", htmlify(x$topic), "</h2>"),
+     paste0("  <table summary=\"", x$name, " task view information\">"),
+     paste0("    <tr><td valign=\"top\"><b>Maintainer:</b></td><td>", htmlify(x$maintainer), "</td></tr>"),
+     if(!is.null(x$email)) paste0("    <tr><td valign=\"top\"><b>Contact:</b></td><td>", obfuscate(x$email), "</td></tr>"),
+     paste0("    <tr><td valign=\"top\"><b>Version:</b></td><td>", htmlify(x$version), "</td></tr>"),
             "  </table>")
 
   ## info section
-  htm2 <- ampersSub(x$info)
+  htm2 <- x$info
 
   ## package list
   pkg2html <- function(a, b)
-    zpaste("    <li><a href=\"", packageURL, a, "/index.html\">", a, "</a>",
+    paste0("    <li><a href=\"", packageURL, a, "/index.html\">", a, "</a>",
            if(b) " (core)" else "", "</li>")
-  htm3 <- c(zpaste("  <h3>", reposname, " packages:</h3>"),
+  htm3 <- c(paste0("  <h3>", reposname, " packages:</h3>"),
             "  <ul>",
 	    sapply(1:NROW(x$packagelist), function(i) pkg2html(x$packagelist[i,1], x$packagelist[i,2])),
 	    "  </ul>")
@@ -211,7 +224,7 @@ ctv2html <- function(x,
   ## further links
   htm4 <- c("  <h3>Related links:</h3>",
             "  <ul>",
-            sapply(x$links, function(x) paste("    <li>", ampersSub(x), "</li>", sep = "")),
+            sapply(x$links, function(x) paste0("    <li>", x, "</li>")),
 	    "  </ul>")
 
   ## collect code chunks
@@ -257,7 +270,7 @@ repos_update_views <- function(repos = ".",
     x <- read.ctv(file.path(viewdir, files[i]))
 
     ## generate HTML code
-    ctv2html(x, file = file.path(viewdir, paste(x$name, ".html", sep = "")),
+    ctv2html(x, file = file.path(viewdir, paste0(x$name, ".html")),
              css = css, reposname = reposname, ...)
 
     ## to save space we eliminate the HTML slots
@@ -289,16 +302,19 @@ repos_update_views <- function(repos = ".",
              "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
              "",
 	     "<head>",
-       paste("  <title>", reposname, " Task Views</title>", sep = ""),
-       paste("  <link rel=\"stylesheet\" type=\"text/css\" href=\"", css, "\" />", sep = ""),
+             paste0("  <title>", reposname, " Task Views</title>"),
+             paste0("  <link rel=\"stylesheet\" type=\"text/css\" href=\"", css, "\" />"),
              "</head>",
 	     "",
 	     "<body>",
-       paste("<h1>", reposname, " Task Views</h1>", sep = ""),
+             paste0("<h1>", reposname, " Task Views</h1>"),
 	     "",
-       paste("<table summary=\"", reposname," Task Views\">", sep = ""),
-	     apply(idx, 1, function(x) paste("  <tr valign=\"top\">\n    <td><a href=\"",
-	       x[1], ".html\">", x[1], "</a></td>\n    <td>", gsub("&", "&amp;", x[2]), "</td>\n  </tr>", sep = "")),
+             paste0("<table summary=\"", reposname," Task Views\">"),
+	     apply(idx, 1, function(x) {
+                 paste0("  <tr valign=\"top\">\n    <td><a href=\"",
+                        x[1], ".html\">", x[1], "</a></td>\n    <td>",
+                        gsub("&", "&amp;", x[2]), "</td>\n  </tr>")
+             }),
 	     "</table>",
 	     "",
              "<p>To automatically install these views, the ctv package needs to be installed, e.g., via<br />",
@@ -340,4 +356,12 @@ check_ctv_packages <- function(file, repos = TRUE, ...)
   }
 
   rval
+}
+
+htmlify <- function(s) {
+    s <- gsub("&", "&amp;", s, fixed = TRUE)
+    s <- gsub("<", "&lt;", s, fixed = TRUE)
+    s <- gsub(">", "&gt;", s, fixed = TRUE)
+    s <- gsub('"', "&quot;", s, fixed = TRUE)
+    s
 }
