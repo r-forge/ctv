@@ -148,8 +148,15 @@ ctv2html <- function(x,
   zpaste <- function(..., sep = "", collapse = NULL) paste(..., sep = sep, collapse = collapse)
   obfuscate <- function(x) paste(sprintf("&#x%x;",
     as.integer(sapply(unlist(strsplit(gsub("@", " at ", x), NULL)), charToRaw))), collapse = "")    
+  htmlify <- function(s) {
+      s <- gsub("&", "&amp;", s, fixed = TRUE)
+      s <- gsub("<", "&lt;", s, fixed = TRUE)
+      s <- gsub(">", "&gt;", s, fixed = TRUE)
+      s <- gsub('"', "&quot;", s, fixed = TRUE)
+      s
+  }
 
-  utf8 <- any(unlist(sapply(x[sapply(x, is.character)], Encoding)) == "UTF-8")
+  ## utf8 <- any(unlist(sapply(x[sapply(x, is.character)], Encoding)) == "UTF-8")
   strip_encoding <- function(x) {
     if(is.character(x)) Encoding(x) <- "unknown"
     return(x)
@@ -158,13 +165,27 @@ ctv2html <- function(x,
 
   ## create HTML
   ## header
+  title <- zpaste(reposname, " Task View: ", htmlify(x$topic))
   htm1 <- c("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">",
             "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
             "<head>",
-     zpaste("  <title>", reposname, " Task View: ", ampersSub(x$topic), "</title>"),
-     zpaste("  <link rel=\"stylesheet\" type=\"text/css\" href=\"", css, "\" />"),
-     if(utf8)
-            "  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />",          
+            zpaste("  <title>", title, "</title>"),
+            zpaste("  <link rel=\"stylesheet\" type=\"text/css\" href=\"", css, "\" />"),
+            ## if(utf8)
+            "  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />",
+            sprintf("  <meta name=\"citation_title\" content=\"%s\" />", title),
+            sprintf("  <meta name=\"citation_author\" content=\"%s\" />",
+                    htmlify(x$maintainer)),
+            sprintf("  <meta name=\"citation_publication_date\" content=\"%s\" />",
+                    x$version),
+            sprintf("  <meta name=\"DC.title\" content=\"%s\" />", title),
+            sprintf("  <meta name=\"DC.creator\" content=\"%s\" />",
+                    htmlify(x$maintainer)),
+            sprintf("  <meta name=\"DC.issued\" content=\"%s\" />",
+                    x$version),
+            if(reposname == "CRAN")
+            sprintf("  <meta name=\"DC.identifier\" content=\"http://CRAN.R-project.org/views=%s\" />",
+                    x$name),
             "</head>",
 	    "",
 	    "<body>",
