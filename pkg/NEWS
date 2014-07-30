@@ -1,3 +1,9 @@
+Changes in Version 0.8-0
+
+  o HTML generation improved. Now XHTML 1.0 is produced with both
+    DublinCore and HighWire Press metainformation tags.
+
+
 Changes in Version 0.7-9
 
   o <br/> tags are preserved as such in the <info> section.
