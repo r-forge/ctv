@@ -31,7 +31,7 @@ read.ctv <- function(file)
       ohatprefix <- "Omegahat Package: "
       rforgeprefix <- "R-Forge Project: "
       gcodeprefix <- "Google Code Project: "
-      target <- " target=\"_top\""
+      target <- "" #used to be# " target=\"_top\"" #but this is not strict XHTML#
     } else {
       viewprefix <- ""
       biocprefix <- ""
