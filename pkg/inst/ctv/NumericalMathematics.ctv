@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2014-05-02</version>
+  <version>2014-08-08</version>
   
   <info>
 
@@ -167,8 +167,8 @@
         Johnson. The integrand functions can even be multi-valued.</li>
     <li>Package <pkg>SphericalCubature</pkg> employs <pkg>cubature</pkg> to 
         integrate functions over unit spheres and balls in n-dimensional 
-        space; conversion routines for multivariate, spherical, and polar 
-        coordinates are provided.</li>
+        space; exact methods for integrating polynomials over spheres and
+        balls are provided.</li>
     <li>Multi-dimensional numerical integration is also covered in package 
         <pkg>R2Cuba</pkg>, employing a C library by Thomas Hahn. 
         With <code>vegas()</code> it includes an approach to Monte Carlo 
@@ -385,7 +385,7 @@
         to Scientific Programming and Simulation Using R</a></span>
     <span>Textbook:
     <a href="http://www.crcpress.com/product/isbn/9781439884485">
-    Numerical Methods in Science and Engineering Using R</a> [to appear]</span>
+    Numerical Methods in Science and Engineering Using R</a></span>
 
     <a href="http://www.nr.com/aands/">Abramowitz and Stegun. 
         Handbook of Mathematical Functions</a>
