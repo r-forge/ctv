@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2014-08-08</version>
+  <version>2014-08-15</version>
   
   <info>
 
@@ -255,9 +255,7 @@
         of integers, including restricted and unequal partitions.</li>
     <li>Package <pkg>combinat</pkg> generates all permutations or all 
         combinations of a certain length of a set of elements (i.e. a vector); 
-        it also computes binomial coefficients. <pkg>pcenum</pkg> provides 
-        methods to <em>iterate</em> through all permutations or combinations 
-        without retrieving them all at one time.</li>
+        it also computes binomial coefficients.</li>
     <li><pkg>magic</pkg> creates and investigates magical squares.</li>
     </ul>
 
@@ -344,7 +342,6 @@
     <pkg>onion</pkg>
     <pkg>orthopolynom</pkg>
     <pkg>partitions</pkg>
-    <pkg>pcenum</pkg>
     <pkg>polyCub</pkg>
     <pkg priority="core">polynom</pkg>
     <pkg>PolynomF</pkg>
