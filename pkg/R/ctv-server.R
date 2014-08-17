@@ -1,8 +1,5 @@
 read.ctv <- function(file)
 {
-  ## XML package is only needed here (i.e., only server-side)
-  if(!("package:XML" %in% search())) stopifnot(require("XML"))
-
   ## read raw XML
   x <- XML::xmlTreeParse(file)
   if(XML::xmlSize(x$doc$children) > 1) warning("ctv should contain only one view")
