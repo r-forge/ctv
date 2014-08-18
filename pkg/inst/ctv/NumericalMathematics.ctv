@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2014-08-15</version>
+  <version>2014-08-18</version>
   
   <info>
 
@@ -19,9 +19,11 @@
     optimization problems and solvers, or packages and functions operating 
     on times series, because all these topics are treated extensively in 
     the corresponding task views <view>DifferentialEquations</view>, 
-    <view>Optimization</view>, and <view>TimeSeries</view>. All these task 
-    views together will provide a good selection of what is available in R for 
-    the area of numerical mathematics.</p>
+    <view>Optimization</view>, and <view>TimeSeries</view>.
+    All these task views together will provide a good selection of what is
+    available in R for the area of numerical mathematics.</p>
+    The <view>HighPerformanceComputing</view> task view with its many links
+    for parallel computing may also be of interest.
 
     <p>The task view has been created to provide an overview of the topic. 
     If some packages are missing or certain topics in numerical math 
@@ -146,8 +148,6 @@
         in R, providing numerical gradients, Jacobians, and Hessians, computed 
         by simple finite differences, Richardson extrapolation, or the highly 
         accurate complex step approach.</li>
-    <li><pkg>features</pkg> extracts features from functional data, such as 
-        first and second derivatives, or curvature at critical points.</li>
     <li>Package <pkg>pracma</pkg> contains functions for computing numerical 
         derivatives, including Richardson extrapolation or complex step. 
         <code>fderiv()</code> computes numerical derivatives of higher orders.
@@ -161,23 +161,29 @@
         and Legendre quadrature rules, explicitly returning nodes and weights 
         in each case. Function <code>gaussquad()</code> in package 
         <pkg>statmod</pkg> does a similar job.</li>
+    <li>Package <pkg>fastGHQuad</pkg> provides a fast <pkg>Rcpp</pkg>-based
+        implementation of (adaptive) Gauss-Hermite quadrature.</li>
     <li>Adaptive multivariate integration over hyper-rectangles in 
         n-dimensional space is available in package <pkg>cubature</pkg> as 
-        function <code>adaptIntegrate()</code>, based on C code by Stephen 
-        Johnson. The integrand functions can even be multi-valued.</li>
-    <li>Package <pkg>SphericalCubature</pkg> employs <pkg>cubature</pkg> to 
-        integrate functions over unit spheres and balls in n-dimensional 
-        space; exact methods for integrating polynomials over spheres and
-        balls are provided.</li>
+        function <code>adaptIntegrate()</code>, based on a C library of the
+        same name. The integrand functions can even be multi-valued.</li>
     <li>Multi-dimensional numerical integration is also covered in package 
-        <pkg>R2Cuba</pkg>, employing a C library by Thomas Hahn. 
+        <pkg>R2Cuba</pkg>, a wrapper around the C library Cuba.
         With <code>vegas()</code> it includes an approach to Monte Carlo 
         integration based on importance sampling.</li>
     <li>Package <pkg>SparseGrid</pkg> provides another approach to 
         multivariate integration in high-dimensional spaces. It creates sparse 
         n-dimensional grids that can be used as with quadrature rules.</li>
+    <li>Package <pkg>SphericalCubature</pkg> employs <pkg>cubature</pkg> to 
+        integrate functions over unit spheres and balls in n-dimensional 
+        space; exact methods for integrating polynomials over spheres and
+        balls are provided.</li>
     <li>Package <pkg>polyCub</pkg> holds some routines for numerical 
         integration over polygonal domains in two dimensions.</li>
+    <li><pkg>features</pkg> extracts features from functional data, such as 
+        first and second derivatives, or curvature at critical points, while
+        <pkg>RootsExtremaInflections</pkg> finds roots, extrema and inflection
+        points of curves given through discrete points.</li>
     </ul>
 
     <h4>Interpolation and Approximation</h4>
@@ -321,6 +327,7 @@
     <pkg>eigeninv</pkg>
     <pkg>elliptic</pkg>
     <pkg>expm</pkg>
+    <pkg>fastGHQuad</pkg>
     <pkg>features</pkg>
     <pkg>gaussquad</pkg>
     <pkg>geigen</pkg>
@@ -355,6 +362,7 @@
     <pkg>RcppEigen</pkg>
     <pkg>RcppOctave</pkg>
     <pkg>Rmpfr</pkg>
+    <pkg>RootsExtremaInflections</pkg>
     <pkg>rPython</pkg>
     <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
@@ -373,6 +381,7 @@
     <view>DifferentialEquations</view>
     <view>Optimization</view>
     <view>TimeSeries</view>
+    <view>HighPerformanceComputing</view>
 
     <span>Textbook:
     <a href="http://www.worldscientific.com/worldscibooks/10.1142/7814">
