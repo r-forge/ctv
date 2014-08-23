@@ -1,4 +1,5 @@
 \documentclass[a4paper]{article}
+\usepackage{a4}
 
 \oddsidemargin  0.15 in
 \evensidemargin 0.35 in
