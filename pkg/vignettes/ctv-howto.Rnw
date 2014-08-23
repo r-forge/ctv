@@ -1,5 +1,13 @@
 \documentclass[a4paper]{article}
-\usepackage{a4wide}
+
+\oddsidemargin  0.15 in
+\evensidemargin 0.35 in
+\marginparwidth 1 in
+\oddsidemargin 0.25 in
+\evensidemargin 0.25 in
+\marginparwidth 0.75 in
+\textwidth 5.875 in
+
 \setlength{\parskip}{0.7ex plus0.1ex minus0.1ex}
 \setlength{\parindent}{0em}
 
