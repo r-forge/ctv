@@ -429,9 +429,6 @@ The <a href="http://www.omegahat.org/Aspell/">Aspell</a> package provides an int
 <pkg>factualR</pkg>: Thin wrapper for the Factual.com server API.
 </li>
 <li>
-<pkg>dataone</pkg>: A package that provides read/write access to data and metadata from the DataONE network of Member Node data repositories.
-</li>
-<li>
 <pkg>yhatr</pkg>: Lets you deploy, maintain, and invoke models via the Yhat REST API.
 </li>
 <li>
@@ -669,7 +666,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>CHCN</pkg>
 <pkg>crn</pkg>
 <pkg>datamart</pkg>
-<pkg>dataone</pkg>
 <pkg>decctools</pkg>
 <pkg>dismo</pkg>
 <pkg>dvn</pkg>
