@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2014-08-08</version>
+  <version>2014-09-08</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -52,7 +52,8 @@
 	  for modeling choice data and poisson models for count data. Effects for typical
 	  values of regressors in these models can be obtained and visualized using <pkg>effects</pkg>.
 	  Marginal effects tables for certain GLMs can be obtained using the 
-	  <pkg>mfx</pkg> package.</li>
+	  <pkg>mfx</pkg> package. Interactive visualizations of both effects and marginal
+	  effects are possible in <pkg>LinRegInteractive</pkg>.</li>
       <li>Negative binomial GLMs are available via <code>glm.nb()</code> in package <pkg>MASS</pkg>.
 	  Another implementation of negative binomial models
 	  is provided by <pkg>aod</pkg>, which also contains other models for overdispersed
@@ -293,6 +294,7 @@
     <pkg>its</pkg>
     <pkg>LARF</pkg>
     <pkg>lfe</pkg>
+    <pkg>LinRegInteractive</pkg>
     <pkg>lme4</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>MASS</pkg>
