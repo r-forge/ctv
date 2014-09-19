@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2014-07-29</version>
+  <version>2014-09-19</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -242,7 +242,6 @@
       <p><strong>Miscellaneous utitlies</strong></p>
           <ul><li><pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.
 	  <pkg>mAr</pkg> provides for vector auto-regression.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
-	  <pkg>cwhmisc</pkg> contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.
 	  <pkg>desirability</pkg> provides functions for multivariate optimisation.
 	  <pkg>geozoo</pkg> provides plotting of geometric objects in GGobi. </li></ul>
        
@@ -271,7 +270,6 @@
     <pkg>copula</pkg>     
     <pkg>corpcor</pkg>
     <pkg>covRobust</pkg>
-    <pkg>cwhmisc</pkg> 
     <pkg>denpro</pkg>
     <pkg>desirability</pkg>
     <pkg>dr</pkg>
