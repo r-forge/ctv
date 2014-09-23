@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair</maintainer>
-<version>2014-08-29</version>
+<version>2014-09-23</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -228,9 +228,6 @@ Data Sources on the Web Accessible via R
 <pkg>rsnps</pkg>: This package is a programmatic interface to various SNP datasets on the web: openSNP, NBCI's dbSNP database, and Broad Institute SNP Annotation and Proxy Search. This package started as a library to interact with openSNP alone, so most functions deal with openSNP.
 </li>
 <li>
-<pkg>rentrez</pkg>: Talk with NCBI entrez using R.
-</li>
-<li>
 <pkg>seqinr</pkg>: Exploratory data analysis and data visualization for biological sequence (DNA and protein) data.
 </li>
 <li>
@@ -368,9 +365,6 @@ The <a href="http://www.omegahat.org/Zillow/">Zillow</a> package provides an R i
 </li>
 <li>
 <a href="https://github.com/ropensci/rmetadata">rmetadata</a> (not on CRAN): Get scholarly metadata from around the web.
-</li>
-<li>
-<pkg>rentrez</pkg>: Talk with NCBI entrez using R.
 </li>
 <li>
 <a href="https://github.com/ropensci/rorcid">rorcid</a> (not on CRAN): A programmatic interface the Orcid.org API.
@@ -716,7 +710,6 @@ The <a href="https://github.com/jbryer/qualtrics">qualtrics</a> package provides
 <pkg>rebird</pkg>
 <pkg>RefManageR</pkg>
 <pkg>Reol</pkg>
-<pkg>rentrez</pkg>
 <pkg>repmis</pkg>
 <pkg>Rfacebook</pkg>
 <pkg>rfigshare</pkg>
