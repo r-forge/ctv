@@ -37,7 +37,7 @@
 	  into these functions are available in <pkg>sandwich</pkg>.</li>
       <li>Various tests for comparing non-nested linear models are available in <pkg>lmtest</pkg>.
           The Vuong test for comparing other non-nested models is provided by <pkg>nonest2</pkg>
-	  and specifically for count data regression in <pkg>pscl<pkg>.
+	  and specifically for count data regression in <pkg>pscl</pkg>.</li>
       <li>Diagnost checking: The packages
 	  <pkg>car</pkg> and <pkg>lmtest</pkg> provide a large collection
 	  of regression diagonstics and diagnostic tests.</li>
