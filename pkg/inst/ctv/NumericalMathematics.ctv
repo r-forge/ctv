@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2014-08-18</version>
+  <version>2014-09-25</version>
   
   <info>
 
@@ -176,14 +176,13 @@
         n-dimensional grids that can be used as with quadrature rules.</li>
     <li>Package <pkg>SphericalCubature</pkg> employs <pkg>cubature</pkg> to 
         integrate functions over unit spheres and balls in n-dimensional 
-        space; exact methods for integrating polynomials over spheres and
-        balls are provided.</li>
+        space; <pkg>SimplicialCubature</pkg> provides methods to integrate functions over m-dimensional simplices in n-dimensional space. Both packages comprise exact methods for polynomials.</li>
     <li>Package <pkg>polyCub</pkg> holds some routines for numerical 
         integration over polygonal domains in two dimensions.</li>
     <li><pkg>features</pkg> extracts features from functional data, such as 
         first and second derivatives, or curvature at critical points, while
         <pkg>RootsExtremaInflections</pkg> finds roots, extrema and inflection
-        points of curves given through discrete points.</li>
+        points of curves defined by discrete points.</li>
     </ul>
 
     <h4>Interpolation and Approximation</h4>
@@ -310,6 +309,10 @@
         <pkg>rPython</pkg> permits calls from R to Python, while project 
         <a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python 
         module 'rpy2') interfaces R from Python.</li>
+    <li>'pyRserve' is a Python module for connecting Python to an R process 
+        running <pkg>Rserve</pkg> as an RPC gateway. This R process can run on 
+        a remote machine, variable access and function calls will be delegated 
+        through the network.</li>
     </ul>
         
   </info>
@@ -364,11 +367,13 @@
     <pkg>Rmpfr</pkg>
     <pkg>RootsExtremaInflections</pkg>
     <pkg>rPython</pkg>
+    <pkg>Rserve</pkg>
     <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
     <pkg>signal</pkg>
     <pkg>SparseGrid</pkg>
     <pkg>SparseM</pkg>
+    <pkg>SimplicialCubature</pkg>
     <pkg>SphericalCubature</pkg>
     <pkg>statmod</pkg>
     <pkg>stinepack</pkg>
