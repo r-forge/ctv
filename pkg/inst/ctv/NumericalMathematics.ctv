@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2014-09-25</version>
+  <version>2014-10-30</version>
   
   <info>
 
@@ -22,8 +22,8 @@
     <view>Optimization</view>, and <view>TimeSeries</view>.
     All these task views together will provide a good selection of what is
     available in R for the area of numerical mathematics.</p>
-    The <view>HighPerformanceComputing</view> task view with its many links
-    for parallel computing may also be of interest.
+    <p>The <view>HighPerformanceComputing</view> task view with its many
+    links for parallel computing may also be of interest.</p>
 
     <p>The task view has been created to provide an overview of the topic. 
     If some packages are missing or certain topics in numerical math 
@@ -65,6 +65,8 @@
     <li>Package <pkg>rARPACK</pkg>, a wrapper for the ARPACK library, is 
         typically used to compute only a few eigenvalues/vectors, e.g., a small 
         number of largest eigenvalues.</li>
+    <li><pkg>optR</pkg> uses elementary methods of linear algebra (Gauss, LU, 
+        CGM, Cholesky) to solve linear systems.</li>
     <li>Package <pkg>onion</pkg> contains routines for manipulating 
         quaternions and octonians (normed division algebras over the real 
         numbers); quaternions can be useful for handling rotations in 
@@ -176,7 +178,9 @@
         n-dimensional grids that can be used as with quadrature rules.</li>
     <li>Package <pkg>SphericalCubature</pkg> employs <pkg>cubature</pkg> to 
         integrate functions over unit spheres and balls in n-dimensional 
-        space; <pkg>SimplicialCubature</pkg> provides methods to integrate functions over m-dimensional simplices in n-dimensional space. Both packages comprise exact methods for polynomials.</li>
+        space; <pkg>SimplicialCubature</pkg> provides methods to integrate
+        functions over m-dimensional simplices in n-dimensional space.
+        Both packages comprise exact methods for polynomials.</li>
     <li>Package <pkg>polyCub</pkg> holds some routines for numerical 
         integration over polygonal domains in two dimensions.</li>
     <li><pkg>features</pkg> extracts features from functional data, such as 
@@ -290,8 +294,8 @@
 
     <p>Interfaces to numerical computation software such as MATLAB 
     (commercial) or Octave (free) will be important when solving difficult 
-    numerical problems. Please note that the commercial programs SAS and 
-    Mathematica do have facilities to call R functions.</p>
+    numerical problems. (Please note that the commercial programs SAS and 
+    Mathematica do have facilities to call R functions.)</p>
 
     <ul>
     <li>The <pkg>matlab</pkg> emulation package contains about 30 simple 
@@ -304,11 +308,11 @@
     <li>Package <pkg>RcppOctave</pkg> provides an interface to Octave (a 
         MATLAB clone). It enables calling Octave functions, passing variables 
         between R and Octave, and browsing Octave documentation.</li>
-    <li>Python, through its modules 'NumPy', 'SciPy', and 'pandas', has 
-        elaborate and efficient numerical tools available. R package 
-        <pkg>rPython</pkg> permits calls from R to Python, while project 
-        <a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python 
-        module 'rpy2') interfaces R from Python.</li>
+    <li>Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', 
+    	and 'pandas', has elaborate and efficient numerical and graphical 
+    	tools available. R package <pkg>rPython</pkg> permits calls from R to 
+    	Python, while <a href="http://sourceforge.net/projects/rpy/">RPy</a> 
+    	(with Python module 'rpy2') interfaces R from Python.</li>
     <li>'pyRserve' is a Python module for connecting Python to an R process 
         running <pkg>Rserve</pkg> as an RPC gateway. This R process can run on 
         a remote machine, variable access and function calls will be delegated 
@@ -350,6 +354,7 @@
     <pkg>numbers</pkg>
     <pkg priority="core">numDeriv</pkg>
     <pkg>onion</pkg>
+    <pkg>optR</pkg>
     <pkg>orthopolynom</pkg>
     <pkg>partitions</pkg>
     <pkg>polyCub</pkg>
@@ -371,9 +376,9 @@
     <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
     <pkg>signal</pkg>
+    <pkg>SimplicialCubature</pkg>
     <pkg>SparseGrid</pkg>
     <pkg>SparseM</pkg>
-    <pkg>SimplicialCubature</pkg>
     <pkg>SphericalCubature</pkg>
     <pkg>statmod</pkg>
     <pkg>stinepack</pkg>
