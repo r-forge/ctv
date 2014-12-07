@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-<version>2014-12-05</version>
+<version>2014-12-07</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -229,9 +229,6 @@ This is a commercial server that allows one to store content and retrieve it fro
 </li>
 <li>
 <pkg>yhatr</pkg>: Lets you deploy, maintain, and invoke models via the <a href="https://www.yhathq.com/">Yhat</a> REST API.
-</li>
-<li>
-<pkg>RSocrata</pkg>: Provided with a Socrata dataset resource URL, or a Socrata SoDA web API query, returns an R data frame. Converts dates to POSIX format. Supports CSV and JSON. Manages throttling by Socrata.
 </li>
 <li>
 <pkg>Quandl</pkg>: A package that interacts directly with the <a href="http://www.quandl.com/">Quandl</a> API to offer data in a number of formats usable in R, as well as the ability to upload and search.
@@ -1018,7 +1015,6 @@ The <a href="http://www.omegahat.org/Rflickr">Rflickr</a> package provides an R 
   <pkg>RSelenium</pkg>
   <pkg>RSiteCatalyst</pkg>
   <pkg>rsnps</pkg>
-  <pkg>RSocrata</pkg>
   <pkg>rvertnet</pkg>
   <pkg>rWBclimate</pkg>
   <pkg>rYoutheria</pkg>
