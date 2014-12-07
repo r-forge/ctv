@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2014-10-30</version>
+  <version>2014-12-07</version>
   
   <info>
 
@@ -218,9 +218,6 @@
         interpolation based on piecewise rational functions by applying 
         Stineman's algorithm. The interpolating function will be monoton in 
         regions where the specified points change monotonically.</li>
-    <li>Package <pkg>conicfit</pkg> encompasses several algorithms for fitting 
-        circles, ellipses, and other conics, applying geometric and algebraic 
-        approaches.</li>
     </ul>
 
     <h4>Root Finding</h4>
@@ -328,7 +325,6 @@
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
     <pkg>combinat</pkg>
-    <pkg>conicfit</pkg>
     <pkg>contfrac</pkg>
     <pkg>cubature</pkg>
     <pkg>eigeninv</pkg>
