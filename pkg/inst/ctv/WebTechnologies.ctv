@@ -651,9 +651,6 @@ The <a href="http://www.omegahat.org/Aspell/">Aspell</a> package provides an int
 
 <ul>
 <li>
-<pkg>bigml</pkg>: BigML, a machine learning web service.
-</li>
-<li>
 <pkg>MTurkR</pkg>: Access to Amazon Mechanical Turk Requester API via R.
 </li>
 <li>
@@ -895,7 +892,6 @@ The <a href="http://www.omegahat.org/Rflickr">Rflickr</a> package provides an R 
   <pkg>anametrix</pkg>
   <pkg>aRxiv</pkg>
   <pkg>BerlinData</pkg>
-  <pkg>bigml</pkg>
   <pkg>boilerpipeR</pkg>
   <pkg>cgdsr</pkg>
   <pkg>CHCN</pkg>
