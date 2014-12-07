@@ -496,9 +496,6 @@ The <a href="http://www.omegahat.org/RGoogleDocs/">RGoogleDocs</a> package is an
 <pkg>translateR</pkg> provides bindings for both Google and Microsoft translation APIs.
 </li>
 <li>
-<pkg>googlePublicData</pkg>: An R library to build Google's public data explorer DSPL metadata files.
-</li>
-<li>
 <pkg>googleVis</pkg>: Interface between R and the Google chart tools.
 </li>
 <li>
@@ -919,7 +916,6 @@ The <a href="http://www.omegahat.org/Rflickr">Rflickr</a> package provides an R 
   <pkg>ggvis</pkg>
   <pkg>GhcnDaily</pkg>
   <pkg>gmailr</pkg>
-  <pkg>googlePublicData</pkg>
   <pkg>googleVis</pkg>
   <pkg>gooJSON</pkg>
   <pkg>govStatJPN</pkg>
