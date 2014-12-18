@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2014-12-13</version>
+  <version>2014-12-18</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -57,7 +57,7 @@
 
 <p><strong>Hypothesis testing</strong></p>
  
-<ul><li><pkg>ICSNP</pkg> provides Hotellings T2 test as well as a range of non-parametric tests including location tests based on marginal ranks, spatial median and spatial signs computation, estimates of shape.  Spatial sign and rank tests to investigate location, sphericity and independence are available in <pkg>SpatialNP</pkg>. </li></ul>
+<ul><li><pkg>ICSNP</pkg> provides Hotellings T2 test as well as a range of non-parametric tests including location tests based on marginal ranks, spatial median and spatial signs computation, estimates of shape.  Non-parametric two sample tests are also available from <pkg>cramer</pkg> and spatial sign and rank tests to investigate location, sphericity and independence are available in <pkg>SpatialNP</pkg>. </li></ul>
 
 
           <p><strong>Multivariate distributions</strong></p>
@@ -269,6 +269,7 @@
     <pkg>copula</pkg>     
     <pkg>corpcor</pkg>
     <pkg>covRobust</pkg>
+    <pkg>cramer</pkg> 
     <pkg>denpro</pkg>
     <pkg>desirability</pkg>
     <pkg>dr</pkg>
