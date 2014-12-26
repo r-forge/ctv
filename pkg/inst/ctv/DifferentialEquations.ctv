@@ -3,7 +3,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2014-12-05</version>
+  <version>2014-12-26</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -27,7 +27,7 @@
     </p>
     <p> This task view was created to provide an overview on the topic.
      If we forgot something, or if a new package should be mentioned here, please let
-     <a href="mailto:karline_DOT_soetaert_AT_nioz_DOT_nl;thomas_DOT_petzoldt_AT_tu-dresden_DOT_de?subject=DifferentialEquations%20Task%20View">us</a> know.
+     <a href="mailto:karline.soetaert@nioz.nl, thomas.petzoldt@tu-dresden.de?subject=DifferentialEquations%20Task%20View">us</a> know.
     </p>
     
     <p><strong>Stochastic Differential Equations (SDEs)</strong></p> 
