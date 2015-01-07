@@ -3,7 +3,7 @@
   <name>Graphics</name>
   <topic>Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization </topic>
   <maintainer email="nikko@hailmail.net">Nicholas Lewin-Koh</maintainer>
-  <version>2013-01-29</version>
+  <version>2015-01-07</version>
   
   <info>
     <p>R is rich with facilities for creating and developing interesting graphics.
@@ -33,8 +33,7 @@
     properly on resizing, nested graphs are desired or more interactivity
     is needed. grid was designed by Paul Murrell to overcome
     some of these limitations and as a result packages like
-    <pkg>lattice</pkg>, <pkg>ggplot2</pkg>, <pkg>vcd</pkg> or hexbin
-    (on <a href="http://www.Bioconductor.org/">Bioconductor</a>) use
+    <pkg>lattice</pkg>, <pkg>ggplot2</pkg>, <pkg>vcd</pkg> or <pkg>hexbin</pkg> use
     grid for the underlying primitives. When using plots designed with
     grid one needs to keep in mind that grid is based on a system of
     viewports and graphic objects. To add objects one needs to use grid
@@ -53,8 +52,7 @@
 
       <li><i>Plotting</i>:
           Enhancements for specialized plots can be found in <pkg>plotrix</pkg>,
-	  for polar plotting, <pkg>vcd</pkg> for categorical data, hexbin
-	  (on <a href="http://www.Bioconductor.org/">Bioconductor</a>)
+	  for polar plotting, <pkg>vcd</pkg> for categorical data, <pkg>hexbin</pkg>
 	  for hexagon binning, <pkg>gclus</pkg> for ordering plots and 
           <pkg>gplots</pkg>
 	  for some plotting enhancements. Some specialized graphs, like Chernoff faces 
@@ -86,10 +84,10 @@
           datasets. Aside from overplotting, rendering 1,000,000 points can tax even modern 
           GPU's. For bivariate data <pkg>ash</pkg> can produce a bivariate smoothed histogram very 
           quickly, and 
-          hexbin, on <a href="http://www.Bioconductor.org/">Bioconductor</a>, can bin bivariate
+          <pkg>hexbin</pkg> can bin bivariate
           data onto a hexagonal lattice, the advantage being that the irregular lines and 
           orientation of hexagons do not create linear artifacts. For multivariate data, 
-          hexbin can be used to create a scatterplot matrix, combined with <pkg>lattice</pkg>.
+          <pkg>hexbin</pkg> can be used to create a scatterplot matrix, combined with <pkg>lattice</pkg>.
           An alternative is to use <pkg>scagnostics</pkg> to produce a scaterplot matrix
           of "data about the data", and look for interesting combinations of variables.</li>
           <li><i>Trees and Graphs</i>: 
@@ -187,6 +185,7 @@
     <pkg priority="core">ggplot2</pkg>
     <pkg>gplots</pkg>
     <pkg>gridBase</pkg>
+    <pkg>hexbin</pkg>
     <pkg>igraph</pkg>
     <pkg>iplots</pkg>
     <pkg>IDPmisc</pkg>
@@ -218,7 +217,6 @@
     <view>Cluster</view>
     <view>Multivariate</view> 
     <view>Spatial</view>
-    <bioc>hexbin</bioc>
     <bioc>Rgraphviz</bioc>
     <a href="http://rgraphgallery.blogspot.com/">R Graph Gallery</a>
     <a href="http://www.stat.auckland.ac.nz/~paul/">Paul Murrell's home page</a>
