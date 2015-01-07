@@ -290,9 +290,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     <a href="http://www.stat.auckland.ac.nz/~yee/VGAM/">
       Vector Generalized Linear and Additive Models (VGLMs/VGAMs)
     </a>
-    <a href="http://people.fas.harvard.edu/~tjhoffm/pbatR.html">
-      P2BAT tools for family and pedigree based association.
-    </a>
     <a href="http://pbil.univ-lyon1.fr/software/mareymap/">
       MareyMap GUI for comparing physical and genetic maps.
     </a>
