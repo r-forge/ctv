@@ -12,7 +12,7 @@
     is given below. There is also a considerable overlap between the tools
     for econometrics in this view and for finance in the <view>Finance</view> view.
     Furthermore, the 
-    <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Finance SIG</a>    
+    <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Finance/">Finance SIG</a>    
     is a suitable mailing list for obtaining help
     and discussing questions about both computational finance and econometrics.
     Finally, there is also some overlap with the <view>SocialSciences</view> that
@@ -367,7 +367,7 @@
     <view>SocialSciences</view>
     <view>Spatial</view>
     <view>TimeSeries</view>
-    <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing List: R Special Interest Group Finance</a>
+    <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing List: R Special Interest Group Finance</a>
     <a href="http://www.jstatsoft.org/v27/">Journal of Statistical Software: Special Volume on 'Econometrics in R'</a>
     <a href="http://people.su.se/~ma/R_intro/">A Brief Guide to R for Beginners in Econometrics</a>
     <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
