@@ -175,7 +175,7 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
           (inlcuding patterns of missing data) and tests for Hardy-Weinberg equilibrium.  Single-point analyses with binary 
           or quantitative traits are implemented via generalized linear models, and multiple SNPs can be anlaysed for 
           haplotypic associations or epistasis. -->
-<bioc>snpMatrix</bioc>
+<a href="http://www.bioconductor.org/packages/2.8/bioc/html/snpMatrix.html">snpMatrix</a>
 	  Implements classes and methods for large-scale SNP association studies.
         </li>        
         <li>
@@ -256,7 +256,7 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     </a> 
     <bioc>multtest</bioc>
     <bioc>qvalue</bioc>
-    <bioc>snpMatrix</bioc>
+    <a href="http://www.bioconductor.org/packages/2.8/bioc/html/snpMatrix.html">Bioconductor package snpMatrix (2.8)</a>
     <a href="http://mayoresearch.mayo.edu/mayo/research/biostat/splusfunctions.cfm">
      R packages from Divison of Biostatistics, Mayo Clinic
     </a> 
