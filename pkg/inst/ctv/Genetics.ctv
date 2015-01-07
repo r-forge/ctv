@@ -287,9 +287,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     <a href="http://wpicr.wpic.pitt.edu/WPICCompGen/bars.htm">
       Bayesian Adaptive Regression Splines (BARS)
     </a>
-    <a href="http://www.mpipsykl.mpg.de/pages/english/research/mueller_downloads.htm">
-      Direct Simulation Approach (DAS), for simulation of p-values
-    </a>
     <a href="http://www.stat.auckland.ac.nz/~yee/VGAM/">
       Vector Generalized Linear and Additive Models (VGLMs/VGAMs)
     </a>
