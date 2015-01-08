@@ -264,7 +264,6 @@
     <pkg priority="core">AER</pkg>
     <pkg>aod</pkg>
     <pkg>apt</pkg>
-    <pkg>AutoSEARCH</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
     <pkg>boot</pkg>
@@ -336,7 +335,6 @@
     <pkg>RSGHB</pkg>
     <pkg>sampleSelection</pkg>
     <pkg priority="core">sandwich</pkg>
-    <pkg>sde</pkg>
     <pkg>segmented</pkg>
     <pkg>sem</pkg>
     <pkg>SemiParSampleSel</pkg>
