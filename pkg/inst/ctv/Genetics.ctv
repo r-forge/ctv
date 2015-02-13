@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2014-07-29</version>
+  <version>2015-02-13</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -31,9 +31,7 @@
 <pkg>rmetasim</pkg>
           provides an interface to the metasim engine
       for population genetics simulations.
-<pkg>hapsim</pkg>
-          simulates haplotype data with pre-specified allele frequencies and LD patterns. A few 
-          population genetics functions are also implemeted in
+          A few population genetics functions are also implemeted in
 <pkg>gap</pkg>.
 <pkg>LDheatmap</pkg>
           creates a heat map plot of measures of pairwise LD.
@@ -224,7 +222,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     <pkg>haplo.ccs</pkg>
     <pkg>HardyWeinberg</pkg>
     <pkg priority="core">haplo.stats</pkg>
-    <pkg>hapsim</pkg>
     <pkg>hierfstat</pkg>
     <pkg>hwde</pkg>
     <pkg>ibdreg</pkg>
