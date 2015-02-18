@@ -96,7 +96,8 @@
 	  the constant elasticity of scale (CES) function is in <pkg>micEconCES</pkg>;
 	  the symmetric normalized quadratic profit (SNQP) function is in <pkg>micEconSNQP</pkg>.
           The almost ideal demand system (AIDS) is in <pkg>micEconAids</pkg>.	  
-	  Stochastic frontier analysis is in <pkg>frontier</pkg>.
+	  Stochastic frontier analysis (SFA) is in <pkg>frontier</pkg> and semiparametric SFA in
+	  <pkg>semsfa</pkg>.
 	  The package <pkg>bayesm</pkg> implements a Bayesian
 	  approach to microeconometrics and marketing. Inference for relative
 	  distributions is contained in package <pkg>reldist</pkg>.</li>
@@ -338,6 +339,7 @@
     <pkg>segmented</pkg>
     <pkg>sem</pkg>
     <pkg>SemiParSampleSel</pkg>
+    <pkg>semsfa</pkg>
     <pkg>simpleboot</pkg>
     <pkg>SparseM</pkg>
     <pkg>spatialprobit</pkg>
