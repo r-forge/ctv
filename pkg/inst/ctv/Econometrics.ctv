@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Computational Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2014-12-18</version>
+  <version>2015-03-02</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -85,7 +85,9 @@
 	  conditional heteroskedasticity are in <pkg>crch</pkg>.
 	  Furthermore, hurdle models for left-censored data at zero can be estimated with
 	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>
-	  and semiparametric extensions of these are provided by <pkg>SemiParSampleSel</pkg>.</li>
+	  and semiparametric extensions of these are provided by <pkg>SemiParSampleSel</pkg>.
+	  Package <pkg>matchingMarkets</pkg> corrects for selection bias when the sample is the
+	  result of a stable matching process (e.g., a group formation or college admissions problem).</li>
       <li>Instrumental variables for binary responses: The <pkg>LARF</pkg> package estimates
           local average response functions for binary treatments and binary instruments.</li>
       <li>Multivariate probit models: Estimation and marginal effect computations can be
@@ -301,6 +303,7 @@
     <pkg>lme4</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>MASS</pkg>
+    <pkg>matchingMarkets</pkg>
     <pkg>Matrix</pkg>
     <pkg>Mcomp</pkg>
     <pkg>meboot</pkg>
