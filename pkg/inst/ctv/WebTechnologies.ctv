@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-<version>2015-01-14</version>
+<version>2015-03-03</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -442,9 +442,6 @@ This is a commercial server that allows one to store content and retrieve it fro
 <pkg>spocc</pkg>: A programmatic interface to many species occurrence data sources, including GBIF, USGS's BISON, iNaturalist, Berkeley Ecoinformatics Engine eBird, AntWeb, and more as they sources become easily available.
 </li>
 <li>
-<pkg>TR8</pkg>: TR8 contains a set of tools which take care of retrieving trait data for plant species from publicly available databases via web services (including: Biolflor, The Ecological Flora of the British Isles, LEDA traitbase, Ellenberg values for Italian Flora, Mycorrhizal intensity database).
-</li>
-<li>
 <pkg>taxize</pkg>: Taxonomic information from around the web.
 </li>
 <li>
@@ -466,9 +463,6 @@ The <a href="https://github.com/gustavobio/tpl">tpl</a> package, created by Gust
 </li>
 <li>
 <pkg>psidR</pkg> Contains functions to download and format longitudinal datasets from the Panel Study of Income Dynamics (PSID).
-</li>
-<li>
-<pkg>pxweb</pkg>: Generic interface for the PX-Web/PC-Axis API. The PX-Web/PC-Axis API is used by organizations such as Statistics Sweden and Statistics Finland to disseminate data. The R package can interact with all PX-Web/PC-Axis APIs to fetch information about the data hierarchy, extract metadata and extract and parse statistics to R data.frame format. <a href="#">Source on GitHub</a>.
 </li>
 <li>
 <pkg>WDI</pkg>: Search, extract and format data from the World Bank's World Development Indicators.
@@ -1057,7 +1051,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>pubmed.mineR</pkg>
   <pkg>pushoverr</pkg>
   <pkg>pvsR</pkg>
-  <pkg>pxweb</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantmod</pkg>
   <pkg>raincpc</pkg>
@@ -1136,7 +1129,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>TFX</pkg>
   <pkg>Thinknum</pkg>
   <pkg>tm.plugin.webmining</pkg>
-  <pkg>TR8</pkg>
   <pkg>translate</pkg>
   <pkg>translateR</pkg>
   <pkg>treebase</pkg>
