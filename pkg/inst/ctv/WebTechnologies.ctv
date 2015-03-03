@@ -534,9 +534,6 @@ The <a href="https://bitbucket.org/sulab/mygene.r/overview">mygene.r</a> package
 <pkg>primerTree</pkg>: Visually Assessing the Specificity and Informativeness of Primer Pairs.
 </li>
 <li>
-<pkg>rsnps</pkg>: This package is a programmatic interface to various SNP datasets on the web: openSNP, NBCI's dbSNP database, and Broad Institute SNP Annotation and Proxy Search. This package started as a library to interact with openSNP alone, so most functions deal with openSNP.
-</li>
-<li>
 <a href="http://cran.r-project.org/src/contrib/Archive/seq2R/">seq2R</a>: Detect compositional changes in genomic sequences - with some interaction with GenBank. Archived on CRAN.
 </li>
 <li>
@@ -1106,7 +1103,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>rsdmx</pkg>
   <pkg>RSelenium</pkg>
   <pkg>RSiteCatalyst</pkg>
-  <pkg>rsnps</pkg>
   <pkg>RStars</pkg>
   <pkg>rsunlight</pkg>
   <pkg>rvertnet</pkg>
