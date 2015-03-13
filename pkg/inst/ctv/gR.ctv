@@ -199,19 +199,6 @@
     </li>
 
     <li>
-      <pkg>qp</pkg> 
-      This package is deprecated and it is now only a stub for the newer
-      version called qpgraph available through the Bioconductor
-      project. The q-order partial correlation graph search algorithm,
-      q-partial, or qp, algorithm for short, is a robust procedure for
-      structure learning of undirected Gaussian graphical Markov
-      models from "small n, large p" data, that is, multivariate
-      normal data coming from a number of random variables p larger
-      than the number of multidimensional data points n as in the case
-      of, e.g., microarray data.
-    </li>
-
-    <li>
       <bioc>qpgraph</bioc> 
       q-order partial correlation graphs, or qp-graphs for short, are
       undirected Gaussian graphical Markov models that represent
@@ -412,7 +399,6 @@
     <pkg>network</pkg>
     <pkg>parcor</pkg> 
     <pkg>pcalg</pkg> 
-    <pkg>qp</pkg>
     <pkg>QUIC</pkg>
     <pkg>SIN</pkg>
     <pkg>R2OpenBUGS</pkg> 
