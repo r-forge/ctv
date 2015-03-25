@@ -1,83 +1,101 @@
 <CRANTaskView>
 
   <name>Econometrics</name>
-  <topic>Computational Econometrics</topic>
+  <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2015-03-02</version>
+  <version>2015-03-25</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
     econometrics, in particular in the stats package. This
     functionality is complemented by many packages on CRAN, a brief overview
     is given below. There is also a considerable overlap between the tools
-    for econometrics in this view and for finance in the <view>Finance</view> view.
+    for econometrics in this view and those in the task views on
+    <view>Finance</view>, <view>SocialSciences</view>, and <view>TimeSeries</view>.    
     Furthermore, the 
     <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Finance/">Finance SIG</a>    
     is a suitable mailing list for obtaining help
-    and discussing questions about both computational finance and econometrics.
-    Finally, there is also some overlap with the <view>SocialSciences</view> that
-    also covers a broad variety of tools for social sciences, e.g., including political science.</p>
+    and discussing questions about both computational finance and econometrics.</p>
     
     <p>The packages in this view can be roughly structured into the following topics.
-    If you think that some package is missing from the list, please let me know.</p>
+    If you think that some package is missing from the list, please contact the maintainer.</p>
 
-    <p><strong>Linear regression models</strong></p>
+    <p><strong>Basic linear regression</strong></p>
     
     <ul>
-      <li>Linear models can be fitted (via OLS) with <code>lm()</code>
-          (from stats) and standard tests for model comparisons are available in various
+      <li><i>Estimation and standard inference</i>: Ordinary least squares (OLS) estimation for linear models is provided
+          by <code>lm()</code> (from stats) and standard tests for model comparisons are available in various
 	  methods such as <code>summary()</code> and <code>anova()</code>.</li>
-      <li>Analogous functions
+
+      <li><i>Further inference and nested model comparisons</i>: Functions analogous to
+          the basic <code>summary()</code> and <code>anova()</code> methods
 	  that also support asymptotic tests (<i>z</i> instead of <i>t</i> tests, and
 	  Chi-squared instead of <i>F</i> tests) and plug-in of other covariance
-	  matrices are <code>coeftest()</code> and <code>waldtest()</code> in <pkg>lmtest</pkg>.</li>
-      <li>Tests of more general linear hypotheses are implemented in <code>linear.hypothesis()</code>
-	  in <pkg>car</pkg>.</li>
-      <li>HC and HAC covariance matrices that can be plugged
-	  into these functions are available in <pkg>sandwich</pkg>.</li>
-      <li>Various tests for comparing non-nested linear models are available in <pkg>lmtest</pkg>.
+	  matrices are <code>coeftest()</code> and <code>waldtest()</code> in <pkg>lmtest</pkg>.
+          Tests of more general linear hypotheses are implemented in <code>linearHypothesis()</code>
+          and for nonlinear hypotheses in <code>deltaMethod()</code> in <pkg>car</pkg>.</li>
+
+      <li><i>Robust standard errors</i>: HC and HAC covariance matrices are available in <pkg>sandwich</pkg>
+          and can be plugged into the inference functions mentioned above.</li>
+
+      <li><i>Nonnested model comparisons</i>: Various tests for comparing non-nested linear
+          models are available in <pkg>lmtest</pkg> (encompassing test, J test, Cox test).
           The Vuong test for comparing other non-nested models is provided by <pkg>nonnest2</pkg>
-	  and specifically for count data regression in <pkg>pscl</pkg>.</li>
-      <li>Diagnost checking: The packages
+	  (and specifically for count data regression in <pkg>pscl</pkg>).</li>
+
+      <li><i>Diagnost checking</i>: The packages
 	  <pkg>car</pkg> and <pkg>lmtest</pkg> provide a large collection
 	  of regression diagonstics and diagnostic tests.</li>
-      <li>Instrumental variables regression (two-stage least squares) is
-	  provided by <code>ivreg()</code> in <pkg>AER</pkg>, another implementation
-	  is <code>tsls()</code> in package <pkg>sem</pkg>.</li>
     </ul>
 
     <p><strong>Microeconometrics</strong></p>
 
     <ul>
-      <li>Many standard microeconometric models belong to the
-          family of generalized linear models (GLM) and can be fitted by <code>glm()</code>
+      <li><i>Generalized linear models (GLMs)</i>: Many standard microeconometric models belong to the
+          family of generalized linear models and can be fitted by <code>glm()</code>
 	  from package stats. This includes in particular logit and probit models
-	  for modeling choice data and poisson models for count data. Effects for typical
+	  for modeling choice data and Poisson models for count data. Effects for typical
 	  values of regressors in these models can be obtained and visualized using <pkg>effects</pkg>.
 	  Marginal effects tables for certain GLMs can be obtained using the 
 	  <pkg>mfx</pkg> package. Interactive visualizations of both effects and marginal
 	  effects are possible in <pkg>LinRegInteractive</pkg>.</li>
-      <li>Negative binomial GLMs are available via <code>glm.nb()</code> in package <pkg>MASS</pkg>.
+
+      <li><i>Binary responses</i>: The standard logit and probit models (among many others) for binary
+          responses are GLMs that can be estimated by <code>glm()</code> with <code>family = binomial</code>.
+	  Bias-reduced GLMs that are robust to complete and quasi-complete separation are provided by
+	  <pkg>brglm</pkg>. Discrete choice models estimated by simulated maximum likelihood are
+	  implemented in <pkg>Rchoice</pkg>.</li>
+
+      <li><i>Count responses</i>: The basic Poisson regression is a GLM that can be estimated by <code>glm()</code>
+          with <code>family = poisson</code> as explained above.
+	  Negative binomial GLMs are available via <code>glm.nb()</code> in package <pkg>MASS</pkg>.
 	  Another implementation of negative binomial models
 	  is provided by <pkg>aod</pkg>, which also contains other models for overdispersed
-	  data.</li>
-      <li>Zero-inflated and hurdle count models are provided in package <pkg>pscl</pkg>.</li>
-      <li>Multinomial responses: Multinomial models
+	  data. Zero-inflated and hurdle count models are provided in package <pkg>pscl</pkg>.
+          A reimplementation by the same authors is currently under development in <rforge>countreg</rforge>
+	  on R-Forge which also encompasses separate functions for zero-truncated regression,
+	  finite mixture models etc.</li>
+
+      <li><i>Multinomial responses</i>: Multinomial models
 	  with individual-specific covariates only are available in <code>multinom()</code>
 	  from package <pkg>nnet</pkg>. Implementations with both individual- and
-	  choice-specific variables are <pkg>mlogit</pkg> and <pkg>mnlogit</pkg>. Generalized additive models
+	  choice-specific variables are <pkg>mlogit</pkg> and <pkg>mnlogit</pkg>. Generalized
+	  multinomial logit models (e.g., with random effects etc.) are in <pkg>gmnl</pkg>.	  
+	  Generalized additive models
 	  (GAMs) for multinomial responses can be fitted with the <pkg>VGAM</pkg> package.	  
 	  A Bayesian approach to multinomial probit models is provided by <pkg>MNP</pkg>.
 	  Various Bayesian multinomial models (including logit and probit) are available
 	  in <pkg>bayesm</pkg>. Furthermore, the package <pkg>RSGHB</pkg> fits various
 	  hierarchical Bayesian specifications based on direct specification of the likelihood
 	  function.</li>
-      <li>Ordered responses: Proportional-odds regression for ordered responses is implemented
+
+      <li><i>Ordered responses</i>: Proportional-odds regression for ordered responses is implemented
           in <code>polr()</code> from package <pkg>MASS</pkg>. The package <pkg>ordinal</pkg>
 	  provides cumulative link models for ordered data which encompasses proportional
 	  odds models but also includes more general specifications. Bayesian ordered probit
 	  models are provided by <pkg>bayesm</pkg>.</li>
-      <li>Censored responses: Basic censored regression models (e.g., tobit models)
+
+      <li><i>Censored responses</i>: Basic censored regression models (e.g., tobit models)
 	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>, a convenience
 	  interface <code>tobit()</code> is in package <pkg>AER</pkg>. Further censored
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
@@ -88,145 +106,202 @@
 	  and semiparametric extensions of these are provided by <pkg>SemiParSampleSel</pkg>.
 	  Package <pkg>matchingMarkets</pkg> corrects for selection bias when the sample is the
 	  result of a stable matching process (e.g., a group formation or college admissions problem).</li>
-      <li>Instrumental variables for binary responses: The <pkg>LARF</pkg> package estimates
-          local average response functions for binary treatments and binary instruments.</li>
-      <li>Multivariate probit models: Estimation and marginal effect computations can be
-          carried out with <pkg>mvProbit</pkg>.</li>
-      <li>Miscellaneous: Further more refined tools for microecnometrics are provided in
+
+      <li><i>Truncated responses</i>: <pkg>truncreg</pkg> for truncated Gaussian responses.</li>
+
+      <li><i>Fraction and proportion responses</i>: Fractional response models are in <pkg>frm</pkg>.
+          Beta regression for responses in (0, 1) is in <pkg>betareg</pkg> and <pkg>gamlss</pkg>.</li>
+
+      <li><i>Miscellaneous</i>: Further more refined tools for microecnometrics are provided in
 	  the <pkg>micEcon</pkg> family of packages: Analysis with
 	  Cobb-Douglas, translog, and quadratic functions is in <pkg>micEcon</pkg>;
 	  the constant elasticity of scale (CES) function is in <pkg>micEconCES</pkg>;
 	  the symmetric normalized quadratic profit (SNQP) function is in <pkg>micEconSNQP</pkg>.
           The almost ideal demand system (AIDS) is in <pkg>micEconAids</pkg>.	  
-	  Stochastic frontier analysis (SFA) is in <pkg>frontier</pkg> and semiparametric SFA in
-	  <pkg>semsfa</pkg>.
-	  The package <pkg>bayesm</pkg> implements a Bayesian
-	  approach to microeconometrics and marketing. Inference for relative
-	  distributions is contained in package <pkg>reldist</pkg>.</li>
+	  Stochastic frontier analysis (SFA) is in <pkg>frontier</pkg> and semiparametric SFA in <pkg>semsfa</pkg>.	  
+	  The package <pkg>bayesm</pkg> implements a Bayesian approach to microeconometrics and marketing. 
+	  Estimation and marginal effect computations for multivariate probit models can be carried out with <pkg>mvProbit</pkg>.
+	  Inference for relative distributions is contained in package <pkg>reldist</pkg>.</li>
     </ul>
+
+    <p><strong>Instrumental variables</strong></p>
+    
+    <ul>
+      <li><i>Basic instrumental variables (IV) regression</i>: Two-stage least squares (2SLS)
+          is provided by <code>ivreg()</code> in <pkg>AER</pkg>. Other implementations are in <code>tsls()</code>
+	  in package <pkg>sem</pkg>, in <pkg>ivpack</pkg>, and <pkg>lfe</pkg> (with particular
+	  focus on multiple group fixed effects).</li>
+
+      <li><i>Binary responses</i>: An IV probit model via GLS estimation
+          is available in <pkg>ivprobit</pkg>. The <pkg>LARF</pkg> package estimates
+          local average response functions for binary treatments and binary instruments.</li>
+
+      <li><i>Panel data</i>: Certain basic IV models for panel data can also be estimated
+          with standard 2SLS functions (see above). Dedicated IV panel data models are provided
+	  by <pkg>ivfixed</pkg> (fixed effects) and <pkg>ivpanel</pkg> (between and random effects).</li>
+      <li><i>Miscellaneous</i>:
+          <pkg>ivbma</pkg> estimates Bayesian IV models with conditional Bayes factors.
+          <pkg>ivlewbel</pkg> implements the Lewbel approach based on GMM estimation of triangular systems using heteroscedasticity-based IVs.
+	  </li>
+    </ul>
+
+
+    <p><strong>Panel data models</strong></p>
+    
+    <ul>
+
+      <li><i>Panel-corrected standard errors</i>: A simple approach for panel data is
+          to fit the pooling (or independence) model (e.g., via <code>lm()</code> or <code>glm()</code>)
+	  and only correct the standard errors. Different types of panel-corrected standard
+	  errors are available in <pkg>multiwayvcov</pkg>, <pkg>pcse</pkg>, <pkg>plm</pkg>,
+	  and <pkg>geepack</pkg>, respectively. The latter two require estimation of the
+	  pooling/independence models via <code>plm()</code> and <code>geeglm()</code> from
+	  the respective packages (which also provide other types of models, see below).</li>      
+
+      <li><i>Linear panel models</i>: <pkg>plm</pkg>, providing a wide range of within,
+          between, and random-effect methods (among others) along with corrected standard
+	  errors, tests, etc. Another implementation of several of these models is in
+	  <pkg>Paneldata</pkg>.</li>
+
+      <li><i>Generalized estimation equations</i>: GEE models for panel data (or longitudinal
+          data in statistical jargon) are in <pkg>geepack</pkg>.</li>
+
+      <li><i>Mixed effects models</i>: Linear and nonlinear models for panel data (and more
+          general multi-level data) are available in <pkg>lme4</pkg> and <pkg>nlme</pkg>.</li>
+
+      <li><i>Instrumental variables</i>: <pkg>ivfixed</pkg> and <pkg>ivpanel</pkg>, see also above.</li>
+
+      <li><i>Heterogeneous time trends</i>: <pkg>phtt</pkg> offers the possibility of
+          analyzing panel data with large dimensions n and T and can be considered when
+	  the unobserved heterogeneity effects are time-varying.</li>
+
+      <li><i>Miscellaneous</i>: 
+          Multiple group fixed effects are in <pkg>lfe</pkg>.	  
+          Autocorrelation and heteroskedasticity correction in are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
+	  PANIC Tests of nonstationarity are in <pkg>PANICr</pkg>.
+	  Threshold regression and unit root tests are in <pkg>pdR</pkg>.
+          The panel data approach method for program evaluation is available in <pkg>pampe</pkg>. 
+	  </li>
+    </ul>
+
 
     <p><strong>Further regression models</strong></p>
 
     <ul>
-      <li>Nonlinear least squares modeling is availble in <code>nls()</code>
-	  in package stats.</li>
-      <li>Quantile regression: <pkg>quantreg</pkg> (including linear, nonlinear, censored,
+      <li><i>Nonlinear least squares modeling</i>: <code>nls()</code> in package stats.</li>
+
+      <li><i>Quantile regression</i>: <pkg>quantreg</pkg> (including linear, nonlinear, censored,
           locally polynomial and additive quantile regressions).</li>
-      <li>Linear models for panel data: <pkg>plm</pkg>, providing a wide range of within,
-          between, and random-effect methods (among others) along with corrected standard
-	  errors, tests, etc. For panel-corrected standard errors in OLS and GEE models,
-	  see <pkg>geepack</pkg> and <pkg>pcse</pkg>. Estimation of linear models with
-	  multiple group fixed effects is contained in <pkg>lfe</pkg>. Package
-	  <pkg>phtt</pkg> offers the possibility of analyzing panel data with large
-	  dimensions n and T and can be considered when the unobserved heterogeneity
-	  effects are time-varying.</li>
-      <li>Generalized method of moments (GMM) and generalized empirical likelihood (GEL):
+
+      <li><i>Generalized method of moments (GMM) and generalized empirical likelihood (GEL)</i>:
           <pkg>gmm</pkg>.</li>
-      <li>Spatial econometric models: The <view>Spatial</view> view gives details about
+
+      <li><i>Spatial econometric models</i>: The <view>Spatial</view> view gives details about
           handling spatial data, along with information about (regression) modeling. In particular,
 	  spatial regression models can be fitted using <pkg>spdep</pkg> and <pkg>sphet</pkg> (the
 	  latter using a GMM approach). <pkg>splm</pkg> is a package for spatial panel
           models. Spatial probit models are available in <pkg>spatialprobit</pkg>.</li>
-      <li>Linear structural equation models: <pkg>sem</pkg> (including two-stage least squares).</li>
-      <li>Simultaneous equation estimation: <pkg>systemfit</pkg>.</li>
-      <li>Nonparametric kernel methods: <pkg>np</pkg>.</li>
-      <li>Beta regression: <pkg>betareg</pkg> and <pkg>gamlss</pkg>.</li>
-      <li>Truncated (Gaussian) regression: <pkg>truncreg</pkg>.</li>
-      <li>Nonlinear mixed-effect models: <pkg>nlme</pkg> and <pkg>lme4</pkg>.</li>
-      <li>Generalized additive models (GAMs): <pkg>mgcv</pkg>, <pkg>gam</pkg>, <pkg>gamlss</pkg>
+
+      <li><i>Bayesian model averaging (BMA)</i>: A comprehensive toolbox for BMA is provided by
+          <pkg>BMS</pkg> including flexible prior selection, sampling, etc. A different implementation
+          is in <pkg>BMA</pkg> for linear models, generalizable linear models and survival models (Cox regression).</li>
+
+      <li><i>Linear structural equation models</i>: <pkg>lavaan</pkg> and <pkg>sem</pkg>.</li>
+
+      <li><i>Simultaneous equation estimation</i>: <pkg>systemfit</pkg>.</li>
+
+      <li><i>Nonparametric kernel methods</i>: <pkg>np</pkg>.</li>
+
+      <li><i>Linear and nonlinear mixed-effect models</i>: <pkg>nlme</pkg> and <pkg>lme4</pkg>.</li>
+
+      <li><i>Generalized additive models (GAMs)</i>: <pkg>mgcv</pkg>, <pkg>gam</pkg>, <pkg>gamlss</pkg>
           and <pkg>VGAM</pkg>.</li>
-      <li>Mixed data sampling regression: <pkg>midasr</pkg>.</li>
-      <li>Miscellaneous: The packages <pkg>VGAM</pkg>, <pkg>rms</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
+
+      <li><i>Miscellaneous</i>: The packages <pkg>VGAM</pkg>, <pkg>rms</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
 	  handling of (generalized) linear regression models. <pkg>Zelig</pkg> is a unified
 	  easy-to-use interface to a wide range of regression models.</li>
     </ul>
 
-    <p><strong>Basic time series infrastructure</strong></p>
+    <p><strong>Time series data and models</strong></p>
 
     <ul>
       <li>The <view>TimeSeries</view> task view provides much more detailed
-          information. Here, only the most important aspects are briefly mentioned.</li>
-      <li>The class <code>"ts"</code> in package stats is R's standard class for
-          regularly spaced time series (especially annual, quarterly, and monthly data).</li>
-      <li>Time series in <code>"ts"</code> format can be
+          information about both basic time series infrastructure and time series models.
+	  Here, only the most important aspects relating to econometrics are briefly mentioned.
+	  Time series models for financial econometrics (e.g., GARCH, stochastic volatility models, or 
+	  stochastic differential equations, etc.) are described in the <view>Finance</view>.</li>
+
+      <li><i>Infrastructure for regularly spaced time series</i>: The class <code>"ts"</code> in package stats is R's standard class for
+          regularly spaced time series (especially annual, quarterly, and monthly data). It can be
 	  coerced back and forth without loss of information to <code>"zooreg"</code>
-	  from package <pkg>zoo</pkg>. <pkg>zoo</pkg> provides infrastructure for
+	  from package <pkg>zoo</pkg>.</li>
+
+      <li><i>Infrastructure for irregularly spaced time series</i>: <pkg>zoo</pkg> provides infrastructure for
 	  both regularly and irregularly spaced time series (the latter via the class
 	  <code>"zoo"</code>) where the time information can be of arbitrary class.
 	  This includes daily series (typically with <code>"Date"</code> time index)
-	  or intra-day series (e.g., with <code>"POSIXct"</code> time index).</li>
-      <li>Several
-	  other implementations of irregular time series building on the <code>"POSIXct"</code>
-	  time-date class are available in <pkg>its</pkg>, <pkg>tseries</pkg> and 
-	  <pkg>timeSeries</pkg> (previously: fSeries) which are all aimed particularly at
-	  finance applications. See the <view>Finance</view> task view for
-	  more information.</li>
-    </ul>
+	  or intra-day series (e.g., with <code>"POSIXct"</code> time index). An extension
+	  based on <pkg>zoo</pkg> geared towards time series with different kinds of
+	  time index is <pkg>xts</pkg>. Further packages aimed particularly at
+	  finance applications are discussed in the <view>Finance</view> task view.</li>
 
-    <p><strong>Time series modeling</strong></p>
+      <li><i>Classical time series models</i>: Simple autoregressive models can be estimated
+          with <code>ar()</code> and ARIMA modeling and Box-Jenkins-type analysis can be
+	  carried out with <code>arima()</code> (both in the stats package). An enhanced
+	  version of <code>arima()</code> is in <pkg>forecast</pkg>.</li>
 
-    <ul>
-      <li>The <view>TimeSeries</view> task view contains detailed information about time series analysis in R.
-          Time series models for financial econometrics (e.g., GARCH, stochastic volatility models, or 
-	  stochastic differential equations, etc.) are described in the <view>Finance</view>. Here, only a brief overview
-	  of the most important methods for econometrics is given.</li>
-      <li>Classical time series modeling tools are
-          contained in the stats package and include <code>arima()</code> for ARIMA modeling
-	  and Box-Jenkins-type analysis.</li>
-      <li>Fitting linear regression models with AR error terms via OLS is possible
+      <li><i>Linear regression models</i>: A convenience interface to <code>lm()</code>
+          for estimating OLS and 2SLS models based on time series data is <pkg>dynlm</pkg>.
+          Linear regression models with AR error terms via GLS is possible
           using <code>gls()</code> from <pkg>nlme</pkg>.</li>
-      <li>Structural time series models are provided by <code>StructTS()</code> in stats.</li>
-      <li>Filtering and decomposition for time series is available in
-          <code>decompose()</code> and <code>HoltWinters()</code> in stats.</li>
-      <li>Extensions to these
-	  methods, in particular for forecasting and model selection, are provided in
-	  the <pkg>forecast</pkg> package.</li>
-      <li>Miscellaneous time series filters are available in <pkg>mFilter</pkg>.</li>
-      <li>For estimating VAR models, several
-	  methods are available: simple models can be fitted by <code>ar()</code> in stats, more
-	  elaborate models are provided in package <pkg>vars</pkg> and <code>estVARXls()</code> in
-	  <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. A
-	  convenient interface for fitting dynamic regression models via OLS is available
-	  in <pkg>dynlm</pkg>; a different approach
-	  that also works with other regression functions is implemented in <pkg>dyn</pkg>.</li>
-      <li>More advanced dynamic system equations can be fitted using <pkg>dse</pkg>.</li>
-      <li>Various linear and nonlinear autoregressive time series models are provided by <pkg>tsDyn</pkg>.</li>
-      <li>Periodic autoregressive models are provided by <pkg>partsm</pkg>.</li>
-      <li>Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood,
-	  Kalman filtering/smoothing and Bayesian methods).</li>
-      <li>Unit root and cointegration techniques are available in <pkg>urca</pkg>,
-	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>.</li> <!-- , and <pkg>tsDyn</pkg> -->
-      <li>Time series factor analysis is available in <pkg>tsfa</pkg>.</li>
-      <li>Asymmetric price transmission modeling is available in <pkg>apt</pkg>.</li>
+
+      <li><i>Structural time series models</i>: Standard models can be fitted with <code>StructTS()</code> in stats.
+          Further packages are discussed in the <view>TimeSeries</view> task view.</li>
+
+      <li><i>Filtering and decomposition</i>: <code>decompose()</code> and <code>HoltWinters()</code>
+          in stats. The basic function for computing filters (both rolling and autoregressive) is
+	  <code>filter()</code> in stats. Many extensions to these methods, in particular for
+	  forecasting and model selection, are provided in the <pkg>forecast</pkg> package.</li>
+
+      <li><i>Vector autoregression</i>: Simple models can be fitted by <code>ar()</code> in stats, more
+	  elaborate models are provided in package <pkg>vars</pkg> along with suitable diagnostics,
+	  visualizations etc. A Bayesian approach is available in <pkg>MSBVAR</pkg>.</li>
+
+      <li><i>Unit root and cointegration tests</i>: <pkg>urca</pkg>,
+	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>.</li>
+
+      <li><i>Miscellaneous</i>:
+          Threshold and smooth transistion models in <pkg>tsDyn</pkg>.
+	  Time series factor analysis in <pkg>tsfa</pkg>.
+          Asymmetric price transmission models in <pkg>apt</pkg>.</li>
     </ul>
 
     <p><strong>Data sets</strong></p>
 
     <ul>
-      <li>Packages <pkg>AER</pkg> and <pkg>Ecdat</pkg>
+      <li><i>Textbooks and journals</i>: Packages <pkg>AER</pkg> and <pkg>Ecdat</pkg>
 	  contain a comprehensive collections of data sets from various standard econometric
 	  textbooks as well as several data sets from the Journal of
 	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
-	  data archives.</li>
-      <li><pkg>AER</pkg> additionally provides an extensive set of
+	  data archives. <pkg>AER</pkg> additionally provides an extensive set of
 	  examples reproducing analyses from the textbooks/papers, illustrating
 	  various econometric methods.</li>
-      <li><pkg>FinTS</pkg> is the R companion to Tsay's 'Analysis of
+      <li><i>Tsay's 'Analysis of Financial Time Series'</i>: <pkg>FinTS</pkg> is the R companion to Tsay's 'Analysis of
 	  Financial Time Series' (2nd ed., 2005, Wiley) containing data sets, functions
           and script files required to work some of the examples.</li>
-      <li><pkg>CDNmoney</pkg> provides Canadian monetary aggregates.</li>
-      <li><pkg>pwt</pkg> provides the Penn World Table from versions 5.6, 6.x, 7.x. The version 8.x
+      <li><i>Canadian monetary aggregates</i>: <pkg>CDNmoney</pkg>.</li>
+      <li><i>Penn World Table</i>: <pkg>pwt</pkg> provides versions 5.6, 6.x, 7.x. Version 8.x
           data are available in <pkg>pwt8</pkg>.</li>
-      <li>The packages <pkg>expsmooth</pkg>, <pkg>fma</pkg>, and <pkg>Mcomp</pkg> are
+      <li><i>Time series and forecasting data</i>: The packages <pkg>expsmooth</pkg>, <pkg>fma</pkg>, and <pkg>Mcomp</pkg> are
           data packages with time series data
 	  from the books 'Forecasting with Exponential Smoothing: The State Space Approach'
 	  (Hyndman, Koehler, Ord, Snyder, 2008, Springer) and 'Forecasting: Methods and Applications'
 	  (Makridakis, Wheelwright, Hyndman, 3rd ed., 1998, Wiley) and the M-competitions,
 	  respectively.</li>
-      <li>Package <pkg>erer</pkg> contains functions and datasets for the book of
+      <li><i>Empirical Research in Economics</i>: Package <pkg>erer</pkg> contains functions and datasets for the book of
           'Empirical Research in Economics: Growing up with R' (Sun, forthcoming).</li>
-      <li>The package <a href="http://github.com/floswald/psidR/">psidR</a> available from GitHub can build panel data
-          sets from the Panel Study of Income Dynamics (PSID).</li>
+      <li><i>Panel Study of Income Dynamics (PSID)</i>: <pkg>psidR</pkg> can build panel data sets
+          from the Panel Study of Income Dynamics (PSID).</li>
     </ul>
 
     <p><strong>Miscellaneous</strong></p>
@@ -269,16 +344,16 @@
     <pkg>apt</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
+    <pkg>BMA</pkg>
+    <pkg>BMS</pkg>
     <pkg>boot</pkg>
     <pkg>bootstrap</pkg>
+    <pkg>brglm</pkg>
     <pkg>CADFtest</pkg>
     <pkg priority="core">car</pkg>
     <pkg>CDNmoney</pkg>
     <pkg>censReg</pkg>
     <pkg>crch</pkg>
-    <pkg>dlm</pkg>
-    <pkg>dse</pkg>
-    <pkg>dyn</pkg>
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
     <pkg>effects</pkg>
@@ -286,18 +361,26 @@
     <pkg>expsmooth</pkg>
     <pkg>FinTS</pkg>
     <pkg>fma</pkg>
-    <pkg>forecast</pkg>
+    <pkg priority="core">forecast</pkg>
+    <pkg>frm</pkg>
     <pkg>frontier</pkg>
     <pkg>fxregime</pkg>
     <pkg>gam</pkg>
     <pkg>gamlss</pkg>
     <pkg>geepack</pkg>
     <pkg>gmm</pkg>
+    <pkg>gmnl</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
     <pkg>intReg</pkg>
-    <pkg>its</pkg>
+    <pkg>ivbma</pkg>
+    <pkg>ivfixed</pkg>
+    <pkg>ivlewbel</pkg>
+    <pkg>ivpack</pkg>
+    <pkg>ivpanel</pkg>
+    <pkg>ivprobit</pkg>
     <pkg>LARF</pkg>
+    <pkg>lavaan</pkg>
     <pkg>lfe</pkg>
     <pkg>LinRegInteractive</pkg>
     <pkg>lme4</pkg>
@@ -307,7 +390,6 @@
     <pkg>Matrix</pkg>
     <pkg>Mcomp</pkg>
     <pkg>meboot</pkg>
-    <pkg>mFilter</pkg>
     <pkg>mfx</pkg>
     <pkg>mgcv</pkg>
     <pkg>mhurdle</pkg>
@@ -315,25 +397,31 @@
     <pkg>micEconAids</pkg>
     <pkg>micEconCES</pkg>
     <pkg>micEconSNQP</pkg>
-    <pkg>midasr</pkg>
     <pkg>mlogit</pkg>
     <pkg>mnlogit</pkg>
     <pkg>MNP</pkg>
     <pkg>MSBVAR</pkg>
+    <pkg>multiwayvcov</pkg>
     <pkg>mvProbit</pkg>
     <pkg>nlme</pkg>
     <pkg>nnet</pkg>
     <pkg>nonnest2</pkg>
     <pkg>np</pkg>
     <pkg>ordinal</pkg>
-    <pkg>partsm</pkg>
+    <pkg>pampe</pkg>
+    <pkg>panelAR</pkg>
+    <pkg>Paneldata</pkg>
+    <pkg>PANICr</pkg>
     <pkg>pcse</pkg>
+    <pkg>pdR</pkg>
     <pkg>phtt</pkg>
     <pkg priority="core">plm</pkg>
     <pkg>pscl</pkg>
+    <pkg>psidR</pkg>
     <pkg>pwt</pkg>
     <pkg>pwt8</pkg>
     <pkg>quantreg</pkg>
+    <pkg>Rchoice</pkg>
     <pkg>reldist</pkg>
     <pkg>rms</pkg>
     <pkg>RSGHB</pkg>
@@ -352,7 +440,6 @@
     <pkg>strucchange</pkg>
     <pkg>survival</pkg>
     <pkg>systemfit</pkg>
-    <pkg>timeSeries</pkg>
     <pkg>truncreg</pkg>
     <pkg>tsDyn</pkg>
     <pkg priority="core">tseries</pkg>    
@@ -360,6 +447,8 @@
     <pkg priority="core">urca</pkg>
     <pkg>vars</pkg>
     <pkg>VGAM</pkg>
+    <pkg>wahc</pkg>
+    <pkg>xts</pkg>
     <pkg>Zelig</pkg>
     <pkg priority="core">zoo</pkg>    
   </packagelist>
@@ -376,7 +465,6 @@
     <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
     <a href="http://www.springer.com/978-0-387-77316-2">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
     <a href="http://www.worldscibooks.com/economics/6895.html">Book: Hands-On Intermediate Econometrics Using R (Vinod)</a>
-    <a href="http://github.com/floswald/psidR/">psidR Package (GitHub)</a>
 </links>
 
 </CRANTaskView>
