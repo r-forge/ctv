@@ -4,8 +4,8 @@
 
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
-  <maintainer email="hwborchers@googlemail.com">Hans W. Borchers</maintainer>
-  <version>2014-12-07</version>
+  <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
+  <version>2015-04-12</version>
   
   <info>
 
@@ -21,8 +21,8 @@
     the corresponding task views <view>DifferentialEquations</view>, 
     <view>Optimization</view>, and <view>TimeSeries</view>.
     All these task views together will provide a good selection of what is
-    available in R for the area of numerical mathematics.</p>
-    <p>The <view>HighPerformanceComputing</view> task view with its many
+    available in R for the area of numerical mathematics.
+    The <view>HighPerformanceComputing</view> task view with its many
     links for parallel computing may also be of interest.</p>
 
     <p>The task view has been created to provide an overview of the topic. 
@@ -138,14 +138,17 @@
 
     <h4>Differentiation and Integration</h4>
 
-    <p><code>D()</code> and <code>deriv()</code> in base R compute derivatives  
-    of simple expressions symbolically.
+    <p><code>D()</code> and <code>deriv()</code> in base R compute 
+    derivatives of simple expressions symbolically.
     Function <code>integrate()</code> implements an approach for numerically 
     integrating univariate functions in R. It applies adaptive Gauss-Kronrod 
     quadrature and can handle singularities and unbounded domains to a certain 
     extent.</p>
 
     <ul>
+    <li>Package <pkg>Deriv</pkg> provides an extended solution for symbolic 
+        differentiation in R; the user can add custom derivative rules, and the 
+        output for a function will be an executable function again.</li>
     <li><pkg>numDeriv</pkg> sets the standard for numerical differentiation 
         in R, providing numerical gradients, Jacobians, and Hessians, computed 
         by simple finite differences, Richardson extrapolation, or the highly 
@@ -218,6 +221,9 @@
         interpolation based on piecewise rational functions by applying 
         Stineman's algorithm. The interpolating function will be monoton in 
         regions where the specified points change monotonically.</li>
+    <li>Package 'conicfit' provides several methods for geometric and
+    	algebraic circle (and ellipse) fitting. [It is not maintained at the
+    	moment, but the archived version still works fine.]</li>
     </ul>
 
     <h4>Root Finding</h4>
@@ -278,6 +284,9 @@
         libraries. Special numbers and some special functions are included, 
         as well as routines for root finding, integration, and optimization 
         in arbitrary precision.</li>
+    <li><pkg>Brobdingnag</pkg> handles very large numbers by holding their
+        logarithm plus a flag indicating their sign. (An excellent vignette
+        explains how this is done using S4 methods.)</li>
     <li>Package <pkg>rSymPy</pkg> accesses the symbolic algebra system 'SymPy' 
         (written in Python) from R. 
         It supports arbitrary precision computations, linear algebra and 
@@ -324,9 +333,11 @@
     <pkg>appell</pkg>
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
+    <pkg>Brobdingnag</pkg>
     <pkg>combinat</pkg>
     <pkg>contfrac</pkg>
     <pkg>cubature</pkg>
+    <pkg>Deriv</pkg>
     <pkg>eigeninv</pkg>
     <pkg>elliptic</pkg>
     <pkg>expm</pkg>
