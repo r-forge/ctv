@@ -60,6 +60,9 @@
        <li> The package <pkg>deTestSet</pkg> contains solvers designed for solving 
         very stiff equations.
        </li>
+       <li> The package <pkg>odeintr</pkg> generates and compiles C++ ODE solvers on-the-fly using <pkg>Rcpp</pkg> 
+            and <a href="http://www.boost.org/">Boost</a> <a href="www.odeint.com">odeint</a>.
+       </li>
      </ul>        
     <p><strong>Delay Differential Equations (DDEs)</strong></p> 
      In a DDE, the derivative at a certain time is a function of the variable value at a previous time.
@@ -169,6 +172,7 @@
     <pkg>GillespieSSA</pkg>
     <pkg>mkin</pkg>    
     <pkg>nlmeODE</pkg>
+    <pkg>odeintr</pkg>
     <pkg>PBSddesolve</pkg>
     <pkg>PBSmodelling</pkg>
     <pkg>PKfit</pkg>    
