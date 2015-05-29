@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2015-02-13</version>
+  <version>2015-05-29</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -104,8 +104,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
             scanone()
           </code>
           for genome-wide scans.
-<pkg>qtlbim</pkg>
-          implements Bayesian Interval Mapping for QTL.
 <pkg>wgaim</pkg>
           builds on the <pkg>qtl</pkg> by including functions for the modelling and summary of QTL intervals from the
           full linkage map whilst
@@ -232,7 +230,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     <pkg>pbatR</pkg>
     <pkg>phangorn</pkg>
     <pkg>qtl</pkg>
-    <pkg>qtlbim</pkg>
     <pkg>rmetasim</pkg>
     <pkg>seqinr</pkg>
     <pkg>SNPmaxsel</pkg>
