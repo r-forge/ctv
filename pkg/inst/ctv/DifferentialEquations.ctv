@@ -60,8 +60,8 @@
        <li> The package <pkg>deTestSet</pkg> contains solvers designed for solving 
         very stiff equations.
        </li>
-       <li> The package <pkg>odeintr</pkg> generates and compiles C++ ODE solvers on-the-fly using <pkg>Rcpp</pkg> 
-            and <a href="http://www.boost.org/">Boost</a> <a href="www.odeint.com">odeint</a>.
+       <li> The package <pkg>odeintr</pkg> generates and compiles C++ ODE solvers on the fly using Rcpp
+            and <a href="http://www.boost.org/">Boost</a> <a href="http://www.odeint.com/">odeint</a>.
        </li>
      </ul>        
     <p><strong>Delay Differential Equations (DDEs)</strong></p> 
