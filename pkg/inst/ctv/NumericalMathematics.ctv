@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2015-04-12</version>
+  <version>2015-06-14</version>
   
   <info>
 
@@ -86,8 +86,8 @@
 
     <ul>
     <li>Package <pkg>gsl</pkg> provides an interface to the 'GNU Scientific 
-        Library' that contains implementations of many special functions, for 
-        example the Airy and Bessel functions, elliptic and exponential 
+        Library' that contains implementations of many special functions, 
+        for example the Airy and Bessel functions, elliptic and exponential 
         integrals, the hypergeometric function, Lambert's W function, and
         many more.</li>
     <li>Airy and Bessel functions, for real and complex numbers, are also 
@@ -103,9 +103,11 @@
         computed in <pkg>hypergeo</pkg>, including transformation formulas 
         and special values of the parameters.</li>
     <li>Elliptic and modular functions are available in package 
-        <pkg>elliptic</pkg>, including the Weierstrass P function and Jacobi's 
-        theta functions.
+        <pkg>elliptic</pkg>, including the Weierstrass P function and 
+        Jacobi's theta functions.
         There are tools for visualizing complex functions.</li>
+    <li>Package <pkg>lamW</pkg> implements both real-valued branches of the 
+        Lambert W function (using Rcpp).</li>
     </ul>
 
     <h4>Polynomials</h4>
@@ -186,10 +188,13 @@
         Both packages comprise exact methods for polynomials.</li>
     <li>Package <pkg>polyCub</pkg> holds some routines for numerical 
         integration over polygonal domains in two dimensions.</li>
+    <li>Package <pkg>Pade</pkg> calculates the numerator and denominator 
+        coefficients of the Pade approximation, given the Taylor series 
+        coefficients of sufficient length.</li>
     <li><pkg>features</pkg> extracts features from functional data, such as 
         first and second derivatives, or curvature at critical points, while
-        <pkg>RootsExtremaInflections</pkg> finds roots, extrema and inflection
-        points of curves defined by discrete points.</li>
+        <pkg>RootsExtremaInflections</pkg> finds roots, extrema and 
+        inflection points of curves defined by discrete points.</li>
     </ul>
 
     <h4>Interpolation and Approximation</h4>
@@ -350,6 +355,7 @@
     <pkg>hypergeo</pkg>
     <pkg>irlba</pkg>
     <pkg>ktsolve</pkg>
+    <pkg>lamW</pkg>
     <pkg>magic</pkg>
     <pkg>MASS</pkg>
     <pkg priority="core">Matrix</pkg>
