@@ -369,6 +369,7 @@
     <pkg>onion</pkg>
     <pkg>optR</pkg>
     <pkg>orthopolynom</pkg>
+    <pkg>Pade</pkg>
     <pkg>partitions</pkg>
     <pkg>polyCub</pkg>
     <pkg priority="core">polynom</pkg>
