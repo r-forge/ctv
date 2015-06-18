@@ -277,6 +277,9 @@ This is a commercial server that allows one to store content and retrieve it fro
 <pkg>jSonarR</pkg>: Enables users to access MongoDB by running queries and returning their results in R data frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the <a href="http://www.jsonstudio.com">JSON Studio Gateway</a>, to convert JSON to a tabular format.
 </li>
 <li>
+<pkg>RSocrata</pkg>: Provided with a Socrata dataset resource URL, or a Socrata SoDA web API query, returns an R data frame. Converts dates to POSIX format. Supports CSV and JSON. Manages throttling by Socrata.
+</li>
+<li>
 <pkg>Quandl</pkg>: A package that interacts directly with the <a href="http://www.quandl.com/">Quandl</a> API to offer data in a number of formats usable in R, as well as the ability to upload and search.
 </li>
 <li>
@@ -462,6 +465,9 @@ The <a href="https://github.com/gustavobio/tpl">tpl</a> package, created by Gust
 <pkg>ONETr</pkg> searches and retrieves occupational data from <a href="http://www.onetonline.org/">O*NET Online</a>. Development version on GitHub <a href="https://github.com/eknud/onetr">here</a>.
 </li>
 <li>
+<pkg>pxweb</pkg>: Generic interface for the PX-Web/PC-Axis API. The PX-Web/PC-Axis API is used by organizations such as Statistics Sweden and Statistics Finland to disseminate data. The R package can interact with all PX-Web/PC-Axis APIs to fetch information about the data hierarchy, extract metadata and extract and parse statistics to R data.frame format. <a href="#">Source on GitHub</a>.
+</li>
+<li>
 <pkg>psidR</pkg> Contains functions to download and format longitudinal datasets from the Panel Study of Income Dynamics (PSID).
 </li>
 <li>
@@ -523,6 +529,9 @@ The <ohat>Zillow</ohat> package provides an R interface to the <a href="http://w
 <ul>
 <li>
 <pkg>cgdsr</pkg>: R-Based API for accessing the MSKCC Cancer Genomics Data Server (CGDS).
+</li>
+<li>
+<pkg>rsnps</pkg>: This package is a programmatic interface to various SNP datasets on the web: openSNP, NBCI's dbSNP database, and Broad Institute SNP Annotation and Proxy Search. This package started as a library to interact with openSNP alone, so most functions deal with openSNP.
 </li>
 <li>
 <pkg>chromer</pkg>: A programmatic interface to the <a href="http://ccdb.tau.ac.il/">Chromosome Counts Database</a>. <a href="https://github.com/ropensci/chromer">Source on Github</a>
@@ -718,7 +727,7 @@ The <ohat>Sxslt</ohat> package is an R interface to Dan Veillard's libxslt trans
 
 <ul>
 <li>
-<a href="http://cran.r-project.org/src/contrib/Archive/bigml/">bigml</a>: (archived on CRAN for email bounce) BigML, a machine learning web service.
+<pkg>bigml</pkg>: BigML, a machine learning web service.
 </li>
 <li>
 <pkg>indicoio</pkg>: R-based client for Machine Learning APIs at <a href="http://indico.io">http://indico.io</a>. Wrappers for Positive/Negative Sentiment Analysis, Political Sentiment Analysis, Image Feature Extraction, Facial Emotion Recognition, Facial Feature Extraction, and Language Detection. <a href="https://github.com/redmode/indicoio">Source on Github</a>
@@ -977,6 +986,7 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>anametrix</pkg>
   <pkg>aRxiv</pkg>
   <pkg>BerlinData</pkg>
+  <pkg>bigml</pkg>
   <pkg>blsAPI</pkg>
   <pkg>boilerpipeR</pkg>
   <pkg>cgdsr</pkg>
@@ -1044,6 +1054,7 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>pubmed.mineR</pkg>
   <pkg>pushoverr</pkg>
   <pkg>pvsR</pkg>
+  <pkg>pxweb</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantmod</pkg>
   <pkg>raincpc</pkg>
@@ -1099,6 +1110,8 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>rsdmx</pkg>
   <pkg>RSelenium</pkg>
   <pkg>RSiteCatalyst</pkg>
+  <pkg>RSocrata</pkg>
+  <pkg>rsnps</pkg>
   <pkg>RStars</pkg>
   <pkg>rsunlight</pkg>
   <pkg>rvertnet</pkg>
