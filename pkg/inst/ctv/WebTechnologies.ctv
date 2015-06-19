@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-<version>2015-05-29</version>
+<version>2015-06-19</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -567,9 +567,6 @@ The <a href="https://bitbucket.org/sulab/mygene.r/overview">mygene.r</a> package
 <pkg>googleVis</pkg>: Interface between R and the Google chart tools.
 </li>
 <li>
-<pkg>gooJSON</pkg>: A Google JSON data interpreter for R which contains a suite of helper functions for obtaining data from the Google Maps API JSON objects.
-</li>
-<li>
 <pkg>plotGoogleMaps</pkg>: Plot SP or SPT(STDIF,STFDF) data as HTML map mashup over Google Maps.
 </li>
 <li>
@@ -1018,7 +1015,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>gistr</pkg>
   <pkg>gmailr</pkg>
   <pkg>googleVis</pkg>
-  <pkg>gooJSON</pkg>
   <pkg>govStatJPN</pkg>
   <pkg>GuardianR</pkg>
   <pkg>hoardeR</pkg>
