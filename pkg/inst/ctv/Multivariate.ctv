@@ -322,7 +322,6 @@
     <pkg>MCMCpack</pkg>  
     <pkg>mclust</pkg> 
     <pkg>mda</pkg> 
-    <pkg>MFDA</pkg>
     <pkg>mice</pkg> 
     <pkg>misc3d</pkg>
     <pkg>mitools</pkg>
