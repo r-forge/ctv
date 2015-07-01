@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2015-06-18</version>
+  <version>2015-07-01</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -174,7 +174,7 @@
 	  <bioc>hopach</bioc> (Hierarchical Ordered Partitioning and 
           Collapsing Hybrid) algorithm.    <pkg>kohonen</pkg> provides supervised and unsuperised SOMs 
           for high dimensional spectra or patterns.  <pkg>clusterGeneration</pkg> helps simulate clusters. The <view>Environmetrics</view> 
-          task view also gives a topic-related overview of some clustering techniques.   Model based clustering is available in <pkg>mclust</pkg> and model based clustering for functional data is available in <pkg>MFDA</pkg>.</li>
+          task view also gives a topic-related overview of some clustering techniques.   Model based clustering is available in <pkg>mclust</pkg>.</li>
 
           <li><i>Tree methods:</i>
           Full details on tree methods are given in the <view>MachineLearning</view> task view.   
