@@ -270,7 +270,6 @@
     <pkg>MNP</pkg>
     <pkg>multcomp</pkg> 
     <pkg>multinomRob</pkg>
-    <pkg>mvnmle</pkg>
     <pkg>network</pkg>
     <pkg priority="core">nlme</pkg>
     <pkg>nnet</pkg>
