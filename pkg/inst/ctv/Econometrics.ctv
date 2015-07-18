@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2015-06-10</version>
+  <version>2015-07-18</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -275,9 +275,14 @@
 	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>.</li>
 
       <li><i>Miscellaneous</i>:
-          Threshold and smooth transistion models in <pkg>tsDyn</pkg>.
-	  Time series factor analysis in <pkg>tsfa</pkg>.
-          Asymmetric price transmission models in <pkg>apt</pkg>.</li>
+          <ul>
+          <li><pkg>tsDyn</pkg> - Threshold and smooth transistion models.</li>
+	  <li><pkg>midasr</pkg> - <i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis.</li>
+          <li><pkg>gets</pkg> - GEneral-To-Specific (GETS) model selection for either ARX models with log-ARCH-X errors, or a log-ARCH-X model of the log variance.</li>
+	  <li><pkg>tsfa</pkg> - Time series factor analysis.</li>
+          <li><pkg>apt</pkg> - Asymmetric price transmission models.</li>
+	  </ul>
+	  </li>
     </ul>
 
     <p><strong>Data sets</strong></p>
@@ -372,6 +377,7 @@
     <pkg>gam</pkg>
     <pkg>gamlss</pkg>
     <pkg>geepack</pkg>
+    <pkg>gets</pkg>
     <pkg>glmx</pkg>
     <pkg>gmm</pkg>
     <pkg>gmnl</pkg>
@@ -402,6 +408,7 @@
     <pkg>micEconAids</pkg>
     <pkg>micEconCES</pkg>
     <pkg>micEconSNQP</pkg>
+    <pkg>midasr</pkg>
     <pkg>mlogit</pkg>
     <pkg>mnlogit</pkg>
     <pkg>MNP</pkg>
