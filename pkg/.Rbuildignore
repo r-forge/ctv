@@ -1,1 +1,3 @@
 WISHLIST
+^.*\.Rproj$
+^\.Rproj\.user$
