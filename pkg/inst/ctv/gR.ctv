@@ -4,8 +4,8 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2013-07-26</version>
-  
+  <version>2015-07-31</version>
+
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
   defines a graphical model as follows: <i>A graphical model is a
@@ -18,12 +18,12 @@
   A supplementary view is that graphical models are based on
   exploiting conditional independencies for constructing complex
   stochastic models with a modular structure. That is, a complex
-  stochastic model is built up by simpler building blocks. 
+  stochastic model is built up by simpler building blocks.
 
 
   This task view is a collection of packages intended to supply R code
   to deal with graphical models.
-    
+
   <p>The packages can be roughly structured into the following topics
   (although several of them have functionalities which go across these categories):</p>
 
@@ -31,44 +31,44 @@
   <ul>
 
     <li>
-      <pkg>diagram</pkg>  
+      <pkg>diagram</pkg>
       Visualises simple graphs (networks) based on a transition matrix,
       utilities to plot flow diagrams, visualising webs, electrical
       networks, ...
     </li>
 
     <li>
-      <pkg>dynamicGraph</pkg>   
+      <pkg>dynamicGraph</pkg>
       Interactive graphical tool for manipulating graphs
     </li>
 
     <li>
-      <pkg>giRaph</pkg> 
+      <pkg>giRaph</pkg>
       Supply classes and methods to represent and manipulate graphs
     </li>
 
     <li>
       <bioc>graph</bioc>
-      A package that implements some simple graph handling capabilities.      
+      A package that implements some simple graph handling capabilities.
     </li>
 
     <li>
-      <pkg>gRbase</pkg> 
+      <pkg>gRbase</pkg>
       The gRbase package provides certain general constructs which are used
       by other graphical modelling packages. This includes 1) the
       concept of gmData (graphical meta data), 2) several graph
       algorithms 3) facilities for table operations, 4) functions for
       testing for conditional independence. gRbase also illustrates
-      how hierarchical log-linear models (hllm) may be implemented. 
+      how hierarchical log-linear models (hllm) may be implemented.
     </li>
 
     <li>
-      <pkg>igraph</pkg> 
+      <pkg>igraph</pkg>
       Routines for simple graphs, network analysis.
     </li>
 
     <li>
-      <pkg>mathgraph</pkg> 
+      <pkg>mathgraph</pkg>
       Simple tools for constructing and manipulating objects of class
       mathgraph from the book "S Poetry", available at
       <a href="http://www.burns-stat.com/pages/spoetry.html">
@@ -77,19 +77,19 @@
     </li>
 
     <li>
-      <pkg>network</pkg> 
+      <pkg>network</pkg>
       Tools to create and modify network objects.  The network class can
       represent a range of relational data types, and supports arbitrary
-      vertex/edge/graph attributes. 
+      vertex/edge/graph attributes.
     </li>
 
     <li>
-      <bioc>Rgraphviz</bioc> 
+      <bioc>Rgraphviz</bioc>
       Provides plotting capabilities for R graph objects.
     </li>
 
     <li>
-      <bioc>RBGL</bioc> 
+      <bioc>RBGL</bioc>
       A fairly extensive and comprehensive interface to the graph algorithms contained in the BOOST library.
       (based on graph
       objects from the <bioc>graph</bioc> package).
@@ -97,18 +97,18 @@
 
 
   </ul>
-  
+
 
   <p><strong>Classical models - General purpose packages</strong></p>
   <ul>
 
     <li>
-      <pkg>ggm</pkg> 
+      <pkg>ggm</pkg>
       Fitting graphical Gaussian models.
     </li>
-    
+
     <li>
-      <pkg>gRbase</pkg> 
+      <pkg>gRbase</pkg>
       The gRbase package provides certain general constructs
       which are used by other graphical modelling packages (in
       particular by <pkg>gRain</pkg>).
@@ -117,33 +117,33 @@
       table operations, 4) functions for testing for
       conditional independence. gRbase also illustrates how
       hierarchical log-linear models (hllm) may be
-      implemented. 
-      Link: <a href="http://www.jstatsoft.org/v14/i17/">http://www.jstatsoft.org/v14/i17/</a> 
+      implemented.
+      Link: <a href="http://www.jstatsoft.org/v14/i17/">http://www.jstatsoft.org/v14/i17/</a>
     </li>
 
     <li>
-      <pkg>gRim</pkg> 
+      <pkg>gRim</pkg>
       Implements graphical interaction models for contingency tables
       (i.e. log-linear models) and graphical Gaussian models for the
       multivariate normal data (i.e. covariance selection models) and
-      mixed interaction models. 
+      mixed interaction models.
     </li>
 
     <li>
-      <pkg>gRapHD</pkg> 
+      <pkg>gRapHD</pkg>
       Package for selecting and fitting high-dimensional graphical
       models for discrete, Gaussian, or mixed discrete and Gaussian
-      data. 
+      data.
       Link: <a href="http://www.jstatsoft.org/v37/i01/">http://www.jstatsoft.org/v37/i01/</a>
     </li>
-    
+
 <!--    <li>
-      <pkg>mimR</pkg> 
+      <pkg>mimR</pkg>
       General package for model selection in contingency
       tables, graphical Gaussian models and mixed interaction
       models. The package provides an interface to the MIM
       program and only runs on Windows.
-      Link: <a href="http://www.jstatsoft.org/v11/i06/">http://www.jstatsoft.org/v11/i06/</a>   
+      Link: <a href="http://www.jstatsoft.org/v11/i06/">http://www.jstatsoft.org/v11/i06/</a>
     </li>
 -->
 
@@ -156,50 +156,63 @@
 
 
     <li>
-      <pkg>catnet</pkg> 
+      <pkg>catnet</pkg>
       A package that handles discrete Bayesian network models and provides
-      inference using the frequentist approach 
+      inference using the frequentist approach
     </li>
-    
+
     <li>
-      <pkg>GeneNet</pkg> 
+      <pkg>GeneNet</pkg>
       Modeling and Inferring Gene Networks. GeneNet
       is a package for analyzing gene expression (time series) data with
       focus on the inference of gene networks.
     </li>
 
     <li>
-      <pkg>parcor</pkg> 
+      <pkg>parcor</pkg>
       The package estimates the matrix of partial correlations based on different regularized
       regression methods: lasso, adaptive lasso, PLS, and Ridge Regression. In addition, the package
       provides model selection for lasso, adaptive lasso and Ridge
-      regression based on 
+      regression based on
       cross-validation.
     </li>
 
     <li>
-      <pkg>gRc</pkg> 
+      <pkg>gRc</pkg>
       Inference in graphical Gaussian models with edge and vertex
       symmetries (Graphical Gaussian models with colours).
-      Link: <a href="http://www.jstatsoft.org/v23/i06/">http://www.jstatsoft.org/v23/i06/</a>   
+      Link: <a href="http://www.jstatsoft.org/v23/i06/">http://www.jstatsoft.org/v23/i06/</a>
     </li>
 
     <li>
-      <pkg>lcd</pkg> 
-      Learn Chain graphs via Decomposition. 
+      <pkg>lcd</pkg>
+      Learn Chain graphs via Decomposition.
       Functions for learning chain graphs (and as a special case, Bayesian
-      networks) via the decomposition approach.       
+      networks) via the decomposition approach.
     </li>
 
     <li>
-      <pkg>pcalg</pkg> 
+      <pkg>pcalg</pkg>
       Standard and robust estimation of the skeleton (ugraph) and the equivalence class
       of a Directed Acyclic Graph (DAG) via the PC-Algorithm. The equivalence class is
       represented by its (unique) Completed Partially Directed Acyclic Graph (CPDAG).
     </li>
 
     <li>
-      <bioc>qpgraph</bioc> 
+      <pkg>qp</pkg>
+      This package is deprecated and it is now only a stub for the newer
+      version called qpgraph available through the Bioconductor
+      project. The q-order partial correlation graph search algorithm,
+      q-partial, or qp, algorithm for short, is a robust procedure for
+      structure learning of undirected Gaussian graphical Markov
+      models from "small n, large p" data, that is, multivariate
+      normal data coming from a number of random variables p larger
+      than the number of multidimensional data points n as in the case
+      of, e.g., microarray data.
+    </li>
+
+    <li>
+      <bioc>qpgraph</bioc>
       q-order partial correlation graphs, or qp-graphs for short, are
       undirected Gaussian graphical Markov models that represent
       q-order partial correlations. They are useful for learning
@@ -212,18 +225,34 @@
 
 
     <li>
-      <pkg>QUIC</pkg> 
+      <pkg>QUIC</pkg>
       Regularized sparse inverse covariance matrix estimation. Use
       Newton's method and coordinate descent to solve the regularized
-      inverse covariance matrix estimation problem. 
+      inverse covariance matrix estimation problem.
     </li>
 
     <li>
-      <pkg>SIN</pkg> 
+      <pkg>SIN</pkg>
       This package provides routines to perform SIN model selection as
       described in Drton and Perlman (2004).  The selected models are
-      represented in the format of the 'ggm' package, which allows in 
-      particular parameter estimation in the selected model. 
+      represented in the format of the 'ggm' package, which allows in
+      particular parameter estimation in the selected model.
+    </li>
+
+
+    <li>
+      <pkg>networkDynamic</pkg>
+	  Dynamic Extensions for Network  Objects. Simple interface routines to facilitate the
+      handling of network objects with complex intertemporal
+      data. "networkDynamic" is a part of the "statnet" suite of
+      packages for network analysis.
+    </li>
+
+    <li>
+      <pkg>ndtv</pkg> Network Dynamic Temporal Visualizations. Renders
+      dynamic network data from "networkDynamic" objects as animated
+      movies or other representations of relational structure and node
+      attributes that change over time.
     </li>
 
 
@@ -233,13 +262,13 @@
   <ul>
 
     <li>
-      <pkg>abn</pkg> 
+      <pkg>abn</pkg>
       A graphical modelling formulation is used to construct Bayesian
-      regression models for analyses of multivariate data.  
+      regression models for analyses of multivariate data.
     </li>
 
     <li>
-      <pkg>bnlearn</pkg> 
+      <pkg>bnlearn</pkg>
       Bayesian network structure learning via constraint-based (also known as
       'conditional independence') and score-based algorithms. This package implements the
       Grow-Shrink (GS) algorithm, the Incremental Association (IAMB) algorithm, the
@@ -252,7 +281,7 @@
     </li>
 
     <li>
-      <pkg>deal</pkg> 
+      <pkg>deal</pkg>
       Learning Bayesian networks with mixed (discrete and continuous) variables.
     </li>
 
@@ -262,25 +291,28 @@
       independence networks, also known as probabilistic
       expert systems (which includes Bayesian networks as
       a special case).
-      Link: <a href="http://www.jstatsoft.org/v46/i10/">http://www.jstatsoft.org/v46/i10/</a>   
+      Link: <a href="http://www.jstatsoft.org/v46/i10/">http://www.jstatsoft.org/v46/i10/</a>
     </li>
 
     <li>
-      <rforge>RHugin</rforge>
-      The Hugin Decision Engine (HDE) is commercial software produced by 
+      <pkg>RHugin</pkg>
+      The Hugin Decision Engine (HDE) is commercial software produced by
       HUGIN EXPERT A/S for building and making inference from Bayesian
-      belief networks. The <rforge>RHugin</rforge> package (available from R-Forge, not CRAN) provides a suite of
+      belief networks. The RHugin package provides a suite of
       functions allowing the HDE to be controlled from within the R
-      environment for statistical computing. The <rforge>RHugin</rforge> package can
+      environment for statistical computing. The RHugin package can
       thus be used to build Bayesian belief networks, enter and
       propagate evidence, and to retrieve beliefs. Additionally, the
-      <rforge>RHugin</rforge> package can read and write hkb and NET files, making it
-      easy to work simultaneously with both the <rforge>RHugin</rforge> package and the
+      RHugin package can read and write hkb and NET files, making it
+      easy to work simultaneously with both the RHugin package and the
       Hugin GUI. A licensed copy of the HDE (or the trial version) is
-      required for the <rforge>RHugin</rforge> package to function, hence the target
+      required for the RHugin package to function, hence the target
       audience for the package is Hugin users who would like to take
-      advantage of the statistical and programatic capabilities of R.  
+      advantage of the statistical and programatic capabilities of R.
+      Notice: RHugin is NOT on CRAN.
+      Link: <a href="http://rhugin.r-forge.r-project.org/">http://rhugin.r-forge.r-project.org/</a>
     </li>
+
 
   </ul>
 
@@ -289,9 +321,9 @@
   <ul>
 
     <li>
-      <pkg>bayesmix</pkg> 
+      <pkg>bayesmix</pkg>
       Bayesian mixture models of univariate Gaussian distributions using
-      JAGS. 
+      JAGS.
     </li>
 
     <li>
@@ -301,20 +333,20 @@
       procedures for complex models using data cloning and Bayesian
       Markov chain Monte Carlo methods with support for JAGS, WinBUGS
       and OpenBUGS. Parallel MCMC computation is supported and can
-      result in considerable speed-up. 
+      result in considerable speed-up.
     </li>
 
     <li>
-      <pkg>boa</pkg> 
+      <pkg>boa</pkg>
       boa: Bayesian Output Analysis Program (BOA) for MCMC. A
       menu-driven program and library of functions for carrying out
       convergence diagnostics and statistical and graphical analysis of
-      Markov chain Monte Carlo sampling output. 
+      Markov chain Monte Carlo sampling output.
     </li>
 
     <li>
-      <pkg>BRugs</pkg> 
-      BRugs: R interface to the OpenBUGS MCMC software. 
+      <pkg>BRugs</pkg>
+      BRugs: R interface to the OpenBUGS MCMC software.
       Fully-interactive R interface to the OpenBUGS software for Bayesian
       analysis using MCMC sampling. Runs natively and stably in 32-bit
       R under Windows. Versions running on Linux and on 64-bit R under
@@ -322,50 +354,50 @@
     </li>
 
     <li>
-      <pkg>coda</pkg> 
+      <pkg>coda</pkg>
       coda: Output analysis and diagnostics for MCMC.
       Output analysis and diagnostics for Markov Chain Monte Carlo simulations.
     </li>
 
     <li>
-      <pkg>ergm</pkg> 
+      <pkg>ergm</pkg>
       ergm: Fit, Simulate and Diagnose Exponential-Family Models for
       Networks.
       An integrated set of tools to analyze and simulate networks based on
       exponential-family random graph models (ERGM). "ergm" is a part of
-      the <a href="http://statnet.org/">statnet</a> suite of packages for network analysis. 
+      the <a href="http://statnet.org/">statnet</a> suite of packages for network analysis.
     </li>
 
     <li>
-      <pkg>R2OpenBUGS</pkg> 
-      R2OpenBUGS: Running OpenBUGS from R. 
+      <pkg>R2OpenBUGS</pkg>
+      R2OpenBUGS: Running OpenBUGS from R.
       Using this package, it is possible to call a BUGS model, summarize
       inferences and convergence in a table and graph, and save the
-      simulations in arrays for easy access in R. 
+      simulations in arrays for easy access in R.
     </li>
 
     <li>
-      <pkg>R2WinBUGS</pkg> 
-      Running WinBUGS and OpenBUGS from R / S-PLUS. 
+      <pkg>R2WinBUGS</pkg>
+      Running WinBUGS and OpenBUGS from R / S-PLUS.
       Using this package, it is possible to call a BUGS model, summarize
       inferences and convergence in a table and graph, and save the
       simulations in arrays for easy access in R / S-PLUS. In S-PLUS,
       the openbugs functionality and the windows emulation functionality
-      is not yet available. 
+      is not yet available.
     </li>
 
     <li>
-    <pkg>rbugs</pkg> 
+    <pkg>rbugs</pkg>
     Fusing R and OpenBugs.
     Functions to prepare files needed for running BUGS in batch-mode, and
     running BUGS from R. Support for Linux and Windows systems with
-    OpenBugs is emphasized. 
+    OpenBugs is emphasized.
     </li>
 
     <li>
-    <pkg>rjags</pkg> 
+    <pkg>rjags</pkg>
     rjags: Bayesian graphical models using MCMC.
-    Interface to the JAGS MCMC library. 
+    Interface to the JAGS MCMC library.
     </li>
 
   </ul>
@@ -376,7 +408,7 @@
     <pkg>abn</pkg>
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
-    <pkg>boa</pkg> 
+    <pkg>boa</pkg>
     <pkg>BRugs</pkg>
     <pkg>catnet</pkg>
     <pkg>coda</pkg>
@@ -392,19 +424,21 @@
     <pkg>gRapHD</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRc</pkg>
-    <pkg>gRim</pkg> 
-    <pkg>igraph</pkg> 
-    <pkg>lcd</pkg> 
+    <pkg>gRim</pkg>
+    <pkg>igraph</pkg>
+    <pkg>lcd</pkg>
     <pkg>mathgraph</pkg>
     <pkg>network</pkg>
-    <pkg>parcor</pkg> 
-    <pkg>pcalg</pkg> 
+    <pkg>parcor</pkg>
+    <pkg>pcalg</pkg>
+    <pkg>qp</pkg>
     <pkg>QUIC</pkg>
+    <pkg>RHugin</pkg>
     <pkg>SIN</pkg>
-    <pkg>R2OpenBUGS</pkg> 
+    <pkg>R2OpenBUGS</pkg>
     <pkg>R2WinBUGS</pkg>
     <pkg>rbugs</pkg>
-    <pkg>rjags</pkg> 
+    <pkg>rjags</pkg>
   </packagelist>
 
   <links>
@@ -413,7 +447,6 @@
     <bioc>qpgraph</bioc>
     <bioc>RBGL</bioc>
     <bioc>Rgraphviz</bioc>
-    <rforge>RHugin</rforge>
     <a href="http://www.Bioconductor.org/">Bioconductor</a>
     <a href="http://mcmc-jags.sourceforge.net/">JAGS</a>
     <a href="http://www.openbugs.info/w/">OpenBUGS</a>
@@ -422,6 +455,8 @@
     <a href="https://code.google.com/p/bnt/">Bayes Net Toolbox for MATLAB</a>
     <a href="http://www.phil.cmu.edu/projects/tetrad/">TETRAD</a>
     <a href="http://www.stats.bris.ac.uk/~peter/Grappa/">Grappa</a>
+    <a href="http://rhugin.r-forge.r-project.org/">RHugin</a>
+
   </links>
 
 </CRANTaskView>
