@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2015-07-31</version>
+  <version>2015-08-08</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -150,9 +150,15 @@
   </ul>
 
 
-  <p><strong>Miscellaneous: Model search, specialized types of models etc.</strong></p>
+  <p><strong>Miscellaneous: Model search, structure learning, specialized types of models etc.</strong></p>
   <ul>
 
+
+    <li>
+      <pkg>BDgraph</pkg>
+      A package that handles discrete Bayesian network models and provides
+      inference using the frequentist approach.
+    </li>
 
 
     <li>
@@ -199,7 +205,7 @@
     </li>
 
     <li>
-      <pkg>qp</pkg>
+      <rforge>qp</rforge>
       This package is deprecated and it is now only a stub for the newer
       version called qpgraph available through the Bioconductor
       project. The q-order partial correlation graph search algorithm,
@@ -295,7 +301,7 @@
     </li>
 
     <li>
-      <pkg>RHugin</pkg>
+      <rforge>RHugin</rforge>
       The Hugin Decision Engine (HDE) is commercial software produced by
       HUGIN EXPERT A/S for building and making inference from Bayesian
       belief networks. The RHugin package provides a suite of
@@ -409,6 +415,7 @@
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
     <pkg>boa</pkg>
+    <pkg>BDgraph</pkg>
     <pkg>BRugs</pkg>
     <pkg>catnet</pkg>
     <pkg>coda</pkg>
@@ -428,12 +435,12 @@
     <pkg>igraph</pkg>
     <pkg>lcd</pkg>
     <pkg>mathgraph</pkg>
+    <pkg>ndtv</pkg>
     <pkg>network</pkg>
+    <pkg>networkDynamic</pkg>
     <pkg>parcor</pkg>
     <pkg>pcalg</pkg>
-    <pkg>qp</pkg>
     <pkg>QUIC</pkg>
-    <pkg>RHugin</pkg>
     <pkg>SIN</pkg>
     <pkg>R2OpenBUGS</pkg>
     <pkg>R2WinBUGS</pkg>
@@ -442,7 +449,9 @@
   </packagelist>
 
   <links>
-    <a href="http://www.R-project.org/gR/">gR homepage and mailing list</a>
+    <a href="http://www.R-project.org/gR/">gR initiative homepage and mailing list</a>
+    <rforge>qp</rforge>
+    <rforge>RHugin</rforge>
     <bioc>graph</bioc>
     <bioc>qpgraph</bioc>
     <bioc>RBGL</bioc>
