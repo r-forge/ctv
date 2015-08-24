@@ -155,9 +155,11 @@
 
 
     <li>
-      <pkg>BDgraph</pkg>
-      A package that handles discrete Bayesian network models and provides
-      inference using the frequentist approach.
+      <pkg>BDgraph</pkg> Bayesian Graph Selection Based on Birth-Death
+      MCMC Approach. Bayesian inference for structure learning in
+      undirected graphical models. The main target is to uncover
+      complicated patterns in multivariate data wherein either
+      continuous or discrete variables.
     </li>
 
 
