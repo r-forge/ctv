@@ -114,7 +114,7 @@
       <li><i>Fraction and proportion responses</i>: Fractional response models are in <pkg>frm</pkg>.
           Beta regression for responses in (0, 1) is in <pkg>betareg</pkg> and <pkg>gamlss</pkg>.</li>
 
-      <li><i>Miscellaneous</i>: Further more refined tools for microecnometrics are provided in
+      <li><i>Miscellaneous</i>: Further more refined tools for microeconometrics are provided in
 	  the <pkg>micEcon</pkg> family of packages: Analysis with
 	  Cobb-Douglas, translog, and quadratic functions is in <pkg>micEcon</pkg>;
 	  the constant elasticity of scale (CES) function is in <pkg>micEconCES</pkg>;
