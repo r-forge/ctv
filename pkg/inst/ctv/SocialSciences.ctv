@@ -12,8 +12,9 @@
 	
     <p><a name="taskviews"><strong>Other Relevant Task Views:</strong></a></p>
 		
-	 <p> 	
+    <p> 	
 		Beyond the base and contributed packages, many of the methods commonly employed in the social sciences are covered extensively in other CRAN task views, including the following. I will try to minimize duplicating information present in these other task views, given here in alphabetical order.
+    </p> 
 		<ul>
 			<li>
 				<view>Bayesian</view>: Methods of Bayesian inference in a variety of settings of interest to social scientists, including mixed-effects models.
@@ -46,6 +47,7 @@
 				<view>TimeSeries</view>: Methods for representing, manipulating, visualizing, and modeling time-series data, including time-series regression methods.
 			</li>	
 		</ul>
+    <p> 
 		It is noteworthy that this enumeration includes about a third of the CRAN task views. Moreover, there are other task views of potential interest to social scientists (such as the <view>Graphics</view> task view on statistical graphics); I suggest that you look at the <a href="https://cran.r-project.org/web/views/">list of all task views on CRAN</a>.
     </p> 
     
