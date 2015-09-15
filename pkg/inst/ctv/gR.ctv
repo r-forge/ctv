@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2015-08-08</version>
+  <version>2015-09-15</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -175,6 +175,12 @@
       is a package for analyzing gene expression (time series) data with
       focus on the inference of gene networks.
     </li>
+
+    <li>
+      <pkg>huge</pkg> High-dimensional Undirected Graph Estimation.
+    </li>
+
+
 
     <li>
       <pkg>parcor</pkg>
@@ -427,6 +433,7 @@
     <pkg>dynamicGraph</pkg>
     <pkg>ergm</pkg>
     <pkg>GeneNet</pkg>
+    <pkg>huge</pkg>
     <pkg>ggm</pkg>
     <pkg>giRaph</pkg>
     <pkg>gRain</pkg>
