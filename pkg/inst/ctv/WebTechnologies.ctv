@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-<version>2015-07-31</version>
+<version>2015-09-22</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -955,9 +955,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
 <a href="https://github.com/dvanclev/GTrendsR">GTrendsR</a> (Not on CRAN): R functions to perform and display Google Trends queries. Another Github package (<a href="https://github.com/emhart/rGtrends">rGtrends</a>) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers.
 </li>
 <li>
-<pkg>rgauges</pkg>: This package provides functions to interact with the Gaug.es API. Gaug.es is a web analytics service, like Google analytics. You have to have a Gaug.es account to use this package.
-</li>
-<li>
 <pkg>RGA</pkg>: Provides functions for accessing and retrieving data from the <a href="https://developers.google.com/analytics/">Google Analytics APIs</a>. Supports OAuth 2.0 authorization. Also, the <pkg>RGA</pkg> package provides a shiny app to explore data. There is another R package for the same service (<pkg>RGoogleAnalytics</pkg>); see above entry.
 </li>
 <li>
@@ -1087,7 +1084,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>rfisheries</pkg>
   <pkg>RForcecom</pkg>
   <pkg>RGA</pkg>
-  <pkg>rgauges</pkg>
   <pkg>rgbif</pkg>
   <pkg>RGoogleAnalytics</pkg>
   <pkg>RgoogleMaps</pkg>
