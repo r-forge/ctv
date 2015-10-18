@@ -169,6 +169,14 @@
       inference using the frequentist approach
     </li>
 
+
+    <li>
+      <pkg>FBFsearch</pkg>
+			Algorithm for searching the space of Gaussian directed acyclic
+			graphical models through moment fractional Bayes factors
+    </li>
+
+
     <li>
       <pkg>GeneNet</pkg>
       Modeling and Inferring Gene Networks. GeneNet
@@ -256,7 +264,7 @@
 
     <li>
       <pkg>networkDynamic</pkg>
-	  Dynamic Extensions for Network  Objects. Simple interface routines to facilitate the
+			Dynamic Extensions for Network  Objects. Simple interface routines to facilitate the
       handling of network objects with complex intertemporal
       data. "networkDynamic" is a part of the "statnet" suite of
       packages for network analysis.
@@ -432,6 +440,7 @@
     <pkg>diagram</pkg>
     <pkg>dynamicGraph</pkg>
     <pkg>ergm</pkg>
+    <pkg>FBFsearch</pkg>
     <pkg>GeneNet</pkg>
     <pkg>huge</pkg>
     <pkg>ggm</pkg>
