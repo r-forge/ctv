@@ -730,9 +730,6 @@ The <ohat>Sxslt</ohat> package is an R interface to Dan Veillard's libxslt trans
 <pkg>bigml</pkg>: BigML, a machine learning web service.
 </li>
 <li>
-<pkg>indicoio</pkg>: R-based client for Machine Learning APIs at <a href="http://indico.io">http://indico.io</a>. Wrappers for Positive/Negative Sentiment Analysis, Political Sentiment Analysis, Image Feature Extraction, Facial Emotion Recognition, Facial Feature Extraction, and Language Detection. <a href="https://github.com/redmode/indicoio">Source on Github</a>
-</li>
-<li>
 <pkg>MTurkR</pkg>: Access to Amazon Mechanical Turk Requester API via R.
 </li>
 </ul>
@@ -1024,7 +1021,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>httpuv</pkg>
   <pkg>IBrokers</pkg>
   <pkg>imguR</pkg>
-  <pkg>indicoio</pkg>
   <pkg>jSonarR</pkg>
   <pkg>leafletR</pkg>
   <pkg>magrittr</pkg>
