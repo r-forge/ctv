@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-<version>2015-10-29</version>
+<version>2015-11-16</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -673,9 +673,6 @@ The <ohat>Aspell</ohat> package provides an interface to the aspell library for 
 <a href="https://github.com/benmarwick/JSTORr">JSTORr</a> (Not on CRAN): Simple text mining of journal articles from JSTOR's Data for Research service
 </li>
 <li>
-<pkg>ngramr</pkg>: Retrieve and plot word frequencies through time from the Google Ngram Viewer.
-</li>
-<li>
 <pkg>OAIHarvester</pkg>: Harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
 </li>
 <li>
@@ -1028,7 +1025,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>marmap</pkg>
   <pkg>meteoForecast</pkg>
   <pkg>MTurkR</pkg>
-  <pkg>ngramr</pkg>
   <pkg>nhlscrapr</pkg>
   <pkg>OAIHarvester</pkg>
   <pkg>okmesonet</pkg>
