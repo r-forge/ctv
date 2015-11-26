@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2015-06-14</version>
+  <version>2015-11-26</version>
   
   <info>
 
@@ -178,6 +178,10 @@
         <pkg>R2Cuba</pkg>, a wrapper around the C library Cuba.
         With <code>vegas()</code> it includes an approach to Monte Carlo 
         integration based on importance sampling.</li>
+    <li><pkg>mvQuad</pkg> provides methods for generating multivariate grids 
+        that can be used for multivariate integration. These grids will be based 
+        on different quadrature rules such as Newton-Cotes or Gauss quadrature 
+        formulas.</li>
     <li>Package <pkg>SparseGrid</pkg> provides another approach to 
         multivariate integration in high-dimensional spaces. It creates sparse 
         n-dimensional grids that can be used as with quadrature rules.</li>
@@ -363,6 +367,7 @@
     <pkg>MonoPoly</pkg>
     <pkg>mpoly</pkg>
     <pkg>multipol</pkg>
+    <pkg>mvQuad</pkg>
     <pkg>nleqslv</pkg>
     <pkg>numbers</pkg>
     <pkg priority="core">numDeriv</pkg>
