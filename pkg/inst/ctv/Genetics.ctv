@@ -248,7 +248,7 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
     <bioc>multtest</bioc>
     <bioc>qvalue</bioc>
     <a href="http://www.bioconductor.org/packages/2.8/bioc/html/snpMatrix.html">Bioconductor package snpMatrix (2.8)</a>
-    <a href="http://mayoresearch.mayo.edu/mayo/research/biostat/splusfunctions.cfm">
+    <a href="http://www.mayo.edu/research/departments-divisions/department-health-sciences-research/division-biomedical-statistics-informatics/software/s-plus-r-functions">
      R packages from Divison of Biostatistics, Mayo Clinic
     </a> 
     <a href="http://watson.hgen.pitt.edu/register/">
