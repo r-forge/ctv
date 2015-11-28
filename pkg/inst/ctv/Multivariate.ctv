@@ -385,7 +385,7 @@
         <bioc>gpls</bioc>
 	<bioc>hopach</bioc>
         <a href="http://www.ggobi.org">GGobi (interactive dynamic visualisation software, available standalone or as an R library)</a>
-        <a href="http://www.research.att.com/areas/stat/xgobi/">XGobi (interactive, dynamic visulisation software), XGvis (for proximity data / multidimensional scaling)</a>
+        <!-- <a href="http://www.research.att.com/areas/stat/xgobi/">XGobi (interactive, dynamic visulisation software), XGvis (for proximity data / multidimensional scaling)</a> -->
         <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/HmiscMultivar">Hmisc functions related to multivariate analysis</a>
         <a href = "http://www.cuddyvalley.org/psychoR/">Psychometrics in R, Jan de Leeuw</a>
         <a href = "http://www.qhull.org">qhull library</a>
