@@ -147,9 +147,9 @@
       </li>
       <li> The <pkg>deTestSet</pkg> package contains many test problems for differential equations.
       </li> 
-      <li>Package <pkg>pracma</pkg> contains solvers for ODEs, as pure R scripts,
-       useful as a learning tool.
-      </li> 
+      <li>Package <pkg>pracma</pkg> implements several adaptive Runge-Kutta
+        solvers such as ode23, ode23s, ode45, or the Burlisch-Stoer algorithm to obtain
+        numerical solutions to ODEs with higher accuracy.</li>
       <li> The <pkg>PBSmodelling</pkg> package adds GUI functions to models. 
       </li>
       <li>Package <pkg>ecolMod</pkg> contains the figures, data sets and examples from a book 
