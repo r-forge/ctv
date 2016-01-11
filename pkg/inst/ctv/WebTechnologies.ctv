@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-<version>2015-11-16</version>
+<version>2016-01-11</version>
 
 <info> This task view contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -632,9 +632,6 @@ The <ohat>RGoogleDocs</ohat> package is an example of using the RCurl and XML pa
 <pkg>pvsR</pkg>: An R package to interact with the Project Vote Smart API for scientific research.
 </li>
 <li>
-<pkg>recalls</pkg>: Access U.S. Federal Government Recall Data. Development version on GitHub <a href="https://github.com/rOpenGov/recalls">here</a>.
-</li>
-<li>
 <pkg>ropensecretsapi</pkg>: An R package for the OpenSecrets.org web services API.
 </li>
 <li>
@@ -1062,7 +1059,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>RDataCanvas</pkg>
   <pkg>rdatamarket</pkg>
   <pkg>rebird</pkg>
-  <pkg>recalls</pkg>
   <pkg>redcapAPI</pkg>
   <pkg>RefManageR</pkg>
   <pkg>rentrez</pkg>
