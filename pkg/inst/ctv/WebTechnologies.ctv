@@ -326,9 +326,6 @@ This is a commercial server that allows one to store content and retrieve it fro
 <pkg>decctools</pkg>: Provides functions for retrieving energy statistics from the United Kingdom Department of Energy and Climate Change and related data sources. The current version focuses on total final energy consumption statistics at the local authority, MSOA, and LSOA geographies. Methods for calculating the generation mix of grid electricity and its associated carbon intensity are also provided.
 </li>
 <li>
-<pkg>GhcnDaily</pkg>: A package that downloads and processes Global Historical Climatology Network (GHCN) daily data from the National Climatic Data Center (NCDC).
-</li>
-<li>
 <pkg>marmap</pkg>: Import, plot and analyze bathymetric and topographic data from NOAA.
 </li>
 <li>
@@ -1002,7 +999,6 @@ The <ohat>Rflickr</ohat> package provides an R interface to the Flickr photo man
   <pkg>flora</pkg>
   <pkg>ggmap</pkg>
   <pkg>ggvis</pkg>
-  <pkg>GhcnDaily</pkg>
   <pkg>gistr</pkg>
   <pkg>gmailr</pkg>
   <pkg>googlePublicData</pkg>
