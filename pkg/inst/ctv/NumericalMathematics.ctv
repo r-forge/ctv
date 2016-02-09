@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2015-11-26</version>
+  <version>2016-02-09</version>
   
   <info>
 
@@ -63,10 +63,13 @@
     <li><pkg>eigeninv</pkg> generates matrices with a given set of 
         eigenvalues ('inverse eigenvalue problem').</li>
     <li>Package <pkg>rARPACK</pkg>, a wrapper for the ARPACK library, is 
-        typically used to compute only a few eigenvalues/vectors, e.g., a small 
-        number of largest eigenvalues.</li>
+        typically used to compute only a few eigenvalues/vectors, e.g., a 
+        small number of largest eigenvalues.</li>
     <li><pkg>optR</pkg> uses elementary methods of linear algebra (Gauss, LU, 
         CGM, Cholesky) to solve linear systems.</li>
+    <li><pkg>matrixcalc</pkg> contains a collection of functions for matrix 
+        calculations, special matrices, and tests for matrix properties, 
+        e.g., (semi-)positive definiteness.</li>
     <li>Package <pkg>onion</pkg> contains routines for manipulating 
         quaternions and octonians (normed division algebras over the real 
         numbers); quaternions can be useful for handling rotations in 
@@ -179,9 +182,9 @@
         With <code>vegas()</code> it includes an approach to Monte Carlo 
         integration based on importance sampling.</li>
     <li><pkg>mvQuad</pkg> provides methods for generating multivariate grids 
-        that can be used for multivariate integration. These grids will be based 
-        on different quadrature rules such as Newton-Cotes or Gauss quadrature 
-        formulas.</li>
+        that can be used for multivariate integration. These grids will be 
+        based on different quadrature rules such as Newton-Cotes or Gauss 
+        quadrature formulas.</li>
     <li>Package <pkg>SparseGrid</pkg> provides another approach to 
         multivariate integration in high-dimensional spaces. It creates sparse 
         n-dimensional grids that can be used as with quadrature rules.</li>
@@ -195,6 +198,9 @@
     <li>Package <pkg>Pade</pkg> calculates the numerator and denominator 
         coefficients of the Pade approximation, given the Taylor series 
         coefficients of sufficient length.</li>
+    <li><pkg>madness</pkg> allows to compute derivatives of multivariate 
+        functions, defined by matrix operations, via forward differentiation 
+        and the chain rule.</li>
     <li><pkg>features</pkg> extracts features from functional data, such as 
         first and second derivatives, or curvature at critical points, while
         <pkg>RootsExtremaInflections</pkg> finds roots, extrema and 
@@ -230,9 +236,8 @@
         interpolation based on piecewise rational functions by applying 
         Stineman's algorithm. The interpolating function will be monoton in 
         regions where the specified points change monotonically.</li>
-    <li>Package 'conicfit' provides several methods for geometric and
-    	algebraic circle (and ellipse) fitting. [It is not maintained at the
-    	moment, but the archived version still works fine.]</li>
+    <li>Package <pkg>conicfit</pkg> provides several (geometric and algebraic) 
+        algorithms for fitting circles, ellipses, and conics in general.</li>
     </ul>
 
     <h4>Root Finding</h4>
@@ -274,6 +279,8 @@
         continued fractions and partial convergents.</li>
     <li>The <pkg>partitions</pkg> package enumerates additive partitions 
         of integers, including restricted and unequal partitions.</li>
+    <li><pkg>permutations</pkg> treats permutations as invertible functions of 
+        finite sets and includes several mathematical operations on them.</li>
     <li>Package <pkg>combinat</pkg> generates all permutations or all 
         combinations of a certain length of a set of elements (i.e. a vector); 
         it also computes binomial coefficients.</li>
@@ -344,9 +351,10 @@
     <pkg>Bessel</pkg>
     <pkg>Brobdingnag</pkg>
     <pkg>combinat</pkg>
+    <pkg>conicfit</pkg>
     <pkg>contfrac</pkg>
     <pkg>cubature</pkg>
-    <pkg>Deriv</pkg>
+    <pkg priority="core">Deriv</pkg>
     <pkg>eigeninv</pkg>
     <pkg>elliptic</pkg>
     <pkg>expm</pkg>
@@ -355,15 +363,17 @@
     <pkg>gaussquad</pkg>
     <pkg>geigen</pkg>
     <pkg>gmp</pkg>
-    <pkg priority="core">gsl</pkg>
+    <pkg>gsl</pkg>
     <pkg>hypergeo</pkg>
     <pkg>irlba</pkg>
     <pkg>ktsolve</pkg>
     <pkg>lamW</pkg>
+    <pkg>madness</pkg>
     <pkg>magic</pkg>
     <pkg>MASS</pkg>
-    <pkg priority="core">Matrix</pkg>
     <pkg>matlab</pkg>
+    <pkg priority="core">Matrix</pkg>
+    <pkg>matrixcalc</pkg>
     <pkg>MonoPoly</pkg>
     <pkg>mpoly</pkg>
     <pkg>multipol</pkg>
@@ -376,10 +386,11 @@
     <pkg>orthopolynom</pkg>
     <pkg>Pade</pkg>
     <pkg>partitions</pkg>
+    <pkg>permutations</pkg>
     <pkg>polyCub</pkg>
     <pkg priority="core">polynom</pkg>
     <pkg>PolynomF</pkg>
-    <pkg>pracma</pkg>
+    <pkg priority="core">pracma</pkg>
     <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
     <pkg>R2Cuba</pkg>
