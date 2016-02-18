@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2015-07-18</version>
+  <version>2016-02-19</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -210,7 +210,8 @@
           <pkg>BMS</pkg> including flexible prior selection, sampling, etc. A different implementation
           is in <pkg>BMA</pkg> for linear models, generalizable linear models and survival models (Cox regression).</li>
 
-      <li><i>Linear structural equation models</i>: <pkg>lavaan</pkg> and <pkg>sem</pkg>.</li>
+      <li><i>Linear structural equation models</i>: <pkg>lavaan</pkg> and <pkg>sem</pkg>.
+          See also the <view>Psychometrics</view> task view for more details.</li>
 
       <li><i>Simultaneous equation estimation</i>: <pkg>systemfit</pkg>.</li>
 
@@ -472,6 +473,7 @@
   <links>
     <view>Finance</view>
     <view>Optimization</view>
+    <view>Psychometrics</view>
     <view>SocialSciences</view>
     <view>Spatial</view>
     <view>TimeSeries</view>
