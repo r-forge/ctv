@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2016-02-19</version>
+  <version>2016-04-04</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -312,6 +312,7 @@
           'Empirical Research in Economics: Growing up with R' (Sun, forthcoming).</li>
       <li><i>Panel Study of Income Dynamics (PSID)</i>: <pkg>psidR</pkg> can build panel data sets
           from the Panel Study of Income Dynamics (PSID).</li>
+      <li>US state- and county-level panel data: <pkg>rUnemploymentData</pkg>.</pkg>
     </ul>
 
     <p><strong>Miscellaneous</strong></p>
@@ -439,6 +440,7 @@
     <pkg>reldist</pkg>
     <pkg>rms</pkg>
     <pkg>RSGHB</pkg>
+    <pkg>rUnemploymentData</pkg>
     <pkg>sampleSelection</pkg>
     <pkg priority="core">sandwich</pkg>
     <pkg>segmented</pkg>
