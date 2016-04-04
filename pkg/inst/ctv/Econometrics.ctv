@@ -312,7 +312,7 @@
           'Empirical Research in Economics: Growing up with R' (Sun, forthcoming).</li>
       <li><i>Panel Study of Income Dynamics (PSID)</i>: <pkg>psidR</pkg> can build panel data sets
           from the Panel Study of Income Dynamics (PSID).</li>
-      <li>US state- and county-level panel data: <pkg>rUnemploymentData</pkg>.</pkg>
+      <li>US state- and county-level panel data: <pkg>rUnemploymentData</pkg>.</li>
     </ul>
 
     <p><strong>Miscellaneous</strong></p>
