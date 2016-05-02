@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2015-09-13</version>
+  <version>2016-05-02</version>
   
   <info> 
   
@@ -175,7 +175,7 @@
           </li>
  
           <li>
-          <i>Propensity Scores and Matching:</i> See the <pkg>Matching</pkg>, <pkg>MatchIt</pkg>, <pkg>optmatch</pkg>, and <pkg>PSAgraphics</pkg> packages, and the <code>matching</code> function in the <pkg>arm</pkg> package (associated with Gelman and Hill,<i>Data Analysis Using Regression and Multilevel/Hierarchical Models,</i> Cambridge, 2007).
+          <i>Propensity Scores and Matching:</i> See the <pkg>Matching</pkg>, <pkg>MatchIt</pkg>, and <pkg>PSAgraphics</pkg> packages, and the <code>matching</code> function in the <pkg>arm</pkg> package (associated with Gelman and Hill,<i>Data Analysis Using Regression and Multilevel/Hierarchical Models,</i> Cambridge, 2007).
           </li> 
 		  
 		  <li>
@@ -285,7 +285,6 @@
     <pkg priority="core">nnet</pkg>
 	<pkg>norm</pkg>
 	<pkg>np</pkg>
-    <pkg>optmatch</pkg>
 	<pkg>PAFit</pkg>
     <pkg>pan</pkg>
     <pkg>perturb</pkg>
