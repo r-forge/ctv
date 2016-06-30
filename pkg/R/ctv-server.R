@@ -134,6 +134,7 @@ read.ctv <- function(file)
     rval <- t(sapply(XML::xmlChildren(x$packagelist), package1))
     colnames(rval) <- NULL
     rownames(rval) <- NULL
+    if(NCOL(rval) < 2L) stop("packagelist needs to contain at least one pkg")
     rval <- data.frame(name = I(rval[,1]), core = rval[,2] == "core")
     rval[order(tolower(rval[,1])), ]
   }
@@ -338,12 +339,10 @@ repos_update_views <- function(repos = ".",
 check_ctv_packages <- function(file, repos = TRUE, ...)
 {
   pkg_list <- read.ctv(file)$packagelist[, 1]
-  pkg_info <- unique(sapply(
-      XML::getNodeSet(
-        XML::xmlTreeParse(file, useInternalNodes = TRUE),
-      "//*/pkg"),
-    XML::xmlValue))
-  
+  subdoc <- XML::xmlDoc(XML::getNodeSet(XML::xmlTreeParse(file, useInternalNodes = TRUE), "//info")[[1L]])
+  pkg_info <- unique(unlist(XML::xpathApply(subdoc, "//pkg", XML::xmlValue)))
+  XML::free(subdoc)
+
   rval <- list(
     "Packages in <info> but not in <packagelist>" = pkg_info[!(pkg_info %in% pkg_list)],
     "Packages in <packagelist> but not in <info>" = pkg_list[!(pkg_list %in% pkg_info)],
