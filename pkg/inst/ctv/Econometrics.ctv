@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2016-08-24</version>
+  <version>2016-08-26</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -222,6 +222,8 @@
       <li><i>Generalized additive models (GAMs)</i>: <pkg>mgcv</pkg>, <pkg>gam</pkg>, <pkg>gamlss</pkg>
           and <pkg>VGAM</pkg>.</li>
 
+      <li><i>Extreme bounds analysis</i>: <pkg>ExtremeBounds</pkg>.</li>
+
       <li><i>Miscellaneous</i>: The packages <pkg>VGAM</pkg>, <pkg>rms</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
 	  handling of (generalized) linear regression models. <pkg>Zelig</pkg> is a unified
 	  easy-to-use interface to a wide range of regression models.</li>
@@ -372,6 +374,7 @@
     <pkg>effects</pkg>
     <pkg>erer</pkg>
     <pkg>expsmooth</pkg>
+    <pkg>ExtremeBounds</pkg>
     <pkg>FinTS</pkg>
     <pkg>fma</pkg>
     <pkg priority="core">forecast</pkg>
