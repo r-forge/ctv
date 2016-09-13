@@ -63,7 +63,7 @@ read.ctv <- function(file)
       return(paste0("<tt>", xmlCode(x), "</tt>"))
     if(name == "rforge")
       return(paste0(rforgeprefix,
-                    "<a href=\"http://R-Forge.R-project.org/projects/",
+                    "<a href=\"https://R-Forge.R-project.org/projects/",
                     tolower(xmlCode(x)), "/\"", target,
                     "><span class=\"Rforge\">", xmlCode(x),
                     "</span></a>"))
@@ -190,7 +190,7 @@ ctv2html <- function(x,
             sprintf("  <meta name=\"citation_publication_date\" content=\"%s\" />",
                     x$version),
             ## See <http://www.monperrus.net/martin/accurate+bibliographic+metadata+and+google+scholar>:
-            sprintf("  <meta name=\"citation_public_url\" content=\"http://CRAN.R-project.org/view=%s\" />",
+            sprintf("  <meta name=\"citation_public_url\" content=\"https://CRAN.R-project.org/view=%s\" />",
                     x$name),
             sprintf("  <meta name=\"DC.title\" content=\"%s\" />", title),
             sprintf("  <meta name=\"DC.creator\" content=\"%s\" />",
@@ -198,7 +198,7 @@ ctv2html <- function(x,
             sprintf("  <meta name=\"DC.issued\" content=\"%s\" />",
                     x$version),
             if(reposname == "CRAN")
-            sprintf("  <meta name=\"DC.identifier\" content=\"http://CRAN.R-project.org/view=%s\" />",
+            sprintf("  <meta name=\"DC.identifier\" content=\"https://CRAN.R-project.org/view=%s\" />",
                     x$name),
             "</head>",
 	    "",
