@@ -69,6 +69,7 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
   \item{maintainer}{character, maintainer of the task view.}
   \item{email}{character, valid e-mail address (optional).}
   \item{version}{character, version specified via date in ISO format.}
+  \item{url}{character, valid task view URL (optional).}
   \item{info}{character, HTML code with informations about the task view.}
   \item{packagelist}{data frame with the columns \code{name}
     (character, name of package) and \code{core} (logical, Is priority core?).}

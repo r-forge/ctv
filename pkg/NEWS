@@ -1,3 +1,16 @@
+Changes in Version 0.8-2
+
+  o There is a new optional tag <url> that can be used to display an official
+    task view URL (and insert it into the metainformation tags). For CRAN
+    task views the official URL is used by default.
+
+
+Changes in Version 0.8-1
+
+  o Bug fix in check_ctv_packages(): Packages in <packagelist> but not in <info>
+    were not computed correctly.
+
+
 Changes in Version 0.8-0
 
   o HTML generation improved. Now XHTML 1.0 is produced with both

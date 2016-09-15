@@ -39,9 +39,10 @@ are given below:
 <CRANTaskView>
 
   <name>Econometrics</name>
-  <topic>Computational Econometrics</topic>
+  <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2008-02-15</version>
+  <version>2016-09-14</version>
+  <url>https://CRAN.R-project.org/view=Econometrics</url>
 
   <info>
     Emphasize something <b>important</b> with standard HTML tags,
@@ -63,8 +64,9 @@ are given below:
 \end{verbatim}
 
 The whole document is framed by an opening and closing \verb/<CRANTaskView>/
-tag. Within these, there are six sections: \verb/<name>/, \verb/<topic>/,
-\verb/<maintainer>/, \verb/<info>/, \verb/<packagelist>/ and \verb/<links>/.
+tag. Within these, there are the following sections: \verb/<name>/, \verb/<topic>/,
+\verb/<maintainer>/, \verb/<version>/, \verb/<url>/,
+\verb/<info>/, \verb/<packagelist>/ and \verb/<links>/.
 
 \verb/<name>/ gives the name of the task view. This is used as the identifier
 for installing the view and as the name for the XML file, e.g., \verb/Econometrics.ctv/,
@@ -79,6 +81,8 @@ and \verb/&/ that need to be escaped by their HTML counterparts.)
 with support for specification of an e-mail address.
 
 \verb/<version>/ is specified by a date (in ISO format).
+
+\verb/<url>/ is an optional URL. For official CRAN view URLs, this is added automatically.
 
 \verb/<info>/ should be a short description of the packages that explains
 which packages are useful for which tasks. It can also contain any further
