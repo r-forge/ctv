@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2016-08-26</version>
+  <version>2016-10-05</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -349,6 +349,9 @@
       <li><i>Exchange rate regimes</i>: Methods for inference about exchange
           rate regimes, in particular in a structural change setting, are provided
 	  by <pkg>fxregime</pkg>.</li>
+
+      <li><i>Global value chains</i>: Tools and decompositions for global value
+          chains are in <pkg>gvc</pkg> and <pkg>decompr</pkg>.</li>
     </ul>
 
   </info>
@@ -369,6 +372,7 @@
     <pkg>CDNmoney</pkg>
     <pkg>censReg</pkg>
     <pkg>crch</pkg>
+    <pkg>decompr</pkg>
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
     <pkg>effects</pkg>
@@ -388,6 +392,7 @@
     <pkg>glmx</pkg>
     <pkg>gmm</pkg>
     <pkg>gmnl</pkg>
+    <pkg>gvc</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
     <pkg>intReg</pkg>
