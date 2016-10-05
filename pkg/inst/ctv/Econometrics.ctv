@@ -353,7 +353,8 @@
       <li><i>Global value chains</i>: Tools and decompositions for global value
           chains are in <pkg>gvc</pkg> and <pkg>decompr</pkg>.</li>
 
-      <li><i>Regression discontinuity design</i>: Available in <pkg>rdd</pkg>.</li>
+      <li><i>Regression discontinuity design</i>: A variety of methods are provided in
+          the <pkg>rdd</pkg> and <pkg>rddtools</pkg> packages.</li>
     </ul>
 
   </info>
@@ -450,6 +451,7 @@
     <pkg>quantreg</pkg>
     <pkg>Rchoice</pkg>
     <pkg>rdd</pkg>
+    <pkg>rddtools</pkg>
     <pkg>reldist</pkg>
     <pkg>rms</pkg>
     <pkg>RSGHB</pkg>
