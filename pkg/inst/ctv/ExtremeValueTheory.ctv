@@ -7,28 +7,31 @@
 <version>2016-09-17</version>
 
 <info> 
-<p>Extreme values modelling and estimation are an important challenge in various domains of application. Many CRAN packages exist with different methods and application in different areas.</p>
 
-<p>List of classical books:</p>
-<ul>
- <li><b>Statistical Analysis of Extreme Values
-with Applications to Insurance, Finance, Hydrology and Other Fields</b>
-by R.-D. Reiss M. Thomas (2007)</li> 
-<li><b>Extreme Value Theory: an Introduction</b> by L. de Haan and A. Ferreira (2006) </li>
- <li><b>Statistics of Extremes: Theory and Applications</b> by 
-J. Beirlant, Y. Goegebeur, J. Teugels, J. Segers (2004)</li>
- <li><b>Extreme Values in Finance, Telecommunications, and the Environment </b>
- by B. Finkenstaedt and H. Rootzen in (2004)</li>
- <li> <b>Modelling Extremal Events for Insurance and Finance </b>
- by P. Embrechts, C. Klueppelberg and T. Mikosch
- (1997) </li>
- <li><b>Extreme Values, Regular Variation and Point Processes</b> by S.I. Resnick (1987) </li>
-</ul>
+<p>
+Extreme values modelling and estimation are an important challenge in various domains of application,
+such as environment, hydrology, finance, actuarial science, just to name a few.
+The restriction to the analysis of extreme values may be justified since the extreme part 
+of a sample can be of a great importance. That is, it may exhibit a larger risk potential such as
+high concentration of air pollutants, flood, extreme claim sizes, price shocks in the four 
+previous topics respectively.
+The statistical analysis of extreme may be spread out in many packages depending
+on the topic of application.
+In this task view, we present the packages from a methodological side.</p>
 
+<p>
+Applications of extreme value theory can be found in other task views: 
+for financial and actuarial analysis in the <view>Finance</view> task view, 
+for environmental analysis in the <view>Environmetrics</view> task view.
+General implementation of probability distributions is studied
+in the <view>Distributions</view> task view.
+</p>
 
 <p>The maintainers greatfully acknowledge 
-E. Gilleland, M. Ribatet and A. Stephenson for their review for extreme value analysis packages (2013).  </p>
-<p>If you think information is not accurate or if we have omitted a package or important information that should be mentioned here, please let us know.</p>
+E. Gilleland, M. Ribatet and A. Stephenson for their review for extreme value analysis 
+packages (2013) and  Achim Zeileis for his useful comments.
+
+If you think information is not accurate or if we have omitted a package or important information that should be mentioned here, please let us know.</p>
 
 
 
@@ -141,8 +144,33 @@ E. Gilleland, M. Ribatet and A. Stephenson for their review for extreme value an
           </li>
      </ul>
 
-</info> 
 
+
+
+<h2><a name="References">Classical books and review papers:</a></h2>      
+<ul>
+  <li> E. Gilleland, M. Ribatet and A. Stephenson (2013), 
+  <em>A software review for extreme value analysis,</em> Extremes, 16:103–119 </li>
+<li> R.-D. Reiss M. Thomas (2007),
+<em>Statistical Analysis of Extreme Values
+with Applications to Insurance, Finance, Hydrology and Other Fields,</em>
+Springer </li> 
+<li>L. de Haan and A. Ferreira (2006),
+<em>Extreme Value Theory: an Introduction,</em> Springer </li>
+ <li> J. Beirlant, Y. Goegebeur, J. Teugels, J. Segers (2004),
+ <em>Statistics of Extremes: Theory and Applications,</em> Wiley 
+</li>
+ <li>B. Finkenstaedt and H. Rootzen (2004),
+ <em>Extreme Values in Finance, Telecommunications, and the Environment,</em>
+ Chapman and Hall/CRC </li>
+ <li> P. Embrechts, C. Klueppelberg and T. Mikosch (1997),
+ <em>Modelling Extremal Events for Insurance and Finance,</em>
+ Springer</li>
+ <li>S.I. Resnick (1987),
+ <em>Extreme Values, Regular Variation and Point Processes,</em>
+ Springer.  </li>
+</ul>
+</info> 
 
 
 <packagelist>
