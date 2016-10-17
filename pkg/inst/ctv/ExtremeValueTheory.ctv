@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView> 
 
 <name>ExtremeValueTheory</name> 
 <topic>Extreme Value Theory</topic> 
-<maintainer email="Christophe.Dutang@ensimag.fr">Kevin Jaunatre and Christophe Dutang</maintainer> 
-<version>2016-09-17</version>
+<maintainer email="Christophe.Dutang@ensimag.fr">Kevin Jaunatre, Christophe Dutang</maintainer> 
+<version>2016-10-17</version>
 
 <info> 
 
@@ -34,8 +33,6 @@ packages (2013) and  Achim Zeileis for his useful comments.
 If you think information is not accurate or if we have omitted a package or important information that should be mentioned here, please let us know.</p>
 
 
-
-
 <h2><a name="UnivEVT">Univariate Extreme Value Theory:</a></h2>
 	  <ul>
           <li><h3>Block Maxima approach:</h3>
@@ -61,9 +58,8 @@ If you think information is not accurate or if we have omitted a package or impo
                   <li>The package <pkg>fExtremes</pkg> includes the estimation of stationary models for the GPD by maximum likelihood and probability weighted moments. </li>
                   <li>The package <pkg>lmom</pkg> includes functions to fit probability distributions from GPD to data using the low-order L-moments. </li>
                   <li>The package <pkg>lmomRFA</pkg> extends package <pkg>lmom</pkg> and implements all the major components for regional frequency analysis using L-moments.</li>
-                  <li>Package <pkg>texmex</pkg> provides a univariate extreme value modeling approach for GPD distributions by bootstrap, MCMC simulations and maximum likelihood for parameter estimation.
-                  </li>
-                  <li> The package <pkg>POT</pkg> (yet removed from CRAN) can be installed from source and provides functions for the POT approach. </li>
+                  <li>Package <pkg>texmex</pkg> provides a univariate extreme value modeling approach for GPD distributions by bootstrap, MCMC simulations and maximum likelihood for parameter estimation.</li>
+                  <li> The package POT (<a href="https://CRAN.R-project.org/web/packages/POT/index.html">archived CRAN</a>) can be installed from source and provides functions for the POT approach. </li>
               </ul>
           </li>
           <li><h3>Extremal index estimation approach:</h3>
@@ -149,26 +145,20 @@ If you think information is not accurate or if we have omitted a package or impo
 
 <h2><a name="References">Classical books and review papers:</a></h2>      
 <ul>
-  <li> E. Gilleland, M. Ribatet and A. Stephenson (2013), 
-  <em>A software review for extreme value analysis,</em> Extremes, 16:103–119 </li>
-<li> R.-D. Reiss M. Thomas (2007),
-<em>Statistical Analysis of Extreme Values
-with Applications to Insurance, Finance, Hydrology and Other Fields,</em>
-Springer </li> 
-<li>L. de Haan and A. Ferreira (2006),
-<em>Extreme Value Theory: an Introduction,</em> Springer </li>
- <li> J. Beirlant, Y. Goegebeur, J. Teugels, J. Segers (2004),
- <em>Statistics of Extremes: Theory and Applications,</em> Wiley 
-</li>
- <li>B. Finkenstaedt and H. Rootzen (2004),
- <em>Extreme Values in Finance, Telecommunications, and the Environment,</em>
- Chapman and Hall/CRC </li>
- <li> P. Embrechts, C. Klueppelberg and T. Mikosch (1997),
- <em>Modelling Extremal Events for Insurance and Finance,</em>
- Springer</li>
- <li>S.I. Resnick (1987),
- <em>Extreme Values, Regular Variation and Point Processes,</em>
- Springer.  </li>
+  <li>E. Gilleland, M. Ribatet, A. Stephenson (2013). 
+      A Software Review for Extreme Value Analysis, <em>Extremes</em>, <b>16</b>, 103-119.</li>
+  <li>R.-D. Reiss, M. Thomas (2007).
+      <em>Statistical Analysis of Extreme Values with Applications to Insurance, Finance, Hydrology and Other Fields</em>, Springer-Verlag.</li> 
+  <li>L. de Haan, A. Ferreira (2006).
+      <em>Extreme Value Theory: An Introduction</em>, Springer-Verlag.</li>
+  <li>J. Beirlant, Y. Goegebeur, J. Teugels, J. Segers (2004).
+      <em>Statistics of Extremes: Theory and Applications</em>, John Wiley &amp; Sons.</li>
+  <li>B. Finkenstaedt, H. Rootzen (2004).
+      <em>Extreme Values in Finance, Telecommunications, and the Environment</em>, Chapman &amp; Hall/CRC.</li>
+  <li>P. Embrechts, C. Klueppelberg, T. Mikosch (1997).
+      <em>Modelling Extremal Events for Insurance and Finance</em>, Springer-Verlag.</li>
+  <li>S.I. Resnick (1987).
+      <em>Extreme Values, Regular Variation and Point Processes</em>, Springer-Verlag.</li>
 </ul>
 </info> 
 
@@ -184,7 +174,6 @@ Springer </li>
   <pkg>lmom</pkg>
   <pkg>lmomRFA</pkg>
   <pkg>lmomco</pkg>
-  <pkg>POT</pkg>
   <pkg>RTDE</pkg>
   <pkg>SpatialExtremes</pkg>
   <pkg>texmex</pkg>
