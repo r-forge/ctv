@@ -3,7 +3,7 @@
 <name>ExtremeValueTheory</name> 
 <topic>Extreme Value Theory</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Kevin Jaunatre, Christophe Dutang</maintainer> 
-<version>2016-10-17</version>
+<version>2016-10-19</version>
 
 <info> 
 
@@ -44,7 +44,9 @@ If you think information is not accurate or if we have omitted a package or impo
                   <li>The package <pkg>fExtremes</pkg> provides univariate data processing and modelling. It includes clustering, block maxima identification and exploratory analysis. The estimation of stationary models for the GEV is provided by maximum likelihood and probability weighted moments. </li>
                   <li>The package <pkg>lmom</pkg> has functions to fit probability distributions from GEV distributions to data using the low-order L-moments. </li>
                   <li>The package <pkg>lmomRFA</pkg> extends package <pkg>lmom</pkg> and implements all the major components for regional frequency analysis using L-moments.</li>
-                  <li>Package <pkg>texmex</pkg> provides a univariate extreme value modeling approach for GEV distributions by bootstrap, MCMC simulations and maximum likelihood for parameter estimation.
+                  <li>The package <pkg>texmex</pkg> provides a univariate extreme value modeling approach for GEV distributions by bootstrap, MCMC simulations and maximum likelihood for parameter estimation.
+                  </li>
+                  <li> The package <pkg>ismev</pkg> provides a collection of three functions to fit the GEV (diagnostic plot, MLE, likelihood profile) and follows the book of Coles (2001).
                   </li>
               </ul>
           </li>
@@ -59,7 +61,11 @@ If you think information is not accurate or if we have omitted a package or impo
                   <li>The package <pkg>lmom</pkg> includes functions to fit probability distributions from GPD to data using the low-order L-moments. </li>
                   <li>The package <pkg>lmomRFA</pkg> extends package <pkg>lmom</pkg> and implements all the major components for regional frequency analysis using L-moments.</li>
                   <li>Package <pkg>texmex</pkg> provides a univariate extreme value modeling approach for GPD distributions by bootstrap, MCMC simulations and maximum likelihood for parameter estimation.</li>
-                  <li> The package POT (<a href="https://CRAN.R-project.org/web/packages/POT/index.html">archived CRAN</a>) can be installed from source and provides functions for the POT approach. </li>
+                  <li> 
+                  The POT package  (<a href="https://CRAN.R-project.org/package=POT">archived CRAN</a>) provides multiple estimators of the GPD parameters (MLE, L-Moments, method of median, minimum density power divergence). L-moments diagrams and from the properties of a non-homogeneous Poisson process techniques are provided for the selection of the threshold. </li>
+                  
+                  <li> The package <pkg>ismev</pkg> provides a collection of three functions to fit the GPD (diagnostic plot, MLE over a range of thresholds, likelihood profile) and follows the book of Coles (2OO1).
+                  </li>
               </ul>
           </li>
           <li><h3>Extremal index estimation approach:</h3>
@@ -74,7 +80,11 @@ If you think information is not accurate or if we have omitted a package or impo
           <li><h3>Regression models</h3>
           <ul><li>
               The package <pkg>VGAM</pkg> offers additive modelling for extreme value analysis. The estimation for vector generalised additive models is performed using a backfitting algorithm and employs a penalized likelihood for the smoothing splines. It is the only package known to the authors that performs additive modelling for a range of extreme value analysis. It includes both GEV and GP distributions.
-            </li></ul>
+            </li>
+            
+            <li> The package <pkg>ismev</pkg> provides a collection of functions to fit a point process with explanatory variables (diagnostic plot, MLE) and follows the book of Coles (2001).
+                  </li>
+            </ul>
           </li>
           
           <li><h3>Copula approach:</h3>
@@ -100,6 +110,10 @@ If you think information is not accurate or if we have omitted a package or impo
                   <li> The package <pkg>evd</pkg> implements bivariate threshold modelling using censored likelihood methodology.</li>
                   <li>The single multivariate implementation in the package <pkg>evir</pkg> is a bivariate threshold method.</li>
                   <li> The package <pkg>extremefit</pkg> provides modelization of exceedances over a threshold in the Pareto type tail depending on a time covariate. It provides an adaptive choice of the threshold depending of the covariate. </li>
+                  <li> 
+                  The POT package  (<a href="https://CRAN.R-project.org/package=POT">archived CRAN</a>) provides estimators of the GPD parameters in the bivariate case.
+                  </li>
+                  
               </ul>
           </li>
           <li><h3>Tail dependence coefficient approach:</h3>
@@ -155,6 +169,8 @@ If you think information is not accurate or if we have omitted a package or impo
       <em>Statistics of Extremes: Theory and Applications</em>, John Wiley &amp; Sons.</li>
   <li>B. Finkenstaedt, H. Rootzen (2004).
       <em>Extreme Values in Finance, Telecommunications, and the Environment</em>, Chapman &amp; Hall/CRC.</li>
+  <li>S. Coles (2001).
+      <em>An Introduction to Statistical Modeling of Extreme Values</em>, Springer-Verlag.</li>    
   <li>P. Embrechts, C. Klueppelberg, T. Mikosch (1997).
       <em>Modelling Extremal Events for Insurance and Finance</em>, Springer-Verlag.</li>
   <li>S.I. Resnick (1987).
