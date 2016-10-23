@@ -187,6 +187,7 @@ If you think information is not accurate or if we have omitted a package or impo
   <pkg>extremefit</pkg>
   <pkg>extRemes</pkg>
   <pkg>fExtremes</pkg> 
+  <pkg>ismev</pkg>
   <pkg>lmom</pkg>
   <pkg>lmomRFA</pkg>
   <pkg>lmomco</pkg>
