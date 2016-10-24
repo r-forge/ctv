@@ -96,7 +96,7 @@ hyperlinks to the packages/views.
 Similarly, \verb/<bioc>/, \verb/<ohat>/, \verb/<rforge>/, and \verb/<gcode>/
 can be used to refer to projects on Bioconductor, Omegahat, \textsf{R}-Forge, and Google Code.
 These will be replaced by the appropriate hyperlinks to the project on
-\texttt{http://www.Bioconductor.org/}, \texttt{http://www.Omegahat.org/},
+\texttt{http://www.Bioconductor.org/}, \texttt{http://www.Omegahat.net/},
 \texttt{http://R-Forge.R-project.org/}, and \texttt{http://Code.Google.com/}, respectively.
 Finally, \verb/<code>/ can be used as markup for \textsf{R} code which will 
 simply be set in a typewriter font.
