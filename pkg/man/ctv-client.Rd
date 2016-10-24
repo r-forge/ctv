@@ -62,7 +62,7 @@ installed yet.
 \code{download.views} works exactly as \code{install.views} except that it
 \code{\link{download.packages}} instead of \code{install.packages}.
 
-For a closer description of the arguments see also \code{\link{install.packages}}.
+For a more detailed description of the arguments see also \code{\link{install.packages}}.
 }
 
 \value{
@@ -70,6 +70,12 @@ For a closer description of the arguments see also \code{\link{install.packages}
   available task views whose elements are of class \code{"ctv"}.
   
   \code{install.views} and \code{update.views} have no return value.
+}
+
+\references{
+Zeileis A (2005). CRAN Task Views.
+  \emph{R News}, \bold{5}(1), 39--40.
+  \url{https://CRAN.R-project.org/doc/Rnews/}.
 }
 
 \seealso{\code{\link{install.packages}}}

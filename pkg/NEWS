@@ -1,3 +1,8 @@
+Changes in Version 0.8-3
+
+  o <ohat> packages are now at Omegahat.net rather than Omegahat.org.
+
+
 Changes in Version 0.8-2
 
   o There is a new optional tag <url> that can be used to display an official

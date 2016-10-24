@@ -81,7 +81,7 @@ read.ctv <- function(file)
                     "</span></a>"))
     if(name == "ohat")
       return(paste0(ohatprefix,
-                    "<a href=\"http://www.Omegahat.org/",
+                    "<a href=\"http://www.Omegahat.net/",
                     xmlCode(x), "/\"", target,
                     "><span class=\"Ohat\">", xmlCode(x),
                     "</span></a>", sep = ""))

@@ -76,6 +76,12 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
   \item{links}{character vector, HTML code with links for the task view.}
 }
 
+\references{
+Zeileis A (2005). CRAN Task Views.
+  \emph{R News}, \bold{5}(1), 39--40.
+  \url{https://CRAN.R-project.org/doc/Rnews/}.
+}
+
 \seealso{\code{\link{install.views}}}
 
 \examples{
