@@ -1,7 +1,7 @@
 <CRANTaskView> 
 
-<name>ExtremeValueTheory</name> 
-<topic>Extreme Value Theory</topic> 
+<name>ExtremeValue</name> 
+<topic>Extreme Value Analysis</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Kevin Jaunatre</maintainer> 
 <version>2016-10-19</version>
 
