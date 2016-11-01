@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2016-02-09</version>
+  <version>2016-11-01</version>
   
   <info>
 
@@ -52,6 +52,9 @@
     <li><pkg>SparseM</pkg> provides classes and methods for sparse matrices 
         and for solving linear and least-squares problems in sparse linear 
         algebra</li>
+    <li>Package <pkg>rmumps</pkg> provides a wrapper for the MUMPS library,
+        solving large linear systems of equations applying a parallel sparse
+        direct solver</li>
     <li><pkg>svd</pkg> provides R bindings to state-of-the-art implementations 
         of singular value decomposition (SVD) and eigenvalue/eigenvector 
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
@@ -65,6 +68,8 @@
     <li>Package <pkg>rARPACK</pkg>, a wrapper for the ARPACK library, is 
         typically used to compute only a few eigenvalues/vectors, e.g., a 
         small number of largest eigenvalues.</li>
+    <li>Package <pkg>RSpectra</pkg> interfaces the 'Spectra' library for
+        large-scale eigenvalue decomposition and SVD problems.</li>
     <li><pkg>optR</pkg> uses elementary methods of linear algebra (Gauss, LU, 
         CGM, Cholesky) to solve linear systems.</li>
     <li><pkg>matrixcalc</pkg> contains a collection of functions for matrix 
@@ -236,6 +241,9 @@
         interpolation based on piecewise rational functions by applying 
         Stineman's algorithm. The interpolating function will be monoton in 
         regions where the specified points change monotonically.</li>
+    <li><code>Schumaker()</code> in package <pkg>schumaker</pkg> implements
+        shape-preserving splines, guaranteed to be monotonic resp. concave
+        or convex if the data is monotonic, concave, or convex.</li>
     <li>Package <pkg>conicfit</pkg> provides several (geometric and algebraic) 
         algorithms for fitting circles, ellipses, and conics in general.</li>
     </ul>
@@ -377,6 +385,7 @@
     <pkg>MonoPoly</pkg>
     <pkg>mpoly</pkg>
     <pkg>multipol</pkg>
+    <pkg>rmumps</pkg>
     <pkg>mvQuad</pkg>
     <pkg>nleqslv</pkg>
     <pkg>numbers</pkg>
@@ -403,8 +412,10 @@
     <pkg>RootsExtremaInflections</pkg>
     <pkg>rPython</pkg>
     <pkg>Rserve</pkg>
+	<pkg>RSpectra</pkg>
     <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
+    <pkg>schumaker</pkg>
     <pkg>signal</pkg>
     <pkg>SimplicialCubature</pkg>
     <pkg>SparseGrid</pkg>
@@ -427,11 +438,14 @@
     <a href="http://www.worldscientific.com/worldscibooks/10.1142/7814">
         Hands-On Matrix Algebra Using R</a></span>
     <span>Textbook: 
-    <a href="http://www.ms.unimelb.edu.au/spuRs/">Introduction 
-        to Scientific Programming and Simulation Using R</a></span>
+    <a href="http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html">
+        Introduction to Scientific Programming and Simulation Using R</a></span>
     <span>Textbook:
     <a href="http://www.crcpress.com/product/isbn/9781439884485">
     Numerical Methods in Science and Engineering Using R</a></span>
+    <span>Textbook:
+    <a href="http://www.math.umaine.edu/~hiebeler/comp/matlabR.html">
+    R and MATLAB</a></span>
 
     <a href="http://www.nr.com/aands/">Abramowitz and Stegun. 
         Handbook of Mathematical Functions</a>
