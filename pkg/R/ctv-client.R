@@ -27,7 +27,7 @@ print.ctvlist <- function(x, packagelist = FALSE, ...)
   if(n < 1)
     cat("no views found\n")
   else {
-    for(i in seq(along = x)) {    
+    for(i in seq_along(x)) {    
       cat(paste("---------------\nName: ",
                 x[[i]]$name, "\nTopic: ",
 	        x[[i]]$topic, "\nMaintainer: ",
@@ -74,7 +74,7 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
     if(inherits(x, "try-error")) next else close(viewurl)
 
     ## add repository information    
-    for(j in seq(along = x)) x[[j]]$repository <- repos[i]
+    for(j in seq_along(x)) x[[j]]$repository <- repos[i]
     rval <- c(rval, x)
   }
   class(rval) <- "ctvlist"
@@ -93,7 +93,7 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   if(!inherits(views, "ctvlist")) {
     ## get CRAN views and extract names of available views
     cranviews <- available.views(repos = repos)
-    availnames <- sapply(seq(along = cranviews), function(i) cranviews[[i]]$name)
+    availnames <- sapply(seq_along(cranviews), function(i) cranviews[[i]]$name)
 
     whichviews <- lapply(views, function(z) {
       rval <- which(z == availnames)
@@ -107,7 +107,7 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
 
   ## compute list of unique packages for each repository
   coreOnly <- rep(coreOnly, length.out = length(views)) 
-  pkgs <- lapply(seq(along = views), function(i) {
+  pkgs <- lapply(seq_along(views), function(i) {
     pkgs <- if(!coreOnly[i]) views[[i]]$packagelist$name
       else views[[i]]$packagelist$name[views[[i]]$packagelist$core]
     cbind(pkgs, views[[i]]$repository)
@@ -121,14 +121,14 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
 install.views <- function(views, coreOnly = FALSE, repos = NULL, ...)
 {
   pkgs <- .get_pkgs_from_ctv_or_repos(views = views, coreOnly = coreOnly, repos = repos)
-  for(i in seq(along = pkgs)) install.packages(pkgs[[i]], repos = names(pkgs)[i], ...)    
+  for(i in seq_along(pkgs)) install.packages(pkgs[[i]], repos = names(pkgs)[i], ...)    
   invisible()
 }
 
 download.views <- function(views, destdir, coreOnly = FALSE, repos = NULL, ...)
 {
   pkgs <- .get_pkgs_from_ctv_or_repos(views = views, coreOnly = coreOnly, repos = repos)
-  for(i in seq(along = pkgs)) download.packages(pkgs[[i]], destdir = destdir, repos = names(pkgs)[i], ...)    
+  for(i in seq_along(pkgs)) download.packages(pkgs[[i]], destdir = destdir, repos = names(pkgs)[i], ...)    
   invisible()
 }
 
@@ -136,7 +136,7 @@ update.views <- function(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, 
 {
   pkg_list <- .get_pkgs_from_ctv_or_repos(views = views, coreOnly = coreOnly, repos = repos)
     
-  for(i in seq(along = pkg_list)) {
+  for(i in seq_along(pkg_list)) {
     ## package and repos name(s)
     pkgs <- pkg_list[[i]]
     repos <- names(pkg_list)[i]
