@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2016-11-15</version>
+  <version>2017-01-04</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -302,8 +302,8 @@
 	  Financial Time Series' (2nd ed., 2005, Wiley) containing data sets, functions
           and script files required to work some of the examples.</li>
       <li><i>Canadian monetary aggregates</i>: <pkg>CDNmoney</pkg>.</li>
-      <li><i>Penn World Table</i>: <pkg>pwt</pkg> provides versions 5.6, 6.x, 7.x. Version 8.x
-          data are available in <pkg>pwt8</pkg>.</li>
+      <li><i>Penn World Table</i>: <pkg>pwt</pkg> provides versions 5.6, 6.x, 7.x. Version 8.x and 9.x
+          data are available in <pkg>pwt8</pkg> and <pkg>pwt9</pkg>, respectively.</li>
       <li><i>Time series and forecasting data</i>: The packages <pkg>expsmooth</pkg>, <pkg>fma</pkg>, and <pkg>Mcomp</pkg> are
           data packages with time series data
 	  from the books 'Forecasting with Exponential Smoothing: The State Space Approach'
@@ -450,6 +450,7 @@
     <pkg>psidR</pkg>
     <pkg>pwt</pkg>
     <pkg>pwt8</pkg>
+    <pkg>pwt9</pkg>
     <pkg>quantreg</pkg>
     <pkg>Rchoice</pkg>
     <pkg>rdd</pkg>
