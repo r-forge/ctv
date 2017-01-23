@@ -45,6 +45,9 @@
         Gillespie's "exact" stochastic simulation algorithm (direct method) 
         and several approximate methods.
        </li> 
+       <li> The package <pkg>Sim.DiffProc</pkg> provides functions for simulation of 
+        Itô and Stratonovitch stochastic differential equations.
+       </li> 
      </ul>  
       
     <p><strong>Ordinary Differential Equations (ODEs)</strong></p> 
