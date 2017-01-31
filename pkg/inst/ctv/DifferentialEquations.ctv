@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView>
 
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2015-07-03</version>
+  <version>2017-01-31</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -46,7 +47,7 @@
         and several approximate methods.
        </li> 
        <li> The package <pkg>Sim.DiffProc</pkg> provides functions for simulation of 
-        Itô and Stratonovitch stochastic differential equations.
+        ItÃ´ and Stratonovitch stochastic differential equations.
        </li> 
      </ul>  
       
@@ -186,6 +187,7 @@
     <pkg priority="core">rootSolve</pkg>
     <pkg>scaRabee</pkg>
     <pkg priority="core">sde</pkg>
+    <pkg>Sim.DiffProc</pkg>
     <pkg>simecol</pkg>
   </packagelist>
 
