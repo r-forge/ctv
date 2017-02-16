@@ -20,7 +20,6 @@
   stochastic models with a modular structure. That is, a complex
   stochastic model is built up by simpler building blocks.
 
-
   This task view is a collection of packages intended to supply R code
   to deal with graphical models.
 
@@ -37,6 +36,12 @@
       networks, ...
     </li>
 
+    <li>
+      <pkg>DiagrammeR</pkg>
+      Create Graph Diagrams and Flowcharts Using R
+    </li>
+
+    
     <li>
       <pkg>dynamicGraph</pkg>
       Interactive graphical tool for manipulating graphs
@@ -431,6 +436,7 @@
     <pkg>dclone</pkg>
     <pkg>deal</pkg>
     <pkg>diagram</pkg>
+    <pkg>DiagrammeR</pkg>    
     <pkg>dynamicGraph</pkg>
     <pkg>ergm</pkg>
     <pkg>FBFsearch</pkg>
