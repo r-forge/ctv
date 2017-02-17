@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2017-01-30</version>
+  <version>2017-02-17</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
@@ -154,7 +154,6 @@
     <li><pkg>livechatR</pkg> is a client for the <a href="https://developers.livechatinc.com/rest-api/">LiveChat API</a>.</li>
     <li><pkg>lucr</pkg> performs currency conversions using <a href="https://openexchangerates.org/">Open Exchange Rates</a>.</li>
     <li><a href="https://github.com/stephlocke/mockaRoo">mockaRoo</a> (not on CRAN) uses the <a href="https://www.mockaroo.com/api/docs">MockaRoo API</a> to generate mock or fake data based on an input schema.</li>
-    <li><pkg>nomadlist</pkg> information of relevance to &quot;digital nomads,&quot; use technology in order to work remotely and live an independent and nomadic lifestyle.</li>
     <li><pkg>osi</pkg> (<a href="https://github.com/Ironholds/osi/">GitHub</a>) retrieves open source license data and metadata from <a href="https://api.opensource.org/licenses/" class="uri">https://api.opensource.org/licenses/</a>.</li>
     <li><pkg>randNames</pkg> (<a href="https://github.com/karthik/randNames">GitHub</a>) generates random names and personal identifying information using the <a href="https://randomapi.com/" class="uri">https://randomapi.com/</a> API.</li>
     <li><pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: &quot;Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).&quot; <pkg>RCryptsy</pkg> (<a href="https://github.com/ropensci/RCryptsy">GitHub</a>) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.</li>
@@ -255,7 +254,6 @@
     <pkg>mscstexta4r</pkg>
     <pkg>mscsweblm4r</pkg>
     <pkg>MTurkR</pkg>
-    <pkg>nomadlist</pkg>
     <pkg>oai</pkg>
     <pkg>OAIHarvester</pkg>
     <pkg>openadds</pkg>
