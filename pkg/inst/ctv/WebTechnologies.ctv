@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2017-02-17</version>
+  <version>2017-02-26</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
@@ -134,6 +134,7 @@
     <li><pkg>anametrix</pkg> is a bidirectional connector to the Anametrix API.</li>
     <li><pkg>webreadr</pkg> (<a href="https://github.com/Ironholds/webreadr">GitHub</a>) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.</li>
     <li><pkg>ApacheLogProcessor</pkg> (<a href="https://github.com/diogosmendonca/ApacheLogProcessor">GitHub</a>) can process Apache Web Server log files.</li>
+    <li><pkg>RMixpanel</pkg> provides an interface to many endpoints of Mixpanel's Data Export, Engage and JQL API.</li>    
     </ul>
     <p><strong>Other Web Services</strong></p>
     <ul>
@@ -299,6 +300,7 @@
     <pkg>rjson</pkg>
     <pkg>RJSONIO</pkg>
     <pkg>rLTP</pkg>
+    <pkg>RMixpanel</pkg>
     <pkg>ROAuth</pkg>
     <pkg>Rook</pkg>
     <pkg>ROpenFIGI</pkg>
