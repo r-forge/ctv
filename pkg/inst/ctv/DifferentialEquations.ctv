@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2017-01-31</version>
+  <version>2017-03-09</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -137,7 +137,7 @@
       <li>In the package <pkg>FME</pkg> are functions for inverse modelling (fitting to data), 
        sensitivity analysis, identifiability and Monte Carlo Analysis of DE models.
       </li>
-      <li>The packages <pkg>nlmeODE</pkg> and <pkg>PSM</pkg> have functions for 
+      <li>The package <pkg>nlmeODE</pkg> has functions for 
        mixed-effects modelling using differential equations.
       </li>
       <li> <pkg>mkin</pkg> provides routines for fitting kinetic models with one 
@@ -182,7 +182,6 @@
     <pkg>pomp</pkg>
     <pkg>pracma</pkg>
     <pkg>primer</pkg>
-    <pkg>PSM</pkg>
     <pkg>ReacTran</pkg>
     <pkg priority="core">rootSolve</pkg>
     <pkg>scaRabee</pkg>
