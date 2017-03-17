@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2017-03-06</version>
+  <version>2017-03-17</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -275,7 +275,7 @@
 	  visualizations etc. A Bayesian approach is available in <pkg>MSBVAR</pkg>.</li>
 
       <li><i>Unit root and cointegration tests</i>: <pkg>urca</pkg>,
-	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>.</li>
+	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>. See also <pkg>pco</pkg> for panel cointegration tests.</li>
 
       <li><i>Miscellaneous</i>:
           <ul>
@@ -441,6 +441,7 @@
     <pkg>panelAR</pkg>
     <pkg>Paneldata</pkg>
     <pkg>PANICr</pkg>
+    <pkg>pco</pkg>
     <pkg>pcse</pkg>
     <pkg>pdR</pkg>
     <pkg>pglm</pkg>
