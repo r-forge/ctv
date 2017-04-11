@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2017-03-17</version>
+  <version>2017-04-11</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -143,6 +143,7 @@
           with standard 2SLS functions (see above). Dedicated IV panel data models are provided
 	  by <pkg>ivfixed</pkg> (fixed effects) and <pkg>ivpanel</pkg> (between and random effects).</li>
       <li><i>Miscellaneous</i>:
+          <pkg>REndo</pkg> fits linear models with endogenous regressor using various latent instrumental variable approaches.
           <pkg>ivbma</pkg> estimates Bayesian IV models with conditional Bayes factors.
           <pkg>ivlewbel</pkg> implements the Lewbel approach based on GMM estimation of triangular systems using heteroscedasticity-based IVs.
 	  </li>
@@ -354,7 +355,7 @@
           chains are in <pkg>gvc</pkg> and <pkg>decompr</pkg>.</li>
 
       <li><i>Regression discontinuity design</i>: A variety of methods are provided in
-          the <pkg>rdd</pkg>, <pkg>rddtools</pkg>, and <pkg>rdrobust</pkg> packages.</li>
+          the <pkg>rdd</pkg>, <pkg>rddtools</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.</li>
     </ul>
 
   </info>
@@ -456,8 +457,10 @@
     <pkg>Rchoice</pkg>
     <pkg>rdd</pkg>
     <pkg>rddtools</pkg>
+    <pkg>rdlocrand</pkg>
     <pkg>rdrobust</pkg>
     <pkg>reldist</pkg>
+    <pkg>REndo</pkg>
     <pkg>rms</pkg>
     <pkg>RSGHB</pkg>
     <pkg>rUnemploymentData</pkg>
