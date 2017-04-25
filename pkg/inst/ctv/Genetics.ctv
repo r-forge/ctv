@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2017-03-22</version>
+  <version>2017-04-25</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -25,9 +25,6 @@
           implements classes and methods for representing genotype and haplotype data, and has several
           functions for population genetic analysis (e.g. functions for estimation and testing of 
           Hardy-Weinberg and linkage disequilibria, etc.).
-<pkg>Geneland</pkg>
-          has functions for detecting spatial structures from genetic data
-          within a Bayesian framework via MCMC estimation.
 <pkg>rmetasim</pkg>
           provides an interface to the metasim engine
       for population genetics simulations.
@@ -211,7 +208,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg>dlmap</pkg>
     <pkg priority="core">gap</pkg>
     <pkg>GenABEL</pkg>
-    <pkg>Geneland</pkg>
     <pkg priority="core">genetics</pkg>
     <pkg>hapassoc</pkg>
     <pkg>haplo.ccs</pkg>
