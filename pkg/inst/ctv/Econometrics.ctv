@@ -237,7 +237,7 @@
           information about both basic time series infrastructure and time series models.
 	  Here, only the most important aspects relating to econometrics are briefly mentioned.
 	  Time series models for financial econometrics (e.g., GARCH, stochastic volatility models, or 
-	  stochastic differential equations, etc.) are described in the <view>Finance</view>.</li>
+	  stochastic differential equations, etc.) are described in the <view>Finance</view> task view.</li>
 
       <li><i>Infrastructure for regularly spaced time series</i>: The class <code>"ts"</code> in package stats is R's standard class for
           regularly spaced time series (especially annual, quarterly, and monthly data). It can be
