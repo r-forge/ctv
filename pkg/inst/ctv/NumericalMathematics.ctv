@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2016-11-01</version>
+  <version>2017-07-06</version>
   
   <info>
 
@@ -237,6 +237,16 @@
         and interpolation and approximation of data with rational functions, 
         i.e. in the presence of singularities, in <code>ratinterp()</code> and 
         <code>rationalfit()</code>.</li>
+	<li>The <pkg>interp</pkg> package provides bivariate data interpolation 
+        on regular and irregular grids, either linear or using splines. 
+		Currently the piecewise linear interpolation part is implemented.
+		(It is intended to provide a free replacement for the ACM licensed 
+		<code>akima::interp</code> and <code>tripack::tri.mesh</code> 
+		functions.)</li>
+	<li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
+	    constrained two-dimensional Delaunay triangulation package providing 
+		both triangulation and generation of Voronoi mosaics of irregular 
+		spaced data.</li>
     <li><code>sinterp()</code> in package <pkg>stinepack</pkg> realizes 
         interpolation based on piecewise rational functions by applying 
         Stineman's algorithm. The interpolating function will be monoton in 
@@ -373,6 +383,7 @@
     <pkg>gmp</pkg>
     <pkg>gsl</pkg>
     <pkg>hypergeo</pkg>
+	<pkg>interp</pkg>
     <pkg>irlba</pkg>
     <pkg>ktsolve</pkg>
     <pkg>lamW</pkg>
@@ -425,6 +436,7 @@
     <pkg>stinepack</pkg>
     <pkg>ssvd</pkg>
     <pkg>svd</pkg>
+	<pkg>tripack</pkg>
 
   </packagelist>
   
