@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2017-07-06</version>
+  <version>2017-07-07</version>
   
   <info>
 
@@ -104,7 +104,7 @@
     <li>Package <pkg>pracma</pkg> includes special functions, such as 
         error functions and inverses, incomplete and complex gamma function, 
         exponential and logarithmic integrals, Fresnel integrals, the 
-        polygamma and the Riemann zeta function.</li>
+        polygamma and the Dirichlet and Riemann zeta functions.</li>
     <li><pkg>appell</pkg> computes Gauss' 2F1 and Appell's F1 hypergeometric 
         functions for complex parameters and arguments quite accurately.</li>
     <li>The hypergeometric (and generalized hypergeometric) function, is 
@@ -114,6 +114,13 @@
         <pkg>elliptic</pkg>, including the Weierstrass P function and 
         Jacobi's theta functions.
         There are tools for visualizing complex functions.</li>
+    <li>Package <pkg>expint</pkg> wraps C-functions from the GNU Scientific 
+        Library to calculate exponential integrals and the incomplete Gamma 
+        function, including negative values for its first argument.</li>
+    <li><pkg>fourierin</pkg> computes Fourier integrals of functions of one 
+        and two variables using the Fast Fourier Transform.</li>
+    <li><pkg>logOfGamma</pkg> uses approximations to compute the natural 
+        logarithms of the Gamma function for large values.</li>
     <li>Package <pkg>lamW</pkg> implements both real-valued branches of the 
         Lambert W function (using Rcpp).</li>
     </ul>
@@ -411,20 +418,23 @@
     <pkg priority="core">Deriv</pkg>
     <pkg>eigeninv</pkg>
     <pkg>elliptic</pkg>
+    <pkg>expint</pkg>
     <pkg>expm</pkg>
     <pkg>fastGHQuad</pkg>
     <pkg>feather</pkg>
     <pkg>features</pkg>
     <pkg>findpython</pkg>
+    <pkg>fourierin</pkg>
     <pkg>gaussquad</pkg>
     <pkg>geigen</pkg>
     <pkg>gmp</pkg>
     <pkg>gsl</pkg>
     <pkg>hypergeo</pkg>
-	<pkg>interp</pkg>
+    <pkg>interp</pkg>
     <pkg>irlba</pkg>
     <pkg>ktsolve</pkg>
     <pkg>lamW</pkg>
+    <pkg>logOfGamma</pkg>
     <pkg>madness</pkg>
     <pkg>magic</pkg>
     <pkg>MASS</pkg>
@@ -463,7 +473,7 @@
     <pkg>RootsExtremaInflections</pkg>
     <pkg>rPython</pkg>
     <pkg>Rserve</pkg>
-	<pkg>RSpectra</pkg>
+    <pkg>RSpectra</pkg>
     <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
     <pkg>schumaker</pkg>
@@ -477,7 +487,7 @@
     <pkg>stinepack</pkg>
     <pkg>ssvd</pkg>
     <pkg>svd</pkg>
-	<pkg>tripack</pkg>
+    <pkg>tripack</pkg>
     <pkg>XR</pkg>
     <pkg>XRJulia</pkg>
     <pkg>XRPython</pkg>
