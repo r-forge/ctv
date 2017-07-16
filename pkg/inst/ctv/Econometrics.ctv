@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2017-04-17</version>
+  <version>2017-07-16</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -165,7 +165,8 @@
       <li><i>Linear panel models</i>: <pkg>plm</pkg>, providing a wide range of within,
           between, and random-effect methods (among others) along with corrected standard
 	  errors, tests, etc. Another implementation of several of these models is in
-	  <pkg>Paneldata</pkg>.</li>
+	  <pkg>Paneldata</pkg>. Various dynamic panel models are available in <pkg>plm</pkg>
+	  and dynamic panel models with fixed effects in <pkg>OrthoPanels</pkg>.</li>
 
       <li><i>Generalized estimation equations and GLMs</i>: GEE models for panel data (or longitudinal
           data in statistical jargon) are in <pkg>geepack</pkg>. The <pkg>pglm</pkg> package provides
@@ -439,6 +440,7 @@
     <pkg>nonnest2</pkg>
     <pkg>np</pkg>
     <pkg>ordinal</pkg>
+    <pkg>OrthoPanels</pkg>
     <pkg>pampe</pkg>
     <pkg>panelAR</pkg>
     <pkg>Paneldata</pkg>
