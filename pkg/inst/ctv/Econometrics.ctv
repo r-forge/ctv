@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2017-07-26</version>
+  <version>2017-07-31</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -301,9 +301,6 @@
 	  data archives. <pkg>AER</pkg> additionally provides an extensive set of
 	  examples reproducing analyses from the textbooks/papers, illustrating
 	  various econometric methods.</li>
-      <li><i>Tsay's 'Analysis of Financial Time Series'</i>: <pkg>FinTS</pkg> is the R companion to Tsay's 'Analysis of
-	  Financial Time Series' (2nd ed., 2005, Wiley) containing data sets, functions
-          and script files required to work some of the examples.</li>
       <li><i>Canadian monetary aggregates</i>: <pkg>CDNmoney</pkg>.</li>
       <li><i>Penn World Table</i>: <pkg>pwt</pkg> provides versions 5.6, 6.x, 7.x. Version 8.x and 9.x
           data are available in <pkg>pwt8</pkg> and <pkg>pwt9</pkg>, respectively.</li>
@@ -388,7 +385,6 @@
     <pkg>erer</pkg>
     <pkg>expsmooth</pkg>
     <pkg>ExtremeBounds</pkg>
-    <pkg>FinTS</pkg>
     <pkg>fma</pkg>
     <pkg priority="core">forecast</pkg>
     <pkg>frm</pkg>
