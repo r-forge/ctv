@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2017-07-31</version>
+  <version>2017-08-01</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -294,11 +294,11 @@
     <p><strong>Data sets</strong></p>
 
     <ul>
-      <li><i>Textbooks and journals</i>: Packages <pkg>AER</pkg> and <pkg>Ecdat</pkg>
+      <li><i>Textbooks and journals</i>: Packages <pkg>AER</pkg>, <pkg>Ecdat</pkg>, and <pkg>wooldridge</pkg>
 	  contain a comprehensive collections of data sets from various standard econometric
 	  textbooks as well as several data sets from the Journal of
 	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
-	  data archives. <pkg>AER</pkg> additionally provides an extensive set of
+	  data archives. <pkg>AER</pkg> and <pkg>wooldridge</pkg> additionally provide extensive sets of
 	  examples reproducing analyses from the textbooks/papers, illustrating
 	  various econometric methods.</li>
       <li><i>Canadian monetary aggregates</i>: <pkg>CDNmoney</pkg>.</li>
@@ -492,6 +492,7 @@
     <pkg>VGAM</pkg>
     <pkg>wahc</pkg>
     <pkg>wbstats</pkg>
+    <pkg>wooldridge</pkg>
     <pkg>xts</pkg>
     <pkg>Zelig</pkg>
     <pkg priority="core">zoo</pkg>    
@@ -505,7 +506,7 @@
     <view>Spatial</view>
     <view>TimeSeries</view>
     <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing List: R Special Interest Group Finance</a>
-    <a href="http://www.jstatsoft.org/v27/">Journal of Statistical Software: Special Volume on 'Econometrics in R'</a>
+    <a href="http://www.jstatsoft.org/v27/">Journal of Statistical Software: Special Volume on 'Econometrics in R' (2008)</a>
     <a href="https://mondo.su.se/access/content/user/ma@su.se/Public/">A Brief Guide to R for Beginners in Econometrics</a>
     <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
     <a href="http://www.springer.com/978-0-387-77316-2">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
