@@ -64,7 +64,7 @@
           responses are GLMs that can be estimated by <code>glm()</code> with <code>family = binomial</code>.
 	  Bias-reduced GLMs that are robust to complete and quasi-complete separation are provided by
 	  <pkg>brglm</pkg>. Discrete choice models estimated by simulated maximum likelihood are
-	  implemented in <pkg>Rchoice</pkg>. Heteroskedastic probit models (and other heteroskedastic
+	  implemented in <pkg>Rchoice</pkg>. Heteroscedastic probit models (and other heteroscedastic
 	  GLMs) are implemented in <pkg>glmx</pkg> along with parametric link functions and goodness-of-link
 	  tests for GLMs.</li>
 
@@ -102,14 +102,16 @@
 	  interface <code>tobit()</code> is in package <pkg>AER</pkg>. Further censored
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
 	  Interval regression models are in <pkg>intReg</pkg>. Censored regression models with
-	  conditional heteroskedasticity are in <pkg>crch</pkg>.
+	  conditional heteroscedasticity are in <pkg>crch</pkg>.
 	  Furthermore, hurdle models for left-censored data at zero can be estimated with
 	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>
 	  and semiparametric extensions of these are provided by <pkg>SemiParSampleSel</pkg>.
 	  Package <pkg>matchingMarkets</pkg> corrects for selection bias when the sample is the
 	  result of a stable matching process (e.g., a group formation or college admissions problem).</li>
 
-      <li><i>Truncated responses</i>: <pkg>truncreg</pkg> for truncated Gaussian responses.</li>
+      <li><i>Truncated responses</i>: <pkg>crch</pkg> for truncated (and potentially heteroscedastic)
+          Gaussian, logistic, and t responses. Homoscedastic Gaussian responses are also available in
+	  <pkg>truncreg</pkg>.</li>
 
       <li><i>Fraction and proportion responses</i>: Fractional response models are in <pkg>frm</pkg>.
           Beta regression for responses in (0, 1) is in <pkg>betareg</pkg> and <pkg>gamlss</pkg>.</li>
@@ -183,7 +185,7 @@
 
       <li><i>Miscellaneous</i>: 
           Multiple group fixed effects are in <pkg>lfe</pkg>.	  
-          Autocorrelation and heteroskedasticity correction in are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
+          Autocorrelation and heteroscedasticity correction in are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
 	  PANIC Tests of nonstationarity are in <pkg>PANICr</pkg>.
 	  Threshold regression and unit root tests are in <pkg>pdR</pkg>.
           The panel data approach method for program evaluation is available in <pkg>pampe</pkg>. 
