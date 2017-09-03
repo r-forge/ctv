@@ -76,7 +76,7 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
           uses Identity By Descent (IBD) Non-Parametric Linkage (NPL) statistics for related pairs calculated
           externally to test for genetic linkage with covariates by regression modelling. 
 Whilst not official R packages one software suite in particular is worthy of mention.
-<a href="http://pngu.mgh.harvard.edu/~purcell/plink/">
+<a href="http://zzz.bwh.harvard.edu/plink/">
   PLINK
 </a>
           is a C++ program for genome wide linkage analysis that supports R-based plug-ins via Rserve allowing
@@ -273,7 +273,7 @@ Whilst not official R packages one software suite in particular is worthy of men
     <a href="http://www.stat.auckland.ac.nz/~yee/VGAM/">
       Vector Generalized Linear and Additive Models (VGLMs/VGAMs)
     </a>
-    <a href="http://pbil.univ-lyon1.fr/software/mareymap/">
+    <a href="http://lbbe-shiny.univ-lyon1.fr/MareyMapOnline/">
       MareyMap GUI for comparing physical and genetic maps.
     </a>
     <a href="http://csg.sph.umich.edu/boehnke/p_act.php">
