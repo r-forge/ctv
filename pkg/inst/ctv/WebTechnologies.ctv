@@ -55,7 +55,7 @@
     </ul>
     <h2 id="web-and-server-frameworks">Web and Server Frameworks</h2>
     <ul>
-    <li><a href="https://deployr.revolutionanalytics.com/">DeployR Open</a> is a server-based framework for integrating R into other applications via Web Services.</li>
+    <li><a href="https://docs.microsoft.com/en-us/r-server/deployr/deployr-welcome">DeployR Open</a> is a server-based framework for integrating R into other applications via Web Services.</li>
     <li>The <pkg>shiny</pkg> package makes it easy to build interactive web applications with R.</li>
     <li>Other web frameworks include: <pkg>fiery</pkg> (<a href="https://github.com/thomasp85/fiery">GitHub</a>) that is meant to be more flexible but less easy to use than shiny; <a href="https://github.com/nteetor/prairie">prairie</a> (not on CRAN) which is a lightweight web framework that uses magrittr-style syntax and is modeled after <a href="http://expressjs.com/">expressjs</a>; <a href="https://github.com/att/rcloud">rcloud</a> (not on CRAN) which provides an iPython notebook-style web-based R interface; and <pkg>Rook</pkg>, which contains the specification and convenience software for building and running Rook applications.</li>
     <li>The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.</li>
