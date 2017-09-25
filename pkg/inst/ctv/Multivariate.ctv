@@ -172,7 +172,7 @@
 	  <pkg>clustvarsel</pkg> provides variable selection within model-based clustering.
 	  Fuzzy clustering is available within <pkg>cluster</pkg> as well as via the 
 	  <bioc>hopach</bioc> (Hierarchical Ordered Partitioning and 
-          Collapsing Hybrid) algorithm.    <pkg>kohonen</pkg> provides supervised and unsuperised SOMs 
+          Collapsing Hybrid) algorithm.    <pkg>kohonen</pkg> provides supervised and unsupervised SOMs 
           for high dimensional spectra or patterns.  <pkg>clusterGeneration</pkg> helps simulate clusters. The <view>Environmetrics</view> 
           task view also gives a topic-related overview of some clustering techniques.   Model based clustering is available in <pkg>mclust</pkg>.</li>
 
@@ -208,7 +208,7 @@
 	  in <pkg>ade4</pkg> provide correspondence and multiple correspondence analysis
 	  respectively, as well as adding homogeneous table analysis with <code>hta()</code>.
 	  Further functionality is also available within <pkg>vegan</pkg> co-correspondence 
-          is available from <pkg>cocorresp</pkg>.   <pkg>FactoMineR</pkg> provides <code>CA()</code> and <code>MCA()</code> which also enable simple and multiple corresondence analysis as well as associated graphical routines.   <pkg>homals</pkg> provides homogeneity analysis.</li></ul>
+          is available from <pkg>cocorresp</pkg>.   <pkg>FactoMineR</pkg> provides <code>CA()</code> and <code>MCA()</code> which also enable simple and multiple correspondence analysis as well as associated graphical routines.   <pkg>homals</pkg> provides homogeneity analysis.</li></ul>
 
           <p><strong>Missing data</strong></p>
           <ul><li><pkg>mitools</pkg> provides tools for multiple imputation, <pkg>mice</pkg> provides
@@ -232,7 +232,7 @@
           <p><strong>Modelling non-Gaussian data</strong></p>
           <ul><li><pkg>MNP</pkg> 
           provides Bayesian multinomial probit models,   <pkg>polycor</pkg> provides 
-          polchoric and tetrachoric
+          polychoric and tetrachoric
 	  correlation matrices. <pkg>bayesm</pkg> provides a range of models such as seemingly 
           unrelated regression, multinomial logit/probit, multivariate probit and instrumental 
           variables.    <pkg>VGAM</pkg> provides Vector Generalised Linear and Additive Models, Reduced Rank regression</li></ul>
@@ -242,7 +242,7 @@
 	  doing matrix manipulations, which are complemented by the packages <pkg>Matrix</pkg>
 	  and <pkg>SparseM</pkg>.    <pkg>matrixcalc</pkg> adds functions for matrix differential calculus.   Some further sparse matrix functionality is also available from <pkg>spam</pkg>.</li></ul>
 
-      <p><strong>Miscellaneous utitlies</strong></p>
+      <p><strong>Miscellaneous utilities</strong></p>
           <ul><li><pkg>abind</pkg> generalises <code>cbind()</code> and <code>rbind()</code> for arrays, <code>mApply()</code> in <pkg>Hmisc</pkg> generalises <code>apply()</code> for matrices and passes multiple functions.   In addition to functions listed earlier, <pkg>sn</pkg> provides operations such as marginalisation, affine transformations and graphics for the multivariate skew normal and skew t distribution.
 	  <pkg>mAr</pkg> provides for vector auto-regression.   <code>rm.boot()</code> from <pkg>Hmisc</pkg> bootstraps repeated measures models.  <pkg>psy</pkg> also provides a range of statistics based on Cohen's kappa including weighted measures and agreement among more than 2 raters. 
 	  <pkg>cwhmisc</pkg> contains a number of interesting support functions which are of interest, such as <code>ellipse()</code>, <code>normalise()</code> and various rotation functions.

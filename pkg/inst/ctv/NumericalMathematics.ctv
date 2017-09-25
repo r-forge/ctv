@@ -256,7 +256,7 @@
 		spaced data.</li>
     <li><code>sinterp()</code> in package <pkg>stinepack</pkg> realizes 
         interpolation based on piecewise rational functions by applying 
-        Stineman's algorithm. The interpolating function will be monoton in 
+        Stineman's algorithm. The interpolating function will be monotone in 
         regions where the specified points change monotonically.</li>
     <li><code>Schumaker()</code> in package <pkg>schumaker</pkg> implements
         shape-preserving splines, guaranteed to be monotonic resp. concave

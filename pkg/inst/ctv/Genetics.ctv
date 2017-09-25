@@ -28,7 +28,7 @@
 <pkg>rmetasim</pkg>
           provides an interface to the metasim engine
       for population genetics simulations.
-          A few population genetics functions are also implemeted in
+          A few population genetics functions are also implemented in
 <pkg>gap</pkg>.
 <pkg>LDheatmap</pkg>
           creates a heat map plot of measures of pairwise LD.
@@ -129,8 +129,8 @@ Whilst not official R packages one software suite in particular is worthy of men
           <i>
             Linkage Disequilibrium and haplotype mapping
           </i>:
-          A number of packages provide haplotype estimation for unrelated individuals with amnbiguous haplotypes 
-          (due to unkown linkage phase) and allow testing for associations between the estimated haplotypes and
+          A number of packages provide haplotype estimation for unrelated individuals with ambiguous haplotypes 
+          (due to unknown linkage phase) and allow testing for associations between the estimated haplotypes and
           phenotypes (including co-variates) under a GLM framework.
 <pkg>hapassoc</pkg>
           performs likelihood inference of trait associations with haplotypes in GLMs.
@@ -154,7 +154,7 @@ Whilst not official R packages one software suite in particular is worthy of men
           Genome-Wide Association Studies is now a feasible strategy.  A number of packages are available to facilitate
           the analysis of these large data sets.
 <pkg>GenABEL</pkg> 
-          is designed for the efficent storage and handling of GWAS data with fast analysis tools for quality control,
+          is designed for the efficient storage and handling of GWAS data with fast analysis tools for quality control,
           association with binary and quantitative traits, as well as tools for visualizing results.
 <pkg>pbatR</pkg>
           provides a GUI to the powerful PBAT software which performs family and population based family and 

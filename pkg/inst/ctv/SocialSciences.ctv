@@ -95,7 +95,7 @@
           </li>
         
           <li>
-          The <code>loglm</code> and <code>loglin</code> functions in the <pkg>MASS</pkg> package fit hierachical loglinear models to contingency tables, the former as a front end to <code>glm</code>, the latter by iterative proportional fitting.
+          The <code>loglm</code> and <code>loglin</code> functions in the <pkg>MASS</pkg> package fit hierarchical loglinear models to contingency tables, the former as a front end to <code>glm</code>, the latter by iterative proportional fitting.
           </li>
           
           <li>

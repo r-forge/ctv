@@ -328,7 +328,7 @@
       Hugin GUI. A licensed copy of the HDE (or the trial version) is
       required for the RHugin package to function, hence the target
       audience for the package is Hugin users who would like to take
-      advantage of the statistical and programatic capabilities of R.
+      advantage of the statistical and programmatic capabilities of R.
       Notice: RHugin is NOT on CRAN.
       Link: <a href="http://rhugin.r-forge.r-project.org/">http://rhugin.r-forge.r-project.org/</a>
     </li>

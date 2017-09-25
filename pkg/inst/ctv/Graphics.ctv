@@ -88,7 +88,7 @@
           data onto a hexagonal lattice, the advantage being that the irregular lines and 
           orientation of hexagons do not create linear artifacts. For multivariate data, 
           <pkg>hexbin</pkg> can be used to create a scatterplot matrix, combined with <pkg>lattice</pkg>.
-          An alternative is to use <pkg>scagnostics</pkg> to produce a scaterplot matrix
+          An alternative is to use <pkg>scagnostics</pkg> to produce a scatterplot matrix
           of "data about the data", and look for interesting combinations of variables.</li>
           <li><i>Trees and Graphs</i>: 
            <pkg>ape</pkg> and <pkg>ade4</pkg> have functions for plotting 
@@ -96,7 +96,7 @@
            clustering procedures. While these packages produce decent graphics, they 
            do not use sophisticated algorithms for node placement, so may not be useful
            for very large trees. <pkg>igraph</pkg> has the Tilford-Rheingold algorithm 
-           implementead and is useful for plotting larger trees. <pkg>diagram</pkg> has 
+           implemented and is useful for plotting larger trees. <pkg>diagram</pkg> has 
            facilities for flow diagrams and simple graphs. For more sophisticated graphs 
            <bioc>Rgraphviz</bioc> and <pkg>igraph</pkg> have functions for plotting and 
            layout, especially useful for representing large networks.</li>
@@ -119,7 +119,7 @@
           graphics formats. R base supplies devices for PostScript, PDF, JPEG
           and other formats. Devices on CRAN include <pkg>cairoDevice</pkg> which
           is a device based libcairo, which can actually render to many device
-          types. The cairo device is desgned to work with <pkg>RGtk2</pkg>,
+          types. The cairo device is designed to work with <pkg>RGtk2</pkg>,
           which is an interface to the Gimp Tool Kit, similar to pyGTK2.
 	  <pkg>RSvgDevice</pkg> is an SVG device driver and interfaces well with
           with vector drawing programs. When SVG devices are for web display developers should be
