@@ -43,9 +43,9 @@
           The Vuong test for comparing other non-nested models is provided by <pkg>nonnest2</pkg>
 	  (and specifically for count data regression in <pkg>pscl</pkg>).</li>
 
-      <li><i>Diagnost checking</i>: The packages
+      <li><i>Diagnostic checking</i>: The packages
 	  <pkg>car</pkg> and <pkg>lmtest</pkg> provide a large collection
-	  of regression diagonstics and diagnostic tests.</li>
+	  of regression diagnostics and diagnostic tests.</li>
     </ul>
 
     <p><strong>Microeconometrics</strong></p>
@@ -283,7 +283,7 @@
 
       <li><i>Miscellaneous</i>:
           <ul>
-          <li><pkg>tsDyn</pkg> - Threshold and smooth transistion models.</li>
+          <li><pkg>tsDyn</pkg> - Threshold and smooth transition models.</li>
 	  <li><pkg>midasr</pkg> - <i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis.</li>
           <li><pkg>gets</pkg> - GEneral-To-Specific (GETS) model selection for either ARX models with log-ARCH-X errors, or a log-ARCH-X model of the log variance.</li>
 	  <li><pkg>tsfa</pkg> - Time series factor analysis.</li>
