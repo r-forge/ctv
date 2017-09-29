@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2017-08-01</version>
+  <version>2017-09-29</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -302,7 +302,8 @@
 	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
 	  data archives. <pkg>AER</pkg> and <pkg>wooldridge</pkg> additionally provide extensive sets of
 	  examples reproducing analyses from the textbooks/papers, illustrating
-	  various econometric methods.</li>
+	  various econometric methods. In <pkg>pder</pkg> a wide collection of data sets for
+	  panel data econometrics with R is available.</li>
       <li><i>Canadian monetary aggregates</i>: <pkg>CDNmoney</pkg>.</li>
       <li><i>Penn World Table</i>: <pkg>pwt</pkg> provides versions 5.6, 6.x, 7.x. Version 8.x and 9.x
           data are available in <pkg>pwt8</pkg> and <pkg>pwt9</pkg>, respectively.</li>
@@ -447,6 +448,7 @@
     <pkg>PANICr</pkg>
     <pkg>pco</pkg>
     <pkg>pcse</pkg>
+    <pkg>pder</pkg>
     <pkg>pdR</pkg>
     <pkg>pglm</pkg>
     <pkg>phtt</pkg>
