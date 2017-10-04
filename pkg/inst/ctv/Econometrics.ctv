@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2017-09-29</version>
+  <version>2017-10-05</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -358,6 +358,9 @@
 
       <li><i>Regression discontinuity design</i>: A variety of methods are provided in
           the <pkg>rdd</pkg>, <pkg>rddtools</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.</li>
+      
+      <li><i>z-Tree</i>: <pkg>zTree</pkg> can import data from the z-Tree software for
+          developing and carrying out economic experiments.</li>
     </ul>
 
   </info>
@@ -499,7 +502,8 @@
     <pkg>wooldridge</pkg>
     <pkg>xts</pkg>
     <pkg>Zelig</pkg>
-    <pkg priority="core">zoo</pkg>    
+    <pkg priority="core">zoo</pkg>
+    <pkg>zTree</pkg>   
   </packagelist>
 
   <links>
