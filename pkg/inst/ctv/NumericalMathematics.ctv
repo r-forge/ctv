@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2017-07-07</version>
+  <version>2017-11-04</version>
   
   <info>
 
@@ -354,10 +354,6 @@
         one-directional interface with a MATLAB process, sending and 
         retrieving objects through a TCP/IP connection.
     </li>
-    <li>Package <pkg>RcppOctave</pkg> provides an interface to Octave (a 
-        MATLAB clone). It enables calling Octave functions, passing variables 
-        between R and Octave, and browsing Octave documentation.
-    </li>
     </ul>
 
     <p>Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', 
@@ -467,7 +463,6 @@
     <pkg>Rcpp</pkg>
     <pkg>RcppArmadillo</pkg>
     <pkg>RcppEigen</pkg>
-    <pkg>RcppOctave</pkg>
     <pkg>reticulate</pkg>
     <pkg>Rmpfr</pkg>
     <pkg>RootsExtremaInflections</pkg>
