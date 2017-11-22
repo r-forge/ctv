@@ -212,7 +212,7 @@
     <pkg>pomp</pkg>
     <pkg>pracma</pkg>
     <pkg>primer</pkg>
-    <pkg>rgpm</pkg>
+    <pkg>rpgm</pkg>
     <pkg>rODE</pkg>
     <pkg>rodeo</pkg>
     <pkg>ReacTran</pkg>
