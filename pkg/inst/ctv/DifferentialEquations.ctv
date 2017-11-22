@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2017-03-09</version>
+  <version>2017-11-22</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -49,6 +49,14 @@
        <li> The package <pkg>Sim.DiffProc</pkg> provides functions for simulation of 
         Itô and Stratonovitch stochastic differential equations.
        </li> 
+       <li> Package <pkg>QPot</pkg> analyzes 2-dimensional systems of stochastic 
+         differential equations using quasi-potential analysis.
+       </li> 
+       <li> Package <pkg>rpgm</pkg> deals about fast simulation especially in Stochastic Differential 
+         Equations (SDE) of Itô type. It integrates the Ziggurat method to simulate Normal random 
+         variables faster than <code>rnorm</code>, the Brownian motion, the Euler and Milstein schemes,
+         and the Gaussian Vasicek process. Multi-core support will be provided.
+       </li>
      </ul>  
       
     <p><strong>Ordinary Differential Equations (ODEs)</strong></p> 
@@ -56,7 +64,7 @@
      Several packages offer to solve ODEs.
      <ul>
        <li> The "odesolve" package was the first to solve ordinary differential equations in R.
-        It contains two integration methods. It is not actively maintained and has been replaced by the package <pkg>deSolve</pkg>.
+        It contained two integration methods. It is not actively maintained and has been replaced by the package <pkg>deSolve</pkg>.
        </li>
        <li> The package <pkg>deSolve</pkg> contains several solvers for solving ODEs. 
         It can deal with stiff and nonstiff problems.
@@ -67,7 +75,15 @@
        <li> The package <pkg>odeintr</pkg> generates and compiles C++ ODE solvers on the fly using Rcpp
             and <a href="http://www.boost.org/">Boost</a> <a href="http://www.odeint.com/">odeint</a>.
        </li>
-     </ul>        
+       <li>Package <pkg>pracma</pkg> implements several adaptive Runge-Kutta
+        solvers such as ode23, ode23s, ode45, or the Burlisch-Stoer algorithm to obtain
+        numerical solutions to ODEs with higher accuracy.
+       </li>
+       <li>Package <pkg>rODE</pkg> (inspired from the book of Gould, Tobochnik and Christian, 2016) 
+         aims to show physics, math and engineering students 
+         how ODE solvers can be made with R's S4 classes.
+       </li>
+    </ul>        
     <p><strong>Delay Differential Equations (DDEs)</strong></p> 
      In a DDE, the derivative at a certain time is a function of the variable value at a previous time.
      <ul>
@@ -143,6 +159,10 @@
       <li> <pkg>mkin</pkg> provides routines for fitting kinetic models with one 
        or more state variables to chemical degradation data.
       </li>
+      <li>Package <pkg>dMod</pkg> provides functions to generate ODEs of reaction networks, 
+        parameter transformations, observation functions, residual functions, etc. 
+        It follows the paradigm that derivative information should be used for optimization whenever possible.
+      </li>
       <li>The package <pkg>CollocInfer</pkg> implements collocation-inference 
        for continuous-time and discrete-time stochastic processes.
       </li>
@@ -151,10 +171,18 @@
       </li>
       <li> The <pkg>deTestSet</pkg> package contains many test problems for differential equations.
       </li> 
-      <li>Package <pkg>pracma</pkg> implements several adaptive Runge-Kutta
-        solvers such as ode23, ode23s, ode45, or the Burlisch-Stoer algorithm to obtain
-        numerical solutions to ODEs with higher accuracy.</li>
       <li> The <pkg>PBSmodelling</pkg> package adds GUI functions to models. 
+      </li>
+      <li> <pkg>phaseR</pkg> is an R package for the qualitative analysis of one and 
+        two dimensional autonomous ODE systems, using phase plane methods.
+      </li>
+      <li>Package <pkg>cOde</pkg> supports the automatic creation of dynamically linked
+        code for packages <pkg>deSolve</pkg> <pkg>bvpSolve</pkg> (or a built-in implementation
+        of the sundials cvode solver) from inline C embedded in the R code.
+      </li>
+       <li>Package <pkg>rodeo</pkg> is an object oriented system and code generator that 
+         creates and compiles efficient Fortran code for <pkg>deSolve</pkg> from models 
+         defined in stoichiomatry matrix notation.
       </li>
       <li>Package <pkg>ecolMod</pkg> contains the figures, data sets and examples from a book 
        on ecological modelling (Soetaert and Herman, 2009).
@@ -162,11 +190,12 @@
       <li><pkg>primer</pkg> is a support package for the book of Stevens (2009).
       </li>
     </ul>
-    
   </info>
 
   <packagelist>
     <pkg priority="core">bvpSolve</pkg>
+    <pkg>cOde</pkg>
+    <pkg>dMod</pkg>
     <pkg>CollocInfer</pkg>
     <pkg priority="core">deSolve</pkg>
     <pkg>deTestSet</pkg>
@@ -179,10 +208,15 @@
     <pkg>odeintr</pkg>
     <pkg>PBSddesolve</pkg>
     <pkg>PBSmodelling</pkg>
+    <pkg>phaseR</pkg>
     <pkg>pomp</pkg>
     <pkg>pracma</pkg>
     <pkg>primer</pkg>
+    <pkg>rgpm</pkg>
+    <pkg>rODE</pkg>
+    <pkg>rodeo</pkg>
     <pkg>ReacTran</pkg>
+    <pkg>QPot</pkg>
     <pkg priority="core">rootSolve</pkg>
     <pkg>scaRabee</pkg>
     <pkg priority="core">sde</pkg>
@@ -197,8 +231,8 @@
     <view>Optimization</view>
     <view>Pharmacokinetics</view>
     <a href="http://en.wikipedia.org/wiki/Differential_equation">Wikipedia: Differential equation</a>
-    <a href="http://pomp.r-forge.r-project.org">R-Forge website for package pomp</a>
     <a href="http://deSolve.r-forge.r-project.org">R-Forge website for package deSolve</a>
+    <a href="http://pomp.r-forge.r-project.org">R-Forge website for package pomp</a>
     <a href="http://www.springer.com/978-0-387-75838-1">Book: Iacus, SM. 2008. Simulation and Inference for Stochastic Differential Equations: with R examples, Springer</a>
     <a href = "http://www.springer.com/life+sciences/ecology/book/978-1-4020-8623-6">
         Book: Soetaert, K. and P.M.J. Herman, 2009. A Practical Guide to Ecological Modelling, using R as a simulation Platform, Springer.</a>
