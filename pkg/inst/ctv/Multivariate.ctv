@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2015-07-01</version>
+  <version>2017-12-21</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -225,7 +225,6 @@
 	  likelihood, Bayesian factor analysis
 	  is provided for Gaussian, ordinal and mixed variables in <pkg>MCMCpack</pkg>.
 	  <pkg>GPArotation</pkg> offers GPA (gradient projection algorithm) factor rotation.
-	  <pkg>FAiR</pkg> provides factor analysis solved using genetic algorithms.
 	  <pkg>sem</pkg> fits linear structural equation models and <pkg>ltm</pkg> provides
 	  latent trait models under item response theory and range of extensions to Rasch models can be found in <pkg>eRm</pkg>.   <pkg>FactoMineR</pkg> provides a wide range of Factor Analysis methods, including <code>MFA()</code> and <code>HMFA()</code>for multiple and hierarchical multiple factor analysis as well as <code>ADFM()</code> for multiple factor analysis of quantitative and qualitative data.     <pkg>tsfa</pkg> provides factor analysis for time series.   <pkg>poLCA</pkg> provides latent class and latent class regression models for a variety of outcome variables.</li></ul>
 
@@ -286,7 +285,6 @@
     <pkg>energy</pkg>
     <pkg>eRm</pkg> 
     <pkg>FactoMineR</pkg>   
-    <pkg>FAiR</pkg>
     <pkg>fastICA</pkg>
     <pkg>feature</pkg> 
     <pkg>fgac</pkg>
