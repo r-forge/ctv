@@ -302,7 +302,7 @@ repos_update_views <- function(repos = ".",
   }
 
   ## save all views
-  saveRDS(rval, file = viewsrds) ## compress = TRUE currently does not work for reading from an url
+  saveRDS(rval, file = viewsrds, version = 2) ## compress = TRUE currently does not work for reading from an url
 
   ## generate index HTML file
   if(is.character(index)) {
