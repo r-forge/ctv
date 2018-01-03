@@ -123,7 +123,7 @@
       conditional independence. gRbase also illustrates how
       hierarchical log-linear models (hllm) may be
       implemented.
-      Link: <a href="http://www.jstatsoft.org/v14/i17/">http://www.jstatsoft.org/v14/i17/</a>
+      Link: <a href="https://dx.doi.org/doi:10.18637/jss.v014.i17">doi:10.18637/jss.v014.i17</a>
     </li>
 
     <li>
@@ -139,7 +139,7 @@
       Package for selecting and fitting high-dimensional graphical
       models for discrete, Gaussian, or mixed discrete and Gaussian
       data.
-      Link: <a href="http://www.jstatsoft.org/v37/i01/">http://www.jstatsoft.org/v37/i01/</a>
+      Link: <a href="https://dx.doi.org/doi:10.18637/jss.v037.i01">doi:10.18637/jss.v037.i01</a>
     </li>
 
 <!--    <li>
@@ -148,7 +148,7 @@
       tables, graphical Gaussian models and mixed interaction
       models. The package provides an interface to the MIM
       program and only runs on Windows.
-      Link: <a href="http://www.jstatsoft.org/v11/i06/">http://www.jstatsoft.org/v11/i06/</a>
+      Link: <a href="https://dx.doi.org/doi:10.18637/jss.v011.i06">doi:10.18637/jss.v011.i06</a>
     </li>
 -->
 
@@ -212,7 +212,7 @@
       <pkg>gRc</pkg>
       Inference in graphical Gaussian models with edge and vertex
       symmetries (Graphical Gaussian models with colours).
-      Link: <a href="http://www.jstatsoft.org/v23/i06/">http://www.jstatsoft.org/v23/i06/</a>
+      Link: <a href="https://dx.doi.org/doi:10.18637/jss.v023.i06">doi:10.18637/jss.v023.i06</a>
     </li>
     
     <li>
@@ -221,7 +221,6 @@
 
     <li>
       <pkg>lvnet</pkg>lvnet: Latent Variable Network Modeling.
-      
       Estimate, fit and compare Structural Equation Models (SEM) and
       network models (Gaussian Graphical Models; GGM) using
       OpenMx. Allows for two possible generalizations to include GGMs
@@ -238,11 +237,7 @@
       equally-predictive feature subsets. Bayesian network algorithms
       and related functions are also included. The package name 'MXM'
       stands for "Mens eX Machina", meaning "Mind from the Machine" in
-      Latin. Reference: Feature Selection with the R Package MXM:
-      Discovering Statistically Equivalent Feature Subsets, Lagani,
-      V. and Athineou, G. and Farcomeni, A. and Tsagris, M. and
-      Tsamardinos, I. (2017). Journal of Statistical Software,
-      80(7). <doi:10.18637/jss.v080.i07>.  
+      Latin. Link: <a href="https://dx.doi.org/doi:10.18637/jss.v080.i07">doi:10.18637/jss.v080.i07</a>
     </li>
     
     
@@ -356,7 +351,7 @@
       independence networks, also known as probabilistic
       expert systems (which includes Bayesian networks as
       a special case).
-      Link: <a href="http://www.jstatsoft.org/v46/i10/">http://www.jstatsoft.org/v46/i10/</a>
+      Link: <a href="https://dx.doi.org/doi:10.18637/jss.v046.i10">doi:10.18637/jss.v046.i10</a>
     </li>
 
     <li>
@@ -498,6 +493,7 @@
     <pkg>igraph</pkg>
     <pkg>lvnet</pkg>        
     <pkg>mathgraph</pkg>
+    <pkg>MXM</pkg>
     <pkg>ndtv</pkg>
     <pkg>network</pkg>
     <pkg>networkDynamic</pkg>
