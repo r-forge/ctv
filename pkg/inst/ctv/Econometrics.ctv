@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2017-10-05</version>
+  <version>2018-01-06</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -357,7 +357,7 @@
           chains are in <pkg>gvc</pkg> and <pkg>decompr</pkg>.</li>
 
       <li><i>Regression discontinuity design</i>: A variety of methods are provided in
-          the <pkg>rdd</pkg>, <pkg>rddtools</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.</li>
+          the <pkg>rdd</pkg>, <pkg>rddapp</pkg>, <pkg>rddtools</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.</li>
       
       <li><i>z-Tree</i>: <pkg>zTree</pkg> can import data from the z-Tree software for
           developing and carrying out economic experiments.</li>
@@ -464,6 +464,7 @@
     <pkg>quantreg</pkg>
     <pkg>Rchoice</pkg>
     <pkg>rdd</pkg>
+    <pkg>rddapp</pkg>
     <pkg>rddtools</pkg>
     <pkg>rdlocrand</pkg>
     <pkg>rdrobust</pkg>
