@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2016-02-26</version>
+  <version>2018-01-06</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -133,7 +133,7 @@
       multivariate normal data (i.e. covariance selection models) and
       mixed interaction models.
     </li>
-
+<!--
     <li>
       <pkg>gRapHD</pkg>
       Package for selecting and fitting high-dimensional graphical
@@ -141,7 +141,7 @@
       data.
       Link: <a href="https://dx.doi.org/doi:10.18637/jss.v037.i01">doi:10.18637/jss.v037.i01</a>
     </li>
-
+-->
 <!--    <li>
       <pkg>mimR</pkg>
       General package for model selection in contingency
@@ -486,7 +486,6 @@
     <pkg>ggm</pkg>
     <pkg>giRaph</pkg>
     <pkg>gRain</pkg>
-    <pkg>gRapHD</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRc</pkg>
     <pkg>gRim</pkg>
