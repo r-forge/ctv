@@ -1,3 +1,12 @@
+Changes in Version 0.8-4
+
+  o <github> tag can now be used to refer to projects on GitHub using markup like
+    <github>user/project</github>.
+
+  o To support older versions of R (up to R 3.4.3), the server-side tools now
+    explicitly use saveRDS(..., version = 2) to store task view information.
+
+
 Changes in Version 0.8-3
 
   o <ohat> packages are now at Omegahat.net rather than Omegahat.org.

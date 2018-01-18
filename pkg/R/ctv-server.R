@@ -28,6 +28,7 @@ read.ctv <- function(file)
       ohatprefix <- "Omegahat Package: "
       rforgeprefix <- "R-Forge Project: "
       gcodeprefix <- "Google Code Project: "
+      githubprefix <- "GitHub Project: "
       target <- "" #used to be# " target=\"_top\"" #but this is not strict XHTML#
     } else {
       viewprefix <- ""
@@ -35,6 +36,7 @@ read.ctv <- function(file)
       ohatprefix <- ""
       rforgeprefix <- ""
       gcodeprefix <- ""
+      githubprefix <- ""
       target <- ""
     }
 
@@ -69,13 +71,13 @@ read.ctv <- function(file)
                     "</span></a>"))
     if(name == "gcode")
       return(paste0(gcodeprefix,
-                    "<a href=\"http://code.google.com/p/",
+                    "<a href=\"https://code.google.com/p/",
                     xmlCode(x), "/\"", target,
                     "><span class=\"Gcode\">", xmlCode(x),
                     "</span></a>"))
     if(name == "bioc")
       return(paste0(biocprefix,
-                    "<a href=\"http://www.Bioconductor.org/packages/release/bioc/html/",
+                    "<a href=\"https://www.Bioconductor.org/packages/release/bioc/html/",
                     xmlCode(x), ".html\"", target,
                     "><span class=\"BioC\">", xmlCode(x),
                     "</span></a>"))
@@ -84,6 +86,12 @@ read.ctv <- function(file)
                     "<a href=\"http://www.Omegahat.net/",
                     xmlCode(x), "/\"", target,
                     "><span class=\"Ohat\">", xmlCode(x),
+                    "</span></a>", sep = ""))
+    if(name == "github")
+      return(paste0(githubprefix,
+                    "<a href=\"https://github.com/",
+		    xmlCode(x), "/\"", target,
+                    "><span class=\"GitHub\">", strsplit(xmlCode(x), "/", fixed = TRUE)[[1L]][2L],
                     "</span></a>", sep = ""))
     if(name == "br")
       return("<br/>")
