@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2017-11-04</version>
+  <version>2018-01-30</version>
   
   <info>
 
@@ -55,6 +55,10 @@
     <li>Package <pkg>rmumps</pkg> provides a wrapper for the MUMPS library,
         solving large linear systems of equations applying a parallel sparse
         direct solver</li>
+    <li><pkg>Rlinsolve</pkg> is a collection of iterative solvers for sparse 
+        linear system of equations. Stationary iterative solvers such as 
+        Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) 
+        methods are provided.</li>
     <li><pkg>svd</pkg> provides R bindings to state-of-the-art implementations 
         of singular value decomposition (SVD) and eigenvalue/eigenvector 
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
@@ -244,16 +248,16 @@
         and interpolation and approximation of data with rational functions, 
         i.e. in the presence of singularities, in <code>ratinterp()</code> and 
         <code>rationalfit()</code>.</li>
-	<li>The <pkg>interp</pkg> package provides bivariate data interpolation 
+    <li>The <pkg>interp</pkg> package provides bivariate data interpolation 
         on regular and irregular grids, either linear or using splines. 
-		Currently the piecewise linear interpolation part is implemented.
-		(It is intended to provide a free replacement for the ACM licensed 
-		<code>akima::interp</code> and <code>tripack::tri.mesh</code> 
-		functions.)</li>
-	<li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
-	    constrained two-dimensional Delaunay triangulation package providing 
-		both triangulation and generation of Voronoi mosaics of irregular 
-		spaced data.</li>
+        Currently the piecewise linear interpolation part is implemented.
+        (It is intended to provide a free replacement for the ACM licensed 
+        <code>akima::interp</code> and <code>tripack::tri.mesh</code> 
+        functions.)</li>
+    <li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
+        constrained two-dimensional Delaunay triangulation package providing 
+        both triangulation and generation of Voronoi mosaics of irregular 
+        spaced data.</li>
     <li><code>sinterp()</code> in package <pkg>stinepack</pkg> realizes 
         interpolation based on piecewise rational functions by applying 
         Stineman's algorithm. The interpolating function will be monotone in 
@@ -302,6 +306,9 @@
         functions or Euler's Phi function.</li>
     <li><pkg>contfrac</pkg> contains various utilities for evaluating 
         continued fractions and partial convergents.</li>
+    <li><pkg>magic</pkg> creates and investigates magical squares and
+        hypercubes, including functions for the manipulation and analysis 
+        of arbitrarily dimensioned arrays.</li>
     <li>The <pkg>partitions</pkg> package enumerates additive partitions 
         of integers, including restricted and unequal partitions.</li>
     <li><pkg>permutations</pkg> treats permutations as invertible functions of 
@@ -309,7 +316,19 @@
     <li>Package <pkg>combinat</pkg> generates all permutations or all 
         combinations of a certain length of a set of elements (i.e. a vector); 
         it also computes binomial coefficients.</li>
-    <li><pkg>magic</pkg> creates and investigates magical squares.</li>
+    <li>Package <pkg>arrangements</pkg> provides generators and iterators for 
+        permutations, combinations and partitions. The iterators allow users 
+        to generate arrangements in a fast and memory efficient manner. 
+        Permutations and combinations can be drawn with/without replacement 
+        and support multisets.</li>
+    <li><pkg>RcppAlgos</pkg> provides optimized functions for generating all 
+        combinations or permutations of a vector with or without constraints. 
+        Additionally, a sieving function is available for listing prime factors 
+        or divisors of integers.</li>
+    <li>Package <pkg>Zseq</pkg> generates some well-known integer sequences, 
+        computing very large Bell, Catalan, Fibonacci etc. numbers with 
+        user-specified bit precision. There are hyperlinks to corresponding 
+        items in the On-Line Encyclopedia of Integer Sequences (OEIS).</li>
     </ul>
 
     <h4>Multi-Precision Arithmetic and Symbolic Mathematics</h4>
@@ -328,6 +347,9 @@
     <li><pkg>Brobdingnag</pkg> handles very large numbers by holding their
         logarithm plus a flag indicating their sign. (An excellent vignette
         explains how this is done using S4 methods.)</li>
+    <li><pkg>VeryLargeIntegers</pkg> implements a multi-precision library that 
+        allows to store and manage arbitrarily big integers; it includes 
+        probabilistic primality tests and factorization algorithms.</li>
     <li>Package <pkg>rSymPy</pkg> accesses the symbolic algebra system 'SymPy' 
         (written in Python) from R. 
         It supports arbitrary precision computations, linear algebra and 
@@ -404,6 +426,7 @@
 
     <pkg>akima</pkg>
     <pkg>appell</pkg>
+    <pkg>arrangements</pkg>
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
     <pkg>Brobdingnag</pkg>
@@ -461,9 +484,11 @@
     <pkg>R2Cuba</pkg>
     <pkg>rARPACK</pkg>
     <pkg>Rcpp</pkg>
+    <pkg>RcppAlgos</pkg>
     <pkg>RcppArmadillo</pkg>
     <pkg>RcppEigen</pkg>
     <pkg>reticulate</pkg>
+    <pkg>Rlinsolve</pkg>
     <pkg>Rmpfr</pkg>
     <pkg>RootsExtremaInflections</pkg>
     <pkg>rPython</pkg>
@@ -483,10 +508,11 @@
     <pkg>ssvd</pkg>
     <pkg>svd</pkg>
     <pkg>tripack</pkg>
+    <pkg>VeryLargeIntegers</pkg>
     <pkg>XR</pkg>
     <pkg>XRJulia</pkg>
     <pkg>XRPython</pkg>
-
+    <pkg>Zseq</pkg>
   </packagelist>
   
   <links>
