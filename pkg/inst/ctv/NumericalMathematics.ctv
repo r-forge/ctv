@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-01-30</version>
+  <version>2018-01-31</version>
   
   <info>
 
@@ -323,12 +323,8 @@
         and support multisets.</li>
     <li><pkg>RcppAlgos</pkg> provides optimized functions for generating all 
         combinations or permutations of a vector with or without constraints. 
-        Additionally, a sieving function is available for listing prime factors 
-        or divisors of integers.</li>
-    <li>Package <pkg>Zseq</pkg> generates some well-known integer sequences, 
-        computing very large Bell, Catalan, Fibonacci etc. numbers with 
-        user-specified bit precision. There are hyperlinks to corresponding 
-        items in the On-Line Encyclopedia of Integer Sequences (OEIS).</li>
+        Additionally, a sieving function is available for listing prime 
+        factors or divisors of integers.</li>
     </ul>
 
     <h4>Multi-Precision Arithmetic and Symbolic Mathematics</h4>
@@ -512,7 +508,6 @@
     <pkg>XR</pkg>
     <pkg>XRJulia</pkg>
     <pkg>XRPython</pkg>
-    <pkg>Zseq</pkg>
   </packagelist>
   
   <links>
