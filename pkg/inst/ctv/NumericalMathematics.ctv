@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-01-31</version>
+  <version>2018-02-06</version>
   
   <info>
 
@@ -55,10 +55,6 @@
     <li>Package <pkg>rmumps</pkg> provides a wrapper for the MUMPS library,
         solving large linear systems of equations applying a parallel sparse
         direct solver</li>
-    <li><pkg>Rlinsolve</pkg> is a collection of iterative solvers for sparse 
-        linear system of equations. Stationary iterative solvers such as 
-        Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) 
-        methods are provided.</li>
     <li><pkg>svd</pkg> provides R bindings to state-of-the-art implementations 
         of singular value decomposition (SVD) and eigenvalue/eigenvector 
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
@@ -484,7 +480,6 @@
     <pkg>RcppArmadillo</pkg>
     <pkg>RcppEigen</pkg>
     <pkg>reticulate</pkg>
-    <pkg>Rlinsolve</pkg>
     <pkg>Rmpfr</pkg>
     <pkg>RootsExtremaInflections</pkg>
     <pkg>rPython</pkg>
