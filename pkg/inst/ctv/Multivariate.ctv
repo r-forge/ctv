@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2017-12-21</version>
+  <version>2018-02-12</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -118,7 +118,7 @@
           <ul><li><i>Principal components:</i> these can be fitted with <code>prcomp()</code> 
           (based on <code>svd()</code>,
 	  preferred) as well as <code>princomp()</code> (based on <code>eigen()</code> for  compatibility
-	  with S-PLUS) from stats.  <pkg>sca</pkg> provides simple components. <code>pc1()</code> in <pkg>Hmisc</pkg> 
+	  with S-PLUS) from stats.  <code>pc1()</code> in <pkg>Hmisc</pkg> 
           provides the first principal component and gives coefficients for unscaled 
           data.  Additional support for an assessment of the scree plot can be found in <pkg>nFactors</pkg>, whereas <pkg>paran</pkg> provides routines for Horn's evaluation of the number of dimensions to retain.
 	  For wide matrices, <pkg>gmodels</pkg> provides <code>fast.prcomp()</code> and <code>fast.svd()</code>.
@@ -354,7 +354,6 @@
     <pkg>ROCR</pkg>   
     <pkg>rpart</pkg>
     <pkg>rrcov</pkg>  
-    <pkg>sca</pkg> 
     <pkg>scatterplot3d</pkg>
     <pkg>sem</pkg>
     <pkg>SensoMineR</pkg>
