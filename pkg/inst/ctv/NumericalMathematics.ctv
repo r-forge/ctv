@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-02-12</version>
+  <version>2018-02-22</version>
   
   <info>
 
@@ -59,11 +59,21 @@
         linear system of equations. Stationary iterative solvers such as 
         Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) 
         methods are provided.</li>
+    <li><pkg>SolveLS</pkg> provides basic stationary iterative solvers such
+        as Jacobi, Gauss-Seidel, Successive Over-Relaxation and SSOR methods. 
+        Nonstationary, also known as Krylov subspace, methods are provided. 
+        Sparse matrix computation is supported through the 'Matrix' and 
+        'RcppArmadillo' packages.</li>
     <li><pkg>svd</pkg> provides R bindings to state-of-the-art implementations 
         of singular value decomposition (SVD) and eigenvalue/eigenvector 
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
         iterative thresholding method, while <pkg>irlba</pkg> will compute 
         approximate singular values/vectors of large matrices.</li>
+    <li>Package <pkg>PRIMME</pkg> interfaces PRIMME, a C library for computing 
+        eigenvalues and corresponding eigenvectors of real symmetric or  
+        complex Hermitian matrices. It can find largest, smallest, or interior 
+        eigen-/singular values and will apply preconditioning to accelerate 
+        convergence.</li>
     <li>The packages <pkg>geigen</pkg> and <pkg>QZ</pkg> compute generalized 
         eigenvalues and -vectors for pairs of matrices, and QZ (generalized 
         Schur) decompositions.</li>
@@ -266,7 +276,7 @@
         algorithms for fitting circles, ellipses, and conics in general.</li>
     </ul>
 
-    <h4>Root Finding</h4>
+    <h4>Root Finding and Fixed Points</h4>
 
     <p><code>uniroot()</code>, implementing the Brent-Decker algorithm, is the 
     basic routine in R to find roots of univariate functions. There are 
@@ -287,6 +297,9 @@
         strategies such as line searches or trust regions.</li>
     <li><pkg>ktsolve</pkg> defines a common interface for solving a set of
         equations with <code>BB</code> or <code>nleqslv</code>.</li>
+    <li>Package <pkg>FixedPoint</pkg> provides algorithms for finding fixed 
+        point vectors. These algorithms include Anderson acceleration, 
+        epsilon extrapolation methods, and minimal polynomial methods.</li>
     </ul>
 
     <h4>Discrete Mathematics and Number Theory</h4>
@@ -322,6 +335,11 @@
         combinations or permutations of a vector with or without constraints. 
         Additionally, a sieving function is available for listing prime 
         factors or divisors of integers.</li>
+    <li>Package <pkg>Zseq</pkg> generates well-known integer sequences; the 
+        'gmp' package is adopted for computing with arbitrarily large numbers. 
+        Every function has on its help page a hyperlink to the corresponding 
+        entry in the On-Line Encyclopedia of Integer Sequences 
+        ([OEIS](https://oeis.org/)).</li>
     </ul>
 
     <h4>Multi-Precision Arithmetic and Symbolic Mathematics</h4>
@@ -411,6 +429,13 @@
         provides direct analogues to Julia function calls. A 'juliaExamples' 
         package is available on Github.
     </li>
+    <li><pkg>JuliaCall</pkg> provides seamless integration between R and Julia. 
+        Using the high-level interface, the user can call any Julia function 
+        just like an R function with automatic type conversion. With the 
+        low-level interface the user interfaces directly with C-level SEXPs 
+        while enjoying the convenience of using a high-level programming 
+        language like Julia.
+    </li>
     </ul>
         
   </info>
@@ -436,6 +461,7 @@
     <pkg>feather</pkg>
     <pkg>features</pkg>
     <pkg>findpython</pkg>
+    <pkg>FixedPoint</pkg>
     <pkg>fourierin</pkg>
     <pkg>gaussquad</pkg>
     <pkg>geigen</pkg>
@@ -444,6 +470,7 @@
     <pkg>hypergeo</pkg>
     <pkg>interp</pkg>
     <pkg>irlba</pkg>
+    <pkg>JuliaCall</pkg>
     <pkg>ktsolve</pkg>
     <pkg>lamW</pkg>
     <pkg>logOfGamma</pkg>
@@ -470,6 +497,7 @@
     <pkg priority="core">polynom</pkg>
     <pkg>PolynomF</pkg>
     <pkg priority="core">pracma</pkg>
+    <pkg>PRIMME</pkg>
     <pkg>PythonInR</pkg>
     <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
@@ -492,6 +520,7 @@
     <pkg>signal</pkg>
     <pkg>SimplicialCubature</pkg>
     <pkg>SnakeCharmR</pkg>
+    <pkg>SolveLS</pkg>
     <pkg>SparseGrid</pkg>
     <pkg>SparseM</pkg>
     <pkg>SphericalCubature</pkg>
