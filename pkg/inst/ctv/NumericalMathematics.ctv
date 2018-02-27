@@ -533,6 +533,7 @@
     <pkg>XR</pkg>
     <pkg>XRJulia</pkg>
     <pkg>XRPython</pkg>
+    <pkg>Zseq</pkg>
   </packagelist>
   
   <links>
