@@ -124,6 +124,7 @@ provides functionalities to deploy models in those types of environments:
 REST API.</li>
       <li>The <a href="https://github.com/rstudio/cloudml">cloudml</a> package provides functionality to easily deploy models to
 <a href="https://cloud.google.com/ml-engine/">Google Cloud ML Engine</a>.
+      </li>
       <li>
         The <a href="https://github.com/rstudio/tfdeploy">tfdeploy</a> package provides functions to run a local test server that supports the same REST API as CloudML and <a href="https://www.rstudio.com/products/connect/">RStudio Connect</a>.
       </li>
