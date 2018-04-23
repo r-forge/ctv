@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2018-04-07</version>
+  <version>2018-04-24</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -360,7 +360,8 @@
 
       <li><i>Regression discontinuity design</i>: A variety of methods are provided in
           the <pkg>rdd</pkg>, <pkg>rddapp</pkg>, <pkg>rddtools</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.
-	  The <pkg>rdpower</pkg> package offers power calculations for regression discontinuity designs.</li>
+	  The <pkg>rdpower</pkg> package offers power calculations for regression discontinuity designs.
+	  And <pkg>rdmulti</pkg> implements analysis with multiple cutoffs or scores.</li>
       
       <li><i>z-Tree</i>: <pkg>zTree</pkg> can import data from the z-Tree software for
           developing and carrying out economic experiments.</li>
@@ -471,6 +472,7 @@
     <pkg>rddapp</pkg>
     <pkg>rddtools</pkg>
     <pkg>rdlocrand</pkg>
+    <pkg>rdmulti</pkg>
     <pkg>rdpower</pkg>
     <pkg>rdrobust</pkg>
     <pkg>reldist</pkg>
