@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-02-22</version>
+  <version>2018-04-26</version>
   
   <info>
 
@@ -272,6 +272,8 @@
     <li><code>Schumaker()</code> in package <pkg>schumaker</pkg> implements
         shape-preserving splines, guaranteed to be monotonic resp. concave
         or convex if the data is monotonic, concave, or convex.</li>
+    <li><pkg>ADPF</pkg> uses least-squares polynomial regression and 
+        statistical testing to improve Savitzky-Golay smoothing.</li>
     <li>Package <pkg>conicfit</pkg> provides several (geometric and algebraic) 
         algorithms for fitting circles, ellipses, and conics in general.</li>
     </ul>
@@ -331,10 +333,10 @@
         to generate arrangements in a fast and memory efficient manner. 
         Permutations and combinations can be drawn with/without replacement 
         and support multisets.</li>
-    <li><pkg>RcppAlgos</pkg> provides optimized functions for generating all 
+    <li><pkg>RcppAlgos</pkg> provides flexible functions for generating 
         combinations or permutations of a vector with or without constraints. 
-        Additionally, a sieving function is available for listing prime 
-        factors or divisors of integers.</li>
+        The extension package <pkg>bigIntegerAlgos</pkg> features a quadratic 
+        sieve algorithm for completely factoring large integers.</li>
     <li>Package <pkg>Zseq</pkg> generates well-known integer sequences; the 
         'gmp' package is adopted for computing with arbitrarily large numbers. 
         Every function has on its help page a hyperlink to the corresponding 
@@ -442,11 +444,13 @@
 
   <packagelist>
 
+    <pkg>ADPF</pkg>
     <pkg>akima</pkg>
     <pkg>appell</pkg>
     <pkg>arrangements</pkg>
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
+    <pkg>bigIntegerAlgos</pkg>
     <pkg>Brobdingnag</pkg>
     <pkg>combinat</pkg>
     <pkg>conicfit</pkg>
