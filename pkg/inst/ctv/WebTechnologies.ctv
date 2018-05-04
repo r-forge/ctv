@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2017-09-19</version>
+  <version>2018-05-04</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
@@ -126,7 +126,7 @@
     <p><strong>Web Analytics Services</strong></p>
     <ul>
     <li><em>Google Trends</em>: <pkg>gtrendsR</pkg> offers functions to perform and display Google Trends queries. Another GitHub package (<a href="https://github.com/emhart/rGtrends">rGtrends</a>) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. <ohat>RGoogleTrends</ohat> provides another alternative.</li>
-    <li><em>Google Analytics</em>: <pkg>googleAnalyticsR</pkg> (<a href="http://code.markedmondson.me/googleAnalyticsR/">GitHub</a>), <pkg>RGoogleAnalytics</pkg> (<a href="https://github.com/Tatvic/RGoogleAnalytics/issues">GitHub</a>), <a href="https://github.com/jdeboer/ganalytics">ganalytics</a> (<a href="https://github.com/jdeboer/ganalytics">GitHub</a>; not on CRAN), <pkg>GAR</pkg> (<a href="https://github.com/andrewgeisler/GAR">GitHub</a>), and <pkg>RGA</pkg> provide functions for accessing and retrieving data from the <a href="https://developers.google.com/analytics/">Google Analytics APIs</a>. The latter supports OAuth 2.0 authorization. <pkg>RGA</pkg> provides a shiny app to explore data. <pkg>searchConsoleR</pkg> (<a href="https://github.com/MarkEdmondson1234/searchConsoleR">GitHub</a>) links to the <a href="https://developers.google.com/webmaster-tools/">Google Search Console</a> (formerly Webmaster Tools).</li>
+    <li><em>Google Analytics</em>: <pkg>googleAnalyticsR</pkg> (<a href="http://code.markedmondson.me/googleAnalyticsR/">GitHub</a>), <a href="https://github.com/jdeboer/ganalytics">ganalytics</a> (<a href="https://github.com/jdeboer/ganalytics">GitHub</a>; not on CRAN), <pkg>GAR</pkg> (<a href="https://github.com/andrewgeisler/GAR">GitHub</a>), and <pkg>RGA</pkg> provide functions for accessing and retrieving data from the <a href="https://developers.google.com/analytics/">Google Analytics APIs</a>. The latter supports OAuth 2.0 authorization. <pkg>RGA</pkg> provides a shiny app to explore data. <pkg>searchConsoleR</pkg> (<a href="https://github.com/MarkEdmondson1234/searchConsoleR">GitHub</a>) links to the <a href="https://developers.google.com/webmaster-tools/">Google Search Console</a> (formerly Webmaster Tools).</li>
     <li><em>Online Advertising</em>: <pkg>fbRads</pkg> can manage Facebook ads via the Facebook Marketing API. <a href="https://github.com/WillemPaling/RDoubleClick">RDoubleClick</a> (not on CRAN) can retrieve data from Google's DoubleClick Campaign Manager Reporting API. <pkg>RSmartlyIO</pkg> (<a href="https://github.com/rstats-lab/RSmartlyIO">GitHub</a>) loads Facebook and Instagram advertising data provided by <a href="https://app.smartly.io/">Smartly.io</a>.</li>
     <li><em>Other services</em>: <pkg>RSiteCatalyst</pkg> has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.</li>
     <li><pkg>RAdwords</pkg> (<a href="https://github.com/jburkhardt/RAdwords">GitHub</a>) is a package for loading Google Adwords data.</li>
@@ -286,7 +286,6 @@
     <pkg>RForcecom</pkg>
     <pkg>RGA</pkg>
     <pkg>rgeolocate</pkg>
-    <pkg>RGoogleAnalytics</pkg>
     <pkg>RGoogleFit</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>rio</pkg>
