@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2016-08-18</version>
+  <version>2018-05-08</version>
   
   <info> 
   
@@ -66,7 +66,7 @@
           </li>
          
           <li>
-          The standard R distribution has excellent basic facilities for linear and generalized linear model "diagnostics," including, for example, hat-values and deletion statistics such as studentized residuals and Cook's distances (<code>hatvalues</code>, <code>rstudent</code>, and <code>cooks.distance</code>, all in the <b>stats</b> package). These are augmented by other packages: several functions in the <pkg>car</pkg> package, which emphasizes graphical methods, e.g., <code>crPlots</code> for component-plus-residual plots and <code>avPlots</code> for added-variable plots (among others), in addition to numerical diagnostics, such <code>vif</code> for (generalized) variance-inflation factors; the <pkg>dr</pkg> package for dimension reduction in regression, including SIR, SAVE, and pHd; and the <pkg>lmtest</pkg> package, which implements a variety of diagnostic tests (e.g., for heteroscedasticity, nonlinearity, and autocorrelation). The <pkg>forward</pkg> package implements diagnostics based on a "forward search" (Atkinson and Riani, <i>Robust Diagnostic Regression Analysis,</i> Springer, 2000). Other collinearity diagnostics are in the <pkg>perturb</pkg> package. Diagnostics may also be found in the <pkg>rms</pkg> package. See the <pkg>influence.ME</pkg> package for influential-data diagnostics for mixed-effects models.
+          The standard R distribution has excellent basic facilities for linear and generalized linear model "diagnostics," including, for example, hat-values and deletion statistics such as studentized residuals and Cook's distances (<code>hatvalues</code>, <code>rstudent</code>, and <code>cooks.distance</code>, all in the <b>stats</b> package). These are augmented by other packages: several functions in the <pkg>car</pkg> package, which emphasizes graphical methods, e.g., <code>crPlots</code> for component-plus-residual plots and <code>avPlots</code> for added-variable plots (among others), in addition to numerical diagnostics, such <code>vif</code> for (generalized) variance-inflation factors; the <pkg>dr</pkg> package for dimension reduction in regression, including SIR, SAVE, and pHd; and the <pkg>lmtest</pkg> package, which implements a variety of diagnostic tests (e.g., for heteroscedasticity, nonlinearity, and autocorrelation). Other collinearity diagnostics are in the <pkg>perturb</pkg> package. Diagnostics may also be found in the <pkg>rms</pkg> package. See the <pkg>influence.ME</pkg> package for influential-data diagnostics for mixed-effects models.
           </li>
           
           <li>
@@ -225,34 +225,33 @@
   
   <packagelist>
     <pkg>acepack</pkg>
-	<pkg>Amelia</pkg>
+    <pkg>Amelia</pkg>
     <pkg>aod</pkg>
-	<pkg>arm</pkg>
-	<pkg>betareg</pkg>
-	<pkg>biglm</pkg>
+    <pkg>arm</pkg>
+    <pkg>betareg</pkg>
+    <pkg>biglm</pkg>
     <pkg>BMA</pkg>
     <pkg priority="core">boot</pkg>
     <pkg>bootstrap</pkg>
     <pkg>brglm</pkg>
     <pkg priority="core">car</pkg>
-	<pkg>catspec</pkg>
-	<pkg>class</pkg>
-	<pkg>demography</pkg>
-	<pkg>dispmod</pkg>
-	<pkg>dr</pkg>
+    <pkg>catspec</pkg>
+    <pkg>class</pkg>
+    <pkg>demography</pkg>
+    <pkg>dispmod</pkg>
+    <pkg>dr</pkg>
     <pkg priority="core">effects</pkg>
     <pkg>elrm</pkg>
-	<pkg>ergm</pkg>
-	<pkg>exactLoglinTest</pkg>
-    <pkg>forward</pkg>
+    <pkg>ergm</pkg>
+    <pkg>exactLoglinTest</pkg>
     <pkg priority="core">gam</pkg>
     <pkg>gee</pkg>
     <pkg>geepack</pkg>
     <pkg>gmodels</pkg>
     <pkg>gnm</pkg>
     <pkg>gss</pkg> 
-	<pkg priority="core">Hmisc</pkg>
-	<pkg>influence.ME</pkg>
+    <pkg priority="core">Hmisc</pkg>
+    <pkg>influence.ME</pkg>
     <pkg>latentnet</pkg>
     <pkg>leaps</pkg>
     <pkg priority="core">lme4</pkg>
@@ -260,53 +259,53 @@
     <pkg>lmm</pkg>
     <pkg priority="core">lmtest</pkg>
     <pkg>locfit</pkg>
-	<pkg>logistf</pkg>
-	<pkg>logmult</pkg>
-	<pkg priority="core">lsmeans</pkg>
+    <pkg>logistf</pkg>
+    <pkg>logmult</pkg>
+    <pkg priority="core">lsmeans</pkg>
     <pkg priority="core">MASS</pkg>
     <pkg>Matching</pkg>
     <pkg>MatchIt</pkg>
-	<pkg priority="core">MCMCglmm</pkg>
+    <pkg priority="core">MCMCglmm</pkg>
     <pkg priority="core">mgcv</pkg>
-	<pkg priority="core">mi</pkg>
+    <pkg priority="core">mi</pkg>
     <pkg priority="core">mice</pkg>
     <pkg>mitools</pkg>
     <pkg>mix</pkg>
-	<pkg>mlogit</pkg>
+    <pkg>mlogit</pkg>
     <pkg>MNP</pkg>
     <pkg priority="core">multcomp</pkg> 
-	<pkg>multgee</pkg>
+    <pkg>multgee</pkg>
     <pkg>multinomRob</pkg>
-	<pkg>multiplex</pkg>
+    <pkg>multiplex</pkg>
     <pkg>mvnmle</pkg>
     <pkg>network</pkg>
     <pkg priority="core">nlme</pkg>
-	<pkg>nlstools</pkg>
+    <pkg>nlstools</pkg>
     <pkg priority="core">nnet</pkg>
-	<pkg>norm</pkg>
-	<pkg>np</pkg>
+    <pkg>norm</pkg>
+    <pkg>np</pkg>
     <pkg>optmatch</pkg>
-	<pkg>PAFit</pkg>
+    <pkg>PAFit</pkg>
     <pkg>pan</pkg>
     <pkg>perturb</pkg>
-	<pkg>PSAgraphics</pkg>
+    <pkg>PSAgraphics</pkg>
     <pkg>pscl</pkg>
     <pkg priority="core">quantreg</pkg>
     <pkg>qvcalc</pkg>
     <pkg priority="core">rms</pkg>
-	<pkg>RSiena</pkg>
+    <pkg>RSiena</pkg>
     <pkg priority="core">sandwich</pkg>
-	<pkg>simpleboot</pkg>
+    <pkg>simpleboot</pkg>
     <pkg>sna</pkg>
     <pkg>spatial</pkg>
-	<pkg>statnet</pkg>
+    <pkg>statnet</pkg>
     <pkg priority="core">survival</pkg>
     <pkg priority="core">survey</pkg>
     <pkg>sm</pkg>
     <pkg>vcd</pkg>
-	<pkg priority="core">VGAM</pkg>
-	<pkg>VIM</pkg>
-	<pkg>visreg</pkg>
+    <pkg priority="core">VGAM</pkg>
+    <pkg>VIM</pkg>
+    <pkg>visreg</pkg>
     <pkg>Zelig</pkg>
   </packagelist>
   
@@ -314,17 +313,17 @@
     <view>Bayesian</view>
     <view>Econometrics</view>
     <view>Finance</view>
-	<view>Graphics</view>
+    <view>Graphics</view>
     <view>MachineLearning</view>
-	<view>MetaAnalysis</view>
+    <view>MetaAnalysis</view>
     <view>Multivariate</view>
-	<view>OfficialStatistics</view>
+    <view>OfficialStatistics</view>
     <view>Psychometrics</view>
     <view>Spatial</view>
-	<view>SpatioTemporal</view>
-	<view>Survival</view>
-	<view>TimeSeries</view>
-	<a href="http://socserv.mcmaster.ca/jfox/Books/Companion/index.html">Fox and Weisberg, <i>An R Companion to Applied Regression, Second Edition</i> website</a>
+    <view>SpatioTemporal</view>
+    <view>Survival</view>
+    <view>TimeSeries</view>
+    <a href="http://socserv.mcmaster.ca/jfox/Books/Companion/index.html">Fox and Weisberg, <i>An R Companion to Applied Regression, Second Edition</i> website</a>
     <a href="http://biostat.mc.vanderbilt.edu/wiki/Main/RmS">Harrell, <i>Regression Modeling Strategies, Second Edition</i> website</a>
     <a href="http://statnet.org/">Statnet Project website</a>
     <a href="http://www.stats.ox.ac.uk/pub/MASS4/">Venables and Ripley, <i>Modern Applied Statistics with S, 4th ed.</i> website</a>
