@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2018-05-10</version>
+  <version>2018-05-18</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
@@ -89,7 +89,7 @@
     <p><strong>Document and Code Sharing</strong></p>
     <ul>
     <li><em>Code Sharing</em>: <pkg>gistr</pkg> (<a href="https://github.com/ropensci/gistr">GitHub</a>) works with GitHub gists (<a href="https://gist.github.com/">gist.github.com</a>) from R, allowing you to create new gists, update gists with new files, rename files, delete files, get and delete gists, star and un-star gists, fork gists, open a gist in your default browser, get embed code for a gist, list gist commits, and get rate limit information when authenticated. <pkg>git2r</pkg> provides bindings to the git version control system and <a href="https://github.com/cscheid/rgithub">rgithub</a> (not on CRAN) provides access to the GitHub.com API, both of which can facilitate code or data sharing via GitHub. <pkg>gitlabr</pkg> is a <a href="https://about.gitlab.com/">GitLab</a>-specific client.</li>
-    <li><em>Data archiving</em>: <pkg>dvn</pkg> (<a href="https://github.com/ropensci/dvn">GitHub</a>) provides access to The Dataverse Network API. <pkg>rfigshare</pkg> (<a href="https://github.com/ropensci/rfigshare">GitHub</a>) connects with <a href="https://figshare.com/">Figshare.com</a>. <a href="https://cran.rstudio.com/src/contrib/Archive/dataone/">dataone</a> provides read/write access to data and metadata from the <a href="https://www.dataone.org/">DataONE network</a> of Member Node data repositories. <pkg>dataone</pkg> (<a href="https://github.com/DataONEorg/rdataone">GitHub</a>) provides a client for <a href="https://www.dataone.org">DataONE</a> repositories.</li>
+    <li><em>Data archiving</em>: <pkg>rfigshare</pkg> (<a href="https://github.com/ropensci/rfigshare">GitHub</a>) connects with <a href="https://figshare.com/">Figshare.com</a>. <a href="https://cran.rstudio.com/src/contrib/Archive/dataone/">dataone</a> provides read/write access to data and metadata from the <a href="https://www.dataone.org/">DataONE network</a> of Member Node data repositories. <pkg>dataone</pkg> (<a href="https://github.com/DataONEorg/rdataone">GitHub</a>) provides a client for <a href="https://www.dataone.org">DataONE</a> repositories.</li>
     <li><em>Google Drive/Google Documents</em>: <a href="https://github.com/noamross/driver">driver</a> (not on CRAN) is a thin client for the Google Drive API. The <ohat>RGoogleDocs</ohat> package is an example of using the RCurl and XML packages to quickly develop an interface to the Google Documents API. <ohat>RGoogleStorage</ohat> provides programmatic access to the Google Storage API. This allows R users to access and store data on Google's storage. We can upload and download content, create, list and delete folders/buckets, and set access control permissions on objects and buckets.</li>
     <li><em>Google Sheets</em>: <pkg>googlesheets</pkg> (<a href="https://github.com/jennybc/googlesheets">GitHub</a>) can access private or public Google Sheets by title, key, or URL. Extract data or edit data. Create, delete, rename, copy, upload, or download spreadsheets and worksheets. <pkg>gsheet</pkg> (<a href="https://github.com/maxconway/gsheet">GitHub</a>) can download Google Sheets using just the sharing link. Spreadsheets can be downloaded as a data frame, or as plain text to parse manually.</li>
     <li><pkg>imguR</pkg> (<a href="https://github.com/cloudyr/imguR">GitHub</a>) is a package to share plots using the image hosting service <a href="http://imgur.com">Imgur.com</a>. knitr also has a function <code>imgur_upload()</code> to load images from literate programming documents.</li>
@@ -204,7 +204,6 @@
     <pkg>ddeploy</pkg>
     <pkg>discgolf</pkg>
     <pkg>downloader</pkg>
-    <pkg>dvn</pkg>
     <pkg>europepmc</pkg>
     <pkg>factualR</pkg>
     <pkg>FastRWeb</pkg>
