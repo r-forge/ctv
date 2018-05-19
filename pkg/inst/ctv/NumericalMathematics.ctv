@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-04-26</version>
+  <version>2018-05-19</version>
   
   <info>
 
@@ -29,7 +29,8 @@
     If some packages are missing or certain topics in numerical math 
     should be treated in more detail, please let the maintainer know.</p>
 
-    <h4>Numerical Linear Algebra</h4>
+
+    <p><strong>Numerical Linear Algebra</strong></p>
 
     <p>As statistics is based to a large extent on linear algebra, many 
     numerical linear algebra routines are present in R, and some only 
@@ -99,7 +100,8 @@
         using <pkg>Rcpp</pkg> for performance and ease of use.</li>
     </ul>
 
-    <h4>Special Functions</h4>
+
+    <p><strong>Special Functions</strong></p>
 
     <p>Many special mathematical functions are present in R, especially 
     logarithms and exponentials, trigonometric and hyperbolic functions, or 
@@ -139,7 +141,8 @@
         Lambert W function (using Rcpp).</li>
     </ul>
 
-    <h4>Polynomials</h4>
+
+    <p><strong>Polynomials</strong></p>
 
     <p>Function polyroot() in base R determines all zeros of a polynomial,  
     based on the Jenkins-Traub algorithm. Linear regression function lm() 
@@ -167,7 +170,8 @@
         operate on these polynomials.</li>
     </ul>
 
-    <h4>Differentiation and Integration</h4>
+
+    <p><strong>Differentiation and Integration</strong></p>
 
     <p><code>D()</code> and <code>deriv()</code> in base R compute 
     derivatives of simple expressions symbolically.
@@ -230,7 +234,8 @@
         inflection points of curves defined by discrete points.</li>
     </ul>
 
-    <h4>Interpolation and Approximation</h4>
+
+    <p><strong>Interpolation and Approximation</strong></p>
 
     <p>Base R provides functions <code>approx()</code> for constant and linear 
     interpolation, and <code>spline()</code> for cubic (Hermite) spline 
@@ -278,7 +283,8 @@
         algorithms for fitting circles, ellipses, and conics in general.</li>
     </ul>
 
-    <h4>Root Finding and Fixed Points</h4>
+
+    <p><strong>Root Finding and Fixed Points</strong></p>
 
     <p><code>uniroot()</code>, implementing the Brent-Decker algorithm, is the 
     basic routine in R to find roots of univariate functions. There are 
@@ -304,7 +310,8 @@
         epsilon extrapolation methods, and minimal polynomial methods.</li>
     </ul>
 
-    <h4>Discrete Mathematics and Number Theory</h4>
+
+    <p><strong>Discrete Mathematics and Number Theory</strong></p>
 
     <p>Not so many functions are available for computational number theory.
     Note that integers in double precision can be represented exactly up to 
@@ -344,7 +351,8 @@
         ([OEIS](https://oeis.org/)).</li>
     </ul>
 
-    <h4>Multi-Precision Arithmetic and Symbolic Mathematics</h4>
+
+    <p><strong>Multi-Precision Arithmetic and Symbolic Mathematics</strong></p>
 
     <ul>
     <li>Multiple precision arithmetic is available in R through package 
@@ -372,30 +380,12 @@
         in calculus and linear algebra.</li>
     </ul>
 
-    <h4>MATLAB, Octave, Julia, and Python Interfaces</h4>
 
-    <p>Interfaces to numerical computation software such as MATLAB 
-    (commercial) or Octave (free) will be important when solving difficult 
-    numerical problems. (Please note that the commercial programs SAS and 
-    Mathematica do have facilities to call R functions.)</p>
-
-    <ul>
-    <li>The <pkg>matlab</pkg> emulation package contains about 30 simple 
-        functions, replicating MATLAB functions, using the respective MATLAB 
-        names and being implemented in pure R.
-    </li>
-    <li>Package <pkg>R.matlab</pkg> provides tools to read and write MAT 
-        files, which is the MATLAB data format. It also enables a 
-        one-directional interface with a MATLAB process, sending and 
-        retrieving objects through a TCP/IP connection.
-    </li>
-    </ul>
+    <p><strong>Python Interfaces</strong></p>
 
     <p>Python, through its modules 'NumPy', 'SciPy', 'Matplotlib', 'SymPy', 
     and 'pandas', has elaborate and efficient numerical and graphical tools 
-    available. And Julia is "a high-level, high-performance dynamic 
-    programming language for numerical computing", which makes it interesting 
-    for optimization problems and demanding scientific computations in R.</p>
+    available.</p>
 
     <ul>
     <li><pkg>reticulate</pkg> is an R interface to Python modules, classes, 
@@ -425,9 +415,45 @@
         a remote machine, variable access and function calls will be delegated 
         through the network.
     </li>
-    <li><pkg>XRPython</pkg> and <pkg>XRJulia</pkg> are based on John Chambers' 
-        <pkg>XR</pkg> package and allow for structured integration of R with 
-        Python resp. Julia. Especially the Julia interface is interesting and 
+    <li><pkg>XRPython</pkg> (and 'XRJulia') are based on John Chambers' 
+        <pkg>XR</pkg> package and his "Extending R" book and allow for a very 
+        structured integration of R with Python resp. Julia.
+    </li>
+    </ul>
+    <ul>
+    <li>Note that <a href="http://www.sagemath.org/">SageMath</a> is a free open
+    source mathematics system based on Python, allowing to run R functions, but 
+    also providing access to Maxima, GAP, FLINT, and many more math programs. 
+    SageMath can be downloaded or used through a Web interface (CoCalc).
+    </li>
+    </ul>
+
+
+    <p><strong>MATLAB, Octave, Julia, and other Interfaces</strong></p>
+
+    <p>Interfaces to numerical computation software such as MATLAB 
+    (commercial) or Octave (free) will be important when solving difficult 
+    numerical problems.</p>
+
+    <ul>
+    <li>The <pkg>matlab</pkg> emulation package contains about 30 simple 
+        functions, replicating MATLAB functions, using the respective MATLAB 
+        names and being implemented in pure R. (See also <pkg>pracma</pkg> 
+        for many more mathematical functions designed with MATLAB in mind.)
+    </li>
+    <li>Package <pkg>R.matlab</pkg> provides tools to read and write MAT 
+        files, which is the MATLAB data format. It also enables a 
+        one-directional interface with a MATLAB process, sending and 
+        retrieving objects through a TCP/IP connection.
+    </li>
+    </ul>
+
+    <p>Julia is "a high-level, high-performance dynamic programming language 
+       for numerical computing", which makes it interesting for optimization 
+       problems and other demanding scientific computations in R.</p>
+
+    <ul>
+    <li>The Julia interface of the <pkg>XRJulia</pkg> package by John Chambers 
         provides direct analogues to Julia function calls. A 'juliaExamples' 
         package is available on Github.
     </li>
@@ -439,8 +465,21 @@
         language like Julia.
     </li>
     </ul>
+
+    <p> The commercial programs SAS and Mathematica do have facilities  
+        to call R functions. Here is another Computer Algebra System (CAS) 
+        in Pure Mathematics that can be called from R.</p>
+
+    <ul>
+    <li>Package <pkg>m2r</pkg> provides a persistent interface to Macauley2, 
+        an extended software program supporting research in algebraic geometry 
+        and commutative algebra. Macauley2 has to be installed independently,
+        otherwise a Macauley2 process in the cloud will be instantiated.
+    </li>
+    </ul>
         
   </info>
+
 
   <packagelist>
 
@@ -478,6 +517,7 @@
     <pkg>ktsolve</pkg>
     <pkg>lamW</pkg>
     <pkg>logOfGamma</pkg>
+    <pkg>m2r</pkg>
     <pkg>magic</pkg>
     <pkg>MASS</pkg>
     <pkg>matlab</pkg>
@@ -539,7 +579,8 @@
     <pkg>XRPython</pkg>
     <pkg>Zseq</pkg>
   </packagelist>
-  
+
+
   <links>
     <view>DifferentialEquations</view>
     <view>Optimization</view>
