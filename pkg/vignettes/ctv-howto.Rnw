@@ -16,7 +16,7 @@
 
 \SweaveOpts{engine=R}
 %\VignetteIndexEntry{Writing CRAN Task Views}
-%\VignetteDepends{XML}
+%\VignetteDepends{xml2}
 %\VignetteKeywords{CRAN task views, repository, packages, installation}
 %\VignettePackage{ctv}
 

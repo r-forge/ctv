@@ -42,7 +42,7 @@ the vignette of this package.
 
 \code{read.ctv} can read a \file{.ctv} file with a CRAN task view specification
 and returns an object of class \code{"ctv"}. This functions requires the availability
-of the \pkg{XML} package.
+of the \pkg{xml2} package.
 
 \code{ctv2html} generates a \file{.html} file with the information contained in
 a \code{"ctv"} object.

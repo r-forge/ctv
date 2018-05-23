@@ -12,5 +12,5 @@ Description: Infrastructure for task views to CRAN-style repositories: Querying 
              packages (client-side tools), generating HTML pages and storing task view information in the repository
 	     (server-side tools).
 Depends: R (>= 2.13.0), utils
-Suggests: XML
+Suggests: xml2
 License: GPL-2 | GPL-3
