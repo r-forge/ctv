@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2018-04-24</version>
+  <version>2018-05-25</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -277,8 +277,7 @@
 
       <li><i>Vector autoregression</i>: Simple models can be fitted by <code>ar()</code> in stats, more
 	  elaborate models are provided in package <pkg>vars</pkg> along with suitable diagnostics,
-	  visualizations etc. A Bayesian approach is available in <pkg>MSBVAR</pkg> and panel
-	  vector autoregressions in <pkg>panelvar</pkg>.</li>
+	  visualizations etc. Panel vector autoregressions are available in <pkg>panelvar</pkg>.</li>
 
       <li><i>Unit root and cointegration tests</i>: <pkg>urca</pkg>,
 	  <pkg>tseries</pkg>, <pkg>CADFtest</pkg>. See also <pkg>pco</pkg> for panel cointegration tests.</li>
@@ -440,7 +439,6 @@
     <pkg>mlogit</pkg>
     <pkg>mnlogit</pkg>
     <pkg>MNP</pkg>
-    <pkg>MSBVAR</pkg>
     <pkg>multiwayvcov</pkg>
     <pkg>mvProbit</pkg>
     <pkg>nlme</pkg>
