@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2017-04-25</version>
+  <version>2018-05-25</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -153,9 +153,6 @@ Whilst not official R packages one software suite in particular is worthy of men
           With recent technical advances in high-throughput genotyping technologies the possibility of performing 
           Genome-Wide Association Studies is now a feasible strategy.  A number of packages are available to facilitate
           the analysis of these large data sets.
-<pkg>GenABEL</pkg> 
-          is designed for the efficient storage and handling of GWAS data with fast analysis tools for quality control,
-          association with binary and quantitative traits, as well as tools for visualizing results.
 <pkg>pbatR</pkg>
           provides a GUI to the powerful PBAT software which performs family and population based family and 
           population based studies.  The software has been implemented to take advantage of parallel processing, which
@@ -207,7 +204,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg>bqtl</pkg>
     <pkg>dlmap</pkg>
     <pkg priority="core">gap</pkg>
-    <pkg>GenABEL</pkg>
     <pkg priority="core">genetics</pkg>
     <pkg>hapassoc</pkg>
     <pkg>haplo.ccs</pkg>
