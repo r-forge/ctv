@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2018-05-25</version>
+  <version>2018-06-02</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -103,8 +103,7 @@
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
 	  Interval regression models are in <pkg>intReg</pkg>. Censored regression models with
 	  conditional heteroscedasticity are in <pkg>crch</pkg>.
-	  Furthermore, hurdle models for left-censored data at zero can be estimated with
-	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>
+	  Models for sample selection are available in <pkg>sampleSelection</pkg>
 	  and semiparametric extensions of these are provided by <pkg>SemiParSampleSel</pkg>.
 	  Package <pkg>matchingMarkets</pkg> corrects for selection bias when the sample is the
 	  result of a stable matching process (e.g., a group formation or college admissions problem).</li>
@@ -430,7 +429,6 @@
     <pkg>meboot</pkg>
     <pkg>mfx</pkg>
     <pkg>mgcv</pkg>
-    <pkg>mhurdle</pkg>
     <pkg>micEcon</pkg>
     <pkg>micEconAids</pkg>
     <pkg>micEconCES</pkg>
