@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2018-01-06</version>
+  <version>2018-06-18</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -341,11 +341,6 @@
     </li>
 
     <li>
-      <pkg>deal</pkg>
-      Learning Bayesian networks with mixed (discrete and continuous) variables.
-    </li>
-
-    <li>
       <pkg>gRain</pkg>
       A package for probability propagation in graphical
       independence networks, also known as probabilistic
@@ -475,7 +470,6 @@
     <pkg>catnet</pkg>
     <pkg>coda</pkg>
     <pkg>dclone</pkg>
-    <pkg>deal</pkg>
     <pkg>diagram</pkg>
     <pkg>DiagrammeR</pkg>    
     <pkg>dynamicGraph</pkg>
