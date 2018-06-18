@@ -73,15 +73,6 @@
     </li>
 
     <li>
-      <pkg>mathgraph</pkg>
-      Simple tools for constructing and manipulating objects of class
-      mathgraph from the book "S Poetry", available at
-      <a href="http://www.burns-stat.com/pages/spoetry.html">
-	http://www.burns-stat.com/pages/spoetry.html
-	</a>
-    </li>
-
-    <li>
       <pkg>network</pkg>
       Tools to create and modify network objects.  The network class can
       represent a range of relational data types, and supports arbitrary
@@ -477,7 +468,6 @@
     <pkg>gRim</pkg>
     <pkg>igraph</pkg>
     <pkg>lvnet</pkg>        
-    <pkg>mathgraph</pkg>
     <pkg>MXM</pkg>
     <pkg>ndtv</pkg>
     <pkg>network</pkg>
