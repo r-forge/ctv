@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2018-05-25</version>
+  <version>2018-06-18</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -138,9 +138,6 @@ Whilst not official R packages one software suite in particular is worthy of men
           also contains tests for haplotype associations under a GLM framework, but also provides score tests of
           association as well as providing novel functionality for building haplotypes in a sequential manner, 
           power and sample-size calculations and the preparation of data matrices for use in other methods.
-<pkg>haplo.ccs</pkg>
-          utilises the haplotype estimation of <pkg>haplo.stats</pkg> and performs case-control association tests
-          via weighted logistic regression.
 <pkg>tdthap</pkg>
           implements transmission/disequilibrium tests for extended marker haplotypes.
 <pkg>LDheatmap</pkg>
@@ -206,7 +203,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg priority="core">gap</pkg>
     <pkg priority="core">genetics</pkg>
     <pkg>hapassoc</pkg>
-    <pkg>haplo.ccs</pkg>
     <pkg>HardyWeinberg</pkg>
     <pkg priority="core">haplo.stats</pkg>
     <pkg>hierfstat</pkg>
