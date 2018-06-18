@@ -209,13 +209,6 @@
     </li>
     
     <li>
-      <pkg>gRc</pkg>
-      Inference in graphical Gaussian models with edge and vertex
-      symmetries (Graphical Gaussian models with colours).
-      Link: <a href="https://dx.doi.org/doi:10.18637/jss.v023.i06">doi:10.18637/jss.v023.i06</a>
-    </li>
-    
-    <li>
       <pkg>huge</pkg> High-dimensional Undirected Graph Estimation.
     </li>
 
@@ -481,7 +474,6 @@
     <pkg>giRaph</pkg>
     <pkg>gRain</pkg>
     <pkg priority="core">gRbase</pkg>
-    <pkg>gRc</pkg>
     <pkg>gRim</pkg>
     <pkg>igraph</pkg>
     <pkg>lvnet</pkg>        
