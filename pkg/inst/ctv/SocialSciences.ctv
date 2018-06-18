@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2018-05-08</version>
+  <version>2018-06-18</version>
   
   <info> 
   
@@ -99,7 +99,7 @@
           </li>
           
           <li>
-          See the <pkg>brglm</pkg> and <pkg>logistf</pkg> packages for bias-reduction in binomial-response GLMs (useful, e.g., in cases of complete separation); the <pkg>elrm</pkg> package, which approximates exact conditional inference in logistic regression; the <pkg>exactLoglinTest</pkg> package for exact tests of loglinear models; the <code>clogit</code> function in the <pkg>survival</pkg> package for conditional logistic regression; and the <pkg>vcd</pkg> package for graphical displays of categorical data, including mosaic plots.
+          See the <pkg>brglm</pkg> and <pkg>logistf</pkg> packages for bias-reduction in binomial-response GLMs (useful, e.g., in cases of complete separation); the <pkg>exactLoglinTest</pkg> package for exact tests of loglinear models; the <code>clogit</code> function in the <pkg>survival</pkg> package for conditional logistic regression; and the <pkg>vcd</pkg> package for graphical displays of categorical data, including mosaic plots.
           </li>
           
           <li>
@@ -241,7 +241,6 @@
     <pkg>dispmod</pkg>
     <pkg>dr</pkg>
     <pkg priority="core">effects</pkg>
-    <pkg>elrm</pkg>
     <pkg>ergm</pkg>
     <pkg>exactLoglinTest</pkg>
     <pkg priority="core">gam</pkg>
