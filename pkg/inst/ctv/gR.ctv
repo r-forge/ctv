@@ -159,6 +159,26 @@
     </li>
 
     <li>
+      <pkg>bnclassify</pkg> Learning Discrete Bayesian Network Classifiers from Data.
+
+      State-of-the art algorithms for learning discrete Bayesian
+      network classifiers from data, including a number of those
+      described in Bielza and Larranaga (2014)
+      with functions for prediction, model evaluation and inspection.
+
+      The package implements a number of structure-learning
+      algorithms, with both discriminative and generative network
+      scores, and a number of naive Bayes-specific parameter
+      estimation methods, such as the Model Averaged Naïve
+      Bayes. Prediction with complete data is rather fast, allowing
+      for discriminative scores for structure learning with moderately
+      sized-data sets (e.g. the splice data set, with 61 variables and
+      3190 instances in ~100 seconds on my machine). There is a number
+      of utility functionalities, such as cross-validation.
+    </li>
+
+    
+    <li>
       <pkg>bnstruct</pkg> Bayesian Network Structure Learning from
       Data with Missing Values.
 
@@ -172,6 +192,7 @@
       using bootstrap samples, imputed data, inference.
     </li>
 
+    
 
 
 
@@ -351,6 +372,14 @@
       Notice: RHugin is NOT on CRAN.
       Link: <a href="http://rhugin.r-forge.r-project.org/">http://rhugin.r-forge.r-project.org/</a>
     </li>
+    
+    <li>
+      <pkg>sparsebn</pkg> Fast methods for learning sparse Bayesian
+      networks from high-dimensional data using coordinate descent and
+      sparse regularization. Designed to handle mixed experimental and
+      observational data with thousands of variables with either
+      continuous or discrete observations.
+    </li>
 
 
   </ul>
@@ -447,6 +476,7 @@
     <pkg>abn</pkg>
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
+    <pkg>bnclassify</pkg>
     <pkg>bnstruct</pkg>
     <pkg>boa</pkg>
     <pkg>BDgraph</pkg>
@@ -476,6 +506,7 @@
     <pkg>pcalg</pkg>
     <pkg>QUIC</pkg>
     <pkg>SIN</pkg>
+    <pkg>sparsebn</pkg>
     <pkg>R2OpenBUGS</pkg>
     <pkg>R2WinBUGS</pkg>
     <pkg>rbugs</pkg>
