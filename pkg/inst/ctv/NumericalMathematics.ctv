@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-05-19</version>
+  <version>2018-07-15</version>
   
   <info>
 
@@ -207,9 +207,7 @@
         n-dimensional space is available in package <pkg>cubature</pkg> as 
         function <code>adaptIntegrate()</code>, based on a C library of the
         same name. The integrand functions can even be multi-valued.</li>
-    <li>Multi-dimensional numerical integration is also covered in package 
-        <pkg>R2Cuba</pkg>, a wrapper around the C library Cuba.
-        With <code>vegas()</code> it includes an approach to Monte Carlo 
+    <li><code>vegas()</code> includes an approach to Monte Carlo 
         integration based on importance sampling.</li>
     <li><pkg>mvQuad</pkg> provides methods for generating multivariate grids 
         that can be used for multivariate integration. These grids will be 
@@ -545,7 +543,6 @@
     <pkg>PythonInR</pkg>
     <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
-    <pkg>R2Cuba</pkg>
     <pkg>rARPACK</pkg>
     <pkg>Rcpp</pkg>
     <pkg>RcppAlgos</pkg>
