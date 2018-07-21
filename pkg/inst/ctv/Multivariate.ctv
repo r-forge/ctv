@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2018-02-12</version>
+  <version>2018-07-21</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -188,8 +188,7 @@
 	  and quadratic discrimination respectively. <pkg>mda</pkg> provides mixture and
 	  flexible discriminant analysis with <code>mda()</code> and <code>fda()</code> as well as
 	  multivariate adaptive regression splines with <code>mars()</code> and adaptive spline
-	  backfitting with the <code>bruto()</code> function.   Multivariate adaptive regression splines can also be found in <pkg>earth</pkg>.  <pkg>rda</pkg> provides classification 
-          for high dimensional data by means of shrunken centroids regularized discriminant analysis.
+	  backfitting with the <code>bruto()</code> function.   Multivariate adaptive regression splines can also be found in <pkg>earth</pkg>.
 	  Package <pkg>class</pkg> provides k-nearest 
           neighbours by <code>knn()</code>, <pkg>knncat</pkg> provides k-nearest neighbours for 
           categorical variables.
@@ -346,7 +345,6 @@
     <pkg>proxy</pkg>  
     <pkg>psy</pkg>
     <pkg>PTAk</pkg>
-    <pkg>rda</pkg>
     <pkg>relaimpo</pkg>    
     <pkg>rgl</pkg>
     <pkg>rggobi</pkg>
