@@ -48,11 +48,6 @@
     </li>
 
     <li>
-      <pkg>giRaph</pkg>
-      Supply classes and methods to represent and manipulate graphs
-    </li>
-
-    <li>
       <bioc>graph</bioc>
       A package that implements some simple graph handling capabilities.
     </li>
@@ -471,7 +466,6 @@
     <pkg>GeneNet</pkg>
     <pkg>huge</pkg>
     <pkg>ggm</pkg>
-    <pkg>giRaph</pkg>
     <pkg>gRain</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRim</pkg>
