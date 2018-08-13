@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-07-15</version>
+  <version>2018-08-12</version>
   
   <info>
 
@@ -188,7 +188,11 @@
         in R, providing numerical gradients, Jacobians, and Hessians, computed 
         by simple finite differences, Richardson extrapolation, or the highly 
         accurate complex step approach.</li>
-    <li>Package <pkg>pracma</pkg> contains functions for computing numerical 
+    <li>Package <github>Non-Contradiction/autodiffr</github> (on Github) 
+        provides an R wrapper for the Julia packages ForwardDiff.jl and 
+        ReverseDiff.jl to do automatic differentiation for native R functions. 
+        (Works only with Julia v0.6 for the moment)</li>
+    <li><pkg>pracma</pkg> contains functions for computing numerical 
         derivatives, including Richardson extrapolation or complex step. 
         <code>fderiv()</code> computes numerical derivatives of higher orders.
         <pkg>pracma</pkg> has several routines for numerical integration: 
@@ -264,6 +268,9 @@
         (It is intended to provide a free replacement for the ACM licensed 
         <code>akima::interp</code> and <code>tripack::tri.mesh</code> 
         functions.)</li>
+    <li>Package <pkg>chebpol</pkg> contains methods for creating multivariate 
+        Chebyshev and multilinear interpolation on regular grids, e.g. the 
+        Floater-Hormann barycenter method, or polyharmonic splines for scattered data.</li>
     <li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
         constrained two-dimensional Delaunay triangulation package providing 
         both triangulation and generation of Voronoi mosaics of irregular 
@@ -326,6 +333,9 @@
     <li><pkg>magic</pkg> creates and investigates magical squares and
         hypercubes, including functions for the manipulation and analysis 
         of arbitrarily dimensioned arrays.</li>
+    <li>Package <pkg>freegroup</pkg> provides functionality for manipulating 
+        elements of a free group including juxtaposition, inversion, 
+        multiplication by a scalar, power operations, and Tietze forms.</li>
     <li>The <pkg>partitions</pkg> package enumerates additive partitions 
         of integers, including restricted and unequal partitions.</li>
     <li><pkg>permutations</pkg> treats permutations as invertible functions of 
@@ -346,7 +356,7 @@
         'gmp' package is adopted for computing with arbitrarily large numbers. 
         Every function has on its help page a hyperlink to the corresponding 
         entry in the On-Line Encyclopedia of Integer Sequences 
-        ([OEIS](https://oeis.org/)).</li>
+        (<a href="https://oeis.org/">OEIS</a>).</li>
     </ul>
 
 
@@ -422,7 +432,8 @@
     <li>Note that <a href="http://www.sagemath.org/">SageMath</a> is a free open
     source mathematics system based on Python, allowing to run R functions, but 
     also providing access to Maxima, GAP, FLINT, and many more math programs. 
-    SageMath can be downloaded or used through a Web interface (CoCalc).
+    SageMath can be downloaded or used through a Web interface at
+    <a href="https://cocalc.com/">CoCalc</a>.
     </li>
     </ul>
 
@@ -457,10 +468,7 @@
     </li>
     <li><pkg>JuliaCall</pkg> provides seamless integration between R and Julia. 
         Using the high-level interface, the user can call any Julia function 
-        just like an R function with automatic type conversion. With the 
-        low-level interface the user interfaces directly with C-level SEXPs 
-        while enjoying the convenience of using a high-level programming 
-        language like Julia.
+        just like an R function with automatic type conversion.
     </li>
     </ul>
 
@@ -480,7 +488,6 @@
 
 
   <packagelist>
-
     <pkg>ADPF</pkg>
     <pkg>akima</pkg>
     <pkg>appell</pkg>
@@ -489,6 +496,7 @@
     <pkg>Bessel</pkg>
     <pkg>bigIntegerAlgos</pkg>
     <pkg>Brobdingnag</pkg>
+    <pkg>chebpol</pkg>
     <pkg>combinat</pkg>
     <pkg>conicfit</pkg>
     <pkg>contfrac</pkg>
@@ -504,6 +512,7 @@
     <pkg>findpython</pkg>
     <pkg>FixedPoint</pkg>
     <pkg>fourierin</pkg>
+    <pkg>freegroup</pkg>
     <pkg>gaussquad</pkg>
     <pkg>geigen</pkg>
     <pkg>gmp</pkg>
