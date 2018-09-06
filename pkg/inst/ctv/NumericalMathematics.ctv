@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-08-12</version>
+  <version>2018-09-06</version>
   
   <info>
 
@@ -383,9 +383,6 @@
         (written in Python) from R. 
         It supports arbitrary precision computations, linear algebra and 
         calculus, solving equations, discrete mathematics, and much more.</li>
-    <li>Package <pkg>Ryacas</pkg> interfaces the computer algebra system 
-        'Yacas'. It supports symbolic and arbitrary precision computations 
-        in calculus and linear algebra.</li>
     </ul>
 
 
@@ -565,7 +562,6 @@
     <pkg>Rserve</pkg>
     <pkg>RSpectra</pkg>
     <pkg>rSymPy</pkg>
-    <pkg>Ryacas</pkg>
     <pkg>schumaker</pkg>
     <pkg>signal</pkg>
     <pkg>SimplicialCubature</pkg>
