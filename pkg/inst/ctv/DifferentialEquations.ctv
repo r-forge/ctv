@@ -83,7 +83,7 @@
           Currently the serial version 'CVODE' can be accessed. Models can be written in R or C++ using <pkg>Rcpp</pkg>.
        </li>
        <li>
-          The R package <pkg>diffeqr</pkg> provides a seamless interface to the <strong>DifferentialEquations.jl<strong> 
+          The R package <pkg>diffeqr</pkg> provides a seamless interface to the <strong>DifferentialEquations.jl</strong> 
           package from the Julia programming language. It has unique high performance methods for solving ODE, SDE, DDE, DAE and more. 
           Models can be written in either R or Julia. It requires an installation of the Julia language.
        </li>
@@ -104,7 +104,7 @@
        </li>
        <li> Functions in the package <pkg>deSolve</pkg> can solve both stiff and non-stiff DDE problems.
        </li> 
-       <li> Package <pkg>diffeqr</pkg> can solve DDE problems using the <strong>DifferentialEquations.jl<strong> 
+       <li> Package <pkg>diffeqr</pkg> can solve DDE problems using the <strong>DifferentialEquations.jl</strong> 
           package from the Julia programming language.
        </li> 
      </ul>
@@ -144,7 +144,7 @@
        </li>
        <li> Three more DAE solvers are in the package <pkg>deTestSet</pkg>.
        </li>
-       <li> Package <pkg>diffeqr</pkg> can solve DAE problems using the <strong>DifferentialEquations.jl<strong> 
+       <li> Package <pkg>diffeqr</pkg> can solve DAE problems using the <strong>DifferentialEquations.jl</strong> 
           package from the Julia programming language.
        </li> 
       </ul>       
@@ -157,7 +157,7 @@
        <li> The package <pkg>ReacTran</pkg> can solve BVPs that belong to the 
        class of reactive transport equations.
        </li>
-       <li> Package <pkg>diffeqr</pkg> can also solve BVPs using the <strong>DifferentialEquations.jl<strong> 
+       <li> Package <pkg>diffeqr</pkg> can also solve BVPs using the <strong>DifferentialEquations.jl</strong> 
           package from the Julia programming language.
        </li> 
      </ul>
