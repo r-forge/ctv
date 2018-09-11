@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2017-11-22</version>
+  <version>2018-09-11</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -57,7 +57,7 @@
          variables faster than <code>rnorm</code>, the Brownian motion, the Euler and Milstein schemes,
          and the Gaussian Vasicek process. Multi-core support will be provided.
        </li>
-	   <li> Package <pkg>diffeqr</pkg> can solve SDE problems using the <strong>DifferentialEquations.jl<strong> 
+	   <li> Package <pkg>diffeqr</pkg> can solve SDE problems using the <strong>DifferentialEquations.jl</strong> 
 		  package from the Julia programming language.
        </li> 
      </ul>  
