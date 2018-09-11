@@ -57,6 +57,9 @@
          variables faster than <code>rnorm</code>, the Brownian motion, the Euler and Milstein schemes,
          and the Gaussian Vasicek process. Multi-core support will be provided.
        </li>
+	   <li> Package <pkg>diffeqr</pkg> can solve SDE problems using the <strong>DifferentialEquations.jl<strong> 
+		  package from the Julia programming language.
+       </li> 
      </ul>  
       
     <p><strong>Ordinary Differential Equations (ODEs)</strong></p> 
@@ -64,9 +67,9 @@
      Several packages offer to solve ODEs.
      <ul>
        <li> The "odesolve" package was the first to solve ordinary differential equations in R.
-        It contained two integration methods. It is not actively maintained and has been replaced by the package <pkg>deSolve</pkg>.
+        It contained two integration methods. It has been replaced by the package <pkg>deSolve</pkg>.
        </li>
-       <li> The package <pkg>deSolve</pkg> contains several solvers for solving ODEs. 
+       <li> The package <pkg>deSolve</pkg> contains several solvers for solving ODE, DAE, DDE and PDE. 
         It can deal with stiff and nonstiff problems.
        </li>
        <li> The package <pkg>deTestSet</pkg> contains solvers designed for solving 
@@ -74,6 +77,15 @@
        </li>
        <li> The package <pkg>odeintr</pkg> generates and compiles C++ ODE solvers on the fly using Rcpp
             and <a href="http://www.boost.org/">Boost</a> <a href="http://www.odeint.com/">odeint</a>.
+       </li>
+       <li>
+         Package <pkg>sundialr</pkg> provides an interface to the 'SUNDIALS' ODE solvers. 
+          Currently the serial version 'CVODE' can be accessed. Models can be written in R or C++ using <pkg>Rcpp</pkg>.
+       </li>
+       <li>
+          The R package <pkg>diffeqr</pkg> provides a seamless interface to the <strong>DifferentialEquations.jl<strong> 
+          package from the Julia programming language. It has unique high performance methods for solving ODE, SDE, DDE, DAE and more. 
+          Models can be written in either R or Julia. It requires an installation of the Julia language.
        </li>
        <li>Package <pkg>pracma</pkg> implements several adaptive Runge-Kutta
         solvers such as ode23, ode23s, ode45, or the Burlisch-Stoer algorithm to obtain
@@ -91,6 +103,9 @@
         includes a solver for non-stiff DDE problems.
        </li>
        <li> Functions in the package <pkg>deSolve</pkg> can solve both stiff and non-stiff DDE problems.
+       </li> 
+       <li> Package <pkg>diffeqr</pkg> can solve DDE problems using the <strong>DifferentialEquations.jl<strong> 
+          package from the Julia programming language.
        </li> 
      </ul>
     <p><strong>Partial Differential Equations (PDEs)</strong></p> 
@@ -129,6 +144,9 @@
        </li>
        <li> Three more DAE solvers are in the package <pkg>deTestSet</pkg>.
        </li>
+       <li> Package <pkg>diffeqr</pkg> can solve DAE problems using the <strong>DifferentialEquations.jl<strong> 
+          package from the Julia programming language.
+       </li> 
       </ul>       
     <p><strong>Boundary Value Problems (BVPs)</strong></p> 
       BVPs have solutions and/or derivative conditions specified 
@@ -139,6 +157,9 @@
        <li> The package <pkg>ReacTran</pkg> can solve BVPs that belong to the 
        class of reactive transport equations.
        </li>
+       <li> Package <pkg>diffeqr</pkg> can also solve BVPs using the <strong>DifferentialEquations.jl<strong> 
+          package from the Julia programming language.
+       </li> 
      </ul>
     <p><strong>Other</strong></p>
       <ul>
@@ -195,6 +216,7 @@
   <packagelist>
     <pkg priority="core">bvpSolve</pkg>
     <pkg>cOde</pkg>
+    <pkg>diffeqr</pkg>
     <pkg>dMod</pkg>
     <pkg>CollocInfer</pkg>
     <pkg priority="core">deSolve</pkg>
@@ -216,6 +238,7 @@
     <pkg>rODE</pkg>
     <pkg>rodeo</pkg>
     <pkg>ReacTran</pkg>
+    <pkg>sundialr</pkg>
     <pkg>QPot</pkg>
     <pkg priority="core">rootSolve</pkg>
     <pkg>scaRabee</pkg>
