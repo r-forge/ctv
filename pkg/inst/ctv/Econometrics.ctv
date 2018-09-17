@@ -365,6 +365,10 @@
       
       <li><i>z-Tree</i>: <pkg>zTree</pkg> can import data from the z-Tree software for
           developing and carrying out economic experiments.</li>
+
+      <li><i>Numerical standard errors</i>: <pkg>nse</pkg> implements various numerical standard
+          errors for time series data, especially in simulation experiments with correlated
+	  outcome sequences.</li>
     </ul>
 
   </info>
@@ -445,6 +449,7 @@
     <pkg>nnet</pkg>
     <pkg>nonnest2</pkg>
     <pkg>np</pkg>
+    <pkg>nse</pkg>
     <pkg>ordinal</pkg>
     <pkg>OrthoPanels</pkg>
     <pkg>pampe</pkg>
