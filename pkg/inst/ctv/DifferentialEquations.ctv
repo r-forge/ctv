@@ -80,7 +80,7 @@
        </li>
        <li>
          Package <pkg>sundialr</pkg> provides an interface to the 'SUNDIALS' ODE solvers. 
-          Currently the serial version 'CVODE' can be accessed. Models can be written in R or C++ using <pkg>Rcpp</pkg>.
+          Currently the serial version 'CVODE' can be accessed. Models can be written in R or C++ using Rcpp.
        </li>
        <li>
           The R package <pkg>diffeqr</pkg> provides a seamless interface to the <strong>DifferentialEquations.jl</strong> 
