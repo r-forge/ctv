@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2018-06-02</version>
+  <version>2018-09-18</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -35,8 +35,8 @@
           Tests of more general linear hypotheses are implemented in <code>linearHypothesis()</code>
           and for nonlinear hypotheses in <code>deltaMethod()</code> in <pkg>car</pkg>.</li>
 
-      <li><i>Robust standard errors</i>: HC and HAC covariance matrices are available in <pkg>sandwich</pkg>
-          and can be plugged into the inference functions mentioned above.</li>
+      <li><i>Robust standard errors</i>: HC, HAC, clustered, and bootstrap covariance matrices are
+          available in <pkg>sandwich</pkg> and can be plugged into the inference functions mentioned above.</li>
 
       <li><i>Nonnested model comparisons</i>: Various tests for comparing non-nested linear
           models are available in <pkg>lmtest</pkg> (encompassing test, J test, Cox test).
@@ -143,6 +143,7 @@
       <li><i>Panel data</i>: Certain basic IV models for panel data can also be estimated
           with standard 2SLS functions (see above). Dedicated IV panel data models are provided
 	  by <pkg>ivfixed</pkg> (fixed effects) and <pkg>ivpanel</pkg> (between and random effects).</li>
+
       <li><i>Miscellaneous</i>:
           <pkg>REndo</pkg> fits linear models with endogenous regressor using various latent instrumental variable approaches.
           <pkg>ivbma</pkg> estimates Bayesian IV models with conditional Bayes factors.
@@ -155,10 +156,11 @@
     
     <ul>
 
-      <li><i>Panel-corrected standard errors</i>: A simple approach for panel data is
+      <li><i>Panel standard errors</i>: A simple approach for panel data is
           to fit the pooling (or independence) model (e.g., via <code>lm()</code> or <code>glm()</code>)
-	  and only correct the standard errors. Different types of panel-corrected standard
-	  errors are available in <pkg>multiwayvcov</pkg>, <pkg>clusterSEs</pkg>, <pkg>pcse</pkg>, <pkg>clubSandwich</pkg>, <pkg>plm</pkg>,
+	  and only correct the standard errors. Different types of clustered, panel, and panel-corrected
+	  standard errors are available in <pkg>sandwich</pkg> (incorporating prior work from <pkg>multiwayvcov</pkg>),
+	  <pkg>clusterSEs</pkg>, <pkg>pcse</pkg>, <pkg>clubSandwich</pkg>, <pkg>plm</pkg>,
 	  and <pkg>geepack</pkg>, respectively. The latter two require estimation of the
 	  pooling/independence models via <code>plm()</code> and <code>geeglm()</code> from
 	  the respective packages (which also provide other types of models, see below).</li>      
