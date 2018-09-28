@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-09-06</version>
+  <version>2018-09-27</version>
   
   <info>
 
@@ -60,11 +60,6 @@
         linear system of equations. Stationary iterative solvers such as 
         Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) 
         methods are provided.</li>
-    <li><pkg>SolveLS</pkg> provides basic stationary iterative solvers such
-        as Jacobi, Gauss-Seidel, Successive Over-Relaxation and SSOR methods. 
-        Nonstationary, also known as Krylov subspace, methods are provided. 
-        Sparse matrix computation is supported through the 'Matrix' and 
-        'RcppArmadillo' packages.</li>
     <li><pkg>svd</pkg> provides R bindings to state-of-the-art implementations 
         of singular value decomposition (SVD) and eigenvalue/eigenvector 
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
@@ -566,7 +561,6 @@
     <pkg>signal</pkg>
     <pkg>SimplicialCubature</pkg>
     <pkg>SnakeCharmR</pkg>
-    <pkg>SolveLS</pkg>
     <pkg>SparseGrid</pkg>
     <pkg>SparseM</pkg>
     <pkg>SphericalCubature</pkg>
