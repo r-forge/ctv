@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2018-09-18</version>
+  <version>2018-10-25</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -528,8 +528,9 @@
     <a href="http://www.jstatsoft.org/v27/">Journal of Statistical Software: Special Volume on 'Econometrics in R' (2008)</a>
     <a href="https://mondo.su.se/access/content/user/ma@su.se/Public/">A Brief Guide to R for Beginners in Econometrics</a>
     <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
-    <a href="http://www.springer.com/978-0-387-77316-2">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
-    <a href="http://www.urfie.net/">Book: Using R for Introductory Econometrics  (Heiss)</a>
+    <a href="https://eeecon.uibk.ac.at/~zeileis/teaching/AER/">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
+    <a href="http://www.urfie.net/">Book: Using R for Introductory Econometrics (Heiss)</a>
+    <a href="https://www.Econometrics-with-R.org/">Book: Introduction to Econometrics with R (Hanck, Arnold, Gerber, Schmelzer)</a>
     <a href="http://www.worldscibooks.com/economics/6895.html">Book: Hands-On Intermediate Econometrics Using R (Vinod)</a>
   </links>
 
