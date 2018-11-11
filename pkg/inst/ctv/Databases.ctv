@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2018-11-10</version>
+   <version>2018-11-11</version>
 
   <info>
     <p>
@@ -37,7 +37,7 @@
     </p>
 
     <p>
-      Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes Mühleisen, Rich FitzJohn, and Dirk Eddelbuettel (as well as others I may have forgotten to add here) are gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the initial <code>.ctv</code> file and the Markdown conversion script available at the <a href="https://github.com/eddelbuettel/ctv-hpc">Github repository of CRAN Task View for High Performance Computing</a>. Last but not least, thanks to Achim Zeileis who helped me get started on organizing this task view.
+      Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes Mühleisen, Rich FitzJohn, Dirk Eddelbuettel, and Hadley Wickham (as well as others I may have forgotten to add here) are gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the initial <code>.ctv</code> file and the Markdown conversion script available at the Github repository of CRAN Task View for High Performance Computing <a href="https://github.com/eddelbuettel/ctv-hpc">here</a>. Last but not least, thanks to Achim Zeileis who helped me get started on organizing this task view.
     </p>
 
     <p><strong>Relational Databases</strong></p>
@@ -56,9 +56,9 @@
         The <pkg>RMySQL</pkg> package provides the interface to MySQL. Note that this is the legacy DBI interface to MySQL and MariaDB based on old code ported from S-PLUS. A modern MySQL client based on Rcpp is available from the RMariaDB package we listed above.
       </li>
       <li>
-        Packages for <a href="https://www.postgresql.org/">PostgreSQL</a>:
+        Packages for <a href="https://www.postgresql.org/">PostgreSQL</a>, an open-source relational database:
         <ul>
-          <li>The <pkg>RPostgreSQL</pkg> package provides a fully DBI-compliant Rcpp-backed interface to PostgreSQL.</li>
+          <li>The <pkg>RPostgreSQL</pkg> package and <pkg>RPostgres</pkg> package both provide fully DBI-compliant Rcpp-backed interfaces to PostgreSQL.</li>
           <li>The <pkg>rpostgis</pkg> package provides the interface to its spatial extension <a href="http://postgis.net/">PostGIS</a>.</li>
           <li>The <pkg>RGreenplum</pkg> provides a fully DBI-compliant interface to <a href="https://greenplum.org/">Greenplum</a>, an open-source parallel database on top of PostgreSQL.</li>
         </ul>
@@ -67,7 +67,7 @@
         The <pkg>ROracle</pkg> package is a DBI-compliant <a href="https://www.oracle.com/database/index.html">Oracle database</a> driver based on the OCI.
       </li>
       <li>
-        Packages for <a href="http://www.sqlite.org/">SQLite</a>:
+        Packages for <a href="http://www.sqlite.org/">SQLite</a>, a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine:
         <ul>
           <li>The <pkg>RSQLite</pkg> package embeds the SQLite database engine in R and provides an interface compliant with the DBI package.</li>
           <li>The <pkg>filehashSQLite</pkg> package is a simple key-value database using SQLite as the backend.</li>
@@ -75,7 +75,7 @@
         </ul>
       </li>
       <li>
-        The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>.
+        The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>, Google's fully managed, petabyte scale, low cost analytics data warehouse.
       </li>
       <li>
         <pkg>MonetDBLite</pkg> packages provides the interface to <a href="https://www.monetdb.org/Home">MonetDB</a> and can run database embedded in R directly.
@@ -96,7 +96,7 @@
         The <pkg>RPresto</pkg> package implements a DBI-compliant interface to <a href="https://prestodb.io/">Presto</a>, an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
       </li>
       <li>
-        The <pkg>dplyr.teradata</pkg> package is the Teradata backend for <pkg>dplyr</pkg> package, which makes it possible to operate <a href="https://www.teradata.com/products-and-services/teradata-database/">Teradata database</a> in the same way as manipulating data frames with dplyr.
+        The <pkg>dplyr.teradata</pkg> package is the Teradata backend for <pkg>dplyr</pkg> package, which makes it possible to operate <a href="https://www.teradata.com/products-and-services/teradata-database/">Teradata database</a> in the same way as manipulating data frames with <code>dplyr</code>.
       </li>
       <li>
         The <pkg>RJDBC</pkg> package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
@@ -160,10 +160,10 @@
         The <pkg>dbfaker</pkg> package is to tool to ensure the validity of database writes. It provides a set of utilities to analyze and type check the properties of data frames that are to be written to databases with SQL support.
       </li>
       <li>
-        The <pkg>dbplyr</pkg> package is a dplyr back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
+        The <pkg>dbplyr</pkg> package is a <code>dplyr</code> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
       </li>
       <li>
-        The <pkg>pivot</pkg> package extends the tidyverse packages dbplyr and <pkg>tidyr</pkg> functionality with pivot(), i.e. spread(), and unpivot(), i.e. gather(), for reshaping remote tables. Currently only 'Microsoft SQL Server' is supported.
+        The <pkg>pivot</pkg> package extends the tidyverse packages dbplyr and <pkg>tidyr</pkg> functionality with <code>pivot()</code>, i.e. <code>spread()</code>, and <code>unpivot()</code>, i.e. <code>gather()</code>, for reshaping remote tables. Currently only 'Microsoft SQL Server' is supported.
       </li>
       <li>
         The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
@@ -198,6 +198,7 @@
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RPostgreSQL</pkg>
+    <pkg>RPostgres</pkg>
     <pkg>RPresto</pkg>
     <pkg>rpostgis</pkg>
     <pkg>RSQLite</pkg>
