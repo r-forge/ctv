@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2018-10-25</version>
+  <version>2018-11-15</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -64,7 +64,8 @@
           responses are GLMs that can be estimated by <code>glm()</code> with <code>family = binomial</code>.
 	  Bias-reduced GLMs that are robust to complete and quasi-complete separation are provided by
 	  <pkg>brglm</pkg>. Discrete choice models estimated by simulated maximum likelihood are
-	  implemented in <pkg>Rchoice</pkg>. Heteroscedastic probit models (and other heteroscedastic
+	  implemented in <pkg>Rchoice</pkg>. <pkg>bife</pkg> provides binary choice models with fixed effects.
+	  Heteroscedastic probit models (and other heteroscedastic
 	  GLMs) are implemented in <pkg>glmx</pkg> along with parametric link functions and goodness-of-link
 	  tests for GLMs.</li>
 
@@ -379,6 +380,7 @@
     <pkg>apt</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
+    <pkg>bife</pkg>
     <pkg>BMA</pkg>
     <pkg>BMS</pkg>
     <pkg>boot</pkg>
