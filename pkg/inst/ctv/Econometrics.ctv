@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2018-11-15</version>
+  <version>2018-12-08</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -147,7 +147,6 @@
 
       <li><i>Miscellaneous</i>:
           <pkg>REndo</pkg> fits linear models with endogenous regressor using various latent instrumental variable approaches.
-          <pkg>ivbma</pkg> estimates Bayesian IV models with conditional Bayes factors.
           <pkg>ivlewbel</pkg> implements the Lewbel approach based on GMM estimation of triangular systems using heteroscedasticity-based IVs.
 	  </li>
     </ul>
@@ -417,7 +416,6 @@
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
     <pkg>intReg</pkg>
-    <pkg>ivbma</pkg>
     <pkg>ivfixed</pkg>
     <pkg>ivlewbel</pkg>
     <pkg>ivpack</pkg>
