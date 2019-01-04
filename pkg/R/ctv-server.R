@@ -82,7 +82,7 @@ read.ctv <- function(file)
                           "</span></a>"))
         if(name == "gcode")
             return(paste0(gcodeprefix,
-                          "<a href=\"https://code.google.com/p/",
+                          "<a href=\"https://code.google.com/archive/p/",
                           xmlCode(x), "/\"", target,
                           "><span class=\"Gcode\">", xmlCode(x),
                           "</span></a>"))
@@ -104,6 +104,11 @@ read.ctv <- function(file)
                           xmlCode(x), "/\"", target,
                           "><span class=\"GitHub\">", strsplit(xmlCode(x), "/", fixed = TRUE)[[1L]][2L],
                           "</span></a>", sep = ""))
+        if(name == "doi")
+            return(paste0("<a href=\"https://doi.org/",
+                          xmlCode(x), "\"", target,
+                          ">doi:", xmlCode(x),
+                          "</a>", sep = ""))
         if(name == "br")
             return("<br/>")
 

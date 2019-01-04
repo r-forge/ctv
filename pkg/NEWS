@@ -1,6 +1,10 @@
 Changes in Version 0.8-6
 
-  o No significant changes yet.
+  o Added <doi> tag to add hyperlinks to DOIs, e.g., <doi>10.18637/jss.v067.i01</doi>
+    will be turned into https://doi.org/10.18637/jss.v067.i01
+
+  o The <gcode> tag now explicitly resolves to https://code.google.com/archive/
+    (including the "archive/" part) as Google Code has been archived in 2016.
 
 
 Changes in Version 0.8-5

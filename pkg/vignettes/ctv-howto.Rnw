@@ -89,16 +89,16 @@ which packages are useful for which tasks. It can also contain any further
 informations and should be written in plain HTML code, i.e., any HTML markup
 can be used (preferably following XHTML conventions). There are several additional
 tags available: \verb/<pkg>/, \verb/<view>/,
-\verb/<bioc>/, \verb/<ohat>/, \verb/<rforge>/, \verb/<github>/, \verb/<gcode>/, and \verb/<code>/. \verb/<pkg>/ and
-\verb/<view>/ should be used as markup for packages and views (in the same repository), respectively.
+\verb/<bioc>/, \verb/<ohat>/, \verb/<rforge>/, \verb/<github>/, \verb/<gcode>/, \verb/<doi>/, and \verb/<code>/.
+\verb/<pkg>/ and \verb/<view>/ should be used as markup for packages and views (in the same repository), respectively.
 During generation of the corresponding HTML file, they will be replaced by
 hyperlinks to the packages/views.
 Similarly, \verb/<bioc>/, \verb/<ohat>/, \verb/<rforge>/, \verb/<github>/, and \verb/<gcode>/
-can be used to refer to projects on Bioconductor, Omegahat, \textsf{R}-Forge, GitHub, and Google Code.
+can be used to refer to projects on Bioconductor, Omegahat, \textsf{R}-Forge, GitHub, and the Google Code archive.
 These will be replaced by the appropriate hyperlinks to the project on
 \texttt{https://www.Bioconductor.org/}, \texttt{http://www.Omegahat.net/},
-\texttt{https://R-Forge.R-project.org/}, \texttt{https://www.GitHub.com/}, and \texttt{https://Code.Google.com/}, respectively.
-Finally, \verb/<code>/ can be used as markup for \textsf{R} code which will 
+\texttt{https://R-Forge.R-project.org/}, \texttt{https://www.GitHub.com/}, and \texttt{https://Code.Google.com/archive/}, respectively.
+Finally, \verb/<doi>/ can be used for hyperlinks to DOIs and \verb/<code>/ as markup for \textsf{R} code which will 
 simply be set in a typewriter font.
 
 \verb/<packagelist>/ contains the list of packages associated with the view.
