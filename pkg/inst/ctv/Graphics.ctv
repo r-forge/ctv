@@ -152,9 +152,7 @@
           device, <pkg>JavaGD</pkg>. Their interactive graphics tools contain functions for
           alpha blending, which produces darker shading around areas with more
           data. This is exceptionally useful for parallel coordinate plots where
-          many lines can quickly obscure patterns. <pkg>playwith</pkg> has facilities for 
-          building interactive versions of R graphics using the <pkg>cairoDevice</pkg> and 
-          <pkg>RGtk2</pkg>. Lastly, the <pkg>rgl</pkg> package has mechanisms for
+          many lines can quickly obscure patterns. Lastly, the <pkg>rgl</pkg> package has mechanisms for
           interactive manipulation of plots, especially 3D rotations and surfaces.</li>        
       <li><i>Development</i>: For development of specialized
           graphics packages in R, grid should probably be the first
@@ -195,7 +193,6 @@
     <pkg>latticeExtra</pkg>
     <pkg>misc3d</pkg>
     <pkg>onion</pkg>
-    <pkg>playwith</pkg>
     <pkg priority="core">plotrix</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg priority="core">rgl</pkg>
