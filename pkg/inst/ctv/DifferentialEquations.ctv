@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2018-09-11</version>
+  <version>2019-01-10</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -77,10 +77,6 @@
        </li>
        <li> The package <pkg>odeintr</pkg> generates and compiles C++ ODE solvers on the fly using Rcpp
             and <a href="http://www.boost.org/">Boost</a> <a href="http://www.odeint.com/">odeint</a>.
-       </li>
-       <li>
-         Package <pkg>sundialr</pkg> provides an interface to the 'SUNDIALS' ODE solvers. 
-          Currently the serial version 'CVODE' can be accessed. Models can be written in R or C++ using Rcpp.
        </li>
        <li>
           The R package <pkg>diffeqr</pkg> provides a seamless interface to the <strong>DifferentialEquations.jl</strong> 
@@ -238,7 +234,6 @@
     <pkg>rODE</pkg>
     <pkg>rodeo</pkg>
     <pkg>ReacTran</pkg>
-    <pkg>sundialr</pkg>
     <pkg>QPot</pkg>
     <pkg priority="core">rootSolve</pkg>
     <pkg>scaRabee</pkg>
