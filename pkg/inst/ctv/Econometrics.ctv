@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-01-07</version>
+  <version>2019-01-11</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -81,8 +81,8 @@
 
       <li><i>Multinomial responses</i>: Multinomial models
 	  with individual-specific covariates only are available in <code>multinom()</code>
-	  from package <pkg>nnet</pkg>. Implementations with both individual- and
-	  choice-specific variables are <pkg>mlogit</pkg> and <pkg>mnlogit</pkg>. Generalized
+	  from package <pkg>nnet</pkg>. An implementation with both individual- and
+	  choice-specific variables is <pkg>mlogit</pkg>. Generalized
 	  multinomial logit models (e.g., with random effects etc.) are in <pkg>gmnl</pkg>.	  
 	  Generalized additive models
 	  (GAMs) for multinomial responses can be fitted with the <pkg>VGAM</pkg> package.	  
@@ -442,7 +442,6 @@
     <pkg>micEconSNQP</pkg>
     <pkg>midasr</pkg>
     <pkg>mlogit</pkg>
-    <pkg>mnlogit</pkg>
     <pkg>MNP</pkg>
     <pkg>multiwayvcov</pkg>
     <pkg>mvProbit</pkg>
