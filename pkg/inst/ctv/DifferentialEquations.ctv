@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2019-01-10</version>
+  <version>2019-01-26</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -52,11 +52,6 @@
        <li> Package <pkg>QPot</pkg> analyzes 2-dimensional systems of stochastic 
          differential equations using quasi-potential analysis.
        </li> 
-       <li> Package <pkg>rpgm</pkg> deals about fast simulation especially in Stochastic Differential 
-         Equations (SDE) of Itô type. It integrates the Ziggurat method to simulate Normal random 
-         variables faster than <code>rnorm</code>, the Brownian motion, the Euler and Milstein schemes,
-         and the Gaussian Vasicek process. Multi-core support will be provided.
-       </li>
 	   <li> Package <pkg>diffeqr</pkg> can solve SDE problems using the <strong>DifferentialEquations.jl</strong> 
 		  package from the Julia programming language.
        </li> 
@@ -230,7 +225,6 @@
     <pkg>pomp</pkg>
     <pkg>pracma</pkg>
     <pkg>primer</pkg>
-    <pkg>rpgm</pkg>
     <pkg>rODE</pkg>
     <pkg>rodeo</pkg>
     <pkg>ReacTran</pkg>
