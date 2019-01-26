@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2018-06-18</version>
+  <version>2019-01-26</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -209,7 +209,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg>hwde</pkg>
     <pkg>ibdreg</pkg>
     <pkg>LDheatmap</pkg>
-    <pkg>luca</pkg>
     <pkg>ouch</pkg>
     <pkg>pbatR</pkg>
     <pkg>phangorn</pkg>
