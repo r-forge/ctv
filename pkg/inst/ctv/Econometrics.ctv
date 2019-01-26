@@ -147,7 +147,6 @@
 
       <li><i>Miscellaneous</i>:
           <pkg>REndo</pkg> fits linear models with endogenous regressor using various latent instrumental variable approaches.
-          <pkg>ivlewbel</pkg> implements the Lewbel approach based on GMM estimation of triangular systems using heteroscedasticity-based IVs.
 	  </li>
     </ul>
 
@@ -418,7 +417,6 @@
     <pkg>ineq</pkg>
     <pkg>intReg</pkg>
     <pkg>ivfixed</pkg>
-    <pkg>ivlewbel</pkg>
     <pkg>ivpack</pkg>
     <pkg>ivpanel</pkg>
     <pkg>ivprobit</pkg>
