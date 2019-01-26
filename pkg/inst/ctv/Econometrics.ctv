@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-01-11</version>
+  <version>2019-01-26</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -57,7 +57,7 @@
 	  for modeling choice data and Poisson models for count data. Effects for typical
 	  values of regressors in these models can be obtained and visualized using <pkg>effects</pkg>.
 	  Marginal effects tables for certain GLMs can be obtained using the 
-	  <pkg>mfx</pkg> and <pkg>margins</pkg> packages. Interactive visualizations of both effects and marginal
+	  <pkg>margins</pkg> package. Interactive visualizations of both effects and marginal
 	  effects are possible in <pkg>LinRegInteractive</pkg>.</li>
 
       <li><i>Binary responses</i>: The standard logit and probit models (among many others) for binary
@@ -434,7 +434,6 @@
     <pkg>Matrix</pkg>
     <pkg>Mcomp</pkg>
     <pkg>meboot</pkg>
-    <pkg>mfx</pkg>
     <pkg>mgcv</pkg>
     <pkg>micEcon</pkg>
     <pkg>micEconAids</pkg>
