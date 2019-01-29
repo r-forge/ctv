@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2018-07-21</version>
+  <version>2019-01-29</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -430,14 +430,6 @@
     </li>
 
     <li>
-    <pkg>rbugs</pkg>
-    Fusing R and OpenBugs.
-    Functions to prepare files needed for running BUGS in batch-mode, and
-    running BUGS from R. Support for Linux and Windows systems with
-    OpenBugs is emphasized.
-    </li>
-
-    <li>
     <pkg>rjags</pkg>
     rjags: Bayesian graphical models using MCMC.
     Interface to the JAGS MCMC library.
@@ -482,7 +474,6 @@
     <pkg>sparsebn</pkg>
     <pkg>R2OpenBUGS</pkg>
     <pkg>R2WinBUGS</pkg>
-    <pkg>rbugs</pkg>
     <pkg>rjags</pkg>
   </packagelist>
 
