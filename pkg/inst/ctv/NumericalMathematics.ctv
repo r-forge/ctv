@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2018-09-30</version>
+  <version>2019-02-17</version>
   
   <info>
 
@@ -158,6 +158,9 @@
     <li>Package <pkg>mpoly</pkg> facilitates symbolic manipulations on 
         multivariate polynomials, including basic differential calculus 
         operations on polynomials, plus some Groebner basis calculations.</li>
+    <li><pkg>mvp</pkg> enables fast manipulation of symbolic multivariate 
+        polynomials, using print and coercion methods from the 'mpoly' 
+        package, but offers speed improvements.</li>
     <li>Package <pkg>orthopolynom</pkg> consists of a collection of functions 
         to construct orthogonal polynomials and their recurrence relations, 
         among them Chebyshev, Hermite, and Legendre polynomials, as well as 
@@ -528,7 +531,7 @@
     <pkg>MonoPoly</pkg>
     <pkg>mpoly</pkg>
     <pkg>multipol</pkg>
-    <pkg>rmumps</pkg>
+    <pkg>mvp</pkg>
     <pkg>mvQuad</pkg>
     <pkg>nleqslv</pkg>
     <pkg>numbers</pkg>
@@ -555,6 +558,7 @@
     <pkg>reticulate</pkg>
     <pkg>Rlinsolve</pkg>
     <pkg>Rmpfr</pkg>
+    <pkg>rmumps</pkg>
     <pkg>RootsExtremaInflections</pkg>
     <pkg>rPython</pkg>
     <pkg>Rserve</pkg>
