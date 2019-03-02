@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2019-02-04</version>
+   <version>2019-03-02</version>
 
   <info>
     <p>
@@ -97,9 +97,6 @@
         The <pkg>RPresto</pkg> package implements a DBI-compliant interface to <a href="https://prestodb.io/">Presto</a>, an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
       </li>
       <li>
-        The <pkg>dplyr.teradata</pkg> package is the Teradata backend for <pkg>dplyr</pkg> package, which makes it possible to operate <a href="https://www.teradata.com/products-and-services/teradata-database/">Teradata database</a> in the same way as manipulating data frames with <code>dplyr</code>.
-      </li>
-      <li>
         The <pkg>RJDBC</pkg> package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
       </li>
       <li>
@@ -184,7 +181,6 @@
     <pkg>dplyr</pkg>
     <pkg>dbplyr</pkg>
     <pkg>dbfaker</pkg>
-    <pkg>dplyr.teradata</pkg>
     <pkg priority="core">DBI</pkg>
     <pkg>DBItest</pkg>
     <pkg>elastic</pkg>
