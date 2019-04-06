@@ -228,6 +228,11 @@
       <li><i>Generalized additive models (GAMs)</i>: <pkg>mgcv</pkg>, <pkg>gam</pkg>, <pkg>gamlss</pkg>
           and <pkg>VGAM</pkg>.</li>
 
+      <li><i>Design-based inference</i>: <pkg>estimatr</pkg> contains fast procedures for several
+          design-appropriate estimators with robust standard errors and confidence intervals including
+	  linear regression, instrumental variables regression, difference-in-means, among others.</li>
+
+
       <li><i>Extreme bounds analysis</i>: <pkg>ExtremeBounds</pkg>.</li>
 
       <li><i>Miscellaneous</i>: The packages <pkg>VGAM</pkg>, <pkg>rms</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
@@ -399,6 +404,7 @@
     <pkg>Ecdat</pkg>
     <pkg>effects</pkg>
     <pkg>erer</pkg>
+    <pkg>estimatr</pkg>
     <pkg>expsmooth</pkg>
     <pkg>ExtremeBounds</pkg>
     <pkg>feisr</pkg>
