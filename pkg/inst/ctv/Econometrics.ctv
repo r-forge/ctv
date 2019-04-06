@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-01-26</version>
+  <version>2019-04-06</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -169,7 +169,8 @@
 	  errors, tests, etc. Another implementation of several of these models is in
 	  <pkg>Paneldata</pkg>. Various dynamic panel models are available in <pkg>plm</pkg>
 	  and dynamic panel models with fixed effects in <pkg>OrthoPanels</pkg>.
-	  Panel vector autoregressions are implemented in <pkg>panelvar</pkg>.</li>
+	  Panel vector autoregressions are implemented in <pkg>panelvar</pkg>.
+	  <pkg>feisr</pkg> provides fixed effects individual slope (FEIS) models.</li>
 
       <li><i>Generalized estimation equations and GLMs</i>: GEE models for panel data (or longitudinal
           data in statistical jargon) are in <pkg>geepack</pkg>. The <pkg>pglm</pkg> package provides
@@ -400,6 +401,7 @@
     <pkg>erer</pkg>
     <pkg>expsmooth</pkg>
     <pkg>ExtremeBounds</pkg>
+    <pkg>feisr</pkg>
     <pkg>fma</pkg>
     <pkg priority="core">forecast</pkg>
     <pkg>frm</pkg>
