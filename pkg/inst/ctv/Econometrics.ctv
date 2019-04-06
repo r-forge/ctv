@@ -207,7 +207,7 @@
 
       <li><i>Spatial econometric models</i>: The <view>Spatial</view> view gives details about
           handling spatial data, along with information about (regression) modeling. In particular,
-	  spatial regression models can be fitted using <pkg>spdep</pkg> and <pkg>sphet</pkg> (the
+	  spatial regression models can be fitted using <pkg>spatialreg</pkg> and <pkg>sphet</pkg> (the
 	  latter using a GMM approach). <pkg>splm</pkg> is a package for spatial panel
           models. Spatial probit models are available in <pkg>spatialprobit</pkg>.</li>
 
@@ -491,7 +491,7 @@
     <pkg>simpleboot</pkg>
     <pkg>SparseM</pkg>
     <pkg>spatialprobit</pkg>
-    <pkg>spdep</pkg>
+    <pkg>spatialreg</pkg>
     <pkg>spfrontier</pkg>
     <pkg>sphet</pkg>
     <pkg>splm</pkg>
