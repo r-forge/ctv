@@ -306,12 +306,15 @@
     <ul>
       <li><i>Textbooks and journals</i>: Packages <pkg>AER</pkg>, <pkg>Ecdat</pkg>, and <pkg>wooldridge</pkg>
 	  contain a comprehensive collections of data sets from various standard econometric
-	  textbooks as well as several data sets from the Journal of
-	  Applied Econometrics and the Journal of Business &amp; Economic Statistics
+	  textbooks (including Greene, Stock &amp; Watson, Wooldridge, Baltagi, among others) as well as
+	  several data sets from the Journal of Applied Econometrics and the Journal of Business &amp; Economic Statistics
 	  data archives. <pkg>AER</pkg> and <pkg>wooldridge</pkg> additionally provide extensive sets of
 	  examples reproducing analyses from the textbooks/papers, illustrating
 	  various econometric methods. In <pkg>pder</pkg> a wide collection of data sets for
-	  panel data econometrics with R is available.</li>
+	  "Panel Data Econometrics with R" (Croissant &amp; Millo 2018) is available.
+	  The <github>ccolonescu/PoEdata</github> package on GitHub provides 
+	  the data sets from "Principles of Econometrics" (4th ed, by Hill, Griffiths, and Lim 2011).
+	  </li>
       <li><i>Canadian monetary aggregates</i>: <pkg>CDNmoney</pkg>.</li>
       <li><i>Penn World Table</i>: <pkg>pwt</pkg> provides versions 5.6, 6.x, 7.x. Version 8.x and 9.x
           data are available in <pkg>pwt8</pkg> and <pkg>pwt9</pkg>, respectively.</li>
@@ -530,14 +533,20 @@
     <view>SocialSciences</view>
     <view>Spatial</view>
     <view>TimeSeries</view>
+    <github>ccolonescu/PoEdata</github>
     <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing List: R Special Interest Group Finance</a>
     <a href="http://www.jstatsoft.org/v27/">Journal of Statistical Software: Special Volume on 'Econometrics in R' (2008)</a>
-    <a href="https://mondo.su.se/access/content/user/ma@su.se/Public/">A Brief Guide to R for Beginners in Econometrics</a>
-    <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
     <a href="https://eeecon.uibk.ac.at/~zeileis/teaching/AER/">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
     <a href="http://www.urfie.net/">Book: Using R for Introductory Econometrics (Heiss)</a>
     <a href="https://www.Econometrics-with-R.org/">Book: Introduction to Econometrics with R (Hanck, Arnold, Gerber, Schmelzer)</a>
     <a href="http://www.worldscibooks.com/economics/6895.html">Book: Hands-On Intermediate Econometrics Using R (Vinod)</a>
+    <a href="https://doi.org/10.1002/9781119504641">Book: Panel Data Econometrics with R (Croissant &amp; Millo)</a>
+    <a href="https://doi.org/10.1016/C2016-0-04332-2">Book: Spatial Econometrics (Kelejian and Piras)</a>
+    <a href="https://bookdown.org/ccolonescu/RPoE4/">Manual: Principles of Econometrics with R (Colonescu)</a>
+    <a href="https://scpoecon.github.io/ScPoEconometrics/">Manual: Introduction to Econometrics with R (Oswald, Robin, Viers)</a>
+    <a href="https://tyleransom.github.io/econometricslabs.html">Manual: Econometrics In-Class Labs (Ransom)</a>
+    <a href="https://mondo.su.se/access/content/user/ma@su.se/Public/">A Brief Guide to R for Beginners in Econometrics</a>
+    <a href="http://www.mayin.org/ajayshah/KB/R/R_for_economists.html">R for Economists</a>
   </links>
 
 </CRANTaskView>
