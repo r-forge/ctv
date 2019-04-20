@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2019-03-02</version>
+   <version>2019-04-20</version>
 
   <info>
     <p>
@@ -77,9 +77,6 @@
       </li>
       <li>
         The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>, Google's fully managed, petabyte scale, low cost analytics data warehouse.
-      </li>
-      <li>
-        <pkg>MonetDBLite</pkg> packages provides the interface to <a href="https://www.monetdb.org/Home">MonetDB</a> and can run database embedded in R directly.
       </li>
       <li>
         The <a href="https://github.com/druid-io/RDruid">RDruid</a> package provides the interface to <a href="http://druid.io/">Apache Druid</a>, a high performance analytics data store for event-driven data.
@@ -210,7 +207,6 @@
     <pkg>sqldf</pkg>
     <pkg>tidyr</pkg>
     <pkg>TScompare</pkg>
-    <pkg>MonetDBLite</pkg>
     <pkg>mongolite</pkg>
     <pkg>redux</pkg>
     <pkg>uptasticsearch</pkg>
