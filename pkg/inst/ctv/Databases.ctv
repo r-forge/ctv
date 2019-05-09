@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2019-04-20</version>
+   <version>2019-05-09</version>
 
   <info>
     <p>
@@ -158,9 +158,6 @@
         The <pkg>dbplyr</pkg> package is a <code>dplyr</code> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
       </li>
       <li>
-        The <pkg>pivot</pkg> package extends the tidyverse packages dbplyr and <pkg>tidyr</pkg> functionality with <code>pivot()</code>, i.e. <code>spread()</code>, and <code>unpivot()</code>, i.e. <code>gather()</code>, for reshaping remote tables. Currently only 'Microsoft SQL Server' is supported.
-      </li>
-      <li>
         The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
       </li>
       <li>
@@ -187,7 +184,6 @@
     <pkg>liteq</pkg>
     <pkg priority="core">odbc</pkg>
     <pkg>pointblank</pkg>
-    <pkg>pivot</pkg>
     <pkg>pool</pkg>
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
