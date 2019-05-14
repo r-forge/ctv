@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-04-06</version>
+  <version>2019-05-14</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -102,8 +102,7 @@
 	  can be fitted by <code>survreg()</code> in <pkg>survival</pkg>, a convenience
 	  interface <code>tobit()</code> is in package <pkg>AER</pkg>. Further censored
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
-	  Interval regression models are in <pkg>intReg</pkg>. Censored regression models with
-	  conditional heteroscedasticity are in <pkg>crch</pkg>.
+	  Censored regression models with conditional heteroscedasticity are in <pkg>crch</pkg>.
 	  Models for sample selection are available in <pkg>sampleSelection</pkg>
 	  and semiparametric extensions of these are provided by <pkg>SemiParSampleSel</pkg>.
 	  Package <pkg>matchingMarkets</pkg> corrects for selection bias when the sample is the
@@ -426,7 +425,6 @@
     <pkg>gvc</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
-    <pkg>intReg</pkg>
     <pkg>ivfixed</pkg>
     <pkg>ivpack</pkg>
     <pkg>ivpanel</pkg>
