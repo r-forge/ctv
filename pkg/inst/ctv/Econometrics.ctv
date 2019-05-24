@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-05-21</version>
+  <version>2019-05-24</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -83,7 +83,9 @@
 	  with individual-specific covariates only are available in <code>multinom()</code>
 	  from package <pkg>nnet</pkg>. An implementation with both individual- and
 	  choice-specific variables is <pkg>mlogit</pkg>. Generalized
-	  multinomial logit models (e.g., with random effects etc.) are in <pkg>gmnl</pkg>.	  
+	  multinomial logit models (e.g., with random effects etc.) are in <pkg>gmnl</pkg>.
+	  A flexible framework of various customizable choice models (including multinomial logit and
+	  nested logit among many others) is implemented in the <pkg>apollo</pkg> package.
 	  Generalized additive models
 	  (GAMs) for multinomial responses can be fitted with the <pkg>VGAM</pkg> package.	  
 	  A Bayesian approach to multinomial probit models is provided by <pkg>MNP</pkg>.
@@ -386,6 +388,7 @@
   <packagelist>
     <pkg priority="core">AER</pkg>
     <pkg>aod</pkg>
+    <pkg>apollo</pkg>
     <pkg>apt</pkg>
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
