@@ -5,7 +5,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2019-02-17</version>
+  <version>2019-05-25</version>
   
   <info>
 
@@ -145,11 +145,11 @@
     formula (with option <code>raw = TRUE</code>).</p>
 
     <ul>
-    <li>Packages <pkg>polynom</pkg> and <pkg>PolynomF</pkg> provide similar 
-        functionality for manipulating univariate polynomials, like 
-        evaluating polynomials (Horner scheme), differentiating or integrating 
-        them, or solving polynomials, i.e. finding all roots (based on an 
-        eigenvalue computation).</li>
+    <li>Packages <pkg>polynomF</pkg> (recommended) and <pkg>Polynom</pkg> 
+        provide similar functionality for manipulating univariate polynomials, 
+        like evaluating polynomials (Horner scheme), or finding their roots. 
+        <pkg>polynomF</pkg> can generate orthogonal polynomials and provides 
+        graphical display features.</li>
     <li>Package <pkg>MonoPoly</pkg> fits univariate polynomials to given data, 
         applying different algorithms.</li>
     <li>For multivariate polynomials, package <pkg>multipol</pkg> provides 
@@ -189,7 +189,7 @@
     <li>Package <github>Non-Contradiction/autodiffr</github> (on Github) 
         provides an R wrapper for the Julia packages ForwardDiff.jl and 
         ReverseDiff.jl to do automatic differentiation for native R functions. 
-        (Works only with Julia v0.6 for the moment)</li>
+        </li>
     <li><pkg>pracma</pkg> contains functions for computing numerical 
         derivatives, including Richardson extrapolation or complex step. 
         <code>fderiv()</code> computes numerical derivatives of higher orders.
@@ -268,7 +268,8 @@
         functions.)</li>
     <li>Package <pkg>chebpol</pkg> contains methods for creating multivariate 
         Chebyshev and multilinear interpolation on regular grids, e.g. the 
-        Floater-Hormann barycenter method, or polyharmonic splines for scattered data.</li>
+        Floater-Hormann barycenter method, or polyharmonic splines for scattered 
+        data.</li>
     <li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
         constrained two-dimensional Delaunay triangulation package providing 
         both triangulation and generation of Voronoi mosaics of irregular 
@@ -298,11 +299,15 @@
     packages:</p>
 
     <ul>
+    <li>Package <pkg>rootSolve</pkg> includes function <code>multiroot()</code> 
+        for finding roots of systems of nonlinear (and linear) equations; it 
+        also contains an extension <code>uniroot.all()</code> that attempts to 
+        find all zeros of a univariate function in an intervall (excepting 
+        quadratic zeros).</li>
     <li>For solving nonlinear systems of equations the <pkg>BB</pkg> package 
-        provides (non-monotone) Barzilai-Borwein spectral methods in 
-        <code>sane()</code>, including a derivative-free variant in 
-        <code>dfsane()</code>, and multi-start features with sensitivity 
-        analysis.</li>
+        provides Barzilai-Borwein spectral methods in <code>sane()</code>, 
+        including a derivative-free variant in <code>dfsane()</code>, and 
+        multi-start features with sensitivity analysis.</li>
     <li>Package <pkg>nleqslv</pkg> solves nonlinear systems of equations 
         using alternatively the Broyden or Newton method, supported by 
         strategies such as line searches or trust regions.</li>
@@ -543,8 +548,8 @@
     <pkg>partitions</pkg>
     <pkg>permutations</pkg>
     <pkg>polyCub</pkg>
-    <pkg priority="core">polynom</pkg>
-    <pkg>PolynomF</pkg>
+    <pkg>polynom</pkg>
+    <pkg priority="core">PolynomF</pkg>
     <pkg priority="core">pracma</pkg>
     <pkg>PRIMME</pkg>
     <pkg>PythonInR</pkg>
@@ -560,6 +565,7 @@
     <pkg>Rmpfr</pkg>
     <pkg>rmumps</pkg>
     <pkg>RootsExtremaInflections</pkg>
+    <pkg>rootSolve</pkg>
     <pkg>rPython</pkg>
     <pkg>Rserve</pkg>
     <pkg>RSpectra</pkg>
@@ -605,8 +611,9 @@
     <a href="https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633">
     Computational Methods for Numerical Analysis with R</a></span>
 
+    <a href="http://www.rforscience.com/">R for Science (Institute for Sea research, Netherlands)</a>
     <a href="http://www.math.umaine.edu/~hiebeler/comp/matlabR.html">
-    R and MATLAB</a>
+    MATLAB / R Reference (D. Hiebeler)</a>
     <a href="http://www.nr.com/aands/">Abramowitz and Stegun. 
         Handbook of Mathematical Functions</a>
     <a href="http://www.nrbook.com/a/bookcpdf.php">Numerical Recipes:
