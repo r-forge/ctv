@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2019-01-26</version>
+  <version>2019-05-27</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -86,10 +86,17 @@
          aims to show physics, math and engineering students 
          how ODE solvers can be made with R's S4 classes.
        </li>
+	   <li>Package <pkg>sundialr</pkg> provides a way to call the 'CVODE' function from the 'SUNDIALS' C ODE solving library. 
+	     The package requires the ODE to be written as an 'R' or 'Rcpp' function.
+	   </li>
     </ul>        
     <p><strong>Delay Differential Equations (DDEs)</strong></p> 
      In a DDE, the derivative at a certain time is a function of the variable value at a previous time.
      <ul>
+	   <li> The <pkg>dde</pkg> package implements solvers for ordinary (ODE) and delay (DDE) differential equations, 
+	   where the objective function is written in either R or C. Suitable only for non-stiff equations. 
+	   Support is also included for iterating difference equations.
+       </li>
        <li> The package <pkg>PBSddesolve</pkg> (originally published as "ddesolve") 
         includes a solver for non-stiff DDE problems.
        </li>
@@ -159,6 +166,11 @@
         Next to DE models, it also provides functions for grid-oriented, 
         individual-based, and particle diffusion models. 
       </li>
+	  <li> The <pkg>RxODE</pkg> package provides facilities for running simulations from ordinary 
+	    differential equation (ODE) models. A compilation manager translates the ODE model into C, 
+		compiles it, and dynamically loads the object code into R for improved computational efficiency.  
+		Additionally, RxODE allows ODEs to be solved in parallel using the liblsoda library and OpenMP.
+	  </li>
       <li> Package <pkg>scaRabee</pkg>
        offers frameworks for simulation and optimization of Pharmacokinetic-Pharmacodynamic Models.
       </li>
@@ -234,6 +246,10 @@
     <pkg priority="core">sde</pkg>
     <pkg>Sim.DiffProc</pkg>
     <pkg>simecol</pkg>
+    <pkg>RxODE</pkg>
+    <pkg>sundialr</pkg>
+    <pkg>dde</pkg>
+	
   </packagelist>
 
   <links>
