@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <CRANTaskView>
 
   <name>NumericalMathematics</name>
@@ -145,11 +143,11 @@
     formula (with option <code>raw = TRUE</code>).</p>
 
     <ul>
-    <li>Packages <pkg>polynomF</pkg> (recommended) and <pkg>Polynom</pkg> 
+    <li>Packages <pkg>PolynomF</pkg> (recommended) and <pkg>polynom</pkg> 
         provide similar functionality for manipulating univariate polynomials, 
         like evaluating polynomials (Horner scheme), or finding their roots. 
-        <pkg>polynomF</pkg> can generate orthogonal polynomials and provides 
-        graphical display features.</li>
+        'PolynomF' generates orthogonal polynomials and provides graphical 
+        display features.</li>
     <li>Package <pkg>MonoPoly</pkg> fits univariate polynomials to given data, 
         applying different algorithms.</li>
     <li>For multivariate polynomials, package <pkg>multipol</pkg> provides 
@@ -611,7 +609,7 @@
     <a href="https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633">
     Computational Methods for Numerical Analysis with R</a></span>
 
-    <a href="http://www.rforscience.com/">R for Science (Institute for Sea research, Netherlands)</a>
+    <a href="http://www.rforscience.com/">R for Science (Institute for Sea Research, Netherlands)</a>
     <a href="http://www.math.umaine.edu/~hiebeler/comp/matlabR.html">
     MATLAB / R Reference (D. Hiebeler)</a>
     <a href="http://www.nr.com/aands/">Abramowitz and Stegun. 
