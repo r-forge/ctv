@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-05-24</version>
+  <version>2019-05-30</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -375,6 +375,9 @@
 	  The <pkg>rdpower</pkg> package offers power calculations for regression discontinuity designs.
 	  And <pkg>rdmulti</pkg> implements analysis with multiple cutoffs or scores.</li>
       
+      <li><i>Gravity models</i>: Estimation of log-log and multiplicative gravity models
+          is available in <pkg>gravity</pkg>.</li>
+      
       <li><i>z-Tree</i>: <pkg>zTree</pkg> can import data from the z-Tree software for
           developing and carrying out economic experiments.</li>
 
@@ -427,6 +430,7 @@
     <pkg>glmx</pkg>
     <pkg>gmm</pkg>
     <pkg>gmnl</pkg>
+    <pkg>gravity</pkg>
     <pkg>gvc</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
