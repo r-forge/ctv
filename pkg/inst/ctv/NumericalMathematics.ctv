@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2019-05-25</version>
+  <version>2019-06-02</version>
   
   <info>
 
@@ -114,8 +114,6 @@
         error functions and inverses, incomplete and complex gamma function, 
         exponential and logarithmic integrals, Fresnel integrals, the 
         polygamma and the Dirichlet and Riemann zeta functions.</li>
-    <li><pkg>appell</pkg> computes Gauss' 2F1 and Appell's F1 hypergeometric 
-        functions for complex parameters and arguments quite accurately.</li>
     <li>The hypergeometric (and generalized hypergeometric) function, is 
         computed in <pkg>hypergeo</pkg>, including transformation formulas 
         and special values of the parameters.</li>
@@ -491,7 +489,6 @@
   <packagelist>
     <pkg>ADPF</pkg>
     <pkg>akima</pkg>
-    <pkg>appell</pkg>
     <pkg>arrangements</pkg>
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
