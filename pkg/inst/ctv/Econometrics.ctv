@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-05-30</version>
+  <version>2019-06-05</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -54,7 +54,8 @@
       <li><i>Generalized linear models (GLMs)</i>: Many standard microeconometric models belong to the
           family of generalized linear models and can be fitted by <code>glm()</code>
 	  from package stats. This includes in particular logit and probit models
-	  for modeling choice data and Poisson models for count data. Effects for typical
+	  for modeling choice data and Poisson models for count data.
+	  Effects for typical
 	  values of regressors in these models can be obtained and visualized using <pkg>effects</pkg>.
 	  Marginal effects tables for certain GLMs can be obtained using the 
 	  <pkg>margins</pkg> package. Interactive visualizations of both effects and marginal
@@ -116,6 +117,10 @@
 
       <li><i>Fraction and proportion responses</i>: Fractional response models are in <pkg>frm</pkg>.
           Beta regression for responses in (0, 1) is in <pkg>betareg</pkg> and <pkg>gamlss</pkg>.</li>
+
+      <li><i>High-dimensional fixed effects</i>: Linear models with potentially high-dimensional
+          fixed effects, also for multiple groups, can be fitted by <pkg>lfe</pkg>.
+	  The corresponding GLMs are covered in <pkg>alpaca</pkg>.</li>
 
       <li><i>Miscellaneous</i>: Further more refined tools for microeconometrics are provided in
 	  the <pkg>micEcon</pkg> family of packages: Analysis with
@@ -189,7 +194,6 @@
 	  the unobserved heterogeneity effects are time-varying.</li>
 
       <li><i>Miscellaneous</i>: 
-          Multiple group fixed effects are in <pkg>lfe</pkg>.	  
           Autocorrelation and heteroscedasticity correction in are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
 	  PANIC Tests of nonstationarity are in <pkg>PANICr</pkg>.
 	  Threshold regression and unit root tests are in <pkg>pdR</pkg>.
@@ -390,6 +394,7 @@
 
   <packagelist>
     <pkg priority="core">AER</pkg>
+    <pkg>alpaca</pkg>
     <pkg>aod</pkg>
     <pkg>apollo</pkg>
     <pkg>apt</pkg>
