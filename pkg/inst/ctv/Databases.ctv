@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2019-05-09</version>
+   <version>2019-06-15</version>
 
   <info>
     <p>
@@ -48,6 +48,9 @@
     <ul>
       <li>
         The <pkg>DBI</pkg> package provides a database interface definition for communication between R and relational database management systems. It's worth noting that some packages try to follow this interface definition (DBI-compliant) but many existing packages don't.
+      </li>
+      <li>
+        The <pkg>RODBC</pkg> package provides access to databases through an ODBC interface.
       </li>
       <li>
         The <pkg>RMariaDB</pkg> package provides a DBI-compliant interface to <a href="https://mariadb.org/">MariaDB</a> and <a href="https://www.mysql.com/">MySQL</a>.
@@ -187,6 +190,7 @@
     <pkg>pool</pkg>
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
+    <pkg>RODBC</pkg>
     <pkg>RPostgreSQL</pkg>
     <pkg>RPostgres</pkg>
     <pkg>RPresto</pkg>
