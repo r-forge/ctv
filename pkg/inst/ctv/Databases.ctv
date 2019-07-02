@@ -175,7 +175,6 @@
 
   <packagelist>
     <pkg>bigrquery</pkg>
-    <pkg>dplyr</pkg>
     <pkg>dbplyr</pkg>
     <pkg>dbfaker</pkg>
     <pkg priority="core">DBI</pkg>
@@ -205,7 +204,6 @@
     <pkg>R4CouchDB</pkg>
     <pkg>RJDBC</pkg>
     <pkg>sqldf</pkg>
-    <pkg>tidyr</pkg>
     <pkg>TScompare</pkg>
     <pkg>mongolite</pkg>
     <pkg>redux</pkg>
