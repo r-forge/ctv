@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-06-05</version>
+  <version>2019-07-16</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -302,6 +302,7 @@
 	  <li><pkg>midasr</pkg> - <i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis.</li>
           <li><pkg>gets</pkg> - GEneral-To-Specific (GETS) model selection for either ARX models with log-ARCH-X errors, or a log-ARCH-X model of the log variance.</li>
 	  <li><pkg>tsfa</pkg> - Time series factor analysis.</li>
+	  <li><pkg>bimets</pkg> - Econometric modeling of time series data using flexible specifications of simultaneous equation models.</li>
 	  <li><pkg>dlsem</pkg> - Distributed-lag linear structural equation models.</li>
           <li><pkg>apt</pkg> - Asymmetric price transmission models.</li>
 	  </ul>
@@ -401,6 +402,7 @@
     <pkg>bayesm</pkg>
     <pkg>betareg</pkg>
     <pkg>bife</pkg>
+    <pkg>bimets</pkg>
     <pkg>BMA</pkg>
     <pkg>BMS</pkg>
     <pkg>boot</pkg>
