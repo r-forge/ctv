@@ -3,7 +3,7 @@
    <name>ModelDeployment</name>
    <topic>Model Deployment with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2019-06-06</version>
+   <version>2019-07-30</version>
 
   <info>
     <p>
@@ -142,7 +142,6 @@ designed for analytical workflows.
       <li>
         The <pkg>sparklyr</pkg> package provides bindings to <a href="https://spark.apache.org/">Apache Spark</a>'s distributed machine learning library and allows to deploy the trained models to clusters. Additionally, the <pkg>rsparkling</pkg> package uses <pkg>sparklyr</pkg> for Spark job deployment while using <pkg>h2o</pkg> package for regular model building.
       </li>
-      <li>The <pkg>AzureML</pkg> package contains functions and datasets to support <a href="https://azure.microsoft.com/en-us/overview/machine-learning/">Azure Machine Learning</a>. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
       <li>The <a href="https://docs.microsoft.com/en-us/machine-learning-server/r-reference/mrsdeploy/mrsdeploy-package">mrsdeploy</a> package provides functions for establishing a remote session in a console application and for publishing and managing a web service that is backed by the R code block or script you provided.</li>
       <li>The <pkg>opencpu</pkg> package provides a server that exposes a simple but powerful HTTP API for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or building R web applications.</li>
       <li>Several general purpose server/client frameworks for R exist that could help
@@ -170,7 +169,6 @@ deploy models in server based environments:
     <pkg>arules</pkg>
     <pkg>arulesCBA</pkg>
     <pkg>arulesSequences</pkg>
-    <pkg>AzureML</pkg>
     <pkg>dbplyr</pkg>
     <pkg>domino</pkg>
     <pkg>dplyr</pkg>
