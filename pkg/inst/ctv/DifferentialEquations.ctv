@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2019-07-03</version>
+  <version>2019-09-01</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -206,8 +206,6 @@
       <li>Package <pkg>ecolMod</pkg> contains the figures, data sets and examples from a book 
        on ecological modelling (Soetaert and Herman, 2009).
       </li>
-      <li><pkg>primer</pkg> is a support package for the book of Stevens (2009).
-      </li>
     </ul>
   </info>
 
@@ -231,7 +229,6 @@
     <pkg>phaseR</pkg>
     <pkg>pomp</pkg>
     <pkg>pracma</pkg>
-    <pkg>primer</pkg>
     <pkg>rODE</pkg>
     <pkg>rodeo</pkg>
     <pkg>ReacTran</pkg>
