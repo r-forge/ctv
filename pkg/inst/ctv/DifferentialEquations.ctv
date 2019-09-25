@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2019-09-09</version>
+  <version>2019-09-25</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -49,11 +49,8 @@
        <li> The package <pkg>Sim.DiffProc</pkg> provides functions for simulation of 
         Itô and Stratonovitch stochastic differential equations.
        </li> 
-       <li> Package <pkg>QPot</pkg> analyzes 2-dimensional systems of stochastic 
-         differential equations using quasi-potential analysis.
-       </li> 
-	   <li> Package <pkg>diffeqr</pkg> can solve SDE problems using the <strong>DifferentialEquations.jl</strong> 
-		  package from the Julia programming language.
+       <li> Package <pkg>diffeqr</pkg> can solve SDE problems using the <strong>DifferentialEquations.jl</strong> 
+	package from the Julia programming language.
        </li> 
      </ul>  
       
@@ -228,7 +225,6 @@
     <pkg>rODE</pkg>
     <pkg>rodeo</pkg>
     <pkg>ReacTran</pkg>
-    <pkg>QPot</pkg>
     <pkg priority="core">rootSolve</pkg>
     <pkg>scaRabee</pkg>
     <pkg priority="core">sde</pkg>
