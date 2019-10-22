@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2019-09-25</version>
+  <version>2019-10-22</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -147,8 +147,6 @@
       BVPs have solutions and/or derivative conditions specified 
       at the boundaries of the independent variable.
       <ul>
-       <li> Package <pkg>bvpSolve</pkg> deals only with this type of equations.
-       </li>
        <li> The package <pkg>ReacTran</pkg> can solve BVPs that belong to the 
        class of reactive transport equations.
        </li>
@@ -190,7 +188,7 @@
       <li> The <pkg>PBSmodelling</pkg> package adds GUI functions to models. 
       </li>
       <li>Package <pkg>cOde</pkg> supports the automatic creation of dynamically linked
-        code for packages <pkg>deSolve</pkg> <pkg>bvpSolve</pkg> (or a built-in implementation
+        code for packages <pkg>deSolve</pkg> (or a built-in implementation
         of the sundials cvode solver) from inline C embedded in the R code.
       </li>
        <li>Package <pkg>rodeo</pkg> is an object oriented system and code generator that 
@@ -204,7 +202,6 @@
   </info>
 
   <packagelist>
-    <pkg priority="core">bvpSolve</pkg>
     <pkg>cOde</pkg>
     <pkg>diffeqr</pkg>
     <pkg>dMod</pkg>
