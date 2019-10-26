@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2019-01-29</version>
+  <version>2018-06-18</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -46,6 +46,11 @@
       <pkg>dynamicGraph</pkg>
       Interactive graphical tool for manipulating graphs
     </li>
+
+    <!-- <li> -->
+    <!--   <pkg>giRaph</pkg> -->
+    <!--   Supply classes and methods to represent and manipulate graphs -->
+    <!-- </li> -->
 
     <li>
       <bioc>graph</bioc>
@@ -119,7 +124,32 @@
       multivariate normal data (i.e. covariance selection models) and
       mixed interaction models.
     </li>
-<!--
+
+    <li>
+      <pkg>sna</pkg>
+
+      A range of tools for social network analysis, including node and
+      graph-level indices, structural distance and covariance methods,
+      structural equivalence detection, network regression, random
+      graph generation, and 2D/3D network visualization.
+    </li>
+
+    <li>
+      <pkg>mgm</pkg>
+
+      Estimation of k-Order time-varying Mixed Graphical Models and
+      mixed VAR(p) models via elastic-net regularized neighborhood
+      regression.
+    
+    </li>
+
+    <!-- <li> -->
+    <!-- <pkg> </pkg -->
+
+    <!-- </li> -->
+    
+    
+    <!--
     <li>
       <pkg>gRapHD</pkg>
       Package for selecting and fitting high-dimensional graphical
@@ -128,6 +158,8 @@
       Link: <a href="https://dx.doi.org/doi:10.18637/jss.v037.i01">doi:10.18637/jss.v037.i01</a>
     </li>
 -->
+
+
 <!--    <li>
       <pkg>mimR</pkg>
       General package for model selection in contingency
@@ -152,6 +184,26 @@
       complicated patterns in multivariate data wherein either
       continuous or discrete variables.
     </li>
+
+    <li>
+      <pkg>bnclassify</pkg> Learning Discrete Bayesian Network Classifiers from Data.
+
+      State-of-the art algorithms for learning discrete Bayesian
+      network classifiers from data, including a number of those
+      described in Bielza and Larranaga (2014)
+      with functions for prediction, model evaluation and inspection.
+
+      The package implements a number of structure-learning
+      algorithms, with both discriminative and generative network
+      scores, and a number of naive Bayes-specific parameter
+      estimation methods, such as the Model Averaged Naïve
+      Bayes. Prediction with complete data is rather fast, allowing
+      for discriminative scores for structure learning with moderately
+      sized-data sets (e.g. the splice data set, with 61 variables and
+      3190 instances in ~100 seconds on my machine). There is a number
+      of utility functionalities, such as cross-validation.
+    </li>
+
     
     <li>
       <pkg>bnstruct</pkg> Bayesian Network Structure Learning from
@@ -429,6 +481,14 @@
       is not yet available.
     </li>
 
+    <!-- <li> -->
+    <!-- <pkg>rbugs</pkg> -->
+    <!-- Fusing R and OpenBugs. -->
+    <!-- Functions to prepare files needed for running BUGS in batch-mode, and -->
+    <!-- running BUGS from R. Support for Linux and Windows systems with -->
+    <!-- OpenBugs is emphasized. -->
+    <!-- </li> -->
+
     <li>
     <pkg>rjags</pkg>
     rjags: Bayesian graphical models using MCMC.
@@ -443,6 +503,7 @@
     <pkg>abn</pkg>
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
+    <pkg>bnclassify</pkg>
     <pkg>bnstruct</pkg>
     <pkg>boa</pkg>
     <pkg>BDgraph</pkg>
@@ -458,22 +519,26 @@
     <pkg>GeneNet</pkg>
     <pkg>huge</pkg>
     <pkg>ggm</pkg>
+
     <pkg>gRain</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRim</pkg>
     <pkg>igraph</pkg>
     <pkg>lvnet</pkg>        
     <pkg>MXM</pkg>
+    <pkg>mgm</pkg> 
     <pkg>ndtv</pkg>
     <pkg>network</pkg>
     <pkg>networkDynamic</pkg>
     <pkg>parcor</pkg>
     <pkg>pcalg</pkg>
     <pkg>QUIC</pkg>
+    <pkg>sna</pkg>
     <pkg>SIN</pkg>
     <pkg>sparsebn</pkg>
     <pkg>R2OpenBUGS</pkg>
     <pkg>R2WinBUGS</pkg>
+
     <pkg>rjags</pkg>
   </packagelist>
 
