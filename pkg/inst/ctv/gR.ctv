@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2018-06-18</version>
+  <version>2010-10-27</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -79,6 +79,13 @@
       vertex/edge/graph attributes.
     </li>
 
+    <li>
+      <pkg>qgraph</pkg>
+      Weighted network visualization and analysis, as well as Gaussian graphical model computation. See Epskamp et al. (2012)
+      <a href="https://dx.doi.org/doi:10.18637/jss.v048.i04">doi:10.18637/jss.v048.i04</a>
+    </li>
+
+    
     <li>
       <bioc>Rgraphviz</bioc>
       Provides plotting capabilities for R graph objects.
