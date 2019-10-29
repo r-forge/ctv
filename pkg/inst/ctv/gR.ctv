@@ -526,7 +526,6 @@
     <pkg>GeneNet</pkg>
     <pkg>huge</pkg>
     <pkg>ggm</pkg>
-
     <pkg>gRain</pkg>
     <pkg priority="core">gRbase</pkg>
     <pkg>gRim</pkg>
@@ -536,9 +535,10 @@
     <pkg>mgm</pkg> 
     <pkg>ndtv</pkg>
     <pkg>network</pkg>
-    <pkg>networkDynamic</pkg>
+    <pkg>networkDynamic</pkg>    
     <pkg>parcor</pkg>
     <pkg>pcalg</pkg>
+    <pkg>qgraph</pkg>
     <pkg>QUIC</pkg>
     <pkg>sna</pkg>
     <pkg>SIN</pkg>
