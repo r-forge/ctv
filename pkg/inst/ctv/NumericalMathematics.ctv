@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2019-06-02</version>
+  <version>2019-11-22</version>
   
   <info>
 
@@ -80,9 +80,16 @@
         large-scale eigenvalue decomposition and SVD problems.</li>
     <li><pkg>optR</pkg> uses elementary methods of linear algebra (Gauss, LU, 
         CGM, Cholesky) to solve linear systems.</li>
+    <li>Package <pkg>mbend</pkg> for bending non-positive-definite (symmetric) 
+        matrices to positive-definiteness, using weighted and unweighted 
+        methods.</li>
     <li><pkg>matrixcalc</pkg> contains a collection of functions for matrix 
         calculations, special matrices, and tests for matrix properties, 
-        e.g., (semi-)positive definiteness.</li>
+        e.g., (semi-)positive definiteness; mainly used for teaching and research purposes</li>
+    <li><pkg>matlib</pkg> contains a collection of matrix functions for 
+        teaching and learning matrix linear algebra as used in multivariate 
+        statistical methods; mainly for tutorial purposes in learning matrix 
+        algebra ideas using R.</li>
     <li>Package <pkg>onion</pkg> contains routines for manipulating 
         quaternions and octonians (normed division algebras over the real 
         numbers); quaternions can be useful for handling rotations in 
@@ -117,6 +124,8 @@
     <li>The hypergeometric (and generalized hypergeometric) function, is 
         computed in <pkg>hypergeo</pkg>, including transformation formulas 
         and special values of the parameters.</li>
+    <li><pkg>HypergeoMat</pkg> evaluates the hypergeometric functions of a 
+        matrix argument through a C++ implementation of Koev and Edelman's algorithm.</li>
     <li>Elliptic and modular functions are available in package 
         <pkg>elliptic</pkg>, including the Weierstrass P function and 
         Jacobi's theta functions.
@@ -162,6 +171,11 @@
         among them Chebyshev, Hermite, and Legendre polynomials, as well as 
         spherical and ultraspherical polynomials. There are functions to 
         operate on these polynomials.</li>
+    <li>Symbolic calculation and evaluation of the Jack polynomials, zonal 
+        polynomials (appear in random matrix theory), and Schur polynomials 
+        (appear in combinatorics) is available in package <pkg>jack</pkg>.</li>
+    <li>The Free Algebra in R package <pkg>freealg</pkg> handles multivariate 
+        polynomials with non-commuting indeterminates.</li>
     </ul>
 
 
@@ -224,6 +238,11 @@
     <li>Package <pkg>Pade</pkg> calculates the numerator and denominator 
         coefficients of the Pade approximation, given the Taylor series 
         coefficients of sufficient length.</li>
+    <li><pkg>calculus</pkg> provides efficient functions for high-dimensional 
+        numerical and symbolic calculus, including accurate higher-order 
+        derivatives, Taylor series expansion, differential operators, and Monte-Carlo integration in orthogonal coordinate systems.</li>
+    <li>Package <pkg>wedge</pkg> provides functionality for working with 
+        differentials, k-forms, wedge products, Stokes's theorem, and related concepts from the exterior calculus.</li>
     <li><pkg>features</pkg> extracts features from functional data, such as 
         first and second derivatives, or curvature at critical points, while
         <pkg>RootsExtremaInflections</pkg> finds roots, extrema and 
@@ -263,9 +282,12 @@
         <code>akima::interp</code> and <code>tripack::tri.mesh</code> 
         functions.)</li>
     <li>Package <pkg>chebpol</pkg> contains methods for creating multivariate 
-        Chebyshev and multilinear interpolation on regular grids, e.g. the 
-        Floater-Hormann barycenter method, or polyharmonic splines for scattered 
-        data.</li>
+        Chebyshev and other multilinear interpolations on regular grids, e.g.
+        the Floater-Hormann barycenter method, or polyharmonic splines for 
+        scattered data.</li>
+    <li>Package <pkg>kubik</pkg> provides (constructs, plots and evaluates) 
+        constrained cubic Hermite splines and computes their derivatives, 
+        indefinite integrals, or approximations of higher derivatives.</li>
     <li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
         constrained two-dimensional Delaunay triangulation package providing 
         both triangulation and generation of Voronoi mosaics of irregular 
@@ -291,7 +313,7 @@
     implementations of the bisection algorithm in several contributed 
     packages. For root finding with higher precision there is function 
     <code>unirootR()</code> in the multi-precision package <pkg>Rmpfr</pkg>. 
-    And for finding roots of multivariate functions see the following two 
+    And for finding roots of multivariate functions see the following 
     packages:</p>
 
     <ul>
@@ -312,6 +334,12 @@
     <li>Package <pkg>FixedPoint</pkg> provides algorithms for finding fixed 
         point vectors. These algorithms include Anderson acceleration, 
         epsilon extrapolation methods, and minimal polynomial methods.</li>
+    <li>Package <pkg>daarem</pkg> implements the DAAREM method for accelerating 
+        the convergence of any smooth, monotone, slow fixed point iteration.</li>
+    <li>Algorithms for accelerating the convergence of slow, monotone 
+        sequences from smooth contraction mappings such as the 
+        expectation-maximization (EM) algorithm are provided in packages
+        <pkg>SQUAREM</pkg> resp. <pkg>turboEM</pkg>.</li>
     </ul>
 
 
@@ -471,9 +499,21 @@
     </li>
     </ul>
 
-    <p> The commercial programs SAS and Mathematica do have facilities  
-        to call R functions. Here is another Computer Algebra System (CAS) 
-        in Pure Mathematics that can be called from R.</p>
+    <p>Java Math functions can be employed through the 'rjava' or 'rscala' 
+       interfaces. Then the following package will give the user access to 
+       a specialized Java Mathematics library.</p>
+
+    <ul>
+    <li>Package <pkg>commonsMath</pkg> provides Java JAR files for the Apache 
+        Commons Mathematics Library for use by users and other packages. All 
+        aspects of numerics, optimization, and differential equations are 
+        covered therein.
+    </li>
+    </ul>
+
+    <p>The commercial programs SAS and Mathematica do have facilities  
+       to call R functions. Here is another Computer Algebra System (CAS) 
+       in Pure Mathematics that can be called from R.</p>
 
     <ul>
     <li>Package <pkg>m2r</pkg> provides a persistent interface to Macauley2, 
@@ -494,11 +534,14 @@
     <pkg>Bessel</pkg>
     <pkg>bigIntegerAlgos</pkg>
     <pkg>Brobdingnag</pkg>
+    <pkg>calculus</pkg>
     <pkg>chebpol</pkg>
     <pkg>combinat</pkg>
+    <pkg>commonsMath</pkg>
     <pkg>conicfit</pkg>
     <pkg>contfrac</pkg>
     <pkg>cubature</pkg>
+    <pkg>daarem</pkg>
     <pkg priority="core">Deriv</pkg>
     <pkg>eigeninv</pkg>
     <pkg>elliptic</pkg>
@@ -510,24 +553,30 @@
     <pkg>findpython</pkg>
     <pkg>FixedPoint</pkg>
     <pkg>fourierin</pkg>
+    <pkg>freealg</pkg>
     <pkg>freegroup</pkg>
     <pkg>gaussquad</pkg>
     <pkg>geigen</pkg>
     <pkg>gmp</pkg>
     <pkg>gsl</pkg>
     <pkg>hypergeo</pkg>
+    <pkg>HypergeoMat</pkg>
     <pkg>interp</pkg>
     <pkg>irlba</pkg>
+    <pkg>jack</pkg>
     <pkg>JuliaCall</pkg>
     <pkg>ktsolve</pkg>
+    <pkg>kubik</pkg>
     <pkg>lamW</pkg>
     <pkg>logOfGamma</pkg>
     <pkg>m2r</pkg>
     <pkg>magic</pkg>
     <pkg>MASS</pkg>
     <pkg>matlab</pkg>
+    <pkg>matlib</pkg>
     <pkg priority="core">Matrix</pkg>
     <pkg>matrixcalc</pkg>
+    <pkg>mbend</pkg>
     <pkg>MonoPoly</pkg>
     <pkg>mpoly</pkg>
     <pkg>multipol</pkg>
@@ -573,12 +622,15 @@
     <pkg>SparseGrid</pkg>
     <pkg>SparseM</pkg>
     <pkg>SphericalCubature</pkg>
+    <pkg>SQUAREM</pkg>
     <pkg>statmod</pkg>
     <pkg>stinepack</pkg>
     <pkg>ssvd</pkg>
     <pkg>svd</pkg>
     <pkg>tripack</pkg>
+    <pkg>turboEM</pkg>
     <pkg>VeryLargeIntegers</pkg>
+    <pkg>wedge</pkg>
     <pkg>XR</pkg>
     <pkg>XRJulia</pkg>
     <pkg>XRPython</pkg>
