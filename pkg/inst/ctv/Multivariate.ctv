@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2018-07-21</version>
+  <version>2019-11-22</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -216,8 +216,7 @@
 	  provides multiple imputation for mixed categorical and continuous data.
 	  <pkg>pan</pkg> provides multiple imputation for
 	  missing panel data.  <pkg>VIM</pkg> provides methods for the visualisation as well as imputation of missing data.    <code>aregImpute()</code> and <code>transcan()</code> from
-          <pkg>Hmisc</pkg> provide further imputation methods.   
-	  <pkg>monomvn</pkg> deals with estimation models where the missing data pattern is monotone. </li></ul>
+          <pkg>Hmisc</pkg> provide further imputation methods.</li></ul>
      
           <p><strong>Latent variable approaches</strong></p>
           <ul><li><code>factanal()</code> in stats provides factor analysis by maximum
@@ -323,7 +322,6 @@
     <pkg>misc3d</pkg>
     <pkg>mitools</pkg>
     <pkg>mix</pkg>
-    <pkg>monomvn</pkg> 
     <pkg>mnormt</pkg>  
     <pkg>MNP</pkg>
     <pkg>mvnmle</pkg> 
