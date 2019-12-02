@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2010-10-27</version>
+  <version>2019-12-02</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -268,18 +268,6 @@
       modeling; RNM).
     </li>
 
-
-    <li>
-      <pkg>MXM</pkg> Feature Selection (Including Multiple Solutions)
-      and Bayesian Networks.  Feature selection methods for
-      identifying minimal, statistically-equivalent and
-      equally-predictive feature subsets. Bayesian network algorithms
-      and related functions are also included. The package name 'MXM'
-      stands for "Mens eX Machina", meaning "Mind from the Machine" in
-      Latin. Link: <a href="https://dx.doi.org/doi:10.18637/jss.v080.i07">doi:10.18637/jss.v080.i07</a>
-    </li>
-    
-    
     <li>
       <pkg>ndtv</pkg> Network Dynamic Temporal Visualizations. Renders
       dynamic network data from "networkDynamic" objects as animated
@@ -531,7 +519,6 @@
     <pkg>gRim</pkg>
     <pkg>igraph</pkg>
     <pkg>lvnet</pkg>        
-    <pkg>MXM</pkg>
     <pkg>mgm</pkg> 
     <pkg>ndtv</pkg>
     <pkg>network</pkg>
