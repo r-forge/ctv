@@ -106,8 +106,7 @@
 	  interface <code>tobit()</code> is in package <pkg>AER</pkg>. Further censored
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
 	  Censored regression models with conditional heteroscedasticity are in <pkg>crch</pkg>.
-	  Models for sample selection are available in <pkg>sampleSelection</pkg>
-	  and semiparametric extensions of these are provided by <pkg>SemiParSampleSel</pkg>.
+	  Models for sample selection are available in <pkg>sampleSelection</pkg>.
 	  Package <pkg>matchingMarkets</pkg> corrects for selection bias when the sample is the
 	  result of a stable matching process (e.g., a group formation or college admissions problem).</li>
 
@@ -511,7 +510,6 @@
     <pkg priority="core">sandwich</pkg>
     <pkg>segmented</pkg>
     <pkg>sem</pkg>
-    <pkg>SemiParSampleSel</pkg>
     <pkg>semsfa</pkg>
     <pkg>sfa</pkg>
     <pkg>simpleboot</pkg>
