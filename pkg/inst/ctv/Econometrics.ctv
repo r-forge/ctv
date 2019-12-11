@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-07-16</version>
+  <version>2019-12-11</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -116,6 +116,11 @@
 
       <li><i>Fraction and proportion responses</i>: Fractional response models are in <pkg>frm</pkg>.
           Beta regression for responses in (0, 1) is in <pkg>betareg</pkg> and <pkg>gamlss</pkg>.</li>
+
+      <li><i>Duration responses</i>: Many classical duration models can be fitted with <pkg>survreg</pkg>,
+          e.g., Cox proportional hazard models with <code>coxph()</code> or Weibull models with <code>survreg()</code>.
+	  Many more refined models can be found in the <view>Survival</view> task view. The Heckman
+	  and Singer mixed proportional hazard competing risk model is available in <pkg>durmod</pkg>.</li>
 
       <li><i>High-dimensional fixed effects</i>: Linear models with potentially high-dimensional
           fixed effects, also for multiple groups, can be fitted by <pkg>lfe</pkg>.
@@ -416,6 +421,7 @@
     <pkg>crch</pkg>
     <pkg>decompr</pkg>
     <pkg>dlsem</pkg>
+    <pkg>durmod</pkg>
     <pkg>dynlm</pkg>
     <pkg>Ecdat</pkg>
     <pkg>effects</pkg>
@@ -545,6 +551,7 @@
     <view>Psychometrics</view>
     <view>SocialSciences</view>
     <view>Spatial</view>
+    <view>Survival</view>
     <view>TimeSeries</view>
     <github>ccolonescu/PoEdata</github>
     <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing List: R Special Interest Group Finance</a>
