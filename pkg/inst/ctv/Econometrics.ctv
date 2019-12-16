@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2019-12-11</version>
+  <version>2019-12-16</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -117,7 +117,7 @@
       <li><i>Fraction and proportion responses</i>: Fractional response models are in <pkg>frm</pkg>.
           Beta regression for responses in (0, 1) is in <pkg>betareg</pkg> and <pkg>gamlss</pkg>.</li>
 
-      <li><i>Duration responses</i>: Many classical duration models can be fitted with <pkg>survreg</pkg>,
+      <li><i>Duration responses</i>: Many classical duration models can be fitted with <pkg>survival</pkg>,
           e.g., Cox proportional hazard models with <code>coxph()</code> or Weibull models with <code>survreg()</code>.
 	  Many more refined models can be found in the <view>Survival</view> task view. The Heckman
 	  and Singer mixed proportional hazard competing risk model is available in <pkg>durmod</pkg>.</li>
@@ -308,6 +308,7 @@
 	  <li><pkg>tsfa</pkg> - Time series factor analysis.</li>
 	  <li><pkg>bimets</pkg> - Econometric modeling of time series data using flexible specifications of simultaneous equation models.</li>
 	  <li><pkg>dlsem</pkg> - Distributed-lag linear structural equation models.</li>
+	  <li><pkg>lpirfs</pkg> - Local projections impulse response functions.</li>
           <li><pkg>apt</pkg> - Asymmetric price transmission models.</li>
 	  </ul>
 	  </li>
@@ -456,6 +457,7 @@
     <pkg>LinRegInteractive</pkg>
     <pkg>lme4</pkg>
     <pkg priority="core">lmtest</pkg>
+    <pkg>lpirfs</pkg>
     <pkg>margins</pkg>
     <pkg>MASS</pkg>
     <pkg>matchingMarkets</pkg>
