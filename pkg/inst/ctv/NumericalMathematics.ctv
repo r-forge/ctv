@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2019-11-22</version>
+  <version>2020-01-02</version>
   
   <info>
 
@@ -375,6 +375,9 @@
         to generate arrangements in a fast and memory efficient manner. 
         Permutations and combinations can be drawn with/without replacement 
         and support multisets.</li>
+    <li>Package <pkg>set6</pkg> implements (as R6 classes) many forms of 
+        mathematical sets (sets, tuples, intervals) and allows for standard 
+        operations on them (unions, products, differences).</li>
     <li><pkg>RcppAlgos</pkg> provides flexible functions for generating 
         combinations or permutations of a vector with or without constraints. 
         The extension package <pkg>bigIntegerAlgos</pkg> features a quadratic 
@@ -384,6 +387,10 @@
         Every function has on its help page a hyperlink to the corresponding 
         entry in the On-Line Encyclopedia of Integer Sequences 
         (<a href="https://oeis.org/">OEIS</a>).</li>
+    <li>Package <pkg>primes</pkg> provides quite fast (Rcpp) functions for 
+        identifying and generating prime numbers. And <pkg>primefactr</pkg> 
+        uses prime factorization for computations such as reducing ratios 
+        of large factorials.</li>
     </ul>
 
 
@@ -595,6 +602,8 @@
     <pkg>polynom</pkg>
     <pkg priority="core">PolynomF</pkg>
     <pkg priority="core">pracma</pkg>
+    <pkg>primefactr</pkg>
+    <pkg>primes</pkg>
     <pkg>PRIMME</pkg>
     <pkg>PythonInR</pkg>
     <pkg>QZ</pkg>
@@ -616,6 +625,7 @@
     <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
     <pkg>schumaker</pkg>
+    <pkg>set6</pkg>
     <pkg>signal</pkg>
     <pkg>SimplicialCubature</pkg>
     <pkg>SnakeCharmR</pkg>
