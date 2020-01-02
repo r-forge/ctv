@@ -438,8 +438,7 @@
     </li>
     <li>R package <pkg>rPython</pkg> permits calls from R to Python, while 
         <a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python 
-        module 'rpy2') interfaces R from Python. <pkg>SnakeCharmR</pkg> is a 
-        fork of 'rPython' with several fixes and improvements.
+        module 'rpy2') interfaces R from Python.
     </li>
     <li><pkg>PythonInR</pkg> is another package to interact with Python from 
         within R. It provides Python classes for vectors, matrices and 
@@ -628,7 +627,6 @@
     <pkg>set6</pkg>
     <pkg>signal</pkg>
     <pkg>SimplicialCubature</pkg>
-    <pkg>SnakeCharmR</pkg>
     <pkg>SparseGrid</pkg>
     <pkg>SparseM</pkg>
     <pkg>SphericalCubature</pkg>
