@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
-  <version>2019-10-22</version>
+  <version>2020-01-12</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -64,9 +64,6 @@
        <li> The package <pkg>deSolve</pkg> contains several solvers for solving ODE, DAE, DDE and PDE. 
         It can deal with stiff and nonstiff problems.
        </li>
-       <li> The package <pkg>deTestSet</pkg> contains solvers designed for solving 
-        very stiff equations.
-       </li>
        <li> The package <pkg>odeintr</pkg> generates and compiles C++ ODE solvers on the fly using Rcpp
             and <a href="http://www.boost.org/">Boost</a> <a href="http://www.odeint.com/">odeint</a>.
        </li>
@@ -120,9 +117,6 @@
        <li> The package <pkg>deSolve</pkg> contains dedicated solvers for 1-D, 2-D and 
         3-D time-varying ODE problems as generated from PDEs (e.g. by <pkg>ReacTran</pkg>).
        </li>
-       <li> Solvers for 1-D time varying problems can also be found in the package 
-        <pkg>deTestSet</pkg>.
-       </li> 
        <li> The package <pkg>rootSolve</pkg> contains optimized solvers for 1-D, 2-D and 
         3-D algebraic problems generated from (time-invariant) PDEs. 
         It can thus be used for solving elliptic equations.
@@ -136,8 +130,6 @@
       the more difficult to solve the DAE.
       <ul>
        <li> The package <pkg>deSolve</pkg> provides two solvers, that can handle DAEs up to index 3.
-       </li>
-       <li> Three more DAE solvers are in the package <pkg>deTestSet</pkg>.
        </li>
        <li> Package <pkg>diffeqr</pkg> can solve DAE problems using the <strong>DifferentialEquations.jl</strong> 
           package from the Julia programming language.
@@ -183,8 +175,6 @@
       <li>Root finding, equilibrium and steady-state analysis of ODEs can be 
        done with the package <pkg>rootSolve</pkg>.
       </li>
-      <li> The <pkg>deTestSet</pkg> package contains many test problems for differential equations.
-      </li> 
       <li> The <pkg>PBSmodelling</pkg> package adds GUI functions to models. 
       </li>
       <li>Package <pkg>cOde</pkg> supports the automatic creation of dynamically linked
@@ -207,7 +197,6 @@
     <pkg>dMod</pkg>
     <pkg>CollocInfer</pkg>
     <pkg priority="core">deSolve</pkg>
-    <pkg>deTestSet</pkg>
     <pkg>ecolMod</pkg>
     <pkg>FME</pkg>
     <pkg>adaptivetau</pkg>
