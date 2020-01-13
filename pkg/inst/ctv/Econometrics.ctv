@@ -45,7 +45,9 @@
 
       <li><i>Diagnostic checking</i>: The packages
 	  <pkg>car</pkg> and <pkg>lmtest</pkg> provide a large collection
-	  of regression diagnostics and diagnostic tests.</li>
+	  of regression diagnostics and diagnostic tests. In addition to these two packages,
+	  <pkg>skedastic</pkg> contains further diagnostics specifically for detecting
+	  heteroscedasticity.</li>
     </ul>
 
     <p><strong>Microeconometrics</strong></p>
@@ -196,7 +198,7 @@
 	  the unobserved heterogeneity effects are time-varying.</li>
 
       <li><i>Miscellaneous</i>: 
-          Autocorrelation and heteroscedasticity correction in are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
+          Autocorrelation and heteroscedasticity correction are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
 	  PANIC Tests of nonstationarity are in <pkg>PANICr</pkg>.
 	  Threshold regression and unit root tests are in <pkg>pdR</pkg>.
           The panel data approach method for program evaluation is available in <pkg>pampe</pkg>. 
@@ -519,6 +521,7 @@
     <pkg>semsfa</pkg>
     <pkg>sfa</pkg>
     <pkg>simpleboot</pkg>
+    <pkg>skedastic</pkg>
     <pkg>SparseM</pkg>
     <pkg>spatialprobit</pkg>
     <pkg>spatialreg</pkg>
