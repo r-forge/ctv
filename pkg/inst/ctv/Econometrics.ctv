@@ -11,11 +11,7 @@
     functionality is complemented by many packages on CRAN, a brief overview
     is given below. There is also a considerable overlap between the tools
     for econometrics in this view and those in the task views on
-    <view>Finance</view>, <view>SocialSciences</view>, and <view>TimeSeries</view>.    
-    Furthermore, the 
-    <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Finance/">Finance SIG</a>    
-    is a suitable mailing list for obtaining help
-    and discussing questions about both computational finance and econometrics.</p>
+    <view>Finance</view>, <view>SocialSciences</view>, and <view>TimeSeries</view>.</p>
     
     <p>The packages in this view can be roughly structured into the following topics.
     If you think that some package is missing from the list, please contact the maintainer.</p>
@@ -557,7 +553,6 @@
     <view>Survival</view>
     <view>TimeSeries</view>
     <github>ccolonescu/PoEdata</github>
-    <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Finance/">Mailing List: R Special Interest Group Finance</a>
     <a href="http://www.jstatsoft.org/v27/">Journal of Statistical Software: Special Volume on 'Econometrics in R' (2008)</a>
     <a href="https://eeecon.uibk.ac.at/~zeileis/teaching/AER/">Book: Applied Econometrics with R (Kleiber and Zeileis)</a>
     <a href="http://www.urfie.net/">Book: Using R for Introductory Econometrics (Heiss)</a>
