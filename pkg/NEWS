@@ -1,4 +1,8 @@
-Changes in Version 0.8-6
+Changes in Version 0.9-0
+
+  o support for R/Markdown task views
+
+  o switch from XML to xml2
 
   o Added <doi> tag to add hyperlinks to DOIs, e.g., <doi>10.18637/jss.v067.i01</doi>
     will be turned into https://doi.org/10.18637/jss.v067.i01

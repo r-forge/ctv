@@ -1,5 +1,13 @@
 read.ctv <- function(file) 
 {
+  x <- readLines(file)
+  if(any(grepl("<CRANTaskView", x, fixed = TRUE))) return(read_ctv_xml(file))
+  if(any(grep("^---", x))) return(read_ctv_rmd(file))
+  stop("unknown ctv specification")
+}
+
+read_ctv_xml <- function(file) 
+{
     ## read raw XML
     x <- xml2::read_xml(file)
     ## Old code had
