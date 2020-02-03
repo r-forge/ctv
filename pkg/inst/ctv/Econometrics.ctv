@@ -133,7 +133,6 @@
 	  Stochastic frontier analysis (SFA) is in <pkg>frontier</pkg> and certain special cases also in <pkg>sfa</pkg>.
 	  Semiparametric SFA in is available in <pkg>semsfa</pkg> and spatial SFA in <pkg>spfrontier</pkg> and <pkg>ssfa</pkg>.
 	  The package <pkg>bayesm</pkg> implements a Bayesian approach to microeconometrics and marketing. 
-	  Estimation and marginal effect computations for multivariate probit models can be carried out with <pkg>mvProbit</pkg>.
 	  Inference for relative distributions is contained in package <pkg>reldist</pkg>.</li>
     </ul>
 
@@ -468,7 +467,6 @@
     <pkg>mlogit</pkg>
     <pkg>MNP</pkg>
     <pkg>multiwayvcov</pkg>
-    <pkg>mvProbit</pkg>
     <pkg>nlme</pkg>
     <pkg>nnet</pkg>
     <pkg>nonnest2</pkg>
