@@ -2,7 +2,7 @@
   <name>Hydrology</name>
   <topic>Hydrological Data and Modeling</topic>
   <maintainer email="samuelczipper@gmail.com">Sam Zipper, Sam Albers, Ilaria Prosdocimi</maintainer>
-  <version>2020-01-17</version>
+  <version>2020-02-09</version>
   <info>
     <p>This Task View contains information about packages broadly relevant to <em>hydrology</em>, defined as the movement, distribution and quality of water and water resources over a broad spatial scale of landscapes. Packages are broadly grouped according to their function; however, many have functionality that spans multiple categories. We also highlight other, existing resources that have related functions - for example, statistical analysis or spatial data processing. See also <a href="https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html">Riccardo Rigon’s excellent list</a> of hydrology-related R tools and resources.</p><p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/Hydrology/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/Hydrology/pulls">submit a pull request</a>. If you can’t contribute on GitHub, <a href="mailto:samzipper@ku.edu">send Sam Zipper an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p><h2 id="data-retrieval">Data Retrieval</h2><p><strong>Hydrological data sources (surface water/groundwater quantity and quality)</strong></p><ul><li> 
 <p><pkg>dataRetrieval</pkg>: Collection of functions to help retrieve U.S. Geological Survey (USGS) and U.S. Environmental Protection Agency (EPA) water quality and hydrology data from web services.</p></li><li> 
@@ -34,7 +34,6 @@
 <p><github>bcgov/fasstr</github> Functions to tidy, summarize, analyze, trend, and visualize streamflow data. This package summarizes continuous daily mean streamflow data into various daily, monthly, annual, and long-term statistics, completes annual trends and frequency analyses, in both table and plot formats. GitHub only package.</p></li><li> 
 <p><pkg>climatol</pkg>: Functions for the quality control, homogenization and missing data infilling of climatological series and to obtain climatological summaries and grids from the results. Also functions to draw wind-roses and Walter&amp;Lieth climate diagrams.</p></li><li> 
 <p><pkg>getMet</pkg>: Functions for sourcing, formatting, and editing meteorological data for hydrologic models.</p></li></ul><p><strong>Hydrograph analysis (functions for working with streamflow data, e.g. flow statistics, trends, biological indices, etc.)</strong></p><ul><li> 
-<p><pkg>baseflow</pkg>: Computes hydrograph separation using the conceptual automated process from Pelletier and Andreassian (2019).</p></li><li> 
 <p><pkg>biotic</pkg>: Calculates a range of UK freshwater invertebrate biotic indices including BMWP, Whalley, WHPT, Habitat-specific BMWP, AWIC, LIFE and PSI.</p></li><li> 
 <p><pkg>EcoHydRology</pkg>: This package provides a flexible foundation for scientists, engineers, and policy makers to base teaching exercises as well as for more applied use to model complex eco-hydrological interactions, including some SWAT calibration functions.</p></li><li> 
 <p><pkg>ecoval</pkg>: Functions for evaluating and visualizing ecological assessment procedures for surface waters containing physical, chemical and biological assessments in the form of value functions.</p></li><li> 
@@ -120,7 +119,6 @@
     <pkg priority="core">hydroGOF</pkg>
     <pkg>airGR</pkg>
     <pkg>airGRteaching</pkg>
-    <pkg>baseflow</pkg>
     <pkg>berryFunctions</pkg>
     <pkg>bigleaf</pkg>
     <pkg>biotic</pkg>
