@@ -648,30 +648,15 @@
     <view>Optimization</view>
     <view>TimeSeries</view>
     <view>HighPerformanceComputing</view>
-
-    <span>Textbook:
-    <a href="http://www.worldscientific.com/worldscibooks/10.1142/7814">
-        Hands-On Matrix Algebra Using R</a></span>
-    <span>Textbook: 
-    <a href="http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html">
-        Introduction to Scientific Programming and Simulation Using R</a>
-    </span>
-    <span>Textbook:
-    <a href="http://www.crcpress.com/product/isbn/9781439884485">
-    Numerical Methods in Science and Engineering Using R</a></span>
-    <span>Textbook:
-    <a href="https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633">
-    Computational Methods for Numerical Analysis with R</a></span>
-
+    <a href="http://www.worldscientific.com/worldscibooks/10.1142/7814">Textbook: Hands-On Matrix Algebra Using R</a>
+    <a href="http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html">Textbook: Introduction to Scientific Programming and Simulation Using R</a>
+    <a href="http://www.crcpress.com/product/isbn/9781439884485">Textbook: Numerical Methods in Science and Engineering Using R</a>
+    <a href="https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633">Textbook: Computational Methods for Numerical Analysis with R</a>
     <a href="http://www.rforscience.com/">R for Science (Institute for Sea Research, Netherlands)</a>
-    <a href="http://www.math.umaine.edu/~hiebeler/comp/matlabR.html">
-    MATLAB / R Reference (D. Hiebeler)</a>
-    <a href="http://www.nr.com/aands/">Abramowitz and Stegun. 
-        Handbook of Mathematical Functions</a>
-    <a href="http://www.nrbook.com/a/bookcpdf.php">Numerical Recipes:
-        The Art of Numerical Computing</a>
-    <a href="http://mathworld.wolfram.com/">E. Weisstein's 
-        Wolfram MathWorld</a>
+    <a href="http://www.math.umaine.edu/~hiebeler/comp/matlabR.html">MATLAB / R Reference (D. Hiebeler)</a>
+    <a href="http://www.nr.com/aands/">Abramowitz and Stegun. Handbook of Mathematical Functions</a>
+    <a href="http://www.nrbook.com/a/bookcpdf.php">Numerical Recipes: The Art of Numerical Computing</a>
+    <a href="http://mathworld.wolfram.com/">E. Weisstein's Wolfram MathWorld</a>
   </links>
 
 </CRANTaskView>
