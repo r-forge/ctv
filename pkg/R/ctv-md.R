@@ -242,7 +242,7 @@ ctv_xml_to_rmd <- function(x) {
   x$info[xi] <- gsub("(\\*\\*)(.*)(\\*\\*)", "### \\2", x$info[xi])
   
   ## convert <a> links to md 
-  x$links <- pandoc(c("<ul>", paste0("<li>", x$links[names(x$links) == "a"], "</li>"), "</ul>"),
+  x$links <- pandoc(c("<ul>", paste0("<li>", x$links[substr(x$links, 1L, 3L) == "<a "], "</li>"), "</ul>"),
     from = "html", to = "markdown")
 
   ## YAML header
