@@ -95,10 +95,10 @@ github <- function(name, register = TRUE) {
   sprintf("[%s](https://github.com/%s)", sapply(strsplit(name, "/", fixed = TRUE), "[", 2L), name)
 }
 
-read_ctv_rmd <- function(file)
+read_ctv_rmd <- function(file, format = "html", cran = FALSE)
 {
   ## FIXME
-  assignInNamespace(".ctv_env", initialize_ctv_env(), ns = "ctv")
+  assignInNamespace(".ctv_env", initialize_ctv_env(cran = cran), ns = "ctv")
   
   ## read Rmd
   rmd <- readLines(file)
@@ -106,6 +106,9 @@ read_ctv_rmd <- function(file)
   ## file names
   file0 <- file
   file <- gsub("\\.Rmd$", ".md", file)
+
+  ## output format
+  format <- match.arg(format, c("html", "markdown"))
 
   ## read header
   x <- which(substr(rmd, 1L, 3L) == "---")
@@ -132,9 +135,21 @@ read_ctv_rmd <- function(file)
   } else {
     links <- md[(li + 1L):length(md)]
     md <- md[1L:(li - 1L)]
+
+    ## collapse links to single lines
+    links <- gsub("^\\* ", "\\\\item ", links)
+    links <- gsub("^- ", "\\\\item ", links)
+    links <- paste(links, collapse = " ")
+    links <- gsub("^ *\\\\item *", "", links)
+    links <- paste0(links, " ")
+    links <- strsplit(links, " *\\\\item")[[1L]]
+    links <- gsub("^ +", "", links)
+    links <- gsub(" +$", "", links)
+    links <- gsub(" +", " ", links)
   }
   ## add "other" links
-  if(length(.ctv_env$viewlist) > 0L) links <- c(links, paste("- CRAN Task View:", view(sort(.ctv_env$viewlist))))
+  otherlinks <- NULL
+  if(length(.ctv_env$viewlist) > 0L) otherlinks <- c(otherlinks, paste("CRAN Task View:", view(sort(.ctv_env$viewlist))))
   if(NROW(.ctv_env$otherlist) > 0L) {
     olinks <- .ctv_env$otherlist
     olinks <- olinks[order(tolower(sapply(strsplit(olinks$name, "/", fixed = TRUE), function(x) x[length(x)]))), , drop = FALSE]
@@ -142,8 +157,7 @@ read_ctv_rmd <- function(file)
     olinks <- olinks[order(olinks$source), , drop = FALSE]
     for(i in levels(olinks$source)) {
       ii <- which(olinks$source == i)
-      if(length(ii) > 0L) links <- c(links, paste0(
-        "- ",
+      if(length(ii) > 0L) otherlinks <- c(otherlinks, paste0(
         switch(i,
 	  "bioc" = "Bioconductor Package",
 	  "rforge" = "R-Forge Project",
@@ -157,19 +171,22 @@ read_ctv_rmd <- function(file)
   }
 
   ## info
-  x$info <- pandoc(md)
+  x$info <- if(format == "html") pandoc(md) else md
 
   ## packagelist
-  x$packagelist <- .ctv_env$packagelist[order(.ctv_env$packagelist$name),]
+  x$packagelist <- .ctv_env$packagelist[order(.ctv_env$packagelist$name), ]
 
   ## links
-  if(!is.null(links)) {
-    links <- pandoc(links)
-    m <- gregexpr("(<li>)(.*)(</li>)", links)
-    links <- unlist(regmatches(links, m))
-    links <- gsub("(<li>)(.*)(</li>)", "\\2", links)
+  x$links <- links  
+  if(!is.null(x$links) && format == "html") {
+    x$links <- as.character(pandoc(as.list(x$links)))
+    x$links <- gsub("(^<p>)(.*)(</p>$)", "\\2", x$links)
   }
-  x$links <- links
+  x$otherlinks <- otherlinks  
+  if(!is.null(x$otherlinks) && format == "html") {
+    x$otherlinks <- as.character(pandoc(as.list(x$otherlinks)))
+    x$otherlinks <- gsub("(^<p>)(.*)(</p>$)", "\\2", x$otherlinks)
+  }
   
   class(x) <- "ctv"
   return(x)
@@ -268,6 +285,13 @@ pandoc <- function(x, ..., from = "markdown", to = "html", fixup = (from == "htm
   outfile <- tempfile()
   on.exit(unlink(c(infile, outfile)))
 
+  ## list of inputs?
+  xlist <- is.list(x)
+  if(xlist) {
+    sep <- "\007\007\007\007\007"
+    x <- unlist(lapply(x, c, c("", sep, "")))
+  }
+
   ## call pandoc_convert()
   writeLines(x, infile)
   rmarkdown::pandoc_convert(input = infile, output = outfile, from = from, to = to, ...)
@@ -278,6 +302,30 @@ pandoc <- function(x, ..., from = "markdown", to = "html", fixup = (from == "htm
     rval <- gsub("\\`r\\_chunk\\_", "`r ", rval, fixed = TRUE)
     rval <- gsub("\\`", "`", rval, fixed = TRUE)
     rval <- gsub("\\\"", "\"", rval, fixed = TRUE)
+  }
+  
+  ## split up list again?
+  if(xlist) {
+    ix <- grepl(sep, rval, fixed = TRUE)
+    rval <- split(rval, c(0, head(cumsum(ix), -1L)))
+
+    ## omit sep from last line in each chunk
+    cleansep <- function(x) {
+      n <- length(x)
+      if(n < 1L) return(x)
+      del <- c(
+        if(x[1L] == "") 1L else NULL,
+        if(n > 1L && grepl(sep, x[n], fixed = TRUE) && x[n - 1L] == "") n - 1L else NULL,
+	if(x[n] %in% c(sep, paste0("<p>", sep, "</p>"))) n else NULL
+	## FIXME: Depending on the output format the relevant line
+	## may just contain the 'sep' or '<p>sep</p>'. But it may
+	## a '</p>' may also be in the line _after_ the 'sep'.
+	## ...maybe lapply() rather than seperator-based?
+      )
+      x[n] <- gsub(sep, "", x[n], fixed = TRUE)
+      if(length(del) > 0L) return(x[-del]) else return(x)
+    }
+    rval <- lapply(rval, cleansep)  
   }
   
   return(rval)
