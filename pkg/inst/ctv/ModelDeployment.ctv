@@ -3,7 +3,7 @@
    <name>ModelDeployment</name>
    <topic>Model Deployment with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2019-08-05</version>
+   <version>2020-02-11</version>
 
   <info>
     <p>
@@ -78,7 +78,6 @@ are based on PMML:
             <li>The <pkg>rattle</pkg> package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.
             </li>
             <li>The <pkg>arules</pkg> package provides the infrastructure for representing, manipulating and analyzing transaction data and patterns (frequent itemsets and association rules). The associations can be written to disk in PMML.</li>
-            <li>The <pkg>arulesSequences</pkg> package is an add-on for arules to handle and mine frequent sequences.</li>
             <li>The <pkg>arulesCBA</pkg> package provides a function to build an association rule-based classifier for data frames, and to classify incoming data frames using such a classifier. </li>
           </ul>
       </li>
@@ -168,7 +167,6 @@ deploy models in server based environments:
     <pkg>aurelius</pkg>
     <pkg>arules</pkg>
     <pkg>arulesCBA</pkg>
-    <pkg>arulesSequences</pkg>
     <pkg>cloudml</pkg>
     <pkg>dbplyr</pkg>
     <pkg>domino</pkg>
