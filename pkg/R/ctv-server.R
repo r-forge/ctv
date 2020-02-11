@@ -283,6 +283,14 @@ ctv2html <- function(x,
             sapply(x$links, function(x) paste0("    <li>", x, "</li>")),
 	    "  </ul>")
 
+  if(!is.null(x$otherlinks)) {
+  htm4 <- c(htm4, "",
+            "  <h3>Other resources:</h3>",
+            "  <ul>",
+            sapply(x$otherlinks, function(x) paste0("    <li>", x, "</li>")),
+	    "  </ul>")
+  }
+
   ## collect code chunks
   htm <- c(htm1, "", htm2, "", htm3, "", htm4, "", "</body>", "</html>")
 
