@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-02-09</version>
+  <version>2020-02-17</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -123,7 +123,8 @@
 
       <li><i>High-dimensional fixed effects</i>: Linear models with potentially high-dimensional
           fixed effects, also for multiple groups, can be fitted by <pkg>lfe</pkg>.
-	  The corresponding GLMs are covered in <pkg>alpaca</pkg>.</li>
+	  The corresponding GLMs are covered in <pkg>alpaca</pkg>. Another implementation, based on
+	  C++ code covering both OLS and GLMs is in <pkg>fixest</pkg>.</li>
 
       <li><i>Miscellaneous</i>: Further more refined tools for microeconometrics are provided in
 	  the <pkg>micEcon</pkg> family of packages: Analysis with
@@ -425,6 +426,7 @@
     <pkg>expsmooth</pkg>
     <pkg>ExtremeBounds</pkg>
     <pkg>feisr</pkg>
+    <pkg>fixest</pkg>
     <pkg>fma</pkg>
     <pkg priority="core">forecast</pkg>
     <pkg>frm</pkg>
