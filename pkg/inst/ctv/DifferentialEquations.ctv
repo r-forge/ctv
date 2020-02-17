@@ -3,7 +3,7 @@
 
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
-  <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert and Thomas Petzoldt</maintainer>
+  <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert, Thomas Petzoldt</maintainer>
   <version>2020-01-12</version>
   
   <info>
