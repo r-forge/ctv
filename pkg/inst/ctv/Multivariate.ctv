@@ -167,7 +167,7 @@
           <view>Cluster</view> task view.  Standard techniques include hierarchical clustering by 
           <code>hclust()</code> and k-means clustering by <code>kmeans()</code> in stats.
 	   A range of established
-          clustering and visualisation techniques are also available in <pkg>cluster</pkg>, some cluster validation routines are available in <pkg>clv</pkg> and the Rand index can be computed from <code>classAgreement()</code> in <pkg>e1071</pkg>.  Cluster ensembles are available from <pkg>clue</pkg>, methods to assist with choice of routines are available in <pkg>clusterSim</pkg> and hybrid methodology is provided by <pkg>hybridHclust</pkg>.  Distance 
+          clustering and visualisation techniques are also available in <pkg>cluster</pkg>, some cluster validation routines are available in <pkg>clv</pkg> and the Rand index can be computed from <code>classAgreement()</code> in <pkg>e1071</pkg>.  Cluster ensembles are available from <pkg>clue</pkg>, methods to assist with choice of routines are available in <pkg>clusterSim</pkg>.  Distance 
           measures  (<code>edist()</code>) and hierarchical clustering (<code>hclust.energy()</code>) based on            E-statistics are available in <pkg>energy</pkg>.   Mahalanobis distance based clustering (for fixed points as well as clusterwise regression) are available from <pkg>fpc</pkg>.  
 	  <pkg>clustvarsel</pkg> provides variable selection within model-based clustering.
 	  Fuzzy clustering is available within <pkg>cluster</pkg> as well as via the 
@@ -297,7 +297,6 @@
     <pkg>hddplot</pkg>  
     <pkg>Hmisc</pkg>
     <pkg>homals</pkg>
-    <pkg>hybridHclust</pkg> 
     <pkg>ICS</pkg>
     <pkg>ICSNP</pkg>
     <pkg>iplots</pkg>  
