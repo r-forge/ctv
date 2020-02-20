@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-02-17</version>
+  <version>2020-02-20</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -188,10 +188,6 @@
 
       <li><i>Instrumental variables</i>: <pkg>ivfixed</pkg> and <pkg>ivpanel</pkg>, see also above.</li>
       
-      <li><i>Heterogeneous time trends</i>: <pkg>phtt</pkg> offers the possibility of
-          analyzing panel data with large dimensions n and T and can be considered when
-	  the unobserved heterogeneity effects are time-varying.</li>
-
       <li><i>Miscellaneous</i>: 
           Autocorrelation and heteroscedasticity correction are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
 	  PANIC Tests of nonstationarity are in <pkg>PANICr</pkg>.
@@ -489,7 +485,6 @@
     <pkg>pder</pkg>
     <pkg>pdR</pkg>
     <pkg>pglm</pkg>
-    <pkg>phtt</pkg>
     <pkg priority="core">plm</pkg>
     <pkg>pscl</pkg>
     <pkg>psidR</pkg>
