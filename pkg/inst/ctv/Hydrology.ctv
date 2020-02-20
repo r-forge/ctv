@@ -2,7 +2,7 @@
   <name>Hydrology</name>
   <topic>Hydrological Data and Modeling</topic>
   <maintainer email="samuelczipper@gmail.com">Sam Zipper, Sam Albers, Ilaria Prosdocimi</maintainer>
-  <version>2020-02-09</version>
+  <version>2020-02-20</version>
   <info>
     <p>This Task View contains information about packages broadly relevant to <em>hydrology</em>, defined as the movement, distribution and quality of water and water resources over a broad spatial scale of landscapes. Packages are broadly grouped according to their function; however, many have functionality that spans multiple categories. We also highlight other, existing resources that have related functions - for example, statistical analysis or spatial data processing. See also <a href="https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html">Riccardo Rigon’s excellent list</a> of hydrology-related R tools and resources.</p><p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/Hydrology/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/Hydrology/pulls">submit a pull request</a>. If you can’t contribute on GitHub, <a href="mailto:samzipper@ku.edu">send Sam Zipper an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p><h2 id="data-retrieval">Data Retrieval</h2><p><strong>Hydrological data sources (surface water/groundwater quantity and quality)</strong></p><ul><li> 
 <p><pkg>dataRetrieval</pkg>: Collection of functions to help retrieve U.S. Geological Survey (USGS) and U.S. Environmental Protection Agency (EPA) water quality and hydrology data from web services.</p></li><li> 
@@ -79,7 +79,6 @@
 <p><pkg>EcoHydRology</pkg>: Flexible foundation for scientists, engineers, and policy makers to base teaching exercises as well as for more applied use to model complex eco-hydrological interactions, including some SWAT calibration functions.</p></li><li> 
 <p><pkg>geotopbricks</pkg>: An R Plug-in for the Distributed Hydrological Model <a href="https://github.com/geotopmodel">GEOtop</a>. The package analyzes raster maps and other information as input/output files from the Hydrological Distributed Model GEOtop.</p></li><li> 
 <p><github>floybix/hydromad</github>: Hydrological Model Assessment and Development - <a href="http://hydromad.catchment.org">website</a>. GitHub only package.</p></li><li> 
-<p><pkg>hydroPSO</pkg>: Particle Swarm Optimisation (PSO) algorithm for the calibration of environmental and other real-world models that need to be executed from the system console. hydroPSO is model-independent, allowing the user to easily interface any computer simulation model with the PSO calibration engine.</p></li><li> 
 <p><pkg>kwb.hantush</pkg>: Calculation groundwater mounding beneath an infiltration basin based on the <a href="http://doi.org/10.1029/WR003i001p00227">Hantush (1967)</a> equation. The correct implementation is shown with a verification example based on a USGS report ( <a href="http://pubs.usgs.gov/sir/2010/5102/support/sir2010-5102.pdf">page 25</a> ).</p></li><li> 
 <p><github>USGS-R/loadflex</github>: Models and Tools for Watershed Flux Estimates. See <a href="http://dx.doi.org/10.1890/ES14-00517.1">paper</a>. GitHub only package.</p></li><li> 
 <p><pkg>reservoir</pkg>: Tools for Analysis, Design, and Operation of Water Supply Storages. Measure single-storage water supply system performance using resilience, reliability, and vulnerability metrics; assess storage-yield-reliability relationships; determine no-fail storage with sequent peak analysis; optimize release decisions for water supply, hydropower, and multi-objective reservoirs using deterministic and stochastic dynamic programming; generate inflow replicates using parametric and non-parametric models; evaluate inflow persistence using the Hurst coefficient.</p></li><li> 
@@ -151,7 +150,6 @@
     <pkg>hydrogeo</pkg>
     <pkg>hydrolinks</pkg>
     <pkg>HydroMe</pkg>
-    <pkg>hydroPSO</pkg>
     <pkg>hydroscoper</pkg>
     <pkg>hydrostats</pkg>
     <pkg>hyfo</pkg>
