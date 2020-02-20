@@ -293,7 +293,6 @@
       <li><i>Miscellaneous</i>:
           <ul>
           <li><pkg>tsDyn</pkg> - Threshold and smooth transition models.</li>
-          <li><pkg>PSTR</pkg> - Panel smooth transition regression models.</li>
 	  <li><pkg>midasr</pkg> - <i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis.</li>
           <li><pkg>gets</pkg> - GEneral-To-Specific (GETS) model selection for either ARX models with log-ARCH-X errors, or a log-ARCH-X model of the log variance.</li>
 	  <li><pkg>tsfa</pkg> - Time series factor analysis.</li>
@@ -488,7 +487,6 @@
     <pkg priority="core">plm</pkg>
     <pkg>pscl</pkg>
     <pkg>psidR</pkg>
-    <pkg>PSTR</pkg>
     <pkg>pwt</pkg>
     <pkg>pwt8</pkg>
     <pkg>pwt9</pkg>
