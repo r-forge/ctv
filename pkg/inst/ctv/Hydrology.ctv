@@ -2,11 +2,10 @@
   <name>Hydrology</name>
   <topic>Hydrological Data and Modeling</topic>
   <maintainer email="samuelczipper@gmail.com">Sam Zipper, Sam Albers, Ilaria Prosdocimi</maintainer>
-  <version>2020-02-18</version>
+  <version>2020-02-29</version>
   <info>
     <p>This Task View contains information about packages broadly relevant to <em>hydrology</em>, defined as the movement, distribution and quality of water and water resources over a broad spatial scale of landscapes. Packages are broadly grouped according to their function; however, many have functionality that spans multiple categories. We also highlight other, existing resources that have related functions - for example, statistical analysis or spatial data processing. See also <a href="https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html">Riccardo Rigon’s excellent list</a> of hydrology-related R tools and resources.</p><p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/Hydrology/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/Hydrology/pulls">submit a pull request</a>. If you can’t contribute on GitHub, <a href="mailto:samzipper@ku.edu">send Sam Zipper an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p><h2 id="data-retrieval">Data Retrieval</h2><p><strong>Hydrological data sources (surface water/groundwater quantity and quality)</strong></p><ul><li> 
 <p><pkg>dataRetrieval</pkg>: Collection of functions to help retrieve U.S. Geological Survey (USGS) and U.S. Environmental Protection Agency (EPA) water quality and hydrology data from web services.</p></li><li> 
-<p><pkg>dbhydroR</pkg>: Client for programmatic access to the South Florida Water Management District’s <a href="https://www.sfwmd.gov/science-data/dbhydro">DBHYDRO database</a>, with functions for accessing hydrologic and water quality data.</p></li><li> 
 <p><pkg>echor</pkg>: An R interface to <a href="https://echo.epa.gov/">United States Environmental Protection Agency (EPA) Environmental Compliance History Online (‘ECHO’)</a>. Provides functions to locate facilities with discharge permits and download discharge records.</p></li><li> 
 <p><pkg>FedData</pkg>: Functions to Automate Downloading Geospatial Data Available from Several Federated Data Sources.</p></li><li> 
 <p><pkg>hddtools</pkg>: Hydrological Data Discovery Tools. Facilitates discovery and handling of hydrological data, access to catalogues and databases.</p></li><li> 
@@ -40,7 +39,6 @@
 <p><pkg>climdex.pcic</pkg>: PCIC Implementation of Climdex Routines PCIC’s implementation of Climdex routines for computation of extreme climate indices.</p></li><li> 
 <p><pkg>climatol</pkg>: Functions for the quality control, homogenization and missing data infilling of climatological series and to obtain climatological summaries and grids from the results. Also functions to draw wind-roses and Walter&amp;Lieth climate diagrams.</p></li><li> 
 <p><pkg>getMet</pkg>: Functions for sourcing, formatting, and editing meteorological data for hydrologic models.</p></li></ul><p><strong>Hydrograph analysis (functions for working with streamflow data, e.g. flow statistics, trends, biological indices, etc.)</strong></p><ul><li> 
-<p><pkg>baseflow</pkg>: Computes hydrograph separation using the conceptual automated process from Pelletier and Andreassian (2019).</p></li><li> 
 <p><pkg>biotic</pkg>: Calculates a range of UK freshwater invertebrate biotic indices including BMWP, Whalley, WHPT, Habitat-specific BMWP, AWIC, LIFE and PSI.</p></li><li> 
 <p><pkg>EcoHydRology</pkg>: This package provides a flexible foundation for scientists, engineers, and policy makers to base teaching exercises as well as for more applied use to model complex eco-hydrological interactions, including some SWAT calibration functions.</p></li><li> 
 <p><pkg>ecoval</pkg>: Functions for evaluating and visualizing ecological assessment procedures for surface waters containing physical, chemical and biological assessments in the form of value functions.</p></li><li> 
@@ -87,15 +85,12 @@
 <p><pkg>EcoHydRology</pkg>: Flexible foundation for scientists, engineers, and policy makers to base teaching exercises as well as for more applied use to model complex eco-hydrological interactions, including some SWAT calibration functions.</p></li><li> 
 <p><pkg>geotopbricks</pkg>: An R Plug-in for the Distributed Hydrological Model <a href="https://github.com/geotopmodel">GEOtop</a>. The package analyzes raster maps and other information as input/output files from the Hydrological Distributed Model GEOtop.</p></li><li> 
 <p><github>floybix/hydromad</github>: Hydrological Model Assessment and Development - <a href="http://hydromad.catchment.org">website</a>. GitHub only package.</p></li><li> 
-<p><pkg>hydroPSO</pkg>: Particle Swarm Optimisation (PSO) algorithm for the calibration of environmental and other real-world models that need to be executed from the system console. hydroPSO is model-independent, allowing the user to easily interface any computer simulation model with the PSO calibration engine.</p></li><li> 
 <p><pkg>kwb.hantush</pkg>: Calculation groundwater mounding beneath an infiltration basin based on the <a href="http://doi.org/10.1029/WR003i001p00227">Hantush (1967)</a> equation. The correct implementation is shown with a verification example based on a USGS report ( <a href="http://pubs.usgs.gov/sir/2010/5102/support/sir2010-5102.pdf">page 25</a> ).</p></li><li> 
 <p><github>USGS-R/loadflex</github>: Models and Tools for Watershed Flux Estimates. See <a href="http://dx.doi.org/10.1890/ES14-00517.1">paper</a>. GitHub only package.</p></li><li> 
 <p><pkg>reservoir</pkg>: Tools for Analysis, Design, and Operation of Water Supply Storages. Measure single-storage water supply system performance using resilience, reliability, and vulnerability metrics; assess storage-yield-reliability relationships; determine no-fail storage with sequent peak analysis; optimize release decisions for water supply, hydropower, and multi-objective reservoirs using deterministic and stochastic dynamic programming; generate inflow replicates using parametric and non-parametric models; evaluate inflow persistence using the Hurst coefficient.</p></li><li> 
 <p><pkg>RHMS</pkg>: Hydrologic modelling system is an object oriented tool which enables R users to simulate and analyze hydrologic events. The package proposes functions and methods for construction, simulation, visualization, and calibration of hydrologic systems.</p></li><li> 
 <p><pkg>RSAlgaeR</pkg>: Builds Empirical Remote Sensing Models of Water Quality Variables and Analyzes Long-Term Trends. Assists in processing reflectance data, developing empirical models using stepwise regression and a generalized linear modeling approach, cross- validation, and analysis of trends in water quality conditions (specifically chl-a) and climate conditions using the Theil-Sen estimator.</p></li><li> 
-<p><pkg>streamDepletr</pkg>: Analytical depletion functions used to calculate the impacts of groundwater pumping on one or more streams.</p></li><li> 
 <p><github>USGS-R/streamMetabolizer</github>: Estimate aquatic photosynthesis and respiration (collectively, metabolism) from time series data on dissolved oxygen, water temperature, depth, and light via inverse modeling. The package assists with data preparation, handles data gaps during modeling, and provides tabular and graphical reports of model outputs. GitHub only package.</p></li><li> 
-<p><pkg>SWATmodel</pkg>: The Soil and Water Assessment Tool (SWAT) is a river basin or watershed scale model developed by Dr. Jeff Arnold for the USDA-ARS.</p></li><li> 
 <p><pkg>swmmr</pkg>: Functions to connect the widely used <a href="https://www.epa.gov/water-research/storm-water-management-model-swmm">Storm Water Management Model (SWMM)</a> of the United States Environmental Protection Agency (US EPA) to R.</p></li><li> 
 <p><pkg>topmodel</pkg>: Set of hydrological functions including the hydrological model TOPMODEL, which is based on the 1995 FORTRAN version by Keith Beven. From version 0.7.0, the package is put into maintenance mode. See also <pkg>dynatopmodel</pkg>.</p></li><li> 
 <p><pkg>TUWmodel</pkg>: Lumped Hydrological Model for Education Purposes: a lumped conceptual rainfall-runoff model, following the structure of the HBV model. The model runs on a daily or shorter time step and consists of a snow routine, a soil moisture routine and a flow routing routine.</p></li><li> 
@@ -129,7 +124,6 @@
     <pkg>airGR</pkg>
     <pkg>airGRteaching</pkg>
     <pkg>AWAPer</pkg>
-    <pkg>baseflow</pkg>
     <pkg>berryFunctions</pkg>
     <pkg>bigleaf</pkg>
     <pkg>biotic</pkg>
@@ -143,7 +137,6 @@
     <pkg>CoSMoS</pkg>
     <pkg>countyweather</pkg>
     <pkg>dataRetrieval</pkg>
-    <pkg>dbhydroR</pkg>
     <pkg>driftR</pkg>
     <pkg>dynatopmodel</pkg>
     <pkg>echor</pkg>
@@ -167,7 +160,6 @@
     <pkg>hydrogeo</pkg>
     <pkg>hydrolinks</pkg>
     <pkg>HydroMe</pkg>
-    <pkg>hydroPSO</pkg>
     <pkg>hydroscoper</pkg>
     <pkg>hydrostats</pkg>
     <pkg>hyfo</pkg>
@@ -208,8 +200,6 @@
     <pkg>somspace</pkg>
     <pkg>SPEI</pkg>
     <pkg>stationaRy</pkg>
-    <pkg>streamDepletr</pkg>
-    <pkg>SWATmodel</pkg>
     <pkg>swmmr</pkg>
     <pkg>tidyhydat</pkg>
     <pkg>topmodel</pkg>
