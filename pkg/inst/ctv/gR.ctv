@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2019-12-02</version>
+  <version>2020-03-04</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -225,20 +225,6 @@
       BIC. The package also implements methods for generating and
       using bootstrap samples, imputed data, inference.
     </li>
-
-    
-
-
-
-
-
-
-    <li>
-      <pkg>catnet</pkg>
-      A package that handles discrete Bayesian network models and provides
-      inference using the frequentist approach
-    </li>
-
 
     <li>
       <pkg>FBFsearch</pkg>
@@ -503,7 +489,6 @@
     <pkg>boa</pkg>
     <pkg>BDgraph</pkg>
     <pkg>BRugs</pkg>
-    <pkg>catnet</pkg>
     <pkg>coda</pkg>
     <pkg>dclone</pkg>
     <pkg>diagram</pkg>
