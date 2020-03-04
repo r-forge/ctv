@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2020-02-02</version>
+  <version>2020-03-04</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -190,8 +190,7 @@
 	  multivariate adaptive regression splines with <code>mars()</code> and adaptive spline
 	  backfitting with the <code>bruto()</code> function.   Multivariate adaptive regression splines can also be found in <pkg>earth</pkg>.
 	  Package <pkg>class</pkg> provides k-nearest 
-          neighbours by <code>knn()</code>, <pkg>knncat</pkg> provides k-nearest neighbours for 
-          categorical variables.
+          neighbours by <code>knn()</code>.
 	  <pkg>SensoMineR</pkg> provides <code>FDA()</code> for factorial discriminant analysis.   A number of packages provide for 
 	  dimension reduction with the classification. <pkg>klaR</pkg> includes variable
 	  selection and robustness against multicollinearity as well as a number of
@@ -305,7 +304,6 @@
     <pkg>KernSmooth</pkg>
     <pkg>kknn</pkg>
     <pkg>klaR</pkg>
-    <pkg>knncat</pkg>
     <pkg>kohonen</pkg>  
     <pkg>ks</pkg>
     <pkg>lattice</pkg>
