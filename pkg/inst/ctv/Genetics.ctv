@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2019-01-26</version>
+  <version>2020-03-04</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -57,9 +57,6 @@ The <pkg>hierfstat</pkg> package allows the estimation of hierarchical F-statist
 <pkg>ape</pkg>. Package
 <pkg>ouch</pkg>
           provides Ornstein-Uhlenbeck models for phylogenetic comparative hypotheses.
-<pkg>stepwise</pkg>
-          implements a method for stepwise detection of recombination breakpoints in
-          sequence alignments.
 <pkg>phangorn</pkg>
           estimates phylogenetic trees and networks using maximum likelihood, maximum parsimony, distance
           methods and Hadamard conjugation.
@@ -217,7 +214,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg>seqinr</pkg>
     <pkg>SNPmaxsel</pkg>
     <pkg>snp.plotter</pkg>
-    <pkg>stepwise</pkg>
     <pkg>tdthap</pkg>
     <pkg>untb</pkg>
     <pkg>wgaim</pkg>
