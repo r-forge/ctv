@@ -62,8 +62,7 @@
       <li><i>Binary responses</i>: The standard logit and probit models (among many others) for binary
           responses are GLMs that can be estimated by <code>glm()</code> with <code>family = binomial</code>.
 	  Bias-reduced GLMs that are robust to complete and quasi-complete separation are provided by
-	  <pkg>brglm</pkg>. Discrete choice models estimated by simulated maximum likelihood are
-	  implemented in <pkg>Rchoice</pkg>. <pkg>bife</pkg> provides binary choice models with fixed effects.
+	  <pkg>brglm</pkg>. <pkg>bife</pkg> provides binary choice models with fixed effects.
 	  Heteroscedastic probit models (and other heteroscedastic
 	  GLMs) are implemented in <pkg>glmx</pkg> along with parametric link functions and goodness-of-link
 	  tests for GLMs.</li>
@@ -491,7 +490,6 @@
     <pkg>pwt8</pkg>
     <pkg>pwt9</pkg>
     <pkg>quantreg</pkg>
-    <pkg>Rchoice</pkg>
     <pkg>rdd</pkg>
     <pkg>rddapp</pkg>
     <pkg>rdlocrand</pkg>
