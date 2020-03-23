@@ -2,7 +2,7 @@
   <name>Hydrology</name>
   <topic>Hydrological Data and Modeling</topic>
   <maintainer email="samuelczipper@gmail.com">Sam Zipper, Sam Albers, Ilaria Prosdocimi</maintainer>
-  <version>2020-03-14</version>
+  <version>2020-03-23</version>
   <info>
     <p>This Task View contains information about packages broadly relevant to <em>hydrology</em>, defined as the movement, distribution and quality of water and water resources over a broad spatial scale of landscapes. Packages are broadly grouped according to their function; however, many have functionality that spans multiple categories. We also highlight other, existing resources that have related functions - for example, statistical analysis or spatial data processing. See also <a href="https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html">Riccardo Rigon’s excellent list</a> of hydrology-related R tools and resources.</p><p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/Hydrology/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/Hydrology/pulls">submit a pull request</a>. If you can’t contribute on GitHub, <a href="mailto:samzipper@ku.edu">send Sam Zipper an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p><h2 id="data-retrieval">Data Retrieval</h2><p><strong>Hydrological data sources (surface water/groundwater quantity and quality)</strong></p><ul><li> 
 <p><pkg>dataRetrieval</pkg>: Collection of functions to help retrieve U.S. Geological Survey (USGS) and U.S. Environmental Protection Agency (EPA) water quality and hydrology data from web services.</p></li><li> 
@@ -98,7 +98,6 @@
 <p><pkg>water</pkg>: Tools and functions to calculate actual Evapotranspiration using surface energy balance models.</p></li><li> 
 <p><pkg>WRSS</pkg>: Water resources system simulator is a tool for simulation and analysis of large-scale water resources systems. ‘WRSS’ proposes functions and methods for construction, simulation and analysis of primary water resources features (e.g. reservoirs, aquifers, and etc.) based on Standard Operating Policy (SOP).</p></li></ul><p><strong>Statistical modeling (hydrology-related statistical models)</strong></p><p>The <view>Environmetrics</view>: Task View gives an overview of packages used in the analysis of environmental data, encompassing hydrological data, including many statistical approaches used in the ecological sciences. Additionally, packages that help model datasets with extreme values are discussed in the <view>ExtremeValue</view> Task View.</p><ul><li> 
 <p><pkg>CityWaterBalance</pkg>: Retrieves data and estimates unmeasured flows of water through the urban network. Any city may be modeled with preassembled data, but data for US cities can be gathered via web services using this package and dependencies <pkg>geoknife</pkg> and <pkg>dataRetrieval</pkg>.</p></li><li> 
-<p><pkg>CoSMoS</pkg>: is an implementation of <a href="https://doi.org/10.1016/j.advwatres.2018.02.013">Papalexiou 2018</a>. CoSMoS makes time series generation with desired properties extremely easy. The generated time series preserve any probability distribution and any linear autocorrelation structure. Users can generate as many and as long time series from processes such as precipitation, wind, temperature, relative humidity etc.</p></li><li> 
 <p><rforge>dream</rforge>: DiffeRential Evolution Adaptive Metropolis (DREAM). Efficient global MCMC even in high-dimensional spaces. R-Forge only package.</p></li><li> 
 <p><github>cvitolo/fuse</github>: An R package implementing the Framework for Understanding Structural Errors <a href="https://cvitolo.github.io/fuse/">cvitolo.github.io/fuse/</a>. GitHub only package.</p></li><li> 
 <p><pkg>hydroApps</pkg>: Package providing tools for hydrological applications and models developed for regional analysis in Northwestern Italy focused on Flood Frequency Analysis.</p></li><li> 
@@ -132,7 +131,6 @@
     <pkg>climate</pkg>
     <pkg>climatol</pkg>
     <pkg>climdex.pcic</pkg>
-    <pkg>CoSMoS</pkg>
     <pkg>countyweather</pkg>
     <pkg>dataRetrieval</pkg>
     <pkg>driftR</pkg>
