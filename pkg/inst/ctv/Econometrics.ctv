@@ -369,7 +369,7 @@
           chains are in <pkg>gvc</pkg> and <pkg>decompr</pkg>.</li>
 
       <li><i>Regression discontinuity design</i>: A variety of methods are provided in
-          the <pkg>rdd</pkg>, <pkg>rddapp</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.
+          the <pkg>rdd</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.
 	  The <pkg>rdpower</pkg> package offers power calculations for regression discontinuity designs.
 	  And <pkg>rdmulti</pkg> implements analysis with multiple cutoffs or scores.</li>
       
@@ -490,7 +490,6 @@
     <pkg>pwt9</pkg>
     <pkg>quantreg</pkg>
     <pkg>rdd</pkg>
-    <pkg>rddapp</pkg>
     <pkg>rdlocrand</pkg>
     <pkg>rdmulti</pkg>
     <pkg>rdpower</pkg>
