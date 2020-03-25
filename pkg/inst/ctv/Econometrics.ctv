@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-03-09</version>
+  <version>2020-03-25</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -237,8 +237,7 @@
       <li><i>Extreme bounds analysis</i>: <pkg>ExtremeBounds</pkg>.</li>
 
       <li><i>Miscellaneous</i>: The packages <pkg>VGAM</pkg>, <pkg>rms</pkg> and <pkg>Hmisc</pkg> provide several tools for extended
-	  handling of (generalized) linear regression models. <pkg>Zelig</pkg> is a unified
-	  easy-to-use interface to a wide range of regression models.</li>
+	  handling of (generalized) linear regression models.</li>
     </ul>
 
     <p><strong>Time series data and models</strong></p>
@@ -529,7 +528,6 @@
     <pkg>wbstats</pkg>
     <pkg>wooldridge</pkg>
     <pkg>xts</pkg>
-    <pkg>Zelig</pkg>
     <pkg priority="core">zoo</pkg>
     <pkg>zTree</pkg>   
   </packagelist>

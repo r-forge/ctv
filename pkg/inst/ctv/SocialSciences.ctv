@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2018-06-18</version>
+  <version>2020-03-25</version>
   
   <info> 
   
@@ -70,7 +70,7 @@
           </li>
           
           <li>
-          Several packages contain functions that are useful for interpreting linear and generalized linear models that have been fit to data: The <pkg>qvcalc</pkg> packages computes "quasi variances" for factors in linear and generalized linear models (and more generally). The <pkg>effects</pkg> package constructs effect displays, including, e.g., "adjusted means," for linear, generalized linear, and many other regression  models; diagnostic partial-residual plots are available for linear and generalized linear models. Similar, if somewhat less general, plots are available in the <pkg>visreg</pkg> package. The <pkg>lsmeans</pkg> implements so-called "least-squares means" for linear, generalized linear, and mixed models, and includes provisions for hypothesis tests. The <pkg>Zelig</pkg> package (see under <a href="#Collections">"Collections"</a>) creates summary displays for many kinds of statistical models.
+          Several packages contain functions that are useful for interpreting linear and generalized linear models that have been fit to data: The <pkg>qvcalc</pkg> packages computes "quasi variances" for factors in linear and generalized linear models (and more generally). The <pkg>effects</pkg> package constructs effect displays, including, e.g., "adjusted means," for linear, generalized linear, and many other regression  models; diagnostic partial-residual plots are available for linear and generalized linear models. Similar, if somewhat less general, plots are available in the <pkg>visreg</pkg> package. The <pkg>lsmeans</pkg> implements so-called "least-squares means" for linear, generalized linear, and mixed models, and includes provisions for hypothesis tests.
           </li>
       </ul>
       
@@ -200,10 +200,6 @@
           <li>
           The <pkg>Hmisc</pkg> and <pkg>rms</pkg> packages (both mentioned above), associated with Harrell, <i>Regression Modeling Strategies, Second Edition</i> (Springer, 2015), provide functions for data manipulation, linear models, logistic-regression models, and survival analysis, many of them "front ends" to or modifications of other facilities in R.
           </li>
-          
-          <li>
-          The <pkg>Zelig</pkg> package integrates a wide array of statistical models of interest to social scientists (see the <a href="http://gking.harvard.edu/zelig">Zelig web site</a> for details).
-          </li>
       </ul>     
 	  
 	<p><strong>Acknowledgments:</strong></p>
@@ -305,7 +301,6 @@
     <pkg priority="core">VGAM</pkg>
     <pkg>VIM</pkg>
     <pkg>visreg</pkg>
-    <pkg>Zelig</pkg>
   </packagelist>
   
   <links>
