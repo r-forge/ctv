@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-03-25</version>
+  <version>2020-04-07</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -152,6 +152,9 @@
           with standard 2SLS functions (see above). Dedicated IV panel data models are provided
 	  by <pkg>ivfixed</pkg> (fixed effects) and <pkg>ivpanel</pkg> (between and random effects).</li>
 
+      <li><i>Miscellaneous</i>:
+          <pkg>REndo</pkg> fits linear models with endogenous regressor using various latent instrumental variable approaches.
+	  </li>
     </ul>
 
 
@@ -495,6 +498,7 @@
     <pkg>rdpower</pkg>
     <pkg>rdrobust</pkg>
     <pkg>reldist</pkg>
+    <pkg>REndo</pkg>
     <pkg>rms</pkg>
     <pkg>RSGHB</pkg>
     <pkg>rUnemploymentData</pkg>
