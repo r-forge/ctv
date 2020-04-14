@@ -192,7 +192,6 @@
       
       <li><i>Miscellaneous</i>: 
           Autocorrelation and heteroscedasticity correction are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
-	  PANIC Tests of nonstationarity are in <pkg>PANICr</pkg>.
 	  Threshold regression and unit root tests are in <pkg>pdR</pkg>.
           The panel data approach method for program evaluation is available in <pkg>pampe</pkg>. 
 	  </li>
@@ -478,7 +477,6 @@
     <pkg>Paneldata</pkg>
     <pkg>panelr</pkg>
     <pkg>panelvar</pkg>
-    <pkg>PANICr</pkg>
     <pkg>pco</pkg>
     <pkg>pcse</pkg>
     <pkg>pder</pkg>
