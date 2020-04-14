@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-04-07</version>
+  <version>2020-04-14</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -369,7 +369,7 @@
 	  by <pkg>fxregime</pkg>.</li>
 
       <li><i>Global value chains</i>: Tools and decompositions for global value
-          chains are in <pkg>gvc</pkg> and <pkg>decompr</pkg>.</li>
+          chains are in <pkg>decompr</pkg>.</li>
 
       <li><i>Regression discontinuity design</i>: A variety of methods are provided in
           the <pkg>rdd</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.
@@ -436,7 +436,6 @@
     <pkg>gmm</pkg>
     <pkg>gmnl</pkg>
     <pkg>gravity</pkg>
-    <pkg>gvc</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
     <pkg>ivfixed</pkg>
