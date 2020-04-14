@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-01-17</version>
+  <version>2020-04-14</version>
   
   <info>
 
@@ -434,8 +434,7 @@
         from Python to R they are converted back to R types. This package from 
         the RStudio team is a kind of standard for calling Python from R.
     </li>
-    <li>R package <pkg>rPython</pkg> permits calls from R to Python, while 
-        <a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python 
+    <li><a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python 
         module 'rpy2') interfaces R from Python.
     </li>
     <li><pkg>PythonInR</pkg> is another package to interact with Python from 
@@ -615,7 +614,6 @@
     <pkg>rmumps</pkg>
     <pkg>RootsExtremaInflections</pkg>
     <pkg>rootSolve</pkg>
-    <pkg>rPython</pkg>
     <pkg>Rserve</pkg>
     <pkg>RSpectra</pkg>
     <pkg>rSymPy</pkg>
