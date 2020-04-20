@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-04-14</version>
+  <version>2020-04-20</version>
   
   <info>
 
@@ -94,6 +94,9 @@
         quaternions and octonians (normed division algebras over the real 
         numbers); quaternions can be useful for handling rotations in 
         three-dimensional space.</li>
+    <li><pkg>clifford</pkg> provides a suite of routines for arbitrary 
+        dimensional Clifford algebras and discusses special cases such as 
+        Lorentz transforms or quaternion multiplication.</li>
     <li>Packages <pkg>RcppArmadillo</pkg> and <pkg>RcppEigen</pkg> enable the 
         integration of the C++ template libraries 'Armadillo' resp. 'Eigen' 
         for linear algebra applications written in C++ and integrated in R 
@@ -130,6 +133,8 @@
         <pkg>elliptic</pkg>, including the Weierstrass P function and 
         Jacobi's theta functions.
         There are tools for visualizing complex functions.</li>
+    <li><pkg>Carlson</pkg> evaluates Carlson elliptic and incomplete  
+        elliptic integrals (with compex arguments).</li>
     <li>Package <pkg>expint</pkg> wraps C-functions from the GNU Scientific 
         Library to calculate exponential integrals and the incomplete Gamma 
         function, including negative values for its first argument.</li>
@@ -155,6 +160,9 @@
         like evaluating polynomials (Horner scheme), or finding their roots. 
         'PolynomF' generates orthogonal polynomials and provides graphical 
         display features.</li>
+    <li><pkg>polyMatrix</pkg> (based on 'polynom') implements basic matrix
+        operations and provides thus an infrastructure for the manipulation
+        of polynomial matrices.</li>
     <li>Package <pkg>MonoPoly</pkg> fits univariate polynomials to given data, 
         applying different algorithms.</li>
     <li>For multivariate polynomials, package <pkg>multipol</pkg> provides 
@@ -190,12 +198,15 @@
 
     <ul>
     <li>Package <pkg>Deriv</pkg> provides an extended solution for symbolic 
-        differentiation in R; the user can add custom derivative rules, and the 
-        output for a function will be an executable function again.</li>
+        differentiation in R; the user can add custom derivative rules, and
+        the output for a function will be an executable function again.</li>
     <li><pkg>numDeriv</pkg> sets the standard for numerical differentiation 
         in R, providing numerical gradients, Jacobians, and Hessians, computed 
         by simple finite differences, Richardson extrapolation, or the highly 
         accurate complex step approach.</li>
+    <li>Package <pkg>dual</pkg> achieves automatic differentiation (for 
+        univariate functions) by employing dual numbers; for a mathematical 
+        function its value and its exact first derivative are returned.</li>
     <li>Package <github>Non-Contradiction/autodiffr</github> (on Github) 
         provides an R wrapper for the Julia packages ForwardDiff.jl and 
         ReverseDiff.jl to do automatic differentiation for native R functions. 
@@ -287,7 +298,7 @@
         scattered data.</li>
     <li>Package <pkg>kubik</pkg> provides (constructs, plots and evaluates) 
         constrained cubic Hermite splines and computes their derivatives, 
-        indefinite integrals, or approximations of higher derivatives.</li>
+        indefinite integrals, as well as roots, optima, or inflection points.</li>
     <li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
         constrained two-dimensional Delaunay triangulation package providing 
         both triangulation and generation of Voronoi mosaics of irregular 
@@ -379,7 +390,9 @@
         mathematical sets (sets, tuples, intervals) and allows for standard 
         operations on them (unions, products, differences).</li>
     <li><pkg>RcppAlgos</pkg> provides flexible functions for generating 
-        combinations or permutations of a vector with or without constraints.</li>
+        combinations or permutations of a vector with or without constraints.
+        Extension package <github>jwood000/RcppBigIntAlgos</github> features a 
+        quadratic sieve algorithm for completely factoring large integers.</li>
     <li>Package <pkg>Zseq</pkg> generates well-known integer sequences; the 
         'gmp' package is adopted for computing with arbitrarily large numbers. 
         Every function has on its help page a hyperlink to the corresponding 
@@ -434,9 +447,6 @@
         from Python to R they are converted back to R types. This package from 
         the RStudio team is a kind of standard for calling Python from R.
     </li>
-    <li><a href="http://sourceforge.net/projects/rpy/">RPy</a> (with Python 
-        module 'rpy2') interfaces R from Python.
-    </li>
     <li><pkg>PythonInR</pkg> is another package to interact with Python from 
         within R. It provides Python classes for vectors, matrices and 
         data.frames which allow an easy conversion from R to Python and back.
@@ -444,9 +454,6 @@
     <li><pkg>feather</pkg> provides bindings to read and write feather files, 
         a lightweight binary data store designed for maximum speed.
         This storage format can also be accessed in Python, Julia, or Scala.
-    </li>
-    <li><pkg>findpython</pkg> is a package designed to find an acceptable
-        Python binary in the path, incl. minimum version or required modules.
     </li>
     <li>'pyRserve' is a Python module for connecting Python to an R process 
         running <pkg>Rserve</pkg> as an RPC gateway. This R process can run on 
@@ -459,10 +466,10 @@
     </li>
     </ul>
     <ul>
-    <li>Note that <a href="http://www.sagemath.org/">SageMath</a> is a free open
-    source mathematics system based on Python, allowing to run R functions, but 
-    also providing access to Maxima, GAP, FLINT, and many more math programs. 
-    SageMath can be downloaded or used through a Web interface at
+    <li><a href="http://www.sagemath.org/">SageMath</a> is an open source
+    mathematics system based on Python, allowing to run R functions, but 
+    also providing access to systems like Maxima, GAP, FLINT, and many more 
+    math programs. SageMath can be freely used through a Web interface at
     <a href="https://cocalc.com/">CoCalc</a>.
     </li>
     </ul>
@@ -537,7 +544,9 @@
     <pkg>Bessel</pkg>
     <pkg>Brobdingnag</pkg>
     <pkg>calculus</pkg>
+    <pkg>Carlson</pkg>
     <pkg>chebpol</pkg>
+    <pkg>clifford</pkg>
     <pkg>combinat</pkg>
     <pkg>commonsMath</pkg>
     <pkg>conicfit</pkg>
@@ -545,6 +554,7 @@
     <pkg>cubature</pkg>
     <pkg>daarem</pkg>
     <pkg priority="core">Deriv</pkg>
+    <pkg>dual</pkg>
     <pkg>eigeninv</pkg>
     <pkg>elliptic</pkg>
     <pkg>expint</pkg>
@@ -552,7 +562,6 @@
     <pkg>fastGHQuad</pkg>
     <pkg>feather</pkg>
     <pkg>features</pkg>
-    <pkg>findpython</pkg>
     <pkg>FixedPoint</pkg>
     <pkg>fourierin</pkg>
     <pkg>freealg</pkg>
@@ -594,6 +603,7 @@
     <pkg>partitions</pkg>
     <pkg>permutations</pkg>
     <pkg>polyCub</pkg>
+    <pkg>polyMatrix</pkg>
     <pkg>polynom</pkg>
     <pkg priority="core">PolynomF</pkg>
     <pkg priority="core">pracma</pkg>
