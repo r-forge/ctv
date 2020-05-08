@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-04-20</version>
+  <version>2020-05-08</version>
   
   <info>
 
@@ -390,8 +390,8 @@
         mathematical sets (sets, tuples, intervals) and allows for standard 
         operations on them (unions, products, differences).</li>
     <li><pkg>RcppAlgos</pkg> provides flexible functions for generating 
-        combinations or permutations of a vector with or without constraints.
-        Extension package <github>jwood000/RcppBigIntAlgos</github> features a 
+        combinations or permutations of a vector with or without constraints;
+        the extension package <pkg>RcppBigIntAlgos</pkg> features a 
         quadratic sieve algorithm for completely factoring large integers.</li>
     <li>Package <pkg>Zseq</pkg> generates well-known integer sequences; the 
         'gmp' package is adopted for computing with arbitrarily large numbers. 
@@ -461,7 +461,7 @@
         through the network.
     </li>
     <li><pkg>XRPython</pkg> (and 'XRJulia') are based on John Chambers' 
-        <pkg>XR</pkg> package and his "Extending R" book and allow for a very 
+        <pkg>XR</pkg> package and his "Extending R" book and allow for a 
         structured integration of R with Python resp. Julia.
     </li>
     </ul>
@@ -499,13 +499,18 @@
        problems and other demanding scientific computations in R.</p>
 
     <ul>
-    <li>The Julia interface of the <pkg>XRJulia</pkg> package by John Chambers 
-        provides direct analogues to Julia function calls. A 'juliaExamples' 
-        package is available on Github.
+    <li><pkg>JuliaCall</pkg> provides seamless integration between R and Julia; 
+        the user can call Julia functions just like any R function, and R 
+        functions can be called in the Julia environment, both with reasonable 
+        automatic type conversion.
     </li>
-    <li><pkg>JuliaCall</pkg> provides seamless integration between R and Julia. 
-        Using the high-level interface, the user can call any Julia function 
-        just like an R function with automatic type conversion.
+    <li><pkg>JuliaConnectoR</pkg> provides a functionally oriented interface 
+        for integrating Julia with R; imported Julia functions can be called 
+        as R functions; data structures are converted automatically.
+    </li>
+    <li>Package <pkg>XRJulia</pkg> provides an interface from R to computations 
+        in the Julia language, based on the interface structure described in 
+        the book "Extending R" by John M. Chambers.
     </li>
     </ul>
 
@@ -576,6 +581,7 @@
     <pkg>irlba</pkg>
     <pkg>jack</pkg>
     <pkg>JuliaCall</pkg>
+    <pkg>JuliaConnectoR</pkg>
     <pkg>ktsolve</pkg>
     <pkg>kubik</pkg>
     <pkg>lamW</pkg>
@@ -617,6 +623,7 @@
     <pkg>Rcpp</pkg>
     <pkg>RcppAlgos</pkg>
     <pkg>RcppArmadillo</pkg>
+    <pkg>RcppBigIntAlgos</pkg>
     <pkg>RcppEigen</pkg>
     <pkg>reticulate</pkg>
     <pkg>Rlinsolve</pkg>
