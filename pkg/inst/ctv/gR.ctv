@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2020-03-04</version>
+  <version>2020-05-13</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -122,14 +122,6 @@
       hierarchical log-linear models (hllm) may be
       implemented.
       Link: <a href="https://dx.doi.org/doi:10.18637/jss.v014.i17">doi:10.18637/jss.v014.i17</a>
-    </li>
-
-    <li>
-      <pkg>gRim</pkg>
-      Implements graphical interaction models for contingency tables
-      (i.e. log-linear models) and graphical Gaussian models for the
-      multivariate normal data (i.e. covariance selection models) and
-      mixed interaction models.
     </li>
 
     <li>
@@ -501,7 +493,6 @@
     <pkg>ggm</pkg>
     <pkg>gRain</pkg>
     <pkg priority="core">gRbase</pkg>
-    <pkg>gRim</pkg>
     <pkg>igraph</pkg>
     <pkg>lvnet</pkg>        
     <pkg>mgm</pkg> 
