@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-05-08</version>
+  <version>2020-05-15</version>
   
   <info>
 
@@ -479,25 +479,24 @@
 
     <p>Interfaces to numerical computation software such as MATLAB 
     (commercial) or Octave (free) will be important when solving difficult 
-    numerical problems.</p>
+    numerical problems. Unfortunately, at the moment there is no package 
+    allowing to call Octave functions from within R.</p>
 
     <ul>
     <li>The <pkg>matlab</pkg> emulation package contains about 30 simple 
         functions, replicating MATLAB functions, using the respective MATLAB 
-        names and being implemented in pure R. (See also <pkg>pracma</pkg> 
-        for many more mathematical functions designed with MATLAB in mind.)
+        names and being implemented in pure R.
     </li>
-    <li>Package <pkg>R.matlab</pkg> provides tools to read and write MAT 
-        files, which is the MATLAB data format. It also enables a 
-        one-directional interface with a MATLAB process, sending and 
-        retrieving objects through a TCP/IP connection.
+    <li>Packages <pkg>rmatio</pkg> and <pkg>R.matlab</pkg> provides tools to
+        read and write MAT files (the MATLAB data format) for versions 4 and 5.
+        'R.matlab' also enables a one-directional interface with a MATLAB v6
+        process, sending and retrieving objects through a TCP connection.
     </li>
     </ul>
 
     <p>Julia is "a high-level, high-performance dynamic programming language 
        for numerical computing", which makes it interesting for optimization 
        problems and other demanding scientific computations in R.</p>
-
     <ul>
     <li><pkg>JuliaCall</pkg> provides seamless integration between R and Julia; 
         the user can call Julia functions just like any R function, and R 
@@ -515,31 +514,19 @@
     </ul>
 
     <p>Java Math functions can be employed through the 'rjava' or 'rscala' 
-       interfaces. Then the following package will give the user access to 
-       a specialized Java Mathematics library.</p>
+    interfaces. Then package <pkg>commonsMath</pkg> allows calling Java JAR 
+    files of the Apache Commons Mathematics Library, a specialized library for 
+    all aspects of numerics, optimization, and differential equations.</p>
 
-    <ul>
-    <li>Package <pkg>commonsMath</pkg> provides Java JAR files for the Apache 
-        Commons Mathematics Library for use by users and other packages. All 
-        aspects of numerics, optimization, and differential equations are 
-        covered therein.
-    </li>
-    </ul>
+    <p>Package <pkg>m2r</pkg> provides a persistent interface to Macauley2, 
+    an extended software program supporting research in algebraic geometry 
+    and commutative algebra. Macauley2 has to be installed independently,
+    otherwise a Macauley2 process in the cloud will be instantiated.</p>
 
-    <p>The commercial programs SAS and Mathematica do have facilities  
-       to call R functions. Here is another Computer Algebra System (CAS) 
-       in Pure Mathematics that can be called from R.</p>
+    <p>Please note that commercial programs such as MATLAB, Maple, or Mathematica have facilities to call R functions.</p>
 
-    <ul>
-    <li>Package <pkg>m2r</pkg> provides a persistent interface to Macauley2, 
-        an extended software program supporting research in algebraic geometry 
-        and commutative algebra. Macauley2 has to be installed independently,
-        otherwise a Macauley2 process in the cloud will be instantiated.
-    </li>
-    </ul>
-        
+
   </info>
-
 
   <packagelist>
     <pkg>ADPF</pkg>
@@ -627,6 +614,7 @@
     <pkg>RcppEigen</pkg>
     <pkg>reticulate</pkg>
     <pkg>Rlinsolve</pkg>
+    <pkg>rmatio</pkg>
     <pkg>Rmpfr</pkg>
     <pkg>rmumps</pkg>
     <pkg>RootsExtremaInflections</pkg>
