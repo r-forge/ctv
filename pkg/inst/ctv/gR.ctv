@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2020-05-13</version>
+  <version>2020-05-17</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -262,15 +262,6 @@
     </li>
     
     <li>
-      <pkg>parcor</pkg>
-      The package estimates the matrix of partial correlations based on different regularized
-      regression methods: lasso, adaptive lasso, PLS, and Ridge Regression. In addition, the package
-      provides model selection for lasso, adaptive lasso and Ridge
-      regression based on
-      cross-validation.
-    </li>
-
-    <li>
       <pkg>pcalg</pkg>
       Standard and robust estimation of the skeleton (ugraph) and the equivalence class
       of a Directed Acyclic Graph (DAG) via the PC-Algorithm. The equivalence class is
@@ -499,7 +490,6 @@
     <pkg>ndtv</pkg>
     <pkg>network</pkg>
     <pkg>networkDynamic</pkg>    
-    <pkg>parcor</pkg>
     <pkg>pcalg</pkg>
     <pkg>qgraph</pkg>
     <pkg>QUIC</pkg>
