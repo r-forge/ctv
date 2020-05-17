@@ -210,8 +210,7 @@
 
           <p><strong>Missing data</strong></p>
           <ul><li><pkg>mitools</pkg> provides tools for multiple imputation, <pkg>mice</pkg> provides
-	  multivariate imputation by chained equations <pkg>mvnmle</pkg> provides ML estimation
-	  for multivariate normal data with missing values, <pkg>mix</pkg>
+	  multivariate imputation by chained equations, <pkg>mix</pkg>
 	  provides multiple imputation for mixed categorical and continuous data.
 	  <pkg>pan</pkg> provides multiple imputation for
 	  missing panel data.  <pkg>VIM</pkg> provides methods for the visualisation as well as imputation of missing data.    <code>aregImpute()</code> and <code>transcan()</code> from
@@ -321,7 +320,6 @@
     <pkg>mix</pkg>
     <pkg>mnormt</pkg>  
     <pkg>MNP</pkg>
-    <pkg>mvnmle</pkg> 
     <pkg>mvnormtest</pkg>
     <pkg>mvoutlier</pkg>
     <pkg>mvtnorm</pkg>

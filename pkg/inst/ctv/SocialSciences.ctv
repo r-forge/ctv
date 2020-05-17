@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2020-03-25</version>
+  <version>2020-05-17</version>
   
   <info> 
   
@@ -159,7 +159,7 @@
       <ul>
           <li>
  
-          <i>Missing Data:</i> Several packages implement methods for handling missing data by multiple imputation, including the (conspicuously aging) <pkg>mix</pkg>, <pkg>norm</pkg>, and <pkg>pan</pkg> packages associated with Shafer, <i>Analysis of Incomplete Multivariate Data</i> (Chapman and Hall, 1997), and the newer and more actively maintained <pkg>Amelia</pkg>, <pkg>mi</pkg>, <pkg>mice</pkg>, and <pkg>mitools</pkg> packages (the latter for drawing inferences from multiply imputed data sets). There are also some facilities for missing-data imputation in the general <pkg>Hmisc</pkg> package, which is described below, under <a href="#Collections">"Collections"</a>. The <pkg>mvnmle</pkg> package finds the maximum likelihood estimates of means and covariances assuming multivariate-normal data. As well, some of the structural-equation modeling software discussed in the <view>Psychometrics</view> taskview is capable of maximum-likelihood estimation of regression models with missing data. The <pkg>VIM</pkg> package has functions for visualizing missing and imputed values.
+          <i>Missing Data:</i> Several packages implement methods for handling missing data by multiple imputation, including the (conspicuously aging) <pkg>mix</pkg>, <pkg>norm</pkg>, and <pkg>pan</pkg> packages associated with Shafer, <i>Analysis of Incomplete Multivariate Data</i> (Chapman and Hall, 1997), and the newer and more actively maintained <pkg>Amelia</pkg>, <pkg>mi</pkg>, <pkg>mice</pkg>, and <pkg>mitools</pkg> packages (the latter for drawing inferences from multiply imputed data sets). There are also some facilities for missing-data imputation in the general <pkg>Hmisc</pkg> package, which is described below, under <a href="#Collections">"Collections"</a>. Some of the structural-equation modeling software discussed in the <view>Psychometrics</view> taskview is capable of maximum-likelihood estimation of regression models with missing data. The <pkg>VIM</pkg> package has functions for visualizing missing and imputed values.
           </li>
           
           <li>
@@ -272,7 +272,6 @@
     <pkg>multgee</pkg>
     <pkg>multinomRob</pkg>
     <pkg>multiplex</pkg>
-    <pkg>mvnmle</pkg>
     <pkg>network</pkg>
     <pkg priority="core">nlme</pkg>
     <pkg>nlstools</pkg>
