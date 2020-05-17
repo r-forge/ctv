@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2020-03-04</version>
+  <version>2020-05-20</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -109,7 +109,7 @@
           <ul><li>From stats, <code>lm()</code> (with a matrix specified as the dependent variable)
 	  offers multivariate linear models, <code>anova.mlm()</code> provides comparison of 
           multivariate linear models.   <code>manova()</code> offers MANOVA.  <pkg>sn</pkg> provides <code>msn.mle()</code> and <code>mst.mle()</code> which fit multivariate skew normal and multivariate skew t models.<pkg>pls</pkg>
-	  provides partial least squares regression (PLSR) and principal component regression, <pkg>ppls</pkg> provides penalized partial least squares, 
+	  provides partial least squares regression (PLSR) and principal component regression,
 	  <pkg>dr</pkg> provides dimension reduction regression options such as <code>"sir"</code> (sliced
 	  inverse regression), <code>"save"</code> (sliced average variance estimation).
 	  <pkg>plsgenomics</pkg> provides partial least squares analyses for genomics.    <pkg>relaimpo</pkg> provides functions to investigate the relative importance of regression parameters.</li></ul>
@@ -335,7 +335,6 @@
     <pkg>polycor</pkg> 
     <pkg>plsgenomics</pkg>
     <pkg>pls</pkg>
-    <pkg>ppls</pkg> 
     <pkg>prim</pkg>
     <pkg>proxy</pkg>  
     <pkg>psy</pkg>
