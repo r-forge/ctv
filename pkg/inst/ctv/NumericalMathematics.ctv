@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-05-15</version>
+  <version>2020-05-20</version>
   
   <info>
 
@@ -425,12 +425,16 @@
         allows to store and manage arbitrarily big integers; it includes 
         probabilistic primality tests and factorization algorithms.</li>
     <li>Package <pkg>Ryacas</pkg> interfaces the computer algebra system    
-        'Yacas'. It supports symbolic and arbitrary precision computations  
+        'Yacas'; it supports symbolic and arbitrary precision computations  
         in calculus and linear algebra.</li>
     <li>Package <pkg>rSymPy</pkg> accesses the symbolic algebra system 'SymPy' 
-        (written in Python) from R. 
-        It supports arbitrary precision computations, linear algebra and 
-        calculus, solving equations, discrete mathematics, and much more.</li>
+        (written in Python) from R; it supports arbitrary precision
+        computations, linear algebra and calculus, solving equations, discrete mathematics tasks, and much more.</li>
+    <li>Package <pkg>symengine</pkg> provides an interface to 'SymEngine',
+        a C++ library for fast symbolic calculations, such as manipulating
+        mathematical expressions, finding exact derivatives, solving 
+        polynomial equations, performing symbolic matrix computations,
+        or solving ordinary differential equations.</li>
     </ul>
 
 
@@ -463,14 +467,6 @@
     <li><pkg>XRPython</pkg> (and 'XRJulia') are based on John Chambers' 
         <pkg>XR</pkg> package and his "Extending R" book and allow for a 
         structured integration of R with Python resp. Julia.
-    </li>
-    </ul>
-    <ul>
-    <li><a href="http://www.sagemath.org/">SageMath</a> is an open source
-    mathematics system based on Python, allowing to run R functions, but 
-    also providing access to systems like Maxima, GAP, FLINT, and many more 
-    math programs. SageMath can be freely used through a Web interface at
-    <a href="https://cocalc.com/">CoCalc</a>.
     </li>
     </ul>
 
@@ -518,13 +514,18 @@
     files of the Apache Commons Mathematics Library, a specialized library for 
     all aspects of numerics, optimization, and differential equations.</p>
 
+    <p><a href="http://www.sagemath.org/">SageMath</a> is an open source
+    mathematics system based on Python, allowing to run R functions, but 
+    also providing access to systems like Maxima, GAP, FLINT, and many more 
+    math programs. SageMath can be freely used through a Web interface at
+    <a href="https://cocalc.com/">CoCalc</a>.</p>
+
     <p>Package <pkg>m2r</pkg> provides a persistent interface to Macauley2, 
     an extended software program supporting research in algebraic geometry 
     and commutative algebra. Macauley2 has to be installed independently,
     otherwise a Macauley2 process in the cloud will be instantiated.</p>
 
     <p>Please note that commercial programs such as MATLAB, Maple, or Mathematica have facilities to call R functions.</p>
-
 
   </info>
 
@@ -635,6 +636,7 @@
     <pkg>stinepack</pkg>
     <pkg>ssvd</pkg>
     <pkg>svd</pkg>
+    <pkg>symengine</pkg>
     <pkg>tripack</pkg>
     <pkg>turboEM</pkg>
     <pkg>VeryLargeIntegers</pkg>
@@ -644,7 +646,6 @@
     <pkg>XRPython</pkg>
     <pkg>Zseq</pkg>
   </packagelist>
-
 
   <links>
     <view>DifferentialEquations</view>
