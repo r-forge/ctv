@@ -653,13 +653,12 @@
     <view>TimeSeries</view>
     <view>HighPerformanceComputing</view>
     <a href="http://www.worldscientific.com/worldscibooks/10.1142/7814">Textbook: Hands-On Matrix Algebra Using R</a>
-    <a href="http://www.ms.unimelb.edu.au/~apro@unimelb/spuRs/index.html">Textbook: Introduction to Scientific Programming and Simulation Using R</a>
-    <a href="http://www.crcpress.com/product/isbn/9781439884485">Textbook: Numerical Methods in Science and Engineering Using R</a>
+    <a href="https://www.routledge.com/Introduction-to-Scientific-Programming-and-Simulation-Using-R/Jones-Maillardet-Robinson/p/book/9781466569997">Textbook: Introduction to Scientific Programming and Simulation Using R</a>
+    <a href="https://www.routledge.com/Using-R-for-Numerical-Analysis-in-Science-and-Engineering/Bloomfield/p/book/9781439884485">Textbook: Numerical Methods in Science and Engineering Using R</a>
     <a href="https://www.crcpress.com/Computational-Methods-for-Numerical-Analysis-with-R/II/p/book/9781498723633">Textbook: Computational Methods for Numerical Analysis with R</a>
-    <a href="http://www.rforscience.com/">R for Science (Institute for Sea Research, Netherlands)</a>
-    <a href="http://www.math.umaine.edu/~hiebeler/comp/matlabR.html">MATLAB / R Reference (D. Hiebeler)</a>
-    <a href="http://www.nr.com/aands/">Abramowitz and Stegun. Handbook of Mathematical Functions</a>
-    <a href="http://www.nrbook.com/a/bookcpdf.php">Numerical Recipes: The Art of Numerical Computing</a>
+    <a href="https://umaine.edu/mathematics/david-hiebeler/computing-software/matlab-r-reference/">MATLAB / R Reference (D. Hiebeler)</a>
+    <a href="http://people.math.sfu.ca/~cbm/aands/">Abramowitz and Stegun. Handbook of Mathematical Functions</a>
+    <a href="http://numerical.recipes/">Numerical Recipes: The Art of Numerical Computing</a>
     <a href="http://mathworld.wolfram.com/">E. Weisstein's Wolfram MathWorld</a>
   </links>
 
