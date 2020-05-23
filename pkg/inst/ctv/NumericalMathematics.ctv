@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-05-20</version>
+  <version>2020-05-25</version>
   
   <info>
 
@@ -427,14 +427,15 @@
     <li>Package <pkg>Ryacas</pkg> interfaces the computer algebra system    
         'Yacas'; it supports symbolic and arbitrary precision computations  
         in calculus and linear algebra.</li>
-    <li>Package <pkg>rSymPy</pkg> accesses the symbolic algebra system 'SymPy' 
-        (written in Python) from R; it supports arbitrary precision
-        computations, linear algebra and calculus, solving equations, discrete mathematics tasks, and much more.</li>
+    <li>Packages <pkg>caracas</pkg> (based on 'reticulate') and
+        <pkg>rSymPy</pkg> (based on 'rjava') both access the symbolic algebra 
+        system 'SymPy'; supported are symbolic operations in linear algebra and 
+        calculus, such as eigenvalues, derivatives, integrals, limits, etc.,
+        computing special functions, or solving systems of equations.</li>
     <li>Package <pkg>symengine</pkg> provides an interface to 'SymEngine',
         a C++ library for fast symbolic calculations, such as manipulating
-        mathematical expressions, finding exact derivatives, solving 
-        polynomial equations, performing symbolic matrix computations,
-        or solving ordinary differential equations.</li>
+        mathematical expressions, finding exact derivatives, performing 
+        symbolic matrix computations, or solving ordinary differential equations (numerically).</li>
     </ul>
 
 
@@ -537,6 +538,7 @@
     <pkg>Bessel</pkg>
     <pkg>Brobdingnag</pkg>
     <pkg>calculus</pkg>
+    <pkg>caracas</pkg>
     <pkg>Carlson</pkg>
     <pkg>chebpol</pkg>
     <pkg>clifford</pkg>
