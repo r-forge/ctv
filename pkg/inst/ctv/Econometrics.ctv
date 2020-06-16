@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-04-14</version>
+  <version>2020-06-16</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -177,8 +177,6 @@
 	  <pkg>Paneldata</pkg>. Various dynamic panel models are available in <pkg>plm</pkg>
 	  and dynamic panel models with fixed effects in <pkg>OrthoPanels</pkg>.
 	  <pkg>feisr</pkg> provides fixed effects individual slope (FEIS) models.
-	  Within-between(or "hybrid") panel models are available in <pkg>panelr</pkg>,
-	  including multilevel, GEE, and Bayesian estimation of these models.
 	  Panel vector autoregressions are implemented in <pkg>panelvar</pkg>.</li>
 
       <li><i>Generalized estimation equations and GLMs</i>: GEE models for panel data (or longitudinal
@@ -477,7 +475,6 @@
     <pkg>pampe</pkg>
     <pkg>panelAR</pkg>
     <pkg>Paneldata</pkg>
-    <pkg>panelr</pkg>
     <pkg>panelvar</pkg>
     <pkg>pco</pkg>
     <pkg>pcse</pkg>
