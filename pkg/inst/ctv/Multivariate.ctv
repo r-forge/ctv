@@ -41,7 +41,7 @@
 	  in <pkg>vcd</pkg> that also contains other visualization techniques for multivariate
 	  categorical data. <pkg>gclus</pkg> provides a number of 
           cluster specific graphical enhancements for scatterplots and parallel coordinate plots
-	  See the links for a reference to GGobi. <pkg>rggobi</pkg> interfaces with GGobi.
+	  See the links for a reference to GGobi.
 	  <pkg>xgobi</pkg> interfaces to the XGobi
 	  and XGvis programs which allow linked, dynamic multivariate plots as well as
 	  projection pursuit.   Finally, <pkg>iplots</pkg> allows particularly powerful dynamic interactive 
@@ -339,7 +339,6 @@
     <pkg>PTAk</pkg>
     <pkg>relaimpo</pkg>    
     <pkg>rgl</pkg>
-    <pkg>rggobi</pkg>
     <pkg>robustbase</pkg>
     <pkg>ROCR</pkg>   
     <pkg>rpart</pkg>

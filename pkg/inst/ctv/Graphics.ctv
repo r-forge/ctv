@@ -142,11 +142,8 @@
           implement interactive graphics systems that interface well with R. In an interactive 
           system the user can interactively query the graphics on the screen with the mouse, 
           or a moveable brush to zoom, pan and query on the device as well as link with 
-          other views of the data. <pkg>rggobi</pkg>
-          embeds the GGobi interactive graphics system within R, so that one can display a data
-          frame or several in GGobi directly from R. The package has functions
-          to support longitudinal data, and graphs using GGobi's edge set
-          functionality. The RoSuDA repository maintained and developed by the
+          other views of the data.
+	  The RoSuDA repository maintained and developed by the
           University of Augsburg group has two packages, <pkg>iplots</pkg> and iwidgets as
           well as their Java development environment including a Java
           device, <pkg>JavaGD</pkg>. Their interactive graphics tools contain functions for
@@ -196,7 +193,6 @@
     <pkg priority="core">plotrix</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg priority="core">rgl</pkg>
-    <pkg>rggobi</pkg>
     <pkg>RGraphics</pkg>
     <pkg>RGtk2</pkg>
     <pkg>RSvgDevice</pkg>
