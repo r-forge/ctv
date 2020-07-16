@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2020-03-04</version>
+  <version>2020-07-17</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -30,8 +30,6 @@
       for population genetics simulations.
           A few population genetics functions are also implemented in
 <pkg>gap</pkg>.
-<pkg>LDheatmap</pkg>
-          creates a heat map plot of measures of pairwise LD.
 <pkg>hwde</pkg>
           fits models for genotypic disequilibria.  Whilst
 <pkg>HardyWeinberg</pkg>
@@ -137,8 +135,6 @@ Whilst not official R packages one software suite in particular is worthy of men
           power and sample-size calculations and the preparation of data matrices for use in other methods.
 <pkg>tdthap</pkg>
           implements transmission/disequilibrium tests for extended marker haplotypes.
-<pkg>LDheatmap</pkg>
-          creates a heat map plot of measures of pairwise LD.
         </li>
         <li>
           <i>
@@ -205,7 +201,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg>hierfstat</pkg>
     <pkg>hwde</pkg>
     <pkg>ibdreg</pkg>
-    <pkg>LDheatmap</pkg>
     <pkg>ouch</pkg>
     <pkg>pbatR</pkg>
     <pkg>phangorn</pkg>
