@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2020-05-17</version>
+  <version>2020-07-22</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -318,12 +318,6 @@
   <ul>
 
     <li>
-      <pkg>abn</pkg>
-      A graphical modelling formulation is used to construct Bayesian
-      regression models for analyses of multivariate data.
-    </li>
-
-    <li>
       <pkg>bnlearn</pkg>
       Bayesian network structure learning via constraint-based (also known as
       'conditional independence') and score-based algorithms. This package implements the
@@ -464,7 +458,6 @@
   </info>
 
   <packagelist>
-    <pkg>abn</pkg>
     <pkg>bayesmix</pkg>
     <pkg>bnlearn</pkg>
     <pkg>bnclassify</pkg>
