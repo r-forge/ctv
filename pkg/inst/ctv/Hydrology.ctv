@@ -2,7 +2,7 @@
   <name>Hydrology</name>
   <topic>Hydrological Data and Modeling</topic>
   <maintainer email="samuelczipper@gmail.com">Sam Zipper, Sam Albers, Ilaria Prosdocimi</maintainer>
-  <version>2020-07-13</version>
+  <version>2020-07-24</version>
   <info>
     <p>This Task View contains information about packages broadly relevant to <em>hydrology</em>, defined as the movement, distribution and quality of water and water resources over a broad spatial scale of landscapes. Packages are broadly grouped according to their function; however, many have functionality that spans multiple categories. We also highlight other, existing resources that have related functions - for example, statistical analysis or spatial data processing. See also <a href="https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html">Riccardo Rigon’s excellent list</a> of hydrology-related R tools and resources.</p><p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/Hydrology/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/Hydrology/pulls">submit a pull request</a>. If you can’t contribute on GitHub, <a href="mailto:samzipper@ku.edu">send Sam Zipper an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p><h2 id="data-retrieval">Data Retrieval</h2><p><strong>Hydrological data sources (surface water/groundwater quantity and quality)</strong></p><ul><li> 
 <p><pkg>dataRetrieval</pkg>: Collection of functions to help retrieve U.S. Geological Survey (USGS) and U.S. Environmental Protection Agency (EPA) water quality and hydrology data from web services.</p></li><li> 
@@ -28,7 +28,7 @@
 <p><pkg>rdwd</pkg>: Handle climate data from the German DWD (<a href="https://www.dwd.de/EN/climate_environment/cdc/cdc.html">‘Deutscher Wetterdienst’</a>).</p></li><li> 
 <p><pkg>RNCEP</pkg>: Contains functions to retrieve, organize, and visualize weather data from the <a href="http://www.esrl.noaa.gov/psd/data/gridded/data.ncep.reanalysis.html">NCEP/NCAR Reanalysis</a> and <a href="http://www.esrl.noaa.gov/psd/data/gridded/data.ncep.reanalysis2.html">NCEP/DOE Reanalysis II</a> datasets.</p></li><li> 
 <p><pkg>rnoaa</pkg>: Client for many NOAA data sources including the <a href="https://www.ncdc.noaa.gov/cdo-web/webservices/v2">NCDC climate API</a>, with functions for each of the API endpoints: data, data categories, data sets, data types, locations, location categories, and stations. Includes interface NOAA sea ice data, severe weather inventory, Historical Observing Metadata Repository (‘HOMR’), storm data via ‘IBTrACS’, tornado data via the NOAA storm prediction center, and more.</p></li><li> 
-<p><pkg>rpdo</pkg>: Get Monthly Pacific Decadal Oscillation (PDO) index values from January 1900 to present. See also <pkg>rsoi</pkg> for downloading Southern Oscillation Index, Oceanic Nino Index and North Pacific Gyre Oscillation data.</p></li><li> 
+<p><pkg>rpdo</pkg>: Get Monthly Pacific Decadal Oscillation (PDO) index values from January 1900 to present.</p></li><li> 
 <p><pkg>rwunderground</pkg>: Tools for getting historical weather information and forecasts from wunderground.com. Historical weather and forecast data includes, but is not limited to, temperature, humidity, windchill, wind speed, dew point, heat index. Additionally, the weather underground weather API also includes information on sunrise/sunset, tidal conditions, satellite/webcam imagery, weather alerts, hurricane alerts and historical high/low temperatures.</p></li><li> 
 <p><pkg>smapr</pkg>: Acquisition and Processing of NASA Soil Moisture Active-Passive (SMAP) Data. Facilitates programmatic access to search for, acquire, and extract NASA Soil Moisture Active Passive (SMAP) data.</p></li><li> 
 <p><pkg>stationaRy</pkg>: Acquire hourly meteorological data from stations located all over the world. The available data is automatically downloaded from a data repository and processed into a ‘tibble’ for the exact range of years requested.</p></li><li> 
@@ -178,7 +178,6 @@
     <pkg>rnrfa</pkg>
     <pkg>rpdo</pkg>
     <pkg>RSAlgaeR</pkg>
-    <pkg>rsoi</pkg>
     <pkg>rtop</pkg>
     <pkg>rwunderground</pkg>
     <pkg>SCI</pkg>
