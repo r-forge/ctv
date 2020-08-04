@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2020-07-22</version>
+  <version>2020-08-04</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -295,13 +295,6 @@
 
 
     <li>
-      <pkg>QUIC</pkg>
-      Regularized sparse inverse covariance matrix estimation. Use
-      Newton's method and coordinate descent to solve the regularized
-      inverse covariance matrix estimation problem.
-    </li>
-
-    <li>
       <pkg>SIN</pkg>
       This package provides routines to perform SIN model selection as
       described in Drton and Perlman (2004).  The selected models are
@@ -485,7 +478,6 @@
     <pkg>networkDynamic</pkg>    
     <pkg>pcalg</pkg>
     <pkg>qgraph</pkg>
-    <pkg>QUIC</pkg>
     <pkg>sna</pkg>
     <pkg>SIN</pkg>
     <pkg>sparsebn</pkg>
