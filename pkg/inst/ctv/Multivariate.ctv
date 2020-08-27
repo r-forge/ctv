@@ -194,8 +194,7 @@
 	  <pkg>SensoMineR</pkg> provides <code>FDA()</code> for factorial discriminant analysis.   A number of packages provide for 
 	  dimension reduction with the classification. <pkg>klaR</pkg> includes variable
 	  selection and robustness against multicollinearity as well as a number of
-	  visualisation routines. <pkg>superpc</pkg> provides principal components for
-	  supervised classification, whereas <bioc>gpls</bioc> provides classification using
+	  visualisation routines. <bioc>gpls</bioc> provides classification using
 	  generalised partial least squares.  <pkg>hddplot</pkg> provides cross-validated linear discriminant calculations to determine the optimum number of features. <pkg>ROCR</pkg> provides a range of methods for assessing classifier performance.
         Further information on supervised classification can be found in 
           the <view>MachineLearning</view> task view.</li></ul>
@@ -353,7 +352,6 @@
     <pkg>spam</pkg> 
     <pkg>SparseM</pkg>
     <pkg>SpatialNP</pkg> 
-    <pkg>superpc</pkg>
     <pkg>tsfa</pkg>
     <pkg priority="core">vegan</pkg>
     <pkg>vcd</pkg>
