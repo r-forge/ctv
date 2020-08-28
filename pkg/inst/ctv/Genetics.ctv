@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2020-07-17</version>
+  <version>2020-08-28</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -129,10 +129,6 @@ Whilst not official R packages one software suite in particular is worthy of men
           phenotypes (including co-variates) under a GLM framework.
 <pkg>hapassoc</pkg>
           performs likelihood inference of trait associations with haplotypes in GLMs.
-<pkg>haplo.stats</pkg>
-          also contains tests for haplotype associations under a GLM framework, but also provides score tests of
-          association as well as providing novel functionality for building haplotypes in a sequential manner, 
-          power and sample-size calculations and the preparation of data matrices for use in other methods.
 <pkg>tdthap</pkg>
           implements transmission/disequilibrium tests for extended marker haplotypes.
         </li>
@@ -197,7 +193,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg priority="core">genetics</pkg>
     <pkg>hapassoc</pkg>
     <pkg>HardyWeinberg</pkg>
-    <pkg priority="core">haplo.stats</pkg>
     <pkg>hierfstat</pkg>
     <pkg>hwde</pkg>
     <pkg>ibdreg</pkg>
