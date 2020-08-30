@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-08-07</version>
+  <version>2020-08-30</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -62,7 +62,8 @@
       <li><i>Binary responses</i>: The standard logit and probit models (among many others) for binary
           responses are GLMs that can be estimated by <code>glm()</code> with <code>family = binomial</code>.
 	  Bias-reduced GLMs that are robust to complete and quasi-complete separation are provided by
-	  <pkg>brglm</pkg>. <pkg>bife</pkg> provides binary choice models with fixed effects.
+	  <pkg>brglm</pkg>. Discrete choice models estimated by simulated maximum likelihood are
+	  implemented in <pkg>Rchoice</pkg>. <pkg>bife</pkg> provides binary choice models with fixed effects.
 	  Heteroscedastic probit models (and other heteroscedastic
 	  GLMs) are implemented in <pkg>glmx</pkg> along with parametric link functions and goodness-of-link
 	  tests for GLMs.</li>
@@ -128,7 +129,8 @@
       <li><i>Miscellaneous</i>: Further more refined tools for microeconometrics are provided in
 	  the <pkg>micEcon</pkg> family of packages: Analysis with
 	  Cobb-Douglas, translog, and quadratic functions is in <pkg>micEcon</pkg>;
-	  the constant elasticity of scale (CES) function is in <pkg>micEconCES</pkg>.
+	  the constant elasticity of scale (CES) function is in <pkg>micEconCES</pkg>;
+	  the symmetric normalized quadratic profit (SNQP) function is in <pkg>micEconSNQP</pkg>.
           The almost ideal demand system (AIDS) is in <pkg>micEconAids</pkg>.	  
 	  Stochastic frontier analysis (SFA) is in <pkg>frontier</pkg> and certain special cases also in <pkg>sfa</pkg>.
 	  Semiparametric SFA in is available in <pkg>semsfa</pkg> and spatial SFA in <pkg>spfrontier</pkg> and <pkg>ssfa</pkg>.
@@ -367,12 +369,15 @@
 	  by <pkg>fxregime</pkg>.</li>
 
       <li><i>Global value chains</i>: Tools and decompositions for global value
-          chains are in <pkg>decompr</pkg>.</li>
+          chains are in <pkg>gvc</pkg> and <pkg>decompr</pkg>.</li>
 
       <li><i>Regression discontinuity design</i>: A variety of methods are provided in
-          the <pkg>rdd</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.
+          the <pkg>rdd</pkg>, <pkg>rddtools</pkg>, <pkg>rdrobust</pkg>, and <pkg>rdlocrand</pkg> packages.
 	  The <pkg>rdpower</pkg> package offers power calculations for regression discontinuity designs.
 	  And <pkg>rdmulti</pkg> implements analysis with multiple cutoffs or scores.</li>
+      
+      <li><i>Gravity models</i>: Estimation of log-log and multiplicative gravity models
+          is available in <pkg>gravity</pkg>.</li>
       
       <li><i>z-Tree</i>: <pkg>zTree</pkg> can import data from the z-Tree software for
           developing and carrying out economic experiments.</li>
@@ -430,6 +435,8 @@
     <pkg>glmx</pkg>
     <pkg>gmm</pkg>
     <pkg>gmnl</pkg>
+    <pkg>gravity</pkg>
+    <pkg>gvc</pkg>
     <pkg>Hmisc</pkg>
     <pkg>ineq</pkg>
     <pkg>ivfixed</pkg>
@@ -455,6 +462,7 @@
     <pkg>micEcon</pkg>
     <pkg>micEconAids</pkg>
     <pkg>micEconCES</pkg>
+    <pkg>micEconSNQP</pkg>
     <pkg>midasr</pkg>
     <pkg>mlogit</pkg>
     <pkg>mnlogit</pkg>
@@ -483,7 +491,9 @@
     <pkg>pwt8</pkg>
     <pkg>pwt9</pkg>
     <pkg>quantreg</pkg>
+    <pkg>Rchoice</pkg>
     <pkg>rdd</pkg>
+    <pkg>rddtools</pkg>
     <pkg>rdlocrand</pkg>
     <pkg>rdmulti</pkg>
     <pkg>rdpower</pkg>
