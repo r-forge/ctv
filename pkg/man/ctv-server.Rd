@@ -88,7 +88,6 @@ Zeileis A (2005). CRAN Task Views.
 ## .ctv file shipped withing the package
 ctv <- system.file("ctv", "Econometrics.ctv", package = "ctv")
 
-
 ## read .ctv file
 x <- read.ctv(ctv)
 
