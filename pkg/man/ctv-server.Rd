@@ -85,16 +85,24 @@ Zeileis A (2005). CRAN Task Views.
 \seealso{\code{\link{install.views}}}
 
 \examples{
+## .ctv file shipped withing the package
+ctv <- system.file("ctv", "Econometrics.ctv", package = "ctv")
+
+
 ## read .ctv file
-x <- read.ctv(system.file("ctv", "Econometrics.ctv", package = "ctv"))
+x <- read.ctv(ctv)
+
+## print
 x
 
 \dontrun{
-## generate corresponding .html file
+## generate corresponding .html file from object
 ctv2html(x)
+## or equivalently from .ctv file
+ctv2html(ctv)
 
 ## check packagelist
-check_ctv_packages(x)
+check_ctv_packages(ctv)
 }
 }
 
