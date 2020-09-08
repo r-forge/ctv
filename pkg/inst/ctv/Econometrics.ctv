@@ -225,7 +225,7 @@
 
       <li><i>Simultaneous equation estimation</i>: <pkg>systemfit</pkg>.</li>
 
-      <li><i>Nonparametric kernel methods</i>: <pkg>np</pkg>.</li>
+      <li><i>Nonparametric methods</i>: <pkg>np</pkg> using kernel smoothing and <pkg>NNS</pkg> using partial moments.</li>
 
       <li><i>Linear and nonlinear mixed-effect models</i>: <pkg>nlme</pkg> and <pkg>lme4</pkg>.</li>
 
@@ -471,6 +471,7 @@
     <pkg>multiwayvcov</pkg>
     <pkg>nlme</pkg>
     <pkg>nnet</pkg>
+    <pkg>NNS</pkg>
     <pkg>nonnest2</pkg>
     <pkg>np</pkg>
     <pkg>nse</pkg>
