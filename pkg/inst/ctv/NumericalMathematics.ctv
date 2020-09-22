@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-05-25</version>
+  <version>2020-08-22</version>
   
   <info>
 
@@ -252,8 +252,6 @@
     <li><pkg>calculus</pkg> provides efficient functions for high-dimensional 
         numerical and symbolic calculus, including accurate higher-order 
         derivatives, Taylor series expansion, differential operators, and Monte-Carlo integration in orthogonal coordinate systems.</li>
-    <li>Package <pkg>wedge</pkg> provides functionality for working with 
-        differentials, k-forms, wedge products, Stokes's theorem, and related concepts from the exterior calculus.</li>
     <li><pkg>features</pkg> extracts features from functional data, such as 
         first and second derivatives, or curvature at critical points, while
         <pkg>RootsExtremaInflections</pkg> finds roots, extrema and 
@@ -642,7 +640,6 @@
     <pkg>tripack</pkg>
     <pkg>turboEM</pkg>
     <pkg>VeryLargeIntegers</pkg>
-    <pkg>wedge</pkg>
     <pkg>XR</pkg>
     <pkg>XRJulia</pkg>
     <pkg>XRPython</pkg>
