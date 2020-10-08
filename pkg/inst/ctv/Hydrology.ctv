@@ -2,7 +2,7 @@
   <name>Hydrology</name>
   <topic>Hydrological Data and Modeling</topic>
   <maintainer email="samuelczipper@gmail.com">Sam Zipper, Sam Albers, Ilaria Prosdocimi</maintainer>
-  <version>2020-09-21</version>
+  <version>2020-10-08</version>
   <info>
     <p>This Task View contains information about packages broadly relevant to <em>hydrology</em>, defined as the movement, distribution and quality of water and water resources over a broad spatial scale of landscapes. Packages are broadly grouped according to their function; however, many have functionality that spans multiple categories. We also highlight other, existing resources that have related functions - for example, statistical analysis or spatial data processing. See also <a href="https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html">Riccardo Rigon’s excellent list</a> of hydrology-related R tools and resources.</p><p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/Hydrology/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/Hydrology/pulls">submit a pull request</a>. If you can’t contribute on GitHub, <a href="mailto:samzipper@ku.edu">send Sam Zipper an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p><h2 id="data-retrieval">Data Retrieval</h2><p><strong>Hydrological data sources (surface water/groundwater quantity and quality)</strong></p><ul><li> 
 <p><pkg>AWAPer</pkg>: AWAPer allows efficient extraction of daily catchment average precipitation, Tmin, Tmax, vapour pressure, solar radiation and then estimation of areal potential evaporation (Morton’s) for anywhere in Australia. Spatial measures are also derived (eg spatial daily variance). For technical details see Peterson et al. (2019).</p></li><li> 
@@ -69,7 +69,6 @@
 <p><pkg>hydrogeo</pkg>: Contains one function for drawing Piper diagrams (also called Piper-Hill diagrams) of water analyses for major ions.</p></li><li> 
 <p><pkg>kitagawa</pkg>: Provides tools to calculate the theoretical hydrodynamic response of an aquifer undergoing harmonic straining or pressurization. There are two classes of models here: (1) for sealed wells, based on the model of Kitagawa et al (2011), and (2) for open wells, based on the models of Cooper et al (1965), Hsieh et al (1987), Rojstaczer (1988), and Liu et al (1989).</p></li><li> 
 <p><github>leppott/MBSStools</github>: Suite of tools for data manipulation and calculations for Maryland DNR MBSS program. GitHub only package.</p></li><li> 
-<p><pkg>MODIStsp</pkg>: Suite of tools to automate the Download and Preprocessing of MODIS Land Products Data. Allows automating the creation of time series of rasters derived from MODIS Satellite Land Products data. It performs several typical preprocessing steps such as download, mosaicking, reprojection and resize of data acquired on a specified time period.</p></li><li> 
 <p><pkg>lulcc</pkg>: Classes and methods for spatially explicit land use change modelling.</p></li><li> 
 <p><pkg>wql</pkg>: Functions to assist in the processing and exploration of data from environmental monitoring programs. Intended for programs that sample approximately monthly, quarterly or annually at discrete stations, a feature of many legacy data sets. Most of the functions should be useful for analysis of similar-frequency time series regardless of the subject matter.</p></li><li> 
 <p><pkg>WRTDStidal</pkg>: An adaptation for estuaries (tidal waters) of weighted regression on time, discharge, and season to evaluate trends in water quality time series.</p></li></ul><p><strong>Spatial data processing</strong></p><p>The CRAN <view>Spatial</view> Task View gives an overview of packages to be used in R to read, visualise, and analyse spatial data. See also the ROpenSci <a href="https://github.com/ropensci/maptools">MapTools Listing</a>.</p><ul><li> 
@@ -180,7 +179,6 @@
     <pkg>meteoland</pkg>
     <pkg>metScanR</pkg>
     <pkg>MODISTools</pkg>
-    <pkg>MODIStsp</pkg>
     <pkg>musica</pkg>
     <pkg>nasapower</pkg>
     <pkg>nhdR</pkg>
