@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-08-22</version>
+  <version>2020-10-10</version>
   
   <info>
 
@@ -63,11 +63,6 @@
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
         iterative thresholding method, while <pkg>irlba</pkg> will compute 
         approximate singular values/vectors of large matrices.</li>
-    <li>Package <pkg>PRIMME</pkg> interfaces PRIMME, a C library for computing 
-        eigenvalues and corresponding eigenvectors of real symmetric or  
-        complex Hermitian matrices. It can find largest, smallest, or interior 
-        eigen-/singular values and will apply preconditioning to accelerate 
-        convergence.</li>
     <li>The packages <pkg>geigen</pkg> and <pkg>QZ</pkg> compute generalized 
         eigenvalues and -vectors for pairs of matrices, and QZ (generalized 
         Schur) decompositions.</li>
@@ -603,7 +598,6 @@
     <pkg priority="core">pracma</pkg>
     <pkg>primefactr</pkg>
     <pkg>primes</pkg>
-    <pkg>PRIMME</pkg>
     <pkg>PythonInR</pkg>
     <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
