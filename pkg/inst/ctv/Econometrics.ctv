@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-10-14</version>
+  <version>2020-10-28</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -168,7 +168,7 @@
           to fit the pooling (or independence) model (e.g., via <code>lm()</code> or <code>glm()</code>)
 	  and only correct the standard errors. Different types of clustered, panel, and panel-corrected
 	  standard errors are available in <pkg>sandwich</pkg> (incorporating prior work from <pkg>multiwayvcov</pkg>),
-	  <pkg>clusterSEs</pkg>, <pkg>pcse</pkg>, <pkg>clubSandwich</pkg>, <pkg>plm</pkg>,
+	  <pkg>clusterSEs</pkg>, <pkg>pcse</pkg>, <pkg>plm</pkg>,
 	  and <pkg>geepack</pkg>, respectively. The latter two require estimation of the
 	  pooling/independence models via <code>plm()</code> and <code>geeglm()</code> from
 	  the respective packages (which also provide other types of models, see below).</li>      
@@ -406,7 +406,6 @@
     <pkg priority="core">car</pkg>
     <pkg>CDNmoney</pkg>
     <pkg>censReg</pkg>
-    <pkg>clubSandwich</pkg>
     <pkg>clusterSEs</pkg>
     <pkg>collapse</pkg>
     <pkg>crch</pkg>
