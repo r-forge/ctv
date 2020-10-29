@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2020-08-28</version>
+  <version>2020-10-29</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -95,9 +95,7 @@ Whilst not official R packages one software suite in particular is worthy of men
           for genome-wide scans.
 <pkg>wgaim</pkg>
           builds on the <pkg>qtl</pkg> by including functions for the modelling and summary of QTL intervals from the
-          full linkage map whilst
-<pkg>dlmap</pkg>
-          can be used to perform QTL mapping in a mixed model framework with separate detection and localization stages.
+          full linkage map.
         </li>
         <li>
           <i>
@@ -188,7 +186,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg>ape</pkg>
     <pkg>Biodem</pkg>
     <pkg>bqtl</pkg>
-    <pkg>dlmap</pkg>
     <pkg priority="core">gap</pkg>
     <pkg priority="core">genetics</pkg>
     <pkg>hapassoc</pkg>
