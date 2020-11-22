@@ -108,7 +108,6 @@
 <p><github>cvitolo/fuse</github>: An R package implementing the Framework for Understanding Structural Errors <a href="https://cvitolo.github.io/fuse/">cvitolo.github.io/fuse/</a>. GitHub only package.</p></li><li> 
 <p><pkg>hydroApps</pkg>: Package providing tools for hydrological applications and models developed for regional analysis in Northwestern Italy focused on Flood Frequency Analysis.</p></li><li> 
 <p><pkg>hydroGOF</pkg>: S3 functions implementing both statistical and graphical goodness-of-fit measures between observed and simulated values, mainly oriented to be used during the calibration, validation, and application of hydrological models.</p></li><li> 
-<p><pkg>HydroMe</pkg>: Estimates the parameters in infiltration and water retention models by curve-fitting method. The models considered are those that are commonly used in soil science.</p></li><li> 
 <p><pkg>hyfo</pkg>: Focuses on data processing and visualization in hydrology and climate forecasting. Main function includes data extraction, data downscaling, data resampling, gap filler of precipitation, bias correction of forecasting data, flexible time series plot, and spatial map generation. It is a good pre- processing and post-processing tool for hydrological and hydraulic modellers.</p></li><li> 
 <p><github>NEONScience/NEON-stream-discharge</github>: NEON Stage-Discharge Rating Curve. Instructions to set up a docker container which calculates the stage-discharge rating curve for a site and water year, developed using a Bayesian modeling technique. GitHub only package.</p></li><li> 
 <p><pkg>LPM</pkg>: Apply Univariate Long Memory Models, Apply Multivariate Short Memory Models To Hydrological Dataset, Estimate Intensity Duration Frequency curve to rainfall series.</p></li><li> 
@@ -162,7 +161,6 @@
     <pkg>hydroApps</pkg>
     <pkg>hydrogeo</pkg>
     <pkg>hydrolinks</pkg>
-    <pkg>HydroMe</pkg>
     <pkg>hydroPSO</pkg>
     <pkg>hydroscoper</pkg>
     <pkg>hydrostats</pkg>
