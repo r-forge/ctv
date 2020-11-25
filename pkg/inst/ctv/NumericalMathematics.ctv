@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-10-10</version>
+  <version>2020-11-25</version>
   
   <info>
 
@@ -63,6 +63,10 @@
         computations. Package <pkg>ssvd</pkg> will obtain sparse SVDs using an 
         iterative thresholding method, while <pkg>irlba</pkg> will compute 
         approximate singular values/vectors of large matrices.</li>
+    <li>Package <pkg>PRIMME</pkg> interfaces PRIMME, a C library for computing 
+        eigenvalues and eigenvectors of real symmetric or complex Hermitian 
+        matrices. It will find largest, smallest, or interior eigen-/singular 
+        values and will apply preconditioning to accelerate convergence.</li>
     <li>The packages <pkg>geigen</pkg> and <pkg>QZ</pkg> compute generalized 
         eigenvalues and -vectors for pairs of matrices, and QZ (generalized 
         Schur) decompositions.</li>
@@ -80,7 +84,8 @@
         methods.</li>
     <li><pkg>matrixcalc</pkg> contains a collection of functions for matrix 
         calculations, special matrices, and tests for matrix properties, 
-        e.g., (semi-)positive definiteness; mainly used for teaching and research purposes</li>
+        e.g., (semi-)positive definiteness; mainly used for teaching and 
+        research purposes</li>
     <li><pkg>matlib</pkg> contains a collection of matrix functions for 
         teaching and learning matrix linear algebra as used in multivariate 
         statistical methods; mainly for tutorial purposes in learning matrix 
@@ -598,6 +603,7 @@
     <pkg priority="core">pracma</pkg>
     <pkg>primefactr</pkg>
     <pkg>primes</pkg>
+    <pkg>PRIMME</pkg>
     <pkg>PythonInR</pkg>
     <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
