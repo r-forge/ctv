@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-12-06</version>
+  <version>2020-12-10</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -333,6 +333,8 @@
       <li><i>Panel Study of Income Dynamics (PSID)</i>: <pkg>psidR</pkg> can build panel data sets
           from the Panel Study of Income Dynamics (PSID).</li>
       <li>US state- and county-level panel data: <pkg>rUnemploymentData</pkg>.</li>
+      <li>World Bank data and statistics: The <pkg>wbstats</pkg> package provides
+          programmatic access to the World Bank API.</li>
     </ul>
 
     <p><strong>Miscellaneous</strong></p>
@@ -527,6 +529,7 @@
     <pkg>vars</pkg>
     <pkg>VGAM</pkg>
     <pkg>wahc</pkg>
+    <pkg>wbstats</pkg>
     <pkg>wooldridge</pkg>
     <pkg>xts</pkg>
     <pkg priority="core">zoo</pkg>
