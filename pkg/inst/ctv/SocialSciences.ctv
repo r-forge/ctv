@@ -2,7 +2,7 @@
   <name>SocialSciences</name> 
   <topic>Statistics for the Social Sciences</topic> 
   <maintainer email="jfox@mcmaster.ca">John Fox</maintainer> 
-  <version>2020-12-03</version>
+  <version>2020-12-11</version>
   
   <info> 
   
@@ -66,7 +66,7 @@
           </li>
          
           <li>
-          The standard R distribution has excellent basic facilities for linear and generalized linear model "diagnostics," including, for example, hat-values and deletion statistics such as studentized residuals and Cook's distances (<code>hatvalues</code>, <code>rstudent</code>, and <code>cooks.distance</code>, all in the <b>stats</b> package). These are augmented by other packages: several functions in the <pkg>car</pkg> package, which emphasizes graphical methods, e.g., <code>crPlots</code> for component-plus-residual plots and <code>avPlots</code> for added-variable plots (among others), in addition to numerical diagnostics, such <code>vif</code> for (generalized) variance-inflation factors; the <pkg>dr</pkg> package for dimension reduction in regression, including SIR, SAVE, and pHd; and the <pkg>lmtest</pkg> package, which implements a variety of diagnostic tests (e.g., for heteroscedasticity, nonlinearity, and autocorrelation). Other collinearity diagnostics are in the <pkg>perturb</pkg> package. Diagnostics may also be found in the <pkg>rms</pkg> package. See the <pkg>influence.ME</pkg> package for influential-data diagnostics for mixed-effects models.
+          The standard R distribution has excellent basic facilities for linear and generalized linear model "diagnostics," including, for example, hat-values and deletion statistics such as studentized residuals and Cook's distances (<code>hatvalues</code>, <code>rstudent</code>, and <code>cooks.distance</code>, all in the <b>stats</b> package). These are augmented by other packages: several functions in the <pkg>car</pkg> package, which emphasizes graphical methods, e.g., <code>crPlots</code> for component-plus-residual plots and <code>avPlots</code> for added-variable plots (among others), in addition to numerical diagnostics, such <code>vif</code> for (generalized) variance-inflation factors; the <pkg>dr</pkg> package for dimension reduction in regression, including SIR, SAVE, and pHd; and the <pkg>lmtest</pkg> package, which implements a variety of diagnostic tests (e.g., for heteroscedasticity, nonlinearity, and autocorrelation). Diagnostics may also be found in the <pkg>rms</pkg> package. See the <pkg>influence.ME</pkg> package for influential-data diagnostics for mixed-effects models.
           </li>
           
           <li>
@@ -280,7 +280,6 @@
     <pkg>optmatch</pkg>
     <pkg>PAFit</pkg>
     <pkg>pan</pkg>
-    <pkg>perturb</pkg>
     <pkg>PSAgraphics</pkg>
     <pkg>pscl</pkg>
     <pkg priority="core">quantreg</pkg>
