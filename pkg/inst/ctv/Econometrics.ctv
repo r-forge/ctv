@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2020-12-20</version>
+  <version>2021-01-11</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -194,6 +194,7 @@
           Autocorrelation and heteroscedasticity correction are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
 	  Threshold regression and unit root tests are in <pkg>pdR</pkg>.
           The panel data approach method for program evaluation is available in <pkg>pampe</pkg>.
+	  Dedicated fast data preprocessing for panel data econometrics is provided by <pkg>collapse</pkg>.
 	  </li>
     </ul>
 
@@ -409,6 +410,7 @@
     <pkg>censReg</pkg>
     <pkg>clubSandwich</pkg>
     <pkg>clusterSEs</pkg>
+    <pkg>collapse</pkg>
     <pkg>crch</pkg>
     <pkg>decompr</pkg>
     <pkg>dlsem</pkg>
