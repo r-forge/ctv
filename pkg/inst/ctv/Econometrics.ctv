@@ -122,7 +122,7 @@
 	  and Singer mixed proportional hazard competing risk model is available in <pkg>durmod</pkg>.</li>
 
       <li><i>High-dimensional fixed effects</i>: Linear models with potentially high-dimensional
-          fixed effects, also for multiple groups, can be fitted by <github>sgaure/lfe</github>.
+          fixed effects, also for multiple groups, can be fitted by <pkg>lfe</pkg>.
 	  The corresponding GLMs are covered in <pkg>alpaca</pkg>. Another implementation, based on
 	  C++ code covering both OLS and GLMs is in <pkg>fixest</pkg>.</li>
 
@@ -143,7 +143,7 @@
     <ul>
       <li><i>Basic instrumental variables (IV) regression</i>: Two-stage least squares (2SLS)
           is provided by <code>ivreg()</code> in <pkg>AER</pkg>. Other implementations are in <code>tsls()</code>
-	  in package <pkg>sem</pkg>, in <pkg>ivpack</pkg>, and <github>sgaure/lfe</github> (with particular
+	  in package <pkg>sem</pkg>, in <pkg>ivpack</pkg>, and <pkg>lfe</pkg> (with particular
 	  focus on multiple group fixed effects).</li>
 
       <li><i>Binary responses</i>: An IV probit model via GLS estimation
@@ -446,6 +446,7 @@
     <pkg>ivprobit</pkg>
     <pkg>LARF</pkg>
     <pkg>lavaan</pkg>
+    <pkg>lfe</pkg>
     <pkg>LinRegInteractive</pkg>
     <pkg>lme4</pkg>
     <pkg priority="core">lmtest</pkg>
