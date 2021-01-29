@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2020-11-25</version>
+  <version>2021-01-29</version>
   
   <info>
 
@@ -450,10 +450,6 @@
         from Python to R they are converted back to R types. This package from 
         the RStudio team is a kind of standard for calling Python from R.
     </li>
-    <li><pkg>PythonInR</pkg> is another package to interact with Python from 
-        within R. It provides Python classes for vectors, matrices and 
-        data.frames which allow an easy conversion from R to Python and back.
-    </li>
     <li><pkg>feather</pkg> provides bindings to read and write feather files, 
         a lightweight binary data store designed for maximum speed.
         This storage format can also be accessed in Python, Julia, or Scala.
@@ -604,7 +600,6 @@
     <pkg>primefactr</pkg>
     <pkg>primes</pkg>
     <pkg>PRIMME</pkg>
-    <pkg>PythonInR</pkg>
     <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
     <pkg>rARPACK</pkg>
