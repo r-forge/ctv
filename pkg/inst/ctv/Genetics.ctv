@@ -3,7 +3,7 @@
   <name>Genetics</name>
   <topic>Statistical Genetics</topic>
   <maintainer email="g.montana@imperial.ac.uk">Giovanni Montana</maintainer>
-  <version>2020-10-29</version>
+  <version>2021-02-25</version>
   <info>
       <p>
         Great advances have been made in the field of genetic analysis over the last years. The availability of millions
@@ -25,9 +25,6 @@
           implements classes and methods for representing genotype and haplotype data, and has several
           functions for population genetic analysis (e.g. functions for estimation and testing of 
           Hardy-Weinberg and linkage disequilibria, etc.).
-<pkg>rmetasim</pkg>
-          provides an interface to the metasim engine
-      for population genetics simulations.
           A few population genetics functions are also implemented in
 <pkg>gap</pkg>.
 <pkg>hwde</pkg>
@@ -197,7 +194,6 @@ Whilst not official R packages one software suite in particular is worthy of men
     <pkg>pbatR</pkg>
     <pkg>phangorn</pkg>
     <pkg>qtl</pkg>
-    <pkg>rmetasim</pkg>
     <pkg>seqinr</pkg>
     <pkg>SNPassoc</pkg>
     <pkg>SNPmaxsel</pkg>
