@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2021-01-11</version>
+  <version>2021-03-01</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -296,7 +296,6 @@
           <li><pkg>tsDyn</pkg> - Threshold and smooth transition models.</li>
 	  <li><pkg>midasr</pkg> - <i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis.</li>
           <li><pkg>gets</pkg> - GEneral-To-Specific (GETS) model selection for either ARX models with log-ARCH-X errors, or a log-ARCH-X model of the log variance.</li>
-	  <li><pkg>tsfa</pkg> - Time series factor analysis.</li>
 	  <li><pkg>bimets</pkg> - Econometric modeling of time series data using flexible specifications of simultaneous equation models.</li>
 	  <li><pkg>dlsem</pkg> - Distributed-lag linear structural equation models.</li>
 	  <li><pkg>lpirfs</pkg> - Local projections impulse response functions.</li>
@@ -524,8 +523,7 @@
     <pkg>systemfit</pkg>
     <pkg>truncreg</pkg>
     <pkg>tsDyn</pkg>
-    <pkg priority="core">tseries</pkg>    
-    <pkg>tsfa</pkg>
+    <pkg priority="core">tseries</pkg>
     <pkg priority="core">urca</pkg>
     <pkg>vars</pkg>
     <pkg>VGAM</pkg>
@@ -534,7 +532,7 @@
     <pkg>wooldridge</pkg>
     <pkg>xts</pkg>
     <pkg priority="core">zoo</pkg>
-    <pkg>zTree</pkg>   
+    <pkg>zTree</pkg>
   </packagelist>
 
   <links>
