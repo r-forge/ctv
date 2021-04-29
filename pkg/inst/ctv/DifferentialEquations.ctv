@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert, Thomas Petzoldt</maintainer>
-  <version>2020-01-12</version>
+  <version>2021-04-30</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -83,6 +83,12 @@
 	   <li>Package <pkg>sundialr</pkg> provides a way to call the 'CVODE' function from the 'SUNDIALS' C ODE solving library. 
 	     The package requires the ODE to be written as an 'R' or 'Rcpp' function.
 	   </li>
+       <li>
+       The package <pkg>mrgSolve</pkg> compiles ODEs on the fly and allows shorthand prescription dosing. 
+       </li>
+       <li>
+       The package <pkg>RxODE</pkg> is similar to <pkg>mrgSolve</pkg>, but has the added value of being the backend of the nonlinear mixed effects modeling R package <pkg>nlmixr</pkg>. 
+       </li>
     </ul>        
     <p><strong>Delay Differential Equations (DDEs)</strong></p> 
      In a DDE, the derivative at a certain time is a function of the variable value at a previous time.
@@ -146,6 +152,19 @@
           package from the Julia programming language.
        </li> 
      </ul>
+     
+     <p><strong>Population ODE modeling</strong></p>
+     <ul>
+     <li>
+     The package <pkg>nlmixr</pkg> fits ODE-based nonlinear mixed effects models using <pkg>RxODE</pkg>.
+     </li>
+     <li>
+     The package <pkg>IQRtools</pkg> provides unified data and model representation for <pkg>nlmixr</pkg>, 
+     <pkg>NONMEM</pkg> and <pkg>monolix</pkg>, the latter two being popular commercial backends. 
+     See also <pkg>IQdesktop</pkg>, a docker image that integrates all the versions just right. 
+     </li>
+     </ul>
+
     <p><strong>Other</strong></p>
       <ul>
        <li> The  <pkg>simecol</pkg> package provides an interactive environment to 
@@ -218,7 +237,10 @@
     <pkg>simecol</pkg>
     <pkg>sundialr</pkg>
     <pkg>dde</pkg>
-	
+    <pkg>RxODE</pkg>
+    <pkg>mrgSolve</pkg>
+    <pkg>nlmixr</pkg>
+    <pkg>IQRtools</pkg>
   </packagelist>
 
   <links>
