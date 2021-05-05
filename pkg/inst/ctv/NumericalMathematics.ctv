@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2021-01-29</version>
+  <version>2021-05-05</version>
   
   <info>
 
@@ -54,8 +54,12 @@
     <li>Package <pkg>rmumps</pkg> provides a wrapper for the MUMPS library,
         solving large linear systems of equations applying a parallel sparse
         direct solver</li>
+    <li><pkg>sanic</pkg> supports routines for solving (dense and sparse) 
+        large systems of linear equations; direct and iterative solvers from 
+        the Eigen C++ library are made available, including Cholesky, LU, QR, 
+        and Krylov subspace methods.</li>
     <li><pkg>Rlinsolve</pkg> is a collection of iterative solvers for sparse 
-        linear system of equations. Stationary iterative solvers such as 
+        linear system of equations; stationary iterative solvers such as 
         Jacobi or Gauss-Seidel, as well as nonstationary (Krylov subspace) 
         methods are provided.</li>
     <li><pkg>svd</pkg> provides R bindings to state-of-the-art implementations 
@@ -251,7 +255,8 @@
         coefficients of sufficient length.</li>
     <li><pkg>calculus</pkg> provides efficient functions for high-dimensional 
         numerical and symbolic calculus, including accurate higher-order 
-        derivatives, Taylor series expansion, differential operators, and Monte-Carlo integration in orthogonal coordinate systems.</li>
+        derivatives, Taylor series expansion, differential operators, and 
+        Monte-Carlo integration in orthogonal coordinate systems.</li>
     <li><pkg>features</pkg> extracts features from functional data, such as 
         first and second derivatives, or curvature at critical points, while
         <pkg>RootsExtremaInflections</pkg> finds roots, extrema and 
@@ -492,7 +497,10 @@
     <li><pkg>JuliaCall</pkg> provides seamless integration between R and Julia; 
         the user can call Julia functions just like any R function, and R 
         functions can be called in the Julia environment, both with reasonable 
-        automatic type conversion.
+        automatic type conversion. 
+        <a href="https://hwborchers.github.io/">Notes on Julia Call</a> 
+        provides an introduction of how to apply Julia functions with 
+        'JuliaCall'.
     </li>
     <li><pkg>JuliaConnectoR</pkg> provides a functionally oriented interface 
         for integrating Julia with R; imported Julia functions can be called 
@@ -520,7 +528,8 @@
     and commutative algebra. Macauley2 has to be installed independently,
     otherwise a Macauley2 process in the cloud will be instantiated.</p>
 
-    <p>Please note that commercial programs such as MATLAB, Maple, or Mathematica have facilities to call R functions.</p>
+    <p>Please note that commercial programs such as MATLAB, Maple, or 
+    Mathematica have facilities to call R functions.</p>
 
   </info>
 
@@ -619,6 +628,7 @@
     <pkg>RSpectra</pkg>
     <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
+    <pkg>sanic</pkg>
     <pkg>schumaker</pkg>
     <pkg>set6</pkg>
     <pkg>signal</pkg>
