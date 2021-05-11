@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert, Thomas Petzoldt</maintainer>
-  <version>2021-04-30</version>
+  <version>2021-05-11</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -84,10 +84,10 @@
 	     The package requires the ODE to be written as an 'R' or 'Rcpp' function.
 	   </li>
        <li>
-       The package <pkg>mrgSolve</pkg> compiles ODEs on the fly and allows shorthand prescription dosing. 
+       The package <pkg>mrgsolve</pkg> compiles ODEs on the fly and allows shorthand prescription dosing. 
        </li>
        <li>
-       The package <pkg>RxODE</pkg> is similar to <pkg>mrgSolve</pkg>, but has the added value of being the backend of the nonlinear mixed effects modeling R package <pkg>nlmixr</pkg>. 
+       The package <pkg>RxODE</pkg> is similar to <pkg>mrgsolve</pkg>, but has the added value of being the backend of the nonlinear mixed effects modeling R package <pkg>nlmixr</pkg>. 
        </li>
     </ul>        
     <p><strong>Delay Differential Equations (DDEs)</strong></p> 
@@ -238,7 +238,7 @@
     <pkg>sundialr</pkg>
     <pkg>dde</pkg>
     <pkg>RxODE</pkg>
-    <pkg>mrgSolve</pkg>
+    <pkg>mrgsolve</pkg>
     <pkg>nlmixr</pkg>
     <pkg>IQRtools</pkg>
   </packagelist>
