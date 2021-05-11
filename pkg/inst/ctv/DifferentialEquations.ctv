@@ -158,11 +158,6 @@
      <li>
      The package <pkg>nlmixr</pkg> fits ODE-based nonlinear mixed effects models using <pkg>RxODE</pkg>.
      </li>
-     <li>
-     The package <pkg>IQRtools</pkg> provides unified data and model representation for <pkg>nlmixr</pkg>, 
-     <pkg>NONMEM</pkg> and <pkg>monolix</pkg>, the latter two being popular commercial backends. 
-     See also <pkg>IQdesktop</pkg>, a docker image that integrates all the versions just right. 
-     </li>
      </ul>
 
     <p><strong>Other</strong></p>
@@ -240,7 +235,6 @@
     <pkg>RxODE</pkg>
     <pkg>mrgsolve</pkg>
     <pkg>nlmixr</pkg>
-    <pkg>IQRtools</pkg>
   </packagelist>
 
   <links>
