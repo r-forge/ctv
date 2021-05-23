@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2021-03-28</version>
+  <version>2021-05-23</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -142,7 +142,7 @@
     
     <ul>
       <li><i>Basic instrumental variables (IV) regression</i>: Two-stage least squares (2SLS)
-          is provided by <code>ivreg()</code> in <pkg>AER</pkg>. Other implementations are in <code>tsls()</code>
+          is provided by <pkg>ivreg</pkg> (previously in <pkg>AER</pkg>). Other implementations are in <code>tsls()</code>
 	  in package <pkg>sem</pkg>, in <pkg>ivpack</pkg>, and <pkg>lfe</pkg> (with particular
 	  focus on multiple group fixed effects).</li>
 
@@ -442,6 +442,7 @@
     <pkg>ivpack</pkg>
     <pkg>ivpanel</pkg>
     <pkg>ivprobit</pkg>
+    <pkg>ivreg</pkg>
     <pkg>LARF</pkg>
     <pkg>lavaan</pkg>
     <pkg>lfe</pkg>
