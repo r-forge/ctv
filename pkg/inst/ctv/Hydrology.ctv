@@ -2,7 +2,7 @@
   <name>Hydrology</name>
   <topic>Hydrological Data and Modeling</topic>
   <maintainer email="sam.albers@gmail.com">Sam Albers, Sam Zipper,  Ilaria Prosdocimi</maintainer>
-  <version>2021-05-11</version>
+  <version>2021-05-25</version>
   <info>
     <p>This Task View contains information about packages broadly relevant to <em>hydrology</em>, defined as the movement, distribution and quality of water and water resources over a broad spatial scale of landscapes. Packages are broadly grouped according to their function; however, many have functionality that spans multiple categories. We also highlight other, existing resources that have related functions - for example, statistical analysis or spatial data processing. See also <a href="https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html">Riccardo Rigon’s excellent list</a> of hydrology-related R tools and resources.</p><p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/Hydrology/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/Hydrology/pulls">submit a pull request</a>. If you can’t contribute on GitHub, <a href="mailto:sam.albers@gmail.com">send Sam Albers an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p><h2 id="data-retrieval">Data Retrieval</h2><p><strong>Hydrological data sources (surface water/groundwater quantity and quality)</strong></p><ul><li> 
 <p><pkg>AWAPer</pkg>: AWAPer allows efficient extraction of daily catchment average precipitation, Tmin, Tmax, vapour pressure, solar radiation and then estimation of areal potential evaporation (Morton’s) for anywhere in Australia. Spatial measures are also derived (eg spatial daily variance). For technical details see Peterson et al. (2019).</p></li><li> 
@@ -90,7 +90,6 @@
 <p><pkg>kwb.hantush</pkg>: Calculation groundwater mounding beneath an infiltration basin based on the <a href="http://doi.org/10.1029/WR003i001p00227">Hantush (1967)</a> equation. The correct implementation is shown with a verification example based on a USGS report ( <a href="http://pubs.usgs.gov/sir/2010/5102/support/sir2010-5102.pdf">page 25</a> ).</p></li><li> 
 <p><pkg>LWFBrook90R</pkg>: Simulate Evapotranspiration and Soil Moisture with the SVAT Model LWF-Brook90. See paper <a href="https://doi.org/10.1016/j.agrformet.2020.108023">Schmidt-Walter et al. (2020)</a>.</p></li><li> 
 <p><github>USGS-R/loadflex</github>: Models and Tools for Watershed Flux Estimates. See <a href="http://dx.doi.org/10.1890/ES14-00517.1">paper</a>. GitHub only package.</p></li><li> 
-<p><pkg>RavenR</pkg>: Utilities for processing input and output files associated with the Raven Hydrological Modelling Framework. Includes various plotting functions, model diagnostics, reading output files into xts format, and support for writing Raven input files (rvt, rvh, rvc, etc.).</p></li><li> 
 <p><pkg>reservoir</pkg>: Tools for Analysis, Design, and Operation of Water Supply Storages. Measure single-storage water supply system performance using resilience, reliability, and vulnerability metrics; assess storage-yield-reliability relationships; determine no-fail storage with sequent peak analysis; optimize release decisions for water supply, hydropower, and multi-objective reservoirs using deterministic and stochastic dynamic programming; generate inflow replicates using parametric and non-parametric models; evaluate inflow persistence using the Hurst coefficient.</p></li><li> 
 <p><pkg>RHMS</pkg>: Hydrologic modelling system is an object oriented tool which enables R users to simulate and analyze hydrologic events. The package proposes functions and methods for construction, simulation, visualization, and calibration of hydrologic systems.</p></li><li> 
 <p><pkg>RSAlgaeR</pkg>: Builds Empirical Remote Sensing Models of Water Quality Variables and Analyzes Long-Term Trends. Assists in processing reflectance data, developing empirical models using stepwise regression and a generalized linear modeling approach, cross- validation, and analysis of trends in water quality conditions (specifically chl-a) and climate conditions using the Theil-Sen estimator.</p></li><li> 
@@ -187,7 +186,6 @@
     <pkg>nsRFA</pkg>
     <pkg>openair</pkg>
     <pkg>qmap</pkg>
-    <pkg>RavenR</pkg>
     <pkg>rdwd</pkg>
     <pkg>reservoir</pkg>
     <pkg>RHMS</pkg>
