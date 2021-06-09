@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2020-08-04</version>
+  <version>2021-06-09</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -42,11 +42,6 @@
     </li>
 
     
-    <li>
-      <pkg>dynamicGraph</pkg>
-      Interactive graphical tool for manipulating graphs
-    </li>
-
     <!-- <li> -->
     <!--   <pkg>giRaph</pkg> -->
     <!--   Supply classes and methods to represent and manipulate graphs -->
@@ -472,7 +467,6 @@
     <pkg>dclone</pkg>
     <pkg>diagram</pkg>
     <pkg>DiagrammeR</pkg>    
-    <pkg>dynamicGraph</pkg>
     <pkg>ergm</pkg>
     <pkg>FBFsearch</pkg>
     <pkg>GeneNet</pkg>
