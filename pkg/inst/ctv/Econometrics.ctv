@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2021-05-23</version>
+  <version>2021-06-09</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -41,9 +41,7 @@
 
       <li><i>Diagnostic checking</i>: The packages
 	  <pkg>car</pkg> and <pkg>lmtest</pkg> provide a large collection
-	  of regression diagnostics and diagnostic tests. In addition to these two packages,
-	  <pkg>skedastic</pkg> contains further diagnostics specifically for detecting
-	  heteroscedasticity.</li>
+	  of regression diagnostics and diagnostic tests.</li>
     </ul>
 
     <p><strong>Microeconometrics</strong></p>
@@ -509,7 +507,6 @@
     <pkg>semsfa</pkg>
     <pkg>sfa</pkg>
     <pkg>simpleboot</pkg>
-    <pkg>skedastic</pkg>
     <pkg>SparseM</pkg>
     <pkg>spatialprobit</pkg>
     <pkg>spatialreg</pkg>
