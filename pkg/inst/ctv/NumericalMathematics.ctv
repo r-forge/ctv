@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2021-05-05</version>
+  <version>2021-06-09</version>
   
   <info>
 
@@ -345,9 +345,6 @@
         strategies such as line searches or trust regions.</li>
     <li><pkg>ktsolve</pkg> defines a common interface for solving a set of
         equations with <code>BB</code> or <code>nleqslv</code>.</li>
-    <li>Package <pkg>FixedPoint</pkg> provides algorithms for finding fixed 
-        point vectors. These algorithms include Anderson acceleration, 
-        epsilon extrapolation methods, and minimal polynomial methods.</li>
     <li>Package <pkg>daarem</pkg> implements the DAAREM method for accelerating 
         the convergence of any smooth, monotone, slow fixed point iteration.</li>
     <li>Algorithms for accelerating the convergence of slow, monotone 
@@ -560,7 +557,6 @@
     <pkg>fastGHQuad</pkg>
     <pkg>feather</pkg>
     <pkg>features</pkg>
-    <pkg>FixedPoint</pkg>
     <pkg>fourierin</pkg>
     <pkg>freealg</pkg>
     <pkg>freegroup</pkg>
