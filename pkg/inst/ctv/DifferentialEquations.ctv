@@ -4,7 +4,7 @@
   <name>DifferentialEquations</name>
   <topic>Differential Equations</topic>
   <maintainer email="karline.soetaert@nioz.nl">Karline Soetaert, Thomas Petzoldt</maintainer>
-  <version>2021-05-27</version>
+  <version>2021-06-18</version>
   
   <info>
     <p> Differential equations (DE) are mathematical equations that describe how a 
@@ -49,9 +49,6 @@
        <li> The package <pkg>Sim.DiffProc</pkg> provides functions for simulation of 
         Itô and Stratonovitch stochastic differential equations.
        </li> 
-       <li> Package <pkg>diffeqr</pkg> can solve SDE problems using the <strong>DifferentialEquations.jl</strong> 
-	package from the Julia programming language.
-       </li> 
      </ul>  
       
     <p><strong>Ordinary Differential Equations (ODEs)</strong></p> 
@@ -66,11 +63,6 @@
        </li>
        <li> The package <pkg>odeintr</pkg> generates and compiles C++ ODE solvers on the fly using Rcpp
             and <a href="http://www.boost.org/">Boost</a> <a href="http://www.odeint.com/">odeint</a>.
-       </li>
-       <li>
-          The R package <pkg>diffeqr</pkg> provides a seamless interface to the <strong>DifferentialEquations.jl</strong> 
-          package from the Julia programming language. It has unique high performance methods for solving ODE, SDE, DDE, DAE and more. 
-          Models can be written in either R or Julia. It requires an installation of the Julia language.
        </li>
        <li>Package <pkg>pracma</pkg> implements several adaptive Runge-Kutta
         solvers such as ode23, ode23s, ode45, or the Burlisch-Stoer algorithm to obtain
@@ -101,9 +93,6 @@
         includes a solver for non-stiff DDE problems.
        </li>
        <li> Functions in the package <pkg>deSolve</pkg> can solve both stiff and non-stiff DDE problems.
-       </li> 
-       <li> Package <pkg>diffeqr</pkg> can solve DDE problems using the <strong>DifferentialEquations.jl</strong> 
-          package from the Julia programming language.
        </li> 
      </ul>
     <p><strong>Partial Differential Equations (PDEs)</strong></p> 
@@ -137,9 +126,6 @@
       <ul>
        <li> The package <pkg>deSolve</pkg> provides two solvers, that can handle DAEs up to index 3.
        </li>
-       <li> Package <pkg>diffeqr</pkg> can solve DAE problems using the <strong>DifferentialEquations.jl</strong> 
-          package from the Julia programming language.
-       </li> 
       </ul>       
     <p><strong>Boundary Value Problems (BVPs)</strong></p> 
       BVPs have solutions and/or derivative conditions specified 
@@ -148,9 +134,6 @@
        <li> The package <pkg>ReacTran</pkg> can solve BVPs that belong to the 
        class of reactive transport equations.
        </li>
-       <li> Package <pkg>diffeqr</pkg> can also solve BVPs using the <strong>DifferentialEquations.jl</strong> 
-          package from the Julia programming language.
-       </li> 
      </ul>
      
      <p><strong>Population ODE modeling</strong></p>
@@ -204,7 +187,6 @@
 
   <packagelist>
     <pkg>cOde</pkg>
-    <pkg>diffeqr</pkg>
     <pkg>dMod</pkg>
     <pkg>CollocInfer</pkg>
     <pkg priority="core">deSolve</pkg>
