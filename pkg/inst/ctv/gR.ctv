@@ -4,7 +4,7 @@
   <name>gR</name>
   <topic>gRaphical Models in R</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2021-06-09</version>
+  <version>2021-07-15</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -242,13 +242,6 @@
     </li>
 
     <li>
-      <pkg>ndtv</pkg> Network Dynamic Temporal Visualizations. Renders
-      dynamic network data from "networkDynamic" objects as animated
-      movies or other representations of relational structure and node
-      attributes that change over time.
-    </li>
-
-    <li>
       <pkg>networkDynamic</pkg>
       Dynamic Extensions for Network  Objects. Simple interface routines to facilitate the
       handling of network objects with complex intertemporal
@@ -477,7 +470,6 @@
     <pkg>igraph</pkg>
     <pkg>lvnet</pkg>        
     <pkg>mgm</pkg> 
-    <pkg>ndtv</pkg>
     <pkg>network</pkg>
     <pkg>networkDynamic</pkg>    
     <pkg>pcalg</pkg>
