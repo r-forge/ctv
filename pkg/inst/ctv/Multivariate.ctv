@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2021-03-01</version>
+  <version>2021-07-18</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -93,8 +93,7 @@
           estimation, <pkg>ks</pkg> also provides multivariate kernel smoothing as does <pkg>ash</pkg> and <pkg>GenKern</pkg>.   <pkg>prim</pkg> provides patient rule induction methods to attempt to find regions of high density in high dimensional multivariate data, <pkg>feature</pkg> also provides methods for determining feature significance in multivariate data (such as in relation to local modes).</li>
 
 	  <li><i>Assessing normality:</i> <pkg>mvnormtest</pkg> provides a multivariate extension
-	  to the Shapiro-Wilks test, <pkg>mvoutlier</pkg> provides multivariate outlier detection based
-	  on robust methods.  <pkg>ICS</pkg> provides tests for multi-normality.      <code>mvnorm.etest()</code> in <pkg>energy</pkg> provides an assessment 
+	  to the Shapiro-Wilks test.  <pkg>ICS</pkg> provides tests for multi-normality.      <code>mvnorm.etest()</code> in <pkg>energy</pkg> provides an assessment 
           of normality based on E statistics (energy); in the same package <code>k.sample()</code>
           assesses a number of samples for equal distributions. Tests for Wishart-distributed covariance matrices 
           are given by 
@@ -318,7 +317,6 @@
     <pkg>mnormt</pkg>  
     <pkg>MNP</pkg>
     <pkg>mvnormtest</pkg>
-    <pkg>mvoutlier</pkg>
     <pkg>mvtnorm</pkg>
     <pkg>nFactors</pkg>   
     <pkg>pan</pkg>
