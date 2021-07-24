@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2021-06-09</version>
+  <version>2021-07-24</version>
   
   <info>
 
@@ -427,8 +427,7 @@
     <li>Package <pkg>Ryacas</pkg> interfaces the computer algebra system    
         'Yacas'; it supports symbolic and arbitrary precision computations  
         in calculus and linear algebra.</li>
-    <li>Packages <pkg>caracas</pkg> (based on 'reticulate') and
-        <pkg>rSymPy</pkg> (based on 'rjava') both access the symbolic algebra 
+    <li>Packages <pkg>caracas</pkg> (based on 'reticulate') accesses the symbolic algebra 
         system 'SymPy'; supported are symbolic operations in linear algebra and 
         calculus, such as eigenvalues, derivatives, integrals, limits, etc.,
         computing special functions, or solving systems of equations.</li>
@@ -622,7 +621,6 @@
     <pkg>rootSolve</pkg>
     <pkg>Rserve</pkg>
     <pkg>RSpectra</pkg>
-    <pkg>rSymPy</pkg>
     <pkg>Ryacas</pkg>
     <pkg>sanic</pkg>
     <pkg>schumaker</pkg>
