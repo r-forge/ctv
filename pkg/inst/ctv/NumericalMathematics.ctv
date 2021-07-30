@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2021-07-24</version>
+  <version>2021-07-30</version>
   
   <info>
 
@@ -299,9 +299,6 @@
         Chebyshev and other multilinear interpolations on regular grids, e.g.
         the Floater-Hormann barycenter method, or polyharmonic splines for 
         scattered data.</li>
-    <li>Package <pkg>kubik</pkg> provides (constructs, plots and evaluates) 
-        constrained cubic Hermite splines and computes their derivatives, 
-        indefinite integrals, as well as roots, optima, or inflection points.</li>
     <li><pkg>tripack</pkg> for triangulation of irregularly spaced data is a 
         constrained two-dimensional Delaunay triangulation package providing 
         both triangulation and generation of Voronoi mosaics of irregular 
@@ -571,7 +568,6 @@
     <pkg>JuliaCall</pkg>
     <pkg>JuliaConnectoR</pkg>
     <pkg>ktsolve</pkg>
-    <pkg>kubik</pkg>
     <pkg>lamW</pkg>
     <pkg>logOfGamma</pkg>
     <pkg>m2r</pkg>
