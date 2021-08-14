@@ -174,7 +174,8 @@
       <li><i>Linear panel models</i>: <pkg>plm</pkg>, providing a wide range of within,
           between, and random-effect methods (among others) along with corrected standard
 	  errors, tests, etc. Another implementation of several of these models is in
-	  <pkg>Paneldata</pkg>. Various dynamic panel models are available in <pkg>plm</pkg>
+	  <pkg>Paneldata</pkg>. Various dynamic panel models are available in <pkg>plm</pkg>,
+          with estimation based on moment conditions in <pkg>pdynmc</pkg>,
 	  and dynamic panel models with fixed effects in <pkg>OrthoPanels</pkg>.
 	  <pkg>feisr</pkg> provides fixed effects individual slope (FEIS) models.
 	  Panel vector autoregressions are implemented in <pkg>panelvar</pkg>.</li>
@@ -482,6 +483,7 @@
     <pkg>pcse</pkg>
     <pkg>pder</pkg>
     <pkg>pdR</pkg>
+    <pkg>pdynmc</pkg>
     <pkg>pglm</pkg>
     <pkg priority="core">plm</pkg>
     <pkg>pscl</pkg>
