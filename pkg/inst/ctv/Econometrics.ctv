@@ -103,7 +103,8 @@
 	  regression models, including models for panel data, are provided in <pkg>censReg</pkg>.
 	  Censored regression models with conditional heteroscedasticity are in <pkg>crch</pkg>.
 	  Furthermore, hurdle models for left-censored data at zero can be estimated with
-	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>.
+	  <pkg>mhurdle</pkg>. Models for sample selection are available in <pkg>sampleSelection</pkg>
+          and <pkg>ssmrob</pkg> using classical and robust inference, respectively.
 	  Package <pkg>matchingMarkets</pkg> corrects for selection bias when the sample is the
 	  result of a stable matching process (e.g., a group formation or college admissions problem).</li>
 
@@ -516,6 +517,7 @@
     <pkg>sphet</pkg>
     <pkg>splm</pkg>
     <pkg>ssfa</pkg>
+    <pkg>ssmrob</pkg>
     <pkg>strucchange</pkg>
     <pkg>survival</pkg>
     <pkg>systemfit</pkg>
