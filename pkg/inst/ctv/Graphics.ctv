@@ -121,10 +121,6 @@
           is a device based libcairo, which can actually render to many device
           types. The cairo device is designed to work with <pkg>RGtk2</pkg>,
           which is an interface to the Gimp Tool Kit, similar to pyGTK2.
-	  <pkg>RSvgDevice</pkg> is an SVG device driver and interfaces well with
-          with vector drawing programs. When SVG devices are for web display developers should be
-          aware that internet explorer does not support SVG, but has their own
-          standard. Trust Microsoft.
           <pkg>rgl</pkg> provides a device driver
           based on OpenGL, and is good for 3D and interactive
           development. Lastly, the Augsburg group supplies a set of packages
@@ -195,8 +191,6 @@
     <pkg priority="core">rgl</pkg>
     <pkg>RGraphics</pkg>
     <pkg>RGtk2</pkg>
-    <pkg>RSvgDevice</pkg>
-    <pkg>RSVGTipsDevice</pkg>
     <pkg>scagnostics</pkg>
     <pkg>tkrplot</pkg>
     <pkg>scatterplot3d</pkg>
