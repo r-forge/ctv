@@ -104,8 +104,8 @@ read_ctv_rmd <- function(file, format = "html", cran = FALSE)
   rmd <- readLines(file)
 
   ## file names
-  file0 <- file
-  file <- gsub("\\.Rmd$", ".md", file)
+  file_rmd <- gsub("\\.([[:alnum:]]+)$", ".Rmd", file)
+  file_md <- gsub("\\.Rmd$", ".md", file_rmd)
 
   ## output format
   format <- match.arg(format, c("html", "markdown"))
@@ -123,10 +123,10 @@ read_ctv_rmd <- function(file, format = "html", cran = FALSE)
   tdir <- tempfile()
   if(!file.exists(tdir)) dir.create(tdir)
   setwd(tdir)
-  writeLines(rmd[-(1L:(which(substr(rmd, 1L, 3L) == "---")[2L]))], file0)
-  knitr::knit(file0, quiet = TRUE)
-  md <- readLines(file)
-  setwd(odir)
+  on.exit(setwd(odir))
+  writeLines(rmd[-(1L:(which(substr(rmd, 1L, 3L) == "---")[2L]))], file_rmd)
+  knitr::knit(file_rmd, quiet = TRUE)
+  md <- readLines(file_md)
 
   ## extract links (if any)
   li <- which(substr(md, 1L, 9L) == "### Links")
