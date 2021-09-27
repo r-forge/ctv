@@ -95,6 +95,11 @@ github <- function(name, register = TRUE) {
   sprintf("[%s](https://github.com/%s)", sapply(strsplit(name, "/", fixed = TRUE), "[", 2L), name)
 }
 
+doi <- function(name) {
+  sprintf("[doi:%s](https://doi.org/%s)", name, name)
+}
+
+
 read_ctv_rmd <- function(file, format = "html", cran = FALSE)
 {
   ## FIXME
