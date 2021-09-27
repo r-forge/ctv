@@ -233,7 +233,7 @@ ctv_xml_to_rmd <- function(x) {
   for(i in which(reg$type == "corepkg")) {
     nami <- reg$name[i]
     urli <- sprintf('<a href="../packages/%s/index.html">%s</a>', nami, nami)
-    rmdi <- sprintf('`r_chunk_pkg("%s", priority = "core")`', nami)
+    rmdi <- sprintf('`r_chunk_pkg("%s",priority="core")`', nami)
     x$info <- sub(urli, rmdi, x$info, fixed = TRUE)
   }
   make_url <- function(type, name) {
@@ -258,6 +258,8 @@ ctv_xml_to_rmd <- function(x) {
   }
 
   ## convert info to md 
+  x$info <- gsub("<tt>", "<code>", x$info, fixed = TRUE)
+  x$info <- gsub("</tt>", "</code>", x$info, fixed = TRUE)
   x$info <- pandoc(x$info, from = "html", to = "markdown")
   x$info <- gsub("(<div>|</div>)", "", x$info)
   xi <- which(substr(x$info, 1L, 2L) == "**")
@@ -304,9 +306,12 @@ pandoc <- function(x, ..., from = "markdown", to = "html", fixup = (from == "htm
   
   ## fix backticks and quotes (if necessary)
   if(fixup) {
-    rval <- gsub("\\`r\\_chunk\\_", "`r ", rval, fixed = TRUE)
+    rval <- gsub("\\_chunk\\_", " ", rval, fixed = TRUE)
+    rval <- gsub("_chunk_", " ", rval, fixed = TRUE)
     rval <- gsub("\\`", "`", rval, fixed = TRUE)
     rval <- gsub("\\\"", "\"", rval, fixed = TRUE)
+    rval <- gsub("\\'", "'", rval, fixed = TRUE)
+    rval <- gsub(',priority="core"', ', priority = "core"', rval, fixed = TRUE)
   }
   
   ## split up list again?
