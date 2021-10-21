@@ -3,7 +3,7 @@
   <name>Multivariate</name>
   <topic>Multivariate Statistics</topic>
   <maintainer email="Paul.Hewson@plymouth.ac.uk">Paul Hewson</maintainer>
-  <version>2021-07-18</version>
+  <version>2021-10-121</version>
   
   <info>
     <p>Base R contains most of the functionality for classical multivariate analysis,
@@ -53,7 +53,7 @@
           assist with descriptive functions; from the same package <code>varclus()</code> offers variable 
           clustering while <code>dataRep()</code> and <code>find.matches()</code> assist in exploring a given 
           dataset in terms of representativeness and finding matches.  
-          Whilst <code>dist()</code> in base and <code>daisy()</code> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices. <pkg>simba</pkg> provides functions for dealing with presence / absence data including similarity matrices and reshaping.</li></ul>
+          Whilst <code>dist()</code> in base and <code>daisy()</code> in <pkg>cluster</pkg> provide a wide range of distance measures, <pkg>proxy</pkg> provides a framework for more distance measures, including measures between matrices.</li></ul>
 
 <p><strong>Hypothesis testing</strong></p>
  
@@ -342,7 +342,6 @@
     <pkg>sem</pkg>
     <pkg>SensoMineR</pkg>
     <pkg>seriation</pkg>  
-    <pkg>simba</pkg> 
     <pkg>smatr</pkg>  
     <pkg>sn</pkg>
     <pkg>spam</pkg> 
