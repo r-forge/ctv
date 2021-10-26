@@ -102,7 +102,7 @@ doi <- function(name) {
 
 read_ctv_rmd <- function(file, format = "html", cran = FALSE)
 {
-  ## FIXME
+  ## clear .ctv_env for registering package/view links
   assignInNamespace(".ctv_env", initialize_ctv_env(cran = cran), ns = "ctv")
   
   ## read Rmd
@@ -199,7 +199,7 @@ read_ctv_rmd <- function(file, format = "html", cran = FALSE)
 
 ctv_xml_to_rmd <- function(x) {
   ## output file name
-  file <- gsub("\\.ctv$", ".Rmd", x)
+  file <- gsub("\\.ctv$", ".md", x)
   
   ## raw and parsed XML
   x0 <- xml2::read_xml(x)
@@ -229,7 +229,7 @@ ctv_xml_to_rmd <- function(x) {
   }
   reg <- rbind(reg, add_reg("view"), add_reg("rforge"), add_reg("gcode"), add_reg("bioc"), add_reg("ohat"), add_reg("github")) 
 
-  ## replace tags in info with Rmd code
+  ## replace tags in info with R/Markdown code
   for(i in which(reg$type == "corepkg")) {
     nami <- reg$name[i]
     urli <- sprintf('<a href="../packages/%s/index.html">%s</a>', nami, nami)
@@ -272,7 +272,7 @@ ctv_xml_to_rmd <- function(x) {
   ## YAML header
   x$header <- c("---", paste0(names(x)[1L:5L], ": ", unlist(x[1L:5L])), "---")
 
-  ## write Rmd file
+  ## write R/Markdown file
   writeLines(c(
     x$header,
     "",
