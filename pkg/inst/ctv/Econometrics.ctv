@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
-  <version>2021-10-08</version>
+  <version>2021-11-02</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -191,7 +191,7 @@
       <li><i>Instrumental variables</i>: <pkg>ivfixed</pkg> and <pkg>ivpanel</pkg>, see also above.</li>
       
       <li><i>Miscellaneous</i>: 
-          Autocorrelation and heteroscedasticity correction are available in <pkg>wahc</pkg> and <pkg>panelAR</pkg>.
+          Autocorrelation and heteroscedasticity correction are available in <pkg>wahc</pkg>.
 	  Threshold regression and unit root tests are in <pkg>pdR</pkg>.
           The panel data approach method for program evaluation is available in <pkg>pampe</pkg>.
 	  Dedicated fast data preprocessing for panel data econometrics is provided by <pkg>collapse</pkg>.
@@ -476,7 +476,6 @@
     <pkg>ordinal</pkg>
     <pkg>OrthoPanels</pkg>
     <pkg>pampe</pkg>
-    <pkg>panelAR</pkg>
     <pkg>Paneldata</pkg>
     <pkg>panelvar</pkg>
     <pkg>pco</pkg>
