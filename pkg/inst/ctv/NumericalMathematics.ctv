@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2021-07-30</version>
+  <version>2021-11-08</version>
   
   <info>
 
@@ -71,7 +71,7 @@
         eigenvalues and eigenvectors of real symmetric or complex Hermitian 
         matrices. It will find largest, smallest, or interior eigen-/singular 
         values and will apply preconditioning to accelerate convergence.</li>
-    <li>The packages <pkg>geigen</pkg> and <pkg>QZ</pkg> compute generalized 
+    <li>The package <pkg>geigen</pkg> computes generalized 
         eigenvalues and -vectors for pairs of matrices, and QZ (generalized 
         Schur) decompositions.</li>
     <li><pkg>eigeninv</pkg> generates matrices with a given set of 
@@ -600,7 +600,6 @@
     <pkg>primefactr</pkg>
     <pkg>primes</pkg>
     <pkg>PRIMME</pkg>
-    <pkg>QZ</pkg>
     <pkg>R.matlab</pkg>
     <pkg>rARPACK</pkg>
     <pkg>Rcpp</pkg>
