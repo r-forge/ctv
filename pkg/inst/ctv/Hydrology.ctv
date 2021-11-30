@@ -2,7 +2,7 @@
   <name>Hydrology</name>
   <topic>Hydrological Data and Modeling</topic>
   <maintainer email="sam.albers@gmail.com">Sam Albers, Sam Zipper,  Ilaria Prosdocimi</maintainer>
-  <version>2021-11-25</version>
+  <version>2021-11-30</version>
   <info>
     <p>This Task View contains information about packages broadly relevant to <em>hydrology</em>, defined as the movement, distribution and quality of water and water resources over a broad spatial scale of landscapes. Packages are broadly grouped according to their function; however, many have functionality that spans multiple categories. We also highlight other, existing resources that have related functions - for example, statistical analysis or spatial data processing. See also <a href="https://abouthydrology.blogspot.com/2012/08/r-resources-for-hydrologists.html">Riccardo Rigon’s excellent list</a> of hydrology-related R tools and resources. Some Python related resources can be found <a href="https://abouthydrology.blogspot.com/2016/11/python-resources-for-hydrologists.html">here</a> and <a href="https://github.com/raoulcollenteur/Python-Hydrology-Tools">here</a></p><p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/Hydrology/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/Hydrology/pulls">submit a pull request</a>. If you can’t contribute on GitHub, <a href="mailto:sam.albers@gmail.com">send Sam Albers an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.</p><h2 id="data-retrieval">Data Retrieval</h2><p><strong>Hydrological data sources (surface water/groundwater quantity and quality)</strong></p><ul><li> 
 <p><pkg>AWAPer</pkg>: AWAPer allows efficient extraction of daily catchment average precipitation, Tmin, Tmax, vapour pressure, solar radiation and then estimation of areal potential evaporation (Morton’s) for anywhere in Australia. Spatial measures are also derived (eg spatial daily variance). For technical details see Peterson et al. (2019).</p></li><li> 
@@ -99,7 +99,7 @@
 <p><github>USGS-R/streamMetabolizer</github>: Estimate aquatic photosynthesis and respiration (collectively, metabolism) from time series data on dissolved oxygen, water temperature, depth, and light via inverse modeling. The package assists with data preparation, handles data gaps during modeling, and provides tabular and graphical reports of model outputs. GitHub only package.</p></li><li> 
 <p><pkg>swmmr</pkg>: Functions to connect the widely used <a href="https://www.epa.gov/water-research/storm-water-management-model-swmm">Storm Water Management Model (SWMM)</a> of the United States Environmental Protection Agency (US EPA) to R.</p></li><li> 
 <p><pkg>telemac</pkg>: An R interface to the TELEMAC suite for modelling of free surface flow. This includes methods for model initialisation, simulation, and visualisation. So far only the TELEMAC-2D module for 2-dimensional hydrodynamic modelling is implemented.</p></li><li> 
-<p><pkg>topmodel</pkg>: Set of hydrological functions including the hydrological model TOPMODEL, which is based on the 1995 FORTRAN version by Keith Beven. From version 0.7.0, the package is put into maintenance mode. See also <pkg>dynatopmodel</pkg>.</p></li><li> 
+<p><pkg>topmodel</pkg>: Set of hydrological functions including the hydrological model TOPMODEL, which is based on the 1995 FORTRAN version by Keith Beven. From version 0.7.0, the package is put into maintenance mode.</p></li><li> 
 <p><pkg>TUWmodel</pkg>: Lumped Hydrological Model for Education Purposes: a lumped conceptual rainfall-runoff model, following the structure of the HBV model. The model runs on a daily or shorter time step and consists of a snow routine, a soil moisture routine and a flow routing routine.</p></li><li> 
 <p><github>Sibada/VICmodel</github>: Implementation of the Variable Infiltration Capacity (VIC) model, a macroscale hydrologic model that solves full water and energy balances, originally developed by Xu Liang at the University of Washington (UW)</p></li><li> 
 <p><pkg>water</pkg>: Tools and functions to calculate actual Evapotranspiration using surface energy balance models.</p></li><li> 
@@ -145,7 +145,6 @@
     <pkg>climdex.pcic</pkg>
     <pkg>CoSMoS</pkg>
     <pkg>dataRetrieval</pkg>
-    <pkg>dynatopmodel</pkg>
     <pkg>echor</pkg>
     <pkg>Ecohydmod</pkg>
     <pkg>ecoval</pkg>
