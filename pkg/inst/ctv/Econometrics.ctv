@@ -2,7 +2,7 @@
 
   <name>Econometrics</name>
   <topic>Econometrics</topic>
-  <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis</maintainer>
+  <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis, Grant McDermott</maintainer>
   <version>2021-11-02</version>
   
   <info>
