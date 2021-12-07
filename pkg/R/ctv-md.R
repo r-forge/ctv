@@ -100,7 +100,7 @@ doi <- function(name) {
 }
 
 
-read_ctv_rmd <- function(file, format = "html", cran = FALSE)
+read_ctv_rmd <- function(file, cran = FALSE, format = "html")
 {
   ## clear .ctv_env for registering package/view links
   assignInNamespace(".ctv_env", initialize_ctv_env(cran = cran), ns = "ctv")
@@ -121,7 +121,8 @@ read_ctv_rmd <- function(file, format = "html", cran = FALSE)
   x <- strsplit(rmd[(x[1L] + 1L):(x[2L] - 1L)], ": ")
   names(x) <- sapply(x, "[", 1L)
   x <- lapply(x, "[", 2L)
-  x$url <- NULL
+  if(!("url" %in% names(x))) x$url <- NULL
+  if(!("source" %in% names(x))) x$source <- NULL
   
   ## call knitr in temp dir
   odir <- getwd()

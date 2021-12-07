@@ -1,8 +1,8 @@
-read.ctv <- function(file) 
+read.ctv <- function(file, ...)
 {
   x <- readLines(file)
   if(any(grepl("<CRANTaskView", x, fixed = TRUE))) return(read_ctv_xml(file))
-  if(any(grep("^---", x))) return(read_ctv_rmd(file))
+  if(any(grep("^---", x))) return(read_ctv_rmd(file, ...))
   stop("unknown ctv specification")
 }
 
@@ -169,6 +169,12 @@ read_ctv_xml <- function(file)
         if(identical(url, "")) url <- NULL
         url
     }
+    ctvsource <- function(x) {
+        source <- xml2::xml_text(xml2::xml_child(x, "source"))
+        if(is.na(source)) source <- NULL
+        if(identical(source, "")) source <- NULL
+        source
+    }
     info <- function(x)
         newlineSub(xmlPaste(xml2::xml_child(x, "info"),
                             indent = "    "))
@@ -200,6 +206,7 @@ read_ctv_xml <- function(file)
 	       email = email(x),
 	       version = ctvversion(x),
 	       url = ctvurl(x),
+	       source = ctvsource(x),
 	       info = info(x),
 	       packagelist = packagelist(x),
 	       links = links(x)
@@ -210,13 +217,19 @@ read_ctv_xml <- function(file)
 
 ctv2html <- function(x,
                      file = NULL,
-                     css = "../CRAN_web.css",
-		     packageURL = "../packages/",
+                     cran = FALSE,
+                     css = NULL,
+		     packageURL = NULL,
 		     reposname = "CRAN")
 {
-  if(is.character(x)) x <- read.ctv(x)
+  if(is.character(x)) x <- read.ctv(x, cran = cran)
   if(is.null(file)) file <- paste0(x$name, ".html")
-  if(is.null(x$url) & reposname == "CRAN") x$url <- paste0("https://CRAN.R-project.org/view=", x$name)
+
+  if(is.null(css) & cran) css <- "../CRAN_web.css"
+  if(is.null(x$url) & cran) x$url <- paste0("https://CRAN.R-project.org/view=", x$name)
+  if(is.null(packageURL)) {
+    packageURL <- if(cran) "../packages/" else "https://CRAN.R-project.org/package=%s"
+  }
 
   ## auxiliary functions
   ampersSub <- function(x) gsub("&", "&amp;", x)
@@ -234,8 +247,7 @@ ctv2html <- function(x,
             "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
             "<head>",
             paste0("  <title>", title, "</title>"),
-            paste0("  <link rel=\"stylesheet\" type=\"text/css\" href=\"", css, "\" />"),
-            ## if(utf8)
+            if(!is.null(css)) paste0("  <link rel=\"stylesheet\" type=\"text/css\" href=\"", css, "\" />"),
             "  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />",
             sprintf("  <meta name=\"citation_title\" content=\"%s\" />", title),
             sprintf("  <meta name=\"citation_author\" content=\"%s\" />",
@@ -263,15 +275,23 @@ ctv2html <- function(x,
      if(!is.null(x$email)) paste0("    <tr><td valign=\"top\"><b>Contact:</b></td><td>", obfuscate(x$email), "</td></tr>"),
      paste0("    <tr><td valign=\"top\"><b>Version:</b></td><td>", htmlify(x$version), "</td></tr>"),
      if(!is.null(x$url)) paste0("    <tr><td valign=\"top\"><b>URL:</b></td><td><a href=\"", htmlify(x$url), "\">", htmlify(x$url), "</a></td></tr>"),
+     if(!is.null(x$source)) paste0("    <tr><td valign=\"top\"><b>Source:</b></td><td><a href=\"", htmlify(x$source), "\">", htmlify(x$source), "</a></td></tr>"),
             "  </table>")
 
   ## info section
   htm2 <- x$info
 
   ## package list
-  pkg2html <- function(a, b)
-    paste0("    <li><a href=\"", packageURL, a, "/index.html\">", a, "</a>",
+  pkg2html <- if(grepl("%s", packageURL, fixed = TRUE)) {
+    function(a, b)
+      paste0("    <li><a href=\"", sprintf(packageURL, a), "\">", a, "</a>",
+           if(b) " (core)" else "", "</li>")  
+  } else {
+    function(a, b)
+      paste0("    <li><a href=\"", packageURL, a, "/index.html\">", a, "</a>",
            if(b) " (core)" else "", "</li>")
+  }
+
   htm3 <- c(paste0("  <h3>", reposname, " packages:</h3>"),
             "  <ul>",
 	    sapply(1:NROW(x$packagelist), function(i) pkg2html(x$packagelist[i,1], x$packagelist[i,2])),
@@ -299,8 +319,8 @@ ctv2html <- function(x,
   invisible(htm)
 }
 
-repos_update_views <- function(repos = ".",
-			       css = "../CRAN_web.css",
+repos_update_views <- function(repos = ".", cran = TRUE,
+			       css = NULL,
 		   	       reposname = "CRAN",
 			       ...)
 {
@@ -308,6 +328,9 @@ repos_update_views <- function(repos = ".",
   ## exported arguments
   viewsrds <- "Views.rds"
   index <- "index.html"
+
+  ## default css specification
+  if(is.null(css) & cran) css <- "../CRAN_web.css"
 
   ## compute correct installation dirs
   viewdir <- file.path(repos, "web", "views")
@@ -331,11 +354,11 @@ repos_update_views <- function(repos = ".",
 
   for(i in 1:length(files)) {
     ## read .ctv and store in list
-    x <- read.ctv(file.path(viewdir, files[i]))
+    x <- read.ctv(file.path(viewdir, files[i]), cran = cran)
 
     ## generate HTML code
     ctv2html(x, file = file.path(viewdir, paste0(x$name, ".html")),
-             css = css, reposname = reposname, ...)
+             cran = cran, css = css, reposname = reposname, ...)
 
     ## to save space we eliminate the HTML slots
     x$info <- NULL
@@ -380,19 +403,16 @@ repos_update_views <- function(repos = ".",
 	     "package. The views are intended to have a sharp focus so that it is sufficiently",
 	     "clear which packages should be included (or excluded) - and they are <em>not</em> meant",
 	     "to endorse the \"best\" packages for a given task.</p>",
+             "",
+             "<p>To automatically install the views, the <a href=\"https://CRAN.R-project.org/package=ctv\">ctv</a> package needs to be installed, e.g., via<br />",
+	     "<tt>install.packages(\"ctv\")</tt><br />",
+	     "and then the views can be installed via <tt>install.views</tt> or <tt>update.views</tt>",           
+	     "(where the latter only installs those packages are not installed and up-to-date), e.g.,<br />",
+	     "<tt>ctv::install.views(\"Econometrics\")</tt><br />",
+	     "<tt>ctv::update.views(\"Econometrics\")</tt></p>",
 	     "",
-	     "<ul>",
-             "  <li>To automatically install the views, the <a href=\"https://CRAN.R-project.org/package=ctv\">ctv</a> package needs to be installed, e.g., via<br />",
-	     "   <tt>install.packages(\"ctv\")</tt><br />",
-	     "   and then the views can be installed via <tt>install.views</tt> or <tt>update.views</tt>",	     
-	     "   (where the latter only installs those packages are not installed and up-to-date), e.g.,<br />",
-	     "   <tt>ctv::install.views(\"Econometrics\")</tt><br />",
-	     "   <tt>ctv::update.views(\"Econometrics\")</tt></li>",
-	     "  <li>The task views are maintained by volunteers. You can help them by suggesting packages",
-	     "    that should be included in their task views. The contact e-mail addresses are listed on",
-	     "    the individual task view pages.</li>",
-	     "  <li>For general concerns regarding task views contact the <a href=\"https://CRAN.R-project.org/package=ctv\">ctv</a> package maintainer.</li>",
-	     "</ul>",
+             "<p>The resources provided by the <a href=\"https://github.com/cran-task-views/ctv\">CRAN Task View Initiative</a>",
+             "provide further information on how to contribute to existing task views and how to propose new task views.</p>",
 	     "",
 	     "<h3>Topics</h3>",
 	     "",
@@ -415,8 +435,14 @@ repos_update_views <- function(repos = ".",
 check_ctv_packages <- function(file, repos = TRUE, ...)
 {
   pkg_list <- read.ctv(file)$packagelist[, 1]
-  doc <- xml2::read_xml(file)
-  pkg_info <- unique(xml2::xml_text(xml2::xml_find_all(doc, "//info//pkg")))
+
+  ## for R/Markdown-based task views the package list is by construction identical
+  ## to that in the info section but for XML-based task views this needs to be checked
+  pkg_info <- if(any(grepl("<CRANTaskView", readLines(file), fixed = TRUE))) {
+    unique(xml2::xml_text(xml2::xml_find_all(xml2::read_xml(file), "//info//pkg")))  
+  } else {
+    pkg_list
+  }
 
   rval <- list(
     "Packages in <info> but not in <packagelist>" = pkg_info[!(pkg_info %in% pkg_list)],

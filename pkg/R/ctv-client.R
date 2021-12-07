@@ -9,6 +9,7 @@ print.ctv <- function(x, packagelist = TRUE, ...)
 	    if(!is.null(x$url)) sprintf("\nURL:        %s", x$url),
 	    "\n",
 	    ifelse(is.null(x$repository), "", paste("Repository: ", x$repository, sep = "")),
+	    if(!is.null(x$source)) sprintf("\nSource:     %s", x$source),
 	    "\n", sep = ""))
   if(packagelist) {
     pkgs <- paste(strwrap(paste(x$packagelist$name, ifelse(x$packagelist$core, "*", ""), sep = "", collapse = ", "),

@@ -73,25 +73,24 @@ For a more detailed description of the arguments see also \code{\link{install.pa
 }
 
 \references{
-Zeileis A (2005). CRAN Task Views.
-  \emph{R News}, \bold{5}(1), 39--40.
-  \url{https://CRAN.R-project.org/doc/Rnews/}.
+Zeileis A et al. (2021). CRAN Task View Initiative.
+  \url{https://github.com/cran-task-views/ctv}.
 }
 
 \seealso{\code{\link{install.packages}}}
 
 \examples{
 \dontrun{
-  ## query names of CRAN task views available
-  available.views()
-  
-  ## install Econometrics view
-  install.views("Econometrics")
-  ## only with core packages
-  install.views("Econometrics", coreOnly = TRUE)
+## query names of CRAN task views available
+available.views()
 
-  ## update Econometrics view
-  update.views("Econometrics")
+## install Econometrics view
+install.views("Econometrics")
+## only with core packages
+install.views("Econometrics", coreOnly = TRUE)
+
+## update Econometrics view
+update.views("Econometrics")
 }
 }
 \keyword{utilities}

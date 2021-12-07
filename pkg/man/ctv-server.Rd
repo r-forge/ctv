@@ -9,24 +9,27 @@ Server-side tools for maintaining CRAN task views.
 }
 
 \usage{
-read.ctv(file)
+read.ctv(file, ...)
 
-ctv2html(x, file = NULL, css = "../CRAN_web.css",
-  packageURL = "../packages/", reposname = "CRAN")
+ctv2html(x, file = NULL, cran = FALSE,
+  css = NULL, packageURL = NULL, reposname = "CRAN")
 
 check_ctv_packages(file, repos = TRUE, \dots)
 
-repos_update_views(repos = ".", css = "../CRAN_web.css", reposname = "CRAN", \dots)
+repos_update_views(repos = ".", cran = TRUE,
+  css = NULL, reposname = "CRAN", \dots)
 }
 \arguments{
   \item{file}{character specifying a file path: for \code{read.ctv} a CRAN
-    task view \file{.ctv} file, and for \code{ctv2html} the corresponding
-    output \file{.html} file.}
+    task view file, and for \code{ctv2html} the corresponding output \file{.html} file.}
   \item{x}{an object of class \code{"ctv"} as returned by \code{read.ctv}.}
+  \item{cran}{logical. Is the HTML to be hosted on CRAN?}
   \item{css}{character specifying the path and name of the cascade style
-    sheet that should be included in the HTML files.}
+    sheet that should be included in the HTML files (if any). The default
+    is \code{"../CRAN_web.css"} if \code{cran = TRUE} and \code{NULL} otherwise.}
   \item{packageURL}{character specifying the path (relative to the view directory)
-    to the package descriptions.}
+    to the package descriptions. The default is \code{"https://CRAN.R-project.org/package=\%s"}
+    if \code{cran = FALSE} and \code{"../packages/"} otherwise.}
   \item{reposname}{character giving the name of the CRAN-style repository,
     used for generating HTML pages.}
   \item{repos}{character, the base URL of the CRAN-style repository where the \file{Views.rds}
@@ -37,12 +40,14 @@ repos_update_views(repos = ".", css = "../CRAN_web.css", reposname = "CRAN", \do
 }
 
 \details{
-CRAN Task views are generated from an XML-based format \file{.ctv} that is described in
-the vignette of this package.
+CRAN Task views are generated from an R/Markdown-based file format that is described in
+the vignette of this package. (Previous versions used an XML-based format which is still
+fully supported in all functions.)
 
-\code{read.ctv} can read a \file{.ctv} file with a CRAN task view specification
+\code{read.ctv} can read a file with a CRAN task view specification
 and returns an object of class \code{"ctv"}. This functions requires the availability
-of the \pkg{xml2} package.
+of the \pkg{knitr}/\pkg{rmarkdown} packages (or the \pkg{xml2} package, respectively,
+for the legacy XML format).
 
 \code{ctv2html} generates a \file{.html} file with the information contained in
 a \code{"ctv"} object.
@@ -51,14 +56,14 @@ a \code{"ctv"} object.
 \file{.ctv} file are consistent with each other and whether all packages are available
 from the repository.
 
-\code{repos_update_views} reads all \file{.ctv} files in a specified directory, generates
+\code{repos_update_views} reads all task view files in a specified directory, generates
 a \file{.html} file for each and an index \file{.html} file. Furthermore, it stores
 all \code{"ctv"} objects in a \code{"ctvlist"} object in a file \file{Views.rds} that can be queried
 by \code{\link{install.views}} or \code{\link{CRAN.views}}.
 }
 
 \value{
-  \code{updateViews} returns an object of class \code{"ctvlist"} containing
+  \code{repos_update_views} returns an object of class \code{"ctvlist"} containing
   the \code{"ctv"} objects available.
   
   \code{ctv2html} returns invisibly a vector with the HTML code generated.
@@ -70,6 +75,7 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
   \item{email}{character, valid e-mail address (optional).}
   \item{version}{character, version specified via date in ISO format.}
   \item{url}{character, valid task view URL (optional).}
+  \item{source}{character, source repository where the task view file is maintained (optional).}
   \item{info}{character, HTML code with informations about the task view.}
   \item{packagelist}{data frame with the columns \code{name}
     (character, name of package) and \code{core} (logical, Is priority core?).}
@@ -77,9 +83,8 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
 }
 
 \references{
-Zeileis A (2005). CRAN Task Views.
-  \emph{R News}, \bold{5}(1), 39--40.
-  \url{https://CRAN.R-project.org/doc/Rnews/}.
+Zeileis A et al. (2021). CRAN Task View Initiative.
+  \url{https://github.com/cran-task-views/ctv}.
 }
 
 \seealso{\code{\link{install.views}}}
