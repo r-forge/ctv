@@ -1,0 +1,30 @@
+url: "https://ctv.R-Forge.R-project.org/"
+destination: "../www/"
+
+template:
+  assets: "pkgdown/assets/"
+  opengraph:
+    image:
+      src: logo.png
+    twitter:
+      creator: "@AchimZeileis"
+      card: summary
+
+navbar:
+  left:
+    - text: "Guide"
+      href: articles/ctv-howto.html
+    - text: "Reference"
+      href: reference/index.html
+    - text: "Changelog"
+      href: news/index.html
+    - text: "Contact"
+      href: contact.html
+
+reference:
+  - title: "Client-side tools"
+    contents: 
+      - install.views
+  - title: "Server-side tools"
+    contents: 
+      - read.ctv

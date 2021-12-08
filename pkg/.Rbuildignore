@@ -1,3 +1,7 @@
 WISHLIST
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^pkgdown$
+^_pkgdown\.yml$
+^contact.md$
+^logo*.png$
