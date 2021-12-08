@@ -1,0 +1,10 @@
+pandoc: 2.9.2.1
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  ctv-howto: ctv-howto.html
+last_built: 2021-12-08T04:25Z
+urls:
+  reference: https://ctv.R-Forge.R-project.org//reference
+  article: https://ctv.R-Forge.R-project.org//articles
+
