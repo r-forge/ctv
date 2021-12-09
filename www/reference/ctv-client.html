@@ -201,7 +201,7 @@ the <code class="file">src/contrib</code> directory of <code class="file">repos<
 <code><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></code> to install the packages associated with the
 view specified. For each view it can be specified whether all packages or
 only the core packages should be installed.</p>
-<p><code>available.views</code> returns the names of the task views currently
+<p><code>available.views</code> returns the list of task views currently
 available in the file <code class="file">Views.rds</code>. In earlier versions, this was called
 <code>CRAN.views</code> (which still works and provides the same functionality).</p>
 <p><code>update.views</code> queries which packages from a view are not yet
@@ -209,7 +209,7 @@ installed (using <code><a href='https://rdrr.io/r/utils/installed.packages.html'
 packages are older than the packages available (using <code><a href='https://rdrr.io/r/utils/available.packages.html'>available.packages</a></code>).
 It subsequently installs only the packages that are not current or not
 installed yet.</p>
-<p><code>download.views</code> works exactly as <code>install.views</code> except that it
+<p><code>download.views</code> works exactly as <code>install.views</code> except that it calls
 <code><a href='https://rdrr.io/r/utils/download.packages.html'>download.packages</a></code> instead of <code>install.packages</code>.</p>
 <p>For a more detailed description of the arguments see also <code><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></code>.</p>
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
@@ -217,17 +217,13 @@ installed yet.</p>
     <p><code>available.views</code> returns an object of class <code>"ctvlist"</code> of the 
   available task views whose elements are of class <code>"ctv"</code>.</p>  
 <p><code>install.views</code> and <code>update.views</code> have no return value.</p>
-    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
-
-    <p>Zeileis A et al. (2021). CRAN Task View Initiative.
-  <a href='https://github.com/cran-task-views/ctv'>https://github.com/cran-task-views/ctv</a>.</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><span class='r-in'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span></span>
-<span class='r-in'><span class='co'>## query names of CRAN task views available</span></span>
+<span class='r-in'><span class='co'>## query list of CRAN task views available</span></span>
 <span class='r-in'><span class='fu'>available.views</span><span class='op'>(</span><span class='op'>)</span></span>
 <span class='r-in'></span>
 <span class='r-in'><span class='co'>## install Econometrics view</span></span>
