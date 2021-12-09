@@ -379,6 +379,7 @@ repos_update_views <- function(repos = ".", cran = TRUE,
     idx[i,] <- c(x$name, x$topic)
     rval[[i]] <- x
   }
+  names(rval) <- idx[, 1L]
 
   ## save all views
   saveRDS(rval, file = viewsrds, version = 2) ## compress = TRUE currently does not work for reading from an url
