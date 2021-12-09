@@ -49,7 +49,7 @@ the \file{src/contrib} directory of \file{repos} and then simply calls
 view specified. For each view it can be specified whether all packages or
 only the core packages should be installed.
 
-\code{available.views} returns the names of the task views currently
+\code{available.views} returns the list of task views currently
 available in the file \file{Views.rds}. In earlier versions, this was called
 \code{CRAN.views} (which still works and provides the same functionality).
 
@@ -59,7 +59,7 @@ packages are older than the packages available (using \code{\link{available.pack
 It subsequently installs only the packages that are not current or not
 installed yet.
 
-\code{download.views} works exactly as \code{install.views} except that it
+\code{download.views} works exactly as \code{install.views} except that it calls
 \code{\link{download.packages}} instead of \code{install.packages}.
 
 For a more detailed description of the arguments see also \code{\link{install.packages}}.
@@ -72,16 +72,11 @@ For a more detailed description of the arguments see also \code{\link{install.pa
   \code{install.views} and \code{update.views} have no return value.
 }
 
-\references{
-Zeileis A et al. (2021). CRAN Task View Initiative.
-  \url{https://github.com/cran-task-views/ctv}.
-}
-
 \seealso{\code{\link{install.packages}}}
 
 \examples{
 \dontrun{
-## query names of CRAN task views available
+## query list of CRAN task views available
 available.views()
 
 ## install Econometrics view

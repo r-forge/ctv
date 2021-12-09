@@ -82,27 +82,22 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
   \item{links}{character vector, HTML code with links for the task view.}
 }
 
-\references{
-Zeileis A et al. (2021). CRAN Task View Initiative.
-  \url{https://github.com/cran-task-views/ctv}.
-}
-
 \seealso{\code{\link{install.views}}}
 
 \examples{
-## .ctv file shipped withing the package
-ctv <- system.file("ctv", "Econometrics.ctv", package = "ctv")
+## task view file shipped within the package
+ctv <- system.file("ctv", "Econometrics.md", package = "ctv")
 
-## read .ctv file
+## read task view file
 x <- read.ctv(ctv)
 
 ## print
 x
 
 \dontrun{
-## generate corresponding .html file from object
+## generate corresponding .html file from task view object
 ctv2html(x)
-## or equivalently from .ctv file
+## or equivalently from task view file
 ctv2html(ctv)
 
 ## check packagelist
