@@ -3,7 +3,7 @@
 library("ctv")
 
 cdir <- system.file("ctv", package="ctv")
-ctvs <- list.files(cdir, pattern = "\\.ctv$")
+ctvs <- list.files(cdir, pattern = "\\.(ctv|md)$")
 ctvs
 
 rr <- sapply(ctvs,
