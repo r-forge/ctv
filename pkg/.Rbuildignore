@@ -5,3 +5,4 @@ WISHLIST
 ^_pkgdown\.yml$
 ^contact.md$
 ^logo*.png$
+^inst/(?!\S+(?:Econometrics)\.(ctv|md)$)ctv\S+$
