@@ -148,7 +148,7 @@ package like `r pkg("ivreg")` or an important "core" package like
 <li>
 <code>bioc()</code> for Bioconductor packages at <a href="https://www.Bioconductor.org/" class="uri">https://www.Bioconductor.org/</a>.</li>
 <li>
-<code>github()</code> for GitHub projects at <a href="https://GitHub.com/" class="uri">https://GitHub.com/</a>.</li>
+<code>github()</code> for GitHub projects at <a href="https://github.com/" class="uri">https://github.com/</a>.</li>
 <li>
 <code>rforge()</code> for R-Forge projects at <a href="https://R-Forge.R-project.org/" class="uri">https://R-Forge.R-project.org/</a>.</li>
 <li>
@@ -165,7 +165,7 @@ package like `r pkg("ivreg")` or an important "core" package like
 <a href="#working-with-task-view-files-in-r" class="anchor"></a>Working with task view files in R</h2>
 <p>To check whether a task view file has been formatted properly it can be read into R and printed. This should display the metainformation and the list of packages. Subsequently, it can be rendered to an HTML page and displayed in a browser for checking whether the information text is processed correctly.</p>
 <p>For illustration, the code below employs the <code>Econometrics.md</code> file shipped within the <code>ctv</code> package. Instead a local <code>MyNewView.md</code> with resulting <code>MyNewView.html</code> could be used as well.</p>
-<pre><code><a href="https://github.com/cran-task-views/ctv">library("ctv")
+<pre><code><a href="https://github.com/cran-task-views/ctv/">library("ctv")
 x &lt;- read.ctv(system.file("ctv", "Econometrics.md", package = "ctv"))
 print(x)
 ctv2html(x)
