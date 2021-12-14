@@ -1,13 +1,16 @@
 # ctv 0.9-0
 
 * Various substantial changes to support the launch of the
-  [CRAN Task View Initiative](https://github.com/cran-task-views/ctv):
+  [CRAN Task View Initiative](https://github.com/cran-task-views/ctv/):
   Development and maintenance of CRAN task views will be overseen by a team
   of CRAN Task View Editors who review and approve new task views and help
   maintainers with onbaording. Infrastructure for this is moved from R-Forge
   to GitHub (with only the maintenance of the `ctv` package remaining on R-Forge).
   The file format for task view files changes from the old XML-based format
   to a new leaner R-Markdown based format.
+
+* For the R package `ctv` itself there is now a pkgdown web page at:
+  <https://ctv.R-Forge.R-project.org/>.
 
 * The `vignette("ctv-howto", package = "ctv")` has been completely rewritten,
   now describing the new R/Markdown-based format. (The vignette itself is now
