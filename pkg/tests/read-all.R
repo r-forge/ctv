@@ -6,6 +6,8 @@ cdir <- system.file("ctv", package="ctv")
 ctvs <- list.files(cdir, pattern = "\\.(ctv|md)$")
 ctvs
 
+if(require("knitr") & require("rmarkdown") & require("xml2")) {
+
 rr <- sapply(ctvs,
 	     function(ctv) {
 		 cat(sprintf("%25s  ",ctv))
@@ -19,4 +21,6 @@ for(n in names(rr)) {
     cat(n," :\n", rep.int("=", nchar(n)),"\n", sep='')
     print(rr[[n]])
     cat("--------------------------------------------------------\n")
+}
+
 }

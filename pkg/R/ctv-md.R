@@ -109,7 +109,7 @@ read_ctv_rmd <- function(file, cran = FALSE, format = "html")
   rmd <- readLines(file)
 
   ## file names
-  file_rmd <- gsub("\\.([[:alnum:]]+)$", ".Rmd", file)
+  file_rmd <- gsub("\\.([[:alnum:]]+)$", ".Rmd", basename(file))
   file_md <- gsub("\\.Rmd$", ".md", file_rmd)
 
   ## output format

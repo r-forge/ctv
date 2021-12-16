@@ -1,3 +1,12 @@
+# ctv 0.9-1
+
+* Bug fix in `read.ctv(file)` when `file` is actually a full path and not just
+  the name of file in the local working directory.
+
+* Make all examples of `read.ctv()` conditional on `knitr` and `rmarkdown`
+  being available (or `xml2` being available in case of the legacy XML format).
+
+
 # ctv 0.9-0
 
 * Various substantial changes to support the launch of the

@@ -88,11 +88,13 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
 ## task view file shipped within the package
 ctv <- system.file("ctv", "Econometrics.md", package = "ctv")
 
+if(require("knitr") & require("rmarkdown")) {
 ## read task view file
 x <- read.ctv(ctv)
 
 ## print
 x
+}
 
 \dontrun{
 ## generate corresponding .html file from task view object
