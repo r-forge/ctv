@@ -3,7 +3,7 @@
   <name>NumericalMathematics</name>
   <topic>Numerical Mathematics</topic>
   <maintainer email="hwb@mailbox.org">Hans W. Borchers</maintainer>
-  <version>2021-11-08</version>
+  <version>2021-12-15</version>
   
   <info>
 
@@ -71,9 +71,9 @@
         eigenvalues and eigenvectors of real symmetric or complex Hermitian 
         matrices. It will find largest, smallest, or interior eigen-/singular 
         values and will apply preconditioning to accelerate convergence.</li>
-    <li>The package <pkg>geigen</pkg> computes generalized 
-        eigenvalues and -vectors for pairs of matrices, and QZ (generalized 
-        Schur) decompositions.</li>
+    <li>The <pkg>geigen</pkg> package computes generalized eigenvalues and 
+        -vectors for pairs of matrices and QZ (generalized Schur) 
+        decompositions.</li>
     <li><pkg>eigeninv</pkg> generates matrices with a given set of 
         eigenvalues ('inverse eigenvalue problem').</li>
     <li>Package <pkg>rARPACK</pkg>, a wrapper for the ARPACK library, is 
@@ -228,6 +228,8 @@
         and Legendre quadrature rules, explicitly returning nodes and weights 
         in each case. Function <code>gaussquad()</code> in package 
         <pkg>statmod</pkg> does a similar job.</li>
+    <li><pkg>GramQuad</pkg> allows for numerical integration based on Gram 
+        polynomials.</li>
     <li>Package <pkg>fastGHQuad</pkg> provides a fast <pkg>Rcpp</pkg>-based
         implementation of (adaptive) Gauss-Hermite quadrature.</li>
     <li>Adaptive multivariate integration over hyper-rectangles in 
@@ -342,6 +344,9 @@
         strategies such as line searches or trust regions.</li>
     <li><pkg>ktsolve</pkg> defines a common interface for solving a set of
         equations with <code>BB</code> or <code>nleqslv</code>.</li>
+    <li><pkg>FixedPoint</pkg> provides algorithms for finding fixed point 
+        vectors of functions, including Anderson acceleration, epsilon 
+        extrapolation methods, or minimal polynomial methods .</li>
     <li>Package <pkg>daarem</pkg> implements the DAAREM method for accelerating 
         the convergence of any smooth, monotone, slow fixed point iteration.</li>
     <li>Algorithms for accelerating the convergence of slow, monotone 
@@ -421,11 +426,16 @@
     <li><pkg>VeryLargeIntegers</pkg> implements a multi-precision library that 
         allows to store and manage arbitrarily big integers; it includes 
         probabilistic primality tests and factorization algorithms.</li>
+    <li><pkg>bignum</pkg> is a package for arbitrary-precision integer and 
+        floating-point numbers of 50 decimal digits of precision. The package 
+        utilizes the 'Boost.Multiprecision' C++ library and is specifically 
+        designed to work with the 'tidyverse' collection of R packages.</li>
     <li>Package <pkg>Ryacas</pkg> interfaces the computer algebra system    
         'Yacas'; it supports symbolic and arbitrary precision computations  
         in calculus and linear algebra.</li>
-    <li>Packages <pkg>caracas</pkg> (based on 'reticulate') accesses the symbolic algebra 
-        system 'SymPy'; supported are symbolic operations in linear algebra and 
+    <li>Package <pkg>caracas</pkg> 
+        (based on 'reticulate') accesses the symbolic algebra system 
+        'SymPy'; supported are symbolic operations in linear algebra and 
         calculus, such as eigenvalues, derivatives, integrals, limits, etc.,
         computing special functions, or solving systems of equations.</li>
     <li>Package <pkg>symengine</pkg> provides an interface to 'SymEngine',
@@ -516,6 +526,11 @@
     math programs. SageMath can be freely used through a Web interface at
     <a href="https://cocalc.com/">CoCalc</a>.</p>
 
+    <p>Package <pkg>rim</pkg> provides an interface to the free and powerful 
+    computer algebra system 'Maxima'. Results can be output in 'LaTeX' or 
+    'MathML' and 2D and 3D plots will be displayed directly. 'Maxima' code 
+    chunks can be included in 'RMarkdown' documents.</p>
+
     <p>Package <pkg>m2r</pkg> provides a persistent interface to Macauley2, 
     an extended software program supporting research in algebraic geometry 
     and commutative algebra. Macauley2 has to be installed independently,
@@ -532,6 +547,7 @@
     <pkg>arrangements</pkg>
     <pkg>BB</pkg>
     <pkg>Bessel</pkg>
+    <pkg>bignum</pkg>
     <pkg>Brobdingnag</pkg>
     <pkg>calculus</pkg>
     <pkg>caracas</pkg>
@@ -553,12 +569,14 @@
     <pkg>fastGHQuad</pkg>
     <pkg>feather</pkg>
     <pkg>features</pkg>
+    <pkg>FixedPoint</pkg>
     <pkg>fourierin</pkg>
     <pkg>freealg</pkg>
     <pkg>freegroup</pkg>
     <pkg>gaussquad</pkg>
     <pkg>geigen</pkg>
     <pkg>gmp</pkg>
+    <pkg>GramQuad</pkg>
     <pkg>gsl</pkg>
     <pkg>hypergeo</pkg>
     <pkg>HypergeoMat</pkg>
@@ -608,6 +626,7 @@
     <pkg>RcppBigIntAlgos</pkg>
     <pkg>RcppEigen</pkg>
     <pkg>reticulate</pkg>
+    <pkg>rim</pkg>
     <pkg>Rlinsolve</pkg>
     <pkg>rmatio</pkg>
     <pkg>Rmpfr</pkg>
