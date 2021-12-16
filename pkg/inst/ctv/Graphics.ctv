@@ -117,10 +117,7 @@
           graphics engine somewhat inflexible and have written separate device
           drivers that either emphasize interactivity or plotting in various
           graphics formats. R base supplies devices for PostScript, PDF, JPEG
-          and other formats. Devices on CRAN include <pkg>cairoDevice</pkg> which
-          is a device based libcairo, which can actually render to many device
-          types. The cairo device is designed to work with <pkg>RGtk2</pkg>,
-          which is an interface to the Gimp Tool Kit, similar to pyGTK2.
+          and other formats.
           <pkg>rgl</pkg> provides a device driver
           based on OpenGL, and is good for 3D and interactive
           development. Lastly, the Augsburg group supplies a set of packages
@@ -166,7 +163,6 @@
     <pkg>aplpack</pkg>
     <pkg>ash</pkg>
     <pkg>biclust</pkg>
-    <pkg>cairoDevice</pkg>
     <pkg>Cairo</pkg>
     <pkg>cba</pkg>
     <pkg>colorspace</pkg>
@@ -190,7 +186,6 @@
     <pkg priority="core">RColorBrewer</pkg>
     <pkg priority="core">rgl</pkg>
     <pkg>RGraphics</pkg>
-    <pkg>RGtk2</pkg>
     <pkg>scagnostics</pkg>
     <pkg>tkrplot</pkg>
     <pkg>scatterplot3d</pkg>
