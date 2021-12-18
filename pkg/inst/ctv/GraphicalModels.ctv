@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView>
 
-  <name>gR</name>
-  <topic>gRaphical Models in R</topic>
+  <name>GraphicalModels</name>
+  <topic>Graphical Models</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2021-07-15</version>
+  <version>2021-12-18</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -134,35 +134,25 @@
       Estimation of k-Order time-varying Mixed Graphical Models and
       mixed VAR(p) models via elastic-net regularized neighborhood
       regression.
-    
     </li>
 
     <!-- <li> -->
-    <!-- <pkg> </pkg -->
-
+    <!--   <pkg>gRapHD</pkg> -->
+    <!--   Package for selecting and fitting high-dimensional graphical -->
+    <!--   models for discrete, Gaussian, or mixed discrete and Gaussian -->
+    <!--   data. -->
+    <!--   Link: <a href="https://dx.doi.org/doi:10.18637/jss.v037.i01">doi:10.18637/jss.v037.i01</a> -->
     <!-- </li> -->
-    
-    
-    <!--
-    <li>
-      <pkg>gRapHD</pkg>
-      Package for selecting and fitting high-dimensional graphical
-      models for discrete, Gaussian, or mixed discrete and Gaussian
-      data.
-      Link: <a href="https://dx.doi.org/doi:10.18637/jss.v037.i01">doi:10.18637/jss.v037.i01</a>
-    </li>
--->
 
 
-<!--    <li>
-      <pkg>mimR</pkg>
-      General package for model selection in contingency
-      tables, graphical Gaussian models and mixed interaction
-      models. The package provides an interface to the MIM
-      program and only runs on Windows.
-      Link: <a href="https://dx.doi.org/doi:10.18637/jss.v011.i06">doi:10.18637/jss.v011.i06</a>
-    </li>
--->
+    <!-- <li> -->
+    <!--   <pkg>mimR</pkg> -->
+    <!--   General package for model selection in contingency -->
+    <!--   tables, graphical Gaussian models and mixed interaction -->
+    <!--   models. The package provides an interface to the MIM -->
+    <!--   program and only runs on Windows. -->
+    <!--   Link: <a href="https://dx.doi.org/doi:10.18637/jss.v011.i06">doi:10.18637/jss.v011.i06</a> -->
+    <!-- </li> -->
 
   </ul>
 
