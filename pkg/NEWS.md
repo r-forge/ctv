@@ -1,3 +1,11 @@
+# ctv 0.9-2
+
+* Bug fix in `read.ctv()` when `pkg(..., priority = "core")` is used more than
+  once on the same package name (reported by Rocio Joo).
+  
+* Sorting the package list is done ignoring the case now.
+
+
 # ctv 0.9-1
 
 * Bug fix in `read.ctv(file)` when `file` is actually a full path and not just
