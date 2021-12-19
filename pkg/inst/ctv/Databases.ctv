@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2020-08-02</version>
+   <version>2021-12-19</version>
 
   <info>
     <p>
@@ -82,7 +82,7 @@
         The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>, Google's fully managed, petabyte scale, low cost analytics data warehouse.
       </li>
       <li>
-        The <a href="https://github.com/druid-io/RDruid">RDruid</a> package provides the interface to <a href="http://druid.io/">Apache Druid</a>, a high performance analytics data store for event-driven data.
+        The <github>druid-io/RDruid</github> package on GitHub provides the interface to <a href="https://druid.apache.org/">Apache Druid</a>, a high performance analytics data store for event-driven data.
       </li>
       <li>
         The <pkg>RH2</pkg> package provides the interface to <a href="http://www.h2database.com/">H2 Database Engine</a>, the Java SQL database.
@@ -123,7 +123,7 @@
       <li>
         Packages for <a href="https://redis.io/">Redis</a>, an open-source, in-memory data structure store that can be used as a database, cache and message broker:
         <ul>
-          <li>The <pkg>RcppRedis</pkg> package provides interface to Redis using the <a href="https://github.com/redis/hiredis">hiredis library</a>.</li>
+          <li>The <pkg>RcppRedis</pkg> package provides interface to Redis using <github>redis/hiredis</github>.</li>
           <li>The <pkg>redux</pkg> package provides a low-level interface to Redis, allowing execution of arbitrary Redis commands with almost no interface, and a high-level generated interface to more than 200 redis commands.</li>
         </ul>
       </li>
@@ -135,7 +135,7 @@
 </li>
         </ul>
       </li>
-      <li>The <pkg>mongolite</pkg> package provides a high-level, high-performance <a href="https://www.mongodb.com/">MongoDB</a> client based on <a href="https://github.com/mongodb/mongo-c-driver">libmongoc</a>, including support for aggregation, indexing, map-reduce, streaming, SSL encryption and SASL authentication.</li>
+      <li>The <pkg>mongolite</pkg> package provides a high-level, high-performance <a href="https://www.mongodb.com/">MongoDB</a> client based on <github>mongodb/mongo-c-driver</github>, including support for aggregation, indexing, map-reduce, streaming, SSL encryption and SASL authentication.</li>
       <li>
         The <pkg>R4CouchDB</pkg> package provides a collection of functions for basic database and document management operations in <a href="http://couchdb.apache.org/">CouchDB</a>.
       </li>
@@ -143,10 +143,10 @@
         The <pkg>RCassandra</pkg> package provides a direct interface (without the use of Java) to the most basic functionality of <a href="http://cassandra.apache.org/">Apache Cassanda</a> such as login, updates and queries.
       </li>
       <li>
-        The <a href="https://github.com/cloudyr/aws.dynamodb">aws.dynamodb</a> package provides access to <a href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a>.
+        The <github>cloudyr/aws.dynamodb</github> package on GitHub provides access to <a href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a>.
       </li>
       <li>
-        The <a href="https://github.com/mrcsparker/rrocksdb">rrocksdb</a> package provides access to <a href="http://rocksdb.org">RocksDB</a>.
+        The <github>mrcsparker/rrocksdb</github> package on GitHub provides access to <a href="http://rocksdb.org">RocksDB</a>.
       </li>
 
     </ul>
@@ -175,6 +175,9 @@
       <li>
         The <pkg>TScompare</pkg> package provides utilities for comparing the equality of series on two databases.
       </li>
+      <li>
+        The <pkg>dittodb</pkg> package provides functionality to test database interactions with any <pkg>DBI</pkg> compliant database backend. It includes functionality to use fixtures instead of direct database calls during testing as well as functionality to record those fixtures when interacting with a real database for later use in tests.
+      </li>
     </ul>
 
   </info>
@@ -184,6 +187,7 @@
     <pkg>dbplyr</pkg>
     <pkg priority="core">DBI</pkg>
     <pkg>DBItest</pkg>
+    <pkg>dittodb</pkg>
     <pkg>dbx</pkg>
     <pkg>dplyr</pkg>
     <pkg>elastic</pkg>
