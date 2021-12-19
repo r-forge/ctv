@@ -180,7 +180,7 @@ read_ctv_rmd <- function(file, cran = FALSE, format = "html")
   x$info <- if(format == "html") pandoc(md) else md
 
   ## packagelist
-  x$packagelist <- .ctv_env$packagelist[order(.ctv_env$packagelist$name), ]
+  x$packagelist <- .ctv_env$packagelist[order(tolower(.ctv_env$packagelist$name)), ]
 
   ## links
   x$links <- links  
