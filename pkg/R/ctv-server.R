@@ -298,10 +298,14 @@ ctv2html <- function(x,
 	    "  </ul>")
 
   ## further links
-  htm4 <- c("  <h3>Related links:</h3>",
+  htm4 <- if(!is.null(x$links)) {
+          c("  <h3>Related links:</h3>",
             "  <ul>",
             sapply(x$links, function(x) paste0("    <li>", x, "</li>")),
 	    "  </ul>")
+          } else {
+            NULL 
+          }
 
   if(!is.null(x$otherlinks)) {
   htm4 <- c(htm4, "",

@@ -5,6 +5,9 @@
   
 * Sorting the package list is done ignoring the case now.
 
+* `ctv2html()` now also works correctly if no links section is provided by the
+  task view.
+
 
 # ctv 0.9-1
 
