@@ -52,7 +52,7 @@ bioc <- function(name, register = TRUE) {
       data.frame(name = name, source = "bioc", stringsAsFactors = FALSE))
   }
   ## return URL
-  sprintf("[%s](https://www.Bioconductor.org/packages/release/bioc/html/%s)", name, name)
+  sprintf("[%s](https://www.Bioconductor.org/packages/release/bioc/html/%s.html)", name, name)
 }
 
 rforge <- function(name, register = TRUE) {
