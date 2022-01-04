@@ -5,8 +5,9 @@
   
 * Sorting the package list is done ignoring the case now.
 
-* `ctv2html()` now also works correctly if no links section is provided by the
-  task view.
+* Various improvements in `ctv2html()`: Include explicit citation in header table,
+  more compact layout of package list, handle task views without links section
+  correctly.
 
 
 # ctv 0.9-1

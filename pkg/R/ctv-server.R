@@ -242,6 +242,15 @@ ctv2html <- function(x,
   ## create HTML
   ## header
   title <- paste0(reposname, " Task View: ", htmlify(x$topic))
+
+  ## citation
+  cit <- sprintf("%s (%s). %s Task View: %s. Version %s.%s",
+    htmlify(x$maintainer),
+    substr(x$version, 1L, 4L),
+    reposname,
+    htmlify(x$topic),
+    htmlify(x$version),
+    if(is.null(x$url)) "" else paste0(" URL ", htmlify(x$url), "."))
   
   htm1 <- c("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">",
             "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
@@ -276,6 +285,7 @@ ctv2html <- function(x,
      paste0("    <tr><td valign=\"top\"><b>Version:</b></td><td>", htmlify(x$version), "</td></tr>"),
      if(!is.null(x$url)) paste0("    <tr><td valign=\"top\"><b>URL:</b></td><td><a href=\"", htmlify(x$url), "\">", htmlify(x$url), "</a></td></tr>"),
      if(!is.null(x$source)) paste0("    <tr><td valign=\"top\"><b>Source:</b></td><td><a href=\"", htmlify(x$source), "\">", htmlify(x$source), "</a></td></tr>"),
+     paste0("    <tr><td valign=\"top\"><b>Citation:</b></td><td>", cit, "</td></tr>"),
             "  </table>")
 
   ## info section
@@ -283,19 +293,18 @@ ctv2html <- function(x,
 
   ## package list
   pkg2html <- if(grepl("%s", packageURL, fixed = TRUE)) {
-    function(a, b)
-      paste0("    <li><a href=\"", sprintf(packageURL, a), "\">", a, "</a>",
-           if(b) " (core)" else "", "</li>")  
+    function(name,  core = FALSE)
+      paste0("<a href=\"", sprintf(packageURL, name), "\">", name, "</a>", if(core) " (core)" else "")
   } else {
-    function(a, b)
-      paste0("    <li><a href=\"", packageURL, a, "/index.html\">", a, "</a>",
-           if(b) " (core)" else "", "</li>")
+    function(name, core = FALSE)
+      paste0("<a href=\"", packageURL, name, "/index.html\">", name, "</a>", if(core) " (core)" else "")
   }
 
   htm3 <- c(paste0("  <h3>", reposname, " packages:</h3>"),
-            "  <ul>",
-	    sapply(1:NROW(x$packagelist), function(i) pkg2html(x$packagelist[i,1], x$packagelist[i,2])),
-	    "  </ul>")
+            sprintf("  <p><i>Core packages:</i> %s.</p>",
+              if(!any(x$packagelist[, 2L])) "<i>None</i>" else paste(sapply(x$packagelist[x$packagelist[, 2L], 1L], pkg2html), collapse = ", ")),
+            sprintf("  <p><i>Regular packages:</i> %s.</p>",
+              if(all(x$packagelist[, 2L])) "<i>None</i>" else paste(sapply(x$packagelist[!x$packagelist[, 2L], 1L], pkg2html), collapse = ", ")))
 
   ## further links
   htm4 <- if(!is.null(x$links)) {
