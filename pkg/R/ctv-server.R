@@ -300,15 +300,18 @@ ctv2html <- function(x,
       paste0("<a href=\"", packageURL, name, "/index.html\">", name, "</a>", if(core) " (core)" else "")
   }
 
-  htm3 <- c(paste0("  <h3>", reposname, " packages:</h3>"),
-            sprintf("  <p><i>Core packages:</i> %s.</p>",
+  htm3 <- c(paste0("  <h3>", reposname, " packages</h3>"),
+            "  <table summary=\"Package list\">",
+            sprintf("    <tr valign=\"top\"><td><i>Core:</i></td><td>%s.</td></tr>",
               if(!any(x$packagelist[, 2L])) "<i>None</i>" else paste(sapply(x$packagelist[x$packagelist[, 2L], 1L], pkg2html), collapse = ", ")),
-            sprintf("  <p><i>Regular packages:</i> %s.</p>",
-              if(all(x$packagelist[, 2L])) "<i>None</i>" else paste(sapply(x$packagelist[!x$packagelist[, 2L], 1L], pkg2html), collapse = ", ")))
+            sprintf("    <tr valign=\"top\"><td><i>Regular:</i></td><td>%s.</td></tr>",
+              if(all(x$packagelist[, 2L])) "<i>None</i>" else paste(sapply(x$packagelist[!x$packagelist[, 2L], 1L], pkg2html), collapse = ", ")),
+            "  </table>"
+            )
 
   ## further links
   htm4 <- if(!is.null(x$links)) {
-          c("  <h3>Related links:</h3>",
+          c("  <h3>Related links</h3>",
             "  <ul>",
             sapply(x$links, function(x) paste0("    <li>", x, "</li>")),
 	    "  </ul>")
@@ -318,7 +321,7 @@ ctv2html <- function(x,
 
   if(!is.null(x$otherlinks)) {
   htm4 <- c(htm4, "",
-            "  <h3>Other resources:</h3>",
+            "  <h3>Other resources</h3>",
             "  <ul>",
             sapply(x$otherlinks, function(x) paste0("    <li>", x, "</li>")),
 	    "  </ul>")
@@ -430,7 +433,7 @@ repos_update_views <- function(repos = ".", cran = TRUE,
 	     "",
 	     "<h3>Topics</h3>",
 	     "",
-             paste0("<table summary=\"", reposname," Task Views\">"),
+             paste0("<table summary=\"", reposname," Task View\">"),
 	     apply(idx, 1, function(x) {
                  paste0("  <tr valign=\"top\">\n    <td><a href=\"",
                         x[1], ".html\">", x[1], "</a></td>\n    <td>",
