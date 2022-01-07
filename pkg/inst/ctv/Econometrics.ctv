@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis, Grant McDermott</maintainer>
-  <version>2021-11-02</version>
+  <version>2022-01-07</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -213,8 +213,8 @@
       <li><i>Spatial econometric models</i>: The <view>Spatial</view> view gives details about
           handling spatial data, along with information about (regression) modeling. In particular,
 	  spatial regression models can be fitted using <pkg>spatialreg</pkg> and <pkg>sphet</pkg> (the
-	  latter using a GMM approach). <pkg>splm</pkg> is a package for spatial panel
-          models. Spatial probit models are available in <pkg>spatialprobit</pkg>.</li>
+	  latter using a GMM approach).
+          Spatial probit models are available in <pkg>spatialprobit</pkg>.</li>
 
       <li><i>Bayesian model averaging (BMA)</i>: A comprehensive toolbox for BMA is provided by
           <pkg>BMS</pkg> including flexible prior selection, sampling, etc. A different implementation
@@ -513,7 +513,6 @@
     <pkg>spatialreg</pkg>
     <pkg>spfrontier</pkg>
     <pkg>sphet</pkg>
-    <pkg>splm</pkg>
     <pkg>ssfa</pkg>
     <pkg>ssmrob</pkg>
     <pkg>strucchange</pkg>
