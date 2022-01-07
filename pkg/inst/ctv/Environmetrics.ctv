@@ -3,7 +3,7 @@
   <name>Environmetrics</name>
   <topic>Analysis of Ecological and Environmental Data</topic>
   <maintainer email="ucfagls@gmail.com">Gavin Simpson</maintainer>
-  <version>2021-10-21</version>
+  <version>2022-01-07</version>
   
   <info>
     <h4>Introduction</h4>
@@ -358,8 +358,6 @@
       <li><pkg>seas</pkg> implements a number of functions for analysis and graphics of seasonal data.</li>
       <li><pkg>RMAWGEN</pkg> is set of S3 and S4 functions for spatial multi-site stochastic generation of daily
 	time series of temperature and precipitation making use of Vector Autoregressive Models.</li>
-      <li><pkg>Interpol.T</pkg> makes hourly interpolation of daily minimum and maximum temperature series for example
-	when hourly time series must be downscaled from the daily information.</li>
     </ul>
 
     <h4>Palaeoecology and stratigraphic data</h4>
@@ -440,7 +438,6 @@
     <pkg>gamair</pkg>
     <pkg>hydroGOF</pkg>
     <pkg>hydroTSM</pkg>
-    <pkg>Interpol.T</pkg>
     <pkg>ipred</pkg>
     <pkg>ismev</pkg>
     <pkg priority="core">labdsv</pkg>
