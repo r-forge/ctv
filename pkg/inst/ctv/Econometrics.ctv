@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis, Grant McDermott</maintainer>
-  <version>2022-01-19</version>
+  <version>2022-01-20</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -132,7 +132,7 @@
 	  the symmetric normalized quadratic profit (SNQP) function is in <pkg>micEconSNQP</pkg>.
           The almost ideal demand system (AIDS) is in <pkg>micEconAids</pkg>.	  
 	  Stochastic frontier analysis (SFA) is in <pkg>frontier</pkg> and certain special cases also in <pkg>sfa</pkg>.
-	  Semiparametric SFA in is available in <pkg>semsfa</pkg> and spatial SFA in <pkg>spfrontier</pkg> and <pkg>ssfa</pkg>.
+	  Semiparametric SFA in is available in <pkg>semsfa</pkg> and spatial SFA in <pkg>ssfa</pkg>.
 	  The package <pkg>bayesm</pkg> implements a Bayesian approach to microeconometrics and marketing. 
 	  Inference for relative distributions is contained in package <pkg>reldist</pkg>.</li>
     </ul>
@@ -509,7 +509,6 @@
     <pkg>SparseM</pkg>
     <pkg>spatialprobit</pkg>
     <pkg>spatialreg</pkg>
-    <pkg>spfrontier</pkg>
     <pkg>sphet</pkg>
     <pkg>ssfa</pkg>
     <pkg>ssmrob</pkg>
