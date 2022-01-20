@@ -3,7 +3,7 @@
   <name>Econometrics</name>
   <topic>Econometrics</topic>
   <maintainer email="Achim.Zeileis@R-project.org">Achim Zeileis, Grant McDermott</maintainer>
-  <version>2022-01-07</version>
+  <version>2022-01-19</version>
   
   <info>
     <p>Base R ships with a lot of functionality useful for computational
@@ -313,8 +313,7 @@
 	  several data sets from the Journal of Applied Econometrics and the Journal of Business &amp; Economic Statistics
 	  data archives. <pkg>AER</pkg> and <pkg>wooldridge</pkg> additionally provide extensive sets of
 	  examples reproducing analyses from the textbooks/papers, illustrating
-	  various econometric methods. In <pkg>pder</pkg> a wide collection of data sets for
-	  "Panel Data Econometrics with R" (Croissant &amp; Millo 2018) is available.
+	  various econometric methods. 
 	  The <github>ccolonescu/PoEdata</github> package on GitHub provides 
 	  the data sets from "Principles of Econometrics" (4th ed, by Hill, Griffiths, and Lim 2011).
 	  </li>
@@ -480,7 +479,6 @@
     <pkg>panelvar</pkg>
     <pkg>pco</pkg>
     <pkg>pcse</pkg>
-    <pkg>pder</pkg>
     <pkg>pdR</pkg>
     <pkg>pdynmc</pkg>
     <pkg>pglm</pkg>
