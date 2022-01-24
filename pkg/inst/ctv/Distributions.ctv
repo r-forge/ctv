@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2021-07-30</version>
+<version>2022-01-24</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1864,8 +1864,6 @@ exponentiated and transformation of distributions:</a></h2>
 	 <pkg>rngwell19937</pkg> provides one of the WELL generators with 53 bit
 	 resolution of the output and allows seeding by a vector
 	 of integers of arbitrary length.
-	 <pkg>randaes</pkg> provides the deterministic part of the Fortuna cryptographic 
-     pseudorandom number generator (AES).
 	 <pkg>SuppDists</pkg>
 	 implements two RNGs of G. Marsaglia.   
 	 <pkg>dqrng</pkg> provides PCG family by O'Neill (2014) as well as Xoroshiro128+ and Xoshiro256+ 
@@ -2276,7 +2274,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>QRM</pkg>
   <pkg>qrmtools</pkg>
   <pkg>qrng</pkg>
-  <pkg>randaes</pkg>
   <pkg>random</pkg>
   <pkg>randtoolbox</pkg>
   <pkg>RDieHarder</pkg>
