@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2022-01-07</version>
+  <version>2022-01-24</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -280,8 +280,6 @@
       Census Bureau TIGER, including cartographic boundaries, roads, and water.</li>
       <li><pkg>chilemapas</pkg> provides access to spatial data of political 
       and administrative divisions of Chile.</li>
-      <li><pkg>geobr</pkg> provides easy access to official spatial data 
-      sets of Brazil for multiple geographies and years.</li>
       <li><pkg>geouy</pkg> loads and process geographic information for 
       Uruguay.</li>
       <li><pkg>rgugik</pkg> allows to search and retrieve data from Polish Head
@@ -755,7 +753,6 @@
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
     <pkg>gear</pkg>
-    <pkg>geobr</pkg>
     <pkg>geogrid</pkg>
     <pkg>geojson</pkg>
     <pkg>geojsonio</pkg>
