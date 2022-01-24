@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2021-11-30</version>
+<version>2022-01-24</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -153,8 +153,7 @@
   <li>Package <pkg>OPDOE</pkg> accompanies the book <i>Optimal Experimental Design with
    R</i> by Rasch et al. (2011). It has some interesting sample size estimation functionality, 
    but is almost unusable without the book (the first edition of which I would not recommend buying).</li> 
-  <li>Package <pkg>blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets
-  of blocks in case of too small block sizes; package <pkg>blocksdesign</pkg> permits 
+  <li>Package <pkg>blocksdesign</pkg> permits 
   the creation of nested block structures.</li>
   <li>There are several packages for determining sample sizes in experimental contexts, 
   some of them quite general, others very specialized. All of these are mentioned here: 
@@ -632,7 +631,6 @@
   <pkg>BHH2</pkg>
   <pkg>binseqtest</pkg>
   <pkg>bioOED</pkg>
-  <pkg>blockTools</pkg>
   <pkg>blocksdesign</pkg>
   <pkg>BOIN</pkg>
   <pkg>BsMD</pkg>
