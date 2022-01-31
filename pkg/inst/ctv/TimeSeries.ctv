@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-12-20</version>
+<version>2022-01-31</version>
 
 <info>
 <p>
@@ -192,7 +192,7 @@
     Robust Kalman filtering is provided by <pkg>RobKF</pkg>.
   </li>
   <li>Non-Gaussian time series
-    can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package. <pkg>GlarmaVarSel</pkg> provides variable selection in high-dimensional sparse GLARMA models.
+    can be handled with GLARMA state space models via <pkg>glarma</pkg>. <pkg>GlarmaVarSel</pkg> provides variable selection in high-dimensional sparse GLARMA models.
     Conditional Auto-Regression models using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
     Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in <pkg>bssm</pkg>.
     Non-Gaussian state space models with exact marginal likelihood are given by <pkg>NGSSEML</pkg>.
@@ -826,7 +826,6 @@
   <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
   <pkg>garma</pkg>
-  <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
   <pkg>ggdemetra</pkg>
   <pkg>ggseas</pkg>
