@@ -3,7 +3,7 @@
 <name>Psychometrics</name>
 <topic>Psychometric Models and Methods</topic>
 <maintainer email="mair@fas.harvard.edu">Patrick Mair</maintainer>
-<version>2021-11-08</version>
+<version>2022-01-31</version>
 
 <info> Psychometrics is concerned with theory and techniques of psychological measurement.
 Psychometricians have also worked collaboratively with those in the field of statistics and
@@ -199,9 +199,6 @@ and structured latent class analysis (SLCA).
     Gaussian ordination, related to logistic IRT and also approximated as
     maximum likelihood estimation through canonical correspondence analysis
     is implemented in various forms in the package <pkg>VGAM</pkg>.
-  </li>
-  <li>
-    <pkg>emIRT</pkg> provides various EM-algorithms IRT models (binary and ordinal responses, along with dynamic and hierarchical models). 
   </li>
   <li>
     <pkg>immer</pkg> implements some item response models for multiple ratings, including the hierarchical rater model and a wrapper function to the commercial FACETS program.
@@ -930,7 +927,6 @@ and proportions, is available in <pkg>betareg</pkg>.
     <pkg>EFAutilities</pkg>
     <pkg>elasticIsing</pkg>
     <pkg>elasticnet</pkg>
-    <pkg>emIRT</pkg>
     <pkg>equate</pkg>
     <pkg>equateIRT</pkg>
     <pkg>equateMultiple</pkg>
