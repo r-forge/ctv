@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2021-12-19</version>
+   <version>2022-02-05</version>
 
   <info>
     <p>
@@ -108,9 +108,6 @@
       <li>
         The <pkg>sparklyr</pkg> package provides provides a <pkg>dplyr</pkg> interface to <a href="https://spark.apache.org/">Apache Spark</a> DataFrames as well as an R interface to Spark’s distributed machine learning pipelines.
       </li>
-      <li>
-        The <pkg>RClickhouse</pkg> is a <pkg>DBI</pkg> interface for <a href="https://clickhouse.yandex/">Yandex Clickhouse</a>, which is a high-performance relational column-store database to enable big data exploration and scaling to petabytes of data. It provides basic <pkg>dplyr</pkg> support by auto-generating SQL-commands using <pkg>dbplyr</pkg>.
-      </li>
     </ul>
 
     <p><strong>Non-Relational Databases</strong></p>
@@ -199,7 +196,6 @@
     <pkg>pointblank</pkg>
     <pkg>pool</pkg>
     <pkg>RCassandra</pkg>
-    <pkg>RClickhouse</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RODBC</pkg>
     <pkg>RPostgreSQL</pkg>
