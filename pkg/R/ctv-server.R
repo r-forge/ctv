@@ -230,6 +230,19 @@ ctv2html <- function(x,
   if(is.null(packageURL)) {
     packageURL <- if(cran) "../packages/" else "https://CRAN.R-project.org/package=%s"
   }
+  inst <- if(cran) {
+    paste(c(
+      'The packages from this task view can be installed automatically using the',
+      '<a href="../packages/ctv/index.html">ctv</a> package. For example,',
+      sprintf('<tt>ctv::install.packages("%s", coreOnly = TRUE)</tt>', x$name),
+      'installs all the core packages or',
+      sprintf('<tt>ctv::update.packages("%s")</tt>', x$name),
+      'installs all packages that are not yet installed and up-to-date.',
+      'See the <a href="https://github.com/cran-task-views/ctv/">CRAN Task View Initiative</a> for more details.'
+    ), collapse = " ")
+  } else {
+    NULL
+  }
 
   ## auxiliary functions
   ampersSub <- function(x) gsub("&", "&amp;", x)
@@ -286,6 +299,7 @@ ctv2html <- function(x,
      if(!is.null(x$url)) paste0("    <tr><td valign=\"top\"><b>URL:</b></td><td><a href=\"", htmlify(x$url), "\">", htmlify(x$url), "</a></td></tr>"),
      if(!is.null(x$source)) paste0("    <tr><td valign=\"top\"><b>Source:</b></td><td><a href=\"", htmlify(x$source), "\">", htmlify(x$source), "</a></td></tr>"),
      paste0("    <tr><td valign=\"top\"><b>Citation:</b></td><td>", cit, "</td></tr>"),
+     if(!is.null(inst)) paste0("    <tr><td valign=\"top\"><b>Installation:</b></td><td>", inst, "</td></tr>"),
             "  </table>")
 
   ## info section
