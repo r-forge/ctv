@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Statistics</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-12-13</version>
+<version>2022-01-10</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -435,9 +435,6 @@ that is used to fit the basic random effects models.
  Package <pkg>rworldmap</pkg> outline how to map country referenced data and 
 support users in visualising their own data. Examples are given, e.g., maps for the world bank and UN. It provides also new ways to visualise maps.
   </li>
-  <li>
-  Package <pkg>rrcov3way</pkg> provides robust methods for multiway data analysis, applicable also for compositional data.
-  </li>
 </ul>
 
 
@@ -746,7 +743,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>reweight</pkg>
   <pkg>RJDemetra</pkg>
   <pkg>rpms</pkg>
-  <pkg>rrcov3way</pkg>
   <pkg>rworldmap</pkg>
   <pkg>rsae</pkg>
   <pkg>rspa</pkg>
