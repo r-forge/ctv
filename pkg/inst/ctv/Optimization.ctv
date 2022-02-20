@@ -4,7 +4,7 @@
 <topic>Optimization and Mathematical Programming</topic>
 <maintainer email="R-optimization@mailbox.org">Stefan Theussl, 
 Florian Schwendinger, Hans W. Borchers</maintainer>
-<version>2022-01-09</version>
+<version>2022-02-20</version>
 
 <info>
   <p>This CRAN task view contains a list of packages which offer
@@ -707,11 +707,6 @@ Florian Schwendinger, Hans W. Borchers</maintainer>
     problem, the stable roommates and the house allocation problem.
     [COP, MM]</li>
 
-    <li>Package <pkg>optmatch</pkg> provides routines for solving 
-    matching problems by translating them into minimum-cost flow problems 
-    and then solved optimaly by the RELAX-IV codes of Bertsekas and Tseng 
-    (free for research). [SPLP]</li>
-
     <li>Package <pkg>TSP</pkg> provides basic infrastructure for handling 
     and solving the traveling salesperson problem (TSP). The main routine
     <code>solve_TSP()</code> solves the TSP through several heuristics. 
@@ -994,7 +989,6 @@ Florian Schwendinger, Hans W. Borchers</maintainer>
   <pkg>onls</pkg>
   <pkg>optimParallel</pkg>
   <pkg>optimx</pkg>
-  <pkg>optmatch</pkg>
   <pkg>OOR</pkg>
   <pkg>osqp</pkg>
   <pkg>parma</pkg>
