@@ -2,7 +2,7 @@
  <name>Bayesian</name>  
  <topic>Bayesian Inference</topic>
  <maintainer email="jongheepark@snu.ac.kr">Jong Hee Park</maintainer>
- <version>2021-11-04</version>
+ <version>2022-02-22</version>
 
  <info>
    <p>Applied researchers interested in Bayesian statistics are
@@ -606,11 +606,6 @@
 	multivariate data.</li>
 	
 
-	<li><pkg>SimpleTable</pkg> provides a series of methods to
-	conduct Bayesian inference and sensitivity analysis for causal
-	effects from 2 x 2 and 2 x 2 x K tables.</li>
-	
-
     	<li><pkg>sna</pkg>, an R package for social network analysis,
     	contains functions to generate posterior samples from Butt's
     	Bayesian network accuracy model using Gibbs sampling.</li>
@@ -955,7 +950,6 @@
     	<pkg>SampleSizeProportions</pkg>
 	<pkg>sbgcop</pkg>
 	<pkg>shinybrms</pkg>
-    	<pkg>SimpleTable</pkg>
     	<pkg>sna</pkg>
     	<pkg>spBayes</pkg>
     	<pkg>spikeslab</pkg>
