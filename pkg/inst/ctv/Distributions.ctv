@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2022-01-24</version>
+<version>2022-02-22</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1086,10 +1086,6 @@ If you think information is not accurate or not complete, please let me know.</p
 	 <li><i>Planck's distribution:</i> a random generator is available in <pkg>Runuran</pkg>.</li> 		     
      
      <li><i>Phase-type distribution:</i> provided in <pkg>actuar</pkg></li>
-
-    <li><i>Poisson subordinated distributions:</i> provided in <pkg>LIHNPSD</pkg>
-        (d, p, q, r, m functions).</li>
-
 
 	 <li><i>Power distribution:</i>  <pkg>reliaR</pkg> and <pkg>poweRlaw</pkg> implement the
 	 exponential power distribution.
@@ -2209,7 +2205,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>lcopula</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>lhs</pkg>
-  <pkg>LIHNPSD</pkg>
   <pkg>LindleyPowerSeries</pkg>
   <pkg>llogistic</pkg>
   <pkg>logitnorm</pkg>
