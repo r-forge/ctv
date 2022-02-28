@@ -369,7 +369,7 @@ repos_update_views <- function(repos = ".", cran = TRUE,
   viewsrds <- file.path(contribdir, viewsrds)
 
   ## available views
-  files <- dir(viewdir, pattern = "\\.ctv$")
+  files <- dir(viewdir, pattern = "\\.(ctv|md)$")
   if(length(files) < 1) stop(paste("no .ctv files found at path", viewdir))
 
   ## available packages in repos
