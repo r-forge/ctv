@@ -1,6 +1,6 @@
 Package: ctv
 Version: 0.9-2
-Date: 2022-01-04
+Date: 2022-03-02
 Title: CRAN Task Views
 Authors@R: c(person(given = "Achim", family = "Zeileis", role = c("aut", "cre"),
                     email = "Achim.Zeileis@R-project.org",
