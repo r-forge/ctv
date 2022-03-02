@@ -504,7 +504,7 @@
 <p><strong>Analysis of large groups of time series</strong></p>
 <ul>
   <li><i>Time series features</i>
-    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own. <pkg>Rcatch22</pkg> provides fast computation of 22 features identified as particularly useful. <pkg>fsMTS</pkg> implements feature selection routines for multivariate time series.
+    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own. <pkg>Rcatch22</pkg> provides fast computation of 22 features identified as particularly useful.
   </li>
   <li><i>Time series clustering</i>
     is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
@@ -817,7 +817,6 @@
   <pkg>fredr</pkg>
   <pkg>freqdom.fda</pkg>
   <pkg>freqdom</pkg>
-  <pkg>fsMTS</pkg>
   <pkg>fts</pkg>
   <pkg>ftsa</pkg>
   <pkg>garma</pkg>
