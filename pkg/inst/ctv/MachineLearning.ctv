@@ -3,7 +3,7 @@
   <name>MachineLearning</name>
   <topic>Machine Learning &amp; Statistical Learning</topic>
   <maintainer email="Torsten.Hothorn@R-project.org">Torsten Hothorn</maintainer>
-  <version>2022-01-31</version>
+  <version>2022-03-02</version>
   
   <info>
     Several add-on packages implement ideas and methods developed at the
@@ -273,10 +273,7 @@
              <pkg>ICEbox</pkg> focuses on constructing individual conditional expectation
              (ICE) curves, a refinement over Friedman's PDPs.  ICE curves, as well as
              centered ICE curves can also be constructed with the <code>partial()</code>
-             function from the <pkg>pdp</pkg> package.  <pkg>ggRandomForests</pkg>
-             provides ggplot2-based tools for the graphical exploration of random forest
-             models (e.g., variable importance plots and PDPs) from the
-             <pkg>randomForest</pkg> and <pkg>randomForestSRC</pkg> packages.</li>
+             function from the <pkg>pdp</pkg> package.</li>
     </ul>
   </info>
 
@@ -306,7 +303,6 @@
     <pkg>frbs</pkg>
     <pkg>gamboostLSS</pkg>
     <pkg priority="core">gbm</pkg>
-    <pkg>ggRandomForests</pkg>
     <pkg>glmnet</pkg>
     <pkg>glmpath</pkg>
     <pkg>GMMBoost</pkg>
