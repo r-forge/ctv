@@ -230,8 +230,14 @@ ctv2html <- function(x,
   if(is.null(packageURL)) {
     packageURL <- if(cran) "../packages/" else "https://CRAN.R-project.org/package=%s"
   }
-  inst <- if(cran) {
-    paste(c(
+  if(cran) {
+    contrib <- paste(c(
+      'Suggestions and improvements for this task view are very welcome and can be made',
+      'through issues or pull requests on GitHub or via e-mail to the maintainer address.',
+      'For further details see the',
+      '<a href="https://github.com/cran-task-views/ctv/blob/main/Contributing.md">Contributing guide</a>.'
+    ), collapse = " ")
+    inst <- paste(c(
       'The packages from this task view can be installed automatically using the',
       '<a href="../packages/ctv/index.html">ctv</a> package. For example,',
       sprintf('<code>ctv::install.packages("%s", coreOnly = TRUE)</code>', x$name),
@@ -241,7 +247,7 @@ ctv2html <- function(x,
       'See the <a href="https://github.com/cran-task-views/ctv/">CRAN Task View Initiative</a> for more details.'
     ), collapse = " ")
   } else {
-    NULL
+    contrib <- inst <- NULL
   }
 
   ## auxiliary functions
@@ -298,6 +304,7 @@ ctv2html <- function(x,
      paste0("    <tr><td valign=\"top\"><b>Version:</b></td><td>", htmlify(x$version), "</td></tr>"),
      if(!is.null(x$url)) paste0("    <tr><td valign=\"top\"><b>URL:</b></td><td><a href=\"", htmlify(x$url), "\">", htmlify(x$url), "</a></td></tr>"),
      if(!is.null(x$source)) paste0("    <tr><td valign=\"top\"><b>Source:</b></td><td><a href=\"", htmlify(x$source), "\">", htmlify(x$source), "</a></td></tr>"),
+     if(!is.null(contrib)) paste0("    <tr><td valign=\"top\"><b>Contributions:</b></td><td>", contrib, "</td></tr>"),
      paste0("    <tr><td valign=\"top\"><b>Citation:</b></td><td>", cit, "</td></tr>"),
      if(!is.null(inst)) paste0("    <tr><td valign=\"top\"><b>Installation:</b></td><td>", inst, "</td></tr>"),
             "  </table>")

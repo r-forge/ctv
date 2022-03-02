@@ -6,8 +6,8 @@
 * Sorting the package list is done ignoring the case now.
 
 * Various improvements in `ctv2html()`: Include explicit citation in header table,
-  include installation instruction (if `cran = TRUE`), more compact layout of
-  package list, handle task views without links section correctly.
+  include instructions for contributions and installation (if `cran = TRUE`), more
+  compact layout of package list, handle task views without links section correctly.
 
 
 # ctv 0.9-1
