@@ -3,7 +3,7 @@
   <name>MachineLearning</name>
   <topic>Machine Learning &amp; Statistical Learning</topic>
   <maintainer email="Torsten.Hothorn@R-project.org">Torsten Hothorn</maintainer>
-  <version>2022-03-02</version>
+  <version>2022-03-07</version>
   
   <info>
     Several add-on packages implement ideas and methods developed at the
@@ -249,7 +249,6 @@
   several feature selection methods. Similar, package <pkg>rminer</pkg> interfaces
   several learning algorithms implemented in other packages and computes
   several performance measures. </li>
-      <li><i>GUI</i><pkg>rattle</pkg> is a graphical user interface for data mining in R.</li>
       <li><i>Visualisation (initially contributed by Brandon Greenwell) </i>
              The <code>stats::termplot()</code> function package can be used to plot the
              terms in a model whose predict method supports <code>type="terms"</code>. 

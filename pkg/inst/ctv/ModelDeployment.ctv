@@ -3,7 +3,7 @@
    <name>ModelDeployment</name>
    <topic>Model Deployment with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2021-12-19</version>
+   <version>2022-03-07</version>
 
   <info>
     <p>
@@ -74,8 +74,6 @@ are based on PMML:
             <li>The <pkg>pmmlTransformations</pkg> package allows for data to be transformed before using it to
       construct models. Builds structures to allow functions in the PMML package to
       output transformation details in addition to the model in the resulting PMML file.
-            </li>
-            <li>The <pkg>rattle</pkg> package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.
             </li>
             <li>The <pkg>arules</pkg> package provides the infrastructure for representing, manipulating and analyzing transaction data and patterns (frequent itemsets and association rules). The associations can be written to disk in PMML.</li>
             <li>The <pkg>arulesSequences</pkg> package is an add-on for arules to handle and mine frequent sequences.</li>
@@ -184,7 +182,6 @@ deploy models in server based environments:
     <pkg>plumber</pkg>
     <pkg>pmml</pkg>
     <pkg>pmmlTransformations</pkg>
-    <pkg>rattle</pkg>
     <pkg>RestRserve</pkg>
     <pkg>reticulate</pkg>
     <pkg>rsparkling</pkg>
