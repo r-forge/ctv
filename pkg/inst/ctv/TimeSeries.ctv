@@ -158,7 +158,6 @@
     It is enhanced in the <pkg>fable</pkg> package via the <code>ARIMA()</code> function which allows for automatic modelling. Similar functionality is provided in  the <pkg>forecast</pkg> package via the <code>auto.arima()</code> function.
     <code>arma()</code> in the <pkg>tseries</pkg> package provides different algorithms for ARMA and subset ARMA models.
     Other estimation methods including the innovations algorithm are provided by <pkg>itsmr</pkg>.
-    <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
     Package <pkg>gsarima</pkg> contains functionality for Generalized SARIMA time series simulation.
     Robust ARIMA modeling is provided in the <pkg>robustarima</pkg> package.
     <pkg>bayesforecast</pkg> fits Bayesian time series models including seasonal ARIMA and ARIMAX models.
@@ -795,7 +794,6 @@
   <pkg>fGarch</pkg>
   <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
-  <pkg>FitARMA</pkg>
   <pkg>FKF</pkg>
   <pkg>FKF.SP</pkg>
   <pkg>fma</pkg>
