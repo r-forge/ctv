@@ -600,9 +600,6 @@ LCA can also be fitted using <pkg>flexmix</pkg> which optionally allows for the 
     <pkg>covLCA</pkg> fits latent class models with covariate effects on underlying and measured variables.
   </li> 
   <li>
-   <pkg>lcda</pkg> fits latent class discriminant analysis.
-  </li>  
-  <li>
   <pkg>tidyLPA</pkg> is a user-friendly implementation of latent profile analysis. 
   </li>  
   <li>
@@ -978,7 +975,6 @@ and proportions, is available in <pkg>betareg</pkg>.
     <pkg>lavaan.survey</pkg>
     <pkg>LAWBL</pkg>
     <pkg>LCAvarsel</pkg>
-    <pkg>lcda</pkg>
     <pkg>lisrelToR</pkg>
     <pkg>lme4</pkg>
     <pkg>LNIRT</pkg>
