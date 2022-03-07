@@ -3,7 +3,7 @@
 <name>Psychometrics</name>
 <topic>Psychometric Models and Methods</topic>
 <maintainer email="mair@fas.harvard.edu">Patrick Mair</maintainer>
-<version>2022-01-31</version>
+<version>2022-03-07</version>
 
 <info> Psychometrics is concerned with theory and techniques of psychological measurement.
 Psychometricians have also worked collaboratively with those in the field of statistics and
@@ -850,9 +850,6 @@ and proportions, is available in <pkg>betareg</pkg>.
    <pkg>TestDataImputation</pkg> for missing item responses imputation for test and assessment data. 
   </li>
   <li>
-   <pkg>lba</pkg> performs latent budget analysis for compositional data (two-way contingency table with an exploratory variable and a response variable) 
-  </li>  
-  <li>
    <pkg>LAM</pkg> includes some procedures for latent variable modeling with a particular focus on multilevel data. 
   </li> 
   <li>
@@ -980,7 +977,6 @@ and proportions, is available in <pkg>betareg</pkg>.
     <pkg priority="core">lavaan</pkg>
     <pkg>lavaan.survey</pkg>
     <pkg>LAWBL</pkg>
-    <pkg>lba</pkg>
     <pkg>LCAvarsel</pkg>
     <pkg>lcda</pkg>
     <pkg>lisrelToR</pkg>
