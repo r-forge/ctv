@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2022-02-22</version>
+<version>2022-03-07</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -812,9 +812,6 @@ If you think information is not accurate or not complete, please let me know.</p
          a family of distributions generalizing hyperbolic sine distributions (see hyperbolic sine section),
          d, p, q, r, m provided in <pkg>FatTailsR</pkg>.</li>
      
-     <li><i>Kolmogorov distribution:</i> p function provided in <pkg>kolmim</pkg>.</li>
-     
-
      <li><i>Kruskal Wallis distribution:</i> provided in <pkg>SuppDists</pkg>.</li>     
      	
 	 
@@ -2198,7 +2195,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>hyper2</pkg>
   <pkg>kdist</pkg>
   <pkg>kernelboot</pkg>
-  <pkg>kolmim</pkg>
   <pkg>KScorrect</pkg>
   <pkg>LambertW</pkg>
   <pkg>LaplacesDemon</pkg>
