@@ -3,7 +3,7 @@
 <name>ChemPhys</name>
 <topic>Chemometrics and Computational Physics</topic>
 <maintainer email="katharine.mullen@stat.ucla.edu">Katharine Mullen</maintainer>
-<version>2021-02-06</version>
+<version>2022-03-07</version>
 
 <info>
 
@@ -136,8 +136,7 @@ many injections, with features for peak alignment and identification.  </li>
     correlation analysis (models of the Gifi-family).</li>
     <li>A desired number of robust principal components can be computed 
     with the <pkg>pcaPP</pkg> package.  The package <pkg>elasticnet</pkg>
-    is applicable to sparse PCA.  The package <pkg>fpca</pkg>
-    can be applied to restricted MLE for functional PCA.</li>
+    is applicable to sparse PCA.</li>
     <li>The <pkg>subselect</pkg> provides a collection of functions
     which assess the quality of variable subsets as surrogates for a full
     data set. </li>
@@ -557,7 +556,6 @@ International Commission on Radiological Protection.
   <pkg>fastICA</pkg>
   <pkg>fingerprint</pkg>
   <pkg>fmri</pkg>
-  <pkg>fpca</pkg>
   <pkg>FITSio</pkg>
   <pkg>homals</pkg>
   <pkg>investr</pkg>

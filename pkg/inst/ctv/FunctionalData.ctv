@@ -3,7 +3,7 @@
 <name>FunctionalData</name>
 <topic>Functional Data Analysis</topic>
 <maintainer email="fabian.scheipl@stat.uni-muenchen.de">Fabian Scheipl</maintainer>
-<version>2021-07-28</version>
+<version>2022-03-07</version>
 
 <info>
 <p>Functional data analysis (FDA) deals with data that <a href="https://en.wikipedia.org/wiki/Functional_data_analysis">"provides information about curves, surfaces or anything else varying over a continuum."</a> This task view catalogues available packages in this rapidly developing field.</p>
@@ -70,7 +70,6 @@
 <li><pkg>face</pkg> implements Fast Covariance Estimation for Sparse Functional Data paper (c.f. Statistics and Computing, <a href="https://doi.org/10.1007/s11222-017-9744-8">doi: 10.1007/s11222-017-9744-8</a>)</li>
 <li><pkg>fdatest</pkg> provides an implementation of the Interval Testing Procedure for functional data in different frameworks (i.e., one or two-population frameworks, functional linear models) by means of different basis expansions (i.e., B-spline, Fourier, and phase-amplitude Fourier).</li>
 <li><pkg>fdcov</pkg> provides a variety of tools for the analysis of covariance operators.</li>
-<li><pkg>fpca</pkg> implements functional principal components for sparsely observed data in a geometric approach to MLE for functional principal components.</li>
 <li><pkg>geofd</pkg> provides Kriging based methods for predicting functional data (curves) with spatial dependence.</li>
 <li><pkg>mfaces</pkg> implements multivariate functional principal component analysis via fast covariance estimation for multivariate sparse functional data or longitudinal data (c.f Li, Xiao, and Luo (2020) <a href="https://doi.org/10.1002/sta4.245">doi: 10.1002/sta4.245</a>).</li>
 <li><pkg>MFPCA</pkg> calculates multivariate FPCA for data observed on different dimensional domains (c.f.  Happ and Greven (2018) <a href="https://doi.org/10.1080/01621459.2016.1273115">doi: 10.1080/01621459.2016.1273115</a>).</li>
@@ -102,7 +101,6 @@
 <pkg>fdcov</pkg>
 <pkg priority="core">fds</pkg>
 <pkg>flars</pkg>
-<pkg>fpca</pkg>
 <pkg>freqdom</pkg>
 <pkg>freqdom.fda</pkg>
 <pkg priority="core">ftsa</pkg>
