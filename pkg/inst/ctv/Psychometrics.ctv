@@ -527,11 +527,6 @@ perform reliability analyses,
     conduct item analyses, and transform scores onto different scales.
   </li>
   <li>
-    Functions for correlation theory, meta-analysis (validity generalization),
-reliability, item analysis, inter-rater reliability, and classical utility are
-contained in the <pkg>psychometric</pkg> package.
-  </li>
-  <li>
     For multilevel model ICC for slope heterogeneity see <pkg>iccbeta</pkg>.
   </li>
   <li>
@@ -553,7 +548,7 @@ scale.
  </li>
   <li>
     Cronbach alpha, kappa coefficients, and intra-class correlation coefficients
-(ICC) can be found in the <pkg>psy</pkg> package. Functions for ICC computation can be also found in the packages <pkg>psych</pkg>, <pkg>psychometric</pkg>and <pkg>ICC</pkg>.
+(ICC) can be found in the <pkg>psy</pkg> package. Functions for ICC computation can be also found in the packages <pkg>psych</pkg>, and <pkg>ICC</pkg>.
   </li>
   <li>
     A number of routines for scale construction and reliability analysis useful
@@ -1042,7 +1037,6 @@ and proportions, is available in <pkg>betareg</pkg>.
     <pkg>pscl</pkg>
     <pkg priority="core">psy</pkg>
     <pkg priority="core">psych</pkg>
-    <pkg>psychometric</pkg>
     <pkg>psychomix</pkg>
     <pkg>psychonetrics</pkg>
     <pkg>psychotools</pkg>
