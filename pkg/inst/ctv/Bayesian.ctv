@@ -2,7 +2,7 @@
  <name>Bayesian</name>  
  <topic>Bayesian Inference</topic>
  <maintainer email="jongheepark@snu.ac.kr">Jong Hee Park</maintainer>
- <version>2022-02-22</version>
+ <version>2022-03-07</version>
 
  <info>
    <p>Applied researchers interested in Bayesian statistics are
@@ -671,10 +671,6 @@
 
     <p> <strong>Post-estimation tools</strong></p>
     <ul>
-
-    	<li><pkg>BayesValidate</pkg> implements a software validation
-    	method for Bayesian softwares. </li>
-	
 
 	<li><pkg>MCMCvis</pkg> performs key functions (visualizes,
 	manipulates, and summarizes) for MCMC analysis. Functions
