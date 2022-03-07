@@ -435,10 +435,6 @@ imputed datasets and combining the results from these datasets).
     <pkg>plotSEMM</pkg> for graphing nonlinear relations among latent variables from structural equation mixture models.   
   </li>  
   <li>
-    <pkg>SEMModComp</pkg> conducts tests of difference in fit for mean and
-covariance structure models as in SEM.
-  </li>
-  <li>
     <pkg>semdiag</pkg> and <pkg>influence.SEM</pkg> implements outlier, leverage diagnostics, and case influence for SEM.
   </li>  
   <li>
@@ -1061,7 +1057,6 @@ and proportions, is available in <pkg>betareg</pkg>.
     <pkg>semds</pkg>
     <pkg>semPLS</pkg>
     <pkg>semPlot</pkg>
-    <pkg>SEMModComp</pkg>
     <pkg>SemNeT</pkg>
     <pkg>semTools</pkg>
     <pkg>semtree</pkg>
