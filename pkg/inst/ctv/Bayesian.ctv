@@ -586,14 +586,6 @@
 	means. </li>
 	
  
-	<li><pkg>SampleSizeProportions</pkg> contains a set of R
-	functions for calculating sample size requirements using three
-	different Bayesian criteria in the context of designing an
-	experiment to estimate the difference between two binomial
-	proportions. </li>
-	
-	
-
 	<li><pkg>sbgcop</pkg> estimates parameters of a Gaussian
 	copula, treating the univariate marginal distributions as
 	nuisance parameters as described in Hoff(2007). It also
@@ -936,7 +928,6 @@
 	<pkg>Runuran</pkg>
 	<pkg>SamplerCompare</pkg>
     	<pkg>SampleSizeMeans</pkg>
-    	<pkg>SampleSizeProportions</pkg>
 	<pkg>sbgcop</pkg>
 	<pkg>shinybrms</pkg>
     	<pkg>sna</pkg>
