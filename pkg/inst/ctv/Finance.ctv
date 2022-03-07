@@ -4,7 +4,7 @@
   <name>Finance</name>
   <topic>Empirical Finance</topic>
   <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-  <version>2021-09-24</version>
+  <version>2022-03-07</version>
 
   <info>
     <p>
@@ -396,9 +396,6 @@
          The Task View <view>ExtremeValue</view> regroups a number of relevant packages.
       </li>
       <li>
- 	 The packages <pkg>CreditMetrics</pkg> provides function for modelling credit risks.
-      </li>
-      <li>
         The <pkg>mvtnorm</pkg> package provides code for multivariate Normal and t-distributions.
       </li>
       <li>
@@ -621,7 +618,6 @@
     <pkg>ChainLadder</pkg>
     <pkg>copula</pkg>
     <pkg>copulaData</pkg>
-    <pkg>CreditMetrics</pkg>
     <pkg>credule</pkg>
     <pkg>crseEventStudy</pkg>
     <pkg>cvar</pkg>
