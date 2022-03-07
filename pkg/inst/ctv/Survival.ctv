@@ -156,10 +156,6 @@ or submit a pull request.</p>
     hazard functions.
   </li>
   <li>
-    The <pkg>Survgini</pkg> package proposes to test the equality of
-    two survival distributions based on the Gini index.
-  </li>
-  <li>
     The <pkg>FHtest</pkg> package offers several tests based on the
     Fleming-Harrington class for comparing surival curves with right-
     and interval-censored data.
@@ -1261,7 +1257,6 @@ or submit a pull request.</p>
   <pkg>SurvCorr</pkg>
   <pkg>survexp.fr</pkg>
   <pkg>survey</pkg>
-  <pkg>Survgini</pkg>
   <pkg>survIDINRI</pkg>
   <pkg priority="core">survival</pkg>
   <pkg>survivalMPL</pkg>
