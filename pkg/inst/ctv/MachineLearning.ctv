@@ -345,7 +345,6 @@
     <pkg priority="core">randomForest</pkg>
     <pkg>randomForestSRC</pkg>
     <pkg>ranger</pkg>
-    <pkg>rattle</pkg>
     <pkg>Rborist</pkg>
     <pkg>RcppDL</pkg>
     <pkg>rdetools</pkg>
