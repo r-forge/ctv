@@ -3,7 +3,7 @@
   <name>SpatioTemporal</name>
   <topic>Handling and Analyzing Spatio-Temporal Data</topic>
   <maintainer email="edzer.pebesma@uni-muenster.de">Edzer Pebesma</maintainer>
-  <version>2022-01-07</version>
+  <version>2022-03-07</version>
 
   <info>
   <p>This task view aims at presenting R packages that are useful for 
@@ -194,12 +194,6 @@
 	  <pkg>splancs</pkg> provides methods for spatial and
 	  space-time point pattern analysis (khat, kernel3d,
 	  visualizing). </li>
-
-	  <li> <pkg>stam</pkg>	is an evolving package that target on
-	  the various methods to conduct Spatio-Temporal Analysis and
-	  Modelling,including Exploratory Spatio-Temporal Analysis
-	  and Inferred Spatio-Temporal Modelling, currently provides
-	  mostly kernel density estimation.</li>
 
 	  <li>
 	  <a href="http://www.biostat.jhsph.edu/~rpeng/software/"
@@ -456,12 +450,6 @@
 <pkg>SpaTimeClus</pkg> Mixture model is used to achieve the clustering goal. Each component is itself a mixture model of polynomial autoregressive regressions whose the logistic weights consider the spatial and temporal information.
 </li>
     <li>
-<pkg>stam</pkg> stam is an evolving package that target on the various
-        methods to conduct Spatio-Temporal Analysis and
-        Modelling,including Exploratory Spatio-Temporal Analysis and
-        Inferred Spatio-Temporal Modelling.
-</li>
-    <li>
 <pkg>stampr</pkg> Perform spatial temporal analysis of moving polygons; a
     longstanding analysis problem in Geographic Information Systems. Facilitates
     directional analysis, shape analysis, and some other simple functionality for
@@ -693,7 +681,6 @@
     <pkg                >sphet</pkg>
     <pkg                >splancs</pkg>
     <pkg                >spTimer</pkg>
-    <pkg                >stam</pkg>
     <pkg                >stampr</pkg>
     <pkg                >Stem</pkg>
     <pkg                >STMedianPolish</pkg>
