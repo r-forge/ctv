@@ -167,9 +167,6 @@
     <pkg>MAd</pkg> which provides meta-analysis
     of mean differences. <pkg>MAd</pkg> provides
     a range of graphics.
-    <pkg>psychometric</pkg>
-    provides an extensive range of functions
-    for the meta-analysis of psychometric studies.
     <pkg>mixmeta</pkg>
     provides an integrated interface to standard meta-analysis
     and extensions like multivariate and dose-response.
@@ -328,7 +325,7 @@
   <li>
     Funnel plots are provided in
     <pkg>meta</pkg>, <pkg>metafor</pkg>,
-    <pkg>metansue</pkg>, <pkg>psychometric</pkg>
+    <pkg>metansue</pkg>,
     <pkg>rmeta</pkg> and <pkg>weightr</pkg>.
     In addition to the standard funnel plots
     an enhanced funnel plot to assess the
@@ -1133,7 +1130,6 @@ provides data and code to support a book
   <pkg>poolr</pkg>
   <pkg>PRISMAstatement</pkg>
   <pkg>psychmeta</pkg>
-  <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
   <pkg>publipha</pkg>
   <pkg>PublicationBias</pkg>
