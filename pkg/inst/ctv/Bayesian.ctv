@@ -403,11 +403,6 @@
     	conditional P-values for goodness of fit tests. </li>
 	
 
-	<li><pkg>factorQR</pkg> is a package to fit Bayesian quantile
-	regression models that assume a factor structure for at least
-	part of the design matrix.</li>
-	
-
 	<li><pkg>FME</pkg> provides functions to help in fitting
 	models to data, to perform Monte Carlo, sensitivity and
 	identifiability analysis. It is intended to work with models
@@ -839,7 +834,6 @@
     	<pkg>bayesQR</pkg>
 	<pkg>bayestestR</pkg>
     	<pkg>BayesTree</pkg>
-    	<pkg>BayesValidate</pkg>
 	<pkg>BayesVarSel</pkg>
 	<pkg>BayesX</pkg>
     	<pkg>BayHaz</pkg>
@@ -889,7 +883,6 @@
 	<pkg>errum</pkg>
     	<pkg>evdbayes</pkg>
     	<pkg>exactLoglinTest</pkg>
-	<pkg>factorQR</pkg>
 	<pkg>FME</pkg>
     	<pkg>geoR</pkg>
 	<pkg>ggmcmc</pkg>
