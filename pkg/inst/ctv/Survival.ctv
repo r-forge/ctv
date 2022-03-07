@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2022-01-10</version>
+<version>2022-03-07</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -737,8 +737,7 @@ or submit a pull request.</p>
     <pkg>LogicReg</pkg> can perform logic regression.
     <pkg>kaps</pkg> implements K-adaptive partitioning and recursive
     partitioning algorithms for censored survival data.
-    The <pkg>DStree</pkg> package implements trees and bagged trees
-    for discrete-times survival data. The <pkg>LTRCtrees</pkg> package
+    The <pkg>LTRCtrees</pkg> package
     provides recursive partition algorithms designed for fitting
     survival tree with left-truncated and right censored data. The
     package also includes an implementation of recursive partitioning
@@ -1096,7 +1095,6 @@ or submit a pull request.</p>
   <pkg>DAAG</pkg>
   <pkg>dblcens</pkg>
   <pkg>discSurv</pkg>
-  <pkg>DStree</pkg>
   <pkg>DTDA</pkg>
   <pkg>dynpred</pkg>
   <pkg>dynsurv</pkg>
