@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2021-12-20</version>
+  <version>2022-03-08</version>
   <info>
     <p>
       The goal of reproducible research is to tie specific instructions to data
@@ -89,7 +89,6 @@
       </li>
       <li>
         <i>statistical models/methods</i>:
-          <pkg>apsrtable</pkg>,
           <pkg>memisc</pkg>,
           <pkg>quantreg</pkg>,
           <pkg>rms</pkg>,
@@ -497,7 +496,6 @@
   </info>
   <packagelist>
     <pkg>animation</pkg>
-    <pkg>apsrtable</pkg>
     <pkg>archivist</pkg>
     <pkg>ascii</pkg>
     <pkg>bibtex</pkg>
