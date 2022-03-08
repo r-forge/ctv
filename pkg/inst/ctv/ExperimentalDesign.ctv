@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2022-01-24</version>
+<version>2022-03-08</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -90,9 +90,7 @@
    <li>Package <pkg>ICAOD</pkg> implements the 
   "Imperialist Competitive Algorithm for Optimal Designs" for nonlinear models 
   according to Masoudi, Holling and Wong (2016). 
-  Package <pkg>LDOD</pkg> implements locally D-optimal designs 
-  for some nonlinear and generalized linear models and 
-  package <pkg>PopED</pkg> provides optimal designs for nonlinear mixed effect models.</li> 
+  Package <pkg>PopED</pkg> provides optimal designs for nonlinear mixed effect models.</li> 
   <li>There are various further packages that deal with optimal designs of different types: 
   Package <pkg>rodd</pkg> provides T-optimal designs, 
   also called optimal discriminating designs (Dette, Melas and Shpilev 2013,
@@ -676,7 +674,6 @@
   <pkg>ICAOD</pkg>
   <pkg>JMdesign</pkg>
   <pkg>lhs</pkg>
-  <pkg>LDOD</pkg>
   <pkg>MAMS</pkg>
   <pkg>MaxPro</pkg>
   <pkg>MBHdesign</pkg>
