@@ -478,7 +478,7 @@ imputed datasets and combining the results from these datasets).
   </li>
   <li>
     Nonmetric MDS can also be computed with <code>metaMDS()</code> in <pkg>vegan</pkg>. Furthermore, <pkg>labdsv</pkg> and <pkg>ecodist</pkg> provide the function
-<code>nmds()</code> and some routines can be found in <pkg>xgobi</pkg>. Also, the <pkg>ExPosition</pkg> implements a function for metric MDS.
+<code>nmds()</code>. Also, the <pkg>ExPosition</pkg> implements a function for metric MDS.
   </li>
   <li>
     Principal coordinate analysis can be computed with <code>capscale()</code> in <pkg>vegan</pkg>; in <pkg>labdsv</pkg> and <pkg>ecodist</pkg> using <code>pco()</code> and
@@ -1083,7 +1083,6 @@ and proportions, is available in <pkg>betareg</pkg>.
     <pkg>VGAM</pkg>
     <pkg>wCorr</pkg>
     <pkg>WrightMap</pkg>
-    <pkg>xgobi</pkg>
     <pkg>xxIRT</pkg>
 </packagelist>
 
