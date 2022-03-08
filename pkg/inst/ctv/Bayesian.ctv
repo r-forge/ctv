@@ -2,7 +2,7 @@
  <name>Bayesian</name>  
  <topic>Bayesian Inference</topic>
  <maintainer email="jongheepark@snu.ac.kr">Jong Hee Park</maintainer>
- <version>2022-03-07</version>
+ <version>2022-03-08</version>
 
  <info>
    <p>Applied researchers interested in Bayesian statistics are
@@ -519,11 +519,6 @@
 	point of view and a MCMC algorithm.</li>
 	
 
-	<li><pkg>predmixcor</pkg> provides functions to predict the
-	binary response based on high dimensional binary features
-	modeled with Bayesian mixture models. </li>
-	
-
 	<li><pkg>prevalence</pkg> provides functions for the
 	estimation of true prevalence from apparent prevalence in a
 	Bayesian framework. MCMC sampling is performed via
@@ -908,7 +903,6 @@
 	<pkg>pacbpred</pkg>
 	<pkg>pcFactorStan</pkg>
 	<pkg>plotMCMC</pkg>
-	<pkg>predmixcor</pkg>
 	<pkg>prevalence</pkg>
     	<pkg>pscl</pkg>
 	<pkg>PReMiuM</pkg>
