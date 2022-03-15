@@ -185,12 +185,12 @@ read_ctv_rmd <- function(file, cran = FALSE, format = "html")
   ## links
   x$links <- links  
   if(!is.null(x$links) && format == "html") {
-    x$links <- as.character(pandoc(as.list(x$links)))
+    x$links <- as.character(pandoc(as.list(x$links), options = "--wrap=none"))
     x$links <- gsub("(^<p>)(.*)(</p>$)", "\\2", x$links)
   }
   x$otherlinks <- otherlinks  
   if(!is.null(x$otherlinks) && format == "html") {
-    x$otherlinks <- as.character(pandoc(as.list(x$otherlinks)))
+    x$otherlinks <- as.character(pandoc(as.list(x$otherlinks), options = "--wrap=none"))
     x$otherlinks <- gsub("(^<p>)(.*)(</p>$)", "\\2", x$otherlinks)
   }
   
