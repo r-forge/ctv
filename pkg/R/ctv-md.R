@@ -286,7 +286,7 @@ ctv_xml_to_rmd <- function(x) {
   invisible(x)
 }
 
-pandoc <- function(x, ..., from = "markdown", to = "html", fixup = (from == "html" && to == "markdown"))
+pandoc <- function(x, ..., from = "markdown", to = "html5", fixup = (from == "html" && to == "markdown"))
 {
   ## temporary files
   infile <- tempfile()
