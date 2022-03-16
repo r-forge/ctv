@@ -3,7 +3,7 @@
   <name>ReproducibleResearch</name>
   <topic>Reproducible Research</topic>
   <maintainer email="jdblischak@gmail.com">John Blischak, Alison Hill</maintainer>
-  <version>2022-03-08</version>
+  <version>2022-03-17</version>
   <info>
     <p>
       The goal of reproducible research is to tie specific instructions to data
@@ -491,7 +491,7 @@
     <p>
       Non-literate programming packages to facilitating caching/archiving are
       <pkg>archivist</pkg>, <pkg>R.cache</pkg>, <pkg>reproducible</pkg>,
-      <pkg>storr</pkg>, and <pkg>trackr</pkg>.
+      and <pkg>storr</pkg>.
     </p>
   </info>
   <packagelist>
@@ -583,7 +583,6 @@
     <pkg>texreg</pkg>
     <pkg>tikzDevice</pkg>
     <pkg>tinyProject</pkg>
-    <pkg>trackr</pkg>
     <pkg>tth</pkg>
     <pkg>tufterhandout</pkg>
     <pkg>unrtf</pkg>
