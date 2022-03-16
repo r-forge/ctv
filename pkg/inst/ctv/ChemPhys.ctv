@@ -3,7 +3,7 @@
 <name>ChemPhys</name>
 <topic>Chemometrics and Computational Physics</topic>
 <maintainer email="katharine.mullen@stat.ucla.edu">Katharine Mullen</maintainer>
-<version>2022-03-07</version>
+<version>2022-03-16</version>
 
 <info>
 
@@ -386,10 +386,7 @@ settings, among other features.
 <strong>Functional Magnetic Resonance Imaging</strong>
 </p>
 <ul>  
-    <li>Functions for I/O, visualization and analysis of functional 
-    Magnetic Resonance Imaging (fMRI) datasets stored in the ANALYZE 
-    or NIFTI format are available in the package <pkg>AnalyzeFMRI</pkg>.
-    The package <pkg>fmri</pkg> contains functions to analyze fMRI data using
+    <li>The package <pkg>fmri</pkg> contains functions to analyze fMRI data using
     adaptive smoothing procedures.</li>
 </ul>
 
@@ -526,7 +523,6 @@ International Commission on Radiological Protection.
 
 <packagelist>
   <pkg priority="core">ALS</pkg>
-  <pkg>AnalyzeFMRI</pkg>
   <pkg>AquaEnv</pkg>
   <pkg>astrodatR</pkg>
   <pkg>astrolibR</pkg>

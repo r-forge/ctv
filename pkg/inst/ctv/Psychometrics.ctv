@@ -3,7 +3,7 @@
 <name>Psychometrics</name>
 <topic>Psychometric Models and Methods</topic>
 <maintainer email="mair@fas.harvard.edu">Patrick Mair</maintainer>
-<version>2022-03-08</version>
+<version>2022-03-16</version>
 
 <info> Psychometrics is concerned with theory and techniques of psychological measurement.
 Psychometricians have also worked collaboratively with those in the field of statistics and
@@ -357,8 +357,7 @@ S-PLUS). Additional rotation methods for FA based on gradient projection algorit
     Threeway PCA models (Tucker, Parafac/Candecomp) can be fitted using <pkg>PTAk</pkg>, <pkg>ThreeWay</pkg>, and <pkg>multiway</pkg>. 
   </li>
   <li>
-    Independent component analysis (ICA) can be computed using <pkg>fastICA</pkg>, <pkg>ica</pkg>, <pkg>eegkit</pkg> (designed for EEG data), and  <pkg>AnalyzeFMRI</pkg> (designed 
-    for fMRI data).
+    Independent component analysis (ICA) can be computed using <pkg>fastICA</pkg>, <pkg>ica</pkg>, and <pkg>eegkit</pkg> (designed for EEG data).
   </li>
   <li>
     A desired number of robust principal components can be computed with the <pkg>pcaPP</pkg> package.
@@ -853,7 +852,6 @@ and proportions, is available in <pkg>betareg</pkg>.
 <packagelist>
     <pkg priority="core">ade4</pkg>
     <pkg priority="core">anacor</pkg>
-    <pkg>AnalyzeFMRI</pkg>
     <pkg>aspect</pkg>
     <pkg>asymmetry</pkg> 
     <pkg>ata</pkg>
