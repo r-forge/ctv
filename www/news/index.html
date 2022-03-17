@@ -84,7 +84,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ctv</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.9-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.9-3</span>
       </span>
     </div>
 
@@ -127,6 +127,33 @@
       <small>Source: <a href='https://github.com/cran-task-views/ctv/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
+    <div id="ctv-09-3" class="section level1">
+<h1 class="page-header" data-toc-text="0.9-3">
+<a href="#ctv-09-3" class="anchor"></a>ctv 0.9-3<small> Unreleased </small>
+</h1>
+<ul>
+<li>Further improvements in <code><a href="../reference/ctv-server.html">ctv2html()</a></code>: Generate HTML5 with <code>pandoc</code> now, improve preservation of link breaks (<code>--wrap=preserve</code>).</li>
+</ul>
+</div>
+    <div id="ctv-09-2" class="section level1">
+<h1 class="page-header" data-toc-text="0.9-2">
+<a href="#ctv-09-2" class="anchor"></a>ctv 0.9-2<small> 2022-03-02 </small>
+</h1>
+<ul>
+<li><p>Bug fix in <code><a href="../reference/ctv-server.html">read.ctv()</a></code> when <code>pkg(..., priority = "core")</code> is used more than once on the same package name (reported by Rocio Joo).</p></li>
+<li><p>Sorting the package list is done ignoring the case now.</p></li>
+<li><p>Various improvements in <code><a href="../reference/ctv-server.html">ctv2html()</a></code>: Include explicit citation in header table, include instructions for contributions and installation (if <code>cran = TRUE</code>), more compact layout of package list, handle task views without links section correctly.</p></li>
+</ul>
+</div>
+    <div id="ctv-09-1" class="section level1">
+<h1 class="page-header" data-toc-text="0.9-1">
+<a href="#ctv-09-1" class="anchor"></a>ctv 0.9-1<small> 2021-12-17 </small>
+</h1>
+<ul>
+<li><p>Bug fix in <code>read.ctv(file)</code> when <code>file</code> is actually a full path and not just the name of file in the local working directory.</p></li>
+<li><p>Make all examples of <code><a href="../reference/ctv-server.html">read.ctv()</a></code> conditional on <code>knitr</code> and <code>rmarkdown</code> being available (or <code>xml2</code> being available in case of the legacy XML format).</p></li>
+</ul>
+</div>
     <div id="ctv-09-0" class="section level1">
 <h1 class="page-header" data-toc-text="0.9-0">
 <a href="#ctv-09-0" class="anchor"></a>ctv 0.9-0<small> 2021-12-14 </small>
