@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2022-03-07</version>
+<version>2022-03-18</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1463,8 +1463,6 @@ If you think information is not accurate or not complete, please let me know.</p
     <li><i>Pareto distribution:</i> <pkg>extremefit</pkg> implements
 	  the mixture of two Pareto I distributions.</li>
 	  
-	  <li><i>Poisson beta distribution:</i> provided in <pkg>scModels</pkg>.</li>
-	  
 	  <li><i>Poisson Binomial distribution:</i> <pkg>poibin</pkg> implements
 	  the Poisson Binomial distribution.</li>
 
@@ -2286,7 +2284,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>s20x</pkg>
   <pkg>sadists</pkg>
   <pkg>SCI</pkg>
-  <pkg>scModels</pkg>
   <pkg>setRNG</pkg>
   <pkg>sfsmisc</pkg> 
   <pkg>sgt</pkg>
