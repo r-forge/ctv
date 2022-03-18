@@ -3,7 +3,7 @@
   <name>SpatioTemporal</name>
   <topic>Handling and Analyzing Spatio-Temporal Data</topic>
   <maintainer email="edzer.pebesma@uni-muenster.de">Edzer Pebesma</maintainer>
-  <version>2022-03-07</version>
+  <version>2022-03-18</version>
 
   <info>
   <p>This task view aims at presenting R packages that are useful for 
@@ -354,9 +354,6 @@
     Move helps addressing movement ecology questions.
 </li>
     <li>
-<pkg>movecost</pkg> Provides the facility to calculate non-isotropic accumulated cost surface and least-cost paths using a number of human-movement-related cost functions that can be selected by the user. It just requires a Digital Terrain Model, a start location and (optionally) destination locations.
-</li>
-    <li>
 <pkg>moveHMM</pkg> Provides tools for animal movement modelling using hidden Markov
     models. These include processing of tracking data, fitting hidden Markov models
     to movement data, visualization of data and fitted model, decoding of the state
@@ -646,7 +643,6 @@
     <pkg                >mousetrack</pkg>
     <pkg                >mousetrap</pkg>
     <pkg                >move</pkg>
-    <pkg                >movecost</pkg>
     <pkg                >moveHMM</pkg>
     <pkg                >moveVis</pkg>
     <pkg                >moveWindSpeed</pkg>
