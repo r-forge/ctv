@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2022-03-16</version>
+  <version>2022-03-19</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -65,7 +65,6 @@
     </ul>
     <p><em>Functional MRI</em></p>
     <ul>
-      <li><pkg>adaptsmoFMRI</pkg> contains R functions for estimating the blood oxygenation level dependent (BOLD) effect by using functional magnetic resonance imaging (fMRI) data, based on adaptive Gauss Markov random fields, for real as well as simulated data.  Inference of the underlying models is performed by efficient Markov Chain Monte Carlo simulation, with the Metropolis Hastings algorithm for the non-approximate case and the Gibbs sampler for the approximate case.  When comparing the results of approximate to the non-approximate version the outcome is in favour of the former, as the gain of accuracy in estimation, when not approximating, is minimal and the computational burden becomes less cumbersome.</li>
       <li>The R package <pkg>fmri</pkg> provides tools for the
       analysis of functional MRI data.  The core is the implementation
       of a new class of adaptive smoothing methods.  These methods
@@ -181,7 +180,6 @@
   </info>
 
   <packagelist>
-    <pkg>adaptsmoFMRI</pkg>
     <pkg priority="core">adimpro</pkg>
     <pkg>bayesImageS</pkg>
     <pkg>brainR</pkg>
