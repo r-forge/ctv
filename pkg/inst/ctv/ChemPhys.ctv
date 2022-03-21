@@ -3,7 +3,7 @@
 <name>ChemPhys</name>
 <topic>Chemometrics and Computational Physics</topic>
 <maintainer email="katharine.mullen@stat.ucla.edu">Katharine Mullen</maintainer>
-<version>2022-03-16</version>
+<version>2022-03-21</version>
 
 <info>
 
@@ -245,8 +245,6 @@ and inter-laboratory metrology comparison studies.  </li>
 <strong>Calibration</strong>
 </p>
 <ul>
-	<li> The <pkg>investr</pkg> package facilitates calibration/inverse 
-	estimation with linear and nonlinear regression models. </li>
      <li>The <pkg>chemCal</pkg> package provides functions for plotting
      linear calibration functions and estimating standard errors for
      measurements. </li>
@@ -554,7 +552,6 @@ International Commission on Radiological Protection.
   <pkg>fmri</pkg>
   <pkg>FITSio</pkg>
   <pkg>homals</pkg>
-  <pkg>investr</pkg>
   <pkg priority="core">Iso</pkg>
   <pkg priority="core">kohonen</pkg>
   <pkg>leaps</pkg>
