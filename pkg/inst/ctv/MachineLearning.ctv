@@ -3,7 +3,7 @@
   <name>MachineLearning</name>
   <topic>Machine Learning &amp; Statistical Learning</topic>
   <maintainer email="Torsten.Hothorn@R-project.org">Torsten Hothorn</maintainer>
-  <version>2022-03-07</version>
+  <version>2022-03-21</version>
   
   <info>
     Several add-on packages implement ideas and methods developed at the
@@ -156,7 +156,6 @@
              generalized linear, additive and nonparametric models is available in
              package <pkg>mboost</pkg>. Likelihood-based boosting for mixed models
              is implemented in <pkg>GMMBoost</pkg>.
-             GAMLSS models can be fitted using boosting by <pkg>gamboostLSS</pkg>.
              An implementation of various learning algorithms based on
              Gradient Descent for dealing with regression tasks is available
              in package <pkg>gradDescent</pkg>.</li>
@@ -300,7 +299,6 @@
     <pkg>evclass</pkg>
     <pkg>evtree</pkg>
     <pkg>frbs</pkg>
-    <pkg>gamboostLSS</pkg>
     <pkg priority="core">gbm</pkg>
     <pkg>glmnet</pkg>
     <pkg>glmpath</pkg>
