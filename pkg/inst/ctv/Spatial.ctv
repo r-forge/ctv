@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2022-01-24</version>
+  <version>2022-03-22</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -569,10 +569,7 @@
       cluster detection and disease mapping functions, including Bayesian
       cluster detection, and supports strata. The <pkg>smerc</pkg> package
       provides statistical methods for the analysis of data areal data, with
-      a focus on cluster detection. The <pkg>diseasemapping</pkg>
-      package offers the formatting of population and case data, calculation
-      of Standardized Incidence Ratios, and fitting the BYM model using
-      INLA. Regionalisation of polygon
+      a focus on cluster detection. Regionalisation of polygon
       objects is provided by <pkg>AMOEBA</pkg>: a function to calculate
       spatial clusters using the Getis-Ord local statistic. It searches
       irregular clusters (ecotopes) on a map, and by <code>skater</code>
@@ -744,7 +741,6 @@
     <pkg>dbmss</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
-    <pkg>diseasemapping</pkg>
     <pkg>ecespa</pkg>
     <pkg>ExceedanceTools</pkg>
     <pkg>fields</pkg>
