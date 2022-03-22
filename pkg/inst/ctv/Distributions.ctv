@@ -4,7 +4,7 @@
 <name>Distributions</name> 
 <topic>Probability Distributions</topic> 
 <maintainer email="Christophe.Dutang@ensimag.fr">Christophe Dutang, Patrice Kiener</maintainer> 
-<version>2022-03-18</version>
+<version>2022-03-22</version>
 
 <info> 
 <p>For most of the classical distributions, base R provides
@@ -1530,12 +1530,6 @@ exponentiated and transformation of distributions:</a></h2>
     
     </li>
     
-    <li><i>Quantile-based asymmetric (QBA) family of distributions:</i> 
-    <pkg>QBAsyDist</pkg> provides d, p, q, r functions for QBA version of
-    exponential power, Laplace, logistic, normal, Student, generalized 
-    exponential distributions.
-    </li>
-       
     <li><i>Transformed distribution:</i>  <pkg>Newdistns</pkg> provides G-transformed distributions
         for a selected number of distributions
         which includes Marshall Olkin G distribution, exponentiated G distribution,
@@ -2258,7 +2252,6 @@ exponentiated and transformation of distributions:</a></h2>
   <pkg>polyaAeppli</pkg>
   <pkg>PDQutils</pkg>
   <pkg>poweRlaw</pkg>
-  <pkg>QBAsyDist</pkg>
   <pkg>qmap</pkg>
   <pkg>QRM</pkg>
   <pkg>qrmtools</pkg>
