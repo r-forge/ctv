@@ -4,7 +4,7 @@
   <name>Finance</name>
   <topic>Empirical Finance</topic>
   <maintainer email="Dirk.Eddelbuettel@R-project.org">Dirk Eddelbuettel</maintainer>
-  <version>2022-03-19</version>
+  <version>2022-03-23</version>
 
   <info>
     <p>
@@ -256,10 +256,6 @@
       <li>
 	The <pkg>markovchain</pkg> package provides functionality to
 	easily handle and analyse discrete Markov chains.
-      </li>
-      <li>
-	The <pkg>ycinterextra</pkg> package models yield curve interpolation and extrapolation using
-        via the Nelson-Siegel, Svensson, or Smith-Wilson models, as well as Hermite cubic splines.
       </li>
       <li>
 	The <pkg>tvm</pkg> package models provides functions for time
@@ -756,7 +752,6 @@
     <pkg>wavelets</pkg>
     <pkg>waveslim</pkg>
     <pkg>wavethresh</pkg>
-    <pkg>ycinterextra</pkg>
     <pkg>YieldCurve</pkg>
     <pkg>XBRL</pkg>
     <pkg priority="core">xts</pkg>
