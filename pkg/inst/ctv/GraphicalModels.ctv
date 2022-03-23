@@ -4,7 +4,7 @@
   <name>GraphicalModels</name>
   <topic>Graphical Models</topic>
   <maintainer email="sorenh@math.aau.dk">Soren Hojsgaard</maintainer>
-  <version>2021-12-18</version>
+  <version>2022-03-23</version>
 
   <info>
   <p><a href="http://en.wikipedia.org/wiki/Graphical_model">Wikipedia</a>
@@ -339,15 +339,6 @@
       Link: <a href="http://rhugin.r-forge.r-project.org/">http://rhugin.r-forge.r-project.org/</a>
     </li>
     
-    <li>
-      <pkg>sparsebn</pkg> Fast methods for learning sparse Bayesian
-      networks from high-dimensional data using coordinate descent and
-      sparse regularization. Designed to handle mixed experimental and
-      observational data with thousands of variables with either
-      continuous or discrete observations.
-    </li>
-
-
   </ul>
 
 
@@ -467,7 +458,6 @@
     <pkg>sna</pkg>
     <pkg>SIN</pkg>
     <pkg>spectralGraphTopology</pkg>
-    <pkg>sparsebn</pkg>
     <pkg>R2OpenBUGS</pkg>
     <pkg>R2WinBUGS</pkg>
     <pkg>rjags</pkg>
