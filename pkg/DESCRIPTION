@@ -1,6 +1,6 @@
 Package: ctv
 Version: 0.9-3
-Date: 2022-03-16
+Date: 2022-03-23
 Title: CRAN Task Views
 Authors@R: c(person(given = "Achim", family = "Zeileis", role = c("aut", "cre"),
                     email = "Achim.Zeileis@R-project.org",
@@ -11,7 +11,7 @@ Authors@R: c(person(given = "Achim", family = "Zeileis", role = c("aut", "cre"),
 Description: Infrastructure for task views to CRAN-style repositories: Querying task views and installing the associated
              packages (client-side tools), generating HTML pages and storing task view information in the repository
 	     (server-side tools).
-Depends: R (>= 3.0.0), utils
+Depends: R (>= 3.0.0), utils, tools
 Suggests: xml2, knitr, rmarkdown
 VignetteBuilder: knitr
 License: GPL-2 | GPL-3

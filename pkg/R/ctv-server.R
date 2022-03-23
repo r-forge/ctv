@@ -327,6 +327,8 @@ ctv2html <- function(x,
               if(!any(x$packagelist[, 2L])) "<i>None</i>" else paste(sapply(x$packagelist[x$packagelist[, 2L], 1L], pkg2html), collapse = ", ")),
             sprintf("    <tr valign=\"top\"><td><i>Regular:</i></td><td>%s.</td></tr>",
               if(all(x$packagelist[, 2L])) "<i>None</i>" else paste(sapply(x$packagelist[!x$packagelist[, 2L], 1L], pkg2html), collapse = ", ")),
+            if(length(x$archived) > 0L) sprintf("    <tr valign=\"top\"><td><i>Archived:</i></td><td>%s.</td></tr>",
+              paste(sapply(x$archived, pkg2html), collapse = ", ")),
             "  </table>"
             )
 
@@ -482,19 +484,29 @@ check_ctv_packages <- function(file, repos = TRUE, ...)
     pkg_list
   }
 
-  rval <- list(
-    "Packages in <info> but not in <packagelist>" = pkg_info[!(pkg_info %in% pkg_list)],
-    "Packages in <packagelist> but not in <info>" = pkg_list[!(pkg_list %in% pkg_info)],
-    "Packages in <packagelist> but not in repos"  = character(0)
-  )
-  
+  ## packages in repository and archived in repository (CRAN)
   if(!identical(repos, FALSE)) {
-    if(identical(repos, TRUE)) repos <- getOption("repos")
-    pkg_repos <- as.vector(available.packages(contriburl = contrib.url(repos, "source"), ..., filters = "duplicates")[, 1])
-    rval[[3]] <- pkg_list[!(pkg_list %in% pkg_repos)]
+    if(identical(repos, TRUE)) {
+      pkg_repos <- cran_package_names()
+      pkg_archived <- setdiff(cran_archive_names(), pkg_repos)
+    } else {
+      pkg_repos <- as.vector(available.packages(contriburl = contrib.url(repos, "source"), ..., filters = "duplicates")[, 1L])
+      pkg_archived <- character(0L)
+    }
+  } else {
+    pkg_repos <- character(0L)  
+    pkg_archived <- character(0L)  
   }
 
-  rval
+  ## return list of package names
+  rval <- list(
+    "Packages in info but not in packagelist"       = setdiff(pkg_info, pkg_list),
+    "Packages in packagelist but not in info"       = setdiff(pkg_list, pkg_info),
+    "Packages in packagelist but not in repos"      = setdiff(pkg_list, c(pkg_repos, pkg_archived)),
+    "Packages in packagelist but archived in repos" = intersect(pkg_list, pkg_archived)
+  )
+  if(identical(repos, TRUE)) names(rval) <- gsub("in repos", "on CRAN", names(rval), fixed = TRUE)
+  return(rval)
 }
 
 htmlify <- function(s) {
@@ -503,4 +515,12 @@ htmlify <- function(s) {
     s <- gsub(">", "&gt;", s, fixed = TRUE)
     s <- gsub('"', "&quot;", s, fixed = TRUE)
     s
+}
+
+cran_package_names <- function() {
+  as.vector(tools::CRAN_package_db()[["Package"]])
+}
+
+cran_archive_names <- function() {
+  names(tools:::CRAN_archive_db())
 }

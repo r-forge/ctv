@@ -2,22 +2,36 @@ initialize_ctv_env <- function(cran = FALSE)
 {
   .ctv_env <- new.env()
 
+  ## templates for package and task view URLs to be used
   .ctv_env$pkg_url  <- if(cran) "../packages/%s/index.html" else "https://CRAN.R-project.org/package=%s"
   .ctv_env$view_url <- if(cran) "%s.html" else "https://CRAN.R-project.org/view=%s"
 
+  ## data frame with (active) package names in task view
   .ctv_env$packagelist <- data.frame(
-    name = character(0),
-    core = logical(0),
+    name = character(0L),
+    core = logical(0L),
     stringsAsFactors = FALSE
   )
 
-  .ctv_env$viewlist <- character(0)
- 
+  ## vector of archived package names
+  .ctv_env$archivelist <- character(0L)
+
+  ## links
+  .ctv_env$viewlist <- character(0L)
   .ctv_env$otherlist <- data.frame(
-    name = character(0),
-    source = character(0),
+    name = character(0L),
+    source = character(0L),
     stringsAsFactors = FALSE
   )
+
+  ## vectors of packages active or archived on CRAN
+  if(cran) {
+    .ctv_env$cranlist <- cran_package_names()
+    .ctv_env$cranarchivelist <- setdiff(cran_archive_names(), .ctv_env$cranlist)
+  } else {
+    .ctv_env$cranlist <- character(0L)
+    .ctv_env$cranarchivelist <- character(0L)
+  }
 
   return(.ctv_env)
 }
@@ -25,8 +39,21 @@ initialize_ctv_env <- function(cran = FALSE)
 .ctv_env <- initialize_ctv_env()
 
 pkg <- function(name, priority = "normal", register = TRUE) {
+  ## try to check CRAN status of packages
+  if(length(.ctv_env$cranlist) > 0L || length(.ctv_env$cranarchivelist) > 0L) {
+    status <- if(name %in% .ctv_env$cranlist) {
+      "active"
+    } else if(name %in% .ctv_env$cranarchivelist) {
+      "archived"
+    } else {
+      "unavailable"
+    }
+  } else {
+    status <- "active"  
+  }
+
   ## register package
-  if(register) {
+  if(register && status == "active") {
     if(name %in% .ctv_env$packagelist$name) {
       if(identical(priority, "core")) .ctv_env$packagelist$core[.ctv_env$packagelist$name == "name"] <- TRUE
     } else {
@@ -34,8 +61,19 @@ pkg <- function(name, priority = "normal", register = TRUE) {
         data.frame(name = name, core = identical(priority, "core"), stringsAsFactors = FALSE))
     }
   }
+  if(register && status == "archived") {
+    if(!(name %in% .ctv_env$archivelist)) .ctv_env$archivelist <- c(.ctv_env$archivelist, name)
+  }
+  
   ## return URL
-  sprintf("[%s](%s)", name, sprintf(.ctv_env$pkg_url, name))
+  txt <- if(status == "active") {
+    sprintf("[%s](%s)", name, sprintf(.ctv_env$pkg_url, name))
+  } else if(status == "archived") {
+    sprintf("[%s _(archived)_](%s)", name, sprintf(.ctv_env$pkg_url, name))
+  } else {
+    sprintf("_%s (unavailable)_", name)
+  }
+  return(txt)
 }
 
 view <- function(name, register = TRUE) {
@@ -182,6 +220,9 @@ read_ctv_rmd <- function(file, cran = FALSE, format = "html")
   ## packagelist
   x$packagelist <- .ctv_env$packagelist[order(tolower(.ctv_env$packagelist$name)), ]
 
+  ## archived packages
+  x$archived <- .ctv_env$archivelist[order(tolower(.ctv_env$archivelist))]
+
   ## links
   x$links <- links  
   if(!is.null(x$links) && format == "html") {
@@ -286,7 +327,8 @@ ctv_xml_to_rmd <- function(x) {
   invisible(x)
 }
 
-pandoc <- function(x, ..., from = "markdown", to = "html5", fixup = (from == "html" && to == "markdown"))
+pandoc <- function(x, ..., from = "markdown", to = "html5", options = "--wrap=none",
+  fixup = (from == "html" && to == "markdown"))
 {
   ## temporary files
   infile <- tempfile()
@@ -302,7 +344,7 @@ pandoc <- function(x, ..., from = "markdown", to = "html5", fixup = (from == "ht
 
   ## call pandoc_convert()
   writeLines(x, infile)
-  rmarkdown::pandoc_convert(input = infile, output = outfile, from = from, to = to, ...)
+  rmarkdown::pandoc_convert(input = infile, output = outfile, from = from, to = to, options = options, ...)
   rval <- readLines(outfile)
   
   ## fix backticks and quotes (if necessary)

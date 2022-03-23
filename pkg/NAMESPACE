@@ -1,4 +1,5 @@
 import("utils")
+importFrom("tools", "CRAN_package_db")
 
 export(
 ## client-side tools

@@ -33,8 +33,9 @@ repos_update_views(repos = ".", cran = TRUE,
   \item{reposname}{character giving the name of the CRAN-style repository,
     used for generating HTML pages.}
   \item{repos}{character, the base URL of the CRAN-style repository where the \file{Views.rds}
-    and \file{.html} files should be installed. The \file{.ctv} files should
-    be located in the \file{web/views/} directory.}
+    and \file{.html} files should be installed. The task view files should
+    be located in the \file{web/views/} directory. If \code{repos = TRUE} (default)
+    the official CRAN repository is used and checks for archived packages are included.}
   \item{\dots}{further arguments passed to \code{available.packages} or
     \code{ctv2html}, respectively.}
 }
@@ -53,7 +54,7 @@ for the legacy XML format).
 a \code{"ctv"} object.
 
 \code{check_ctv_packages} checks whether the info and packagelist sections of the
-\file{.ctv} file are consistent with each other and whether all packages are available
+task view file are consistent with each other and whether all packages are available
 from the repository.
 
 \code{repos_update_views} reads all task view files in a specified directory, generates
@@ -68,6 +69,8 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
   
   \code{ctv2html} returns invisibly a vector with the HTML code generated.
   
+  \code{check_ctv_packages} returns a list of character vectors with package names.
+  
   \code{read.ctv} returns a list of class \code{"ctv"} with elements:
   \item{name}{character, name of the task view (must be a valid name for an R object).}
   \item{topic}{character, topic of the task view.}
@@ -80,6 +83,7 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
   \item{packagelist}{data frame with the columns \code{name}
     (character, name of package) and \code{core} (logical, Is priority core?).}
   \item{links}{character vector, HTML code with links for the task view.}
+  \item{otherlinks}{character vector, HTML code with links to other resources for the task view.}
 }
 
 \seealso{\code{\link{install.views}}}
