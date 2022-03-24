@@ -518,9 +518,22 @@ htmlify <- function(s) {
 }
 
 cran_package_names <- function() {
-  as.vector(tools::CRAN_package_db()[["Package"]])
+  con <- gzcon(url(sprintf("%s/web/packages/packages.rds", cran_repos_url()), open = "rb"))
+  on.exit(close(con))
+  as.vector(readRDS(con)[, "Package"])
 }
 
 cran_archive_names <- function() {
-  names(tools:::CRAN_archive_db())
+  con <- gzcon(url(sprintf("%s/src/contrib/Meta/archive.rds", cran_repos_url()), open = "rb"))
+  on.exit(close(con))
+  names(readRDS(con))
+}
+
+cran_repos_url <- function() {
+  repos <- getOption("repos")
+  if (!is.null(repos) && !is.na(repos["CRAN"]) && (repos["CRAN"] != "@CRAN@")) {
+    repos["CRAN"]
+  } else {
+    "https://CRAN.R-project.org"
+  }
 }
