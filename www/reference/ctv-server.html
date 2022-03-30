@@ -179,8 +179,9 @@
     <tr>
       <th>repos</th>
       <td><p>character, the base URL of the CRAN-style repository where the <code class="file">Views.rds</code>
-    and <code class="file">.html</code> files should be installed. The <code class="file">.ctv</code> files should
-    be located in the <code class="file">web/views/</code> directory.</p></td>
+    and <code class="file">.html</code> files should be installed. The task view files should
+    be located in the <code class="file">web/views/</code> directory. If <code>repos = TRUE</code> (default)
+    the official CRAN repository is used and checks for archived packages are included.</p></td>
     </tr>
     <tr>
       <th>...</th>
@@ -201,7 +202,7 @@ for the legacy XML format).</p>
 <p><code>ctv2html</code> generates a <code class="file">.html</code> file with the information contained in
 a <code>"ctv"</code> object.</p>
 <p><code>check_ctv_packages</code> checks whether the info and packagelist sections of the
-<code class="file">.ctv</code> file are consistent with each other and whether all packages are available
+task view file are consistent with each other and whether all packages are available
 from the repository.</p>
 <p><code>repos_update_views</code> reads all task view files in a specified directory, generates
 a <code class="file">.html</code> file for each and an index <code class="file">.html</code> file. Furthermore, it stores
@@ -212,6 +213,7 @@ by <code><a href='ctv-client.html'>install.views</a></code> or <code><a href='ct
     <p><code>repos_update_views</code> returns an object of class <code>"ctvlist"</code> containing
   the <code>"ctv"</code> objects available.</p>  
 <p><code>ctv2html</code> returns invisibly a vector with the HTML code generated.</p>  
+<p><code>check_ctv_packages</code> returns a list of character vectors with package names.</p>  
 <p><code>read.ctv</code> returns a list of class <code>"ctv"</code> with elements:</p>
 <dt>name</dt><dd><p>character, name of the task view (must be a valid name for an R object).</p></dd>
   <dt>topic</dt><dd><p>character, topic of the task view.</p></dd>
@@ -224,6 +226,7 @@ by <code><a href='ctv-client.html'>install.views</a></code> or <code><a href='ct
   <dt>packagelist</dt><dd><p>data frame with the columns <code>name</code>
     (character, name of package) and <code>core</code> (logical, Is priority core?).</p></dd>
   <dt>links</dt><dd><p>character vector, HTML code with links for the task view.</p></dd>
+  <dt>otherlinks</dt><dd><p>character vector, HTML code with links to other resources for the task view.</p></dd>
 
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
