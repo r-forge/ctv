@@ -255,7 +255,7 @@
   <li>Point forecast evaluation
     is provided in the <code>accuracy()</code> function from the <pkg>fable</pkg> and <pkg>forecast</pkg> packages.
     Distributional forecast evaluation using scoring rules is available in <pkg>fable</pkg>, <pkg>scoringRules</pkg> and <pkg>scoringutils</pkg>.
-    The Diebold-Mariano test for comparing the forecast accuracy of two models is implemented in the <code>dm.test()</code> function in <pkg>forecast</pkg>. A multivariate version of the Diebold-Mariano test is provided by <pkg>multDM</pkg>.
+    The Diebold-Mariano test for comparing the forecast accuracy of two models is implemented in the <code>dm.test()</code> function in <pkg>forecast</pkg>.
     <pkg>tsutils</pkg> implements the Nemenyi test for comparing forecasts.
     <pkg>greybox</pkg> provides <code>ro()</code> for general rolling origin evaluation of forecasts.
   </li>
@@ -871,7 +871,6 @@
   <pkg>mssm</pkg>
   <pkg>MSwM</pkg>
   <pkg>mtsdi</pkg>
-  <pkg>multDM</pkg>
   <pkg>MultipleBubbles</pkg>
   <pkg>multitaper</pkg>
   <pkg>mvLSW</pkg>
