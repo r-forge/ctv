@@ -234,7 +234,6 @@
     <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm,
     <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series, while
     <pkg>changepoint.geo</pkg> implements the high-dimensional changepoint detection method GeomCP.
-    <pkg>VARDetect</pkg> implements algorithms for detecting multiple changes in structural VAR models.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
     <pkg>breakfast</pkg> includes methods for fast multiple change-point detection and estimation.
   </li>
@@ -1025,7 +1024,6 @@
   <pkg>uroot</pkg>
   <pkg>VAR.etp</pkg>
   <pkg>vars</pkg>
-  <pkg>VARDetect</pkg>
   <pkg>VARshrink</pkg>
   <pkg>VARsignR</pkg>
   <pkg>WaveletComp</pkg>
