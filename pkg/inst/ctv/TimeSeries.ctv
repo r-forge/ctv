@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2022-03-07</version>
+<version>2022-04-01</version>
 
 <info>
 <p>
@@ -443,7 +443,6 @@
 <ul>
   <li><i>Vector autoregressive (VAR) models</i>
     are provided via <code>ar()</code> in the basic stats package including order selection via the AIC. These models are restricted to be stationary.
-    <pkg>MTS</pkg> is an all-purpose toolkit for analyzing multivariate time series including VAR, VARMA, seasonal VARMA, VAR models with exogenous variables, multivariate regression with time series errors, and much more.
     Possibly non-stationary VAR models are fitted in the <pkg>mAr</pkg> package, which also allows VAR models in principal component space.
     <pkg>sparsevar</pkg> allows estimation of sparse VAR and VECM models,
     <pkg>bigtime</pkg> estimates large sparse VAR, VARX and VARMA models,
@@ -871,7 +870,6 @@
   <pkg>mrf</pkg>
   <pkg>mssm</pkg>
   <pkg>MSwM</pkg>
-  <pkg>MTS</pkg>
   <pkg>mtsdi</pkg>
   <pkg>multDM</pkg>
   <pkg>MultipleBubbles</pkg>
