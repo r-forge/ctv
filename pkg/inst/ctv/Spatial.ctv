@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2022-03-22</version>
+  <version>2022-04-03</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -326,8 +326,6 @@
       interoperability of tools build for it. Additional features are
       name-based addressing of data and internal consistency checks (e.g.
       checking for the right data order in calculations).</li>
-      <li><pkg>taRifx</pkg> is a collection of utility and 
-      convenience functions, and some interesting spatial functions.</li>
       <li>The <pkg>rcosmo</pkg> package offers various tools for geometric transformations, 
       computations, and statistical analysis of spherical data.</li>
       <li>The <pkg>areal</pkg> package can be used to interpolate overlapping but incongruent polygons,
@@ -874,7 +872,6 @@
     <pkg>stars</pkg>
     <pkg>statebins</pkg>
     <pkg>Stem</pkg>
-    <pkg>taRifx</pkg>
     <pkg>terra</pkg>
     <pkg>tgp</pkg>
     <pkg>tidycensus</pkg>
