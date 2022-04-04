@@ -1,3 +1,9 @@
+# ctv 0.9-4
+
+* Fix typo in task view header it should be `install.views()` and `update.views()`
+  rather than `install.packages()` and `update.packages()`.
+
+
 # ctv 0.9-3
 
 * Enhance handling of archived packages on CRAN when `read.ctv(..., cran = TRUE)`

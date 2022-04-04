@@ -240,9 +240,9 @@ ctv2html <- function(x,
     inst <- paste(c(
       'The packages from this task view can be installed automatically using the',
       '<a href="../packages/ctv/index.html">ctv</a> package. For example,',
-      sprintf('<code>ctv::install.packages("%s", coreOnly = TRUE)</code>', x$name),
+      sprintf('<code>ctv::install.views("%s", coreOnly = TRUE)</code>', x$name),
       'installs all the core packages or',
-      sprintf('<code>ctv::update.packages("%s")</code>', x$name),
+      sprintf('<code>ctv::update.views("%s")</code>', x$name),
       'installs all packages that are not yet installed and up-to-date.',
       'See the <a href="https://github.com/cran-task-views/ctv/">CRAN Task View Initiative</a> for more details.'
     ), collapse = " ")
