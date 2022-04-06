@@ -3,6 +3,9 @@
 * Fix typo in task view header it should be `install.views()` and `update.views()`
   rather than `install.packages()` and `update.packages()`.
 
+* Fix detection of "core" packages if this `priority` is not declared in the
+  first `pkg()` call but in subsequent calls.
+
 
 # ctv 0.9-3
 
