@@ -1,5 +1,10 @@
 # ctv 0.9-4
 
+* CRAN information about packages and archivals is loaded from local files
+  (rather than downloaded) if run on CRAN.
+
+* Add Facebook OpenGraph and Twitter tags in task view HTML pages.
+
 * Fix typo in task view header it should be `install.views()` and `update.views()`
   rather than `install.packages()` and `update.packages()`.
 
