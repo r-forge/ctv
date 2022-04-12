@@ -1,7 +1,9 @@
 # ctv 0.9-4
 
 * CRAN information about packages and archivals is loaded from local files
-  (rather than downloaded) if run on CRAN.
+  (rather than downloaded) if run on CRAN. Also, it is preserved between subsequent
+  runs of `read.ctv(..., cran = TRUE)` (and hence also `ctv2html(..., cran = TRUE)`
+  etc.).
 
 * Add Facebook OpenGraph and Twitter tags in task view HTML pages.
 

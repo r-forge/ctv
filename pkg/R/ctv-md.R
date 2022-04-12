@@ -1,39 +1,48 @@
 initialize_ctv_env <- function(cran = FALSE)
 {
-  .ctv_env <- new.env()
+  .new_ctv_env <- new.env()
 
   ## templates for package and task view URLs to be used
-  .ctv_env$pkg_url  <- if(cran) "../packages/%s/index.html" else "https://CRAN.R-project.org/package=%s"
-  .ctv_env$view_url <- if(cran) "%s.html" else "https://CRAN.R-project.org/view=%s"
+  .new_ctv_env$pkg_url  <- if(cran) "../packages/%s/index.html" else "https://CRAN.R-project.org/package=%s"
+  .new_ctv_env$view_url <- if(cran) "%s.html" else "https://CRAN.R-project.org/view=%s"
 
   ## data frame with (active) package names in task view
-  .ctv_env$packagelist <- data.frame(
+  .new_ctv_env$packagelist <- data.frame(
     name = character(0L),
     core = logical(0L),
     stringsAsFactors = FALSE
   )
 
   ## vector of archived package names
-  .ctv_env$archivelist <- character(0L)
+  .new_ctv_env$archivelist <- character(0L)
 
   ## links
-  .ctv_env$viewlist <- character(0L)
-  .ctv_env$otherlist <- data.frame(
+  .new_ctv_env$viewlist <- character(0L)
+  .new_ctv_env$otherlist <- data.frame(
     name = character(0L),
     source = character(0L),
     stringsAsFactors = FALSE
   )
 
-  ## vectors of packages active or archived on CRAN
+  ## vectors of packages active or archived on CRAN (if cran = TRUE)
+  ## (copy from existing environment if available)
   if(cran) {
-    .ctv_env$cranlist <- cran_package_names()
-    .ctv_env$cranarchivelist <- setdiff(cran_archive_names(), .ctv_env$cranlist)
+    .new_ctv_env$cranlist <- if(length(.ctv_env$cranlist) > 0L) {
+      .ctv_env$cranlist
+    } else {
+      cran_package_names()
+    }
+    .new_ctv_env$cranarchivelist <- if(length(.ctv_env$cranarchivelist) > 0L) {
+      .ctv_env$cranarchivelist
+    } else {
+      setdiff(cran_archive_names(), .new_ctv_env$cranlist)
+    }
   } else {
-    .ctv_env$cranlist <- character(0L)
-    .ctv_env$cranarchivelist <- character(0L)
+    .new_ctv_env$cranlist <- character(0L)
+    .new_ctv_env$cranarchivelist <- character(0L)
   }
 
-  return(.ctv_env)
+  return(.new_ctv_env)
 }
 
 .ctv_env <- initialize_ctv_env()
