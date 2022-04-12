@@ -84,7 +84,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ctv</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.9-3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.9-4</span>
       </span>
     </div>
 
@@ -127,6 +127,27 @@
       <small>Source: <a href='https://github.com/cran-task-views/ctv/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
+    <div id="ctv-09-4" class="section level1">
+<h1 class="page-header" data-toc-text="0.9-4">
+<a href="#ctv-09-4" class="anchor"></a>ctv 0.9-4<small> Unreleased </small>
+</h1>
+<ul>
+<li><p>CRAN information about packages and archivals is loaded from
+local files (rather than downloaded) if run on CRAN. Also, it is
+preserved between subsequent runs of
+<code>read.ctv(..., cran = TRUE)</code> (and hence also
+<code>ctv2html(..., cran = TRUE)</code> etc.).</p></li>
+<li><p>Add Facebook OpenGraph and Twitter tags in task view HTML
+pages.</p></li>
+<li><p>Fix typo in task view header it should be
+<code><a href="../reference/ctv-client.html">install.views()</a></code> and <code><a href="../reference/ctv-client.html">update.views()</a></code> rather than
+<code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages()</a></code> and
+<code><a href="https://rdrr.io/r/utils/update.packages.html">update.packages()</a></code>.</p></li>
+<li><p>Fix detection of “core” packages if this <code>priority</code> is
+not declared in the first <code>pkg()</code> call but in subsequent
+calls.</p></li>
+</ul>
+</div>
     <div id="ctv-09-3" class="section level1">
 <h1 class="page-header" data-toc-text="0.9-3">
 <a href="#ctv-09-3" class="anchor"></a>ctv 0.9-3<small> 2022-03-27 </small>
