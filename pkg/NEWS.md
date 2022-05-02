@@ -13,6 +13,8 @@
 * Fix detection of "core" packages if this `priority` is not declared in the
   first `pkg()` call but in subsequent calls.
 
+* Improve HTML5 output from `ctv2html()`.
+
 
 # ctv 0.9-3
 
