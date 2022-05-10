@@ -2,6 +2,7 @@ import("utils")
 
 export(
 ## client-side tools
+   "ctv",
    "CRAN.views",
    "available.views",
    "install.views",

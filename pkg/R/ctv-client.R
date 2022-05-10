@@ -82,6 +82,12 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   return(rval)
 }
 
+ctv <- function(name, repos = NULL, ...) {
+  a <- available.views(repos = repos, ...)
+  if(!(name %in% names(a))) stop(sprintf("No task view with name '%s' available from the repository.", name))
+  return(a[[name]])
+}
+
 .get_pkgs_from_ctv_or_repos <- function(views, coreOnly = FALSE, repos = NULL)
 {
   ## views is already a "ctv"
@@ -98,10 +104,10 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
 
     whichviews <- lapply(views, function(z) {
       rval <- which(z == availnames)
-      if(length(rval) > 0) rval[1] else numeric(0)
+      if(length(rval) > 0L) rval[1] else numeric(0L)
     })
-    unavail <- which(sapply(whichviews, length) < 1)
-    if(length(unavail) > 0) warning(paste("CRAN task view", views[unavail], "not available", collapse = "\n"))
+    unavail <- which(sapply(whichviews, length) < 1L)
+    if(length(unavail) > 0L) warning(paste("CRAN task view", views[unavail], "not available", collapse = "\n"))
     views <- cranviews[as.vector(unlist(whichviews))]
     class(views) <- "ctvlist"
   }
@@ -114,7 +120,7 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
     cbind(pkgs, views[[i]]$repository)
   })
   pkgs <- do.call("rbind", pkgs)
-  pkgs <- tapply(pkgs[,1], pkgs[,2], function(x) sort(unique(x)))
+  pkgs <- tapply(pkgs[, 1L], pkgs[, 2L], function(x) sort(unique(x)))
   
   return(pkgs)
 }

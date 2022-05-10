@@ -4,6 +4,7 @@
 \alias{available.views}
 \alias{download.views}
 \alias{update.views}
+\alias{ctv}
 \alias{print.ctv}
 \alias{print.ctvlist}
 \title{CRAN Task Views: Installing/Updating/Downloading Packages}
@@ -12,6 +13,8 @@ Client-side tools for installing CRAN task views.
 }
 
 \usage{
+ctv(name, repos = NULL, \dots)
+
 available.views(repos = NULL, \dots)
 install.views(views, coreOnly = FALSE, repos = NULL, \dots)
 update.views(views, coreOnly = FALSE, repos = NULL, lib.loc = NULL, filters = NULL, \dots)
@@ -21,7 +24,7 @@ download.views(views, destdir, coreOnly = FALSE, repos = NULL, \dots)
 \method{print}{ctvlist}(x, packagelist = FALSE, \dots)
 }
 \arguments{
-  \item{views}{character vector with the short names of the task views whose
+  \item{name, views}{character vector with the short names of the task views whose
     associated packages should be downloaded and installed. Alternatively,
     \code{views} can also be an object of class \code{"ctvlist"} (as returned
     by \code{available.views}) or an object of class \code{"ctv"} (i.e., an element
