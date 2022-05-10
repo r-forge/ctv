@@ -243,6 +243,24 @@ read_ctv_rmd <- function(file, cran = FALSE, format = "html")
     x$otherlinks <- as.character(pandoc(as.list(x$otherlinks), options = "--wrap=preserve"))
     x$otherlinks <- gsub("(^<p>)(.*)(</p>$)", "\\2", x$otherlinks)
   }
+
+  ## add citation for CRAN views
+  x$citation <- utils::bibentry(
+    bibtype = "Manual",
+    author = as.person(x$maintainer),
+    title = sprintf("%sTask View: %s", if(cran) "CRAN " else "", x$topic),
+    year = as.numeric(substr(x$version, 1L, 4L)),
+    note = sprintf("Version %s", x$version),
+    url = if(cran) {
+      paste0("https://CRAN.R-project.org/view=", x$name)
+    } else if(!is.null(x$url)) {
+      x$url
+    } else {
+      x$source
+    },
+    header = sprintf("To cite the %s task view in publications use:", x$name)
+  )
+  class(x$citation) <- c("citation", class(x$citation))
   
   class(x) <- "ctv"
   return(x)

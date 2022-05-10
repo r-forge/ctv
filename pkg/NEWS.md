@@ -7,6 +7,12 @@
 
 * Add Facebook OpenGraph and Twitter tags in task view HTML pages.
 
+* New convenience function `ctv(name, ...)` that obtains a single `ctv` object
+  with information about a certain task view on CRAN with a given `name`.
+
+* New list element `$citation` in `ctv` objects containing a citation object
+  inheriting from `bibentry` with information on how to cite a task view.
+
 * Fix typo in task view header it should be `install.views()` and `update.views()`
   rather than `install.packages()` and `update.packages()`.
 

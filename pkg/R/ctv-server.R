@@ -267,7 +267,7 @@ ctv2html <- function(x,
   ## header
   title <- paste0(reposname, " Task View: ", htmlify(x$topic))
 
-  ## citation
+  ## citation (hand-crafted HTML version with simplified formatting)
   cit <- sprintf("%s (%s). %s Task View: %s. Version %s.%s",
     htmlify(x$maintainer),
     substr(x$version, 1L, 4L),

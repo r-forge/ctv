@@ -84,6 +84,8 @@ by \code{\link{install.views}} or \code{\link{CRAN.views}}.
     (character, name of package) and \code{core} (logical, Is priority core?).}
   \item{links}{character vector, HTML code with links for the task view.}
   \item{otherlinks}{character vector, HTML code with links to other resources for the task view.}
+  \item{citation}{citation object inheriting from \code{\link[utils]{bibentry}} with
+    information how to cite the task view.}
 }
 
 \seealso{\code{\link{install.views}}}
