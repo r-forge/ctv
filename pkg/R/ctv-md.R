@@ -73,6 +73,9 @@ pkg <- function(name, priority = "normal", register = TRUE) {
   if(register && status == "archived") {
     if(!(name %in% .ctv_env$archivelist)) .ctv_env$archivelist <- c(.ctv_env$archivelist, name)
   }
+  if(register && status == "unavailable") {
+    warning(sprintf("package '%s' is not available on CRAN", name))
+  }
   
   ## return URL
   txt <- if(status == "active") {

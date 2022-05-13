@@ -5,10 +5,12 @@
   runs of `read.ctv(..., cran = TRUE)` (and hence also `ctv2html(..., cran = TRUE)`
   etc.).
 
+* `read.ctv(..., cran = TRUE)` now warns if a `pkg()` is not available from CRAN.
+
 * Add Facebook OpenGraph and Twitter tags in task view HTML pages.
 
-* New convenience function `ctv(name, ...)` that obtains a single `ctv` object
-  with information about a certain task view on CRAN with a given `name`.
+* New convenience function `ctv()` that obtains a single `ctv` object
+  with information about a certain task view on CRAN with a given name.
 
 * New list element `$citation` in `ctv` objects containing a citation object
   inheriting from `bibentry` with information on how to cite a task view.
@@ -16,7 +18,7 @@
 * Fix typo in task view header it should be `install.views()` and `update.views()`
   rather than `install.packages()` and `update.packages()`.
 
-* Fix detection of "core" packages if this `priority` is not declared in the
+* Fix detection of "core" packages if the `priority` is not declared in the
   first `pkg()` call but in subsequent calls.
 
 * Improve HTML5 output from `ctv2html()`.

@@ -82,10 +82,10 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   return(rval)
 }
 
-ctv <- function(name, repos = NULL, ...) {
+ctv <- function(view, repos = NULL, ...) {
   a <- available.views(repos = repos, ...)
-  if(!(name %in% names(a))) stop(sprintf("No task view with name '%s' available from the repository.", name))
-  return(a[[name]])
+  if(!(view %in% names(a))) stop(sprintf("No task view with name '%s' available from the repository.", view))
+  return(a[[view]])
 }
 
 .get_pkgs_from_ctv_or_repos <- function(views, coreOnly = FALSE, repos = NULL)
