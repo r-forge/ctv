@@ -15,6 +15,10 @@
 * New list element `$citation` in `ctv` objects containing a citation object
   inheriting from `bibentry` with information on how to cite a task view.
 
+* The auxiliary `view()` function gained a second argument so that specific sections
+  in other task views can be referenced, e.g.,
+  `view("Econometrics", "Instrumental variables")`.
+
 * Fix typo in task view header it should be `install.views()` and `update.views()`
   rather than `install.packages()` and `update.packages()`.
 

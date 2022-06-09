@@ -88,11 +88,15 @@ pkg <- function(name, priority = "normal", register = TRUE) {
   return(txt)
 }
 
-view <- function(name, register = TRUE) {
+view <- function(name, section = NULL, register = TRUE) {
   ## register view
   if(register) .ctv_env$viewlist <- unique(c(.ctv_env$viewlist, name))
   ## return URL
-  sprintf("[%s](%s)", name, sprintf(.ctv_env$view_url, name))
+  if(is.null(section)) {
+    sprintf("[%s](%s)", name, sprintf(.ctv_env$view_url, name))
+  } else {
+    sprintf("[%s](%s#%s)", section, sprintf(.ctv_env$view_url, name), gsub(" ", "-", tolower(section), fixed = TRUE))
+  }
 }
 
 bioc <- function(name, register = TRUE) {
