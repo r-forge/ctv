@@ -1,5 +1,8 @@
 # ctv 0.9-4
 
+* Improved and extended documentation for CRAN task view maintainers in
+  `vignette("ctv-howto", package = "ctv")`.
+
 * CRAN information about packages and archivals is loaded from local files
   (rather than downloaded) if run on CRAN. Also, it is preserved between subsequent
   runs of `read.ctv(..., cran = TRUE)` (and hence also `ctv2html(..., cran = TRUE)`

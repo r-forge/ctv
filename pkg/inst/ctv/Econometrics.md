@@ -1,18 +1,17 @@
 ---
 name: Econometrics
 topic: Econometrics
-maintainer: Achim Zeileis, Grant McDermott
+maintainer: Achim Zeileis, Grant McDermott, Kevin Tappe
 email: Achim.Zeileis@R-project.org
-version: 2021-12-07
-source: https://github.com/cran-task-views/Econometrics
+version: 2022-09-13
+source: https://github.com/cran-task-views/Econometrics/
 ---
 
-Base R ships with a lot of functionality useful for computational econometrics,
+Base R ships with a lot of functionality useful for (computational) econometrics,
 in particular in the stats package. This functionality is complemented by many
-packages on CRAN, a brief overview is given below. There is also a considerable
+packages on CRAN, a brief overview is given below. There is also a certain
 overlap between the tools for econometrics in this view and those in the task
-views on `r view("Finance")`, `r view("SocialSciences")`, and
-`r view("TimeSeries")`.
+views on `r view("Finance")`, `r view("TimeSeries")`, and `r view("CausalInference")`.
 
 The packages in this view can be roughly structured into the following topics.
 If you think that some package is missing from the list, please file an issue in
@@ -27,7 +26,7 @@ the GitHub repository or contact the maintainer.
   `summary()` and `anova()`.
 - *Further inference and nested model comparisons:* Functions analogous to
   the basic `summary()` and `anova()` methods that also support asymptotic
-  tests ( *z* instead of *t* tests, and Chi-squared instead of *F* tests) and
+  tests (*z* instead of *t* tests, and Chi-squared instead of *F* tests) and
   plug-in of other covariance matrices are `coeftest()` and `waldtest()` in
   `r pkg("lmtest", priority = "core")`. Tests of more general linear hypotheses
   are implemented in `linearHypothesis()` and for nonlinear hypotheses in
@@ -42,6 +41,11 @@ the GitHub repository or contact the maintainer.
   `r pkg("pscl")`).
 - *Diagnostic checking:* The packages `r pkg("car")` and `r pkg("lmtest")`
   provide a large collection of regression diagnostics and diagnostic tests.
+- *Miscellaneous:* Much of the above functionality is bundled together in
+  `r pkg("fixest", priority = "core")`, which provides a number of in-built
+  convenience features that users may find attractive. This includes 
+  robust standard error specification, multi-model estimation, custom 
+  hypothesis testing, etc.
 
 
 ### Microeconometrics
@@ -49,12 +53,15 @@ the GitHub repository or contact the maintainer.
 - *Generalized linear models (GLMs):* Many standard microeconometric models
   belong to the family of generalized linear models and can be fitted by
   `glm()` from package stats. This includes in particular logit and probit
-  models for modeling choice data and Poisson models for count data. Effects
-  for typical values of regressors in these models can be obtained and
-  visualized using `r pkg("effects")`. Marginal effects tables for certain
-  GLMs can be obtained using the `r pkg("margins")` and `r pkg("mfx")`
-  packages. Interactive visualizations of both effects and marginal effects
-  are possible in `r pkg("LinRegInteractive")`.
+  models for modeling choice data and Poisson models for count data.
+- *Effects and marginal effects:*  Effects for typical values of regressors
+  in GLMs and various other probabilistic regression models can be obtained
+  and visualized using `r pkg("effects")`. Marginal effect tables and
+  corresponding visualizations for a wide range of models can be be produced
+  with `r pkg("marginaleffects", priority = "core")`. Other implementations
+  of marginal effects for certain models are in `r pkg("margins")` and
+  `r pkg("mfx")`. Interactive visualizations of both effects and marginal
+  effects are possible in `r pkg("LinRegInteractive")`.
 - *Binary responses:* The standard logit and probit models (among many
   others) for binary responses are GLMs that can be estimated by `glm()` with
   `family = binomial`. Bias-reduced GLMs that are robust to complete and
@@ -113,13 +120,13 @@ the GitHub repository or contact the maintainer.
 - *Duration responses:* Many classical duration models can be fitted with
   `r pkg("survival")`, e.g., Cox proportional hazard models with `coxph()` or
   Weibull models with `survreg()`. Many more refined models can be found in
-  the `r view("Survival")` task view. The Heckman and Singer mixed
-  proportional hazard competing risk model is available in `r pkg("durmod")`.
-- *High-dimensional fixed effects:* Linear models with potentially
-  high-dimensional fixed effects, also for multiple groups, can be fitted by
-  `r pkg("lfe")`. The corresponding GLMs are covered in `r pkg("alpaca")`.
-  Another implementation, based on C++ code covering both OLS and GLMs is in
-  `r pkg("fixest")`.
+  the `r view("Survival")` task view.
+- *High-dimensional fixed effects:* Linear and generalized linear models with
+  potentially high-dimensional fixed effects, also for multiple groups, can be
+  fitted with `r pkg("fixest", priority = "core")`, using optimized parallel
+  C++ code. Other implementations of high-dimensional fixed effects are in
+  `r pkg("lfe")` and `r pkg("alpaca")` for linear and generalized linear models,
+  respectively.
 - *Miscellaneous:* Further more refined tools for microeconometrics are
   provided in the `r pkg("micEcon")` family of packages: Analysis with
   Cobb-Douglas, translog, and quadratic functions is in `r pkg("micEcon")`;
@@ -127,9 +134,9 @@ the GitHub repository or contact the maintainer.
   the symmetric normalized quadratic profit (SNQP) function is in
   `r pkg("micEconSNQP")`. The almost ideal demand system (AIDS) is in
   `r pkg("micEconAids")`. Stochastic frontier analysis (SFA) is in
-  `r pkg("frontier")` and certain special cases also in `r pkg("sfa")`.
+  `r pkg("frontier")`.
   Semiparametric SFA in is available in `r pkg("semsfa")` and spatial SFA in
-  `r pkg("spfrontier")` and `r pkg("ssfa")`. The package `r pkg("bayesm")`
+  `r pkg("ssfa")`. The package `r pkg("bayesm")`
   implements a Bayesian approach to microeconometrics and marketing. Inference
   for relative distributions is contained in package `r pkg("reldist")`.
 
@@ -137,20 +144,36 @@ the GitHub repository or contact the maintainer.
 ### Instrumental variables
 
 - *Basic instrumental variables (IV) regression:* Two-stage least squares
-  (2SLS) is provided by `r pkg("ivreg")` (previously in `r pkg("AER")`). Other
-  implementations are in `tsls()` in package `r pkg("sem")`, in
-  `r pkg("ivpack")`, and `r pkg("lfe")` (with particular focus on multiple group
-  fixed effects).
+  (2SLS) is provided by `r pkg("ivreg", priority = "core")`, which separates
+  out the dedicated 2SLS routines previously found in `r pkg("AER")`). Another
+  implementation is available as `tsls()` in package `r pkg("sem")`.
 - *Binary responses:* An IV probit model via GLS estimation is available in
   `r pkg("ivprobit")`. The `r pkg("LARF")` package estimates local average
   response functions for binary treatments and binary instruments.
-- *Panel data:* Certain basic IV models for panel data can also be estimated
-  with standard 2SLS functions (see above). Dedicated IV panel data models are
-  provided by `r pkg("ivfixed")` (fixed effects) and `r pkg("ivpanel")`
-  (between and random effects).
+- *Panel data:* Several panel data model packages (see below) provide their own
+  dedicated IV routines for efficient estimation in the presence of
+  high-dimensional data. These include `r pkg("fixest")` and `r pkg("lfe")` for
+  fixed effects, and `r pkg("plm")` for first-difference, between, and multiple
+  random effects methods.
 - *Miscellaneous:* `r pkg("REndo")` fits linear models with endogenous
-  regressor using various latent instrumental variable approaches.
+  regressor using various latent instrumental variable approaches. 
+  `r pkg("SteinIV")` provides semi-parametric IV estimators, including JIVE and
+  SPS.
+- *See also* the `r view("CausalInference")` task view for related discussions.
 
+### Regression discontinuity design
+
+- Regression discontinuity design (RDD) methods are implemented in 
+  `r pkg("rdrobust")` (offering robust confidence interval construction and
+  bandwidth selection), `r pkg("rddensity")` (density discontinuity testing
+  (also known as manipulation testing)), `r pkg("rdlocrand")` (inference under 
+  local randomization), and `r pkg("rdmulti")` (analysis with multiple cutoffs 
+  or scores).
+- Tools to perform power, sample size and minimum detectable effects (MDE) 
+  calculations are available in `r pkg("rdpower")`, while `r pkg("RATest")` 
+  provides a collection of randomization tests, including a permutation test
+  for the continuity assumption of the baseline covariates in the sharp RDD.
+- *See also* the `r view("CausalInference")` task view for related discussions.
 
 ### Panel data models
 
@@ -159,29 +182,32 @@ the GitHub repository or contact the maintainer.
   correct the standard errors. Different types of clustered, panel, and
   panel-corrected standard errors are available in `r pkg("sandwich")`
   (incorporating prior work from `r pkg("multiwayvcov")`),
-  `r pkg("clusterSEs")`, `r pkg("pcse")`, `r pkg("clubSandwich")`, `r pkg("plm",
-  priority = "core")`, and `r pkg("geepack")`, respectively. The latter two
-  require estimation of the pooling/independence models via `plm()` and
-  `geeglm()` from the respective packages (which also provide other types of
-  models, see below).
-- *Linear panel models:* `r pkg("plm")`, providing a wide range of within,
+  `r pkg("clusterSEs")`, `r pkg("pcse")`, `r pkg("clubSandwich")`, 
+  `r pkg("plm", priority = "core")`, and `r pkg("geepack")`, respectively. 
+  The latter two require estimation of the pooling/independence models via
+  `plm()` and `geeglm()` from the respective packages (which also provide 
+  other types of models, see below).
+- *Linear panel models:* `r pkg("fixest", priority = "core")` provides very
+  efficient fixed-effect routines that scale to high-dimensional data and
+  multiple fixed-effects.  `r pkg("plm")`, providing a wide range of within,
   between, and random-effect methods (among others) along with corrected
-  standard errors, tests, etc. Another implementation of several of these
-  models is in `r pkg("Paneldata")`. Various dynamic panel models are
+  standard errors, tests, etc. Various dynamic panel models are
   available in `r pkg("plm")`, with estimation based on moment conditions in
   `r pkg("pdynmc")`, and dynamic panel models with fixed effects in
   `r pkg("OrthoPanels")`. `r pkg("feisr")` provides fixed effects individual
   slope (FEIS) models. Panel vector autoregressions are implemented in
   `r pkg("panelvar")`.
-- *Generalized estimation equations and GLMs:* GEE models for panel data (or
-  longitudinal data in statistical jargon) are in `r pkg("geepack")`. The
-  `r pkg("pglm")` package provides estimation of GLM-like models for panel data.
+- *GLMs and generalized estimation equations*. The aformentioned `r pkg("fixest")`
+  supports a variety of GLM-like models in addition to linear panel models. 
+  This includes efficient fixed-effect estimation of logit, probit, Poisson,
+  and negative binomial models. Similar functionality is provided by 
+  `r pkg("alpaca")` (which also accounts for incidental parameter problems) 
+  and `r pkg("pglm")`. GEE models for panel data (or longitudinal data in 
+  statistical jargon) are available in in `r pkg("geepack")`.
 - *Mixed effects models:* Linear and nonlinear models for panel data (and
   more general multi-level data) are available in `r pkg("lme4")` and `r pkg("nlme")`.
-- *Instrumental variables:* `r pkg("ivfixed")` and `r pkg("ivpanel")`, see
-  also above.
-- *Miscellaneous:* Autocorrelation and heteroscedasticity correction are
-  available in `r pkg("wahc")`. Threshold regression
+- *Instrumental variables:* `r pkg("fixest")`. See also above.
+- *Miscellaneous:* Threshold regression
   and unit root tests are in `r pkg("pdR")`. The panel data approach method
   for program evaluation is available in `r pkg("pampe")`. Dedicated fast data
   preprocessing for panel data econometrics is provided by `r pkg("collapse")`.
@@ -199,13 +225,21 @@ the GitHub repository or contact the maintainer.
   modeling. In particular, spatial regression models can be fitted using
   `r pkg("spatialreg")` and `r pkg("sphet")` (the latter using a GMM approach).
   `r pkg("splm")` is a package for spatial panel models. Spatial probit models
-  are available in `r pkg("spatialprobit")`.
+  are available in `r pkg("spatialprobit")` and spatial seemingly unrelated
+  regression (SUR) models in `r pkg("spsur")`.
 - *Bayesian model averaging (BMA):* A comprehensive toolbox for BMA is
   provided by `r pkg("BMS")` including flexible prior selection, sampling,
   etc. A different implementation is in `r pkg("BMA")` for linear models,
   generalizable linear models and survival models (Cox regression).
 - *Linear structural equation models:* `r pkg("lavaan")` and `r pkg("sem")`.
   See also the `r view("Psychometrics")` task view for more details.
+- *Machine learning:* There are several packages that combine machine
+  learning techniques with econometric inference (especially for identifying
+  causal effects). These include `r pkg("grf")` for causal random forests
+  and estimation of heterogeneous treatment effects, `r pkg("DoubleML")`
+  for double machine learning of a wide range of models from the mlr3 family,
+  and `r pkg("hdm")` for selected high-dimensional econometric models.
+  For a more general overview see the `r view("MachineLearning")` task view.
 - *Simultaneous equation estimation:* `r pkg("systemfit")`.
 - *Nonparametric methods:* `r pkg("np")` using kernel smoothing and
   `r pkg("NNS")` using partial moments.
@@ -232,7 +266,7 @@ the GitHub repository or contact the maintainer.
   stochastic volatility models, or stochastic differential equations, etc.)
   are described in the `r view("Finance")` task view.
 - *Infrastructure for regularly spaced time series:* The class `"ts"` in
-  package stats is R\'s standard class for regularly spaced time series
+  package stats is R's standard class for regularly spaced time series
   (especially annual, quarterly, and monthly data). It can be coerced back and
   forth without loss of information to `"zooreg"` from package `r pkg("zoo",
   priority = "core")`.
@@ -266,7 +300,8 @@ the GitHub repository or contact the maintainer.
   available in `r pkg("panelvar")`.
 - *Unit root and cointegration tests:* `r pkg("urca", priority = "core")`,
   `r pkg("tseries", priority = "core")`, `r pkg("CADFtest")`. See also
-  `r pkg("pco")` for panel cointegration tests.
+  `r pkg("pco")` for panel cointegration tests and 
+  `r pkg("plm", priority = "core")` for panel unit root tests.
 - *Miscellaneous:*
   - `r pkg("tsDyn")` - Threshold and smooth transition models.
   - `r pkg("midasr")` - *MIDAS regression* and other econometric methods for
@@ -301,13 +336,13 @@ the GitHub repository or contact the maintainer.
   respectively.
 - *Time series and forecasting data:* The packages `r pkg("expsmooth")`,
 `r pkg("fma")`, and `r pkg("Mcomp")` are data packages with time series data
-  from the books \'Forecasting with Exponential Smoothing: The State Space
-  Approach\' (Hyndman, Koehler, Ord, Snyder, 2008, Springer) and
-  \'Forecasting: Methods and Applications\' (Makridakis, Wheelwright, Hyndman,
+  from the books "Forecasting with Exponential Smoothing: The State Space
+  Approach" (Hyndman, Koehler, Ord, Snyder, 2008, Springer) and
+  "Forecasting: Methods and Applications" (Makridakis, Wheelwright, Hyndman,
   3rd ed., 1998, Wiley) and the M-competitions, respectively.
 - *Empirical Research in Economics:* Package `r pkg("erer")` contains
-  functions and datasets for the book of \'Empirical Research in Economics:
-  Growing up with R\' (Sun, forthcoming).
+  functions and datasets for the book of "Empirical Research in Economics:
+  Growing up with R" (Sun 2015).
 - *Panel Study of Income Dynamics (PSID):* `r pkg("psidR")` can build panel
   data sets from the Panel Study of Income Dynamics (PSID).
 - World Bank data and statistics: The `r pkg("wbstats")` package provides
@@ -316,6 +351,12 @@ the GitHub repository or contact the maintainer.
 
 ### Miscellaneous
 
+- *Model tables:* A flexible implementation of side-by-side summary tables for
+  a wide range of statistical models along with corresponding visualizations
+  and data summary tables is provided in `r pkg("modelsummary")`. Other
+  implementations as well as further utilities for integrating econometric
+  and statistical results in scientific papers etc. are discussed in the
+  `r view("ReproducibleResearch")` task view.
 - *Matrix manipulations:* As a vector- and matrix-based language, base R
   ships with many powerful tools for doing matrix manipulations, which are
   complemented by the packages `r pkg("Matrix")` and `r pkg("SparseM")`.
@@ -330,9 +371,12 @@ the GitHub repository or contact the maintainer.
   `r pkg("bootstrap")` or `r pkg("simpleboot")` as well some bootstrap techniques
   designed for time-series data, such as the maximum entropy bootstrap in
   `r pkg("meboot")` or the `tsbootstrap()` from `r pkg("tseries")`.
+  The `r pkg("fwildclusterboot")` package provides a fast wild cluster
+  bootstrap implementation for linear regression models, especially when
+  the number of clusters is low.
 - *Inequality:* For measuring inequality, concentration and poverty the
   package `r pkg("ineq")` provides some basic tools such as Lorenz curves,
-  Pen\'s parade, the Gini coefficient and many more.
+  Pen's parade, the Gini coefficient, Herfindahl-Hirschman index and many more.
 - *Structural change:* R is particularly strong when dealing with structural
   changes and changepoints in parametric models, see `r pkg("strucchange")`
   and `r pkg("segmented")`.
@@ -355,16 +399,24 @@ the GitHub repository or contact the maintainer.
 
 
 ### Links
-- Journal of Statistical Software: [Special Volume on \'Econometrics in R\' (2008)](http://www.jstatsoft.org/v27/)
-- Book: [Applied Econometrics with R (Kleiber and Zeileis)](https://eeecon.uibk.ac.at/~zeileis/teaching/AER/)
-- Book: [Using R for Introductory Econometrics (Heiss)](http://www.urfie.net/)
-- Book: [Introduction to Econometrics with R (Hanck, Arnold, Gerber, Schmelzer)](https://www.Econometrics-with-R.org/)
-- Book: [Hands-On Intermediate Econometrics Using R (Vinod)](https://doi.org/10.1142/6895)
-- Book: [Panel Data Econometrics with R (Croissant & Millo)](https://doi.org/10.1002/9781119504641)
-- Book: [Spatial Econometrics (Kelejian and Piras)](https://doi.org/10.1016/C2016-0-04332-2)
-- Manual: [Principles of Econometrics with R (Colonescu)](https://bookdown.org/ccolonescu/RPoE4/)
-- Manual: [Introduction to Econometrics with R (Oswald, Robin, Viers)](https://scpoecon.github.io/ScPoEconometrics/)
-- Manual: [Econometrics In-Class Labs (Ransom)](https://tyleransom.github.io/econometricslabs.html)
-- Manual: [Data Science for Economists (McDermott)](https://github.com/uo-ec607/lectures)
-- [A Brief Guide to R for Beginners in Econometrics](https://mondo.su.se/access/content/user/ma@su.se/Public/)
-- [R for Economists](http://www.mayin.org/ajayshah/KB/R/R_for_economists.html)
+- Articles: [Special Volume on "Econometrics in R" in JSS (2008)](http://www.jstatsoft.org/v27/)
+- Book: [Applied Econometrics with R (Kleiber & Zeileis; 2008)](https://eeecon.uibk.ac.at/~zeileis/teaching/AER/)
+- Book: [Introduction to Econometrics with R (Hanck, Arnold, Gerber, & Schmelzer; 2021)](https://www.Econometrics-with-R.org/)
+- Book: [Introduction to Econometrics with R (Oswald, Robin, & Viers; 2020)](https://scpoecon.github.io/ScPoEconometrics/)
+- Book: [Causal Inference: The Mixtape (Cunningham; 2021)](https://mixtape.scunning.com/)
+- Book: [Hands-On Intermediate Econometrics Using R (Vinod; 2008)](https://doi.org/10.1142/6895)
+- Book: [Learning Microeconometrics with R (Adams; 2021)](https://sites.google.com/view/microeconometricswithr)
+- Book: [Panel Data Econometrics with R (Croissant & Millo; 2018)](https://doi.org/10.1002/9781119504641)
+- Book: [Principles of Econometrics with R (Colonescu; 2016)](https://bookdown.org/ccolonescu/RPoE4/)
+- Book: [Spatial Econometrics (Kelejian & Piras; 2017)](https://doi.org/10.1016/C2016-0-04332-2)
+- Book: [Statistical Inference via Data Science (Ismay & Kim; 2022)](https://moderndive.com/)
+- Book: [The Effect (Huntington-Klein; 2022)](https://theeffectbook.net/)
+- Book: [Using R for Introductory Econometrics (Heiss; 2019)](http://www.urfie.net/)
+- Course: [Applied Empirical Methods (Goldsmith-Pinkham; 2021)](https://github.com/paulgp/applied-methods-phd)
+- Course: [Data Science for Economists (McDermott; 2021)](https://github.com/uo-ec607/lectures)
+- Course: [Econometrics In-Class Labs (Ransom; 2021)](https://tyleransom.github.io/econometricslabs.html)
+- Course: [Introduction to Econometrics (Rubin; 2021)](https://github.com/edrubin/EC421W22)
+- Course: [PhD Econometrics (Rubin; 2022)](https://github.com/edrubin/EC607S21)
+- Course: [Program Evaluation for Public Service (Heiss, 2022)](https://evalsp22.classes.andrewheiss.com/)
+- Course: [Statistical Rethinking (McElreath; 2022)](https://github.com/rmcelreath/stat_rethinking_2022)
+- Website: [Stata2R](https://stata2r.github.io/)

@@ -32,6 +32,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -44,7 +46,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">ctv</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.9-4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.9-4</span>
       </span>
     </div>
 
@@ -65,7 +67,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/cran-task-views/ctv/">
+  <a href="https://github.com/cran-task-views/ctv/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -82,76 +84,70 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="cran-task-views-" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#cran-task-views-" class="anchor"></a>CRAN Task Views
-<img src="reference/figures/logo_alpha.png" align="right" alt="" width="180px" style="padding: 0 0 0 0.5em;">
+<div class="section level1">
+<div class="page-header"><h1 id="cran-task-views-">CRAN Task Views <img src="reference/figures/logo_alpha.png" align="right" alt="" width="180px" style="padding: 0 0 0 0.5em;"><a class="anchor" aria-label="anchor" href="#cran-task-views-"></a>
 </h1></div>
-<p>CRAN task views aim to provide some guidance which packages on the <a href="https://CRAN.R-project.org/">Comprehensive R Archive Network
-(CRAN)</a> are relevant for tasks related to a certain topic. They give
-a brief overview of the included packages and can be automatically
-installed using the <a href="https://CRAN.R-project.org/package=ctv">ctv</a> package. The views
-are intended to have a sharp focus so that it is sufficiently clear
-which packages should be included (or excluded) - and they are not meant
-to endorse the “best” packages for a given task.</p>
-<p>To automatically install the views, the <a href="https://CRAN.R-project.org/package=ctv">ctv</a> package needs to
-be installed, e.g., via</p>
-<pre><code>install.packages("ctv")</code></pre>
-<p>and then the views can be installed via <code><a href="reference/ctv-client.html">install.views()</a></code>
-or <code><a href="reference/ctv-client.html">update.views()</a></code> (where the latter only installs those
-packages which are not installed and up-to-date), e.g.,</p>
-<pre><code>ctv::install.views("Econometrics")
-ctv::update.views("Econometrics")</code></pre>
-<p>The task views as a whole are overseen and coordinated by the
-<em>CRAN Task View Editors</em> and each individual task view is
-maintained by a group of volunteers. See the repository of the <a href="https://github.com/cran-task-views/ctv/">CRAN Task View
-Initiative</a> for details on how to contribute to an existing task view
-or propose a new one.</p>
+<p>CRAN task views aim to provide some guidance which packages on the <a href="https://CRAN.R-project.org/" class="external-link">Comprehensive R Archive Network (CRAN)</a> are relevant for tasks related to a certain topic. They give a brief overview of the included packages which can also be automatically installed using the <a href="https://CRAN.R-project.org/package=ctv" class="external-link">ctv</a> package. The views are intended to have a sharp focus so that it is sufficiently clear which packages should be included (or excluded) - and they are not meant to endorse the “best” packages for a given task.</p>
+<p>To automatically install the views, the <a href="https://CRAN.R-project.org/package=ctv" class="external-link">ctv</a> package needs to be installed, e.g., via</p>
+<pre><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"ctv"</span><span class="op">)</span></code></pre>
+<p>and then the views can be installed via <code><a href="reference/ctv-client.html">install.views()</a></code> or <code><a href="reference/ctv-client.html">update.views()</a></code> (where the latter only installs those packages which are not installed and up-to-date), e.g.,</p>
+<pre><code><span class="fu">ctv</span><span class="fu">::</span><span class="fu"><a href="reference/ctv-client.html">install.views</a></span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span>
+<span class="fu">ctv</span><span class="fu">::</span><span class="fu"><a href="reference/ctv-client.html">update.views</a></span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span></code></pre>
+<p>To query information about a particular task view on CRAN from within R or to obtain the list of all task views available, respectively, the following commands are provided:</p>
+<pre><code><span class="fu">ctv</span><span class="fu">::</span><span class="fu"><a href="reference/ctv-client.html">ctv</a></span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span>
+<span class="fu">ctv</span><span class="fu">::</span><span class="fu"><a href="reference/ctv-client.html">available.views</a></span><span class="op">(</span><span class="op">)</span></code></pre>
+<p>The task views as a whole are overseen and coordinated by the <em>CRAN Task View Editors</em> and each individual task view is maintained by a group of volunteers. See the repository of the <a href="https://github.com/cran-task-views/ctv/" class="external-link">CRAN Task View Initiative</a> for details on how to contribute to an existing task view or propose a new one.</p>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=ctv">https://​cloud.r-project.org/​package=ctv</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/cran-task-views/ctv/">https://​github.com/​cran-task-views/​ctv/​</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=ctv" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/cran-task-views/ctv/" class="external-link">Browse source code</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://www.r-project.org/Licenses/GPL-2">GPL-2</a> | <a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a>
+<a href="https://www.r-project.org/Licenses/GPL-2" class="external-link">GPL-2</a> | <a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a>
 </li>
 </ul>
 </div>
+
+
 <div class="citation">
-<h2>Citation</h2>
+<h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html">Citing ctv</a></li>
+<li><a href="authors.html#citation">Citing ctv</a></li>
 </ul>
 </div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Achim Zeileis <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-0918-3766" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Kurt Hornik <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-4198-9911" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Achim Zeileis <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-0918-3766" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Kurt Hornik <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-4198-9911" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Achim Zeileis, Kurt Hornik.</p>
+  <p></p>
+<p>Developed by Achim Zeileis, Kurt Hornik.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
 </div>
 
       </footer>
@@ -159,6 +155,8 @@ or propose a new one.</p>
 
   
 
+
+  
 
   </body>
 </html>
