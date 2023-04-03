@@ -5,6 +5,7 @@ initialize_ctv_env <- function(cran = FALSE)
   ## templates for package and task view URLs to be used
   .new_ctv_env$pkg_url  <- if(cran) "../packages/%s/index.html" else "https://CRAN.R-project.org/package=%s"
   .new_ctv_env$view_url <- if(cran) "%s.html" else "https://CRAN.R-project.org/view=%s"
+  .new_ctv_env$span <- if(cran) function(pkg, class) sprintf('[%s]{class="%s"}', pkg, class) else function(pkg, class) pkg
 
   ## data frame with (active) package names in task view
   .new_ctv_env$packagelist <- data.frame(
@@ -106,7 +107,7 @@ bioc <- function(name, register = TRUE) {
       data.frame(name = name, source = "bioc", stringsAsFactors = FALSE))
   }
   ## return URL
-  sprintf("[%s](https://www.Bioconductor.org/packages/%s)", name, name)
+  sprintf("[%s](https://www.Bioconductor.org/packages/%s)", .ctv_env$span(name, "BioC"), name)
 }
 
 rforge <- function(name, register = TRUE) {
@@ -116,7 +117,7 @@ rforge <- function(name, register = TRUE) {
       data.frame(name = name, source = "rforge", stringsAsFactors = FALSE))
   }
   ## return URL
-  sprintf("[%s](https://R-Forge.R-project.org/projects/%s)", name, tolower(name))
+  sprintf("[%s](https://R-Forge.R-project.org/projects/%s)", .ctv_env$span(name, "Rforge"), tolower(name))
 }
 
 gcode <- function(name, register = TRUE) {
@@ -126,7 +127,7 @@ gcode <- function(name, register = TRUE) {
       data.frame(name = name, source = "gcode", stringsAsFactors = FALSE))
   }
   ## return URL
-  sprintf("[%s](https://code.google.com/archive/p/%s)", name, name)
+  sprintf("[%s](https://code.google.com/archive/p/%s)", .ctv_env$span(name, "Gcode"), name)
 }
 
 ohat <- function(name, register = TRUE) {
@@ -136,7 +137,7 @@ ohat <- function(name, register = TRUE) {
       data.frame(name = name, source = "ohat", stringsAsFactors = FALSE))
   }
   ## return URL
-  sprintf("[%s](http://www.Omegahat.net/%s)", name, name)
+  sprintf("[%s](http://www.Omegahat.net/%s)", .ctv_env$span(name, "Ohat"), name)
 }
 
 github <- function(name, register = TRUE) {
@@ -146,7 +147,7 @@ github <- function(name, register = TRUE) {
       data.frame(name = name, source = "github", stringsAsFactors = FALSE))
   }
   ## return URL
-  sprintf("[%s](https://github.com/%s)", sapply(strsplit(name, "/", fixed = TRUE), "[", 2L), name)
+  sprintf("[%s](https://github.com/%s)", .ctv_env$span(sapply(strsplit(name, "/", fixed = TRUE), "[", 2L), "GitHub"), name)
 }
 
 doi <- function(name) {

@@ -1,5 +1,9 @@
 # ctv 0.9-5
 
+* For CRAN web pages produce `<span class="...">pkgname</pkg>` for packages on
+  Bioconductor, GitHub, R-Forge, OmegaHat, etc., where the custom classes yield
+  custom colors in the CRAN style.
+
 * Updated Bioconductor URLs from `bioc(...)` tags to
   `https://www.bioconductor.org/packages/<pkgname>`.
 
