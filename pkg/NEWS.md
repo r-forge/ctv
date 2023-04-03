@@ -1,3 +1,9 @@
+# ctv 0.9-5
+
+* Updated Bioconductor URLs from `bioc(...)` tags to
+  `https://www.bioconductor.org/packages/<pkgname>`.
+
+
 # ctv 0.9-4
 
 * Improved and extended documentation for CRAN task view maintainers in
