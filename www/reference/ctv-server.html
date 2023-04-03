@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ctv</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.9-4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.9-5</span>
       </span>
     </div>
 
@@ -59,15 +59,15 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">read.ctv</span><span class="op">(</span><span class="va">file</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="fu">ctv2html</span><span class="op">(</span><span class="va">x</span>, file <span class="op">=</span> <span class="cn">NULL</span>, cran <span class="op">=</span> <span class="cn">FALSE</span>,
-  css <span class="op">=</span> <span class="cn">NULL</span>, packageURL <span class="op">=</span> <span class="cn">NULL</span>, reposname <span class="op">=</span> <span class="st">"CRAN"</span><span class="op">)</span>
-
-<span class="fu">check_ctv_packages</span><span class="op">(</span><span class="va">file</span>, repos <span class="op">=</span> <span class="cn">TRUE</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="fu">repos_update_views</span><span class="op">(</span>repos <span class="op">=</span> <span class="st">"."</span>, cran <span class="op">=</span> <span class="cn">TRUE</span>,
-  css <span class="op">=</span> <span class="cn">NULL</span>, reposname <span class="op">=</span> <span class="st">"CRAN"</span>, <span class="va">...</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">read.ctv</span><span class="op">(</span><span class="va">file</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">ctv2html</span><span class="op">(</span><span class="va">x</span>, file <span class="op">=</span> <span class="cn">NULL</span>, cran <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  css <span class="op">=</span> <span class="cn">NULL</span>, packageURL <span class="op">=</span> <span class="cn">NULL</span>, reposname <span class="op">=</span> <span class="st">"CRAN"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">check_ctv_packages</span><span class="op">(</span><span class="va">file</span>, repos <span class="op">=</span> <span class="cn">TRUE</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">repos_update_views</span><span class="op">(</span>repos <span class="op">=</span> <span class="st">"."</span>, cran <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  css <span class="op">=</span> <span class="cn">NULL</span>, reposname <span class="op">=</span> <span class="st">"CRAN"</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -75,29 +75,37 @@
     <dl><dt>file</dt>
 <dd><p>character specifying a file path: for <code>read.ctv</code> a CRAN
     task view file, and for <code>ctv2html</code> the corresponding output <code class="file">.html</code> file.</p></dd>
-<dt>x</dt>
+
+  <dt>x</dt>
 <dd><p>an object of class <code>"ctv"</code> as returned by <code>read.ctv</code>.</p></dd>
-<dt>cran</dt>
+
+  <dt>cran</dt>
 <dd><p>logical. Is the HTML to be hosted on CRAN?</p></dd>
-<dt>css</dt>
+
+  <dt>css</dt>
 <dd><p>character specifying the path and name of the cascade style
     sheet that should be included in the HTML files (if any). The default
     is <code>"../CRAN_web.css"</code> if <code>cran = TRUE</code> and <code>NULL</code> otherwise.</p></dd>
-<dt>packageURL</dt>
+
+  <dt>packageURL</dt>
 <dd><p>character specifying the path (relative to the view directory)
     to the package descriptions. The default is <code>"https://CRAN.R-project.org/package=%s"</code>
     if <code>cran = FALSE</code> and <code>"../packages/"</code> otherwise.</p></dd>
-<dt>reposname</dt>
+
+  <dt>reposname</dt>
 <dd><p>character giving the name of the CRAN-style repository,
     used for generating HTML pages.</p></dd>
-<dt>repos</dt>
+
+  <dt>repos</dt>
 <dd><p>character, the base URL of the CRAN-style repository where the <code class="file">Views.rds</code>
     and <code class="file">.html</code> files should be installed. The task view files should
     be located in the <code class="file">web/views/</code> directory. If <code>repos = TRUE</code> (default)
     the official CRAN repository is used and checks for archived packages are included.</p></dd>
-<dt>...</dt>
+
+  <dt>...</dt>
 <dd><p>further arguments passed to <code>available.packages</code> or
     <code>ctv2html</code>, respectively.</p></dd>
+
 </dl></div>
     <div id="details">
     <h2>Details</h2>
@@ -120,37 +128,53 @@ by <code><a href="ctv-client.html">install.views</a></code> or <code><a href="ct
     </div>
     <div id="value">
     <h2>Value</h2>
-    <p><code>repos_update_views</code> returns an object of class <code>"ctvlist"</code> containing
-  the <code>"ctv"</code> objects available.
-<code>ctv2html</code> returns invisibly a vector with the HTML code generated.
-<code>check_ctv_packages</code> returns a list of character vectors with package names.
-<code>read.ctv</code> returns a list of class <code>"ctv"</code> with elements:</p>
+    <p></p>
+<p><code>repos_update_views</code> returns an object of class <code>"ctvlist"</code> containing
+  the <code>"ctv"</code> objects available.</p>
+<p></p>
+<p><code>ctv2html</code> returns invisibly a vector with the HTML code generated.</p>
+<p></p>
+<p><code>check_ctv_packages</code> returns a list of character vectors with package names.</p>
+<p></p>
+<p><code>read.ctv</code> returns a list of class <code>"ctv"</code> with elements:</p>
 <dl><dt>name</dt>
 <dd><p>character, name of the task view (must be a valid name for an R object).</p></dd>
-<dt>topic</dt>
+
+  <dt>topic</dt>
 <dd><p>character, topic of the task view.</p></dd>
-<dt>maintainer</dt>
+
+  <dt>maintainer</dt>
 <dd><p>character, maintainer of the task view.</p></dd>
-<dt>email</dt>
+
+  <dt>email</dt>
 <dd><p>character, valid e-mail address (optional).</p></dd>
-<dt>version</dt>
+
+  <dt>version</dt>
 <dd><p>character, version specified via date in ISO format.</p></dd>
-<dt>url</dt>
+
+  <dt>url</dt>
 <dd><p>character, valid task view URL (optional).</p></dd>
-<dt>source</dt>
+
+  <dt>source</dt>
 <dd><p>character, source repository where the task view file is maintained (optional).</p></dd>
-<dt>info</dt>
+
+  <dt>info</dt>
 <dd><p>character, HTML code with informations about the task view.</p></dd>
-<dt>packagelist</dt>
+
+  <dt>packagelist</dt>
 <dd><p>data frame with the columns <code>name</code>
     (character, name of package) and <code>core</code> (logical, Is priority core?).</p></dd>
-<dt>links</dt>
+
+  <dt>links</dt>
 <dd><p>character vector, HTML code with links for the task view.</p></dd>
-<dt>otherlinks</dt>
+
+  <dt>otherlinks</dt>
 <dd><p>character vector, HTML code with links to other resources for the task view.</p></dd>
-<dt>citation</dt>
+
+  <dt>citation</dt>
 <dd><p>citation object inheriting from <code><a href="https://rdrr.io/r/utils/bibentry.html" class="external-link">bibentry</a></code> with
     information how to cite the task view.</p></dd>
+
 </dl></div>
     <div id="see-also">
     <h2>See also</h2>
@@ -159,16 +183,16 @@ by <code><a href="ctv-client.html">install.views</a></code> or <code><a href="ct
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">## task view file shipped within the package</span></span>
-<span class="r-in"><span class="va">ctv</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"ctv"</span>, <span class="st">"Econometrics.md"</span>, package <span class="op">=</span> <span class="st">"ctv"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="kw">if</span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://yihui.org/knitr/" class="external-link">"knitr"</a></span><span class="op">)</span> <span class="op">&amp;</span> <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://github.com/rstudio/rmarkdown" class="external-link">"rmarkdown"</a></span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
-<span class="r-in"><span class="co">## read task view file</span></span>
-<span class="r-in"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">read.ctv</span><span class="op">(</span><span class="va">ctv</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">## print</span></span>
-<span class="r-in"><span class="va">x</span></span>
-<span class="r-in"><span class="op">}</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">## task view file shipped within the package</span></span></span>
+<span class="r-in"><span><span class="va">ctv</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"ctv"</span>, <span class="st">"Econometrics.md"</span>, package <span class="op">=</span> <span class="st">"ctv"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="kw">if</span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://yihui.org/knitr/" class="external-link">"knitr"</a></span><span class="op">)</span> <span class="op">&amp;</span> <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://github.com/rstudio/rmarkdown" class="external-link">"rmarkdown"</a></span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="co">## read task view file</span></span></span>
+<span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">read.ctv</span><span class="op">(</span><span class="va">ctv</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">## print</span></span></span>
+<span class="r-in"><span><span class="va">x</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: knitr</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: rmarkdown</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> CRAN Task View</span>
@@ -199,16 +223,16 @@ by <code><a href="ctv-client.html">install.views</a></code> or <code><a href="ct
 <span class="r-out co"><span class="r-pr">#&gt;</span>             survival, systemfit, truncreg, tsDyn, tseries*, urca*, vars, VGAM,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             wbstats, wooldridge, xts, zoo*, zTree</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             (* = core package)</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
-<span class="r-in"><span class="co">## generate corresponding .html file from task view object</span></span>
-<span class="r-in"><span class="fu">ctv2html</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
-<span class="r-in"><span class="co">## or equivalently from task view file</span></span>
-<span class="r-in"><span class="fu">ctv2html</span><span class="op">(</span><span class="va">ctv</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">## check packagelist</span></span>
-<span class="r-in"><span class="fu">check_ctv_packages</span><span class="op">(</span><span class="va">ctv</span><span class="op">)</span></span>
-<span class="r-in"><span class="op">}</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="co">## generate corresponding .html file from task view object</span></span></span>
+<span class="r-in"><span><span class="fu">ctv2html</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## or equivalently from task view file</span></span></span>
+<span class="r-in"><span><span class="fu">ctv2html</span><span class="op">(</span><span class="va">ctv</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">## check packagelist</span></span></span>
+<span class="r-in"><span><span class="fu">check_ctv_packages</span><span class="op">(</span><span class="va">ctv</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -223,7 +247,7 @@ by <code><a href="ctv-client.html">install.views</a></code> or <code><a href="ct
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

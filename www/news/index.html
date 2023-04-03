@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ctv</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.9-4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.9-5</span>
       </span>
     </div>
 
@@ -54,7 +54,11 @@
     </div>
 
     <div class="section level2">
-<h2 class="page-header" data-toc-text="0.9-4" id="ctv-09-4">ctv 0.9-4<a class="anchor" aria-label="anchor" href="#ctv-09-4"></a></h2>
+<h2 class="page-header" data-toc-text="0.9-5" id="ctv-09-5">ctv 0.9-5<a class="anchor" aria-label="anchor" href="#ctv-09-5"></a></h2>
+<ul><li>Updated Bioconductor URLs from <code>bioc(...)</code> tags to <code>https://www.bioconductor.org/packages/&lt;pkgname&gt;</code>.</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="page-header" data-toc-text="0.9-4" id="ctv-09-4">ctv 0.9-4<small>2022-11-06</small><a class="anchor" aria-label="anchor" href="#ctv-09-4"></a></h2>
 <ul><li><p>Improved and extended documentation for CRAN task view maintainers in <code><a href="../articles/ctv-howto.html">vignette("ctv-howto", package = "ctv")</a></code>.</p></li>
 <li><p>CRAN information about packages and archivals is loaded from local files (rather than downloaded) if run on CRAN. Also, it is preserved between subsequent runs of <code>read.ctv(..., cran = TRUE)</code> (and hence also <code>ctv2html(..., cran = TRUE)</code> etc.).</p></li>
 <li><p><code>read.ctv(..., cran = TRUE)</code> now warns if a <code>pkg()</code> is not available from CRAN.</p></li>
@@ -124,11 +128,11 @@
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-8" id="ctv-07-8">ctv 0.7-8<small>2013-04-12</small><a class="anchor" aria-label="anchor" href="#ctv-07-8"></a></h2>
-<ul><li>Use <code><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file()</a></code> instead of <code><a href="https://rdrr.io/r/base/base-defunct.html" class="external-link">.find.package()</a></code> in vignette.</li>
+<ul><li>Use <code><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file()</a></code> instead of <code>.find.package()</code> in vignette.</li>
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-7" id="ctv-07-7">ctv 0.7-7<small>2013-04-05</small><a class="anchor" aria-label="anchor" href="#ctv-07-7"></a></h2>
-<ul><li>Use <code><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file()</a></code> instead of <code><a href="https://rdrr.io/r/base/base-defunct.html" class="external-link">.find.package()</a></code> in <code><a href="../reference/ctv-server.html">?read.ctv</a></code>.</li>
+<ul><li>Use <code><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file()</a></code> instead of <code>.find.package()</code> in <code><a href="../reference/ctv-server.html">?read.ctv</a></code>.</li>
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-6" id="ctv-07-6">ctv 0.7-6<small>2013-01-29</small><a class="anchor" aria-label="anchor" href="#ctv-07-6"></a></h2>
@@ -136,7 +140,7 @@
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-5" id="ctv-07-5">ctv 0.7-5<small>2013-01-11</small><a class="anchor" aria-label="anchor" href="#ctv-07-5"></a></h2>
-<ul><li>Package depends on R &gt;= 2.13.0 now in order to use only <code><a href="https://rdrr.io/r/base/readRDS.html" class="external-link">saveRDS()</a></code>/<code><a href="https://rdrr.io/r/base/readRDS.html" class="external-link">readRDS()</a></code> and not <code><a href="https://rdrr.io/r/base/base-defunct.html" class="external-link">.saveRDS()</a></code>/<code><a href="https://rdrr.io/r/base/base-defunct.html" class="external-link">.readRDS()</a></code>.</li>
+<ul><li>Package depends on R &gt;= 2.13.0 now in order to use only <code><a href="https://rdrr.io/r/base/readRDS.html" class="external-link">saveRDS()</a></code>/<code><a href="https://rdrr.io/r/base/readRDS.html" class="external-link">readRDS()</a></code> and not <code>.saveRDS()</code>/<code>.readRDS()</code>.</li>
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-4" id="ctv-07-4">ctv 0.7-4<small>2011-12-22</small><a class="anchor" aria-label="anchor" href="#ctv-07-4"></a></h2>
@@ -146,7 +150,7 @@
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-3" id="ctv-07-3">ctv 0.7-3<small>2011-07-27</small><a class="anchor" aria-label="anchor" href="#ctv-07-3"></a></h2>
 <ul><li>
-<code><a href="https://rdrr.io/r/base/readRDS.html" class="external-link">saveRDS()</a></code> instead of <code><a href="https://rdrr.io/r/base/base-defunct.html" class="external-link">.saveRDS()</a></code> is now used in the server-side tools if available.</li>
+<code><a href="https://rdrr.io/r/base/readRDS.html" class="external-link">saveRDS()</a></code> instead of <code>.saveRDS()</code> is now used in the server-side tools if available.</li>
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-2" id="ctv-07-2">ctv 0.7-2<small>2011-04-17</small><a class="anchor" aria-label="anchor" href="#ctv-07-2"></a></h2>
@@ -155,7 +159,7 @@
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-1" id="ctv-07-1">ctv 0.7-1<small>2011-04-16</small><a class="anchor" aria-label="anchor" href="#ctv-07-1"></a></h2>
-<ul><li>Fixed <code><a href="../reference/ctv-client.html">available.views()</a></code> for R 2.13.0 as the underlying <code><a href="https://rdrr.io/r/base/base-defunct.html" class="external-link">.readRDS()</a></code> needed to be changed.</li>
+<ul><li>Fixed <code><a href="../reference/ctv-client.html">available.views()</a></code> for R 2.13.0 as the underlying <code>.readRDS()</code> needed to be changed.</li>
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.7-0" id="ctv-07-0">ctv 0.7-0<small>2010-11-14</small><a class="anchor" aria-label="anchor" href="#ctv-07-0"></a></h2>
@@ -255,7 +259,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

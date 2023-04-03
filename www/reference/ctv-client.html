@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ctv</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.9-4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.9-5</span>
       </span>
     </div>
 
@@ -59,17 +59,17 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">ctv</span><span class="op">(</span><span class="va">view</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="fu">available.views</span><span class="op">(</span>repos <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span>
-<span class="fu">install.views</span><span class="op">(</span><span class="va">views</span>, coreOnly <span class="op">=</span> <span class="cn">FALSE</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span>
-<span class="fu">update.views</span><span class="op">(</span><span class="va">views</span>, coreOnly <span class="op">=</span> <span class="cn">FALSE</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, lib.loc <span class="op">=</span> <span class="cn">NULL</span>, filters <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span>
-<span class="fu">download.views</span><span class="op">(</span><span class="va">views</span>, <span class="va">destdir</span>, coreOnly <span class="op">=</span> <span class="cn">FALSE</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for ctv</span>
-<span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, packagelist <span class="op">=</span> <span class="cn">TRUE</span>, <span class="va">...</span><span class="op">)</span>
-<span class="co"># S3 method for ctvlist</span>
-<span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, packagelist <span class="op">=</span> <span class="cn">FALSE</span>, <span class="va">...</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">ctv</span><span class="op">(</span><span class="va">view</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">available.views</span><span class="op">(</span>repos <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">install.views</span><span class="op">(</span><span class="va">views</span>, coreOnly <span class="op">=</span> <span class="cn">FALSE</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">update.views</span><span class="op">(</span><span class="va">views</span>, coreOnly <span class="op">=</span> <span class="cn">FALSE</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, lib.loc <span class="op">=</span> <span class="cn">NULL</span>, filters <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">download.views</span><span class="op">(</span><span class="va">views</span>, <span class="va">destdir</span>, coreOnly <span class="op">=</span> <span class="cn">FALSE</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for ctv</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, packagelist <span class="op">=</span> <span class="cn">TRUE</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="co"># S3 method for ctvlist</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, packagelist <span class="op">=</span> <span class="cn">FALSE</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -80,28 +80,37 @@
     <code>views</code> can also be an object of class <code>"ctvlist"</code> (as returned
     by <code>available.views</code>) or an object of class <code>"ctv"</code> (i.e., an element
     of a <code>"ctvlist"</code>).</p></dd>
-<dt>coreOnly</dt>
+
+  <dt>coreOnly</dt>
 <dd><p>logical. Should all packages or only core packages be installed?
     (recycled to the same length as <code>views</code>)</p></dd>
-<dt>repos</dt>
+
+  <dt>repos</dt>
 <dd><p>character, the base URL of the repository. By default <code>getOption("repos")</code>
     is tried and otherwise <code>getOption("CRAN")</code> is used.</p></dd>
-<dt>lib.loc</dt>
+
+  <dt>lib.loc</dt>
 <dd><p>character vector describing the location of R library trees
     to search through (and update packages therein).</p></dd>
-<dt>filters</dt>
+
+  <dt>filters</dt>
 <dd><p>a character vector or list to filter
     <code><a href="https://rdrr.io/r/utils/available.packages.html" class="external-link">available.packages</a></code>, e.g., for filtering with respect to
     operating system type or free and open-source software license.</p></dd>
-<dt>destdir</dt>
+
+  <dt>destdir</dt>
 <dd><p>directory where downloaded packages are to be stored.</p></dd>
-<dt>...</dt>
+
+  <dt>...</dt>
 <dd><p>further arguments passed to <code><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></code> or
     <code><a href="https://rdrr.io/r/utils/download.packages.html" class="external-link">download.packages</a></code> respectively.</p></dd>
-<dt>x</dt>
+
+  <dt>x</dt>
 <dd><p>an object of class <code>"ctv"</code> or <code>"ctvlist"</code> respectively.</p></dd>
-<dt>packagelist</dt>
+
+  <dt>packagelist</dt>
 <dd><p>logical. Should the packagelist also be printed?</p></dd>
+
 </dl></div>
     <div id="details">
     <h2>Details</h2>
@@ -124,9 +133,11 @@ installed yet.</p>
     </div>
     <div id="value">
     <h2>Value</h2>
-    <p><code>available.views</code> returns an object of class <code>"ctvlist"</code> of the 
-  available task views whose elements are of class <code>"ctv"</code>.
-<code>install.views</code> and <code>update.views</code> have no return value.</p>
+    <p></p>
+<p><code>available.views</code> returns an object of class <code>"ctvlist"</code> of the 
+  available task views whose elements are of class <code>"ctv"</code>.</p>
+<p></p>
+<p><code>install.views</code> and <code>update.views</code> have no return value.</p>
     </div>
     <div id="see-also">
     <h2>See also</h2>
@@ -135,24 +146,24 @@ installed yet.</p>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
-<span class="r-in"><span class="co">## query only a single view (with known name)</span></span>
-<span class="r-in"><span class="fu">ctv</span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">## extract corresponding citation</span></span>
-<span class="r-in"><span class="fu">ctv</span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span><span class="op">$</span><span class="va">citation</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">## query list of CRAN task views available</span></span>
-<span class="r-in"><span class="fu">available.views</span><span class="op">(</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">## install Econometrics view</span></span>
-<span class="r-in"><span class="fu">install.views</span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span></span>
-<span class="r-in"><span class="co">## only with core packages</span></span>
-<span class="r-in"><span class="fu">install.views</span><span class="op">(</span><span class="st">"Econometrics"</span>, coreOnly <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">## update Econometrics view (i.e. only packages that are not current anyway)</span></span>
-<span class="r-in"><span class="fu">update.views</span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span></span>
-<span class="r-in"><span class="op">}</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="co">## query only a single view (with known name)</span></span></span>
+<span class="r-in"><span><span class="fu">ctv</span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">## extract corresponding citation</span></span></span>
+<span class="r-in"><span><span class="fu">ctv</span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span><span class="op">$</span><span class="va">citation</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">## query list of CRAN task views available</span></span></span>
+<span class="r-in"><span><span class="fu">available.views</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">## install Econometrics view</span></span></span>
+<span class="r-in"><span><span class="fu">install.views</span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co">## only with core packages</span></span></span>
+<span class="r-in"><span><span class="fu">install.views</span><span class="op">(</span><span class="st">"Econometrics"</span>, coreOnly <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">## update Econometrics view (i.e. only packages that are not current anyway)</span></span></span>
+<span class="r-in"><span><span class="fu">update.views</span><span class="op">(</span><span class="st">"Econometrics"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -167,7 +178,7 @@ installed yet.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
