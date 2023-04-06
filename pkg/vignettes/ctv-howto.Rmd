@@ -62,8 +62,8 @@ package like ``r 'r'` pkg("mlogit")` or an important "core" package like
 ``r 'r'` pkg("AER", priority = "core")`.
 
 ### Links
-- Articles: [Special Volume on "Econometrics in R" in JSS (2008)](http://www.jstatsoft.org/v27/)
-- [The Title of a Relevant Homepage](http://path/to/homepage/)
+- Articles: [Special Volume on "Econometrics in R" in JSS (2008)](https://www.jstatsoft.org/v27/)
+- [The Title of a Relevant Homepage](https://path/to/homepage/)
 ```
 
 The document structure consists of three main blocks: (1) Some metainformation
@@ -97,7 +97,7 @@ mailing list shared by the co-maintainers.
 
 * `version` is specified by a date in ISO 8601 format (yyyy-mm-dd).
 
-* Additionally, there are may be optional elements: `source` can be used to link
+* Additionally, there may be optional elements: `source` can be used to link
 to the source repository (typically on GitHub) and `url` for the URL of the
 published task view, respectively. The latter is inserted automatically for the
 official task views on CRAN.
@@ -169,8 +169,8 @@ packages are actually not available on CRAN or not currently maintained
 (archived).
 
 For illustration, the code below employs the `Econometrics.md` file shipped
-within the `ctv` package. Instead a local `MyNewView.md` with resulting
-`MyNewView.html` could be used as well.
+within the `ctv` package. Instead a local `MyTopic.md` with resulting
+`MyTopic.html` could be used as well.
 
 ```
 library("ctv")
@@ -193,8 +193,9 @@ The CRAN packages listed in task views should ideally be maintained actively,
 so that improved versions are released by the corresponding maintainers in case
 the daily CRAN checks discover any issues.
 
-However, as even actively maintained packages may be temporarily archived on
-CRAN, the following strategy is adopted:
+However, it is not straightforward to test for active maintenance fully automatically
+and even actively maintained packages may be temporarily archived on
+CRAN. Hence, the following strategy is adopted:
 
 * When a CRAN package from a task view is archived, it is still listed in the
 task view like before. It is only flagged as archived in the text and not
