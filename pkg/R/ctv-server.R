@@ -316,12 +316,17 @@ ctv2html <- function(x,
   htm2 <- x$info
 
   ## package list
+  span <- if(cran) {
+    function(x, class = "CRAN") sprintf('<span class="%s">%s</span>', class, x)
+  } else {
+    function(x) x
+  }
   pkg2html <- if(grepl("%s", packageURL, fixed = TRUE)) {
     function(name,  core = FALSE)
-      paste0("<a href=\"", sprintf(packageURL, name), "\">", name, "</a>", if(core) " (core)" else "")
+      paste0("<a href=\"", sprintf(packageURL, name), "\">", span(name), "</a>", if(core) " (core)" else "")
   } else {
     function(name, core = FALSE)
-      paste0("<a href=\"", packageURL, name, "/index.html\">", name, "</a>", if(core) " (core)" else "")
+      paste0("<a href=\"", packageURL, name, "/index.html\">", span(name), "</a>", if(core) " (core)" else "")
   }
 
   htm3 <- c(paste0("  <h3>", reposname, " packages</h3>"),

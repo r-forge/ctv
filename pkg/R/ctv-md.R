@@ -80,9 +80,9 @@ pkg <- function(name, priority = "normal", register = TRUE) {
   
   ## return URL
   txt <- if(status == "active") {
-    sprintf("[%s](%s)", name, sprintf(.ctv_env$pkg_url, name))
+    sprintf("[%s](%s)", .ctv_env$span(name, "CRAN"), sprintf(.ctv_env$pkg_url, name))
   } else if(status == "archived") {
-    sprintf("[%s _(archived)_](%s)", name, sprintf(.ctv_env$pkg_url, name))
+    sprintf("[%s](%s)", .ctv_env$span(paste(name, "_(archived)_"), "CRAN"), sprintf(.ctv_env$pkg_url, name))
   } else {
     sprintf("_%s (unavailable)_", name)
   }
@@ -94,9 +94,9 @@ view <- function(name, section = NULL, register = TRUE) {
   if(register) .ctv_env$viewlist <- unique(c(.ctv_env$viewlist, name))
   ## return URL
   if(is.null(section)) {
-    sprintf("[%s](%s)", name, sprintf(.ctv_env$view_url, name))
+    sprintf("[%s](%s)", .ctv_env$span(name, "CRAN"), sprintf(.ctv_env$view_url, name))
   } else {
-    sprintf("[%s](%s#%s)", section, sprintf(.ctv_env$view_url, name), gsub(" ", "-", tolower(section), fixed = TRUE))
+    sprintf("[%s](%s#%s)", .ctv_env$span(section, "CRAN"), sprintf(.ctv_env$view_url, name), gsub(" ", "-", tolower(section), fixed = TRUE))
   }
 }
 
