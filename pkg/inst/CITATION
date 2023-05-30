@@ -1,15 +1,28 @@
-bibentry(bibtype = "Article",
-  title        = "{CRAN} Task Views",
-  author       = person(given = "Achim", family = "Zeileis",
-                        email = "Achim.Zeileis@R-project.org",
-			comment = c(ORCID = "0000-0003-0918-3766")),
-  journal      = "R News",
-  year         = "2005",
-  volume       = "5",
-  number       = "1",
-  pages        = "39--40",
-  url          = "https://CRAN.R-project.org/doc/Rnews/",
+bibentry(bibtype = "TechReport",
+         title = "{CRAN} Task Views: The Next Generation",
+         author = c(person(given = "Achim", family = "Zeileis", email = "Achim.Zeileis@R-project.org", comment = c(ORCID = "0000-0003-0918-3766")),
+                    person(given = "Roger", family = "Bivand", email = "Roger.Bivand@R-project.org", comment = c(ORCID = "0000-0003-2392-6140")),
+                    person(given = "Dirk", family = "Eddelbuettel", email = "Dirk.Eddelbuettel@R-project.org", comment = c(ORCID = "000-0001-6419-907X")),
+                    person(given = "Kurt", family = "Hornik", email = "Kurt.Hornik@R-project.org", comment = c(ORCID = "0000-0003-4198-9911")),
+                    person(given = "Nathalie", family = "Vialaneix", email = "Nathalie.Vialaneix@inrae.fr", comment = c(ORCID = "0000-0003-1156-0639"))),
+         year = "2023",
+         institution = "arXiv.org E-Print Archive",
+         type = "arXiv",
+         number = "2305.17573",
+         month = "May",
+         doi = "10.48550/arXiv.2305.17573",
+         header = "To cite ctv in publications use:"
+)
 
-  header       = "To cite ctv in publications use:"
+bibentry(bibtype = "Article",
+         title = "{CRAN} Task Views",
+         author = person(given = "Achim", family = "Zeileis", email = "Achim.Zeileis@R-project.org", comment = c(ORCID = "0000-0003-0918-3766")),
+         journal = "R News",
+         year = "2005",
+         volume = "5",
+         number = "1",
+         pages = "39--40",
+         url = "https://CRAN.R-project.org/doc/Rnews/",
+         header = "For the origins of ctv please cite:"
 )
 

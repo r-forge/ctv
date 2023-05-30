@@ -1,10 +1,14 @@
 # ctv 0.9-5
 
+* New `citation("ctv")`: Zeileis A, Bivand R, Eddelbuettel D, Hornik K, Vialaneix N (2023).
+  "CRAN Task Views: The Next Generation." arXiv 2305.17573, _arXiv.org E-Print Archive_.
+  [doi:10.48550/arXiv.2305.17573](https://doi.org/10.48550/arXiv.2305.17573).
+
 * For CRAN web pages produce `<span class="...">pkgname</pkg>` for packages on
   CRAN, Bioconductor, GitHub, R-Forge, OmegaHat, etc., where the custom classes
   yield custom colors in the CRAN style.
 
-* Updated Bioconductor URLs from `bioc(...)` tags to
+* Updated Bioconductor URLs from `bioc("<pkgname>")` tags to
   `https://www.bioconductor.org/packages/<pkgname>`.
 
 
