@@ -145,8 +145,8 @@ package like `r pkg("mlogit")` or an important "core" package like
 `r pkg("AER", priority = "core")`.
 
 ### Links
-- Articles: [Special Volume on "Econometrics in R" in JSS (2008)](http://www.jstatsoft.org/v27/)
-- [The Title of a Relevant Homepage](http://path/to/homepage/)</code></pre>
+- Articles: [Special Volume on "Econometrics in R" in JSS (2008)](https://www.jstatsoft.org/v27/)
+- [The Title of a Relevant Homepage](https://path/to/homepage/)</code></pre>
 <p>The document structure consists of three main blocks: (1) Some
 metainformation is given in the YAML header at the beginning (separated
 by lines with <code>---</code>), followed by (2) the information in the
@@ -181,11 +181,11 @@ or possibly a dedicated mailing list shared by the
 co-maintainers.</p></li>
 <li><p><code>version</code> is specified by a date in ISO 8601 format
 (yyyy-mm-dd).</p></li>
-<li><p>Additionally, there are may be optional elements:
-<code>source</code> can be used to link to the source repository
-(typically on GitHub) and <code>url</code> for the URL of the published
-task view, respectively. The latter is inserted automatically for the
-official task views on CRAN.</p></li>
+<li><p>Additionally, there may be optional elements: <code>source</code>
+can be used to link to the source repository (typically on GitHub) and
+<code>url</code> for the URL of the published task view, respectively.
+The latter is inserted automatically for the official task views on
+CRAN.</p></li>
 </ul>
 </div>
 <div class="section level3">
@@ -197,12 +197,12 @@ format</a> can be used to structure the document with sections, itemized
 and enumerated lists, bold face, italics, etc.</p>
 <p>Additionally, short R code chunks with special functions are used for
 linking to resources in the same repository: <code>pkg()</code> for
-normal packages, <code>pkg(..., priority = "core")</code> for important
+regular packages, <code>pkg(..., priority = "core")</code> for important
 “core” packages, and <code>view()</code> for related task views. A
 convenience function <code>doi()</code> creates links for DOIs (digital
 object identifiers).</p>
 <ul>
-<li><p>The distinction between “normal” and “core” packages is only
+<li><p>The distinction between “regular” and “core” packages is only
 important for the installation of CRAN task views because the user can
 specify whether all packages (default) or only the most important core
 packages should be installed (with all their dependencies).</p></li>
@@ -265,12 +265,11 @@ the listed packages are actually not available on CRAN or not currently
 maintained (archived).</p>
 <p>For illustration, the code below employs the
 <code>Econometrics.md</code> file shipped within the <code>ctv</code>
-package. Instead a local <code>MyNewView.md</code> with resulting
-<code>MyNewView.html</code> could be used as well.</p>
+package. Instead a local <code>MyTopic.md</code> with resulting
+<code>MyTopic.html</code> could be used as well.</p>
 <pre><code><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/cran-task-views/ctv/" class="external-link">"ctv"</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/files.html" class="external-link">file.copy</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"ctv"</span>, <span class="st">"Econometrics.md"</span>, package <span class="op">=</span> <span class="st">"ctv"</span><span class="op">)</span>, <span class="st">"Econometrics.md"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="../reference/ctv-server.html">read.ctv</a></span><span class="op">(</span><span class="st">"Econometrics.md"</span>, cran <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="../reference/ctv-server.html">ctv2html</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/ctv-server.html">ctv2html</a></span><span class="op">(</span><span class="st">"Econometrics.md"</span>, cran <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/browseURL.html" class="external-link">browseURL</a></span><span class="op">(</span><span class="st">"Econometrics.html"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ctv-server.html">check_ctv_packages</a></span><span class="op">(</span><span class="st">"Econometrics.md"</span><span class="op">)</span></span></code></pre>
 <p>Note that the code above is intended for authors of CRAN task views.
@@ -285,8 +284,10 @@ details.</p>
 <p>The CRAN packages listed in task views should ideally be maintained
 actively, so that improved versions are released by the corresponding
 maintainers in case the daily CRAN checks discover any issues.</p>
-<p>However, as even actively maintained packages may be temporarily
-archived on CRAN, the following strategy is adopted:</p>
+<p>However, it is not straightforward to test for active maintenance
+fully automatically and even actively maintained packages may be
+temporarily archived on CRAN. Hence, the following strategy is
+adopted:</p>
 <ul>
 <li><p>When a CRAN package from a task view is archived, it is still
 listed in the task view like before. It is only flagged as archived in
@@ -324,13 +325,13 @@ the task view.)</p></li>
 <p>The <code>ctv</code> package provides an (unexported) R function to
 facilitate the transition from the legacy XML format for the task view
 files to the new R/Markdown format described above. Simply using</p>
-<pre><code><span><span class="fu">ctv</span><span class="fu">:::</span><span class="fu">ctv_xml_to_rmd</span><span class="op">(</span><span class="st">"MyView.ctv"</span><span class="op">)</span></span></code></pre>
-<p>will create a <code>MyView.md</code> file from the <code>.ctv</code>
+<pre><code><span><span class="fu">ctv</span><span class="fu">:::</span><span class="fu">ctv_xml_to_rmd</span><span class="op">(</span><span class="st">"MyTopic.ctv"</span><span class="op">)</span></span></code></pre>
+<p>will create a <code>MyTopic.md</code> file from the <code>.ctv</code>
 file. This should do most necessary transformations automatically.
 However, it is recommended to thoroughly check the resulting file and
 improve it as appropriate. To check the resulting HTML output use</p>
-<pre><code><span><span class="fu"><a href="../reference/ctv-server.html">ctv2html</a></span><span class="op">(</span><span class="st">"MyView.md"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/browseURL.html" class="external-link">browseURL</a></span><span class="op">(</span><span class="st">"MyView.html"</span><span class="op">)</span></span></code></pre>
+<pre><code><span><span class="fu"><a href="../reference/ctv-server.html">ctv2html</a></span><span class="op">(</span><span class="st">"MyTopic.md"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/browseURL.html" class="external-link">browseURL</a></span><span class="op">(</span><span class="st">"MyTopic.html"</span><span class="op">)</span></span></code></pre>
 <p>Note that one important difference between the XML and R/Markdown
 format is that the “package list” does not need to be listed separately
 anymore, it is auto-generated from the “info” text. Similarly, the
