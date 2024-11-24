@@ -1,3 +1,9 @@
+# ctv 0.9-6
+
+* Add header information about canonical CRAN URLs for all task views as
+  `<link rel="canonical" href="https://CRAN.R-project.org/view=..." />`.
+
+
 # ctv 0.9-5
 
 * New `citation("ctv")`: Zeileis A, Bivand R, Eddelbuettel D, Hornik K, Vialaneix N (2023).
