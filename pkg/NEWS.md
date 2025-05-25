@@ -1,3 +1,9 @@
+# ctv 0.9-7
+
+* Check for `rmarkdown::pandoc_available()` before calling
+  `rmarkdown::pandoc_convert` (suggested by Michael Dewey).
+
+
 # ctv 0.9-6
 
 * Add header information about canonical CRAN URLs for all task views as

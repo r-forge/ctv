@@ -365,6 +365,9 @@ ctv_xml_to_rmd <- function(x) {
 pandoc <- function(x, ..., from = "markdown", to = "html5", options = "--wrap=none",
   fixup = (from == "html" && to == "markdown"))
 {
+  ## check availability
+  stopifnot(rmarkdown::pandoc_available())
+
   ## temporary files
   infile <- tempfile()
   outfile <- tempfile()
