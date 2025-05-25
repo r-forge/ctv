@@ -21,7 +21,7 @@ _&#x3c;&#x41;&#x63;&#x68;&#x69;&#x6d;&#x2e;&#x5a;&#x65;&#x69;&#x6c;&#x65;&#x69;&
   <a href="https://orcid.org/0000-0003-0918-3766" target="orcid.widget"><span class="fab fa-orcid orcid"></span></a>
   <a href="https://www.zeileis.org/"><span class="fa fa-user"></span></a>
   <a href="https://github.com/zeileis/"><span class="fa fa-github"></span></a>
-  <a href="https://twitter.com/AchimZeileis"><span class="fa fa-twitter-square"></span></a>
 - Kurt Hornik
   <a href="https://orcid.org/0000-0003-4198-9911" target="orcid.widget"><span class="fab fa-orcid orcid"></span></a>
   <a href="http://statmath.wu.ac.at/~hornik/"><span class="fa fa-user"></span></a>
+  <a href="https://github.com/kurthornik/"><span class="fa fa-github"></span></a>
