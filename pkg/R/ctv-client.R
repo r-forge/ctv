@@ -67,9 +67,10 @@ available.views <- CRAN.views <- function(repos = NULL, ...)
   contriburl <- paste(repos, "/src/contrib", sep = "")
   rval <- list()
   
-  for(i in seq(along.with = contriburl)) {
+  for(i in seq_along(contriburl)) {
     ## load Views.rds from repository
-    viewurl <- gzcon(url(paste(contriburl[i], "Views.rds", sep = "/"), open = "rb"))
+    viewurl <- suppressWarnings(try(gzcon(url(paste(contriburl[i], "Views.rds", sep = "/"), open = "rb")), silent = TRUE))
+    if(inherits(viewurl, "try-error")) next
     x <- suppressWarnings(try(readRDS(viewurl), silent = TRUE))
     if(inherits(x, "try-error")) next else close(viewurl)
 

@@ -1,7 +1,10 @@
 # ctv 0.9-7
 
 * Check for `rmarkdown::pandoc_available()` before calling
-  `rmarkdown::pandoc_convert` (suggested by Michael Dewey).
+  `rmarkdown::pandoc_convert()` (suggested by Michael Dewey).
+
+* In `available.views()` better avoid errors when `repos` does not
+  provide any task views.
 
 
 # ctv 0.9-6
