@@ -3,7 +3,7 @@
 * Check for `rmarkdown::pandoc_available()` before calling
   `rmarkdown::pandoc_convert()` (suggested by Michael Dewey).
 
-* In `available.views()` better avoid errors when `repos` does not
+* In `available.views()` better avoid errors when the `repos` does not
   provide any task views.
 
 
@@ -287,7 +287,7 @@
 
 # ctv 0.4-7
 
-* Temoved `\itemize` in .Rd files for new R-devel.
+* Removed `\itemize` in .Rd files for new R-devel.
 
 
 # ctv 0.4-6
@@ -327,7 +327,7 @@
 
 # ctv 0.4-0
 
-* New function update.views() which only installs the packages from a view that
+* New function `update.views()` which only installs the packages from a view that
   are not installed or not up-to-date.
 
 * Added infrastructure for view version/date and contact e-mail address of the
